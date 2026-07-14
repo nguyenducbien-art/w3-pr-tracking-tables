@@ -12,8 +12,8 @@ cd "$REPO" || exit 1
   rc=$?
   if [ "$rc" -eq 2 ]; then echo "no change → skip push"; exit 0; fi
   if [ "$rc" -ne 0 ]; then echo "fetch_build ERROR rc=$rc"; exit 1; fi
-  git add data.json                              # CHỈ stage data.json (không đụng file khác đang sửa)
+  # CHỈ commit đúng data.json (path-scoped) — bỏ qua MỌI file khác dù đang modified/staged.
   git -c user.name="biennguyen" -c user.email="biennguyen131311@gmail.com" \
-      commit -q -m "auto-refresh data $(date '+%F %H:%M')"
-  git push -q origin main 2>/dev/null && echo "pushed" || echo "  push fail (có thể diverge — kiểm tra tay)"
+      commit -q -m "auto-refresh data $(date '+%F %H:%M')" -- data.json
+  git push -q origin main 2>/dev/null && echo "pushed" || echo "  push fail (kiểm tra tay)"
 } >> "$LOG" 2>&1
