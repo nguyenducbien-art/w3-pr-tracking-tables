@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-14 15:28",
+ "updated": "2026-07-14 15:32",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -214,7 +214,7 @@
    "created": "07-14",
    "drive": false,
    "cop": 7,
-   "unres": 3,
+   "unres": 2,
    "title": "407_直接出庫_明細"
   },
   {
