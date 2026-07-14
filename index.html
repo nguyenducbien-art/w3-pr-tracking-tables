@@ -137,21 +137,16 @@ function render(D){
   function unb(n){return n>0?'<span class="unresolved">'+n+'</span>':'0';}
   function cnt(a){return a?a.length:0;}
 
-  // ---- bảng chính ----
-  var nbase=0,nr629=0,nr713=0,npr=0,totun=0,ncf=0;
-  var rows=D.main.map(function(r){
-    var b=r.base||[],r629=r.r629||[],r713=r.r713||[];
-    nbase+=cnt(b);nr629+=cnt(r629);nr713+=cnt(r713);npr+=cnt(b)+cnt(r629)+cnt(r713);totun+=r.unres;
-    [b,r629,r713].forEach(function(a){a.forEach(function(p){if(p.cf==='bad')ncf++;});});
+  // ---- helper: 1 row bảng chính ----
+  function mainRow(r){
     var devcls=(r.dev==='bien')?'dev dev-bien':'dev';
-    var badge=COMMON.has(r.ticket)?' <span class="badge-common">common</span>':'';
     var rep=r.drive?'<span class="report-yes">✓</span>':'<span class="report-no">—</span>';
     return '<tr>'
-      +'<td><span class="ticket">'+r.ticket+'</span>'+badge+'</td>'
+      +'<td><span class="ticket">'+r.ticket+'</span></td>'
       +'<td><span class="'+devcls+'">'+r.dev+'</span></td>'
-      +'<td>'+cell(b,INVALID.has(r.ticket))+'</td>'
-      +'<td>'+cell(r629,false)+'</td>'
-      +'<td>'+cell(r713,false)+'</td>'
+      +'<td>'+cell(r.base||[],INVALID.has(r.ticket))+'</td>'
+      +'<td>'+cell(r.r629||[],false)+'</td>'
+      +'<td>'+cell(r.r713||[],false)+'</td>'
       +'<td><span class="date-cell">'+r.created+'</span></td>'
       +'<td><span class="kanaya-cell">—</span></td>'
       +'<td>'+rep+'</td>'
@@ -159,7 +154,34 @@ function render(D){
       +'<td>'+unb(r.unres)+'</td>'
       +'<td><span class="title-cell">'+esc(r.title)+'</span></td>'
     +'</tr>';
-  }).join('');
+  }
+  // ---- helper: 1 block bảng chính (heading + stats + table) ----
+  function mainBlock(rows,title,sub){
+    var nbase=0,nr629=0,nr713=0,npr=0,totun=0,ncf=0;
+    var body=rows.map(function(r){
+      var b=r.base||[],r629=r.r629||[],r713=r.r713||[];
+      nbase+=cnt(b);nr629+=cnt(r629);nr713+=cnt(r713);npr+=cnt(b)+cnt(r629)+cnt(r713);totun+=r.unres;
+      [b,r629,r713].forEach(function(a){a.forEach(function(p){if(p.cf==='bad')ncf++;});});
+      return mainRow(r);
+    }).join('');
+    return '<h2 style="font-size:15px;font-weight:700;margin:24px 0 4px;letter-spacing:-0.01em;">'+title+'</h2>'
+      +'<div class="subtitle">'+sub+'</div>'
+      +'<div class="stats">'
+        +'<div class="stat"><span class="stat-val">'+rows.length+'</span> ticket</div>'
+        +'<div class="stat"><span class="stat-val">'+npr+'</span> PR</div>'
+        +'<div class="stat">→base <span class="stat-val">'+nbase+'</span></div>'
+        +'<div class="stat">→r629 <span class="stat-val">'+nr629+'</span></div>'
+        +'<div class="stat">→r713 <span class="stat-val">'+nr713+'</span></div>'
+        +'<div class="stat">conflict <span class="stat-val warn">'+ncf+'</span></div>'
+        +'<div class="stat">Copilot unres <span class="stat-val warn">'+totun+'</span></div>'
+      +'</div>'
+      +'<div class="scroll-wrap"><table><thead><tr>'
+        +'<th>Ticket</th><th>Dev</th><th>→base</th><th>→r20260629</th><th>→r20260713</th>'
+        +'<th>Created</th><th>Kanaya</th><th>Report</th><th>Copilot</th><th>Unres.</th><th>Title</th>'
+      +'</tr></thead><tbody>'+body+'</tbody></table></div>';
+  }
+  var commonRows=D.main.filter(function(r){return COMMON.has(r.ticket);});
+  var normalRows=D.main.filter(function(r){return !COMMON.has(r.ticket);});
 
   // ---- bảng phụ scaffold ----
   var scfUn=0,scfCf=0;
@@ -177,24 +199,12 @@ function render(D){
     +'</tr>';
   }).join('');
 
-  var html=''
-   +'<div class="page">'
+  var html='<div class="page">'
    +'<div class="page-header"><h1>Table A — Sprint 13</h1>'
      +'<span class="meta">cập nhật '+D.updated+' · repo '+D.repo+'</span></div>'
-   +'<div class="subtitle">Tất cả PR (team-dev Rikkei) tạo từ <b>2026-07-13</b> nhắm vào <b>develop/base</b>, <b>r20260629</b> hoặc <b>r20260713</b> — chỉ cần có PR vào 1 trong 3 nhánh là được tính. Loại PR CLOSED và PR sync/chore/evidence.</div>'
-   +'<div class="stats">'
-     +'<div class="stat"><span class="stat-val">'+D.main.length+'</span> ticket</div>'
-     +'<div class="stat"><span class="stat-val">'+npr+'</span> PR sống</div>'
-     +'<div class="stat">→base <span class="stat-val">'+nbase+'</span></div>'
-     +'<div class="stat">→r20260629 <span class="stat-val">'+nr629+'</span></div>'
-     +'<div class="stat">→r20260713 <span class="stat-val">'+nr713+'</span></div>'
-     +'<div class="stat">conflict <span class="stat-val warn">'+ncf+'</span></div>'
-     +'<div class="stat">Copilot unresolved <span class="stat-val warn">'+totun+'</span></div>'
-   +'</div>'
-   +'<div class="scroll-wrap"><table><thead><tr>'
-     +'<th>Ticket</th><th>Dev</th><th>→base</th><th>→r20260629</th><th>→r20260713</th>'
-     +'<th>Created</th><th>Kanaya</th><th>Report</th><th>Copilot</th><th>Unres.</th><th>Title</th>'
-   +'</tr></thead><tbody>'+rows+'</tbody></table></div>'
+   +'<div class="subtitle">PR team-dev Rikkei tạo từ <b>2026-07-13</b> vào <b>develop/base</b> / <b>r20260629</b> / <b>r20260713</b> — chia 2 bảng: common component vs màn/fix thường. Loại PR CLOSED và sync/chore/evidence.</div>'
+   + mainBlock(commonRows,'Bảng 1 — Common component (共通)','Ticket nhánh <b>common-…</b>. Copilot chỉ đếm PR→base.')
+   + mainBlock(normalRows,'Bảng 2 — Màn / Fix thường','Ticket nhánh ANGULAR_REPLACE-… (màn migration + fix lẻ).')
    +'<h2 style="font-size:15px;font-weight:700;margin:26px 0 4px;letter-spacing:-0.01em;">Bảng phụ — PR → '+D.scaffoldBranch.split('/').pop()+' <span style="font-weight:400;color:var(--text-dim);font-size:12px;">(giàn giáo / bake rule vào SKILL)</span></h2>'
    +'<div class="subtitle">PR trỏ vào nhánh <b>'+D.scaffoldBranch.split('/').pop()+'</b> — cập nhật giàn giáo (rules + frontend-screen-* SKILL). Loại PR sync base/r713→scaffold.</div>'
    +'<div class="stats">'
@@ -210,7 +220,7 @@ function render(D){
      +'<span class="pill pill-approved">APPROVED</span> <span class="pill pill-changes">CHANGES</span> '
      +'<span class="pill pill-merged">MERGED</span>.<br>'
      +'Conflict: ✓ MERGEABLE / ✗ CONFLICTING. Report ✓ = có link Drive self-review.<br>'
-     +'🔴 Ticket <b>common</b> đếm Copilot chỉ từ PR→base (bỏ r713 cùng code sync).</div>'
+     +'🔴 Bảng 1 (common) đếm Copilot chỉ từ PR→base (bỏ r713 cùng code sync).</div>'
    +'</div>';
   document.getElementById('app').innerHTML=html;
 }
