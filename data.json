@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-14 16:44",
+ "updated": "2026-07-14 16:56",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -8,11 +8,11 @@
   "1360",
   "1322",
   "285",
+  "451",
   "1307",
   "1315",
   "1310",
-  "1430",
-  "451"
+  "1430"
  ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
@@ -160,6 +160,25 @@
    "cop": 0,
    "unres": 0,
    "title": "個口数0入力時のエラーメッセージをAngularと一致させる"
+  },
+  {
+   "ticket": "451",
+   "dev": "bien",
+   "bien": true,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10955,
+     "cf": "ok",
+     "st": "merged"
+    }
+   ],
+   "created": "07-14",
+   "drive": true,
+   "cop": 2,
+   "unres": 2,
+   "title": "確認モーダルにチェックボックスゲートを追加"
   },
   {
    "ticket": "1352",
@@ -381,31 +400,6 @@
    "title": "共通FieldRenderer/date.tsで日付nullish番兵(5000-01-01等)を空表示にする"
   },
   {
-   "ticket": "451",
-   "dev": "khoa",
-   "bien": false,
-   "base": [
-    {
-     "num": 10887,
-     "cf": "ok",
-     "st": "approved"
-    }
-   ],
-   "r629": [],
-   "r713": [
-    {
-     "num": 10955,
-     "cf": "ok",
-     "st": "open"
-    }
-   ],
-   "created": "07-13",
-   "drive": true,
-   "cop": 7,
-   "unres": 0,
-   "title": "確認モーダルにチェックボックスゲートを追加"
-  },
-  {
    "ticket": "544",
    "dev": "minh",
    "bien": false,
@@ -471,7 +465,7 @@
    "r713": [
     {
      "num": 10836,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open"
     }
    ],
