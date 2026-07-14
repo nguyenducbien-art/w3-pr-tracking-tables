@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-14 17:20",
+ "updated": "2026-07-14 17:21",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1348",
   "1364",
   "451",
   "1439",
@@ -18,6 +19,25 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "1348",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10964,
+     "cf": "bad",
+     "st": "open"
+    }
+   ],
+   "created": "07-14 17:20",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "725_出荷検品_PCスキャン検品・729_送り状発行_多言語ラベル折返し/梱包数0送信"
+  },
   {
    "ticket": "1369",
    "dev": "minh",
@@ -47,7 +67,7 @@
     {
      "num": 10962,
      "cf": "ok",
-     "st": "open"
+     "st": "merged"
     }
    ],
    "created": "07-14 16:58",
@@ -485,7 +505,7 @@
    "r713": [
     {
      "num": 10836,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open"
     }
    ],
