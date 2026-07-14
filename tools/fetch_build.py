@@ -31,6 +31,11 @@ def ensure_account():
 
 def dev_of(login): return DEV.get(login, login)
 
+def fmt_dt(iso):
+    # "2026-07-14T15:07:32Z" (UTC) -> "MM-DD HH:MM" giờ VN (UTC+7)
+    dt = datetime.datetime.strptime(iso, "%Y-%m-%dT%H:%M:%SZ") + datetime.timedelta(hours=7)
+    return dt.strftime("%m-%d %H:%M")
+
 def ticket_from_branch(seg):
     s = re.sub(r'^#','',seg); s = re.sub(r'^ANGULAR_REPLACE-','',s); s = re.sub(r'^common-','',s)
     m = re.match(r'(\d+)', s); return m.group(1) if m else None
@@ -94,7 +99,7 @@ def build():
             det = pr_detail(p["number"])
             t[key].append({"num": p["number"], "cf": det["cf"], "st": det["st"]})
             t["meta"].append({"num":p["number"],"key":key,"author":p["author"]["login"],
-                              "created":p["createdAt"][:10],"title":p["title"],"det":det})
+                              "created":p["createdAt"],"title":p["title"],"det":det})
             if seg.startswith("common-"): t["common"] = True
 
     main = []
@@ -107,7 +112,7 @@ def build():
         cop = sum(m["det"]["cop"] for m in src)
         unres = sum(m["det"]["unres"] for m in src)
         drive = any(m["det"]["drive"] for m in (base_m or metas))
-        created = min(m["created"] for m in metas)[5:10]
+        created = fmt_dt(min(m["created"] for m in metas))   # PR sớm nhất, MM-DD HH:MM (giờ VN)
         main.append({"ticket":tk,"dev":dev,"bien":dev=="bien",
                      "base":t["base"],"r629":t["r629"],"r713":t["r713"],
                      "created":created,"drive":drive,"cop":cop,"unres":unres,
@@ -124,7 +129,7 @@ def build():
         det = pr_detail(p["number"])
         dev = dev_of(p["author"]["login"])
         scaffold.append({"ticket":ticket_from_title(p["title"]) or "—","dev":dev,"bien":dev=="bien",
-                         "pr":{"num":p["number"],"cf":det["cf"],"st":det["st"]},"created":p["createdAt"][5:10],
+                         "pr":{"num":p["number"],"cf":det["cf"],"st":det["st"]},"created":fmt_dt(p["createdAt"]),
                          "cop":det["cop"],"unres":det["unres"],"title":clean_title(p["title"])})
     scaffold.sort(key=lambda m:m["created"], reverse=True)
 

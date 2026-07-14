@@ -1,15 +1,15 @@
 {
- "updated": "2026-07-14 17:16",
+ "updated": "2026-07-14 17:20",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1364",
+  "451",
   "1439",
   "260",
   "1360",
   "1322",
   "285",
-  "1364",
-  "451",
   "1307",
   "1315",
   "1310",
@@ -18,6 +18,82 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "1369",
+   "dev": "minh",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10963,
+     "cf": "ok",
+     "st": "open"
+    }
+   ],
+   "created": "07-14 17:07",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "240_出荷_加工登録・修正_無限ローディング修正"
+  },
+  {
+   "ticket": "1364",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10962,
+     "cf": "ok",
+     "st": "open"
+    }
+   ],
+   "created": "07-14 16:58",
+   "drive": false,
+   "cop": 1,
+   "unres": 0,
+   "title": "226_出荷_検品登録・修正_エラーダイアログ多言語対応"
+  },
+  {
+   "ticket": "1317",
+   "dev": "dat",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10957,
+     "cf": "ok",
+     "st": "merged"
+    }
+   ],
+   "created": "07-14 16:28",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "個口数0入力時のエラーメッセージをAngularと一致させる"
+  },
+  {
+   "ticket": "451",
+   "dev": "bien",
+   "bien": true,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10955,
+     "cf": "ok",
+     "st": "merged"
+    }
+   ],
+   "created": "07-14 16:20",
+   "drive": true,
+   "cop": 2,
+   "unres": 2,
+   "title": "確認モーダルにチェックボックスゲートを追加"
+  },
   {
    "ticket": "1439",
    "dev": "minh",
@@ -37,11 +113,30 @@
      "st": "merged"
     }
    ],
-   "created": "07-14",
+   "created": "07-14 16:09",
    "drive": true,
    "cop": 0,
    "unres": 0,
    "title": "GridLayout_special種別トップタブ件数バッジ表示_bug"
+  },
+  {
+   "ticket": "1352",
+   "dev": "hung",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10942,
+     "cf": "ok",
+     "st": "merged"
+    }
+   ],
+   "created": "07-14 15:05",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "title": "出荷指示登録_配送業者便種/時間帯の名称表示と定期配送日の番兵値をAngularJSと一致"
   },
   {
    "ticket": "260",
@@ -62,11 +157,49 @@
      "st": "merged"
     }
    ],
-   "created": "07-14",
+   "created": "07-14 13:45",
    "drive": true,
    "cop": 2,
    "unres": 0,
    "title": "共通_ブラウザタブタイトル動的設定"
+  },
+  {
+   "ticket": "574",
+   "dev": "hung",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10932,
+     "cf": "ok",
+     "st": "open"
+    }
+   ],
+   "created": "07-14 13:39",
+   "drive": false,
+   "cop": 2,
+   "unres": 0,
+   "title": "移動_履歴明細 (screen 290) を Next.js に移行"
+  },
+  {
+   "ticket": "565",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10929,
+     "cf": "ok",
+     "st": "open"
+    }
+   ],
+   "created": "07-14 13:29",
+   "drive": false,
+   "cop": 7,
+   "unres": 0,
+   "title": "407_直接出庫_明細"
   },
   {
    "ticket": "1360",
@@ -87,11 +220,30 @@
      "st": "draft"
     }
    ],
-   "created": "07-14",
+   "created": "07-14 12:11",
    "drive": false,
    "cop": 9,
    "unres": 0,
    "title": "セッション失効時に middleware で集中的に /login へ遷移"
+  },
+  {
+   "ticket": "1314",
+   "dev": "minh",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10919,
+     "cf": "ok",
+     "st": "open"
+    }
+   ],
+   "created": "07-14 12:07",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "出荷実績_明細で500件超の選択時に上限判定が効かない不具合を修正"
   },
   {
    "ticket": "1322",
@@ -112,11 +264,30 @@
      "st": "merged"
     }
    ],
-   "created": "07-14",
+   "created": "07-14 11:40",
    "drive": true,
    "cop": 2,
    "unres": 0,
    "title": "取込結果モーダルに失敗件数を常時表示"
+  },
+  {
+   "ticket": "485",
+   "dev": "dat",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10913,
+     "cf": "ok",
+     "st": "open"
+    }
+   ],
+   "created": "07-14 10:46",
+   "drive": false,
+   "cop": 2,
+   "unres": 0,
+   "title": "作業分け(カスタム)の初期化API復活とReact初期値パリティ"
   },
   {
    "ticket": "285",
@@ -137,182 +308,11 @@
      "st": "merged"
     }
    ],
-   "created": "07-14",
+   "created": "07-14 09:24",
    "drive": true,
    "cop": 7,
    "unres": 0,
    "title": "共通_マイフィルタ削除確認ダイアログ追加"
-  },
-  {
-   "ticket": "1369",
-   "dev": "minh",
-   "bien": false,
-   "base": [],
-   "r629": [],
-   "r713": [
-    {
-     "num": 10963,
-     "cf": "ok",
-     "st": "open"
-    }
-   ],
-   "created": "07-14",
-   "drive": false,
-   "cop": 0,
-   "unres": 0,
-   "title": "240_出荷_加工登録・修正_無限ローディング修正"
-  },
-  {
-   "ticket": "1364",
-   "dev": "khoa",
-   "bien": false,
-   "base": [],
-   "r629": [],
-   "r713": [
-    {
-     "num": 10962,
-     "cf": "ok",
-     "st": "open"
-    }
-   ],
-   "created": "07-14",
-   "drive": false,
-   "cop": 1,
-   "unres": 0,
-   "title": "226_出荷_検品登録・修正_エラーダイアログ多言語対応"
-  },
-  {
-   "ticket": "1317",
-   "dev": "dat",
-   "bien": false,
-   "base": [],
-   "r629": [],
-   "r713": [
-    {
-     "num": 10957,
-     "cf": "ok",
-     "st": "merged"
-    }
-   ],
-   "created": "07-14",
-   "drive": false,
-   "cop": 0,
-   "unres": 0,
-   "title": "個口数0入力時のエラーメッセージをAngularと一致させる"
-  },
-  {
-   "ticket": "451",
-   "dev": "bien",
-   "bien": true,
-   "base": [],
-   "r629": [],
-   "r713": [
-    {
-     "num": 10955,
-     "cf": "ok",
-     "st": "merged"
-    }
-   ],
-   "created": "07-14",
-   "drive": true,
-   "cop": 2,
-   "unres": 2,
-   "title": "確認モーダルにチェックボックスゲートを追加"
-  },
-  {
-   "ticket": "1352",
-   "dev": "hung",
-   "bien": false,
-   "base": [],
-   "r629": [],
-   "r713": [
-    {
-     "num": 10942,
-     "cf": "ok",
-     "st": "merged"
-    }
-   ],
-   "created": "07-14",
-   "drive": true,
-   "cop": 0,
-   "unres": 0,
-   "title": "出荷指示登録_配送業者便種/時間帯の名称表示と定期配送日の番兵値をAngularJSと一致"
-  },
-  {
-   "ticket": "574",
-   "dev": "hung",
-   "bien": false,
-   "base": [],
-   "r629": [],
-   "r713": [
-    {
-     "num": 10932,
-     "cf": "ok",
-     "st": "open"
-    }
-   ],
-   "created": "07-14",
-   "drive": false,
-   "cop": 2,
-   "unres": 0,
-   "title": "移動_履歴明細 (screen 290) を Next.js に移行"
-  },
-  {
-   "ticket": "565",
-   "dev": "khoa",
-   "bien": false,
-   "base": [],
-   "r629": [],
-   "r713": [
-    {
-     "num": 10929,
-     "cf": "ok",
-     "st": "open"
-    }
-   ],
-   "created": "07-14",
-   "drive": false,
-   "cop": 7,
-   "unres": 0,
-   "title": "407_直接出庫_明細"
-  },
-  {
-   "ticket": "1314",
-   "dev": "minh",
-   "bien": false,
-   "base": [],
-   "r629": [],
-   "r713": [
-    {
-     "num": 10919,
-     "cf": "ok",
-     "st": "open"
-    }
-   ],
-   "created": "07-14",
-   "drive": false,
-   "cop": 0,
-   "unres": 0,
-   "title": "出荷実績_明細で500件超の選択時に上限判定が効かない不具合を修正"
-  },
-  {
-   "ticket": "485",
-   "dev": "dat",
-   "bien": false,
-   "base": [],
-   "r629": [],
-   "r713": [
-    {
-     "num": 10913,
-     "cf": "ok",
-     "st": "open"
-    }
-   ],
-   "created": "07-14",
-   "drive": false,
-   "cop": 2,
-   "unres": 0,
-   "title": "作業分け(カスタム)の初期化API復活とReact初期値パリティ"
   },
   {
    "ticket": "1307",
@@ -338,7 +338,7 @@
      "st": "merged"
     }
    ],
-   "created": "07-13",
+   "created": "07-13 22:54",
    "drive": true,
    "cop": 1,
    "unres": 0,
@@ -363,7 +363,7 @@
      "st": "open"
     }
    ],
-   "created": "07-13",
+   "created": "07-13 17:04",
    "drive": true,
    "cop": 6,
    "unres": 0,
@@ -388,7 +388,7 @@
      "st": "merged"
     }
    ],
-   "created": "07-13",
+   "created": "07-13 17:03",
    "drive": true,
    "cop": 3,
    "unres": 0,
@@ -413,7 +413,7 @@
      "st": "merged"
     }
    ],
-   "created": "07-13",
+   "created": "07-13 16:43",
    "drive": true,
    "cop": 6,
    "unres": 0,
@@ -432,7 +432,7 @@
      "st": "open"
     }
    ],
-   "created": "07-13",
+   "created": "07-13 15:51",
    "drive": false,
    "cop": 8,
    "unres": 0,
@@ -451,7 +451,7 @@
      "st": "open"
     }
    ],
-   "created": "07-13",
+   "created": "07-13 13:24",
    "drive": false,
    "cop": 4,
    "unres": 0,
@@ -470,7 +470,7 @@
      "st": "open"
     }
    ],
-   "created": "07-13",
+   "created": "07-13 11:33",
    "drive": false,
    "cop": 7,
    "unres": 0,
@@ -489,7 +489,7 @@
      "st": "open"
     }
    ],
-   "created": "07-13",
+   "created": "07-13 11:20",
    "drive": false,
    "cop": 9,
    "unres": 0,
@@ -506,7 +506,7 @@
     "cf": "ok",
     "st": "open"
    },
-   "created": "07-14",
+   "created": "07-14 14:04",
    "cop": 5,
    "unres": 1,
    "title": "bake RSC-NEW-07 (ブラウザタブタイトル generateMetadata) into scaffold"
@@ -520,7 +520,7 @@
     "cf": "ok",
     "st": "open"
    },
-   "created": "07-14",
+   "created": "07-14 13:32",
    "cop": 3,
    "unres": 0,
    "title": "scaffold のエラー/成功ダイアログ規約を alertByCode に統一 (テンプレ + API-NEW-02)"
@@ -534,7 +534,7 @@
     "cf": "bad",
     "st": "draft"
    },
-   "created": "07-13",
+   "created": "07-13 11:35",
    "cop": 16,
    "unres": 10,
    "title": "画面移行スキルに parity 教訓を反映 (270 由来)"
