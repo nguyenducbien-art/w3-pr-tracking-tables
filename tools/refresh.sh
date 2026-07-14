@@ -7,9 +7,7 @@ cd "$REPO" || exit 1
 {
   echo "=== $(date '+%F %T') ==="
   gh auth switch --user nguyenducbien-art >/dev/null 2>&1
-  # Sync CHỈ fast-forward (kéo commit mới về) — KHÔNG reset --hard → không xoá code đang sửa.
-  git fetch -q origin main 2>/dev/null
-  git merge -q --ff-only origin/main 2>/dev/null || echo "  (không ff được — bỏ qua sync, giữ nguyên local)"
+  # Máy này là nguồn code + commit duy nhất → KHÔNG kéo commit về (no fetch/merge/reset).
   python3 tools/fetch_build.py data.json
   rc=$?
   if [ "$rc" -eq 2 ]; then echo "no change → skip push"; exit 0; fi
