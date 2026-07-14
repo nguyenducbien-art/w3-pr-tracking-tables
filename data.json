@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-14 16:27",
+ "updated": "2026-07-14 16:30",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -58,7 +58,7 @@
     {
      "num": 10941,
      "cf": "ok",
-     "st": "open"
+     "st": "merged"
     }
    ],
    "created": "07-14",
@@ -133,7 +133,7 @@
     {
      "num": 10939,
      "cf": "ok",
-     "st": "open"
+     "st": "merged"
     }
    ],
    "created": "07-14",
@@ -141,6 +141,25 @@
    "cop": 7,
    "unres": 0,
    "title": "共通_マイフィルタ削除確認ダイアログ追加"
+  },
+  {
+   "ticket": "1317",
+   "dev": "dat",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10957,
+     "cf": "ok",
+     "st": "open"
+    }
+   ],
+   "created": "07-14",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "個口数0入力時のエラーメッセージをAngularと一致させる"
   },
   {
    "ticket": "1352",
