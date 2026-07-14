@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-14 16:57",
+ "updated": "2026-07-14 17:01",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -8,6 +8,7 @@
   "1360",
   "1322",
   "285",
+  "1364",
   "451",
   "1307",
   "1315",
@@ -143,6 +144,25 @@
    "title": "共通_マイフィルタ削除確認ダイアログ追加"
   },
   {
+   "ticket": "1364",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10962,
+     "cf": "ok",
+     "st": "open"
+    }
+   ],
+   "created": "07-14",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "226_出荷_検品登録・修正_エラーダイアログ多言語対応"
+  },
+  {
    "ticket": "1317",
    "dev": "dat",
    "bien": false,
@@ -152,7 +172,7 @@
     {
      "num": 10957,
      "cf": "ok",
-     "st": "open"
+     "st": "merged"
     }
    ],
    "created": "07-14",
@@ -208,7 +228,7 @@
    "r713": [
     {
      "num": 10940,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open"
     }
    ],
@@ -465,7 +485,7 @@
    "r713": [
     {
      "num": 10836,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open"
     }
    ],
