@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-14 17:38",
+ "updated": "2026-07-14 17:44",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -35,7 +35,7 @@
    "created": "07-14 17:20",
    "drive": false,
    "cop": 1,
-   "unres": 1,
+   "unres": 0,
    "title": "725_出荷検品_PCスキャン検品・729_送り状発行_多言語ラベル折返し/梱包数0送信"
   },
   {
