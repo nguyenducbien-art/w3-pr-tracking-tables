@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-14 15:07",
+ "updated": "2026-07-14 15:15",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -36,7 +36,7 @@
    "created": "07-14",
    "drive": true,
    "cop": 3,
-   "unres": 2,
+   "unres": 0,
    "title": "GridLayout_special種別トップタブ件数バッジ表示_bug"
   },
   {
@@ -91,7 +91,12 @@
     }
    ],
    "r629": [],
-   "r713": [],
+   "r713": [
+    {
+     "num": 10943,
+     "cf": "ok"
+    }
+   ],
    "created": "07-14",
    "drive": true,
    "cop": 2,
@@ -172,7 +177,7 @@
    "created": "07-14",
    "drive": false,
    "cop": 2,
-   "unres": 2,
+   "unres": 0,
    "title": "移動_履歴明細 (screen 290) を Next.js に移行"
   },
   {
