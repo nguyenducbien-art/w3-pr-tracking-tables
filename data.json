@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-14 17:04",
+ "updated": "2026-07-14 17:16",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -144,6 +144,25 @@
    "title": "共通_マイフィルタ削除確認ダイアログ追加"
   },
   {
+   "ticket": "1369",
+   "dev": "minh",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10963,
+     "cf": "ok",
+     "st": "open"
+    }
+   ],
+   "created": "07-14",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "240_出荷_加工登録・修正_無限ローディング修正"
+  },
+  {
    "ticket": "1364",
    "dev": "khoa",
    "bien": false,
@@ -218,25 +237,6 @@
    "cop": 0,
    "unres": 0,
    "title": "出荷指示登録_配送業者便種/時間帯の名称表示と定期配送日の番兵値をAngularJSと一致"
-  },
-  {
-   "ticket": "1440",
-   "dev": "minh",
-   "bien": false,
-   "base": [],
-   "r629": [],
-   "r713": [
-    {
-     "num": 10940,
-     "cf": "bad",
-     "st": "open"
-    }
-   ],
-   "created": "07-14",
-   "drive": false,
-   "cop": 3,
-   "unres": 0,
-   "title": "確認ダイアログに実行確認チェックボックスを復元（AngularJS createCModal 相当）"
   },
   {
    "ticket": "574",
