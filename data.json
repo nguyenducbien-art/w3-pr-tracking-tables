@@ -1,0 +1,339 @@
+{
+ "updated": "2026-07-14 14:48",
+ "repo": "dialog-inc/w3package_v2",
+ "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
+ "common": [
+  "285",
+  "260",
+  "1322",
+  "1360",
+  "1307",
+  "1310",
+  "1315",
+  "1430",
+  "451"
+ ],
+ "invalidBase": [],
+ "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
+ "main": [
+  {
+   "ticket": "285",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 10909,
+     "cf": "ok"
+    }
+   ],
+   "r713": [],
+   "created": "07-14",
+   "drive": true,
+   "cop": 7,
+   "unres": 0,
+   "title": "共通_マイフィルタ削除確認ダイアログ追加"
+  },
+  {
+   "ticket": "260",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 10933,
+     "cf": "ok"
+    }
+   ],
+   "r713": [],
+   "created": "07-14",
+   "drive": true,
+   "cop": 2,
+   "unres": 0,
+   "title": "共通_ブラウザタブタイトル動的設定"
+  },
+  {
+   "ticket": "1322",
+   "dev": "hung",
+   "base": [
+    {
+     "num": 10916,
+     "cf": "ok"
+    }
+   ],
+   "r713": [],
+   "created": "07-14",
+   "drive": true,
+   "cop": 2,
+   "unres": 0,
+   "title": "取込結果モーダルに失敗件数を常時表示"
+  },
+  {
+   "ticket": "1360",
+   "dev": "dat",
+   "base": [
+    {
+     "num": 10920,
+     "cf": "ok"
+    }
+   ],
+   "r713": [],
+   "created": "07-14",
+   "drive": false,
+   "cop": 9,
+   "unres": 0,
+   "title": "共通_セッション失効時に middleware で集中リダイレクト"
+  },
+  {
+   "ticket": "1307",
+   "dev": "minh",
+   "base": [
+    {
+     "num": 10896,
+     "cf": "ok"
+    }
+   ],
+   "r713": [
+    {
+     "num": 10897,
+     "cf": "ok"
+    },
+    {
+     "num": 10925,
+     "cf": "ok"
+    }
+   ],
+   "created": "07-13",
+   "drive": true,
+   "cop": 1,
+   "unres": 0,
+   "title": "エラー/成功ダイアログを Angular 版に一致"
+  },
+  {
+   "ticket": "1430",
+   "dev": "minh",
+   "base": [
+    {
+     "num": 10888,
+     "cf": "ok"
+    }
+   ],
+   "r713": [
+    {
+     "num": 10889,
+     "cf": "ok"
+    }
+   ],
+   "created": "07-13",
+   "drive": true,
+   "cop": 6,
+   "unres": 0,
+   "title": "共通FieldRenderer/date.ts 日付nullish番兵を空表示"
+  },
+  {
+   "ticket": "1315",
+   "dev": "khoa",
+   "base": [
+    {
+     "num": 10891,
+     "cf": "ok"
+    }
+   ],
+   "r713": [],
+   "created": "07-13",
+   "drive": true,
+   "cop": 6,
+   "unres": 0,
+   "title": "729_送り状発行_全画面ローディング (BusyOverlay)"
+  },
+  {
+   "ticket": "1310",
+   "dev": "dat",
+   "base": [
+    {
+     "num": 10890,
+     "cf": "ok"
+    }
+   ],
+   "r713": [],
+   "created": "07-13",
+   "drive": true,
+   "cop": 3,
+   "unres": 0,
+   "title": "グリッドのソート挙動を Kendo grid に合わせる"
+  },
+  {
+   "ticket": "451",
+   "dev": "khoa",
+   "base": [
+    {
+     "num": 10887,
+     "cf": "ok"
+    }
+   ],
+   "r713": [],
+   "created": "07-13",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "title": "確認モーダルにチェックボックスゲート追加"
+  },
+  {
+   "ticket": "485",
+   "dev": "dat",
+   "r713": [
+    {
+     "num": 10913,
+     "cf": "ok"
+    }
+   ],
+   "created": "07-14",
+   "drive": false,
+   "cop": 2,
+   "unres": 0,
+   "title": "作業分け(カスタム) 初期化API復活+React初期値パリティ"
+  },
+  {
+   "ticket": "1314",
+   "dev": "minh",
+   "r713": [
+    {
+     "num": 10919,
+     "cf": "ok"
+    }
+   ],
+   "created": "07-14",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "出荷実績_明細 500件超選択の上限判定 (E028)"
+  },
+  {
+   "ticket": "565",
+   "dev": "khoa",
+   "r713": [
+    {
+     "num": 10929,
+     "cf": "ok"
+    }
+   ],
+   "created": "07-14",
+   "drive": false,
+   "cop": 4,
+   "unres": 4,
+   "title": "407_直接出庫_明細 を Next.js 移行"
+  },
+  {
+   "ticket": "574",
+   "dev": "hung",
+   "r713": [
+    {
+     "num": 10932,
+     "cf": "ok"
+    }
+   ],
+   "created": "07-14",
+   "drive": false,
+   "cop": 2,
+   "unres": 2,
+   "title": "移動_履歴明細 (screen 290) を Next.js 移行"
+  },
+  {
+   "ticket": "544",
+   "dev": "minh",
+   "r713": [
+    {
+     "num": 10882,
+     "cf": "ok"
+    }
+   ],
+   "created": "07-13",
+   "drive": false,
+   "cop": 8,
+   "unres": 0,
+   "title": "在庫_明細 (247) を React 移行"
+  },
+  {
+   "ticket": "679",
+   "dev": "khoa",
+   "r713": [
+    {
+     "num": 10836,
+     "cf": "ok"
+    }
+   ],
+   "created": "07-13",
+   "drive": false,
+   "cop": 9,
+   "unres": 1,
+   "title": "244_在庫_一覧 (商品別)"
+  },
+  {
+   "ticket": "554",
+   "dev": "hung",
+   "r713": [
+    {
+     "num": 10844,
+     "cf": "ok"
+    }
+   ],
+   "created": "07-13",
+   "drive": false,
+   "cop": 4,
+   "unres": 0,
+   "title": "在庫変遷_履歴出力 (612) を Next.js 移行"
+  },
+  {
+   "ticket": "689",
+   "dev": "dat",
+   "r713": [
+    {
+     "num": 10837,
+     "cf": "ok"
+    }
+   ],
+   "created": "07-13",
+   "drive": false,
+   "cop": 7,
+   "unres": 0,
+   "title": "在庫_数量変更 (270) を React 移行"
+  }
+ ],
+ "scaffold": [
+  {
+   "ticket": "260",
+   "dev": "bien",
+   "bien": true,
+   "pr": {
+    "num": 10934,
+    "cf": "ok"
+   },
+   "created": "07-14",
+   "cop": 4,
+   "unres": 4,
+   "title": "bake RSC-NEW-07 (タブタイトル generateMetadata) を scaffold へ"
+  },
+  {
+   "ticket": "1307",
+   "dev": "minh",
+   "pr": {
+    "num": 10930,
+    "cf": "ok"
+   },
+   "created": "07-14",
+   "cop": 3,
+   "unres": 0,
+   "title": "scaffold エラー/成功ダイアログ規約を alertByCode に統一"
+  },
+  {
+   "ticket": "—",
+   "dev": "dat",
+   "pr": {
+    "num": 10838,
+    "cf": "bad"
+   },
+   "created": "07-13",
+   "cop": 16,
+   "unres": 10,
+   "title": "画面移行スキルに parity 教訓を反映 (270 由来)"
+  }
+ ]
+}
