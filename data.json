@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-14 15:57",
+ "updated": "2026-07-14 16:03",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -16,31 +16,6 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
-  {
-   "ticket": "1439",
-   "dev": "minh",
-   "bien": false,
-   "base": [
-    {
-     "num": 10937,
-     "cf": "ok",
-     "st": "open"
-    }
-   ],
-   "r629": [],
-   "r713": [
-    {
-     "num": 10938,
-     "cf": "ok",
-     "st": "open"
-    }
-   ],
-   "created": "07-14",
-   "drive": true,
-   "cop": 3,
-   "unres": 0,
-   "title": "GridLayout_special種別トップタブ件数バッジ表示_bug"
-  },
   {
    "ticket": "260",
    "dev": "bien",
@@ -370,7 +345,7 @@
    "created": "07-13",
    "drive": true,
    "cop": 2,
-   "unres": 2,
+   "unres": 1,
    "title": "確認モーダルにチェックボックスゲートを追加"
   },
   {
