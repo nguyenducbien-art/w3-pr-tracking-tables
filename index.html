@@ -208,11 +208,16 @@ function render(D){
    +'</div>';
   document.getElementById('app').innerHTML=html;
 }
+function fetchData(){
+  return fetch('data.json?t='+Date.now()).then(function(r){return r.json();}).then(render)
+    .catch(function(e){var a=document.getElementById('app'); if(!a.innerHTML) a.innerHTML='<p style="color:red;padding:20px">Fetch data.json error: '+e+'</p>';});
+}
 (function(){
   var el=document.getElementById('table-data');
   var txt=el?el.textContent.trim():'';
-  if(txt){ try{render(JSON.parse(txt));}catch(e){document.getElementById('app').innerHTML='<p style="color:red;padding:20px">JSON error: '+e+'</p>';} }
-  else{ fetch('data.json').then(function(r){return r.json();}).then(render).catch(function(e){document.getElementById('app').innerHTML='<p style="color:red;padding:20px">Fetch data.json error: '+e+'</p>';}); }
+  if(txt){ try{render(JSON.parse(txt));}catch(e){document.getElementById('app').innerHTML='<p style="color:red;padding:20px">JSON error: '+e+'</p>';} return; }
+  fetchData();
+  setInterval(fetchData, 300000);  // tự làm mới data mỗi 5 phút (chỉ chế độ fetch/Pages)
 })();
 document.addEventListener('click',function(e){
   var a=e.target.closest&&e.target.closest('a[href^="http"]');
