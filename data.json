@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-14 15:29",
+ "updated": "2026-07-14 15:28",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -23,14 +23,16 @@
    "base": [
     {
      "num": 10937,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "r629": [],
    "r713": [
     {
      "num": 10938,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "created": "07-14",
@@ -46,14 +48,16 @@
    "base": [
     {
      "num": 10933,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "r629": [],
    "r713": [
     {
      "num": 10941,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "created": "07-14",
@@ -69,14 +73,16 @@
    "base": [
     {
      "num": 10920,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "draft"
     }
    ],
    "r629": [],
    "r713": [
     {
      "num": 10944,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "created": "07-14",
@@ -92,14 +98,16 @@
    "base": [
     {
      "num": 10916,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "approved"
     }
    ],
    "r629": [],
    "r713": [
     {
      "num": 10943,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "created": "07-14",
@@ -115,14 +123,16 @@
    "base": [
     {
      "num": 10909,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "r629": [],
    "r713": [
     {
      "num": 10939,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "created": "07-14",
@@ -140,7 +150,8 @@
    "r713": [
     {
      "num": 10942,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "merged"
     }
    ],
    "created": "07-14",
@@ -158,7 +169,8 @@
    "r713": [
     {
      "num": 10940,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "created": "07-14",
@@ -176,7 +188,8 @@
    "r713": [
     {
      "num": 10932,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "created": "07-14",
@@ -194,7 +207,8 @@
    "r713": [
     {
      "num": 10929,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "created": "07-14",
@@ -212,7 +226,8 @@
    "r713": [
     {
      "num": 10919,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "created": "07-14",
@@ -230,7 +245,8 @@
    "r713": [
     {
      "num": 10913,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "created": "07-14",
@@ -246,18 +262,21 @@
    "base": [
     {
      "num": 10896,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "r629": [],
    "r713": [
     {
      "num": 10925,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     },
     {
      "num": 10897,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "created": "07-13",
@@ -273,7 +292,8 @@
    "base": [
     {
      "num": 10891,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "r629": [],
@@ -291,7 +311,8 @@
    "base": [
     {
      "num": 10890,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "r629": [],
@@ -309,14 +330,16 @@
    "base": [
     {
      "num": 10888,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "r629": [],
    "r713": [
     {
      "num": 10889,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "created": "07-13",
@@ -332,7 +355,8 @@
    "base": [
     {
      "num": 10887,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "r629": [],
@@ -352,7 +376,8 @@
    "r713": [
     {
      "num": 10882,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "created": "07-13",
@@ -370,7 +395,8 @@
    "r713": [
     {
      "num": 10844,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "created": "07-13",
@@ -388,7 +414,8 @@
    "r713": [
     {
      "num": 10837,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "created": "07-13",
@@ -406,7 +433,8 @@
    "r713": [
     {
      "num": 10836,
-     "cf": "ok"
+     "cf": "ok",
+     "st": "open"
     }
    ],
    "created": "07-13",
@@ -423,7 +451,8 @@
    "bien": true,
    "pr": {
     "num": 10934,
-    "cf": "ok"
+    "cf": "ok",
+    "st": "open"
    },
    "created": "07-14",
    "cop": 5,
@@ -436,7 +465,8 @@
    "bien": false,
    "pr": {
     "num": 10930,
-    "cf": "ok"
+    "cf": "ok",
+    "st": "open"
    },
    "created": "07-14",
    "cop": 3,
@@ -449,7 +479,8 @@
    "bien": false,
    "pr": {
     "num": 10838,
-    "cf": "bad"
+    "cf": "bad",
+    "st": "draft"
    },
    "created": "07-13",
    "cop": 16,

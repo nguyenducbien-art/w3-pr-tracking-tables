@@ -122,10 +122,12 @@
 function esc(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
 function render(D){
   var U=D.prUrlBase, COMMON=new Set(D.common), INVALID=new Set(D.invalidBase);
+  var PILL={merged:['merged','MERGED'],draft:['draft','DRAFT'],approved:['approved','APPROVED'],changes:['changes','CHANGES'],open:['open','OPEN']};
+  function pill(st){var x=PILL[st]||PILL.open;return '<span class="pill pill-'+x[0]+'">'+x[1]+'</span>';}
   function one(p,inv){
     var mark=p.cf==='ok'?'<span class="cf-ok">✓</span>':'<span class="cf-bad">✗</span>';
     var inb=inv?' <span class="badge-invalid" title="ルール違反">invalid</span>':'';
-    return '<a href="'+U+p.num+'" target="_blank" rel="noopener">#'+p.num+'</a>'+inb+' <span class="pill pill-open">OPEN</span> '+mark;
+    return '<a href="'+U+p.num+'" target="_blank" rel="noopener">#'+p.num+'</a>'+inb+' '+pill(p.st)+' '+mark;
   }
   function cell(prs,inv){
     if(!prs||!prs.length) return '<span class="cf-na">—</span>';
@@ -202,7 +204,10 @@ function render(D){
    +'<div class="scroll-wrap"><table style="min-width:1000px;"><thead><tr>'
      +'<th>Ticket</th><th>Dev</th><th>→scaffold</th><th>Created</th><th>Copilot</th><th>Unres.</th><th>Title</th>'
    +'</tr></thead><tbody>'+scfRows+'</tbody></table></div>'
-   +'<div class="footnote">Status tất cả = <span class="pill pill-open">OPEN</span>. Kanaya chưa review PR nào.<br>'
+   +'<div class="footnote">Status pill theo từng PR: '
+     +'<span class="pill pill-open">OPEN</span> <span class="pill pill-draft">DRAFT</span> '
+     +'<span class="pill pill-approved">APPROVED</span> <span class="pill pill-changes">CHANGES</span> '
+     +'<span class="pill pill-merged">MERGED</span>.<br>'
      +'Conflict: ✓ MERGEABLE / ✗ CONFLICTING. Report ✓ = có link Drive self-review.<br>'
      +'🔴 Ticket <b>common</b> đếm Copilot chỉ từ PR→base (bỏ r713 cùng code sync).</div>'
    +'</div>';
