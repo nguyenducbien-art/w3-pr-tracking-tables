@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-14 16:03",
+ "updated": "2026-07-14 16:08",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -293,11 +293,17 @@
     {
      "num": 10890,
      "cf": "ok",
-     "st": "open"
+     "st": "approved"
     }
    ],
    "r629": [],
-   "r713": [],
+   "r713": [
+    {
+     "num": 10948,
+     "cf": "ok",
+     "st": "open"
+    }
+   ],
    "created": "07-13",
    "drive": true,
    "cop": 3,
@@ -344,8 +350,8 @@
    "r713": [],
    "created": "07-13",
    "drive": true,
-   "cop": 2,
-   "unres": 1,
+   "cop": 7,
+   "unres": 6,
    "title": "確認モーダルにチェックボックスゲートを追加"
   },
   {
