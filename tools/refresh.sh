@@ -7,13 +7,15 @@ cd "$REPO" || exit 1
 {
   echo "=== $(date '+%F %T') ==="
   gh auth switch --user nguyenducbien-art >/dev/null 2>&1
-  git fetch -q origin main && git reset -q --hard origin/main   # repo bot-owned: luôn sạch
+  # Sync CHỈ fast-forward (kéo commit mới về) — KHÔNG reset --hard → không xoá code đang sửa.
+  git fetch -q origin main 2>/dev/null
+  git merge -q --ff-only origin/main 2>/dev/null || echo "  (không ff được — bỏ qua sync, giữ nguyên local)"
   python3 tools/fetch_build.py data.json
   rc=$?
   if [ "$rc" -eq 2 ]; then echo "no change → skip push"; exit 0; fi
   if [ "$rc" -ne 0 ]; then echo "fetch_build ERROR rc=$rc"; exit 1; fi
-  git add data.json
+  git add data.json                              # CHỈ stage data.json (không đụng file khác đang sửa)
   git -c user.name="biennguyen" -c user.email="biennguyen131311@gmail.com" \
       commit -q -m "auto-refresh data $(date '+%F %H:%M')"
-  git push -q origin main && echo "pushed"
+  git push -q origin main 2>/dev/null && echo "pushed" || echo "  push fail (có thể diverge — kiểm tra tay)"
 } >> "$LOG" 2>&1
