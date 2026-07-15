@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-15 15:53",
+ "updated": "2026-07-15 16:00",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -65,7 +65,7 @@
    "created": "07-15 15:33",
    "drive": false,
    "cop": 3,
-   "unres": 3,
+   "unres": 0,
    "title": "405_直接出庫_一覧"
   },
   {
@@ -409,8 +409,8 @@
    ],
    "created": "07-14 13:39",
    "drive": false,
-   "cop": 8,
-   "unres": 3,
+   "cop": 12,
+   "unres": 7,
    "title": "移動_履歴明細 (screen 290) を Next.js に移行"
   },
   {
