@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-15 10:06",
+ "updated": "2026-07-15 10:12",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -35,7 +35,7 @@
    "created": "07-14 17:20",
    "drive": false,
    "cop": 4,
-   "unres": 3,
+   "unres": 0,
    "title": "725_出荷検品_PCスキャン検品・729_送り状発行_多言語ラベル折返し/梱包数0送信"
   },
   {
@@ -192,7 +192,7 @@
    "r713": [
     {
      "num": 10932,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open"
     }
    ],
@@ -211,8 +211,8 @@
    "r713": [
     {
      "num": 10929,
-     "cf": "bad",
-     "st": "open"
+     "cf": "ok",
+     "st": "merged"
     }
    ],
    "created": "07-14 13:29",
@@ -454,8 +454,8 @@
    ],
    "created": "07-13 15:51",
    "drive": false,
-   "cop": 8,
-   "unres": 0,
+   "cop": 9,
+   "unres": 1,
    "title": "在庫_明細 (247) を React/Next.js に移行"
   },
   {
@@ -505,7 +505,7 @@
    "r713": [
     {
      "num": 10836,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open"
     }
    ],
