@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-15 16:17",
+ "updated": "2026-07-15 16:23",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -25,6 +25,25 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
   {
+   "ticket": "265",
+   "dev": "hung",
+   "bien": false,
+   "base": [
+    {
+     "num": 11009,
+     "cf": "ok",
+     "st": "open"
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "07-15 16:21",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "グリッド/CSV の日付番兵値に 1970/01/01・0000-00-00 を追加し AngularJS と一致"
+  },
+  {
    "ticket": "1428",
    "dev": "minh",
    "bien": false,
@@ -46,7 +65,7 @@
    "created": "07-15 15:38",
    "drive": true,
    "cop": 2,
-   "unres": 1,
+   "unres": 0,
    "title": "DataTable serverSync CSV の numeric 正規化 (grid=CSV パリティ)"
   },
   {
@@ -64,7 +83,7 @@
    ],
    "created": "07-15 15:33",
    "drive": false,
-   "cop": 4,
+   "cop": 5,
    "unres": 0,
    "title": "405_直接出庫_一覧"
   },
