@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-15 15:29",
+ "updated": "2026-07-15 15:35",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -23,6 +23,25 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "564",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10995,
+     "cf": "bad",
+     "st": "open"
+    }
+   ],
+   "created": "07-15 15:33",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "405_直接出庫_一覧"
+  },
   {
    "ticket": "1429",
    "dev": "dat",
@@ -50,6 +69,11 @@
    "r629": [],
    "r713": [
     {
+     "num": 10994,
+     "cf": "ok",
+     "st": "merged"
+    },
+    {
      "num": 10991,
      "cf": "ok",
      "st": "merged"
@@ -59,7 +83,7 @@
    "drive": false,
    "cop": 2,
    "unres": 1,
-   "title": "セッション失効時の 401 を /login へ集中遷移し失効モーダルを表示"
+   "title": "セッション失効 401 集中遷移を stocks ドメイン 4 画面へ適用"
   },
   {
    "ticket": "569",
@@ -76,8 +100,8 @@
    ],
    "created": "07-15 14:48",
    "drive": false,
-   "cop": 12,
-   "unres": 3,
+   "cop": 17,
+   "unres": 5,
    "title": "275_移動_対象在庫一覧"
   },
   {
@@ -127,7 +151,7 @@
    "r713": [
     {
      "num": 10979,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open"
     }
    ],
