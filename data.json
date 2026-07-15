@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-15 16:35",
+ "updated": "2026-07-15 16:41",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "265",
   "1428",
   "1429",
   "1360",
@@ -30,16 +31,16 @@
    "bien": false,
    "base": [
     {
-     "num": 11009,
+     "num": 11010,
      "cf": "ok",
      "st": "open"
     }
    ],
    "r629": [],
    "r713": [],
-   "created": "07-15 16:21",
+   "created": "07-15 16:36",
    "drive": false,
-   "cop": 7,
+   "cop": 3,
    "unres": 3,
    "title": "グリッド/CSV の日付番兵値に 1970/01/01・0000-00-00 を追加し AngularJS と一致"
   },
@@ -78,7 +79,7 @@
     {
      "num": 10995,
      "cf": "ok",
-     "st": "open"
+     "st": "merged"
     }
    ],
    "created": "07-15 15:33",
@@ -139,7 +140,7 @@
    "r713": [
     {
      "num": 10989,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open"
     }
    ],
