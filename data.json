@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-15 12:17",
+ "updated": "2026-07-15 12:22",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -37,7 +37,7 @@
    "created": "07-15 12:08",
    "drive": true,
    "cop": 3,
-   "unres": 3,
+   "unres": 0,
    "title": "一覧画面の登録系ボタン実行時のローディング/選択解除を Angular に合わせる"
   },
   {
@@ -56,7 +56,7 @@
    "created": "07-15 10:57",
    "drive": false,
    "cop": 5,
-   "unres": 5,
+   "unres": 0,
    "title": "出荷履歴_一覧のCSV全件出力モード「CSV選択」モーダルを実装"
   },
   {
