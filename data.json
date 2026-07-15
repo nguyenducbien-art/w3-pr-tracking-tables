@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-15 14:59",
+ "updated": "2026-07-15 15:10",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1429",
   "1360",
   "530",
   "1309",
@@ -23,6 +24,25 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
   {
+   "ticket": "1429",
+   "dev": "dat",
+   "bien": false,
+   "base": [
+    {
+     "num": 10993,
+     "cf": "ok",
+     "st": "open"
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "07-15 15:06",
+   "drive": false,
+   "cop": 3,
+   "unres": 3,
+   "title": "IF出力バッチのinterface名case誤りを修正しLinuxでのタイムアウトを解消"
+  },
+  {
    "ticket": "1360",
    "dev": "bien",
    "bien": true,
@@ -31,13 +51,13 @@
    "r713": [
     {
      "num": 10991,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open"
     }
    ],
    "created": "07-15 14:54",
    "drive": false,
-   "cop": 1,
+   "cop": 2,
    "unres": 1,
    "title": "セッション失効時の 401 を /login へ集中遷移し失効モーダルを表示"
   },
@@ -333,7 +353,7 @@
    "r713": [
     {
      "num": 10932,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open"
     }
    ],
@@ -627,7 +647,7 @@
     {
      "num": 10836,
      "cf": "ok",
-     "st": "open"
+     "st": "merged"
     }
    ],
    "created": "07-13 11:20",
