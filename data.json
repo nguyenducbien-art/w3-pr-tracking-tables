@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-15 09:42",
+ "updated": "2026-07-15 09:48",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -28,7 +28,7 @@
    "r713": [
     {
      "num": 10964,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open"
     }
    ],
@@ -192,7 +192,7 @@
    "r713": [
     {
      "num": 10932,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open"
     }
    ],
@@ -211,7 +211,7 @@
    "r713": [
     {
      "num": 10929,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open"
     }
    ],
@@ -473,8 +473,8 @@
    ],
    "created": "07-13 13:24",
    "drive": false,
-   "cop": 4,
-   "unres": 0,
+   "cop": 8,
+   "unres": 4,
    "title": "在庫変遷_履歴出力(screen_id=612)をNext.jsへ移行"
   },
   {
@@ -505,7 +505,7 @@
    "r713": [
     {
      "num": 10836,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open"
     }
    ],
