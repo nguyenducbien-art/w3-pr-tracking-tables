@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-15 15:23",
+ "updated": "2026-07-15 15:29",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -77,7 +77,7 @@
    "created": "07-15 14:48",
    "drive": false,
    "cop": 12,
-   "unres": 10,
+   "unres": 3,
    "title": "275_移動_対象在庫一覧"
   },
   {
