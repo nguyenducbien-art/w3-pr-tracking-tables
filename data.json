@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-15 15:16",
+ "updated": "2026-07-15 15:23",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -39,7 +39,7 @@
    "created": "07-15 15:06",
    "drive": false,
    "cop": 3,
-   "unres": 3,
+   "unres": 0,
    "title": "IF出力バッチのinterface名case誤りを修正しLinuxでのタイムアウトを解消"
   },
   {
@@ -76,8 +76,8 @@
    ],
    "created": "07-15 14:48",
    "drive": false,
-   "cop": 6,
-   "unres": 4,
+   "cop": 12,
+   "unres": 10,
    "title": "275_移動_対象在庫一覧"
   },
   {
@@ -127,7 +127,7 @@
    "r713": [
     {
      "num": 10979,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open"
     }
    ],
@@ -353,7 +353,7 @@
    "r713": [
     {
      "num": 10932,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open"
     }
    ],
