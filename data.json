@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-15 16:06",
+ "updated": "2026-07-15 16:11",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -46,7 +46,7 @@
    "created": "07-15 15:38",
    "drive": true,
    "cop": 2,
-   "unres": 2,
+   "unres": 1,
    "title": "DataTable serverSync CSV の numeric 正規化 (grid=CSV パリティ)"
   },
   {
@@ -120,7 +120,7 @@
    "r713": [
     {
      "num": 10989,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open"
     }
    ],
@@ -409,8 +409,8 @@
    ],
    "created": "07-14 13:39",
    "drive": false,
-   "cop": 12,
-   "unres": 7,
+   "cop": 14,
+   "unres": 9,
    "title": "移動_履歴明細 (screen 290) を Next.js に移行"
   },
   {
