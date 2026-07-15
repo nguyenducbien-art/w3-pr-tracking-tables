@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-15 10:18",
+ "updated": "2026-07-15 10:24",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -29,7 +29,7 @@
     {
      "num": 10964,
      "cf": "ok",
-     "st": "open"
+     "st": "merged"
     }
    ],
    "created": "07-14 17:20",
@@ -173,7 +173,7 @@
    "r713": [
     {
      "num": 10932,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open"
     }
    ],
@@ -430,13 +430,13 @@
     {
      "num": 10882,
      "cf": "ok",
-     "st": "approved"
+     "st": "open"
     }
    ],
    "created": "07-13 15:51",
    "drive": false,
-   "cop": 10,
-   "unres": 2,
+   "cop": 12,
+   "unres": 4,
    "title": "在庫_明細 (247) を React/Next.js に移行"
   },
   {
@@ -486,7 +486,7 @@
    "r713": [
     {
      "num": 10836,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open"
     }
    ],
