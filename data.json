@@ -1,11 +1,11 @@
 {
- "updated": "2026-07-15 17:40",
+ "updated": "2026-07-15 20:28",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1429",
   "265",
   "1428",
-  "1429",
   "1360",
   "530",
   "1309",
@@ -25,6 +25,25 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "1429",
+   "dev": "bien",
+   "bien": true,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11013,
+     "cf": "ok",
+     "st": "merged"
+    }
+   ],
+   "created": "07-15 17:53",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "IF出力バッチのinterface名case誤りを修正しLinuxでのタイムアウトを解消"
+  },
   {
    "ticket": "265",
    "dev": "hung",
@@ -87,25 +106,6 @@
    "cop": 5,
    "unres": 0,
    "title": "405_直接出庫_一覧"
-  },
-  {
-   "ticket": "1429",
-   "dev": "dat",
-   "bien": false,
-   "base": [
-    {
-     "num": 10993,
-     "cf": "ok",
-     "st": "open"
-    }
-   ],
-   "r629": [],
-   "r713": [],
-   "created": "07-15 15:06",
-   "drive": false,
-   "cop": 3,
-   "unres": 0,
-   "title": "IF出力バッチのinterface名case誤りを修正しLinuxでのタイムアウトを解消"
   },
   {
    "ticket": "1360",
@@ -729,20 +729,6 @@
  ],
  "scaffold": [
   {
-   "ticket": "1428",
-   "dev": "minh",
-   "bien": false,
-   "pr": {
-    "num": 11012,
-    "cf": "ok",
-    "st": "open"
-   },
-   "created": "07-15 17:35",
-   "cop": 0,
-   "unres": 0,
-   "title": "w3-frontend-standard §8.3 の既知制約を解消済みに更新"
-  },
-  {
    "ticket": "260",
    "dev": "bien",
    "bien": true,
@@ -757,7 +743,7 @@
    "title": "bake RSC-NEW-07 (ブラウザタブタイトル generateMetadata) into scaffold"
   },
   {
-   "ticket": "1307",
+   "ticket": "—",
    "dev": "minh",
    "bien": false,
    "pr": {
@@ -766,9 +752,9 @@
     "st": "open"
    },
    "created": "07-14 13:32",
-   "cop": 3,
+   "cop": 5,
    "unres": 0,
-   "title": "scaffold のエラー/成功ダイアログ規約を alertByCode に統一 (テンプレ + API-NEW-02)"
+   "title": "scaffold のエラー/成功ダイアログ規約を alertByCode に統一 (テンプレ + API-NEW-02) + §8.3 制約解消"
   },
   {
    "ticket": "—",
