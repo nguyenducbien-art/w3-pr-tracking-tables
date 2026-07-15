@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-15 12:29",
+ "updated": "2026-07-15 12:41",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -556,8 +556,8 @@
    ],
    "created": "07-13 11:20",
    "drive": false,
-   "cop": 10,
-   "unres": 0,
+   "cop": 17,
+   "unres": 7,
    "title": "244_在庫_一覧（商品別）"
   }
  ],
