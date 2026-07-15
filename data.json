@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-15 09:48",
+ "updated": "2026-07-15 09:54",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -192,7 +192,7 @@
    "r713": [
     {
      "num": 10932,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open"
     }
    ],
@@ -211,7 +211,7 @@
    "r713": [
     {
      "num": 10929,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open"
     }
    ],
@@ -300,7 +300,7 @@
     {
      "num": 10913,
      "cf": "ok",
-     "st": "open"
+     "st": "merged"
     }
    ],
    "created": "07-14 10:46",
