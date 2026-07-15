@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-15 15:41",
+ "updated": "2026-07-15 15:47",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -39,8 +39,8 @@
    "r713": [],
    "created": "07-15 15:38",
    "drive": true,
-   "cop": 0,
-   "unres": 0,
+   "cop": 1,
+   "unres": 1,
    "title": "DataTable serverSync CSV の numeric 正規化 (grid=CSV パリティ)"
   },
   {
