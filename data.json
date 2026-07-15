@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-15 11:42",
+ "updated": "2026-07-15 11:59",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -219,7 +219,7 @@
    "created": "07-14 13:39",
    "drive": false,
    "cop": 5,
-   "unres": 3,
+   "unres": 0,
    "title": "移動_履歴明細 (screen 290) を Next.js に移行"
   },
   {
