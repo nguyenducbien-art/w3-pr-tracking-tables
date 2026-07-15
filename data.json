@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-15 14:27",
+ "updated": "2026-07-15 14:33",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -277,8 +277,8 @@
    ],
    "created": "07-14 13:45",
    "drive": true,
-   "cop": 2,
-   "unres": 0,
+   "cop": 7,
+   "unres": 5,
    "title": "共通_ブラウザタブタイトル動的設定"
   },
   {
@@ -290,7 +290,7 @@
    "r713": [
     {
      "num": 10932,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open"
     }
    ],
@@ -608,7 +608,7 @@
    "r713": [
     {
      "num": 10836,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open"
     }
    ],
