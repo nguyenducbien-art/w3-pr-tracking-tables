@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-15 15:35",
+ "updated": "2026-07-15 15:41",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1428",
   "1429",
   "1360",
   "530",
@@ -24,6 +25,25 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
   {
+   "ticket": "1428",
+   "dev": "minh",
+   "bien": false,
+   "base": [
+    {
+     "num": 10996,
+     "cf": "ok",
+     "st": "open"
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "07-15 15:38",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "title": "DataTable serverSync CSV の numeric 正規化 (grid=CSV パリティ)"
+  },
+  {
    "ticket": "564",
    "dev": "khoa",
    "bien": false,
@@ -38,8 +58,8 @@
    ],
    "created": "07-15 15:33",
    "drive": false,
-   "cop": 0,
-   "unres": 0,
+   "cop": 3,
+   "unres": 3,
    "title": "405_直接出庫_一覧"
   },
   {
@@ -100,8 +120,8 @@
    ],
    "created": "07-15 14:48",
    "drive": false,
-   "cop": 17,
-   "unres": 5,
+   "cop": 22,
+   "unres": 10,
    "title": "275_移動_対象在庫一覧"
   },
   {
@@ -151,7 +171,7 @@
    "r713": [
     {
      "num": 10979,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open"
     }
    ],
