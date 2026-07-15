@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-15 12:11",
+ "updated": "2026-07-15 12:17",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -36,8 +36,8 @@
    "r713": [],
    "created": "07-15 12:08",
    "drive": true,
-   "cop": 0,
-   "unres": 0,
+   "cop": 3,
+   "unres": 3,
    "title": "一覧画面の登録系ボタン実行時のローディング/選択解除を Angular に合わせる"
   },
   {
