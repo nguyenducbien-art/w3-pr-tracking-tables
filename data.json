@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-15 11:36",
+ "updated": "2026-07-15 11:42",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -212,14 +212,14 @@
    "r713": [
     {
      "num": 10932,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open"
     }
    ],
    "created": "07-14 13:39",
    "drive": false,
-   "cop": 2,
-   "unres": 0,
+   "cop": 5,
+   "unres": 3,
    "title": "移動_履歴明細 (screen 290) を Next.js に移行"
   },
   {
@@ -480,7 +480,7 @@
    "created": "07-13 15:51",
    "drive": false,
    "cop": 25,
-   "unres": 1,
+   "unres": 0,
    "title": "在庫_明細 (247) を React/Next.js に移行"
   },
   {
