@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-15 13:27",
+ "updated": "2026-07-15 14:27",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "530",
   "1309",
   "1441",
   "1348",
@@ -22,6 +23,25 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
   {
+   "ticket": "530",
+   "dev": "khoa",
+   "bien": false,
+   "base": [
+    {
+     "num": 10985,
+     "cf": "ok",
+     "st": "open"
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "07-15 14:22",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "title": "明細画面の URI Too Long (414) を空グリッド表示に (AngularJS パリティ)"
+  },
+  {
    "ticket": "1316",
    "dev": "minh",
    "bien": false,
@@ -31,7 +51,7 @@
     {
      "num": 10981,
      "cf": "ok",
-     "st": "open"
+     "st": "merged"
     }
    ],
    "created": "07-15 13:26",
@@ -270,7 +290,7 @@
    "r713": [
     {
      "num": 10932,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open"
     }
    ],
@@ -588,7 +608,7 @@
    "r713": [
     {
      "num": 10836,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open"
     }
    ],
