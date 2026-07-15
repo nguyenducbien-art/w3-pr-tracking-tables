@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-15 17:17",
+ "updated": "2026-07-15 17:40",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -728,6 +728,20 @@
   }
  ],
  "scaffold": [
+  {
+   "ticket": "1428",
+   "dev": "minh",
+   "bien": false,
+   "pr": {
+    "num": 11012,
+    "cf": "ok",
+    "st": "open"
+   },
+   "created": "07-15 17:35",
+   "cop": 0,
+   "unres": 0,
+   "title": "w3-frontend-standard §8.3 の既知制約を解消済みに更新"
+  },
   {
    "ticket": "260",
    "dev": "bien",
