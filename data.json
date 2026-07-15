@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-15 15:47",
+ "updated": "2026-07-15 15:53",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -36,11 +36,17 @@
     }
    ],
    "r629": [],
-   "r713": [],
+   "r713": [
+    {
+     "num": 10998,
+     "cf": "ok",
+     "st": "open"
+    }
+   ],
    "created": "07-15 15:38",
    "drive": true,
-   "cop": 1,
-   "unres": 1,
+   "cop": 2,
+   "unres": 2,
    "title": "DataTable serverSync CSV の numeric 正規化 (grid=CSV パリティ)"
   },
   {
@@ -52,7 +58,7 @@
    "r713": [
     {
      "num": 10995,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open"
     }
    ],
@@ -397,7 +403,7 @@
    "r713": [
     {
      "num": 10932,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open"
     }
    ],
