@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-15 10:54",
+ "updated": "2026-07-15 11:00",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1441",
   "1348",
   "1364",
   "451",
@@ -19,6 +20,25 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "1441",
+   "dev": "hung",
+   "bien": false,
+   "base": [
+    {
+     "num": 10970,
+     "cf": "ok",
+     "st": "open"
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "07-15 10:57",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "出荷履歴_一覧のCSV全件出力モード「CSV選択」モーダルを実装"
+  },
   {
    "ticket": "913",
    "dev": "dat",
@@ -455,7 +475,7 @@
    "created": "07-13 15:51",
    "drive": false,
    "cop": 20,
-   "unres": 8,
+   "unres": 1,
    "title": "在庫_明細 (247) を React/Next.js に移行"
   },
   {
