@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-15 12:05",
+ "updated": "2026-07-15 12:11",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1309",
   "1441",
   "1348",
   "1364",
@@ -20,6 +21,25 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "1309",
+   "dev": "khoa",
+   "bien": false,
+   "base": [
+    {
+     "num": 10975,
+     "cf": "ok",
+     "st": "open"
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "07-15 12:08",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "title": "一覧画面の登録系ボタン実行時のローディング/選択解除を Angular に合わせる"
+  },
   {
    "ticket": "1441",
    "dev": "hung",
