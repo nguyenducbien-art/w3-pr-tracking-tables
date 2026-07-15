@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-15 13:10",
+ "updated": "2026-07-15 13:16",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -37,7 +37,7 @@
    "created": "07-15 13:02",
    "drive": false,
    "cop": 2,
-   "unres": 2,
+   "unres": 0,
    "title": "364_荷姿変更_明細"
   },
   {
@@ -251,7 +251,7 @@
    "r713": [
     {
      "num": 10932,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open"
     }
    ],
@@ -569,7 +569,7 @@
    "r713": [
     {
      "num": 10836,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open"
     }
    ],
