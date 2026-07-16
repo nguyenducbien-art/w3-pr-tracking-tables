@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-16 14:06",
+ "updated": "2026-07-16 14:25",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -26,6 +26,25 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "567",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11040,
+     "cf": "ok",
+     "st": "open"
+    }
+   ],
+   "created": "07-16 14:18",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "Screen 412"
+  },
   {
    "ticket": "1367",
    "dev": "hung",
@@ -217,7 +236,7 @@
     {
      "num": 11035,
      "cf": "ok",
-     "st": "open"
+     "st": "merged"
     }
    ],
    "created": "07-15 14:22",
@@ -279,8 +298,8 @@
    "r713": [
     {
      "num": 11037,
-     "cf": "bad",
-     "st": "open"
+     "cf": "ok",
+     "st": "merged"
     }
    ],
    "created": "07-15 12:08",
