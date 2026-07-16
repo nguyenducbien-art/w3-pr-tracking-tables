@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-16 16:02",
+ "updated": "2026-07-16 16:39",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -46,7 +46,7 @@
    "created": "07-16 14:18",
    "drive": false,
    "cop": 4,
-   "unres": 4,
+   "unres": 0,
    "title": "Screen 412"
   },
   {
