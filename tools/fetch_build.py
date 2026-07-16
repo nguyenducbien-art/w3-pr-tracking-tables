@@ -64,7 +64,7 @@ def gh_list(branch):
             if p["state"] != "CLOSED" and p["createdAt"][:10] >= SINCE]
 
 _Q = ('query($n:Int!){repository(owner:"%s",name:"%s"){pullRequest(number:$n){'
-      'state isDraft reviewDecision mergeable body reviewThreads(first:100){nodes{isResolved '
+      'state isDraft reviewDecision mergeable commits{totalCount} body reviewThreads(first:100){nodes{isResolved '
       'comments(first:1){nodes{author{login}}}}}}}}' % (OWNER, NAME))
 
 def status_of(d):
@@ -82,7 +82,8 @@ def pr_detail(n):
     total = len(th); unres = len([t for t in th if not t["isResolved"]])
     drive = bool(re.search(r'drive\.google\.com', d.get("body") or "", re.I))
     cf = "bad" if d.get("mergeable") == "CONFLICTING" else "ok"
-    return {"cop": total, "unres": unres, "drive": drive, "cf": cf, "st": status_of(d)}
+    nc = (d.get("commits") or {}).get("totalCount", 0)   # số commit của PR (branch ahead base)
+    return {"cop": total, "unres": unres, "drive": drive, "cf": cf, "st": status_of(d), "nc": nc}
 
 def build():
     ensure_account()
@@ -97,7 +98,7 @@ def build():
             if not tk: continue
             t = tickets.setdefault(tk, {"base":[], "r629":[], "r713":[], "meta":[], "common":False})
             det = pr_detail(p["number"])
-            t[key].append({"num": p["number"], "cf": det["cf"], "st": det["st"]})
+            t[key].append({"num": p["number"], "cf": det["cf"], "st": det["st"], "nc": det["nc"]})
             t["meta"].append({"num":p["number"],"key":key,"author":p["author"]["login"],
                               "created":p["createdAt"],"title":p["title"],"det":det})
             if seg.startswith("common-"): t["common"] = True
@@ -129,7 +130,7 @@ def build():
         det = pr_detail(p["number"])
         dev = dev_of(p["author"]["login"])
         scaffold.append({"ticket":ticket_from_title(p["title"]) or "—","dev":dev,"bien":dev=="bien",
-                         "pr":{"num":p["number"],"cf":det["cf"],"st":det["st"]},"created":fmt_dt(p["createdAt"]),
+                         "pr":{"num":p["number"],"cf":det["cf"],"st":det["st"],"nc":det["nc"]},"created":fmt_dt(p["createdAt"]),
                          "cop":det["cop"],"unres":det["unres"],"title":clean_title(p["title"])})
     scaffold.sort(key=lambda m:m["created"], reverse=True)
 

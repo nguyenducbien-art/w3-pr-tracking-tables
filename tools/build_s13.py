@@ -17,7 +17,8 @@ function render(D){
   function one(p,inv){
     var mark=p.cf==='ok'?'<span class="cf-ok">✓</span>':'<span class="cf-bad">✗</span>';
     var inb=inv?' <span class="badge-invalid" title="ルール違反">invalid</span>':'';
-    return '<a href="'+U+p.num+'" target="_blank" rel="noopener">#'+p.num+'</a>'+inb+' '+pill(p.st)+' '+mark;
+    var nc=(p.nc!=null)?' <span class="commits" title="số commit trong PR (branch vượt base)">'+p.nc+'c</span>':'';
+    return '<a href="'+U+p.num+'" target="_blank" rel="noopener">#'+p.num+'</a>'+inb+' '+pill(p.st)+' '+mark+nc;
   }
   function cell(prs,inv){
     if(!prs||!prs.length) return '<span class="cf-na">—</span>';

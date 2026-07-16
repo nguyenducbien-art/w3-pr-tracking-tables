@@ -114,6 +114,7 @@
   .cf-unk { color: var(--pill-changes-fg); font-weight: 700; }
   .badge-common { display: inline-block; padding: 1px 5px; border-radius: 3px; background: var(--pill-draft-bg); color: var(--pill-draft-fg); font-size: 9px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; vertical-align: middle; }
   .badge-invalid { display: inline-block; padding: 1px 5px; border-radius: 3px; background: var(--unresolved-bg); color: var(--unresolved-fg); font-size: 9px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; vertical-align: middle; }
+  .commits { display: inline-block; padding: 0 4px; border-radius: 3px; background: var(--border-light); color: var(--text-dim); font-family: "SF Mono","Fira Code",ui-monospace,monospace; font-size: 10px; font-weight: 600; vertical-align: middle; }
 </style>
 </head>
 <body>
@@ -128,7 +129,8 @@ function render(D){
   function one(p,inv){
     var mark=p.cf==='ok'?'<span class="cf-ok">✓</span>':'<span class="cf-bad">✗</span>';
     var inb=inv?' <span class="badge-invalid" title="ルール違反">invalid</span>':'';
-    return '<a href="'+U+p.num+'" target="_blank" rel="noopener">#'+p.num+'</a>'+inb+' '+pill(p.st)+' '+mark;
+    var nc=(p.nc!=null)?' <span class="commits" title="số commit trong PR (branch vượt base)">'+p.nc+'c</span>':'';
+    return '<a href="'+U+p.num+'" target="_blank" rel="noopener">#'+p.num+'</a>'+inb+' '+pill(p.st)+' '+mark+nc;
   }
   function cell(prs,inv){
     if(!prs||!prs.length) return '<span class="cf-na">—</span>';

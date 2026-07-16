@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-16 14:38",
+ "updated": "2026-07-16 14:55",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -36,7 +36,8 @@
     {
      "num": 11040,
      "cf": "ok",
-     "st": "open"
+     "st": "open",
+     "nc": 1
     }
    ],
    "created": "07-16 14:18",
@@ -53,7 +54,8 @@
     {
      "num": 11033,
      "cf": "ok",
-     "st": "open"
+     "st": "open",
+     "nc": 2
     }
    ],
    "r629": [],
@@ -72,7 +74,8 @@
     {
      "num": 11014,
      "cf": "ok",
-     "st": "open"
+     "st": "open",
+     "nc": 7
     }
    ],
    "r629": [],
@@ -80,7 +83,8 @@
     {
      "num": 11015,
      "cf": "ok",
-     "st": "draft"
+     "st": "draft",
+     "nc": 7
     }
    ],
    "created": "07-15 23:09",
@@ -99,7 +103,8 @@
     {
      "num": 11013,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 2
     }
    ],
    "created": "07-15 17:53",
@@ -116,7 +121,8 @@
     {
      "num": 11010,
      "cf": "ok",
-     "st": "approved"
+     "st": "approved",
+     "nc": 2
     }
    ],
    "r629": [],
@@ -124,7 +130,8 @@
     {
      "num": 11039,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 2
     }
    ],
    "created": "07-15 16:36",
@@ -141,7 +148,8 @@
     {
      "num": 10996,
      "cf": "ok",
-     "st": "approved"
+     "st": "approved",
+     "nc": 4
     }
    ],
    "r629": [],
@@ -149,7 +157,8 @@
     {
      "num": 10998,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 4
     }
    ],
    "created": "07-15 15:38",
@@ -168,7 +177,8 @@
     {
      "num": 10995,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 4
     }
    ],
    "created": "07-15 15:33",
@@ -187,12 +197,14 @@
     {
      "num": 10994,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 1
     },
     {
      "num": 10991,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 2
     }
    ],
    "created": "07-15 14:54",
@@ -211,7 +223,8 @@
     {
      "num": 10989,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 9
     }
    ],
    "created": "07-15 14:48",
@@ -228,7 +241,8 @@
     {
      "num": 10985,
      "cf": "ok",
-     "st": "approved"
+     "st": "approved",
+     "nc": 1
     }
    ],
    "r629": [],
@@ -236,7 +250,8 @@
     {
      "num": 11035,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 1
     }
    ],
    "created": "07-15 14:22",
@@ -255,7 +270,8 @@
     {
      "num": 10981,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 1
     }
    ],
    "created": "07-15 13:26",
@@ -274,7 +290,8 @@
     {
      "num": 10979,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 3
     }
    ],
    "created": "07-15 13:02",
@@ -291,7 +308,8 @@
     {
      "num": 10975,
      "cf": "ok",
-     "st": "approved"
+     "st": "approved",
+     "nc": 145
     }
    ],
    "r629": [],
@@ -299,7 +317,8 @@
     {
      "num": 11037,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 3
     }
    ],
    "created": "07-15 12:08",
@@ -318,7 +337,8 @@
     {
      "num": 10969,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 4
     }
    ],
    "created": "07-15 10:36",
@@ -337,7 +357,8 @@
     {
      "num": 10964,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 3
     }
    ],
    "created": "07-14 17:20",
@@ -356,7 +377,8 @@
     {
      "num": 10962,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 1
     }
    ],
    "created": "07-14 16:58",
@@ -375,7 +397,8 @@
     {
      "num": 10957,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 1
     }
    ],
    "created": "07-14 16:28",
@@ -394,7 +417,8 @@
     {
      "num": 10955,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 4
     }
    ],
    "created": "07-14 16:20",
@@ -411,7 +435,8 @@
     {
      "num": 10950,
      "cf": "ok",
-     "st": "approved"
+     "st": "approved",
+     "nc": 4
     }
    ],
    "r629": [],
@@ -419,7 +444,8 @@
     {
      "num": 10951,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 4
     }
    ],
    "created": "07-14 16:09",
@@ -438,7 +464,8 @@
     {
      "num": 10942,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 1
     }
    ],
    "created": "07-14 15:05",
@@ -455,7 +482,8 @@
     {
      "num": 10933,
      "cf": "ok",
-     "st": "open"
+     "st": "open",
+     "nc": 3
     }
    ],
    "r629": [],
@@ -463,12 +491,14 @@
     {
      "num": 10988,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 1
     },
     {
      "num": 10941,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 2
     }
    ],
    "created": "07-14 13:45",
@@ -487,7 +517,8 @@
     {
      "num": 10932,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 6
     }
    ],
    "created": "07-14 13:39",
@@ -506,7 +537,8 @@
     {
      "num": 10929,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 3
     }
    ],
    "created": "07-14 13:29",
@@ -525,7 +557,8 @@
     {
      "num": 10919,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 1
     }
    ],
    "created": "07-14 12:07",
@@ -542,7 +575,8 @@
     {
      "num": 10916,
      "cf": "ok",
-     "st": "approved"
+     "st": "approved",
+     "nc": 1
     }
    ],
    "r629": [],
@@ -550,7 +584,8 @@
     {
      "num": 10943,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 1
     }
    ],
    "created": "07-14 11:40",
@@ -569,7 +604,8 @@
     {
      "num": 10913,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 2
     }
    ],
    "created": "07-14 10:46",
@@ -586,7 +622,8 @@
     {
      "num": 10909,
      "cf": "ok",
-     "st": "open"
+     "st": "open",
+     "nc": 6
     }
    ],
    "r629": [],
@@ -594,7 +631,8 @@
     {
      "num": 10939,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 6
     }
    ],
    "created": "07-14 09:24",
@@ -611,7 +649,8 @@
     {
      "num": 10896,
      "cf": "ok",
-     "st": "approved"
+     "st": "approved",
+     "nc": 3
     }
    ],
    "r629": [],
@@ -619,23 +658,26 @@
     {
      "num": 11041,
      "cf": "ok",
-     "st": "open"
+     "st": "open",
+     "nc": 2
     },
     {
      "num": 10925,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 4
     },
     {
      "num": 10897,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 2
     }
    ],
    "created": "07-13 22:54",
    "drive": true,
    "cop": 5,
-   "unres": 4,
+   "unres": 1,
    "title": "エラーダイアログ共通処理を Angular 版に一致 (共通コンポーネント)"
   },
   {
@@ -646,7 +688,8 @@
     {
      "num": 10891,
      "cf": "ok",
-     "st": "approved"
+     "st": "approved",
+     "nc": 2
     }
    ],
    "r629": [],
@@ -654,7 +697,8 @@
     {
      "num": 10947,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 3
     }
    ],
    "created": "07-13 17:04",
@@ -671,7 +715,8 @@
     {
      "num": 10890,
      "cf": "ok",
-     "st": "approved"
+     "st": "approved",
+     "nc": 8
     }
    ],
    "r629": [],
@@ -679,12 +724,14 @@
     {
      "num": 11018,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 1
     },
     {
      "num": 10948,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 7
     }
    ],
    "created": "07-13 17:03",
@@ -701,7 +748,8 @@
     {
      "num": 10888,
      "cf": "ok",
-     "st": "approved"
+     "st": "approved",
+     "nc": 5
     }
    ],
    "r629": [],
@@ -709,12 +757,14 @@
     {
      "num": 10971,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 1
     },
     {
      "num": 10889,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 5
     }
    ],
    "created": "07-13 16:43",
@@ -733,7 +783,8 @@
     {
      "num": 10882,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 15
     }
    ],
    "created": "07-13 15:51",
@@ -752,7 +803,8 @@
     {
      "num": 10844,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 2
     }
    ],
    "created": "07-13 13:24",
@@ -771,7 +823,8 @@
     {
      "num": 10837,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 4
     }
    ],
    "created": "07-13 11:33",
@@ -790,7 +843,8 @@
     {
      "num": 10836,
      "cf": "ok",
-     "st": "merged"
+     "st": "merged",
+     "nc": 4
     }
    ],
    "created": "07-13 11:20",
@@ -808,7 +862,8 @@
    "pr": {
     "num": 10934,
     "cf": "ok",
-    "st": "draft"
+    "st": "draft",
+    "nc": 4
    },
    "created": "07-14 14:04",
    "cop": 5,
@@ -822,7 +877,8 @@
    "pr": {
     "num": 10930,
     "cf": "ok",
-    "st": "open"
+    "st": "open",
+    "nc": 4
    },
    "created": "07-14 13:32",
    "cop": 5,
@@ -836,7 +892,8 @@
    "pr": {
     "num": 10838,
     "cf": "bad",
-    "st": "draft"
+    "st": "draft",
+    "nc": 6
    },
    "created": "07-13 11:35",
    "cop": 16,
