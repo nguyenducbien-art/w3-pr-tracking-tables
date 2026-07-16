@@ -18,7 +18,8 @@ function render(D){
     var mark=p.cf==='ok'?'<span class="cf-ok">✓</span>':'<span class="cf-bad">✗</span>';
     var inb=inv?' <span class="badge-invalid" title="ルール違反">invalid</span>':'';
     var nc=(p.nc!=null)?' <span class="commits" title="số commit trong PR (branch vượt base)">'+p.nc+'c</span>':'';
-    return '<a href="'+U+p.num+'" target="_blank" rel="noopener">#'+p.num+'</a>'+inb+' '+pill(p.st)+' '+mark+nc;
+    var df=(p.add!=null||p.del!=null)?' <span class="adds" title="số dòng thêm">+'+(p.add||0)+'</span><span class="dels" title="số dòng xoá">−'+(p.del||0)+'</span>':'';
+    return '<a href="'+U+p.num+'" target="_blank" rel="noopener">#'+p.num+'</a>'+inb+' '+pill(p.st)+' '+mark+nc+df;
   }
   function cell(prs,inv){
     if(!prs||!prs.length) return '<span class="cf-na">—</span>';
