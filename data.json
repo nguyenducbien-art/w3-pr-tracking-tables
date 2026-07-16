@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-16 13:37",
+ "updated": "2026-07-16 13:42",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -41,8 +41,8 @@
    "r713": [],
    "created": "07-16 13:30",
    "drive": true,
-   "cop": 0,
-   "unres": 0,
+   "cop": 2,
+   "unres": 2,
    "title": "出荷履歴_一覧のCSV全件出力モード「CSV選択」モーダルを実装"
   },
   {
