@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-16 17:21",
+ "updated": "2026-07-16 17:27",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1454",
   "1367",
   "1450",
   "1429",
@@ -26,6 +27,39 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "1454",
+   "dev": "dat",
+   "bien": false,
+   "base": [
+    {
+     "num": 11052,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 73,
+     "del": 0,
+     "fc": 2
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11053,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 15,
+     "del": 0,
+     "fc": 13
+    }
+   ],
+   "created": "07-16 17:20",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "title": "EditScreenShell に全画面ローディング busy prop を追加"
+  },
   {
    "ticket": "567",
    "dev": "khoa",
