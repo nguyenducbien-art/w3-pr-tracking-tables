@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-16 13:54",
+ "updated": "2026-07-16 14:06",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -101,9 +101,15 @@
     }
    ],
    "r629": [],
-   "r713": [],
+   "r713": [
+    {
+     "num": 11039,
+     "cf": "ok",
+     "st": "open"
+    }
+   ],
    "created": "07-15 16:36",
-   "drive": false,
+   "drive": true,
    "cop": 3,
    "unres": 0,
    "title": "グリッド/CSV の日付番兵値に 1970/01/01・0000-00-00 を追加し AngularJS と一致"
