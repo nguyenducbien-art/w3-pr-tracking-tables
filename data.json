@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-15 20:28",
+ "updated": "2026-07-16 09:25",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1450",
   "1429",
   "265",
   "1428",
@@ -25,6 +26,31 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "1450",
+   "dev": "minh",
+   "bien": false,
+   "base": [
+    {
+     "num": 11014,
+     "cf": "ok",
+     "st": "open"
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11015,
+     "cf": "ok",
+     "st": "open"
+    }
+   ],
+   "created": "07-15 23:09",
+   "drive": true,
+   "cop": 9,
+   "unres": 0,
+   "title": "一覧共通コンポーネントに検索エリア追加・件数バッジ位置是正"
+  },
   {
    "ticket": "1429",
    "dev": "bien",
@@ -240,9 +266,9 @@
    "r629": [],
    "r713": [],
    "created": "07-15 10:57",
-   "drive": false,
-   "cop": 7,
-   "unres": 2,
+   "drive": true,
+   "cop": 11,
+   "unres": 0,
    "title": "出荷履歴_一覧のCSV全件出力モード「CSV選択」モーダルを実装"
   },
   {
