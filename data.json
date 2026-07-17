@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-16 17:57",
+ "updated": "2026-07-17 09:30",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -101,8 +101,8 @@
      "num": 11033,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 624,
+     "nc": 3,
+     "add": 632,
      "del": 1,
      "fc": 7
     }
@@ -110,9 +110,9 @@
    "r629": [],
    "r713": [],
    "created": "07-16 13:30",
-   "drive": false,
-   "cop": 2,
-   "unres": 0,
+   "drive": true,
+   "cop": 10,
+   "unres": 8,
    "title": "出荷履歴_一覧のCSV全件出力モード「CSV選択」モーダルを実装"
   },
   {
@@ -807,14 +807,23 @@
      "num": 10896,
      "cf": "ok",
      "st": "approved",
-     "nc": 3,
-     "add": 968,
-     "del": 94,
-     "fc": 23
+     "nc": 4,
+     "add": 975,
+     "del": 97,
+     "fc": 24
     }
    ],
    "r629": [],
    "r713": [
+    {
+     "num": 11063,
+     "cf": "bad",
+     "st": "open",
+     "nc": 2,
+     "add": 446,
+     "del": 41,
+     "fc": 14
+    },
     {
      "num": 11041,
      "cf": "ok",
@@ -845,8 +854,8 @@
    ],
    "created": "07-13 22:54",
    "drive": true,
-   "cop": 5,
-   "unres": 0,
+   "cop": 8,
+   "unres": 3,
    "title": "エラーダイアログ共通処理を Angular 版に一致 (共通コンポーネント)"
   },
   {
