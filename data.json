@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-17 17:12",
+ "updated": "2026-07-17 17:19",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -40,7 +40,7 @@
     {
      "num": 11110,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 1,
      "add": 69,
      "del": 10,
@@ -281,29 +281,29 @@
     {
      "num": 11014,
      "cf": "ok",
-     "st": "draft",
-     "nc": 7,
-     "add": 1098,
-     "del": 10,
-     "fc": 8
+     "st": "open",
+     "nc": 9,
+     "add": 1675,
+     "del": 16,
+     "fc": 10
     }
    ],
    "r629": [],
    "r713": [
     {
      "num": 11015,
-     "cf": "ok",
+     "cf": "bad",
      "st": "draft",
-     "nc": 7,
-     "add": 1098,
-     "del": 10,
-     "fc": 8
+     "nc": 9,
+     "add": 1675,
+     "del": 16,
+     "fc": 10
     }
    ],
    "created": "07-15 23:09",
    "drive": true,
-   "cop": 9,
-   "unres": 0,
+   "cop": 10,
+   "unres": 1,
    "title": "一覧共通コンポーネントに検索エリア追加・件数バッジ位置是正"
   },
   {
