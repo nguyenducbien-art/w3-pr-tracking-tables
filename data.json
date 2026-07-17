@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-17 09:49",
+ "updated": "2026-07-17 09:56",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -255,6 +255,15 @@
    "r629": [],
    "r713": [
     {
+     "num": 11067,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 10,
+     "del": 14,
+     "fc": 3
+    },
+    {
      "num": 10995,
      "cf": "ok",
      "st": "merged",
@@ -268,7 +277,7 @@
    "drive": false,
    "cop": 5,
    "unres": 0,
-   "title": "405_直接出庫_一覧"
+   "title": "Fix path"
   },
   {
    "ticket": "1360",
