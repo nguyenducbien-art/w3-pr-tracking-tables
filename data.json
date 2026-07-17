@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-17 16:46",
+ "updated": "2026-07-17 16:53",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -30,6 +30,52 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "1357",
+   "dev": "dat",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11110,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 69,
+     "del": 10,
+     "fc": 5
+    }
+   ],
+   "created": "07-17 16:46",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "出荷_個口編集(482) 便種ドロップダウンの配送業者名表示 + 温度区分/梱包サイズのプレースホルダ修正"
+  },
+  {
+   "ticket": "568",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11108,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 897,
+     "del": 2,
+     "fc": 14
+    }
+   ],
+   "created": "07-17 16:45",
+   "drive": false,
+   "cop": 1,
+   "unres": 0,
+   "title": "414_直接出庫_履歴明細"
+  },
   {
    "ticket": "252",
    "dev": "hung",
@@ -246,7 +292,7 @@
    "r713": [
     {
      "num": 11015,
-     "cf": "bad",
+     "cf": "ok",
      "st": "draft",
      "nc": 7,
      "add": 1098,
@@ -1104,6 +1150,15 @@
    "r629": [],
    "r713": [
     {
+     "num": 11109,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 6,
+     "del": 0,
+     "fc": 1
+    },
+    {
      "num": 10882,
      "cf": "ok",
      "st": "merged",
@@ -1117,7 +1172,7 @@
    "drive": false,
    "cop": 25,
    "unres": 0,
-   "title": "在庫_明細 (247) を React/Next.js に移行"
+   "title": "在庫情報明細のブラウザタイトルを設定"
   },
   {
    "ticket": "554",
