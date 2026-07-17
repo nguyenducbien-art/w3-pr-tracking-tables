@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-17 11:18",
+ "updated": "2026-07-17 11:25",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -37,7 +37,7 @@
     {
      "num": 11075,
      "cf": "ok",
-     "st": "open",
+     "st": "draft",
      "nc": 1,
      "add": 73,
      "del": 9,
@@ -49,7 +49,7 @@
     {
      "num": 11077,
      "cf": "ok",
-     "st": "open",
+     "st": "draft",
      "nc": 1,
      "add": 73,
      "del": 9,
@@ -1179,8 +1179,8 @@
     "fc": 8
    },
    "created": "07-17 11:15",
-   "cop": 0,
-   "unres": 0,
+   "cop": 9,
+   "unres": 9,
    "title": "フロントエンド移行 Skill 規約更新 (NAV-NEW-04 / MODAL-NEW-07 / I18N-NEW-02 ほか)"
   },
   {
