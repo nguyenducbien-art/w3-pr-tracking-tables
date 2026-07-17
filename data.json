@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-17 11:44",
+ "updated": "2026-07-17 12:55",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "252",
   "1457",
   "1366",
   "1454",
@@ -29,6 +30,29 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "252",
+   "dev": "hung",
+   "bien": false,
+   "base": [
+    {
+     "num": 11082,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 251,
+     "del": 2,
+     "fc": 12
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "07-17 12:50",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "title": "グリッド image カラムを React で表示 (Angular パリティ・JWT 画像プロキシ)"
+  },
   {
    "ticket": "1457",
    "dev": "minh",
