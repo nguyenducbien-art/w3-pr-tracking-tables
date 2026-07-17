@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-17 10:09",
+ "updated": "2026-07-17 10:15",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -47,7 +47,7 @@
    "r713": [
     {
      "num": 11070,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
      "nc": 1,
      "add": 153,
@@ -154,7 +154,7 @@
     },
     {
      "num": 11065,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
      "nc": 4,
      "add": 639,
@@ -917,7 +917,7 @@
    "created": "07-13 22:54",
    "drive": true,
    "cop": 12,
-   "unres": 4,
+   "unres": 0,
    "title": "エラーダイアログ共通処理を Angular 版に一致 (共通コンポーネント)"
   },
   {
@@ -1093,7 +1093,7 @@
     {
      "num": 11068,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 1,
      "add": 7,
      "del": 1,
