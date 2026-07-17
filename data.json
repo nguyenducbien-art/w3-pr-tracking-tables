@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-17 09:56",
+ "updated": "2026-07-17 10:02",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1366",
   "1454",
   "1367",
   "1450",
@@ -27,6 +28,39 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "1366",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 11069,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 153,
+     "del": 24,
+     "fc": 8
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11070,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 153,
+     "del": 24,
+     "fc": 8
+    }
+   ],
+   "created": "07-17 10:00",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "取込結果メッセージのAngularJS一致とダイアログラベルのi18n配線"
+  },
   {
    "ticket": "1454",
    "dev": "dat",
@@ -826,9 +860,9 @@
      "num": 10896,
      "cf": "ok",
      "st": "approved",
-     "nc": 4,
-     "add": 975,
-     "del": 97,
+     "nc": 5,
+     "add": 979,
+     "del": 98,
      "fc": 24
     }
    ],
@@ -838,10 +872,10 @@
      "num": 11063,
      "cf": "bad",
      "st": "open",
-     "nc": 2,
-     "add": 446,
-     "del": 41,
-     "fc": 14
+     "nc": 3,
+     "add": 450,
+     "del": 42,
+     "fc": 15
     },
     {
      "num": 11041,
@@ -1048,6 +1082,15 @@
    "r629": [],
    "r713": [
     {
+     "num": 11068,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 7,
+     "del": 1,
+     "fc": 2
+    },
+    {
      "num": 10837,
      "cf": "ok",
      "st": "merged",
@@ -1061,7 +1104,7 @@
    "drive": false,
    "cop": 7,
    "unres": 0,
-   "title": "在庫_数量変更 (screen_id=270) を React 移行"
+   "title": "在庫_数量変更(270) 余分な見出し削除・タブタイトル設定"
   },
   {
    "ticket": "679",
