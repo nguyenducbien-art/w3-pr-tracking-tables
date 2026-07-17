@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-17 17:32",
+ "updated": "2026-07-17 17:39",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -292,9 +292,9 @@
    "r713": [
     {
      "num": 11113,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
-     "nc": 15,
+     "nc": 16,
      "add": 1933,
      "del": 170,
      "fc": 22
@@ -311,8 +311,8 @@
    ],
    "created": "07-15 23:09",
    "drive": true,
-   "cop": 10,
-   "unres": 0,
+   "cop": 16,
+   "unres": 6,
    "title": "一覧共通コンポーネントに検索エリア追加・件数バッジ位置是正"
   },
   {
@@ -1214,6 +1214,15 @@
    "r629": [],
    "r713": [
     {
+     "num": 11115,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 143,
+     "del": 15,
+     "fc": 9
+    },
+    {
      "num": 11096,
      "cf": "ok",
      "st": "merged",
@@ -1243,9 +1252,9 @@
    ],
    "created": "07-13 11:33",
    "drive": false,
-   "cop": 12,
+   "cop": 13,
    "unres": 0,
-   "title": "在庫_数量変更(270) バグ3件修正"
+   "title": "在庫_数量変更(270) 追加バグ2件修正"
   },
   {
    "ticket": "679",
