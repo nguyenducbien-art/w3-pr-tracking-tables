@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-17 14:48",
+ "updated": "2026-07-17 14:54",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1143,8 +1143,8 @@
      "num": 11096,
      "cf": "ok",
      "st": "open",
-     "nc": 3,
-     "add": 90,
+     "nc": 4,
+     "add": 114,
      "del": 8,
      "fc": 6
     },
@@ -1170,7 +1170,7 @@
    "created": "07-13 11:33",
    "drive": false,
    "cop": 12,
-   "unres": 1,
+   "unres": 0,
    "title": "在庫_数量変更(270) バグ3件修正"
   },
   {
