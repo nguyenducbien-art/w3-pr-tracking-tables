@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-17 17:45",
+ "updated": "2026-07-17 17:52",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -151,10 +151,10 @@
      "num": 11069,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 159,
+     "nc": 3,
+     "add": 225,
      "del": 25,
-     "fc": 8
+     "fc": 9
     }
    ],
    "r629": [],
@@ -171,8 +171,8 @@
    ],
    "created": "07-17 10:00",
    "drive": true,
-   "cop": 1,
-   "unres": 1,
+   "cop": 2,
+   "unres": 2,
    "title": "取込結果メッセージのAngularJS一致とダイアログラベルのi18n配線"
   },
   {
@@ -311,8 +311,8 @@
    ],
    "created": "07-15 23:09",
    "drive": true,
-   "cop": 16,
-   "unres": 5,
+   "cop": 19,
+   "unres": 3,
    "title": "一覧共通コンポーネントに検索エリア追加・件数バッジ位置是正"
   },
   {
