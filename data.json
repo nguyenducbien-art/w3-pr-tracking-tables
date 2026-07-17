@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-17 13:35",
+ "updated": "2026-07-17 14:22",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1140,6 +1140,15 @@
    "r629": [],
    "r713": [
     {
+     "num": 11096,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 58,
+     "del": 5,
+     "fc": 6
+    },
+    {
      "num": 11068,
      "cf": "ok",
      "st": "merged",
@@ -1162,7 +1171,7 @@
    "drive": false,
    "cop": 7,
    "unres": 0,
-   "title": "在庫_数量変更(270) 余分な見出し削除・タブタイトル設定"
+   "title": "在庫_数量変更(270) バグ3件修正"
   },
   {
    "ticket": "679",
