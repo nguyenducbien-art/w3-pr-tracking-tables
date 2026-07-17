@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-17 16:40",
+ "updated": "2026-07-17 16:46",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -124,7 +124,7 @@
     }
    ],
    "created": "07-17 10:00",
-   "drive": false,
+   "drive": true,
    "cop": 1,
    "unres": 1,
    "title": "取込結果メッセージのAngularJS一致とダイアログラベルのi18n配線"
@@ -246,7 +246,7 @@
    "r713": [
     {
      "num": 11015,
-     "cf": "ok",
+     "cf": "bad",
      "st": "draft",
      "nc": 7,
      "add": 1098,
