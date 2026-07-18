@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-17 17:52",
+ "updated": "2026-07-18 14:59",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -312,7 +312,7 @@
    "created": "07-15 23:09",
    "drive": true,
    "cop": 19,
-   "unres": 3,
+   "unres": 0,
    "title": "一覧共通コンポーネントに検索エリア追加・件数バッジ位置是正"
   },
   {
