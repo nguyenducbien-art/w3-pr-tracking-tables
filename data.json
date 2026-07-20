@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-20 17:24",
+ "updated": "2026-07-20 17:30",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -53,7 +53,7 @@
    "r713": [],
    "created": "07-20 17:06",
    "drive": true,
-   "cop": 7,
+   "cop": 8,
    "unres": 0,
    "title": "選択モーダルの先頭オプション既定選択を統一"
   },
@@ -99,7 +99,7 @@
      "num": 11134,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
+     "nc": 3,
      "add": 651,
      "del": 31,
      "fc": 12
