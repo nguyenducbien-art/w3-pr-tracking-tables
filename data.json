@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-20 13:23",
+ "updated": "2026-07-20 13:29",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -49,8 +49,8 @@
    ],
    "created": "07-20 12:24",
    "drive": false,
-   "cop": 3,
-   "unres": 1,
+   "cop": 6,
+   "unres": 3,
    "title": "420_直接出庫_内容追加_編集"
   },
   {
@@ -63,7 +63,7 @@
     {
      "num": 11124,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 4,
      "add": 882,
      "del": 1,
@@ -350,7 +350,7 @@
     {
      "num": 11014,
      "cf": "ok",
-     "st": "open",
+     "st": "approved",
      "nc": 11,
      "add": 1725,
      "del": 16,
@@ -539,10 +539,10 @@
      "num": 11125,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 53,
-     "del": 47,
-     "fc": 3
+     "nc": 3,
+     "add": 57,
+     "del": 49,
+     "fc": 4
     },
     {
      "num": 10989,
@@ -557,7 +557,7 @@
    "created": "07-15 14:48",
    "drive": false,
    "cop": 27,
-   "unres": 10,
+   "unres": 8,
    "title": "275_移動_対象在庫一覧"
   },
   {
@@ -1063,7 +1063,7 @@
     {
      "num": 11122,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 6,
      "add": 52,
      "del": 32,
