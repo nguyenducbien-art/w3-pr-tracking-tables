@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-20 09:29",
+ "updated": "2026-07-20 09:36",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -41,8 +41,8 @@
      "num": 11120,
      "cf": "ok",
      "st": "open",
-     "nc": 4,
-     "add": 917,
+     "nc": 5,
+     "add": 919,
      "del": 2,
      "fc": 18
     }
@@ -50,7 +50,7 @@
    "created": "07-20 09:02",
    "drive": false,
    "cop": 5,
-   "unres": 1,
+   "unres": 0,
    "title": "荷姿変更_履歴一覧(371) を React 移行"
   },
   {
