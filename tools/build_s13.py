@@ -129,7 +129,7 @@ function fetchData(){
   var txt=el?el.textContent.trim():'';
   if(txt){ try{render(JSON.parse(txt));}catch(e){document.getElementById('app').innerHTML='<p style="color:red;padding:20px">JSON error: '+e+'</p>';} return; }
   fetchData();
-  setInterval(fetchData, 300000);  // tự làm mới data mỗi 5 phút (chỉ chế độ fetch/Pages)
+  setInterval(fetchData, 60000);  // tab mở tự re-fetch mỗi 1 phút (cache-buster ?t= → raw tươi ~3s)
 })();
 document.addEventListener('click',function(e){
   var a=e.target.closest&&e.target.closest('a[href^="http"]');
