@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-20 15:59",
+ "updated": "2026-07-20 16:05",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1461",
   "1459",
   "1441",
   "252",
@@ -33,6 +34,39 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
   {
+   "ticket": "1461",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 11135,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 287,
+     "del": 52,
+     "fc": 8
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11136,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 273,
+     "del": 40,
+     "fc": 8
+    }
+   ],
+   "created": "07-20 16:03",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "title": "St系タブバッジの件数取得を取得元画面のscreen_idで解決するよう修正"
+  },
+  {
    "ticket": "1459",
    "dev": "hung",
    "bien": false,
@@ -51,8 +85,8 @@
    "r713": [],
    "created": "07-20 15:55",
    "drive": true,
-   "cop": 0,
-   "unres": 0,
+   "cop": 1,
+   "unres": 1,
    "title": "一覧/明細ツールバーに画面設定・全画面表示ボタンを追加"
   },
   {
@@ -432,10 +466,10 @@
      "num": 11014,
      "cf": "ok",
      "st": "approved",
-     "nc": 12,
-     "add": 1759,
-     "del": 16,
-     "fc": 10
+     "nc": 13,
+     "add": 1762,
+     "del": 19,
+     "fc": 11
     }
    ],
    "r629": [],
@@ -453,7 +487,7 @@
    "created": "07-15 23:09",
    "drive": true,
    "cop": 30,
-   "unres": 11,
+   "unres": 0,
    "title": "一覧共通コンポーネントに検索エリア追加・件数バッジ位置是正"
   },
   {
