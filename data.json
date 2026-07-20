@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-20 15:52",
+ "updated": "2026-07-20 15:59",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1459",
   "1441",
   "252",
   "1457",
@@ -31,6 +32,29 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "1459",
+   "dev": "hung",
+   "bien": false,
+   "base": [
+    {
+     "num": 11134,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 625,
+     "del": 31,
+     "fc": 12
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "07-20 15:55",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "title": "一覧/明細ツールバーに画面設定・全画面表示ボタンを追加"
+  },
   {
    "ticket": "921",
    "dev": "dat",
@@ -428,8 +452,8 @@
    ],
    "created": "07-15 23:09",
    "drive": true,
-   "cop": 19,
-   "unres": 0,
+   "cop": 30,
+   "unres": 11,
    "title": "一覧共通コンポーネントに検索エリア追加・件数バッジ位置是正"
   },
   {
