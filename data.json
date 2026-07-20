@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-20 16:05",
+ "updated": "2026-07-20 16:12",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -62,8 +62,8 @@
    ],
    "created": "07-20 16:03",
    "drive": true,
-   "cop": 0,
-   "unres": 0,
+   "cop": 1,
+   "unres": 1,
    "title": "St系タブバッジの件数取得を取得元画面のscreen_idで解決するよう修正"
   },
   {
@@ -75,8 +75,8 @@
      "num": 11134,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 625,
+     "nc": 2,
+     "add": 651,
      "del": 31,
      "fc": 12
     }
@@ -86,7 +86,7 @@
    "created": "07-20 15:55",
    "drive": true,
    "cop": 1,
-   "unres": 1,
+   "unres": 0,
    "title": "一覧/明細ツールバーに画面設定・全画面表示ボタンを追加"
   },
   {
