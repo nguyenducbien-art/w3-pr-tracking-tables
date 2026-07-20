@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-20 17:04",
+ "updated": "2026-07-20 17:11",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1462",
   "1461",
   "1459",
   "1441",
@@ -33,6 +34,29 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "1462",
+   "dev": "khoa",
+   "bien": false,
+   "base": [
+    {
+     "num": 11139,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 257,
+     "del": 6,
+     "fc": 8
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "07-20 17:06",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "title": "選択モーダルの先頭オプション既定選択を統一"
+  },
   {
    "ticket": "1461",
    "dev": "bien",
