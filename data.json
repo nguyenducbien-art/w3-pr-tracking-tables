@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-20 12:19",
+ "updated": "2026-07-20 12:25",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -30,6 +30,29 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "566",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11127,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 3540,
+     "del": 2,
+     "fc": 36
+    }
+   ],
+   "created": "07-20 12:24",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "420_直接出庫_内容追加_編集"
+  },
   {
    "ticket": "573",
    "dev": "hung",
