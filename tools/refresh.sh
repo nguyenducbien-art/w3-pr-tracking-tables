@@ -13,10 +13,15 @@ cd "$REPO" || exit 1
   rc=$?
   if [ "$rc" -eq 2 ]; then echo "→ Không có thay đổi, khỏi push."; exit 0; fi
   if [ "$rc" -ne 0 ]; then echo "→ LỖI fetch_build (rc=$rc)"; exit 1; fi
-  # CHỈ commit đúng data.json (path-scoped) — bỏ qua MỌI file khác dù đang modified/staged.
-  git -c user.name="biennguyen" -c user.email="biennguyen131311@gmail.com" \
-      commit -q -m "auto-refresh data $(date '+%F %H:%M')" -- data.json
-  git push -q origin main 2>/dev/null \
-    && echo "→ Đã push. Web sẽ cập nhật trong ~1 phút: https://nguyenducbien-art.github.io/w3-pr-tracking-tables/" \
+  # Đẩy data.json vào nhánh `data` bằng plumbing — KHÔNG checkout, KHÔNG đụng main,
+  # KHÔNG trigger Pages build (Pages chỉ build khi `main` đổi) → không bao giờ chạm rate-limit.
+  BLOB=$(git hash-object -w data.json)
+  TREE=$(printf '100644 blob %s\tdata.json\n' "$BLOB" | git mktree)
+  PARENT=$(git rev-parse refs/heads/data)
+  COMMIT=$(git -c user.name="biennguyen" -c user.email="biennguyen131311@gmail.com" \
+           commit-tree "$TREE" -p "$PARENT" -m "auto-refresh data $(date '+%F %H:%M')")
+  git update-ref refs/heads/data "$COMMIT"
+  git push -q origin data 2>/dev/null \
+    && echo "→ Đã push nhánh data (KHÔNG build Pages). Web tươi trong ~5p (cache raw 300s)." \
     || echo "→ push FAIL (kiểm tra tay)"
 } > >(tee -a "$LOG") 2>&1

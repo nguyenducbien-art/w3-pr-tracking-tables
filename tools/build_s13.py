@@ -118,8 +118,11 @@ function render(D){
   document.getElementById('app').innerHTML=html;
 }
 function fetchData(){
-  return fetch('data.json?t='+Date.now()).then(function(r){return r.json();}).then(render)
-    .catch(function(e){var a=document.getElementById('app'); if(!a.innerHTML) a.innerHTML='<p style="color:red;padding:20px">Fetch data.json error: '+e+'</p>';});
+  // Data ở nhánh `data` (KHÔNG phải nguồn Pages) → fetch qua raw.githubusercontent (CORS *, cache ~5p).
+  // Cron push data vào nhánh data → KHÔNG trigger Pages build → không bao giờ chạm rate-limit.
+  var DATA_URL='https://raw.githubusercontent.com/nguyenducbien-art/w3-pr-tracking-tables/data/data.json';
+  return fetch(DATA_URL+'?t='+Date.now()).then(function(r){return r.json();}).then(render)
+    .catch(function(e){var a=document.getElementById('app'); if(!a.innerHTML) a.innerHTML='<p style="color:red;padding:20px">Fetch data error: '+e+'</p>';});
 }
 (function(){
   var el=document.getElementById('table-data');
