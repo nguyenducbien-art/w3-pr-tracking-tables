@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-20 13:41",
+ "updated": "2026-07-20 13:55",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1441",
   "252",
   "1457",
   "1366",
@@ -30,6 +31,39 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "1441",
+   "dev": "minh",
+   "bien": false,
+   "base": [
+    {
+     "num": 11128,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 369,
+     "del": 12,
+     "fc": 2
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11129,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 369,
+     "del": 12,
+     "fc": 2
+    }
+   ],
+   "created": "07-20 13:50",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "title": "ListScreenContainer bulk モードの選択カウンターのファントム表示を修正"
+  },
   {
    "ticket": "566",
    "dev": "khoa",
@@ -538,7 +572,7 @@
     {
      "num": 11125,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 3,
      "add": 57,
      "del": 49,
