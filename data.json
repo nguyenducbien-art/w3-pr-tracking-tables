@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-20 14:02",
+ "updated": "2026-07-20 14:08",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -60,7 +60,7 @@
    ],
    "created": "07-20 13:50",
    "drive": true,
-   "cop": 1,
+   "cop": 2,
    "unres": 1,
    "title": "ListScreenContainer bulk モードの選択カウンターのファントム表示を修正"
   },
@@ -74,7 +74,7 @@
     {
      "num": 11127,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 3,
      "add": 3542,
      "del": 2,
