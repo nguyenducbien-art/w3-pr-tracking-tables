@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-20 11:02",
+ "updated": "2026-07-20 11:08",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -49,8 +49,8 @@
    ],
    "created": "07-20 10:56",
    "drive": false,
-   "cop": 0,
-   "unres": 0,
+   "cop": 3,
+   "unres": 3,
    "title": "移動_履歴一覧(288) を React 移行"
   },
   {
@@ -556,7 +556,7 @@
     }
    ],
    "created": "07-15 14:22",
-   "drive": false,
+   "drive": true,
    "cop": 0,
    "unres": 0,
    "title": "明細画面の URI Too Long (414) を空グリッド表示に (AngularJS パリティ)"
