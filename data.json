@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-18 14:59",
+ "updated": "2026-07-20 09:09",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -30,6 +30,29 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "604",
+   "dev": "minh",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11120,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 914,
+     "del": 3,
+     "fc": 17
+    }
+   ],
+   "created": "07-20 09:02",
+   "drive": false,
+   "cop": 3,
+   "unres": 3,
+   "title": "荷姿変更_履歴一覧(371) を React 移行"
+  },
   {
    "ticket": "1357",
    "dev": "dat",
@@ -1325,8 +1348,8 @@
     "num": 10930,
     "cf": "ok",
     "st": "open",
-    "nc": 4,
-    "add": 33,
+    "nc": 5,
+    "add": 67,
     "del": 35,
     "fc": 3
    },
