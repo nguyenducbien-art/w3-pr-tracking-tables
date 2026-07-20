@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-20 14:53",
+ "updated": "2026-07-20 15:00",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -42,7 +42,7 @@
      "num": 11131,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
+     "nc": 3,
      "add": 3000,
      "del": 2,
      "fc": 30
@@ -50,7 +50,7 @@
    ],
    "created": "07-20 14:38",
    "drive": false,
-   "cop": 1,
+   "cop": 2,
    "unres": 0,
    "title": "荷姿変更_内容追加(381) を Next.js/React で実装"
   },
