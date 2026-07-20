@@ -1,0 +1,1371 @@
+{
+ "updated": "2026-07-20 09:55",
+ "repo": "dialog-inc/w3package_v2",
+ "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
+ "common": [
+  "252",
+  "1457",
+  "1366",
+  "1454",
+  "1367",
+  "1450",
+  "1429",
+  "265",
+  "1428",
+  "1360",
+  "530",
+  "1309",
+  "1348",
+  "1364",
+  "451",
+  "1439",
+  "260",
+  "1322",
+  "285",
+  "1307",
+  "1315",
+  "1310",
+  "1430"
+ ],
+ "invalidBase": [],
+ "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
+ "main": [
+  {
+   "ticket": "604",
+   "dev": "minh",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11120,
+     "cf": "ok",
+     "st": "open",
+     "nc": 5,
+     "add": 919,
+     "del": 2,
+     "fc": 18
+    }
+   ],
+   "created": "07-20 09:02",
+   "drive": false,
+   "cop": 5,
+   "unres": 0,
+   "title": "荷姿変更_履歴一覧(371) を React 移行"
+  },
+  {
+   "ticket": "1357",
+   "dev": "dat",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11110,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 69,
+     "del": 10,
+     "fc": 5
+    }
+   ],
+   "created": "07-17 16:46",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "出荷_個口編集(482) 便種ドロップダウンの配送業者名表示 + 温度区分/梱包サイズのプレースホルダ修正"
+  },
+  {
+   "ticket": "568",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11108,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 897,
+     "del": 2,
+     "fc": 14
+    }
+   ],
+   "created": "07-17 16:45",
+   "drive": false,
+   "cop": 1,
+   "unres": 0,
+   "title": "414_直接出庫_履歴明細"
+  },
+  {
+   "ticket": "252",
+   "dev": "hung",
+   "bien": false,
+   "base": [
+    {
+     "num": 11082,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 323,
+     "del": 2,
+     "fc": 14
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11106,
+     "cf": "ok",
+     "st": "open",
+     "nc": 4,
+     "add": 323,
+     "del": 2,
+     "fc": 14
+    }
+   ],
+   "created": "07-17 12:50",
+   "drive": true,
+   "cop": 4,
+   "unres": 0,
+   "title": "グリッド image カラムを React で表示 (Angular パリティ・JWT 画像プロキシ)"
+  },
+  {
+   "ticket": "1457",
+   "dev": "minh",
+   "bien": false,
+   "base": [
+    {
+     "num": 11075,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 180,
+     "del": 29,
+     "fc": 8
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11077,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 180,
+     "del": 29,
+     "fc": 8
+    }
+   ],
+   "created": "07-17 10:58",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "title": "DataTable 列フィルタ条件ドロップダウンの演算子並び順・ラベルを AngularJS(Kendo) に統一"
+  },
+  {
+   "ticket": "1366",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 11069,
+     "cf": "ok",
+     "st": "open",
+     "nc": 5,
+     "add": 231,
+     "del": 25,
+     "fc": 9
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11079,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 134,
+     "del": 10,
+     "fc": 7
+    }
+   ],
+   "created": "07-17 10:00",
+   "drive": true,
+   "cop": 3,
+   "unres": 0,
+   "title": "取込結果メッセージのAngularJS一致とダイアログラベルのi18n配線"
+  },
+  {
+   "ticket": "1454",
+   "dev": "dat",
+   "bien": false,
+   "base": [
+    {
+     "num": 11052,
+     "cf": "ok",
+     "st": "approved",
+     "nc": 1,
+     "add": 73,
+     "del": 0,
+     "fc": 2
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11054,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 73,
+     "del": 0,
+     "fc": 2
+    },
+    {
+     "num": 11053,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 15,
+     "del": 0,
+     "fc": 13
+    }
+   ],
+   "created": "07-16 17:20",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "title": "EditScreenShell に全画面ローディング busy prop を追加"
+  },
+  {
+   "ticket": "567",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11040,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 1525,
+     "del": 3,
+     "fc": 20
+    }
+   ],
+   "created": "07-16 14:18",
+   "drive": false,
+   "cop": 5,
+   "unres": 1,
+   "title": "Screen 412"
+  },
+  {
+   "ticket": "1367",
+   "dev": "hung",
+   "bien": false,
+   "base": [
+    {
+     "num": 11033,
+     "cf": "ok",
+     "st": "approved",
+     "nc": 4,
+     "add": 639,
+     "del": 1,
+     "fc": 7
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11071,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 5,
+     "add": 639,
+     "del": 1,
+     "fc": 7
+    }
+   ],
+   "created": "07-16 13:30",
+   "drive": true,
+   "cop": 10,
+   "unres": 0,
+   "title": "出荷履歴_一覧のCSV全件出力モード「CSV選択」モーダルを実装"
+  },
+  {
+   "ticket": "1450",
+   "dev": "minh",
+   "bien": false,
+   "base": [
+    {
+     "num": 11014,
+     "cf": "ok",
+     "st": "open",
+     "nc": 11,
+     "add": 1725,
+     "del": 16,
+     "fc": 10
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11113,
+     "cf": "ok",
+     "st": "open",
+     "nc": 17,
+     "add": 1951,
+     "del": 170,
+     "fc": 22
+    }
+   ],
+   "created": "07-15 23:09",
+   "drive": true,
+   "cop": 19,
+   "unres": 0,
+   "title": "一覧共通コンポーネントに検索エリア追加・件数バッジ位置是正"
+  },
+  {
+   "ticket": "1429",
+   "dev": "bien",
+   "bien": true,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11013,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 9,
+     "del": 12,
+     "fc": 8
+    }
+   ],
+   "created": "07-15 17:53",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "IF出力バッチのinterface名case誤りを修正しLinuxでのタイムアウトを解消"
+  },
+  {
+   "ticket": "265",
+   "dev": "hung",
+   "bien": false,
+   "base": [
+    {
+     "num": 11010,
+     "cf": "ok",
+     "st": "approved",
+     "nc": 2,
+     "add": 68,
+     "del": 16,
+     "fc": 4
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11039,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 68,
+     "del": 16,
+     "fc": 4
+    }
+   ],
+   "created": "07-15 16:36",
+   "drive": true,
+   "cop": 3,
+   "unres": 0,
+   "title": "グリッド/CSV の日付番兵値に 1970/01/01・0000-00-00 を追加し AngularJS と一致"
+  },
+  {
+   "ticket": "1428",
+   "dev": "minh",
+   "bien": false,
+   "base": [
+    {
+     "num": 10996,
+     "cf": "ok",
+     "st": "approved",
+     "nc": 4,
+     "add": 203,
+     "del": 10,
+     "fc": 6
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10998,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 4,
+     "add": 203,
+     "del": 10,
+     "fc": 6
+    }
+   ],
+   "created": "07-15 15:38",
+   "drive": true,
+   "cop": 2,
+   "unres": 0,
+   "title": "DataTable serverSync CSV の numeric 正規化 (grid=CSV パリティ)"
+  },
+  {
+   "ticket": "564",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11067,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 10,
+     "del": 14,
+     "fc": 3
+    },
+    {
+     "num": 10995,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 4,
+     "add": 1522,
+     "del": 3,
+     "fc": 20
+    }
+   ],
+   "created": "07-15 15:33",
+   "drive": false,
+   "cop": 5,
+   "unres": 0,
+   "title": "Fix path"
+  },
+  {
+   "ticket": "1360",
+   "dev": "bien",
+   "bien": true,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10994,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 12,
+     "del": 0,
+     "fc": 4
+    },
+    {
+     "num": 10991,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 252,
+     "del": 4,
+     "fc": 38
+    }
+   ],
+   "created": "07-15 14:54",
+   "drive": false,
+   "cop": 2,
+   "unres": 1,
+   "title": "セッション失効 401 集中遷移を stocks ドメイン 4 画面へ適用"
+  },
+  {
+   "ticket": "569",
+   "dev": "hung",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10989,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 9,
+     "add": 2099,
+     "del": 3,
+     "fc": 25
+    }
+   ],
+   "created": "07-15 14:48",
+   "drive": false,
+   "cop": 25,
+   "unres": 8,
+   "title": "275_移動_対象在庫一覧"
+  },
+  {
+   "ticket": "530",
+   "dev": "khoa",
+   "bien": false,
+   "base": [
+    {
+     "num": 10985,
+     "cf": "ok",
+     "st": "approved",
+     "nc": 1,
+     "add": 143,
+     "del": 18,
+     "fc": 4
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11035,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 143,
+     "del": 18,
+     "fc": 4
+    }
+   ],
+   "created": "07-15 14:22",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "明細画面の URI Too Long (414) を空グリッド表示に (AngularJS パリティ)"
+  },
+  {
+   "ticket": "1316",
+   "dev": "minh",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10981,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 215,
+     "del": 20,
+     "fc": 8
+    }
+   ],
+   "created": "07-15 13:26",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "219_手動引当_統合ユニットで引当できない不具合"
+  },
+  {
+   "ticket": "602",
+   "dev": "minh",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10979,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 846,
+     "del": 2,
+     "fc": 22
+    }
+   ],
+   "created": "07-15 13:02",
+   "drive": false,
+   "cop": 5,
+   "unres": 3,
+   "title": "364_荷姿変更_明細"
+  },
+  {
+   "ticket": "1309",
+   "dev": "khoa",
+   "bien": false,
+   "base": [
+    {
+     "num": 10975,
+     "cf": "ok",
+     "st": "approved",
+     "nc": 2,
+     "add": 627,
+     "del": 32,
+     "fc": 8
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11037,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 601,
+     "del": 22,
+     "fc": 6
+    }
+   ],
+   "created": "07-15 12:08",
+   "drive": true,
+   "cop": 7,
+   "unres": 4,
+   "title": "一覧画面の登録系ボタン実行時のローディング/選択解除を Angular に合わせる"
+  },
+  {
+   "ticket": "913",
+   "dev": "dat",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10969,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 4,
+     "add": 633,
+     "del": 2,
+     "fc": 16
+    }
+   ],
+   "created": "07-15 10:36",
+   "drive": false,
+   "cop": 7,
+   "unres": 0,
+   "title": "357_荷姿変更_対象在庫一覧"
+  },
+  {
+   "ticket": "1348",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10964,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 229,
+     "del": 218,
+     "fc": 3
+    }
+   ],
+   "created": "07-14 17:20",
+   "drive": false,
+   "cop": 4,
+   "unres": 0,
+   "title": "725_出荷検品_PCスキャン検品・729_送り状発行_多言語ラベル折返し/梱包数0送信"
+  },
+  {
+   "ticket": "1364",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10962,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 185,
+     "del": 5,
+     "fc": 5
+    }
+   ],
+   "created": "07-14 16:58",
+   "drive": false,
+   "cop": 1,
+   "unres": 0,
+   "title": "226_出荷_検品登録・修正_エラーダイアログ多言語対応"
+  },
+  {
+   "ticket": "1317",
+   "dev": "dat",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10957,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 52,
+     "del": 12,
+     "fc": 6
+    }
+   ],
+   "created": "07-14 16:28",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "個口数0入力時のエラーメッセージをAngularと一致させる"
+  },
+  {
+   "ticket": "451",
+   "dev": "bien",
+   "bien": true,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10955,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 4,
+     "add": 49,
+     "del": 1,
+     "fc": 17
+    }
+   ],
+   "created": "07-14 16:20",
+   "drive": false,
+   "cop": 2,
+   "unres": 2,
+   "title": "確認モーダルにチェックボックスゲートを追加"
+  },
+  {
+   "ticket": "1439",
+   "dev": "minh",
+   "bien": false,
+   "base": [
+    {
+     "num": 10950,
+     "cf": "ok",
+     "st": "approved",
+     "nc": 4,
+     "add": 177,
+     "del": 8,
+     "fc": 2
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10951,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 4,
+     "add": 177,
+     "del": 8,
+     "fc": 2
+    }
+   ],
+   "created": "07-14 16:09",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "title": "GridLayout_special種別トップタブ件数バッジ表示_bug"
+  },
+  {
+   "ticket": "1352",
+   "dev": "hung",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10942,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 230,
+     "del": 7,
+     "fc": 4
+    }
+   ],
+   "created": "07-14 15:05",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "title": "出荷指示登録_配送業者便種/時間帯の名称表示と定期配送日の番兵値をAngularJSと一致"
+  },
+  {
+   "ticket": "260",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 10933,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 628,
+     "del": 0,
+     "fc": 55
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10988,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 194,
+     "del": 15,
+     "fc": 3
+    },
+    {
+     "num": 10941,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 449,
+     "del": 0,
+     "fc": 54
+    }
+   ],
+   "created": "07-14 13:45",
+   "drive": true,
+   "cop": 7,
+   "unres": 0,
+   "title": "共通_ブラウザタブタイトル動的設定"
+  },
+  {
+   "ticket": "574",
+   "dev": "hung",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10932,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 6,
+     "add": 693,
+     "del": 9,
+     "fc": 15
+    }
+   ],
+   "created": "07-14 13:39",
+   "drive": false,
+   "cop": 14,
+   "unres": 9,
+   "title": "移動_履歴明細 (screen 290) を Next.js に移行"
+  },
+  {
+   "ticket": "565",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10929,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 1140,
+     "del": 10,
+     "fc": 25
+    }
+   ],
+   "created": "07-14 13:29",
+   "drive": false,
+   "cop": 11,
+   "unres": 4,
+   "title": "407_直接出庫_明細"
+  },
+  {
+   "ticket": "1314",
+   "dev": "minh",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10919,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 115,
+     "del": 33,
+     "fc": 3
+    }
+   ],
+   "created": "07-14 12:07",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "出荷実績_明細で500件超の選択時に上限判定が効かない不具合を修正"
+  },
+  {
+   "ticket": "1322",
+   "dev": "hung",
+   "bien": false,
+   "base": [
+    {
+     "num": 10916,
+     "cf": "ok",
+     "st": "approved",
+     "nc": 1,
+     "add": 127,
+     "del": 14,
+     "fc": 3
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10943,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 127,
+     "del": 14,
+     "fc": 3
+    }
+   ],
+   "created": "07-14 11:40",
+   "drive": true,
+   "cop": 2,
+   "unres": 0,
+   "title": "取込結果モーダルに失敗件数を常時表示"
+  },
+  {
+   "ticket": "485",
+   "dev": "dat",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10913,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 158,
+     "del": 15,
+     "fc": 6
+    }
+   ],
+   "created": "07-14 10:46",
+   "drive": false,
+   "cop": 2,
+   "unres": 0,
+   "title": "作業分け(カスタム)の初期化API復活とReact初期値パリティ"
+  },
+  {
+   "ticket": "285",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 10909,
+     "cf": "ok",
+     "st": "open",
+     "nc": 6,
+     "add": 263,
+     "del": 128,
+     "fc": 7
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10939,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 6,
+     "add": 263,
+     "del": 128,
+     "fc": 7
+    }
+   ],
+   "created": "07-14 09:24",
+   "drive": true,
+   "cop": 7,
+   "unres": 0,
+   "title": "共通_マイフィルタ削除確認ダイアログ追加"
+  },
+  {
+   "ticket": "1307",
+   "dev": "minh",
+   "bien": false,
+   "base": [
+    {
+     "num": 10896,
+     "cf": "ok",
+     "st": "approved",
+     "nc": 5,
+     "add": 979,
+     "del": 98,
+     "fc": 24
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11073,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 4,
+     "add": 21,
+     "del": 15,
+     "fc": 9
+    },
+    {
+     "num": 11041,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 623,
+     "del": 169,
+     "fc": 48
+    },
+    {
+     "num": 10925,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 4,
+     "add": 1150,
+     "del": 918,
+     "fc": 108
+    },
+    {
+     "num": 10897,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 537,
+     "del": 64,
+     "fc": 19
+    }
+   ],
+   "created": "07-13 22:54",
+   "drive": true,
+   "cop": 12,
+   "unres": 0,
+   "title": "エラーダイアログ共通処理を Angular 版に一致 (共通コンポーネント)"
+  },
+  {
+   "ticket": "1315",
+   "dev": "khoa",
+   "bien": false,
+   "base": [
+    {
+     "num": 10891,
+     "cf": "ok",
+     "st": "approved",
+     "nc": 2,
+     "add": 54,
+     "del": 14,
+     "fc": 3
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10947,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 138,
+     "del": 17,
+     "fc": 7
+    }
+   ],
+   "created": "07-13 17:04",
+   "drive": true,
+   "cop": 6,
+   "unres": 0,
+   "title": "729_送り状発行_全画面ローディング表示 (BusyOverlay 可視化)"
+  },
+  {
+   "ticket": "1310",
+   "dev": "dat",
+   "bien": false,
+   "base": [
+    {
+     "num": 10890,
+     "cf": "ok",
+     "st": "approved",
+     "nc": 8,
+     "add": 436,
+     "del": 0,
+     "fc": 6
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11018,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 246,
+     "del": 71,
+     "fc": 5
+    },
+    {
+     "num": 10948,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 7,
+     "add": 261,
+     "del": 0,
+     "fc": 6
+    }
+   ],
+   "created": "07-13 17:03",
+   "drive": true,
+   "cop": 3,
+   "unres": 0,
+   "title": "グリッドのソート挙動を Kendo grid に合わせる"
+  },
+  {
+   "ticket": "1430",
+   "dev": "minh",
+   "bien": false,
+   "base": [
+    {
+     "num": 10888,
+     "cf": "ok",
+     "st": "approved",
+     "nc": 5,
+     "add": 345,
+     "del": 1,
+     "fc": 4
+    }
+   ],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10971,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 222,
+     "del": 17,
+     "fc": 13
+    },
+    {
+     "num": 10889,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 5,
+     "add": 345,
+     "del": 1,
+     "fc": 4
+    }
+   ],
+   "created": "07-13 16:43",
+   "drive": true,
+   "cop": 6,
+   "unres": 0,
+   "title": "共通FieldRenderer/date.tsで日付nullish番兵(5000-01-01等)を空表示にする"
+  },
+  {
+   "ticket": "544",
+   "dev": "minh",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11109,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 6,
+     "del": 0,
+     "fc": 1
+    },
+    {
+     "num": 10882,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 15,
+     "add": 3534,
+     "del": 20,
+     "fc": 36
+    }
+   ],
+   "created": "07-13 15:51",
+   "drive": false,
+   "cop": 25,
+   "unres": 0,
+   "title": "在庫情報明細のブラウザタイトルを設定"
+  },
+  {
+   "ticket": "554",
+   "dev": "hung",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10844,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 893,
+     "del": 3,
+     "fc": 14
+    }
+   ],
+   "created": "07-13 13:24",
+   "drive": false,
+   "cop": 8,
+   "unres": 4,
+   "title": "在庫変遷_履歴出力(screen_id=612)をNext.jsへ移行"
+  },
+  {
+   "ticket": "689",
+   "dev": "dat",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11115,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 143,
+     "del": 15,
+     "fc": 9
+    },
+    {
+     "num": 11096,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 4,
+     "add": 114,
+     "del": 8,
+     "fc": 6
+    },
+    {
+     "num": 11068,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 7,
+     "del": 1,
+     "fc": 2
+    },
+    {
+     "num": 10837,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 4,
+     "add": 2353,
+     "del": 65,
+     "fc": 29
+    }
+   ],
+   "created": "07-13 11:33",
+   "drive": false,
+   "cop": 13,
+   "unres": 0,
+   "title": "在庫_数量変更(270) 追加バグ2件修正"
+  },
+  {
+   "ticket": "679",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 10836,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 4,
+     "add": 1091,
+     "del": 17,
+     "fc": 26
+    }
+   ],
+   "created": "07-13 11:20",
+   "drive": false,
+   "cop": 17,
+   "unres": 7,
+   "title": "244_在庫_一覧（商品別）"
+  }
+ ],
+ "scaffold": [
+  {
+   "ticket": "—",
+   "dev": "khoa",
+   "bien": false,
+   "pr": {
+    "num": 11078,
+    "cf": "ok",
+    "st": "open",
+    "nc": 1,
+    "add": 100,
+    "del": 18,
+    "fc": 8
+   },
+   "created": "07-17 11:15",
+   "cop": 9,
+   "unres": 9,
+   "title": "フロントエンド移行 Skill 規約更新 (NAV-NEW-04 / MODAL-NEW-07 / I18N-NEW-02 ほか)"
+  },
+  {
+   "ticket": "260",
+   "dev": "bien",
+   "bien": true,
+   "pr": {
+    "num": 10934,
+    "cf": "ok",
+    "st": "draft",
+    "nc": 4,
+    "add": 38,
+    "del": 15,
+    "fc": 6
+   },
+   "created": "07-14 14:04",
+   "cop": 5,
+   "unres": 1,
+   "title": "bake RSC-NEW-07 (ブラウザタブタイトル generateMetadata) into scaffold"
+  },
+  {
+   "ticket": "—",
+   "dev": "minh",
+   "bien": false,
+   "pr": {
+    "num": 10930,
+    "cf": "ok",
+    "st": "open",
+    "nc": 5,
+    "add": 67,
+    "del": 35,
+    "fc": 3
+   },
+   "created": "07-14 13:32",
+   "cop": 5,
+   "unres": 0,
+   "title": "scaffold のエラー/成功ダイアログ規約を alertByCode に統一 (テンプレ + API-NEW-02) + §8.3 制約解消"
+  },
+  {
+   "ticket": "—",
+   "dev": "dat",
+   "bien": false,
+   "pr": {
+    "num": 10838,
+    "cf": "bad",
+    "st": "draft",
+    "nc": 7,
+    "add": 28,
+    "del": 1,
+    "fc": 4
+   },
+   "created": "07-13 11:35",
+   "cop": 16,
+   "unres": 10,
+   "title": "画面移行スキルに parity 教訓を反映 (270 由来)"
+  }
+ ]
+}
