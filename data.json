@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-21 11:35",
+ "updated": "2026-07-21 11:42",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -53,8 +53,8 @@
    ],
    "created": "07-21 11:28",
    "drive": true,
-   "cop": 0,
-   "unres": 0,
+   "cop": 1,
+   "unres": 1,
    "title": "直接入庫_履歴一覧を (394) Next.js に移行"
   },
   {
