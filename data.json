@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-21 15:33",
+ "updated": "2026-07-21 15:40",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -34,6 +34,29 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "369",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11180,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 20,
+     "del": 13,
+     "fc": 4
+    }
+   ],
+   "created": "07-21 15:36",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "title": "58_返品入荷登録_表示パリティ修正"
+  },
   {
    "ticket": "561",
    "dev": "hung",
@@ -254,7 +277,7 @@
     {
      "num": 11173,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 4,
      "add": 272,
      "del": 63,
@@ -272,8 +295,8 @@
    ],
    "created": "07-20 12:24",
    "drive": false,
-   "cop": 14,
-   "unres": 0,
+   "cop": 17,
+   "unres": 3,
    "title": "直接出庫追加(420) 選択モーダル列の動的取得(パレットID欠落修正)と請求可否デフォルト値の初期化"
   },
   {
