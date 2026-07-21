@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-21 15:13",
+ "updated": "2026-07-21 15:33",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -255,9 +255,9 @@
      "num": 11173,
      "cf": "ok",
      "st": "open",
-     "nc": 3,
-     "add": 224,
-     "del": 48,
+     "nc": 4,
+     "add": 272,
+     "del": 63,
      "fc": 5
     },
     {
@@ -273,7 +273,7 @@
    "created": "07-20 12:24",
    "drive": false,
    "cop": 14,
-   "unres": 8,
+   "unres": 0,
    "title": "直接出庫追加(420) 選択モーダル列の動的取得(パレットID欠落修正)と請求可否デフォルト値の初期化"
   },
   {
@@ -1471,7 +1471,7 @@
     {
      "num": 11176,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 1,
      "add": 61,
      "del": 35,
