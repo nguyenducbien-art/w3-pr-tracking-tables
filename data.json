@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-21 11:02",
+ "updated": "2026-07-21 11:35",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -34,6 +34,29 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "561",
+   "dev": "hung",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11154,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 1551,
+     "del": 1,
+     "fc": 16
+    }
+   ],
+   "created": "07-21 11:28",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "title": "直接入庫_履歴一覧を (394) Next.js に移行"
+  },
   {
    "ticket": "560",
    "dev": "khoa",
