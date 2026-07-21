@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-21 12:01",
+ "updated": "2026-07-21 13:30",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1483,6 +1483,15 @@
    "r629": [],
    "r713": [
     {
+     "num": 11160,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 295,
+     "del": 100,
+     "fc": 7
+    },
+    {
      "num": 10844,
      "cf": "ok",
      "st": "merged",
@@ -1496,7 +1505,7 @@
    "drive": false,
    "cop": 8,
    "unres": 4,
-   "title": "在庫変遷_履歴出力(screen_id=612)をNext.jsへ移行"
+   "title": "在庫変遷_履歴出力(612)にnavline/subnavlineを追加し、レイアウトをAngularJSに一致"
   },
   {
    "ticket": "689",
