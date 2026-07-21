@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-21 14:24",
+ "updated": "2026-07-21 14:58",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -246,11 +246,20 @@
   },
   {
    "ticket": "566",
-   "dev": "khoa",
+   "dev": "hung",
    "bien": false,
    "base": [],
    "r629": [],
    "r713": [
+    {
+     "num": 11173,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 224,
+     "del": 48,
+     "fc": 5
+    },
     {
      "num": 11127,
      "cf": "ok",
@@ -265,7 +274,7 @@
    "drive": false,
    "cop": 6,
    "unres": 0,
-   "title": "420_直接出庫_内容追加_編集"
+   "title": "直接出庫_内容追加のパレット/商品選択モーダル列を動的取得に変更しパレットID欠落を修正"
   },
   {
    "ticket": "573",
