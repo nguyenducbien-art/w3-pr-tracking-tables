@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-21 16:34",
+ "updated": "2026-07-21 16:41",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -800,6 +800,15 @@
    "r629": [],
    "r713": [
     {
+     "num": 11187,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 17,
+     "del": 2,
+     "fc": 3
+    },
+    {
      "num": 11125,
      "cf": "ok",
      "st": "merged",
@@ -822,7 +831,7 @@
    "drive": false,
    "cop": 27,
    "unres": 8,
-   "title": "275_移動_対象在庫一覧"
+   "title": "移動_対象在庫一覧 パレット移動モーダルの案内文言追加とロケ一括移動の変更理由区分の既定値を修正"
   },
   {
    "ticket": "530",
