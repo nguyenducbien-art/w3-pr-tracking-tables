@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-21 15:40",
+ "updated": "2026-07-21 16:07",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -275,6 +275,15 @@
    "r629": [],
    "r713": [
     {
+     "num": 11183,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 30,
+     "del": 10,
+     "fc": 4
+    },
+    {
      "num": 11173,
      "cf": "ok",
      "st": "merged",
@@ -297,7 +306,7 @@
    "drive": false,
    "cop": 17,
    "unres": 3,
-   "title": "直接出庫追加(420) 選択モーダル列の動的取得(パレットID欠落修正)と請求可否デフォルト値の初期化"
+   "title": "直接出庫_内容追加 理由区分IDの多言語化と候補在庫の日付番兵表示を修正"
   },
   {
    "ticket": "573",
