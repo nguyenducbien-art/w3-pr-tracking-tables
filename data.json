@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-21 15:06",
+ "updated": "2026-07-21 15:13",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -274,7 +274,7 @@
    "drive": false,
    "cop": 14,
    "unres": 8,
-   "title": "直接出庫_内容追加のパレット/商品選択モーダル列を動的取得に変更しパレットID欠落を修正"
+   "title": "直接出庫追加(420) 選択モーダル列の動的取得(パレットID欠落修正)と請求可否デフォルト値の初期化"
   },
   {
    "ticket": "573",
@@ -1463,11 +1463,20 @@
   },
   {
    "ticket": "544",
-   "dev": "minh",
+   "dev": "khoa",
    "bien": false,
    "base": [],
    "r629": [],
    "r713": [
+    {
+     "num": 11176,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 61,
+     "del": 35,
+     "fc": 3
+    },
     {
      "num": 11109,
      "cf": "ok",
@@ -1491,7 +1500,7 @@
    "drive": false,
    "cop": 25,
    "unres": 0,
-   "title": "在庫情報明細のブラウザタイトルを設定"
+   "title": "247_在庫_明細_パレット変更モーダルパリティ修正"
   },
   {
    "ticket": "554",
