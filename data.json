@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-21 16:27",
+ "updated": "2026-07-21 16:34",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -44,7 +44,7 @@
     {
      "num": 11180,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 1,
      "add": 22,
      "del": 5,
@@ -53,8 +53,8 @@
    ],
    "created": "07-21 15:36",
    "drive": false,
-   "cop": 0,
-   "unres": 0,
+   "cop": 2,
+   "unres": 2,
    "title": "58_返品入荷登録_表示パリティ修正"
   },
   {
