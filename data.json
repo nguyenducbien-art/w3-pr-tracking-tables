@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-21 13:36",
+ "updated": "2026-07-21 13:43",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1486,8 +1486,8 @@
      "num": 11160,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 295,
+     "nc": 2,
+     "add": 303,
      "del": 100,
      "fc": 7
     },
@@ -1503,7 +1503,7 @@
    ],
    "created": "07-13 13:24",
    "drive": false,
-   "cop": 10,
+   "cop": 12,
    "unres": 6,
    "title": "在庫変遷_履歴出力(612)にnavline/subnavlineを追加し、レイアウトをAngularJSに一致"
   },
@@ -1642,7 +1642,7 @@
    "bien": false,
    "pr": {
     "num": 10838,
-    "cf": "bad",
+    "cf": "ok",
     "st": "draft",
     "nc": 7,
     "add": 28,
