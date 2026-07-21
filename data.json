@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-21 10:09",
+ "updated": "2026-07-21 10:16",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -54,7 +54,7 @@
    "created": "07-21 10:02",
    "drive": false,
    "cop": 1,
-   "unres": 1,
+   "unres": 0,
    "title": "389_直接入庫_明細"
   },
   {
