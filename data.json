@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-21 14:04",
+ "updated": "2026-07-21 14:17",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -181,11 +181,20 @@
   },
   {
    "ticket": "921",
-   "dev": "dat",
+   "dev": "hung",
    "bien": false,
    "base": [],
    "r629": [],
    "r713": [
+    {
+     "num": 11168,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 13,
+     "del": 3,
+     "fc": 1
+    },
     {
      "num": 11131,
      "cf": "ok",
@@ -200,7 +209,7 @@
    "drive": false,
    "cop": 7,
    "unres": 0,
-   "title": "荷姿変更_内容追加(381) を Next.js/React で実装"
+   "title": "荷姿変更情報の表示列ラベルを常時描画し荷姿ID の消失を修正"
   },
   {
    "ticket": "1441",
