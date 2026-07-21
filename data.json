@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-21 14:58",
+ "updated": "2026-07-21 15:06",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -272,8 +272,8 @@
    ],
    "created": "07-20 12:24",
    "drive": false,
-   "cop": 6,
-   "unres": 0,
+   "cop": 14,
+   "unres": 8,
    "title": "直接出庫_内容追加のパレット/商品選択モーダル列を動的取得に変更しパレットID欠落を修正"
   },
   {
