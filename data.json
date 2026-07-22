@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-22 10:40",
+ "updated": "2026-07-22 11:09",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -278,11 +278,20 @@
   },
   {
    "ticket": "566",
-   "dev": "hung",
+   "dev": "khoa",
    "bien": false,
    "base": [],
    "r629": [],
    "r713": [
+    {
+     "num": 11201,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 44,
+     "del": 199,
+     "fc": 8
+    },
     {
      "num": 11183,
      "cf": "ok",
@@ -313,9 +322,9 @@
    ],
    "created": "07-20 12:24",
    "drive": false,
-   "cop": 17,
-   "unres": 3,
-   "title": "直接出庫_内容追加 理由区分IDの多言語化と候補在庫の日付番兵表示を修正"
+   "cop": 20,
+   "unres": 6,
+   "title": "420_直接出庫_内容追加_選択モーダル共通化と理由区分ID修正"
   },
   {
    "ticket": "573",
