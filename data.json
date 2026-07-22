@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-22 12:32",
+ "updated": "2026-07-22 12:47",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -510,7 +510,7 @@
     {
      "num": 11069,
      "cf": "ok",
-     "st": "open",
+     "st": "changes",
      "nc": 5,
      "add": 231,
      "del": 25,
@@ -608,7 +608,7 @@
     {
      "num": 11033,
      "cf": "ok",
-     "st": "approved",
+     "st": "changes",
      "nc": 4,
      "add": 639,
      "del": 1,
@@ -706,7 +706,7 @@
     {
      "num": 11010,
      "cf": "ok",
-     "st": "approved",
+     "st": "changes",
      "nc": 2,
      "add": 68,
      "del": 16,
@@ -1271,7 +1271,7 @@
     {
      "num": 10916,
      "cf": "ok",
-     "st": "approved",
+     "st": "changes",
      "nc": 1,
      "add": 127,
      "del": 14,
@@ -1327,7 +1327,7 @@
     {
      "num": 10909,
      "cf": "ok",
-     "st": "open",
+     "st": "changes",
      "nc": 6,
      "add": 263,
      "del": 128,
@@ -1429,7 +1429,7 @@
     {
      "num": 10891,
      "cf": "ok",
-     "st": "approved",
+     "st": "changes",
      "nc": 2,
      "add": 54,
      "del": 14,
@@ -1504,7 +1504,7 @@
     {
      "num": 10888,
      "cf": "ok",
-     "st": "approved",
+     "st": "changes",
      "nc": 5,
      "add": 345,
      "del": 1,
