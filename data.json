@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-22 17:42",
+ "updated": "2026-07-22 17:50",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -930,7 +930,7 @@
    "created": "07-15 16:36",
    "drive": true,
    "cop": 8,
-   "unres": 1,
+   "unres": 0,
    "rvw": {
     "ap": [
      "bien"
@@ -1937,11 +1937,20 @@
   },
   {
    "ticket": "544",
-   "dev": "khoa",
+   "dev": "dat",
    "bien": false,
    "base": [],
    "r629": [],
    "r713": [
+    {
+     "num": 11226,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 89,
+     "del": 11,
+     "fc": 10
+    },
     {
      "num": 11176,
      "cf": "ok",
@@ -1979,7 +1988,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "247_在庫_明細_パレット変更モーダルパリティ修正"
+   "title": "履歴系明細画面で表示期間の適用時に URL へ from_date/to_date を同期"
   },
   {
    "ticket": "554",
