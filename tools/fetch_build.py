@@ -31,6 +31,11 @@ def ensure_account():
 
 def dev_of(login): return DEV.get(login, login)
 
+_SUF = re.compile(r'-(dl|oss|rk|art|dialog|inc)$', re.I)
+def short_name(login):
+    if not login: return None
+    return DEV.get(login) or _SUF.sub('', login)   # map dev đã biết, else bỏ hậu tố -dl/-rk/...
+
 def fmt_dt(iso):
     # "2026-07-14T15:07:32Z" (UTC) -> "MM-DD HH:MM" giờ VN (UTC+7)
     dt = datetime.datetime.strptime(iso, "%Y-%m-%dT%H:%M:%SZ") + datetime.timedelta(hours=7)
@@ -64,7 +69,10 @@ def gh_list(branch):
             if p["state"] != "CLOSED" and p["createdAt"][:10] >= SINCE]
 
 _Q = ('query($n:Int!){repository(owner:"%s",name:"%s"){pullRequest(number:$n){'
-      'state isDraft reviewDecision mergeable additions deletions changedFiles commits{totalCount} body reviewThreads(first:100){nodes{isResolved '
+      'state isDraft reviewDecision mergeable additions deletions changedFiles commits{totalCount} '
+      'reviewRequests(first:20){nodes{requestedReviewer{__typename ... on User{login} ... on Team{name} ... on Mannequin{login}}}} '
+      'latestOpinionatedReviews(first:20){nodes{author{login} state}} '
+      'body reviewThreads(first:100){nodes{isResolved '
       'comments(first:1){nodes{author{login}}}}}}}}' % (OWNER, NAME))
 
 def status_of(d):
@@ -85,8 +93,21 @@ def pr_detail(n):
     nc = (d.get("commits") or {}).get("totalCount", 0)   # số commit của PR (branch ahead base)
     add = d.get("additions") or 0; dele = d.get("deletions") or 0   # số dòng thêm/xoá (diff stat)
     fc = d.get("changedFiles") or 0                                  # số file thay đổi
+    # reviewers: pending = được request nhưng chưa review; ap/ch = latest approve / changes-requested
+    pending = []
+    for rn in ((d.get("reviewRequests") or {}).get("nodes") or []):
+        rev = rn.get("requestedReviewer") or {}
+        nm = short_name(rev.get("login") or rev.get("name"))
+        if nm and nm not in pending: pending.append(nm)
+    approved, changes = [], []
+    for rv in ((d.get("latestOpinionatedReviews") or {}).get("nodes") or []):
+        nm = short_name((rv.get("author") or {}).get("login"))
+        if not nm: continue
+        if rv.get("state") == "APPROVED" and nm not in approved: approved.append(nm)
+        elif rv.get("state") == "CHANGES_REQUESTED" and nm not in changes: changes.append(nm)
+    rvw = {"ap": approved, "ch": changes, "pd": pending}
     return {"cop": total, "unres": unres, "drive": drive, "cf": cf, "st": status_of(d),
-            "nc": nc, "add": add, "del": dele, "fc": fc}
+            "nc": nc, "add": add, "del": dele, "fc": fc, "rvw": rvw}
 
 def build():
     ensure_account()
@@ -121,6 +142,7 @@ def build():
         main.append({"ticket":tk,"dev":dev,"bien":dev=="bien",
                      "base":t["base"],"r629":t["r629"],"r713":t["r713"],
                      "created":created,"drive":drive,"cop":cop,"unres":unres,
+                     "rvw":rep["det"]["rvw"],   # reviewers của PR đại diện (base nếu có)
                      "title":clean_title(rep["title"]),"_common":common})
     main.sort(key=lambda m:(m["created"], 1 if m["base"] else 0), reverse=True)
     common_list = [m["ticket"] for m in main if m["_common"]]

@@ -28,6 +28,15 @@ function render(D){
   }
   function unb(n){return n>0?'<span class="unresolved">'+n+'</span>':'0';}
   function cnt(a){return a?a.length:0;}
+  // reviewers: ✓approve (xanh) · ✗changes (đỏ) · ⏳được request chưa review (xám)
+  function rvwCell(r){
+    if(!r) return '<span class="cf-na">—</span>';
+    var o=[];
+    (r.ap||[]).forEach(function(n){o.push('<span class="rv-ap" title="đã approve">✓'+esc(n)+'</span>');});
+    (r.ch||[]).forEach(function(n){o.push('<span class="rv-ch" title="request changes">✗'+esc(n)+'</span>');});
+    (r.pd||[]).forEach(function(n){o.push('<span class="rv-pd" title="được assign, chưa review">⏳'+esc(n)+'</span>');});
+    return o.length?o.join(' '):'<span class="cf-na">—</span>';
+  }
 
   // ---- helper: 1 row bảng chính ----
   function mainRow(r){
@@ -40,7 +49,7 @@ function render(D){
       +'<td>'+cell(r.r629||[],false)+'</td>'
       +'<td>'+cell(r.r713||[],false)+'</td>'
       +'<td><span class="date-cell">'+r.created+'</span></td>'
-      +'<td><span class="kanaya-cell">—</span></td>'
+      +'<td class="rvw-cell">'+rvwCell(r.rvw)+'</td>'
       +'<td>'+rep+'</td>'
       +'<td><span class="copilot-cell">'+r.cop+'</span></td>'
       +'<td>'+unb(r.unres)+'</td>'
@@ -69,7 +78,7 @@ function render(D){
       +'</div>'
       +'<div class="scroll-wrap"><table><thead><tr>'
         +'<th>Ticket</th><th>Dev</th><th>→base</th><th>→r20260629</th><th>→r20260713</th>'
-        +'<th>Created</th><th>Kanaya</th><th>Report</th><th>Copilot</th><th>Unres.</th><th>Title</th>'
+        +'<th>Created</th><th>Reviewers</th><th>Report</th><th>Copilot</th><th>Unres.</th><th>Title</th>'
       +'</tr></thead><tbody>'+body+'</tbody></table></div>';
   }
   var commonRows=D.main.filter(function(r){return COMMON.has(r.ticket);});
@@ -112,6 +121,7 @@ function render(D){
      +'<span class="pill pill-approved">APPROVED</span> <span class="pill pill-changes">CHANGES</span> '
      +'<span class="pill pill-merged">MERGED</span>.<br>'
      +'Conflict: ✓ MERGEABLE / ✗ CONFLICTING. Report ✓ = có link Drive self-review.<br>'
+     +'Reviewers (theo PR→base): <span class="rv-ap">✓tên</span> đã approve · <span class="rv-ch">✗tên</span> request changes · <span class="rv-pd">⏳tên</span> được assign chưa review.<br>'
      +'🔴 Bảng 1 (common) đếm Copilot chỉ từ PR→base (bỏ r713 cùng code sync).<br>'
      +'Created = thời điểm tạo PR sớm nhất của ticket, định dạng MM-DD HH:MM (giờ VN, UTC+7).</div>'
    +'</div>';
