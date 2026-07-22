@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-22 11:45",
+ "updated": "2026-07-22 11:54",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -295,9 +295,9 @@
     {
      "num": 11201,
      "cf": "ok",
-     "st": "open",
-     "nc": 3,
-     "add": 52,
+     "st": "merged",
+     "nc": 4,
+     "add": 57,
      "del": 201,
      "fc": 8
     },
@@ -331,7 +331,7 @@
    ],
    "created": "07-20 12:24",
    "drive": false,
-   "cop": 21,
+   "cop": 22,
    "unres": 3,
    "title": "420_直接出庫_内容追加_選択モーダル共通化と理由区分ID修正"
   },
