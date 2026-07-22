@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-22 15:12",
+ "updated": "2026-07-22 15:20",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -311,8 +311,8 @@
    ],
    "created": "07-20 15:55",
    "drive": true,
-   "cop": 2,
-   "unres": 0,
+   "cop": 4,
+   "unres": 2,
    "rvw": {
     "ap": [
      "kanayam",
@@ -785,7 +785,7 @@
    "base": [
     {
      "num": 11033,
-     "cf": "ok",
+     "cf": "bad",
      "st": "changes",
      "nc": 4,
      "add": 639,
@@ -1233,7 +1233,7 @@
    "created": "07-15 12:08",
    "drive": true,
    "cop": 7,
-   "unres": 4,
+   "unres": 0,
    "rvw": {
     "ap": [
      "bien"
@@ -1670,7 +1670,7 @@
    "base": [
     {
      "num": 10909,
-     "cf": "ok",
+     "cf": "bad",
      "st": "changes",
      "nc": 6,
      "add": 263,
@@ -1710,7 +1710,7 @@
    "base": [
     {
      "num": 10896,
-     "cf": "ok",
+     "cf": "bad",
      "st": "changes",
      "nc": 5,
      "add": 979,
