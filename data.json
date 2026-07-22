@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-22 14:27",
+ "updated": "2026-07-22 14:34",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -279,7 +279,7 @@
    "base": [
     {
      "num": 11134,
-     "cf": "bad",
+     "cf": "ok",
      "st": "approved",
      "nc": 3,
      "add": 651,
@@ -698,7 +698,7 @@
     {
      "num": 11052,
      "cf": "ok",
-     "st": "approved",
+     "st": "merged",
      "nc": 1,
      "add": 73,
      "del": 0,
@@ -775,7 +775,7 @@
    "base": [
     {
      "num": 11033,
-     "cf": "bad",
+     "cf": "ok",
      "st": "changes",
      "nc": 4,
      "add": 639,
@@ -938,7 +938,7 @@
     {
      "num": 10996,
      "cf": "ok",
-     "st": "approved",
+     "st": "merged",
      "nc": 4,
      "add": 203,
      "del": 10,
@@ -1385,7 +1385,7 @@
     {
      "num": 10950,
      "cf": "ok",
-     "st": "approved",
+     "st": "merged",
      "nc": 4,
      "add": 177,
      "del": 8,
@@ -1821,7 +1821,7 @@
     {
      "num": 10890,
      "cf": "ok",
-     "st": "approved",
+     "st": "merged",
      "nc": 8,
      "add": 436,
      "del": 0,
@@ -1855,13 +1855,11 @@
    "unres": 0,
    "rvw": {
     "ap": [
-     "kanayam",
-     "bien"
+     "bien",
+     "kanayam"
     ],
     "ch": [],
-    "pd": [
-     "bien"
-    ]
+    "pd": []
    },
    "title": "グリッドのソート挙動を Kendo grid に合わせる"
   },
