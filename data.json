@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-22 13:38",
+ "updated": "2026-07-22 14:02",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -44,7 +44,7 @@
     {
      "num": 11208,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 1,
      "add": 0,
      "del": 9,
@@ -1941,6 +1941,15 @@
    "r629": [],
    "r713": [
     {
+     "num": 11214,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 110,
+     "del": 42,
+     "fc": 1
+    },
+    {
      "num": 11160,
      "cf": "ok",
      "st": "merged",
@@ -1961,14 +1970,14 @@
    ],
    "created": "07-13 13:24",
    "drive": false,
-   "cop": 12,
-   "unres": 4,
+   "cop": 15,
+   "unres": 7,
    "rvw": {
     "ap": [],
     "ch": [],
     "pd": []
    },
-   "title": "在庫変遷_履歴出力(612)にnavline/subnavlineを追加し、レイアウトをAngularJSに一致"
+   "title": "在庫変遷_履歴出力(612)を一覧画面と同じアクセス制御に統一し通信断のモーダル固まりを修正"
   },
   {
    "ticket": "689",
