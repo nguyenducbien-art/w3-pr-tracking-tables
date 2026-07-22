@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-22 14:19",
+ "updated": "2026-07-22 14:27",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1453",
   "1462",
   "1461",
   "1459",
@@ -34,6 +35,34 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "1453",
+   "dev": "minh",
+   "bien": false,
+   "base": [
+    {
+     "num": 11216,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 81,
+     "del": 6,
+     "fc": 2
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "07-22 14:20",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "一覧共通コンポーネントに表示件数上限(E029)判定を追加"
+  },
   {
    "ticket": "1323",
    "dev": "dat",
