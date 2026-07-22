@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-22 10:19",
+ "updated": "2026-07-22 10:26",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -154,6 +154,15 @@
    "r629": [],
    "r713": [
     {
+     "num": 11199,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 153,
+     "del": 58,
+     "fc": 3
+    },
+    {
      "num": 11136,
      "cf": "ok",
      "st": "merged",
@@ -165,8 +174,8 @@
    ],
    "created": "07-20 16:03",
    "drive": true,
-   "cop": 2,
-   "unres": 1,
+   "cop": 3,
+   "unres": 2,
    "title": "St系タブバッジの件数取得を取得元画面のscreen_idで解決するよう修正"
   },
   {
