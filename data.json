@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-22 09:58",
+ "updated": "2026-07-22 10:05",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1728,7 +1728,7 @@
    },
    "created": "07-13 11:35",
    "cop": 17,
-   "unres": 1,
+   "unres": 0,
    "title": "画面移行スキルに parity 教訓を反映 (270 由来)"
   }
  ]
