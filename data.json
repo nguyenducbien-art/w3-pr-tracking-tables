@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-22 13:23",
+ "updated": "2026-07-22 13:30",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -354,8 +354,8 @@
    "unres": 0,
    "rvw": {
     "ap": [
-     "kanayam",
-     "bien"
+     "bien",
+     "kanayam"
     ],
     "ch": [],
     "pd": []
