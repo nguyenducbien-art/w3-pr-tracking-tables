@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-22 16:22",
+ "updated": "2026-07-22 16:29",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -615,7 +615,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "グリッド image カラムを React で表示 (Angular パリティ・JWT 画像プロキシ)"
   },
@@ -787,8 +789,8 @@
      "num": 11033,
      "cf": "ok",
      "st": "changes",
-     "nc": 7,
-     "add": 1018,
+     "nc": 8,
+     "add": 1020,
      "del": 34,
      "fc": 11
     }
@@ -807,7 +809,7 @@
    ],
    "created": "07-16 13:30",
    "drive": true,
-   "cop": 10,
+   "cop": 12,
    "unres": 0,
    "rvw": {
     "ap": [
@@ -1769,7 +1771,7 @@
    "created": "07-13 22:54",
    "drive": true,
    "cop": 17,
-   "unres": 5,
+   "unres": 0,
    "rvw": {
     "ap": [
      "bien"
