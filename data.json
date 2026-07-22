@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-22 11:16",
+ "updated": "2026-07-22 11:23",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -154,6 +154,15 @@
    "r629": [],
    "r713": [
     {
+     "num": 11202,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 50,
+     "del": 14,
+     "fc": 3
+    },
+    {
      "num": 11199,
      "cf": "ok",
      "st": "merged",
@@ -175,7 +184,7 @@
    "created": "07-20 16:03",
    "drive": true,
    "cop": 3,
-   "unres": 1,
+   "unres": 0,
    "title": "St系タブバッジの件数取得を取得元画面のscreen_idで解決するよう修正"
   },
   {
@@ -322,8 +331,8 @@
    ],
    "created": "07-20 12:24",
    "drive": false,
-   "cop": 20,
-   "unres": 3,
+   "cop": 21,
+   "unres": 4,
    "title": "420_直接出庫_内容追加_選択モーダル共通化と理由区分ID修正"
   },
   {
