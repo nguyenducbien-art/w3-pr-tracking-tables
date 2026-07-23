@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-23 13:11",
+ "updated": "2026-07-23 13:28",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -2311,60 +2311,6 @@
    "cop": 10,
    "unres": 9,
    "title": "フロントエンド移行 Skill 規約更新 (NAV-NEW-04 / MODAL-NEW-07 / I18N-NEW-02 ほか)"
-  },
-  {
-   "ticket": "260",
-   "dev": "bien",
-   "bien": true,
-   "pr": {
-    "num": 10934,
-    "cf": "ok",
-    "st": "open",
-    "nc": 5,
-    "add": 40,
-    "del": 15,
-    "fc": 6
-   },
-   "created": "07-14 14:04",
-   "cop": 8,
-   "unres": 4,
-   "title": "bake RSC-NEW-07 (ブラウザタブタイトル generateMetadata) into scaffold"
-  },
-  {
-   "ticket": "—",
-   "dev": "minh",
-   "bien": false,
-   "pr": {
-    "num": 10930,
-    "cf": "ok",
-    "st": "open",
-    "nc": 6,
-    "add": 104,
-    "del": 35,
-    "fc": 4
-   },
-   "created": "07-14 13:32",
-   "cop": 5,
-   "unres": 0,
-   "title": "scaffold のエラー/成功ダイアログ規約を alertByCode に統一 (テンプレ + API-NEW-02) + §8.3 制約解消"
-  },
-  {
-   "ticket": "—",
-   "dev": "dat",
-   "bien": false,
-   "pr": {
-    "num": 10838,
-    "cf": "ok",
-    "st": "open",
-    "nc": 9,
-    "add": 30,
-    "del": 1,
-    "fc": 4
-   },
-   "created": "07-13 11:35",
-   "cop": 17,
-   "unres": 0,
-   "title": "doc: [mimosa][frontend] 画面移行スキルに parity 教訓を反映 (270 由来)"
   }
  ]
 }
