@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-23 09:55",
+ "updated": "2026-07-23 10:02",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -818,7 +818,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "出荷履歴_一覧のCSV全件出力モード「CSV選択」モーダルを実装"
   },
@@ -938,7 +940,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "グリッド/CSV の日付番兵値に 1970/01/01・0000-00-00 を追加し AngularJS と一致"
   },
@@ -1143,7 +1147,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "明細画面の URI Too Long (414) を空グリッド表示に (AngularJS パリティ)"
   },
@@ -1243,7 +1249,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "一覧画面の登録系ボタン実行時のローディング/選択解除を Angular に合わせる"
   },
@@ -1503,7 +1511,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "共通_ブラウザタブタイトル動的設定"
   },
@@ -1701,7 +1711,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "共通_マイフィルタ削除確認ダイアログ追加"
   },
@@ -1779,7 +1791,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "エラーダイアログ共通処理を Angular 版に一致 (共通コンポーネント)"
   },
@@ -1931,7 +1945,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "共通FieldRenderer/date.tsで日付nullish番兵(5000-01-01等)を空表示にする"
   },
