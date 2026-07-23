@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-23 17:03",
+ "updated": "2026-07-23 17:17",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1055,7 +1055,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "グリッド/CSV の日付番兵値に 1970/01/01・0000-00-00 を追加し AngularJS と一致"
   },
