@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-23 15:10",
+ "updated": "2026-07-23 15:47",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -2077,9 +2077,9 @@
      "num": 11226,
      "cf": "ok",
      "st": "open",
-     "nc": 6,
-     "add": 487,
-     "del": 98,
+     "nc": 8,
+     "add": 473,
+     "del": 101,
      "fc": 15
     },
     {
@@ -2117,7 +2117,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "bien"
+    ]
    },
    "title": "履歴系明細画面で表示期間の適用時に URL へ from_date/to_date を同期"
   },
