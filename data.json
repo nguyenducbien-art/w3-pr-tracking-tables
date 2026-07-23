@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-23 11:24",
+ "updated": "2026-07-23 11:32",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -38,6 +38,34 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
   {
+   "ticket": "5",
+   "dev": "hung",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11240,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 44,
+     "del": 8,
+     "fc": 1
+    }
+   ],
+   "created": "07-23 11:24",
+   "drive": false,
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "マルチユニット進捗(724)を is_display=0 時に一覧画面と同じアクセス制御へ統一"
+  },
+  {
    "ticket": "1475",
    "dev": "minh",
    "bien": false,
@@ -53,7 +81,17 @@
     }
    ],
    "r629": [],
-   "r713": [],
+   "r713": [
+    {
+     "num": 11241,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 109,
+     "del": 11,
+     "fc": 10
+    }
+   ],
    "created": "07-23 11:15",
    "drive": true,
    "cop": 0,
@@ -311,6 +349,15 @@
    ],
    "r629": [],
    "r713": [
+    {
+     "num": 11242,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 26,
+     "del": 30,
+     "fc": 5
+    },
     {
      "num": 11202,
      "cf": "ok",
@@ -2234,7 +2281,7 @@
    "pr": {
     "num": 10934,
     "cf": "bad",
-    "st": "draft",
+    "st": "open",
     "nc": 5,
     "add": 40,
     "del": 15,
