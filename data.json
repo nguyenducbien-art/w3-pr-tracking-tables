@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-23 12:01",
+ "updated": "2026-07-23 12:09",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1945,6 +1945,15 @@
    "r629": [],
    "r713": [
     {
+     "num": 11245,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 17,
+     "del": 138,
+     "fc": 7
+    },
+    {
      "num": 10947,
      "cf": "ok",
      "st": "merged",
@@ -2267,6 +2276,24 @@
   }
  ],
  "scaffold": [
+  {
+   "ticket": "—",
+   "dev": "bien",
+   "bien": true,
+   "pr": {
+    "num": 11246,
+    "cf": "ok",
+    "st": "open",
+    "nc": 7,
+    "add": 284,
+    "del": 74,
+    "fc": 16
+   },
+   "created": "07-23 12:08",
+   "cop": 0,
+   "unres": 0,
+   "title": "scaffold 子 PR 4 件 (#11078 / #10930 / #10838 / #10934) を統合"
+  },
   {
    "ticket": "—",
    "dev": "khoa",
