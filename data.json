@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-23 10:02",
+ "updated": "2026-07-23 10:10",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -698,7 +698,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "取込結果メッセージのAngularJS一致とダイアログラベルのi18n配線"
   },
