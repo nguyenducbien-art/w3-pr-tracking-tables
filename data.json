@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-23 13:28",
+ "updated": "2026-07-23 14:41",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -340,7 +340,7 @@
     {
      "num": 11135,
      "cf": "ok",
-     "st": "open",
+     "st": "changes",
      "nc": 5,
      "add": 456,
      "del": 94,
@@ -392,10 +392,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
-    "pd": [
+    "ch": [
      "kanayam"
-    ]
+    ],
+    "pd": []
    },
    "title": "トップタブ件数バッジの screen_id 解決とマルチユニット対応"
   },
@@ -732,9 +732,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "グリッド image カラムを React で表示 (Angular パリティ・JWT 画像プロキシ)"
   },
@@ -937,9 +935,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "出荷履歴_一覧のCSV全件出力モード「CSV選択」モーダルを実装"
   },
@@ -1059,9 +1055,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "グリッド/CSV の日付番兵値に 1970/01/01・0000-00-00 を追加し AngularJS と一致"
   },
@@ -1266,9 +1260,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "明細画面の URI Too Long (414) を空グリッド表示に (AngularJS パリティ)"
   },
@@ -1368,9 +1360,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "一覧画面の登録系ボタン実行時のローディング/選択解除を Angular に合わせる"
   },
@@ -1921,9 +1911,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "エラーダイアログ共通処理を Angular 版に一致 (共通コンポーネント)"
   },
