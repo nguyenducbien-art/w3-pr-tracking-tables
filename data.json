@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-23 10:17",
+ "updated": "2026-07-23 10:47",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -235,8 +235,8 @@
      "num": 11135,
      "cf": "ok",
      "st": "draft",
-     "nc": 4,
-     "add": 460,
+     "nc": 5,
+     "add": 456,
      "del": 94,
      "fc": 8
     }
@@ -280,7 +280,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "St系タブバッジの件数取得を取得元画面のscreen_idで解決するよう修正"
+   "title": "トップタブ件数バッジの screen_id 解決とマルチユニット対応"
   },
   {
    "ticket": "1459",
