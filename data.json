@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-23 11:54",
+ "updated": "2026-07-23 12:01",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -393,7 +393,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "トップタブ件数バッジの screen_id 解決とマルチユニット対応"
   },
