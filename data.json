@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-23 10:55",
+ "updated": "2026-07-23 11:10",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1472",
   "1453",
   "1462",
   "1461",
@@ -35,6 +36,34 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "1472",
+   "dev": "dat",
+   "bien": false,
+   "base": [
+    {
+     "num": 11235,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 144,
+     "del": 30,
+     "fc": 4
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "07-23 11:03",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "帳票選択モーダルのパターン選択を帳票行内にインライン表示"
+  },
   {
    "ticket": "1453",
    "dev": "minh",
@@ -234,7 +263,7 @@
     {
      "num": 11135,
      "cf": "ok",
-     "st": "draft",
+     "st": "open",
      "nc": 5,
      "add": 456,
      "del": 94,
@@ -1614,10 +1643,10 @@
      "num": 10916,
      "cf": "ok",
      "st": "changes",
-     "nc": 1,
-     "add": 127,
-     "del": 14,
-     "fc": 3
+     "nc": 2,
+     "add": 141,
+     "del": 17,
+     "fc": 5
     }
    ],
    "r629": [],
