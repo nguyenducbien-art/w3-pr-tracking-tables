@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-23 17:24",
+ "updated": "2026-07-23 17:37",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -340,7 +340,7 @@
     {
      "num": 11135,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 6,
      "add": 460,
      "del": 94,
@@ -391,13 +391,11 @@
    "cop": 3,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "トップタブ件数バッジの screen_id 解決とマルチユニット対応"
   },
@@ -695,7 +693,7 @@
     {
      "num": 11082,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 8,
      "add": 433,
      "del": 2,
@@ -729,14 +727,11 @@
    "unres": 0,
    "rvw": {
     "ap": [
+     "kanayam",
      "bien"
     ],
-    "ch": [
-     "kanayam"
-    ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "グリッド image カラムを React で表示 (Angular パリティ・JWT 画像プロキシ)"
   },
@@ -1027,7 +1022,7 @@
     {
      "num": 11010,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 8,
      "add": 263,
      "del": 17,
@@ -1052,14 +1047,11 @@
    "unres": 0,
    "rvw": {
     "ap": [
+     "kanayam",
      "bien"
     ],
-    "ch": [
-     "kanayam"
-    ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "グリッド/CSV の日付番兵値に 1970/01/01・0000-00-00 を追加し AngularJS と一致"
   },
@@ -1234,7 +1226,7 @@
     {
      "num": 10985,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 1,
      "add": 143,
      "del": 18,
@@ -1259,14 +1251,11 @@
    "unres": 0,
    "rvw": {
     "ap": [
+     "kanayam",
      "bien"
     ],
-    "ch": [
-     "kanayam"
-    ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "明細画面の URI Too Long (414) を空グリッド表示に (AngularJS パリティ)"
   },
@@ -1336,7 +1325,7 @@
     {
      "num": 10975,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 6,
      "add": 675,
      "del": 51,
@@ -1361,14 +1350,11 @@
    "unres": 0,
    "rvw": {
     "ap": [
+     "kanayam",
      "bien"
     ],
-    "ch": [
-     "kanayam"
-    ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "一覧画面の登録系ボタン実行時のローディング/選択解除を Angular に合わせる"
   },
