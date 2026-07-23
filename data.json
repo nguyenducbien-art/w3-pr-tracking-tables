@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-23 16:03",
+ "updated": "2026-07-23 16:10",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -160,7 +160,7 @@
    "r713": [
     {
      "num": 11219,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 4,
      "add": 116,
@@ -1260,7 +1260,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "明細画面の URI Too Long (414) を空グリッド表示に (AngularJS パリティ)"
   },
@@ -1360,7 +1362,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "一覧画面の登録系ボタン実行時のローディング/選択解除を Angular に合わせる"
   },
