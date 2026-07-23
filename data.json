@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-23 12:09",
+ "updated": "2026-07-23 12:16",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -2290,8 +2290,8 @@
     "fc": 16
    },
    "created": "07-23 12:08",
-   "cop": 0,
-   "unres": 0,
+   "cop": 3,
+   "unres": 3,
    "title": "scaffold 子 PR 4 件 (#11078 / #10930 / #10838 / #10934) を統合"
   },
   {
