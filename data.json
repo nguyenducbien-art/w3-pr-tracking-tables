@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-23 14:41",
+ "updated": "2026-07-23 15:10",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -785,7 +785,7 @@
     {
      "num": 11069,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 7,
      "add": 239,
      "del": 33,
@@ -809,13 +809,11 @@
    "cop": 3,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "取込結果メッセージのAngularJS一致とダイアログラベルのi18n配線"
   },
@@ -1583,7 +1581,7 @@
     {
      "num": 10933,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 3,
      "add": 628,
      "del": 0,
@@ -1616,13 +1614,11 @@
    "cop": 7,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "共通_ブラウザタブタイトル動的設定"
   },
@@ -1720,7 +1716,7 @@
     {
      "num": 10916,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 2,
      "add": 141,
      "del": 17,
@@ -1754,14 +1750,11 @@
    "unres": 0,
    "rvw": {
     "ap": [
+     "kanayam",
      "bien"
     ],
-    "ch": [
-     "kanayam"
-    ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "取込結果モーダルに失敗件数を常時表示"
   },
@@ -1803,7 +1796,7 @@
     {
      "num": 10909,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 9,
      "add": 287,
      "del": 144,
@@ -1827,13 +1820,11 @@
    "cop": 8,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "共通_マイフィルタ削除確認ダイアログ追加"
   },
@@ -2024,7 +2015,7 @@
     {
      "num": 10888,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 6,
      "add": 353,
      "del": 1,
@@ -2067,14 +2058,11 @@
    "unres": 0,
    "rvw": {
     "ap": [
+     "kanayam",
      "bien"
     ],
-    "ch": [
-     "kanayam"
-    ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "共通FieldRenderer/date.tsで日付nullish番兵(5000-01-01等)を空表示にする"
   },
