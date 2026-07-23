@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-23 11:17",
+ "updated": "2026-07-23 11:24",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1475",
   "1472",
   "1453",
   "1462",
@@ -42,7 +43,7 @@
    "bien": false,
    "base": [
     {
-     "num": 11236,
+     "num": 11237,
      "cf": "ok",
      "st": "open",
      "nc": 1,
@@ -53,7 +54,7 @@
    ],
    "r629": [],
    "r713": [],
-   "created": "07-23 11:12",
+   "created": "07-23 11:15",
    "drive": true,
    "cop": 0,
    "unres": 0,
@@ -80,7 +81,17 @@
     }
    ],
    "r629": [],
-   "r713": [],
+   "r713": [
+    {
+     "num": 11238,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 165,
+     "del": 30,
+     "fc": 3
+    }
+   ],
    "created": "07-23 11:03",
    "drive": true,
    "cop": 2,
@@ -1700,7 +1711,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "取込結果モーダルに失敗件数を常時表示"
   },
