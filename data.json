@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-23 11:32",
+ "updated": "2026-07-23 11:39",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -2288,8 +2288,8 @@
     "fc": 6
    },
    "created": "07-14 14:04",
-   "cop": 5,
-   "unres": 1,
+   "cop": 8,
+   "unres": 4,
    "title": "bake RSC-NEW-07 (ブラウザタブタイトル generateMetadata) into scaffold"
   },
   {
