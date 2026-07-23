@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-23 11:10",
+ "updated": "2026-07-23 11:17",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -37,6 +37,34 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
   {
+   "ticket": "1475",
+   "dev": "minh",
+   "bien": false,
+   "base": [
+    {
+     "num": 11236,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 134,
+     "del": 9,
+     "fc": 10
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "07-23 11:12",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "マイフィルタ保存ダイアログの文言・入力欄ラベル・保存ボタンを AngularJS に合わせる (共通)"
+  },
+  {
    "ticket": "1472",
    "dev": "dat",
    "bien": false,
@@ -45,8 +73,8 @@
      "num": 11235,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 144,
+     "nc": 3,
+     "add": 166,
      "del": 30,
      "fc": 4
     }
@@ -55,7 +83,7 @@
    "r713": [],
    "created": "07-23 11:03",
    "drive": true,
-   "cop": 0,
+   "cop": 2,
    "unres": 0,
    "rvw": {
     "ap": [],
