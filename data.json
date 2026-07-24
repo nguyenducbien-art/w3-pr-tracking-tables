@@ -72,7 +72,7 @@
    "base": [
     {
      "num": 11237,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 1,
      "add": 134,
@@ -148,7 +148,7 @@
    "base": [
     {
      "num": 11216,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 1,
      "add": 81,
@@ -783,7 +783,7 @@
    "base": [
     {
      "num": 11069,
-     "cf": "ok",
+     "cf": "bad",
      "st": "approved",
      "nc": 7,
      "add": 239,
@@ -1870,7 +1870,7 @@
    "base": [
     {
      "num": 10896,
-     "cf": "ok",
+     "cf": "bad",
      "st": "changes",
      "nc": 6,
      "add": 984,
