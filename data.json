@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-24 11:00",
+ "updated": "2026-07-24 11:21",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -160,7 +160,7 @@
    "r713": [
     {
      "num": 11219,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
      "nc": 4,
      "add": 116,
@@ -528,7 +528,7 @@
     {
      "num": 11269,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 1,
      "add": 7,
      "del": 7,
@@ -580,7 +580,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "420_数量変更_変更数列の配置をレガシーに合わせる"
+   "title": "270_数量変更_変更数列の配置をレガシーに合わせる"
   },
   {
    "ticket": "573",
