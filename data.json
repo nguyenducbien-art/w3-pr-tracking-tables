@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-24 13:35",
+ "updated": "2026-07-24 14:03",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -160,7 +160,7 @@
    "r713": [
     {
      "num": 11219,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
      "nc": 4,
      "add": 116,
@@ -520,11 +520,20 @@
   },
   {
    "ticket": "566",
-   "dev": "minh",
+   "dev": "khoa",
    "bien": false,
    "base": [],
    "r629": [],
    "r713": [
+    {
+     "num": 11283,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 24,
+     "del": 8,
+     "fc": 3
+    },
     {
      "num": 11269,
      "cf": "ok",
@@ -580,7 +589,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "270_数量変更_変更数列の配置をレガシーに合わせる"
+   "title": "420_直接出庫_内容追加_選択モーダル共通化と理由区分ID修正"
   },
   {
    "ticket": "573",
