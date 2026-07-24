@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-24 14:10",
+ "updated": "2026-07-24 14:31",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1471",
   "1475",
   "1472",
   "1453",
@@ -37,6 +38,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "1471",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r629": [],
+   "r713": [
+    {
+     "num": 11287,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 70,
+     "del": 1,
+     "fc": 3
+    }
+   ],
+   "created": "07-24 14:24",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": [
+     "bien"
+    ]
+   },
+   "title": "一覧画面サーバープリフェッチを既定でメタデータのみに限定"
+  },
   {
    "ticket": "5",
    "dev": "hung",
@@ -160,7 +191,7 @@
    "r713": [
     {
      "num": 11219,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
      "nc": 4,
      "add": 116,
