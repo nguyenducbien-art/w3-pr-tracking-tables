@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-24 15:13",
+ "updated": "2026-07-24 16:27",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -170,7 +170,9 @@
      "bien"
     ],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "帳票選択モーダルのパターン選択を帳票行内にインライン表示"
   },
