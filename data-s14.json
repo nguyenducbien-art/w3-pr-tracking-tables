@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-27 17:51",
+ "updated": "2026-07-27 17:58",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -17,11 +17,11 @@
    "r727": [
     {
      "num": 11343,
-     "cf": "bad",
-     "st": "open",
-     "nc": 1,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
      "add": 1045,
-     "del": 1,
+     "del": 2,
      "fc": 20
     }
    ],
@@ -44,18 +44,18 @@
    "r727": [
     {
      "num": 11342,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 1088,
+     "nc": 3,
+     "add": 1091,
      "del": 6,
      "fc": 18
     }
    ],
    "created": "07-27 17:43",
    "drive": true,
-   "cop": 0,
-   "unres": 0,
+   "cop": 3,
+   "unres": 3,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -73,7 +73,7 @@
      "num": 11341,
      "cf": "bad",
      "st": "open",
-     "nc": 2,
+     "nc": 3,
      "add": 3614,
      "del": 2,
      "fc": 28
@@ -98,7 +98,7 @@
    "r727": [
     {
      "num": 11340,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 2,
      "add": 4071,
@@ -153,7 +153,7 @@
     {
      "num": 11337,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 1,
      "add": 3994,
      "del": 2,
