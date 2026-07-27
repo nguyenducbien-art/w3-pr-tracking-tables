@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-27 14:24",
+ "updated": "2026-07-27 14:44",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,6 +10,33 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
   {
+   "ticket": "789",
+   "dev": "dat",
+   "bien": false,
+   "base": [],
+   "r727": [
+    {
+     "num": 11327,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 1234,
+     "del": 2,
+     "fc": 15
+    }
+   ],
+   "created": "07-27 14:40",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "移動_一覧 (screen_id=280) を実装 + 単体テスト"
+  },
+  {
    "ticket": "556",
    "dev": "hung",
    "bien": false,
@@ -18,7 +45,7 @@
     {
      "num": 11325,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 2,
      "add": 2418,
      "del": 2,
@@ -135,7 +162,7 @@
    "r727": [
     {
      "num": 11241,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
      "nc": 1,
      "add": 109,
@@ -172,7 +199,7 @@
    "r727": [
     {
      "num": 11219,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
      "nc": 3,
      "add": 116,
