@@ -3,7 +3,9 @@
 # data.json do fetch_build.py sinh. build_s13.py KHÔNG chứa data.
 # Usage: python3 build_s13.py   (đọc ./data.json)
 import json, re, sys
+from sprints import nav_html
 DATA = json.load(open(sys.argv[1] if len(sys.argv)>1 else "data.json"))
+NAV = nav_html("Sprint 13")   # menu điều hướng sprint (sprint hiện tại = active)
 
 # CSS lấy từ _head.html (chỉ block <style>)
 css = re.search(r'<style>.*?</style>', open("_head.html").read(), re.S).group(0)
@@ -157,7 +159,7 @@ def build(inline):
     else:
         data_script = '<script id="table-data" type="application/json"></script>'
     inner = ('<title>'+TITLE+'</title>\n'+FAVICON+'\n'+css+'\n'
-             '<div id="app"></div>\n'+data_script+'\n<script>'+RENDER_JS+'</script>')
+             +NAV+'\n<div id="app"></div>\n'+data_script+'\n<script>'+RENDER_JS+'</script>')
     return inner
 
 # artifact = fragment + inline JSON
@@ -167,7 +169,7 @@ open("table-a-s13.html","w").write(build(True))
 doc = ('<!DOCTYPE html>\n<html lang="vi">\n<head>\n<meta charset="utf-8">\n'
        '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
        '<meta name="robots" content="noindex, nofollow">\n<title>'+TITLE+'</title>\n'+FAVICON+'\n'+css+'\n</head>\n<body>\n'
-       '<div id="app"></div>\n<script id="table-data" type="application/json"></script>\n<script>'+RENDER_JS+'</script>\n</body>\n</html>')
+       +NAV+'\n<div id="app"></div>\n<script id="table-data" type="application/json"></script>\n<script>'+RENDER_JS+'</script>\n</body>\n</html>')
 open("index.html","w").write(doc)
 
 print("built shell: index.html (fetch) + table-a-s13.html (artifact,inline) từ data.json |",
