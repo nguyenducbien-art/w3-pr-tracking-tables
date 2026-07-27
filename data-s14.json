@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-27 11:55",
+ "updated": "2026-07-27 12:03",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -9,6 +9,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "557",
+   "dev": "hung",
+   "bien": false,
+   "base": [],
+   "r727": [
+    {
+     "num": 11318,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 691,
+     "del": 2,
+     "fc": 20
+    }
+   ],
+   "created": "07-27 11:57",
+   "drive": true,
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "在庫予測_出荷予測明細 (screen_id=704) を React 化"
+  },
   {
    "ticket": "543",
    "dev": "dat",
