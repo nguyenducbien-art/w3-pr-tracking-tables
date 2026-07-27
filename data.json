@@ -1,12 +1,10 @@
 {
- "updated": "2026-07-27 10:34",
+ "updated": "2026-07-27 11:14",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
   "1471",
-  "1475",
   "1472",
-  "1453",
   "1462",
   "1461",
   "1459",
@@ -97,44 +95,6 @@
    "title": "マルチユニット進捗(724)を is_display=0 時に一覧画面と同じアクセス制御へ統一"
   },
   {
-   "ticket": "1475",
-   "dev": "minh",
-   "bien": false,
-   "base": [
-    {
-     "num": 11237,
-     "cf": "bad",
-     "st": "open",
-     "nc": 1,
-     "add": 134,
-     "del": 9,
-     "fc": 10
-    }
-   ],
-   "r629": [],
-   "r713": [
-    {
-     "num": 11241,
-     "cf": "bad",
-     "st": "open",
-     "nc": 1,
-     "add": 109,
-     "del": 11,
-     "fc": 10
-    }
-   ],
-   "created": "07-23 11:15",
-   "drive": true,
-   "cop": 0,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "マイフィルタ保存ダイアログの文言・入力欄ラベル・保存ボタンを AngularJS に合わせる (共通)"
-  },
-  {
    "ticket": "1472",
    "dev": "dat",
    "bien": false,
@@ -174,44 +134,6 @@
     "pd": []
    },
    "title": "帳票選択モーダルのパターン選択を帳票行内にインライン表示"
-  },
-  {
-   "ticket": "1453",
-   "dev": "minh",
-   "bien": false,
-   "base": [
-    {
-     "num": 11216,
-     "cf": "bad",
-     "st": "open",
-     "nc": 1,
-     "add": 81,
-     "del": 6,
-     "fc": 2
-    }
-   ],
-   "r629": [],
-   "r713": [
-    {
-     "num": 11219,
-     "cf": "bad",
-     "st": "open",
-     "nc": 4,
-     "add": 116,
-     "del": 6,
-     "fc": 5
-    }
-   ],
-   "created": "07-22 14:20",
-   "drive": true,
-   "cop": 0,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "一覧共通コンポーネントに表示件数上限(E029)判定を追加"
   },
   {
    "ticket": "1323",
