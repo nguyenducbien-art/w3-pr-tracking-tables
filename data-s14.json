@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-27 12:34",
+ "updated": "2026-07-27 13:38",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -9,6 +9,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "745",
+   "dev": "dat",
+   "bien": false,
+   "base": [],
+   "r727": [
+    {
+     "num": 11322,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 1540,
+     "del": 2,
+     "fc": 20
+    }
+   ],
+   "created": "07-27 13:26",
+   "drive": false,
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "直接入庫_一覧 (screen_id=387) を実装"
+  },
   {
    "ticket": "557",
    "dev": "hung",
