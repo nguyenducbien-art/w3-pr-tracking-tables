@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-27 10:24",
+ "updated": "2026-07-27 10:34",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -103,7 +103,7 @@
    "base": [
     {
      "num": 11237,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 1,
      "add": 134,
@@ -115,7 +115,7 @@
    "r713": [
     {
      "num": 11241,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 1,
      "add": 109,
@@ -182,7 +182,7 @@
    "base": [
     {
      "num": 11216,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 1,
      "add": 81,
@@ -194,7 +194,7 @@
    "r713": [
     {
      "num": 11219,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 4,
      "add": 116,
@@ -2302,6 +2302,11 @@
    "created": "07-23 12:08",
    "cop": 12,
    "unres": 12,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
    "title": "scaffold 子 PR 4 件 (#11078 / #10930 / #10838 / #10934) を統合"
   },
   {
@@ -2320,6 +2325,11 @@
    "created": "07-17 11:15",
    "cop": 10,
    "unres": 9,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
    "title": "フロントエンド移行 Skill 規約更新 (NAV-NEW-04 / MODAL-NEW-07 / I18N-NEW-02 ほか)"
   }
  ]
