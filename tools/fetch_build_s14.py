@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Fetch live PR data từ GitHub (dialog-inc/w3package_v2) → build data.json cho
-Table A Sprint 13. Self-contained: chỉ dùng gh + python stdlib. KHÔNG chứa secret.
-Usage: python3 fetch_build.py [output_data.json]
+Fetch live PR data từ GitHub (dialog-inc/w3package_v2) → build data-s14.json cho
+Table A Sprint 14 (nhắm base + r20260727 + r20260727_scaffold).
+Self-contained: chỉ dùng gh + python stdlib. KHÔNG chứa secret.
+Usage: python3 fetch_build_s14.py [output_data.json]
 """
 import json, re, subprocess, sys, datetime
 
 REPO = "dialog-inc/w3package_v2"
 OWNER, NAME = "dialog-inc", "w3package_v2"
-SINCE = "2026-07-13"                      # PR created >= ngày này
+SINCE = "2026-07-27"                      # PR created >= ngày này (Sprint 14 = r20260727)
 PRURL = "https://github.com/%s/pull/" % REPO
-OUT = sys.argv[1] if len(sys.argv) > 1 else "data.json"
+OUT = sys.argv[1] if len(sys.argv) > 1 else "data-s14.json"
 
 DEV = {"nguyenducbien-art":"bien","nguyennhatminh-dl":"minh","phambaohung-dl":"hung",
        "phamtiendat-oss":"dat","nguyenanhkhoa-rk":"khoa"}
@@ -49,10 +50,10 @@ def ticket_from_title(t):
     m = re.search(r'ANGULAR_REPLACE-(\d+)', t or ''); return m.group(1) if m else None
 
 def is_sync(seg):
-    if seg in ('base','r20260629','r20260713','r20260713_scaffold'): return True
+    if seg in ('base','r20260629','r20260713','r20260713_scaffold','r20260727','r20260727_scaffold'): return True
     if re.match(r'^pr\d+', seg): return True
     if 'evidences' in seg: return True
-    if re.match(r'^r20260629-', seg): return True
+    if re.match(r'^r2026\d{4}-', seg): return True
     return False
 
 def clean_title(t):
@@ -112,7 +113,7 @@ def pr_detail(n):
 def build():
     ensure_account()
     # ---- bảng chính: base / r629 / r713 ----
-    lists = {"base": gh_list("base"), "r629": gh_list("r20260629"), "r713": gh_list("r20260713")}
+    lists = {"base": gh_list("base"), "r727": gh_list("r20260727")}
     tickets = {}
     for key, lst in lists.items():
         for p in lst:
@@ -120,7 +121,7 @@ def build():
             if is_sync(seg): continue
             tk = ticket_from_branch(seg)
             if not tk: continue
-            t = tickets.setdefault(tk, {"base":[], "r629":[], "r713":[], "meta":[], "common":False})
+            t = tickets.setdefault(tk, {"base":[], "r727":[], "meta":[], "common":False})
             det = pr_detail(p["number"])
             t[key].append({"num": p["number"], "cf": det["cf"], "st": det["st"],
                            "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"]})
@@ -140,7 +141,7 @@ def build():
         drive = any(m["det"]["drive"] for m in (base_m or metas))
         created = fmt_dt(min(m["created"] for m in metas))   # PR sớm nhất, MM-DD HH:MM (giờ VN)
         main.append({"ticket":tk,"dev":dev,"bien":dev=="bien",
-                     "base":t["base"],"r629":t["r629"],"r713":t["r713"],
+                     "base":t["base"],"r727":t["r727"],
                      "created":created,"drive":drive,"cop":cop,"unres":unres,
                      "rvw":rep["det"]["rvw"],   # reviewers của PR đại diện (base nếu có)
                      "title":clean_title(rep["title"]),"_common":common})
@@ -150,7 +151,7 @@ def build():
 
     # ---- bảng phụ scaffold ----
     scaffold = []
-    for p in gh_list("r20260713_scaffold"):
+    for p in gh_list("r20260727_scaffold"):
         seg = p["headRefName"].split("/")[-1]
         if is_sync(seg): continue
         det = pr_detail(p["number"])
@@ -163,7 +164,7 @@ def build():
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
     data = {"updated":now,"repo":REPO,"prUrlBase":PRURL,
             "common":common_list,"invalidBase":[],
-            "scaffoldBranch":"mimosa/frontend/develop/r20260713_scaffold",
+            "scaffoldBranch":"mimosa/frontend/develop/r20260727_scaffold",
             "main":main,"scaffold":scaffold}
 
     # dedupe: nếu nội dung (BỎ 'updated') không đổi so với file cũ → không ghi, exit 2
