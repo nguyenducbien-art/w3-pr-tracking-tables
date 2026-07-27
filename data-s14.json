@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-27 16:05",
+ "updated": "2026-07-27 16:26",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -9,6 +9,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "581",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r727": [
+    {
+     "num": 11333,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 1353,
+     "del": 3,
+     "fc": 21
+    }
+   ],
+   "created": "07-27 16:26",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "320_棚卸_履歴明細"
+  },
   {
    "ticket": "562",
    "dev": "hung",
