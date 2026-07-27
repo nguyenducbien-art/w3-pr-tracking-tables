@@ -10,7 +10,7 @@ import json, re, subprocess, sys, datetime
 
 REPO = "dialog-inc/w3package_v2"
 OWNER, NAME = "dialog-inc", "w3package_v2"
-SINCE = "2026-07-27"                      # PR created >= ngày này (Sprint 14 = r20260727)
+SINCE = "2026-07-13"                      # bound scan; Sprint 14 gate thực = "có PR nhắm r20260727" (không phải ngày)
 PRURL = "https://github.com/%s/pull/" % REPO
 OUT = sys.argv[1] if len(sys.argv) > 1 else "data-s14.json"
 
@@ -112,22 +112,35 @@ def pr_detail(n):
 
 def build():
     ensure_account()
-    # ---- bảng chính: base / r629 / r713 ----
-    lists = {"base": gh_list("base"), "r727": gh_list("r20260727")}
+    # ---- Sprint 14 = ticket CÓ PR nhắm r20260727 (KHÔNG lọc theo ngày) ----
+    # base PR chỉ hiện cho các ticket đã có r727 PR (khớp theo ticket number).
     tickets = {}
-    for key, lst in lists.items():
-        for p in lst:
-            seg = p["headRefName"].split("/")[-1]
-            if is_sync(seg): continue
-            tk = ticket_from_branch(seg)
-            if not tk: continue
-            t = tickets.setdefault(tk, {"base":[], "r727":[], "meta":[], "common":False})
-            det = pr_detail(p["number"])
-            t[key].append({"num": p["number"], "cf": det["cf"], "st": det["st"],
-                           "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"]})
-            t["meta"].append({"num":p["number"],"key":key,"author":p["author"]["login"],
-                              "created":p["createdAt"],"title":p["title"],"det":det})
-            if seg.startswith("common-"): t["common"] = True
+    s14 = set()
+    for p in gh_list("r20260727"):
+        seg = p["headRefName"].split("/")[-1]
+        if is_sync(seg): continue
+        tk = ticket_from_branch(seg)
+        if not tk: continue
+        s14.add(tk)
+        t = tickets.setdefault(tk, {"base":[], "r727":[], "meta":[], "common":False})
+        det = pr_detail(p["number"])
+        t["r727"].append({"num": p["number"], "cf": det["cf"], "st": det["st"],
+                          "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"]})
+        t["meta"].append({"num":p["number"],"key":"r727","author":p["author"]["login"],
+                          "created":p["createdAt"],"title":p["title"],"det":det})
+        if seg.startswith("common-"): t["common"] = True
+    for p in gh_list("base"):
+        seg = p["headRefName"].split("/")[-1]
+        if is_sync(seg): continue
+        tk = ticket_from_branch(seg)
+        if tk not in s14: continue   # chỉ ticket đã thuộc Sprint 14 (có r727 PR)
+        t = tickets[tk]
+        det = pr_detail(p["number"])
+        t["base"].append({"num": p["number"], "cf": det["cf"], "st": det["st"],
+                          "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"]})
+        t["meta"].append({"num":p["number"],"key":"base","author":p["author"]["login"],
+                          "created":p["createdAt"],"title":p["title"],"det":det})
+        if seg.startswith("common-"): t["common"] = True
 
     main = []
     for tk, t in tickets.items():

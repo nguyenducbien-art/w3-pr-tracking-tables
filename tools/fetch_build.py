@@ -111,6 +111,13 @@ def pr_detail(n):
 
 def build():
     ensure_account()
+    # ticket đã có PR nhắm r20260727 = thuộc Sprint 14 → LOẠI khỏi Sprint 13 (dù còn PR→base/r713).
+    s14 = set()
+    for p in gh_list("r20260727"):
+        seg = p["headRefName"].split("/")[-1]
+        if is_sync(seg): continue
+        tk = ticket_from_branch(seg)
+        if tk: s14.add(tk)
     # ---- bảng chính: base / r629 / r713 ----
     lists = {"base": gh_list("base"), "r629": gh_list("r20260629"), "r713": gh_list("r20260713")}
     tickets = {}
@@ -120,6 +127,7 @@ def build():
             if is_sync(seg): continue
             tk = ticket_from_branch(seg)
             if not tk: continue
+            if tk in s14: continue   # ticket này đã sang Sprint 14
             t = tickets.setdefault(tk, {"base":[], "r629":[], "r713":[], "meta":[], "common":False})
             det = pr_detail(p["number"])
             t[key].append({"num": p["number"], "cf": det["cf"], "st": det["st"],
