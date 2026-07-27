@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-24 16:27",
+ "updated": "2026-07-27 09:15",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -167,12 +167,11 @@
    "unres": 0,
    "rvw": {
     "ap": [
+     "kanayam",
      "bien"
     ],
     "ch": [],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "帳票選択モーダルのパターン選択を帳票行内にインライン表示"
   },
@@ -955,7 +954,7 @@
     {
      "num": 11033,
      "cf": "bad",
-     "st": "changes",
+     "st": "approved",
      "nc": 9,
      "add": 1020,
      "del": 34,
@@ -980,14 +979,11 @@
    "unres": 0,
    "rvw": {
     "ap": [
+     "kanayam",
      "bien"
     ],
-    "ch": [
-     "kanayam"
-    ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "出荷履歴_一覧のCSV全件出力モード「CSV選択」モーダルを実装"
   },
@@ -1924,7 +1920,7 @@
     {
      "num": 10896,
      "cf": "bad",
-     "st": "changes",
+     "st": "approved",
      "nc": 6,
      "add": 984,
      "del": 103,
@@ -1985,14 +1981,11 @@
    "unres": 0,
    "rvw": {
     "ap": [
+     "kanayam",
      "bien"
     ],
-    "ch": [
-     "kanayam"
-    ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "エラーダイアログ共通処理を Angular 版に一致 (共通コンポーネント)"
   },
