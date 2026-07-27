@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-27 11:14",
+ "updated": "2026-07-27 11:48",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -9,6 +9,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "543",
+   "dev": "dat",
+   "bien": false,
+   "base": [],
+   "r727": [
+    {
+     "num": 11317,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 905,
+     "del": 2,
+     "fc": 22
+    }
+   ],
+   "created": "07-27 11:47",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "在庫_全在庫一覧 (screen 645) を React へ移行"
+  },
   {
    "ticket": "1475",
    "dev": "minh",
