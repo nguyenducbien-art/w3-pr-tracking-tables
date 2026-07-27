@@ -5,7 +5,7 @@ Fetch live PR data từ GitHub (dialog-inc/w3package_v2) → build data.json cho
 Table A Sprint 13. Self-contained: chỉ dùng gh + python stdlib. KHÔNG chứa secret.
 Usage: python3 fetch_build.py [output_data.json]
 """
-import json, re, subprocess, sys, datetime
+import json, re, subprocess, sys, datetime, time
 
 REPO = "dialog-inc/w3package_v2"
 OWNER, NAME = "dialog-inc", "w3package_v2"
@@ -75,6 +75,25 @@ _Q = ('query($n:Int!){repository(owner:"%s",name:"%s"){pullRequest(number:$n){'
       'body reviewThreads(first:100){nodes{isResolved '
       'comments(first:1){nodes{author{login}}}}}}}}' % (OWNER, NAME))
 
+# query nhẹ chỉ lấy mergeable — dùng retry khi GitHub trả UNKNOWN (tính lazy)
+_QM = ('query($n:Int!){repository(owner:"%s",name:"%s"){pullRequest(number:$n){mergeable}}}' % (OWNER, NAME))
+
+def resolve_cf(d, n):
+    """CONFLICTING→bad, MERGEABLE→ok, MERGED→ok; OPEN mà UNKNOWN thì retry, cuối cùng vẫn UNKNOWN→unk."""
+    if d.get("state") == "MERGED": return "ok"
+    mg = d.get("mergeable")
+    if d.get("state") == "OPEN" and mg == "UNKNOWN":
+        for _ in range(3):
+            time.sleep(2)
+            try:
+                mg = json.loads(run(["gh","api","graphql","-F","n=%d"%n,"-f","query="+_QM]))["data"]["repository"]["pullRequest"]["mergeable"]
+            except Exception:
+                break
+            if mg != "UNKNOWN": break
+    if mg == "CONFLICTING": return "bad"
+    if mg == "MERGEABLE":   return "ok"
+    return "unk"
+
 def status_of(d):
     if d.get("state") == "MERGED": return "merged"
     if d.get("isDraft"): return "draft"
@@ -89,7 +108,7 @@ def pr_detail(n):
           if t["comments"]["nodes"] and re.search("[Cc]opilot", t["comments"]["nodes"][0]["author"]["login"] or "")]
     total = len(th); unres = len([t for t in th if not t["isResolved"]])
     drive = bool(re.search(r'drive\.google\.com', d.get("body") or "", re.I))
-    cf = "bad" if d.get("mergeable") == "CONFLICTING" else "ok"
+    cf = resolve_cf(d, n)   # bad/ok/unk (retry mergeable khi UNKNOWN)
     nc = (d.get("commits") or {}).get("totalCount", 0)   # số commit của PR (branch ahead base)
     add = d.get("additions") or 0; dele = d.get("deletions") or 0   # số dòng thêm/xoá (diff stat)
     fc = d.get("changedFiles") or 0                                  # số file thay đổi

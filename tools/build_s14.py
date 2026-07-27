@@ -17,7 +17,7 @@ function render(D){
   var PILL={merged:['merged','MERGED'],draft:['draft','DRAFT'],approved:['approved','APPROVED'],changes:['changes','CHANGES'],open:['open','OPEN']};
   function pill(st){var x=PILL[st]||PILL.open;return '<span class="pill pill-'+x[0]+'">'+x[1]+'</span>';}
   function one(p,inv){
-    var mark=p.cf==='ok'?'<span class="cf-ok">✓</span>':'<span class="cf-bad">✗</span>';
+    var mark=p.cf==='bad'?'<span class="cf-bad">✗</span>':(p.cf==='unk'?'<span class="cf-unk" title="GitHub chưa tính xong mergeable">?</span>':'<span class="cf-ok">✓</span>');
     var inb=inv?' <span class="badge-invalid" title="ルール違反">invalid</span>':'';
     var nc=(p.nc!=null)?' <span class="commits" title="số commit trong PR (branch vượt base)">'+p.nc+'c</span>':'';
     var fcv=(p.fc!=null)?' <span class="files" title="số file thay đổi">'+p.fc+'f</span>':'';
