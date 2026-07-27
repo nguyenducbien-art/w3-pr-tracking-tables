@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-27 17:43",
+ "updated": "2026-07-27 17:51",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,6 +10,33 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
   {
+   "ticket": "586",
+   "dev": "bien",
+   "bien": true,
+   "base": [],
+   "r727": [
+    {
+     "num": 11343,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 1045,
+     "del": 1,
+     "fc": 20
+    }
+   ],
+   "created": "07-27 17:44",
+   "drive": false,
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "セット品作成_セット品候補一覧 (screen_id=518) を React 化"
+  },
+  {
    "ticket": "588",
    "dev": "hung",
    "bien": false,
@@ -18,11 +45,11 @@
     {
      "num": 11342,
      "cf": "bad",
-     "st": "draft",
-     "nc": 1,
+     "st": "open",
+     "nc": 2,
      "add": 1088,
-     "del": 1,
-     "fc": 17
+     "del": 6,
+     "fc": 18
     }
    ],
    "created": "07-27 17:43",
@@ -44,7 +71,7 @@
    "r727": [
     {
      "num": 11341,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 2,
      "add": 3614,
@@ -152,7 +179,7 @@
    "r727": [
     {
      "num": 11336,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 2,
      "add": 1364,
@@ -179,7 +206,7 @@
    "r727": [
     {
      "num": 11335,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 5,
      "add": 1417,
@@ -207,7 +234,7 @@
     {
      "num": 11334,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 3,
      "add": 840,
      "del": 2,
@@ -234,7 +261,7 @@
     {
      "num": 11333,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 1,
      "add": 1353,
      "del": 3,
