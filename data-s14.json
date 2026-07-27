@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-27 17:14",
+ "updated": "2026-07-27 17:21",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -9,6 +9,60 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "553",
+   "dev": "minh",
+   "bien": false,
+   "base": [],
+   "r727": [
+    {
+     "num": 11341,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 3609,
+     "del": 2,
+     "fc": 27
+    }
+   ],
+   "created": "07-27 17:20",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "在庫変遷_商品別 (screen_id=303) を React へ移行"
+  },
+  {
+   "ticket": "741",
+   "dev": "dat",
+   "bien": false,
+   "base": [],
+   "r727": [
+    {
+     "num": 11340,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 4051,
+     "del": 6,
+     "fc": 31
+    }
+   ],
+   "created": "07-27 17:17",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ANGULAR_REPLACE-741 在庫出荷指示作成 (screen_id=638)_実装&単体テスト"
+  },
   {
    "ticket": "587",
    "dev": "bien",
@@ -98,9 +152,9 @@
    "r727": [
     {
      "num": 11335,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
-     "nc": 3,
+     "nc": 4,
      "add": 1485,
      "del": 6,
      "fc": 21
