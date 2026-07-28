@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-28 10:47",
+ "updated": "2026-07-28 10:55",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,6 +10,60 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
   {
+   "ticket": "572",
+   "dev": "bien",
+   "bien": true,
+   "base": [],
+   "r727": [
+    {
+     "num": 11357,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 4370,
+     "del": 2,
+     "fc": 44
+    }
+   ],
+   "created": "07-28 10:50",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "移動_内容追加 (screen 298) を React へ移行"
+  },
+  {
+   "ticket": "600",
+   "dev": "hung",
+   "bien": false,
+   "base": [],
+   "r727": [
+    {
+     "num": 11355,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 1230,
+     "del": 2,
+     "fc": 15
+    }
+   ],
+   "created": "07-28 10:47",
+   "drive": true,
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "荷姿変更_一覧 (screen_id=362) を React 化"
+  },
+  {
    "ticket": "585",
    "dev": "khoa",
    "bien": false,
@@ -17,9 +71,9 @@
    "r727": [
     {
      "num": 11354,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
-     "nc": 2,
+     "nc": 3,
      "add": 7671,
      "del": 2,
      "fc": 51
@@ -27,8 +81,8 @@
    ],
    "created": "07-28 10:39",
    "drive": false,
-   "cop": 0,
-   "unres": 0,
+   "cop": 3,
+   "unres": 3,
    "rvw": {
     "ap": [],
     "ch": [],
