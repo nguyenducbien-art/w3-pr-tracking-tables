@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-28 15:47",
+ "updated": "2026-07-28 15:54",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,6 +10,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "605",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r727": [
+    {
+     "num": 11383,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 1394,
+     "del": 15,
+     "fc": 22
+    }
+   ],
+   "created": "07-28 15:50",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "373_荷姿変更_履歴明細"
+  },
   {
    "ticket": "594",
    "dev": "khoa",
@@ -767,7 +794,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "一覧共通コンポーネントに表示件数上限(E029)判定を追加"
   }
