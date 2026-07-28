@@ -1,14 +1,52 @@
 {
- "updated": "2026-07-28 11:20",
+ "updated": "2026-07-28 11:44",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1479",
   "1475",
   "1453"
  ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "1479",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 11359,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 605,
+     "del": 64,
+     "fc": 16
+    }
+   ],
+   "r727": [
+    {
+     "num": 11360,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 605,
+     "del": 64,
+     "fc": 16
+    }
+   ],
+   "created": "07-28 11:36",
+   "drive": false,
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ファイル出力中/帳票出力中モーダルの×で実行中処理を中断する"
+  },
   {
    "ticket": "572",
    "dev": "bien",
@@ -73,8 +111,8 @@
      "num": 11354,
      "cf": "ok",
      "st": "open",
-     "nc": 5,
-     "add": 7684,
+     "nc": 6,
+     "add": 7635,
      "del": 2,
      "fc": 51
     }
@@ -98,7 +136,7 @@
    "r727": [
     {
      "num": 11353,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 5,
      "add": 1222,
@@ -126,7 +164,7 @@
     {
      "num": 11349,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 8,
      "add": 1111,
      "del": 2,
