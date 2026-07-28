@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-28 10:15",
+ "updated": "2026-07-28 10:47",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -9,6 +9,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "585",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r727": [
+    {
+     "num": 11354,
+     "cf": "bad",
+     "st": "open",
+     "nc": 2,
+     "add": 7671,
+     "del": 2,
+     "fc": 51
+    }
+   ],
+   "created": "07-28 10:39",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "353_セット品作成_内容追加"
+  },
   {
    "ticket": "552",
    "dev": "minh",
