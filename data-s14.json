@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-28 11:52",
+ "updated": "2026-07-28 12:01",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -29,7 +29,7 @@
     {
      "num": 11360,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 1,
      "add": 605,
      "del": 64,
@@ -39,11 +39,13 @@
    "created": "07-28 11:36",
    "drive": true,
    "cop": 1,
-   "unres": 1,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "ファイル出力中/帳票出力中モーダルの×で実行中処理を中断する"
   },
