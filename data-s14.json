@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-28 16:10",
+ "updated": "2026-07-28 16:19",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,6 +10,60 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "589",
+   "dev": "hung",
+   "bien": false,
+   "base": [],
+   "r727": [
+    {
+     "num": 11387,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 1136,
+     "del": 2,
+     "fc": 15
+    }
+   ],
+   "created": "07-28 16:17",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "セット品崩し_一覧 (screen_id=622) を Next.js へ移行"
+  },
+  {
+   "ticket": "575",
+   "dev": "hung",
+   "bien": false,
+   "base": [],
+   "r727": [
+    {
+     "num": 11386,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 2743,
+     "del": 2,
+     "fc": 24
+    }
+   ],
+   "created": "07-28 16:10",
+   "drive": true,
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "棚卸_対象在庫一覧 (screen_id=306) を React へ移行"
+  },
   {
    "ticket": "605",
    "dev": "khoa",
