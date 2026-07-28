@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-28 14:54",
+ "updated": "2026-07-28 15:24",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -19,7 +19,7 @@
     {
      "num": 11374,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 3,
      "add": 1310,
      "del": 2,
@@ -652,10 +652,10 @@
      "num": 11237,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 121,
-     "del": 12,
-     "fc": 10
+     "nc": 3,
+     "add": 202,
+     "del": 17,
+     "fc": 13
     }
    ],
    "r727": [
@@ -718,5 +718,29 @@
    "title": "一覧共通コンポーネントに表示件数上限(E029)判定を追加"
   }
  ],
- "scaffold": []
+ "scaffold": [
+  {
+   "ticket": "—",
+   "dev": "bien",
+   "bien": true,
+   "pr": {
+    "num": 11376,
+    "cf": "ok",
+    "st": "open",
+    "nc": 4,
+    "add": 119,
+    "del": 44,
+    "fc": 18
+   },
+   "created": "07-28 15:19",
+   "cop": 4,
+   "unres": 4,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "コメント衛生 (DOC-NEW-01) の走査漏れを規約・Skill・テンプレートに反映"
+  }
+ ]
 }
