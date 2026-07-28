@@ -10,6 +10,11 @@ NAV = nav_html("Sprint 13")   # menu điều hướng sprint (sprint hiện tạ
 # CSS lấy từ _head.html (chỉ block <style>)
 css = re.search(r'<style>.*?</style>', open("_head.html").read(), re.S).group(0)
 
+# Linh vật pixel = thư viện riêng github.com/nguyenducbien-art/pixel-pets (nhúng 1 thẻ script).
+# (Artifact preview của Claude bị CSP chặn script ngoài → chỉ thấy chúng trên Pages thật.)
+PETS = ('<script src="https://nguyenducbien-art.github.io/pixel-pets/pixel-pets.js" '
+        'data-min="2" data-max="5" defer></script>')
+
 RENDER_JS = r"""
 function esc(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
 function render(D){
@@ -129,6 +134,16 @@ function render(D){
      +'Created = thời điểm tạo PR sớm nhất của ticket, định dạng MM-DD HH:MM (giờ VN, UTC+7).</div>'
    +'</div>';
   document.getElementById('app').innerHTML=html;
+  // báo tình hình conflict cho con đầu đàn (pixel-pets nạp bằng defer nên có thể chậm hơn render)
+  var bad=0;
+  D.main.forEach(function(r){['base','r629','r713'].forEach(function(k){
+    (r[k]||[]).forEach(function(p){if(p.cf==='bad')bad++;});});});
+  (D.scaffold||[]).forEach(function(r){if(r.pr&&r.pr.cf==='bad')bad++;});
+  var msg = bad ? ('\u26a0\ufe0f '+bad+' PR \u0111ang conflict') : '\u2705 Kh\u00f4ng PR n\u00e0o conflict';
+  (function tell(n){
+    if(window.PixelPets && window.PixelPets.pets && window.PixelPets.pets.length) window.PixelPets.say(msg);
+    else if(n>0) setTimeout(function(){tell(n-1);}, 600);
+  })(8);
 }
 function fetchData(){
   // Data ở nhánh `data` (KHÔNG phải nguồn Pages) → fetch qua raw.githubusercontent (CORS *, cache ~5p).
@@ -159,7 +174,7 @@ def build(inline):
     else:
         data_script = '<script id="table-data" type="application/json"></script>'
     inner = ('<title>'+TITLE+'</title>\n'+FAVICON+'\n'+css+'\n'
-             +NAV+'\n<div id="app"></div>\n'+data_script+'\n<script>'+RENDER_JS+'</script>')
+             +NAV+'\n<div id="app"></div>\n'+PETS+'\n'+data_script+'\n<script>'+RENDER_JS+'</script>')
     return inner
 
 # artifact = fragment + inline JSON
@@ -169,7 +184,7 @@ open("table-a-s13.html","w").write(build(True))
 doc = ('<!DOCTYPE html>\n<html lang="vi">\n<head>\n<meta charset="utf-8">\n'
        '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
        '<meta name="robots" content="noindex, nofollow">\n<title>'+TITLE+'</title>\n'+FAVICON+'\n'+css+'\n</head>\n<body>\n'
-       +NAV+'\n<div id="app"></div>\n<script id="table-data" type="application/json"></script>\n<script>'+RENDER_JS+'</script>\n</body>\n</html>')
+       +NAV+'\n<div id="app"></div>\n'+PETS+'\n<script id="table-data" type="application/json"></script>\n<script>'+RENDER_JS+'</script>\n</body>\n</html>')
 open("index.html","w").write(doc)
 
 print("built shell: index.html (fetch) + table-a-s13.html (artifact,inline) từ data.json |",
