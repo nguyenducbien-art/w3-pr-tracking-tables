@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-28 13:53",
+ "updated": "2026-07-28 14:31",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,6 +10,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "576",
+   "dev": "hung",
+   "bien": false,
+   "base": [],
+   "r727": [
+    {
+     "num": 11374,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 1367,
+     "del": 2,
+     "fc": 22
+    }
+   ],
+   "created": "07-28 14:25",
+   "drive": true,
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "棚卸_調査一覧 (screen_id=311) を React 移行"
+  },
   {
    "ticket": "1479",
    "dev": "bien",
@@ -672,7 +699,7 @@
     {
      "num": 11219,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 8,
      "add": 231,
      "del": 12,
