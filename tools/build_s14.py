@@ -93,7 +93,7 @@ def screens_section():
         '<span class="meta">'+str(len(SCREENS))+' màn · snapshot code '+SNAP+' (thủ công, không auto-update)</span></div>'
         '<div class="subtitle">Tiến độ migrate + người phụ trách (PIC) từng màn, đọc từ repo nhánh '
         '<b>mimosa/frontend/develop/r20260727</b>. Trạng thái theo <b>code thật</b>, không theo status field Backlog. '
-        '<a href="s14.html" style="font-family:inherit;font-size:12px">↓ Table A (PR tracking) bên dưới</a></div>'
+        '<a href="#" onclick="scrollTo(0,0);return false" style="font-family:inherit;font-size:12px">↑ Table A (PR tracking) phía trên</a></div>'
         '<div class="stats">'
           '<div class="stat"><span class="stat-val">'+str(len(SCREENS))+'</span> màn</div>'
           '<div class="stat">✅ migrated <span class="stat-val" style="color:var(--report-fg)">'+str(done)+'</span></div>'
@@ -274,7 +274,7 @@ def build(inline):
     else:
         data_script = '<script id="table-data" type="application/json"></script>'
     inner = ('<title>'+TITLE+'</title>\n'+FAVICON+'\n'+css+'\n'
-             +NAV+'\n'+SCREENS_HTML+'\n<div id="app"></div>\n'+MASCOT+'\n'+data_script+'\n<script>'+RENDER_JS+'</script>')
+             +NAV+'\n<div id="app"></div>\n'+SCREENS_HTML+'\n'+MASCOT+'\n'+data_script+'\n<script>'+RENDER_JS+'</script>')
     return inner
 
 # artifact = fragment + inline JSON
@@ -284,7 +284,7 @@ open("table-a-s14.html","w").write(build(True))
 doc = ('<!DOCTYPE html>\n<html lang="vi">\n<head>\n<meta charset="utf-8">\n'
        '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
        '<meta name="robots" content="noindex, nofollow">\n<title>'+TITLE+'</title>\n'+FAVICON+'\n'+css+'\n</head>\n<body>\n'
-       +NAV+'\n'+SCREENS_HTML+'\n<div id="app"></div>\n'+MASCOT+'\n<script id="table-data" type="application/json"></script>\n<script>'+RENDER_JS+'</script>\n</body>\n</html>')
+       +NAV+'\n<div id="app"></div>\n'+SCREENS_HTML+'\n'+MASCOT+'\n<script id="table-data" type="application/json"></script>\n<script>'+RENDER_JS+'</script>\n</body>\n</html>')
 open("s14.html","w").write(doc)
 
 print("built shell: s14.html (fetch) + table-a-s14.html (artifact,inline) từ data-s14.json |",
