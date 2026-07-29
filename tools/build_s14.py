@@ -16,6 +16,105 @@ css = re.search(r'<style>.*?</style>', open("_head.html").read(), re.S).group(0)
 MASCOT = ('<script src="https://nguyenducbien-art.github.io/pixel-pets/pixel-pets.js" '
           'data-min="2" data-max="5" defer></script>')
 
+# ============================================================================
+# Bảng màn Sprint 14 — SNAPSHOT thủ công theo điều tra code r20260727 @ 2026-07-28.
+# KHÔNG auto-update qua cron (khác dữ liệu PR). Nguồn: memory project_sprint14_screens.
+# status: done = đã merge vào r20260727 · wip = có branch/code chưa merge · todo = chưa có code.
+# cột: (screen_id, 画面名, route Next.js, ticket-on-commit, PIC, status, ghi chú)
+# ============================================================================
+SNAP = "2026-07-28"
+SCREENS = [
+  (252, "在庫_変更履歴一覧",             "/stocks/history-headers",         "547", "Khoa", "done", ""),
+  (254, "在庫_変更履歴明細",             "",                                "548", "Minh", "todo", "chưa có code, chưa có branch"),
+  (261, "在庫_在庫追加",                 "stocks/creates/",                 "549", "Khoa", "wip",  "branch feature/ANGULAR_REPLACE-549 đã có code, chưa merge vào r"),
+  (265, "在庫_情報変更",                 "stocks/info-edits/",              "546", "Khoa", "wip",  "branch feature/ANGULAR_REPLACE-546 đã có code, chưa merge vào r"),
+  (280, "移動_一覧",                     "/stocks/modify_headers",          "789", "Đạt",  "done", ""),
+  (282, "移動_明細",                     "",                                "571", "Minh", "todo", "chưa có code — màn 280 hiện không có đích điều hướng"),
+  (298, "移動_内容追加",                 "/stock/modify_creates",           "572", "Biên", "done", ""),
+  (303, "在庫変遷_商品別",               "/stocks/change-materials",        "553", "Minh", "done", ""),
+  (333, "セット品作成_一覧",             "/stocks/set-headers",             "583", "Khoa", "done", ""),
+  (335, "セット品作成_明細",             "/stocks/set-details",             "584", "Khoa", "done", ""),
+  (342, "セット品作成_履歴一覧",         "/stocks/set-history-headers",     "587", "Biên", "done", ""),
+  (344, "セット品作成_履歴明細",         "/stocks/set_history_details",     "588", "Hưng", "done", ""),
+  (353, "セット品作成_内容追加",         "/stocks/set-creates",             "585", "Khoa", "done", ""),
+  (362, "荷姿変更_一覧",                 "/stocks/package-headers",         "600", "Hưng", "done", ""),
+  (387, "直接入庫_一覧",                 "/stocks/instock-headers",         "745", "Đạt",  "done", ""),
+  (396, "直接入庫_履歴明細",             "/stocks/instock_history_details", "562", "Hưng", "done", ""),
+  (402, "直接入庫_内容追加",             "/stocks/instock_creates",         "563", "Hưng", "done", ""),
+  (471, "在庫_在庫出荷指示作成",         "",                                "550", "Khoa", "todo", "chưa có route riêng; chỉ dùng làm CONFIG_SCREEN_ID (nguồn grid columns) cho màn 638"),
+  (518, "セット品作成_セット品候補一覧", "/stocks/set-target-headers",      "586", "Biên", "done", ""),
+  (638, "在庫出荷指示作成",             "/stocks/sh-create",               "741", "Đạt",  "done", ""),
+  (640, "在庫断面_一覧",                 "/stocks/snap-shot-headers",       "551", "Minh", "done", ""),
+  (641, "在庫断面_明細",                 "/stocks/snap-shot-details",       "552", "Minh", "done", ""),
+  (645, "在庫_全在庫一覧",               "/stocks/sum-headers",             "543", "Đạt",  "done", ""),
+  (690, "シリアル番号_追加・編集",       "",                                "607", "Minh", "todo", "chưa có code (màn 一覧 685 cũng chưa)"),
+  (704, "在庫予測_出荷予測明細",         "/shipments/predict/details",      "557", "Hưng", "done", ""),
+  (705, "在庫予測_在庫予測一覧",         "",                                "555", "Minh", "todo", "chưa có code — screen-ids.ts ghi 未実装; subnav của 706"),
+  (706, "在庫予測_在庫予測明細",         "/stocks/predict/details",         "556", "Hưng", "done", ""),
+]
+PIC_ORDER = ["Khoa", "Đạt", "Biên", "Minh", "Hưng"]
+ST = {"done": ("pill-approved", "✅ migrated"),
+      "wip":  ("pill-changes",  "🟡 WIP"),
+      "todo": ("pill-todo",     "🔴 chưa")}
+
+def _esc(s):
+    return str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+def screens_section():
+    done = sum(1 for s in SCREENS if s[5] == "done")
+    wip  = sum(1 for s in SCREENS if s[5] == "wip")
+    todo = sum(1 for s in SCREENS if s[5] == "todo")
+    # tóm tắt theo PIC: migrated / tổng
+    chips = []
+    for pic in PIC_ORDER:
+        rows = [s for s in SCREENS if s[4] == pic]
+        d = sum(1 for s in rows if s[5] == "done")
+        full = " full" if d == len(rows) else ""
+        b = ' style="color:var(--accent)"' if pic == "Biên" else ""
+        chips.append('<div class="pic-chip"><b'+b+'>'+_esc(pic)+'</b>'
+                     '<span class="frac'+full+'">'+str(d)+'/'+str(len(rows))+'</span></div>')
+    # các dòng bảng
+    body = []
+    for sid, name, route, tk, pic, st, note in SCREENS:
+        cls, lbl = ST[st]
+        rt = '<span class="ticket">'+_esc(route)+'</span>' if route else '<span class="cf-na">—</span>'
+        picc = ' style="color:var(--accent);font-weight:600"' if pic == "Biên" else ""
+        body.append('<tr>'
+            '<td><span class="ticket">'+str(sid)+'</span></td>'
+            '<td><span class="jp-cell">'+_esc(name)+'</span></td>'
+            '<td>'+rt+'</td>'
+            '<td><span class="ticket">'+_esc(tk)+'</span></td>'
+            '<td><span class="dev"'+picc+'>'+_esc(pic)+'</span></td>'
+            '<td><span class="pill '+cls+'">'+lbl+'</span></td>'
+            '<td><span class="note-cell">'+_esc(note)+'</span></td>'
+            '</tr>')
+    return ('<div class="page">'
+        '<div class="page-header"><h1>画面一覧 — Sprint 14 (在庫 / Inventory)</h1>'
+        '<span class="meta">'+str(len(SCREENS))+' màn · snapshot code '+SNAP+' (thủ công, không auto-update)</span></div>'
+        '<div class="subtitle">Tiến độ migrate + người phụ trách (PIC) từng màn, đọc từ repo nhánh '
+        '<b>mimosa/frontend/develop/r20260727</b>. Trạng thái theo <b>code thật</b>, không theo status field Backlog. '
+        '<a href="s14.html" style="font-family:inherit;font-size:12px">↓ Table A (PR tracking) bên dưới</a></div>'
+        '<div class="stats">'
+          '<div class="stat"><span class="stat-val">'+str(len(SCREENS))+'</span> màn</div>'
+          '<div class="stat">✅ migrated <span class="stat-val" style="color:var(--report-fg)">'+str(done)+'</span></div>'
+          '<div class="stat">🟡 WIP <span class="stat-val warn">'+str(wip)+'</span></div>'
+          '<div class="stat">🔴 chưa <span class="stat-val warn">'+str(todo)+'</span></div>'
+        '</div>'
+        '<div class="pic-summary">'+''.join(chips)+'</div>'
+        '<div class="scroll-wrap"><table style="min-width:900px">'
+        '<thead><tr>'
+          '<th>Screen ID</th><th>画面名</th><th>Route Next.js</th><th>Ticket</th>'
+          '<th>PIC</th><th>状態</th><th>Ghi chú</th>'
+        '</tr></thead><tbody>'+''.join(body)+'</tbody></table></div>'
+        '<div class="footnote">'
+          'PIC = người phụ trách (Backlog). ✅ migrated = đã merge vào r20260727 · '
+          '🟡 WIP = đã có branch/code nhưng chưa merge vào r · 🔴 chưa = chưa có code. '
+          'Route dạng <code>stocks/xxx/</code> (không có <code>/</code> đầu) = folder trên feature branch, chưa lên r.<br>'
+          '⚠️ Bảng này là ảnh chụp thủ công ngày '+SNAP+' — không tự làm mới như bảng PR bên dưới.</div>'
+        '</div>')
+
+SCREENS_HTML = screens_section()
+
 RENDER_JS = r"""
 function esc(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
 function render(D){
@@ -175,7 +274,7 @@ def build(inline):
     else:
         data_script = '<script id="table-data" type="application/json"></script>'
     inner = ('<title>'+TITLE+'</title>\n'+FAVICON+'\n'+css+'\n'
-             +NAV+'\n<div id="app"></div>\n'+MASCOT+'\n'+data_script+'\n<script>'+RENDER_JS+'</script>')
+             +NAV+'\n'+SCREENS_HTML+'\n<div id="app"></div>\n'+MASCOT+'\n'+data_script+'\n<script>'+RENDER_JS+'</script>')
     return inner
 
 # artifact = fragment + inline JSON
@@ -185,7 +284,7 @@ open("table-a-s14.html","w").write(build(True))
 doc = ('<!DOCTYPE html>\n<html lang="vi">\n<head>\n<meta charset="utf-8">\n'
        '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
        '<meta name="robots" content="noindex, nofollow">\n<title>'+TITLE+'</title>\n'+FAVICON+'\n'+css+'\n</head>\n<body>\n'
-       +NAV+'\n<div id="app"></div>\n'+MASCOT+'\n<script id="table-data" type="application/json"></script>\n<script>'+RENDER_JS+'</script>\n</body>\n</html>')
+       +NAV+'\n'+SCREENS_HTML+'\n<div id="app"></div>\n'+MASCOT+'\n<script id="table-data" type="application/json"></script>\n<script>'+RENDER_JS+'</script>\n</body>\n</html>')
 open("s14.html","w").write(doc)
 
 print("built shell: s14.html (fetch) + table-a-s14.html (artifact,inline) từ data-s14.json |",

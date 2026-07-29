@@ -90,6 +90,14 @@
   .pill-open { background: var(--pill-open-bg); color: var(--pill-open-fg); }
   .pill-merged { background: var(--pill-merged-bg); color: var(--pill-merged-fg); }
   .pill-pinned { background: var(--pill-pinned-bg); color: var(--pill-pinned-fg); }
+  .pill-todo { background: var(--unresolved-bg); color: var(--unresolved-fg); }
+  .jp-cell { font-size: 12px; white-space: normal; }
+  .note-cell { max-width: 360px; white-space: normal; font-size: 11px; color: var(--text-dim); line-height: 1.5; }
+  .pic-summary { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; }
+  .pic-chip { display: flex; align-items: center; gap: 7px; padding: 5px 11px; border: 1px solid var(--border); border-radius: 20px; background: var(--bg-table); font-size: 12px; box-shadow: 0 1px 2px var(--shadow); }
+  .pic-chip b { font-weight: 600; }
+  .pic-chip .frac { font-variant-numeric: tabular-nums; color: var(--text-dim); font-size: 11.5px; }
+  .pic-chip .frac.full { color: var(--report-fg); font-weight: 700; }
   .copilot-cell { font-family: "SF Mono", "Fira Code", ui-monospace, monospace; font-size: 11px; }
   .unresolved { display: inline-block; padding: 1px 5px; border-radius: 3px; background: var(--unresolved-bg); color: var(--unresolved-fg); font-weight: 700; font-size: 10.5px; }
   .kanaya-cell { max-width: 230px; overflow: hidden; text-overflow: ellipsis; font-size: 11.5px; }
