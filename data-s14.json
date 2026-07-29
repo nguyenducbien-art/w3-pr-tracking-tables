@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-29 17:02",
+ "updated": "2026-07-29 17:10",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,6 +10,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "577",
+   "dev": "minh",
+   "bien": false,
+   "base": [],
+   "r727": [
+    {
+     "num": 11434,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 2226,
+     "del": 2,
+     "fc": 25
+    }
+   ],
+   "created": "07-29 17:09",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "313_棚卸_調査明細"
+  },
   {
    "ticket": "877",
    "dev": "dat",
