@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-29 11:04",
+ "updated": "2026-07-29 11:13",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -206,6 +206,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11408,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 1055,
+     "del": 139,
+     "fc": 19
+    },
+    {
      "num": 11379,
      "cf": "ok",
      "st": "merged",
@@ -224,7 +233,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "327_棚卸_調査結果登録_編集画面"
+   "title": "327_棚卸_調査結果登録_予定外在庫追加モーダル修正"
   },
   {
    "ticket": "576",
