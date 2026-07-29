@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-28 17:53",
+ "updated": "2026-07-29 09:13",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -461,6 +461,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11395,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 258,
+     "del": 68,
+     "fc": 8
+    },
+    {
      "num": 11340,
      "cf": "ok",
      "st": "merged",
@@ -472,14 +481,14 @@
    ],
    "created": "07-27 17:17",
    "drive": false,
-   "cop": 1,
+   "cop": 2,
    "unres": 1,
    "rvw": {
     "ap": [],
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-741 在庫出荷指示作成 (screen_id=638)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-741 在庫出荷指示作成 (screen_id=638)_登録パラメータ parity 修正"
   },
   {
    "ticket": "587",
