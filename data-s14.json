@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-29 16:23",
+ "updated": "2026-07-29 16:31",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,6 +10,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "877",
+   "dev": "dat",
+   "bien": false,
+   "base": [],
+   "r727": [
+    {
+     "num": 11431,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 7752,
+     "del": 4,
+     "fc": 48
+    }
+   ],
+   "created": "07-29 16:25",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "セット品崩し_内容追加を移行（screen_id=626）"
+  },
   {
    "ticket": "580",
    "dev": "minh",
