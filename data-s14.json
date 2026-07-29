@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-29 11:13",
+ "updated": "2026-07-29 11:54",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -524,6 +524,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11411,
+     "cf": "ok",
+     "st": "draft",
+     "nc": 2,
+     "add": 525,
+     "del": 143,
+     "fc": 6
+    },
+    {
      "num": 11395,
      "cf": "ok",
      "st": "merged",
@@ -545,13 +554,13 @@
    "created": "07-27 17:17",
    "drive": false,
    "cop": 2,
-   "unres": 1,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-741 在庫出荷指示作成 (screen_id=638)_登録パラメータ parity 修正"
+   "title": "在庫出荷指示作成 の日付不正入力に E040 を表示・TSDoc を規約準拠へ是正"
   },
   {
    "ticket": "587",
