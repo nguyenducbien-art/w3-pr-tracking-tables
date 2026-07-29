@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-29 13:40",
+ "updated": "2026-07-29 15:52",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -551,6 +551,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11429,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 1027,
+     "del": 71,
+     "fc": 15
+    },
+    {
      "num": 11341,
      "cf": "ok",
      "st": "merged",
@@ -569,7 +578,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "在庫変遷_商品別 (screen_id=303) を React へ移行"
+   "title": "在庫変遷_商品別 (screen_id=303) の AngularJS 差異を修正"
   },
   {
    "ticket": "741",
