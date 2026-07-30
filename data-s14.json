@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-30 11:41",
+ "updated": "2026-07-30 12:48",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -129,6 +129,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11457,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 121,
+     "del": 34,
+     "fc": 10
+    },
+    {
      "num": 11434,
      "cf": "ok",
      "st": "merged",
@@ -147,7 +156,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "313_棚卸_調査明細"
+   "title": "棚卸_調査結果登録 (327) が選択明細で絞り込まれない不具合を修正"
   },
   {
    "ticket": "877",
