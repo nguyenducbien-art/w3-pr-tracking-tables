@@ -1,6 +1,6 @@
 {
- "updated": "2026-07-30 15:40",
- "tip": "06fa374b18",
+ "updated": "2026-07-30 16:44",
+ "tip": "a56ef79321",
  "branch": "mimosa/frontend/develop/r20260727",
  "picOrder": [
   "Khoa",
@@ -14,7 +14,7 @@
    "sid": 252,
    "name": "在庫_変更履歴一覧",
    "route": "/stocks/history-headers",
-   "ticket": "547",
+   "ticket": "697",
    "pic": "Khoa",
    "st": "done",
    "note": ""
@@ -23,7 +23,7 @@
    "sid": 254,
    "name": "在庫_変更履歴明細",
    "route": "/stocks/history-details",
-   "ticket": "548",
+   "ticket": "701",
    "pic": "Minh",
    "st": "done",
    "note": ""
@@ -32,7 +32,7 @@
    "sid": 261,
    "name": "在庫_在庫追加",
    "route": "/stocks/creates",
-   "ticket": "549",
+   "ticket": "705",
    "pic": "Khoa",
    "st": "done",
    "note": ""
@@ -41,10 +41,10 @@
    "sid": 265,
    "name": "在庫_情報変更",
    "route": "",
-   "ticket": "546",
-   "pic": "Khoa",
-   "st": "wip",
-   "note": "branch feature/ANGULAR_REPLACE-546 có code, chưa merge vào r"
+   "ticket": "693",
+   "pic": "Minh",
+   "st": "todo",
+   "note": "chưa migrate vào r20260727"
   },
   {
    "sid": 280,
@@ -59,7 +59,7 @@
    "sid": 282,
    "name": "移動_明細",
    "route": "/stocks/modify_details",
-   "ticket": "571",
+   "ticket": "793",
    "pic": "Minh",
    "st": "done",
    "note": ""
@@ -68,7 +68,7 @@
    "sid": 298,
    "name": "移動_内容追加",
    "route": "/stock/modify_creates",
-   "ticket": "572",
+   "ticket": "797",
    "pic": "Biên",
    "st": "done",
    "note": ""
@@ -77,8 +77,62 @@
    "sid": 303,
    "name": "在庫変遷_商品別",
    "route": "/stocks/change-materials",
-   "ticket": "553",
+   "ticket": "721",
    "pic": "Minh",
+   "st": "done",
+   "note": ""
+  },
+  {
+   "sid": 306,
+   "name": "棚卸_対象在庫一覧",
+   "route": "/stocks/inventory-target-headers",
+   "ticket": "809",
+   "pic": "Hưng",
+   "st": "done",
+   "note": ""
+  },
+  {
+   "sid": 311,
+   "name": "棚卸_調査一覧",
+   "route": "/stocks/inventory-headers",
+   "ticket": "813",
+   "pic": "Hưng",
+   "st": "done",
+   "note": ""
+  },
+  {
+   "sid": 313,
+   "name": "棚卸_調査明細",
+   "route": "/stocks/inventory-details",
+   "ticket": "817",
+   "pic": "Minh",
+   "st": "done",
+   "note": ""
+  },
+  {
+   "sid": 318,
+   "name": "棚卸_履歴一覧",
+   "route": "/stocks/inventory-history-headers",
+   "ticket": "829",
+   "pic": "Minh",
+   "st": "done",
+   "note": ""
+  },
+  {
+   "sid": 320,
+   "name": "棚卸_履歴明細",
+   "route": "/stocks/inventory-history-details",
+   "ticket": "833",
+   "pic": "Khoa",
+   "st": "done",
+   "note": ""
+  },
+  {
+   "sid": 327,
+   "name": "棚卸_調査結果登録",
+   "route": "/stocks/inventory-edits",
+   "ticket": "821",
+   "pic": "Khoa",
    "st": "done",
    "note": ""
   },
@@ -86,7 +140,7 @@
    "sid": 333,
    "name": "セット品作成_一覧",
    "route": "/stocks/set-headers",
-   "ticket": "583",
+   "ticket": "841",
    "pic": "Khoa",
    "st": "done",
    "note": ""
@@ -95,7 +149,7 @@
    "sid": 335,
    "name": "セット品作成_明細",
    "route": "/stocks/set-details",
-   "ticket": "584",
+   "ticket": "845",
    "pic": "Khoa",
    "st": "done",
    "note": ""
@@ -104,7 +158,7 @@
    "sid": 342,
    "name": "セット品作成_履歴一覧",
    "route": "/stocks/set-history-headers",
-   "ticket": "587",
+   "ticket": "857",
    "pic": "Biên",
    "st": "done",
    "note": ""
@@ -113,7 +167,7 @@
    "sid": 344,
    "name": "セット品作成_履歴明細",
    "route": "/stocks/set_history_details",
-   "ticket": "588",
+   "ticket": "861",
    "pic": "Hưng",
    "st": "done",
    "note": ""
@@ -122,7 +176,7 @@
    "sid": 353,
    "name": "セット品作成_内容追加",
    "route": "/stocks/set-creates",
-   "ticket": "585",
+   "ticket": "849",
    "pic": "Khoa",
    "st": "done",
    "note": ""
@@ -131,8 +185,17 @@
    "sid": 362,
    "name": "荷姿変更_一覧",
    "route": "/stocks/package-headers",
-   "ticket": "600",
+   "ticket": "909",
    "pic": "Hưng",
+   "st": "done",
+   "note": ""
+  },
+  {
+   "sid": 373,
+   "name": "荷姿変更_履歴明細",
+   "route": "/stocks/package-history-details",
+   "ticket": "929",
+   "pic": "Khoa",
    "st": "done",
    "note": ""
   },
@@ -149,7 +212,7 @@
    "sid": 396,
    "name": "直接入庫_履歴明細",
    "route": "/stocks/instock_history_details",
-   "ticket": "562",
+   "ticket": "757",
    "pic": "Hưng",
    "st": "done",
    "note": ""
@@ -158,28 +221,91 @@
    "sid": 402,
    "name": "直接入庫_内容追加",
    "route": "/stocks/instock_creates",
-   "ticket": "563",
+   "ticket": "761",
    "pic": "Hưng",
    "st": "done",
    "note": ""
   },
   {
-   "sid": 471,
-   "name": "在庫_在庫出荷指示作成",
+   "sid": 446,
+   "name": "画面設定_ステータス別設定",
    "route": "",
-   "ticket": "550",
-   "pic": "Khoa",
+   "ticket": "1089",
+   "pic": "Đạt",
    "st": "todo",
-   "note": "không có route riêng; chỉ dùng làm CONFIG_SCREEN_ID (nguồn grid columns) cho màn 638"
+   "note": "chưa migrate vào r20260727"
   },
   {
    "sid": 518,
    "name": "セット品作成_セット品候補一覧",
    "route": "/stocks/set-target-headers",
-   "ticket": "586",
+   "ticket": "853",
    "pic": "Biên",
    "st": "done",
    "note": ""
+  },
+  {
+   "sid": 622,
+   "name": "セット品崩し_一覧",
+   "route": "/stocks/unset-headers",
+   "ticket": "865",
+   "pic": "Hưng",
+   "st": "done",
+   "note": ""
+  },
+  {
+   "sid": 623,
+   "name": "セット品崩し_明細",
+   "route": "/stocks/unset-details",
+   "ticket": "873",
+   "pic": "Đạt",
+   "st": "done",
+   "note": ""
+  },
+  {
+   "sid": 624,
+   "name": "セット品崩し_履歴一覧",
+   "route": "/stocks/unset-history-headers",
+   "ticket": "881",
+   "pic": "Đạt",
+   "st": "done",
+   "note": ""
+  },
+  {
+   "sid": 625,
+   "name": "セット品崩し_履歴明細",
+   "route": "/stocks/unset-history-details",
+   "ticket": "885",
+   "pic": "Khoa",
+   "st": "done",
+   "note": ""
+  },
+  {
+   "sid": 626,
+   "name": "セット品崩し_内容追加",
+   "route": "/stocks/unset-creates",
+   "ticket": "877",
+   "pic": "Đạt",
+   "st": "done",
+   "note": ""
+  },
+  {
+   "sid": 627,
+   "name": "セット品崩し_セット品候補一覧",
+   "route": "/stocks/unset-target-headers",
+   "ticket": "869",
+   "pic": "Hưng",
+   "st": "done",
+   "note": ""
+  },
+  {
+   "sid": 634,
+   "name": "棚卸予定外在庫_内容追加",
+   "route": "",
+   "ticket": "837",
+   "pic": "Khoa",
+   "st": "todo",
+   "note": "sub-screen thuộc 棚卸予定外在庫"
   },
   {
    "sid": 638,
@@ -194,7 +320,7 @@
    "sid": 640,
    "name": "在庫断面_一覧",
    "route": "/stocks/snap-shot-headers",
-   "ticket": "551",
+   "ticket": "713",
    "pic": "Minh",
    "st": "done",
    "note": ""
@@ -203,7 +329,7 @@
    "sid": 641,
    "name": "在庫断面_明細",
    "route": "/stocks/snap-shot-details",
-   "ticket": "552",
+   "ticket": "717",
    "pic": "Minh",
    "st": "done",
    "note": ""
@@ -212,8 +338,17 @@
    "sid": 645,
    "name": "在庫_全在庫一覧",
    "route": "/stocks/sum-headers",
-   "ticket": "543",
+   "ticket": "681",
    "pic": "Đạt",
+   "st": "done",
+   "note": ""
+  },
+  {
+   "sid": 685,
+   "name": "シリアル番号_一覧",
+   "route": "/stocks/serial-headers",
+   "ticket": "933",
+   "pic": "Biên",
    "st": "done",
    "note": ""
   },
@@ -221,16 +356,25 @@
    "sid": 690,
    "name": "シリアル番号_追加・編集",
    "route": "/serial-edits",
-   "ticket": "607",
-   "pic": "Minh",
+   "ticket": "937",
+   "pic": "Hưng",
    "st": "done",
    "note": ""
+  },
+  {
+   "sid": 702,
+   "name": "作業履歴_作業者別",
+   "route": "",
+   "ticket": "941",
+   "pic": "Hưng",
+   "st": "todo",
+   "note": "chưa migrate vào r20260727"
   },
   {
    "sid": 704,
    "name": "在庫予測_出荷予測明細",
    "route": "/shipments/predict/details",
-   "ticket": "557",
+   "ticket": "737",
    "pic": "Hưng",
    "st": "done",
    "note": ""
@@ -239,7 +383,7 @@
    "sid": 705,
    "name": "在庫予測_在庫予測一覧",
    "route": "",
-   "ticket": "555",
+   "ticket": "729",
    "pic": "Minh",
    "st": "todo",
    "note": "subnav / nguồn điều hướng của màn 706"
@@ -248,7 +392,7 @@
    "sid": 706,
    "name": "在庫予測_在庫予測明細",
    "route": "/stocks/predict/details",
-   "ticket": "556",
+   "ticket": "733",
    "pic": "Hưng",
    "st": "done",
    "note": ""
