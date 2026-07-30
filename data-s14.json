@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-30 15:40",
+ "updated": "2026-07-30 15:59",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1499",
   "1498",
   "1497",
   "1495",
@@ -13,6 +14,43 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "1499",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 11473,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 897,
+     "del": 4,
+     "fc": 42
+    }
+   ],
+   "r727": [
+    {
+     "num": 11474,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 894,
+     "del": 4,
+     "fc": 42
+    }
+   ],
+   "created": "07-30 15:50",
+   "drive": false,
+   "cop": 3,
+   "unres": 3,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "画面メニューモーダル（ナビゲーションバー左端のグリッドアイコン）を追加"
+  },
   {
    "ticket": "937",
    "dev": "hung",
