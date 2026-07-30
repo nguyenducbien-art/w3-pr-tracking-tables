@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-30 10:03",
+ "updated": "2026-07-30 10:11",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -11,6 +11,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "571",
+   "dev": "minh",
+   "bien": false,
+   "base": [],
+   "r727": [
+    {
+     "num": 11448,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 1406,
+     "del": 2,
+     "fc": 19
+    }
+   ],
+   "created": "07-30 10:05",
+   "drive": false,
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "移動_明細を移行（screen_id=282）"
+  },
   {
    "ticket": "1495",
    "dev": "bien",
@@ -275,10 +302,19 @@
   },
   {
    "ticket": "575",
-   "dev": "hung",
+   "dev": "minh",
    "bien": false,
    "base": [],
    "r727": [
+    {
+     "num": 11449,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 14,
+     "del": 0,
+     "fc": 2
+    },
     {
      "num": 11386,
      "cf": "ok",
@@ -298,7 +334,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "棚卸_対象在庫一覧 (screen_id=306) を React へ移行"
+   "title": "棚卸_対象在庫一覧 (306) の一覧ボタンと行遷移アイコンを追加"
   },
   {
    "ticket": "605",
