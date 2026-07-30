@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-30 18:50",
+ "updated": "2026-07-30 20:04",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -14,6 +14,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "555",
+   "dev": "minh",
+   "bien": false,
+   "base": [],
+   "r727": [
+    {
+     "num": 11481,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 4526,
+     "del": 2,
+     "fc": 27
+    }
+   ],
+   "created": "07-30 20:03",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "在庫予測_在庫予測一覧 (705) を実装"
+  },
   {
    "ticket": "546",
    "dev": "minh",
