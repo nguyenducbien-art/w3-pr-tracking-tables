@@ -22,14 +22,14 @@ MASCOT = ('<script src="https://nguyenducbien-art.github.io/pixel-pets/pixel-pet
 # status: done = đã merge vào r20260727 · wip = có branch/code chưa merge · todo = chưa có code.
 # cột: (screen_id, 画面名, route Next.js, ticket-on-commit, PIC, status, ghi chú)
 # ============================================================================
-SNAP = "2026-07-28"
+SNAP = "2026-07-30"
 SCREENS = [
   (252, "在庫_変更履歴一覧",             "/stocks/history-headers",         "547", "Khoa", "done", ""),
   (254, "在庫_変更履歴明細",             "",                                "548", "Minh", "todo", "chưa có code, chưa có branch"),
-  (261, "在庫_在庫追加",                 "stocks/creates/",                 "549", "Khoa", "wip",  "branch feature/ANGULAR_REPLACE-549 đã có code, chưa merge vào r"),
+  (261, "在庫_在庫追加",                 "/stocks/creates",                 "549", "Khoa", "done", ""),
   (265, "在庫_情報変更",                 "stocks/info-edits/",              "546", "Khoa", "wip",  "branch feature/ANGULAR_REPLACE-546 đã có code, chưa merge vào r"),
   (280, "移動_一覧",                     "/stocks/modify_headers",          "789", "Đạt",  "done", ""),
-  (282, "移動_明細",                     "",                                "571", "Minh", "todo", "chưa có code — màn 280 hiện không có đích điều hướng"),
+  (282, "移動_明細",                     "/stocks/modify_details",          "571", "Minh", "done", ""),
   (298, "移動_内容追加",                 "/stock/modify_creates",           "572", "Biên", "done", ""),
   (303, "在庫変遷_商品別",               "/stocks/change-materials",        "553", "Minh", "done", ""),
   (333, "セット品作成_一覧",             "/stocks/set-headers",             "583", "Khoa", "done", ""),
