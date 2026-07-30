@@ -1,6 +1,6 @@
 {
- "updated": "2026-07-30 16:44",
- "tip": "a56ef79321",
+ "updated": "2026-07-30 16:55",
+ "tip": "a39a0183f2",
  "branch": "mimosa/frontend/develop/r20260727",
  "picOrder": [
   "Khoa",
@@ -364,11 +364,11 @@
   {
    "sid": 702,
    "name": "作業履歴_作業者別",
-   "route": "",
+   "route": "/stocks/change-users",
    "ticket": "941",
    "pic": "Hưng",
-   "st": "todo",
-   "note": "chưa migrate vào r20260727"
+   "st": "done",
+   "note": ""
   },
   {
    "sid": 704,
