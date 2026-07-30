@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-30 14:14",
+ "updated": "2026-07-30 14:20",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -13,6 +13,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "937",
+   "dev": "hung",
+   "bien": false,
+   "base": [],
+   "r727": [
+    {
+     "num": 11468,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 2802,
+     "del": 3,
+     "fc": 31
+    }
+   ],
+   "created": "07-30 14:19",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "シリアル番号_追加・編集(690)を Next.js に移行"
+  },
   {
    "ticket": "1498",
    "dev": "bien",
