@@ -1,6 +1,6 @@
 {
- "updated": "2026-07-30 13:00",
- "tip": "2b5e2a2fd6",
+ "updated": "2026-07-30 14:33",
+ "tip": "0f9c22c2a9",
  "branch": "mimosa/frontend/develop/r20260727",
  "picOrder": [
   "Khoa",
@@ -22,11 +22,11 @@
   {
    "sid": 254,
    "name": "在庫_変更履歴明細",
-   "route": "",
+   "route": "/stocks/history-details",
    "ticket": "548",
    "pic": "Minh",
-   "st": "wip",
-   "note": "branch feature/ANGULAR_REPLACE-548 có code, chưa merge vào r"
+   "st": "done",
+   "note": ""
   },
   {
    "sid": 261,
