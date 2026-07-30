@@ -1,6 +1,6 @@
 {
- "updated": "2026-07-30 14:33",
- "tip": "0f9c22c2a9",
+ "updated": "2026-07-30 15:40",
+ "tip": "06fa374b18",
  "branch": "mimosa/frontend/develop/r20260727",
  "picOrder": [
   "Khoa",
@@ -220,11 +220,11 @@
   {
    "sid": 690,
    "name": "シリアル番号_追加・編集",
-   "route": "",
+   "route": "/serial-edits",
    "ticket": "607",
    "pic": "Minh",
-   "st": "todo",
-   "note": "chưa có code"
+   "st": "done",
+   "note": ""
   },
   {
    "sid": 704,
