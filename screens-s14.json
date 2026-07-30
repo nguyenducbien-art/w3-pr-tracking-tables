@@ -1,6 +1,6 @@
 {
- "updated": "2026-07-30 11:07",
- "tip": "067ea996c9",
+ "updated": "2026-07-30 13:00",
+ "tip": "2b5e2a2fd6",
  "branch": "mimosa/frontend/develop/r20260727",
  "picOrder": [
   "Khoa",
@@ -25,8 +25,8 @@
    "route": "",
    "ticket": "548",
    "pic": "Minh",
-   "st": "todo",
-   "note": "chưa có code"
+   "st": "wip",
+   "note": "branch feature/ANGULAR_REPLACE-548 có code, chưa merge vào r"
   },
   {
    "sid": 261,
