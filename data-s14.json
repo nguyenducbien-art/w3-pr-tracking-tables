@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-29 17:57",
+ "updated": "2026-07-30 09:17",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1495",
   "1479",
   "1475",
   "1453"
@@ -10,6 +11,43 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "1495",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 11441,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 77,
+     "del": 10,
+     "fc": 2
+    }
+   ],
+   "r727": [
+    {
+     "num": 11442,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 77,
+     "del": 10,
+     "fc": 2
+    }
+   ],
+   "created": "07-30 09:11",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ダイアログ内 DataTable 列フィルタのドロップダウンが操作できない不具合を修正"
+  },
   {
    "ticket": "577",
    "dev": "minh",
@@ -377,7 +415,7 @@
    "base": [
     {
      "num": 11359,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 1,
      "add": 605,
@@ -606,11 +644,11 @@
    "r727": [
     {
      "num": 11429,
-     "cf": "bad",
-     "st": "draft",
-     "nc": 4,
-     "add": 1192,
-     "del": 75,
+     "cf": "ok",
+     "st": "open",
+     "nc": 6,
+     "add": 1224,
+     "del": 100,
      "fc": 16
     },
     {
@@ -1010,7 +1048,7 @@
    "base": [
     {
      "num": 11237,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 3,
      "add": 202,
@@ -1047,7 +1085,7 @@
    "base": [
     {
      "num": 11216,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 5,
      "add": 198,
