@@ -187,15 +187,14 @@ function renderScreens(S){
     +'<div class="stats">'
       +'<div class="stat"><span class="stat-val">'+scr.length+'</span> màn</div>'
       +'<div class="stat">✅ migrated <span class="stat-val" style="color:var(--report-fg)">'+n('done')+'</span></div>'
-      +'<div class="stat">🟡 WIP <span class="stat-val warn">'+n('wip')+'</span></div>'
-      +'<div class="stat">🔴 chưa <span class="stat-val warn">'+n('todo')+'</span></div>'
+      +'<div class="stat">🔴 chưa <span class="stat-val warn">'+(n('todo')+n('wip'))+'</span></div>'
     +'</div>'
     +'<div class="pic-summary">'+chips+'</div>'
     +'<div class="scroll-wrap"><table style="min-width:900px"><thead><tr>'
       +'<th>Screen ID</th><th>画面名</th><th>Route Next.js</th><th>Ticket</th><th>PIC</th><th>状態</th><th>Ghi chú</th>'
     +'</tr></thead><tbody>'+body+'</tbody></table></div>'
-    +'<div class="footnote">✅ migrated = route active trên r20260727 + folder tồn tại · 🟡 WIP = có feature branch chưa merge · 🔴 chưa = chưa có code.<br>'
-      +'Cron điều tra r20260727 mỗi 5 phút; 画面名 / ticket / PIC là cấu hình cố định (reassign PIC thì sửa <code>tools/fetch_screens_s14.py</code>).</div>'
+    +'<div class="footnote">✅ migrated = có folder màn (khai báo <code>SCREEN_ID</code>) trên r20260727 · 🔴 chưa = chưa có folder (đang làm ở branch riêng hoặc chưa bắt đầu).<br>'
+      +'Danh sách màn = milestone “Sprint 14” trên Backlog (category 画面実装). Cron điều tra r20260727 mỗi 5 phút; ticket = issueKey Backlog. Reassign PIC / thêm-bớt màn: sửa CONFIG trong <code>tools/fetch_screens_s14.py</code>.</div>'
     +'</div>';
   document.getElementById('screens').innerHTML=html;
 }
