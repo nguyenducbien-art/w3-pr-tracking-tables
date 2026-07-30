@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-30 10:19",
+ "updated": "2026-07-30 10:42",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -309,7 +309,7 @@
     {
      "num": 11449,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 1,
      "add": 14,
      "del": 0,
@@ -634,6 +634,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11451,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 17,
+     "del": 9,
+     "fc": 1
+    },
+    {
      "num": 11343,
      "cf": "ok",
      "st": "merged",
@@ -645,14 +654,14 @@
    ],
    "created": "07-27 17:44",
    "drive": false,
-   "cop": 2,
-   "unres": 2,
+   "cop": 3,
+   "unres": 3,
    "rvw": {
     "ap": [],
     "ch": [],
     "pd": []
    },
-   "title": "セット品作成_セット品候補一覧 (screen_id=518) を React 化"
+   "title": "セット品候補一覧 行の遷移アイコンを除去 (ツールバー明細のみ)"
   },
   {
    "ticket": "588",
