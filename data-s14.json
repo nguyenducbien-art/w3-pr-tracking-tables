@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-30 12:54",
+ "updated": "2026-07-30 13:06",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -12,6 +12,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "548",
+   "dev": "minh",
+   "bien": false,
+   "base": [],
+   "r727": [
+    {
+     "num": 11460,
+     "cf": "bad",
+     "st": "open",
+     "nc": 3,
+     "add": 1203,
+     "del": 10,
+     "fc": 20
+    }
+   ],
+   "created": "07-30 13:00",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "在庫_変更履歴明細 (254) を React へ移行"
+  },
   {
    "ticket": "1497",
    "dev": "bien",
@@ -132,10 +159,10 @@
      "num": 11457,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 121,
-     "del": 34,
-     "fc": 10
+     "nc": 2,
+     "add": 125,
+     "del": 38,
+     "fc": 12
     },
     {
      "num": 11434,
@@ -150,7 +177,7 @@
    "created": "07-29 17:09",
    "drive": false,
    "cop": 4,
-   "unres": 2,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
