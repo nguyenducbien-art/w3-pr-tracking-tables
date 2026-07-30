@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-30 13:06",
+ "updated": "2026-07-30 13:12",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1498",
   "1497",
   "1495",
   "1479",
@@ -12,6 +13,43 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "1498",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 11461,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 305,
+     "del": 11,
+     "fc": 5
+    }
+   ],
+   "r727": [
+    {
+     "num": 11462,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 301,
+     "del": 11,
+     "fc": 7
+    }
+   ],
+   "created": "07-30 13:05",
+   "drive": false,
+   "cop": 5,
+   "unres": 5,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "一覧グリッド横スクロール時に先頭データ列を左端固定するオプションを共通コンポーネントに追加"
+  },
   {
    "ticket": "548",
    "dev": "minh",
@@ -30,8 +68,8 @@
    ],
    "created": "07-30 13:00",
    "drive": false,
-   "cop": 0,
-   "unres": 0,
+   "cop": 3,
+   "unres": 3,
    "rvw": {
     "ap": [],
     "ch": [],
