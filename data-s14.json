@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-30 16:11",
+ "updated": "2026-07-30 16:17",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -14,6 +14,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "933",
+   "dev": "bien",
+   "bien": true,
+   "base": [],
+   "r727": [
+    {
+     "num": 11475,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 1098,
+     "del": 3,
+     "fc": 16
+    }
+   ],
+   "created": "07-30 16:11",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "シリアル番号_一覧 (screen_id=685) 一覧画面を実装"
+  },
   {
    "ticket": "1499",
    "dev": "bien",
@@ -30,6 +57,15 @@
     }
    ],
    "r727": [
+    {
+     "num": 11476,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 101,
+     "del": 4,
+     "fc": 3
+    },
     {
      "num": 11474,
      "cf": "ok",
