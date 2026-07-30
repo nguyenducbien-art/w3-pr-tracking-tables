@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-30 10:50",
+ "updated": "2026-07-30 10:57",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1497",
   "1495",
   "1479",
   "1475",
@@ -11,6 +12,43 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "1497",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 11454,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 52,
+     "del": 6,
+     "fc": 3
+    }
+   ],
+   "r727": [
+    {
+     "num": 11455,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 52,
+     "del": 6,
+     "fc": 3
+    }
+   ],
+   "created": "07-30 10:49",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "共通ヘッダーのトップメニューのリンク先を修正し404を解消"
+  },
   {
    "ticket": "571",
    "dev": "minh",
