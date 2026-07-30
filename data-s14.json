@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-30 16:55",
+ "updated": "2026-07-30 18:50",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -14,6 +14,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "546",
+   "dev": "minh",
+   "bien": false,
+   "base": [],
+   "r727": [
+    {
+     "num": 11480,
+     "cf": "ok",
+     "st": "open",
+     "nc": 4,
+     "add": 5363,
+     "del": 6,
+     "fc": 40
+    }
+   ],
+   "created": "07-30 18:06",
+   "drive": false,
+   "cop": 8,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "在庫_情報変更 (265) の React 移行"
+  },
   {
    "ticket": "941",
    "dev": "hung",
