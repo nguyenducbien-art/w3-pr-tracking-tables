@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-30 16:30",
+ "updated": "2026-07-30 16:36",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -15,6 +15,33 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
   {
+   "ticket": "941",
+   "dev": "hung",
+   "bien": false,
+   "base": [],
+   "r727": [
+    {
+     "num": 11477,
+     "cf": "ok",
+     "st": "draft",
+     "nc": 2,
+     "add": 3854,
+     "del": 0,
+     "fc": 21
+    }
+   ],
+   "created": "07-30 16:34",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "作業履歴_作業者別 を React 移行"
+  },
+  {
    "ticket": "933",
    "dev": "bien",
    "bien": true,
@@ -23,7 +50,7 @@
     {
      "num": 11475,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 2,
      "add": 1097,
      "del": 2,
