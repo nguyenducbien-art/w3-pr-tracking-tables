@@ -1,6 +1,6 @@
 {
- "updated": "2026-07-31 11:57",
- "tip": "bdb532d33e",
+ "updated": "2026-07-31 14:31",
+ "tip": "a3bcbadd54",
  "branch": "mimosa/frontend/develop/r20260727",
  "picOrder": [
   "Khoa",
@@ -229,11 +229,11 @@
   {
    "sid": 446,
    "name": "画面設定_ステータス別設定",
-   "route": "",
+   "route": "/unit/code-extension-edits",
    "ticket": "1089",
    "pic": "Đạt",
-   "st": "todo",
-   "note": "chưa migrate vào r20260727"
+   "st": "done",
+   "note": ""
   },
   {
    "sid": 518,
