@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-31 15:27",
+ "updated": "2026-07-31 15:33",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1478",
   "1500",
   "1499",
   "1498",
@@ -15,6 +16,43 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "1478",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 11513,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 1283,
+     "del": 1210,
+     "fc": 19
+    }
+   ],
+   "r727": [
+    {
+     "num": 11514,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 1206,
+     "del": 1200,
+     "fc": 18
+    }
+   ],
+   "created": "07-31 15:25",
+   "drive": false,
+   "cop": 4,
+   "unres": 4,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "移行済み画面の子モーダルを共通 DataTable へ統一しフィルタ/ソート/ページャを提供"
+  },
   {
    "ticket": "1500",
    "dev": "bien",
@@ -393,15 +431,6 @@
    "dev": "bien",
    "bien": true,
    "base": [
-    {
-     "num": 11445,
-     "cf": "ok",
-     "st": "open",
-     "nc": 2,
-     "add": 79,
-     "del": 12,
-     "fc": 2
-    },
     {
      "num": 11441,
      "cf": "ok",
