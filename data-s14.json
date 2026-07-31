@@ -1,8 +1,9 @@
 {
- "updated": "2026-07-31 14:37",
+ "updated": "2026-07-31 15:02",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1500",
   "1499",
   "1498",
   "1497",
@@ -14,6 +15,43 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "1500",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 11510,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 160,
+     "del": 5,
+     "fc": 2
+    }
+   ],
+   "r727": [
+    {
+     "num": 11511,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 160,
+     "del": 5,
+     "fc": 2
+    }
+   ],
+   "created": "07-31 14:56",
+   "drive": true,
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "is_display=0 の画面アクセス時はエラーを表示せずユニットトップへリダイレクト"
+  },
   {
    "ticket": "1089",
    "dev": "hung",
