@@ -1,6 +1,6 @@
 {
- "updated": "2026-07-30 19:09",
- "tip": "27ca5a6f8b",
+ "updated": "2026-07-31 10:19",
+ "tip": "bdb24fb117",
  "branch": "mimosa/frontend/develop/r20260727",
  "picOrder": [
   "Khoa",
@@ -40,11 +40,11 @@
   {
    "sid": 265,
    "name": "在庫_情報変更",
-   "route": "",
+   "route": "/stocks/info-edits",
    "ticket": "693",
    "pic": "Minh",
-   "st": "todo",
-   "note": "chưa migrate vào r20260727"
+   "st": "done",
+   "note": ""
   },
   {
    "sid": 280,
@@ -382,11 +382,11 @@
   {
    "sid": 705,
    "name": "在庫予測_在庫予測一覧",
-   "route": "",
+   "route": "/stocks/predict/headers",
    "ticket": "729",
    "pic": "Minh",
-   "st": "todo",
-   "note": "subnav / nguồn điều hướng của màn 706"
+   "st": "done",
+   "note": ""
   },
   {
    "sid": 706,
