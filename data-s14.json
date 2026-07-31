@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-31 15:33",
+ "updated": "2026-07-31 15:40",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -25,8 +25,8 @@
      "num": 11513,
      "cf": "ok",
      "st": "open",
-     "nc": 3,
-     "add": 1283,
+     "nc": 4,
+     "add": 1286,
      "del": 1210,
      "fc": 19
     }
@@ -36,8 +36,8 @@
      "num": 11514,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 1206,
+     "nc": 2,
+     "add": 1209,
      "del": 1200,
      "fc": 18
     }
@@ -45,7 +45,7 @@
    "created": "07-31 15:25",
    "drive": false,
    "cop": 4,
-   "unres": 4,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -72,7 +72,7 @@
     {
      "num": 11511,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 3,
      "add": 250,
      "del": 45,
@@ -950,6 +950,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11515,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 206,
+     "del": 23,
+     "fc": 11
+    },
+    {
      "num": 11354,
      "cf": "ok",
      "st": "merged",
@@ -968,7 +977,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "353_セット品作成_内容追加"
+   "title": "353_セット品作成_内容追加_レビュー指摘対応"
   },
   {
    "ticket": "552",
