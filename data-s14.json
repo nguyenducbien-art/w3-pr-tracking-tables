@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-31 11:51",
+ "updated": "2026-07-31 14:19",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -718,6 +718,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11508,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 193,
+     "del": 94,
+     "fc": 4
+    },
+    {
      "num": 11408,
      "cf": "ok",
      "st": "merged",
@@ -738,14 +747,14 @@
    ],
    "created": "07-28 15:32",
    "drive": false,
-   "cop": 0,
-   "unres": 0,
+   "cop": 3,
+   "unres": 3,
    "rvw": {
     "ap": [],
     "ch": [],
     "pd": []
    },
-   "title": "327_棚卸_調査結果登録_予定外在庫追加モーダル修正"
+   "title": "634_商品マスタ選択_検索欄の UI パリティ修正"
   },
   {
    "ticket": "576",
