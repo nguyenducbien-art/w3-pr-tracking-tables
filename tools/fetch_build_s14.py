@@ -14,6 +14,8 @@ SINCE = "2026-07-13"                      # bound scan; Sprint 14 gate thực = 
 PRURL = "https://github.com/%s/pull/" % REPO
 OUT = sys.argv[1] if len(sys.argv) > 1 else "data-s14.json"
 
+EXCLUDE = {"1495"}                        # ticket ẩn hẳn khỏi bảng (mọi PR base/r727) — user yêu cầu 08-03
+
 DEV = {"nguyenducbien-art":"bien","nguyennhatminh-dl":"minh","phambaohung-dl":"hung",
        "phamtiendat-oss":"dat","nguyenanhkhoa-rk":"khoa"}
 
@@ -139,7 +141,7 @@ def build():
         seg = p["headRefName"].split("/")[-1]
         if is_sync(seg): continue
         tk = ticket_from_branch(seg)
-        if not tk: continue
+        if not tk or tk in EXCLUDE: continue
         s14.add(tk)
         t = tickets.setdefault(tk, {"base":[], "r727":[], "meta":[], "common":False})
         det = pr_detail(p["number"])

@@ -27,6 +27,7 @@ import json, os, re, subprocess, sys, datetime
 
 CODE_REPO = "/Volumes/Works/rikkeisoft/w3package_v2_mimosa_upgrade_frontend_develop_base"
 BRANCH    = "mimosa/frontend/develop/r20260727"
+LOCAL_REF = "refs/screens-cron/r20260727"   # ref riêng của script (tránh race FETCH_HEAD dùng chung)
 IDS_TS    = "frontend/packages/config/screen-ids.ts"
 APP_ROOT  = "frontend/apps/web/src/app/(protected)"
 OUT = sys.argv[1] if len(sys.argv) > 1 else "screens-s14.json"
@@ -98,12 +99,15 @@ def git(*a):
     return run(["git", "-C", CODE_REPO] + list(a))
 
 def investigate():
-    git("fetch", "origin", BRANCH)
-    sha = git("rev-parse", "FETCH_HEAD").strip()
+    # Fetch vào REF RIÊNG (không dùng FETCH_HEAD chung) — _base là workspace dùng chung,
+    # process khác fetch xen vào sẽ đè FETCH_HEAD → đọc nhầm tree → detection sai.
+    # '+' = force (phòng nhánh r bị force-push). Ref này chỉ script này ghi.
+    git("fetch", "origin", "+%s:%s" % (BRANCH, LOCAL_REF))
+    sha = git("rev-parse", LOCAL_REF).strip()
     # map SCREEN_IDS.<name> -> sid
     ids = git("show", "%s:%s" % (sha, IDS_TS))
     m = re.search(r"SCREEN_IDS\s*=\s*\{(.*?)\}\s*as const", ids, re.S)
-    name2sid = {n: int(v) for n, v in re.findall(r"(\w+)\s*:\s*(\d+)", m.group(1))}
+    name2sid = {n: int(v) for n, v in re.findall(r"(\w+)\s*:\s*(\d+)", m.group(1))} if m else {}
     # các folder màn đã implement: khai báo SCREEN_ID chính + path → route
     grep = git("grep", "-n", "-E", r"export const SCREEN_ID = SCREEN_IDS\.", sha, "--", APP_ROOT)
     sid2route = {}
@@ -112,6 +116,12 @@ def investigate():
         mn = re.search(r"SCREEN_IDS\.(\w+)", line)
         if mp and mn and mn.group(1) in name2sid:
             sid2route[name2sid[mn.group(1)]] = mp.group(1)
+    # CHỐT CHẶN: detection rỗng = chắc chắn lỗi (git show/grep hỏng, tree đọc dở) — KHÔNG để
+    # ghi dữ liệu "toàn chưa" đè lên bản tốt. Sprint luôn có màn done → sid2route rỗng ⇒ raise.
+    if not name2sid or not sid2route:
+        raise RuntimeError("detection RỖNG (name2sid=%d, sid2route=%d) @ %s — nghi git show/grep "
+                           "lỗi hoặc tree đọc dở; bỏ qua để không đè dữ liệu tốt"
+                           % (len(name2sid), len(sid2route), sha[:10]))
     screens = []
     for sid, name, ticket, pic in CONFIG:
         if sid in sid2route:
