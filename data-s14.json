@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-03 15:51",
+ "updated": "2026-08-03 16:05",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -306,10 +306,19 @@
   },
   {
    "ticket": "937",
-   "dev": "hung",
+   "dev": "minh",
    "bien": false,
    "base": [],
    "r727": [
+    {
+     "num": 11549,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 835,
+     "del": 460,
+     "fc": 19
+    },
     {
      "num": 11468,
      "cf": "ok",
@@ -329,7 +338,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "シリアル番号_追加・編集(690)を Next.js に移行"
+   "title": "シリアル番号_追加・編集の登録エラー・商品選択・遷移先を修正"
   },
   {
    "ticket": "1498",
