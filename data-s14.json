@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-03 09:12",
+ "updated": "2026-08-03 09:43",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -8,7 +8,6 @@
   "1499",
   "1498",
   "1497",
-  "1495",
   "1479",
   "1475",
   "1453"
@@ -444,43 +443,6 @@
     "pd": []
    },
    "title": "移動_明細を移行（screen_id=282）"
-  },
-  {
-   "ticket": "1495",
-   "dev": "bien",
-   "bien": true,
-   "base": [
-    {
-     "num": 11441,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 2,
-     "add": 79,
-     "del": 12,
-     "fc": 2
-    }
-   ],
-   "r727": [
-    {
-     "num": 11444,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 1,
-     "add": 79,
-     "del": 12,
-     "fc": 2
-    }
-   ],
-   "created": "07-30 09:11",
-   "drive": true,
-   "cop": 0,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "ダイアログ内 DataTable 列フィルタのドロップダウンが操作できない不具合を修正"
   },
   {
    "ticket": "577",
