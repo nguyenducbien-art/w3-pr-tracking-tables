@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-03 16:19",
+ "updated": "2026-08-03 16:32",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -227,6 +227,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11553,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 7,
+     "del": 0,
+     "fc": 2
+    },
+    {
      "num": 11475,
      "cf": "ok",
      "st": "merged",
@@ -245,7 +254,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "シリアル番号_一覧 (screen_id=685) 一覧画面を実装"
+   "title": "シリアル番号_一覧 (screen_id=685) 削除確認ダイアログにチェックボックスを追加"
   },
   {
    "ticket": "1499",
