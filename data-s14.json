@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-03 15:25",
+ "updated": "2026-08-03 15:38",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -105,10 +105,19 @@
   },
   {
    "ticket": "1089",
-   "dev": "hung",
+   "dev": "dat",
    "bien": false,
    "base": [],
    "r727": [
+    {
+     "num": 11545,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 8,
+     "del": 5,
+     "fc": 1
+    },
     {
      "num": 11497,
      "cf": "ok",
@@ -128,7 +137,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "画面設定_ステータス別設定 (446) を React 移行"
+   "title": "ステータス別設定のラベル配置とご利用ガイド表示を Angular に揃える"
   },
   {
    "ticket": "555",
