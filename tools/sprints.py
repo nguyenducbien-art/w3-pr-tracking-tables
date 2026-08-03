@@ -2,6 +2,7 @@
 # Danh sách sprint dùng CHUNG cho mọi build_s*.py (menu điều hướng).
 # Thêm sprint mới: thêm 1 dòng vào SPRINTS rồi regenerate tất cả page + push main.
 SPRINTS = [
+    {"label": "Sprint 12", "href": "s12.html"},
     {"label": "Sprint 13", "href": "index.html"},
     {"label": "Sprint 14", "href": "s14.html"},
 ]

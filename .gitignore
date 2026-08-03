@@ -1,10 +1,13 @@
 data.json
 data-s14.json
+data-s12.json
 screens-s14.json
 __pycache__/
 
 # build outputs trung gian trong tools/ (bản served/tracked là *.html ở root repo)
 tools/index.html
+tools/s12.html
 tools/s14.html
+tools/table-a-s12.html
 tools/table-a-s13.html
 tools/table-a-s14.html

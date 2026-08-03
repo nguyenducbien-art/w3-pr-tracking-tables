@@ -18,6 +18,7 @@ cd "$REPO" || exit 1
   python3 tools/fetch_build_s14.py   data-s14.json;    rcPR=$?
   python3 tools/fetch_screens_s14.py screens-s14.json; rcSc=$?
   # rc: 0=đổi, 2=không đổi, khác=lỗi
+  # (Sprint 12 = frozen, data nhúng thẳng vào s12.html — KHÔNG cron, không nằm trong nhánh data.)
   if [ "$rcPR" -ne 0 ] && [ "$rcPR" -ne 2 ]; then echo "→ LỖI fetch_build_s14 (rc=$rcPR)"; exit 1; fi
   if [ "$rcSc" -ne 0 ] && [ "$rcSc" -ne 2 ]; then echo "→ LỖI fetch_screens_s14 (rc=$rcSc)"; exit 1; fi
   if [ "$rcPR" -eq 2 ] && [ "$rcSc" -eq 2 ]; then echo "→ PR + screens đều không đổi, khỏi push."; exit 0; fi
