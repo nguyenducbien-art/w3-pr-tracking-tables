@@ -165,7 +165,10 @@ def build():
 
     main = []
     for tk, t in tickets.items():
-        metas = t["meta"]; common = t["common"]
+        # Sprint 12 CHƯA có convention 'common-' trong tên branch → suy common theo LOGIC CẶP:
+        # ticket có CẢ PR vào base LẪN PR vào r629 = common component (component chung đẩy base
+        # + tích hợp r). Màn migrate chỉ có PR vào r629 (base='—'). Vẫn OR với prefix nếu có.
+        metas = t["meta"]; common = (bool(t["base"]) and bool(t["r629"])) or t["common"]
         base_m = [m for m in metas if m["key"] == "base"]
         rep = base_m[0] if base_m else metas[0]
         dev = dev_of(rep["author"])
