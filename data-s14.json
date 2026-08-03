@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-03 16:05",
+ "updated": "2026-08-03 16:12",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -905,6 +905,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11550,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 9,
+     "del": 2,
+     "fc": 1
+    },
+    {
      "num": 11543,
      "cf": "ok",
      "st": "merged",
@@ -932,7 +941,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "移動_内容追加 (screen 298) 登録後の白画面 + 移動先入力パリティ修正"
+   "title": "移動_内容追加 (screen 298) 白画面の根本原因を修正 (初期化 effect の依存から tErrors を除外)"
   },
   {
    "ticket": "600",
