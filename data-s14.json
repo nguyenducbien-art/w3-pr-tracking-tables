@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-03 11:24",
+ "updated": "2026-08-03 15:18",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,7 +10,8 @@
   "1497",
   "1479",
   "1475",
-  "1453"
+  "1453",
+  "1430"
  ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
@@ -886,6 +887,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11543,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 27,
+     "del": 19,
+     "fc": 4
+    },
+    {
      "num": 11357,
      "cf": "ok",
      "st": "merged",
@@ -904,7 +914,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "移動_内容追加 (screen 298) を React へ移行"
+   "title": "移動_内容追加 (screen 298) 登録後の白画面 + 移動先入力パリティ修正"
   },
   {
    "ticket": "600",
@@ -1575,6 +1585,46 @@
     ]
    },
    "title": "一覧共通コンポーネントに表示件数上限(E029)判定を追加"
+  },
+  {
+   "ticket": "1430",
+   "dev": "minh",
+   "bien": false,
+   "base": [
+    {
+     "num": 10888,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 6,
+     "add": 353,
+     "del": 1,
+     "fc": 4
+    }
+   ],
+   "r727": [
+    {
+     "num": 11221,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 229,
+     "del": 38,
+     "fc": 6
+    }
+   ],
+   "created": "07-13 16:43",
+   "drive": true,
+   "cop": 6,
+   "unres": 0,
+   "rvw": {
+    "ap": [
+     "kanayam",
+     "bien"
+    ],
+    "ch": [],
+    "pd": []
+   },
+   "title": "共通FieldRenderer/date.tsで日付nullish番兵(5000-01-01等)を空表示にする"
   }
  ],
  "scaffold": [
