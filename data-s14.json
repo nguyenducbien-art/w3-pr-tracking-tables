@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-04 13:10",
+ "updated": "2026-08-04 13:16",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -267,6 +267,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11626,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 81,
+     "del": 28,
+     "fc": 1
+    },
+    {
      "num": 11618,
      "cf": "ok",
      "st": "merged",
@@ -287,14 +296,14 @@
    ],
    "created": "07-30 16:34",
    "drive": true,
-   "cop": 2,
-   "unres": 0,
+   "cop": 3,
+   "unres": 1,
    "rvw": {
     "ap": [],
     "ch": [],
     "pd": []
    },
-   "title": "作業履歴_作業者別 CSV出力ファイル名に拡張子(.csv)が付かない不具合を修正"
+   "title": "作業履歴_作業者別 選択ユーザーを Kendo MultiSelect パリティ (タグ+ドロップダウン) に修正"
   },
   {
    "ticket": "933",
