@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-04 12:24",
+ "updated": "2026-08-04 13:03",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1336,10 +1336,19 @@
   },
   {
    "ticket": "563",
-   "dev": "hung",
+   "dev": "minh",
    "bien": false,
    "base": [],
    "r727": [
+    {
+     "num": 11624,
+     "cf": "bad",
+     "st": "open",
+     "nc": 3,
+     "add": 759,
+     "del": 461,
+     "fc": 23
+    },
     {
      "num": 11337,
      "cf": "ok",
@@ -1359,7 +1368,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "直接入庫_内容追加 (screen_id=402) を React に移行"
+   "title": "直接入庫_内容追加 (402) バリデーション整合・モーダルページャ・i18n・raw ID parity 修正"
   },
   {
    "ticket": "584",
