@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-04 15:29",
+ "updated": "2026-08-04 16:43",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -485,10 +485,19 @@
   },
   {
    "ticket": "937",
-   "dev": "minh",
-   "bien": false,
+   "dev": "bien",
+   "bien": true,
    "base": [],
    "r727": [
+    {
+     "num": 11649,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 24,
+     "del": 8,
+     "fc": 3
+    },
     {
      "num": 11549,
      "cf": "ok",
@@ -517,7 +526,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "シリアル番号_追加・編集の登録エラー・商品選択・遷移先を修正"
+   "title": "シリアル追加・編集 商品荷姿未選択時の必須メッセージを旧画面と一致"
   },
   {
    "ticket": "1498",
