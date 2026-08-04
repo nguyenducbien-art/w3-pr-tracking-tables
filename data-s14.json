@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-04 09:39",
+ "updated": "2026-08-04 11:24",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -44,13 +44,15 @@
     }
    ],
    "created": "08-04 09:20",
-   "drive": false,
+   "drive": true,
    "cop": 2,
    "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "CSV出力ファイル名を画面登録名で固定し国際化しない"
   },
@@ -260,10 +262,19 @@
   },
   {
    "ticket": "941",
-   "dev": "hung",
-   "bien": false,
+   "dev": "bien",
+   "bien": true,
    "base": [],
    "r727": [
+    {
+     "num": 11618,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 160,
+     "del": 2,
+     "fc": 2
+    },
     {
      "num": 11477,
      "cf": "ok",
@@ -283,7 +294,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "作業履歴_作業者別 を React 移行"
+   "title": "作業履歴_作業者別 CSV出力ファイル名に拡張子(.csv)が付かない不具合を修正"
   },
   {
    "ticket": "933",
