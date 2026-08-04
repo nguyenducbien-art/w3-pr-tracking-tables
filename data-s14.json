@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-04 14:36",
+ "updated": "2026-08-04 15:03",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1507",
   "1506",
   "1492",
   "1478",
@@ -18,6 +19,43 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "1507",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 11641,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 50,
+     "del": 3,
+     "fc": 4
+    }
+   ],
+   "r727": [
+    {
+     "num": 11642,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 50,
+     "del": 3,
+     "fc": 4
+    }
+   ],
+   "created": "08-04 14:55",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "取込エラーログのダウンロードファイル名を basename に修正 (共通: ImportDialog)"
+  },
   {
    "ticket": "1506",
    "dev": "khoa",
@@ -800,6 +838,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11644,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 295,
+     "del": 126,
+     "fc": 8
+    },
+    {
      "num": 11389,
      "cf": "ok",
      "st": "merged",
@@ -811,14 +858,14 @@
    ],
    "created": "07-28 17:20",
    "drive": false,
-   "cop": 3,
-   "unres": 0,
+   "cop": 5,
+   "unres": 2,
    "rvw": {
     "ap": [],
     "ch": [],
     "pd": []
    },
-   "title": "261_在庫_在庫追加_edit"
+   "title": "261_在庫_在庫追加 のモーダル表示と未引当数バリデーションを AngularJS に揃える"
   },
   {
    "ticket": "589",
