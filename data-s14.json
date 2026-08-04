@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-04 16:43",
+ "updated": "2026-08-04 16:50",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -397,6 +397,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11650,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 16,
+     "del": 1,
+     "fc": 2
+    },
+    {
      "num": 11553,
      "cf": "ok",
      "st": "merged",
@@ -424,7 +433,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "シリアル番号_一覧 (screen_id=685) 削除確認ダイアログにチェックボックスを追加"
+   "title": "シリアル番号_一覧 (screen_id=685) ServerSync ユニットでのグリッド取得 400 を解消"
   },
   {
    "ticket": "1499",
@@ -492,7 +501,7 @@
     {
      "num": 11649,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 1,
      "add": 24,
      "del": 8,
@@ -519,8 +528,8 @@
    ],
    "created": "07-30 14:19",
    "drive": true,
-   "cop": 4,
-   "unres": 1,
+   "cop": 5,
+   "unres": 2,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -1714,6 +1723,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11651,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 22,
+     "del": 1,
+     "fc": 2
+    },
+    {
      "num": 11645,
      "cf": "ok",
      "st": "merged",
@@ -1750,7 +1768,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "出荷予測明細(704) 一覧カラム「出荷予測明細ID」の多言語ラベルを追加 (en/vi/zh-CN)"
+   "title": "出荷予測明細 (screen_id=704) ServerSync ユニットでの選択エラーを解消"
   },
   {
    "ticket": "543",
