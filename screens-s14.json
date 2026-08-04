@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-04 13:10",
- "tip": "0555da3323",
+ "updated": "2026-08-04 14:56",
+ "tip": "fea3b33931",
  "branch": "mimosa/frontend/develop/r20260727",
  "picOrder": [
   "Khoa",
@@ -206,7 +206,7 @@
    "st": "done",
    "note": "",
    "test": "wip",
-   "tester": "Biên"
+   "tester": "Bồn"
   },
   {
    "sid": 353,
