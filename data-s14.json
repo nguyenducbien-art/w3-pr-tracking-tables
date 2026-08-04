@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-04 15:10",
+ "updated": "2026-08-04 15:16",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1705,6 +1705,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11645,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 3,
+     "del": 0,
+     "fc": 3
+    },
+    {
      "num": 11636,
      "cf": "ok",
      "st": "merged",
@@ -1732,7 +1741,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "出荷予測明細(704) 削除確認に実行チェックボックスを追加 (createCModal パリティ)"
+   "title": "出荷予測明細(704) 一覧カラム「出荷予測明細ID」の多言語ラベルを追加 (en/vi/zh-CN)"
   },
   {
    "ticket": "543",
