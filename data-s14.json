@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-03 17:30",
+ "updated": "2026-08-04 09:36",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1492",
   "1478",
   "1500",
   "1499",
@@ -16,6 +17,43 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "1492",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 11561,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 66,
+     "del": 4,
+     "fc": 2
+    }
+   ],
+   "r727": [
+    {
+     "num": 11562,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 70,
+     "del": 3,
+     "fc": 2
+    }
+   ],
+   "created": "08-04 09:20",
+   "drive": false,
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "CSV出力ファイル名を画面登録名で固定し国際化しない"
+  },
   {
    "ticket": "544",
    "dev": "minh",
