@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-04 09:37",
+ "updated": "2026-08-04 09:40",
  "tip": "3595fe178f",
  "branch": "mimosa/frontend/develop/r20260727",
  "picOrder": [
@@ -18,8 +18,8 @@
    "pic": "Khoa",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Bồn"
   },
   {
    "sid": 254,
@@ -29,8 +29,8 @@
    "pic": "Minh",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Minh"
   },
   {
    "sid": 261,
@@ -40,8 +40,8 @@
    "pic": "Khoa",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "wip",
+   "tester": "Khoa"
   },
   {
    "sid": 265,
@@ -51,8 +51,8 @@
    "pic": "Minh",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "wip",
+   "tester": "Khoa"
   },
   {
    "sid": 280,
@@ -62,8 +62,8 @@
    "pic": "Đạt",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Đạt"
   },
   {
    "sid": 282,
@@ -73,8 +73,8 @@
    "pic": "Minh",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Minh"
   },
   {
    "sid": 298,
@@ -84,8 +84,8 @@
    "pic": "Biên",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Đạt"
   },
   {
    "sid": 303,
@@ -95,8 +95,8 @@
    "pic": "Minh",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Minh"
   },
   {
    "sid": 306,
@@ -106,8 +106,8 @@
    "pic": "Hưng",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Bồn"
   },
   {
    "sid": 311,
@@ -117,8 +117,8 @@
    "pic": "Hưng",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Hưng"
   },
   {
    "sid": 313,
@@ -128,8 +128,8 @@
    "pic": "Minh",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Minh"
   },
   {
    "sid": 318,
@@ -139,8 +139,8 @@
    "pic": "Minh",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "wip",
+   "tester": "Sơn"
   },
   {
    "sid": 320,
@@ -150,8 +150,8 @@
    "pic": "Khoa",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Khoa"
   },
   {
    "sid": 327,
@@ -161,8 +161,8 @@
    "pic": "Khoa",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "wip",
+   "tester": "Khoa"
   },
   {
    "sid": 333,
@@ -172,8 +172,8 @@
    "pic": "Khoa",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Khoa"
   },
   {
    "sid": 335,
@@ -183,8 +183,8 @@
    "pic": "Khoa",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Khoa"
   },
   {
    "sid": 342,
@@ -194,8 +194,8 @@
    "pic": "Biên",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "wip",
+   "tester": "Đạt"
   },
   {
    "sid": 344,
@@ -205,8 +205,8 @@
    "pic": "Hưng",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "wip",
+   "tester": "Biên"
   },
   {
    "sid": 353,
@@ -216,8 +216,8 @@
    "pic": "Khoa",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "wip",
+   "tester": "Khoa"
   },
   {
    "sid": 362,
@@ -227,8 +227,8 @@
    "pic": "Hưng",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "wip",
+   "tester": "Minh"
   },
   {
    "sid": 373,
@@ -238,8 +238,8 @@
    "pic": "Khoa",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Minh"
   },
   {
    "sid": 387,
@@ -249,8 +249,8 @@
    "pic": "Đạt",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Đạt"
   },
   {
    "sid": 396,
@@ -260,8 +260,8 @@
    "pic": "Hưng",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Hưng"
   },
   {
    "sid": 402,
@@ -271,8 +271,8 @@
    "pic": "Hưng",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "wip",
+   "tester": "Minh"
   },
   {
    "sid": 446,
@@ -282,8 +282,8 @@
    "pic": "Đạt",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Đạt"
   },
   {
    "sid": 518,
@@ -293,8 +293,8 @@
    "pic": "Biên",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Bồn"
   },
   {
    "sid": 622,
@@ -304,8 +304,8 @@
    "pic": "Hưng",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Hưng"
   },
   {
    "sid": 623,
@@ -315,8 +315,8 @@
    "pic": "Đạt",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Bồn"
   },
   {
    "sid": 624,
@@ -326,8 +326,8 @@
    "pic": "Đạt",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Bồn"
   },
   {
    "sid": 625,
@@ -337,8 +337,8 @@
    "pic": "Khoa",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Khoa"
   },
   {
    "sid": 626,
@@ -348,8 +348,8 @@
    "pic": "Đạt",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Bồn"
   },
   {
    "sid": 627,
@@ -359,8 +359,8 @@
    "pic": "Hưng",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Hưng"
   },
   {
    "sid": 634,
@@ -370,8 +370,8 @@
    "pic": "Khoa",
    "st": "todo",
    "note": "sub-screen thuộc 棚卸予定外在庫",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Bồn"
   },
   {
    "sid": 638,
@@ -381,8 +381,8 @@
    "pic": "Đạt",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Bồn"
   },
   {
    "sid": 640,
@@ -392,8 +392,8 @@
    "pic": "Minh",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Minh"
   },
   {
    "sid": 641,
@@ -403,8 +403,8 @@
    "pic": "Minh",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Minh"
   },
   {
    "sid": 645,
@@ -414,8 +414,8 @@
    "pic": "Đạt",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Đạt"
   },
   {
    "sid": 685,
@@ -425,8 +425,8 @@
    "pic": "Biên",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Bồn"
   },
   {
    "sid": 690,
@@ -436,8 +436,8 @@
    "pic": "Hưng",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Minh"
   },
   {
    "sid": 702,
@@ -447,8 +447,8 @@
    "pic": "Hưng",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "wip",
+   "tester": "Bồn"
   },
   {
    "sid": 704,
@@ -458,8 +458,8 @@
    "pic": "Hưng",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "todo",
+   "tester": "Bồn"
   },
   {
    "sid": 705,
@@ -469,8 +469,8 @@
    "pic": "Minh",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Minh"
   },
   {
    "sid": 706,
@@ -480,8 +480,8 @@
    "pic": "Hưng",
    "st": "done",
    "note": "",
-   "test": null,
-   "tester": null
+   "test": "done",
+   "tester": "Hưng"
   }
  ]
 }
