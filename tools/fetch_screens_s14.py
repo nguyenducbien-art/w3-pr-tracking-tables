@@ -150,8 +150,12 @@ PIC_ORDER = ["Khoa", "Đạt", "Biên", "Minh", "Hưng"]
 # ghi chú cho vài màn chưa migrate (chỉ hiện khi status != done)
 NOTE_TODO = {
   705: "subnav / nguồn điều hướng của màn 706",
-  634: "sub-screen thuộc 棚卸予定外在庫",
 }
+# Sub-screen / modal KHÔNG có folder riêng (không khai báo SCREEN_ID chính) mà được implement
+# NGAY TRONG folder màn cha → done nếu màn cha đã migrate. {sub_sid: parent_sid}.
+#   634 棚卸予定外在庫_内容追加 = 予定外在庫追加モーダル trong màn 327 (棚卸_調査結果登録):
+#   folder stocks/inventory-edits có IrregularInventoryDialog + hook fetch cột theo 634 làm parent.
+SUB_OF = {634: 327}
 
 def run(args):
     r = subprocess.run(args, capture_output=True, text=True)
@@ -194,6 +198,9 @@ def investigate():
     for sid, name, ticket, pic in CONFIG:
         if sid in sid2route:
             st, rt, note = "done", sid2route[sid], ""
+        elif sid in SUB_OF and SUB_OF[sid] in sid2route:
+            # sub-screen/modal implement trong folder màn cha (đã migrate) → coi là done
+            st, rt, note = "done", sid2route[SUB_OF[sid]], "modal/sub-screen trong màn %d" % SUB_OF[sid]
         else:
             st, rt, note = "todo", "", NOTE_TODO.get(sid, "chưa migrate vào r20260727")
         tt = tests.get(sid) or {}
