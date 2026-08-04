@@ -2,6 +2,7 @@ data.json
 data-s14.json
 data-s12.json
 screens-s14.json
+tools/.backlog_key
 __pycache__/
 
 # build outputs trung gian trong tools/ (bản served/tracked là *.html ở root repo)

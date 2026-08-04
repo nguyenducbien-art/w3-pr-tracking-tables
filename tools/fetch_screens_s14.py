@@ -23,7 +23,7 @@ cần ssh-agent. Chỉ đọc (fetch + git show/grep/rev-parse) — không đụ
 Exit: 0 = có đổi (đã ghi) · 2 = không đổi (bỏ push) · 1 = lỗi.
 Usage: python3 fetch_screens_s14.py [output.json]
 """
-import json, os, re, subprocess, sys, datetime
+import json, os, re, subprocess, sys, datetime, urllib.request, urllib.parse
 
 CODE_REPO = "/Volumes/Works/rikkeisoft/w3package_v2_mimosa_upgrade_frontend_develop_base"
 BRANCH    = "mimosa/frontend/develop/r20260727"
@@ -31,6 +31,70 @@ LOCAL_REF = "refs/screens-cron/r20260727"   # ref riêng của script (tránh ra
 IDS_TS    = "frontend/packages/config/screen-ids.ts"
 APP_ROOT  = "frontend/apps/web/src/app/(protected)"
 OUT = sys.argv[1] if len(sys.argv) > 1 else "screens-s14.json"
+
+# ---- Backlog 結合テスト実施 (integration test) — cột người test + trạng thái test ----
+# Query REST API tasks 'テスト実施' (issueType 4092260) trong milestone Sprint 14 (1691970).
+# API key đọc từ env BACKLOG_API_KEY hoặc file tools/.backlog_key (GITIGNORED — Claude không thấy).
+# Best-effort: thiếu key / API lỗi → bỏ cột test (KHÔNG làm hỏng detection migrate).
+BACKLOG_HOST   = "dialog-inc.backlog.com"
+BL_MILESTONE   = 1691970    # milestone "Sprint 14"
+BL_TEST_TYPE   = 4092260    # タスク(テスト実施) = 結合テスト実施
+TESTER = {"nguyenanhkhoa":"Khoa","nguyenducbien":"Biên","nguyennhatminh":"Minh",
+          "phambaohung":"Hưng","phamtiendat":"Đạt","phamngocson":"Sơn","trinhduybong":"Bồn"}
+TEST_STATE = {"Resolved":"done","Closed":"done","In Progress":"wip","Open":"todo"}
+
+def backlog_key():
+    k = os.environ.get("BACKLOG_API_KEY")
+    if k and k.strip():
+        return k.strip()
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".backlog_key")
+    try:
+        k = open(p).read().strip()
+        return k or None
+    except OSError:
+        return None
+
+def load_prev_tests(path):
+    """test/tester từ screens-s14.json lần trước — dùng khi Backlog lỗi, tránh xoá cột test."""
+    try:
+        old = json.load(open(path))
+        return {s["sid"]: {"test": s.get("test"), "tester": s.get("tester")}
+                for s in old.get("screens", []) if s.get("test")}
+    except (OSError, ValueError):
+        return {}
+
+def fetch_tests():
+    """screen_id -> {test, tester}.
+       {}   = KHÔNG có key (cột test tắt có chủ đích → test=None).
+       None = có key NHƯNG Backlog lỗi (caller GIỮ test data lần trước, KHÔNG xoá)."""
+    key = backlog_key()
+    if not key:
+        print("[fetch_screens] (không có Backlog API key → bỏ dữ liệu cột test)", file=sys.stderr)
+        return {}
+    q = urllib.parse.urlencode({"apiKey": key, "milestoneId[]": BL_MILESTONE,
+                                "issueTypeId[]": BL_TEST_TYPE, "count": 100})
+    url = "https://%s/api/v2/issues?%s" % (BACKLOG_HOST, q)
+    issues = None
+    for attempt in range(3):   # retry: Backlog trả 43 issue có thể chậm
+        try:
+            with urllib.request.urlopen(url, timeout=45) as r:
+                issues = json.loads(r.read().decode("utf-8"))
+            break
+        except Exception as e:
+            print("[fetch_screens] (Backlog thử %d/3 lỗi: %s)" % (attempt + 1, e), file=sys.stderr)
+    if issues is None:
+        return None   # → giữ test data cũ
+    out = {}
+    for it in issues:
+        m = re.search(r"screen_id=(\d+)", it.get("summary", ""))
+        if not m:
+            continue
+        st = TEST_STATE.get((it.get("status") or {}).get("name"), "todo")
+        a = it.get("assignee") or {}
+        uid = ((a.get("nulabAccount") or {}).get("uniqueId") or "")
+        tester = next((v for k, v in TESTER.items() if uid.startswith(k)), a.get("name", "?"))
+        out[int(m.group(1))] = {"test": st, "tester": tester}
+    return out
 
 os.environ.setdefault(
     "GIT_SSH_COMMAND",
@@ -122,14 +186,20 @@ def investigate():
         raise RuntimeError("detection RỖNG (name2sid=%d, sid2route=%d) @ %s — nghi git show/grep "
                            "lỗi hoặc tree đọc dở; bỏ qua để không đè dữ liệu tốt"
                            % (len(name2sid), len(sid2route), sha[:10]))
+    tests = fetch_tests()   # {} = tắt (no key) · None = Backlog lỗi → giữ data cũ · dict = ok
+    if tests is None:
+        tests = load_prev_tests(OUT)
+        print("[fetch_screens] (Backlog lỗi → GIỮ test data lần trước: %d màn)" % len(tests), file=sys.stderr)
     screens = []
     for sid, name, ticket, pic in CONFIG:
         if sid in sid2route:
             st, rt, note = "done", sid2route[sid], ""
         else:
             st, rt, note = "todo", "", NOTE_TODO.get(sid, "chưa migrate vào r20260727")
+        tt = tests.get(sid) or {}
         screens.append({"sid": sid, "name": name, "route": rt, "ticket": ticket,
-                        "pic": pic, "st": st, "note": note})
+                        "pic": pic, "st": st, "note": note,
+                        "test": tt.get("test"), "tester": tt.get("tester")})
     return sha, screens
 
 def main():
