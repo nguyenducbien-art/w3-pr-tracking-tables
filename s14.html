@@ -316,24 +316,24 @@ function renderScreens(S){
       +'<td><span class="note-cell">'+esc(s.note||'')+'</span></td></tr>';
   }).join('');
   var html='<div class="page">'
-    +'<div class="page-header"><h1>画面一覧 — Sprint 14 (在庫 / Inventory)</h1>'
+    +'<div class="page-header"><h1>Danh sách màn — Sprint 14 (Kho / Inventory)</h1>'
       +'<span class="meta">'+scr.length+' màn · tự động từ code r20260727 · '+esc(S.updated||'')+(S.tip?(' @ '+esc(S.tip)):'')+'</span></div>'
     +'<div class="subtitle">Tiến độ migrate + người phụ trách (PIC) từng màn — <b>cron đọc thẳng nhánh r20260727</b> mỗi 5 phút, trạng thái theo <b>code thật</b> (không theo status Backlog).</div>'
     +'<div class="stats">'
       +'<div class="stat"><span class="stat-val">'+scr.length+'</span> màn</div>'
       +'<div class="stat">✅ migrated <span class="stat-val" style="color:var(--report-fg)">'+n('done')+'</span></div>'
       +'<div class="stat">🔴 chưa <span class="stat-val warn">'+(n('todo')+n('wip'))+'</span></div>'
-      +(hasTest?('<div class="stat" style="margin-left:8px;border-left:1px solid var(--border);padding-left:16px">結合テスト ✅ <span class="stat-val" style="color:var(--report-fg)">'+nt('done')+'</span></div>'
+      +(hasTest?('<div class="stat" style="margin-left:8px;border-left:1px solid var(--border);padding-left:16px">Test tích hợp ✅ <span class="stat-val" style="color:var(--report-fg)">'+nt('done')+'</span></div>'
         +'<div class="stat">🔵 đang <span class="stat-val" style="color:var(--pill-changes-fg)">'+nt('wip')+'</span></div>'
         +'<div class="stat">⚪ chưa <span class="stat-val warn">'+nt('todo')+'</span></div>'):'')
     +'</div>'
     +'<div class="pic-summary">'+chips+'</div>'
     +'<div class="scroll-wrap"><table style="min-width:1040px"><thead><tr>'
-      +'<th>Screen ID</th><th>画面名</th><th>Route Next.js</th><th>Ticket</th><th>PIC</th><th>状態</th><th>結合テスト</th><th>人 test</th><th>Ghi chú</th>'
+      +'<th>Screen ID</th><th>Tên màn</th><th>Route Next.js</th><th>Ticket</th><th>PIC</th><th>Migrate</th><th>Test tích hợp</th><th>Người test</th><th>Ghi chú</th>'
     +'</tr></thead><tbody>'+body+'</tbody></table></div>'
     +'<div class="footnote">✅ migrated = có folder màn (khai báo <code>SCREEN_ID</code>) trên r20260727 · 🔴 chưa = chưa có folder (đang làm ở branch riêng hoặc chưa bắt đầu).<br>'
-      +'結合テスト (integration test): ✅ xong = Resolved/Closed · 🔵 đang = In Progress · ⚪ chưa = Open — lấy từ task <b>テスト実施</b> (milestone Sprint 14) trên Backlog; 人 test = assignee của task đó.<br>'
-      +'Danh sách màn = milestone “Sprint 14” trên Backlog (category 画面実装). Cron điều tra r20260727 + Backlog mỗi 5 phút; ticket = issueKey Backlog. Reassign PIC / thêm-bớt màn: sửa CONFIG trong <code>tools/fetch_screens_s14.py</code>.</div>'
+      +'Test tích hợp (integration test): ✅ xong = Resolved/Closed · 🔵 đang = In Progress · ⚪ chưa = Open — lấy từ task <b>テスト実施</b> (test execution, milestone Sprint 14) trên Backlog; Người test = assignee của task đó.<br>'
+      +'Danh sách màn = milestone “Sprint 14” trên Backlog (category 画面実装 = screen impl). Cron điều tra r20260727 + Backlog mỗi 5 phút; ticket = issueKey Backlog. Reassign PIC / thêm-bớt màn: sửa CONFIG trong <code>tools/fetch_screens_s14.py</code>.</div>'
     +'</div>';
   document.getElementById('screens').innerHTML=html;
 }
