@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-04 09:40",
+ "updated": "2026-08-04 10:03",
  "tip": "3595fe178f",
  "branch": "mimosa/frontend/develop/r20260727",
  "picOrder": [
@@ -365,11 +365,11 @@
   {
    "sid": 634,
    "name": "棚卸予定外在庫_内容追加",
-   "route": "",
+   "route": "/stocks/inventory-edits",
    "ticket": "837",
    "pic": "Khoa",
-   "st": "todo",
-   "note": "sub-screen thuộc 棚卸予定外在庫",
+   "st": "done",
+   "note": "modal/sub-screen trong màn 327",
    "test": "done",
    "tester": "Bồn"
   },
