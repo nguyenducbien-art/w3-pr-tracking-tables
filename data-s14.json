@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-04 14:09",
+ "updated": "2026-08-04 14:16",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -307,7 +307,7 @@
     {
      "num": 11634,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 1,
      "add": 21,
      "del": 9,
@@ -1653,10 +1653,19 @@
   },
   {
    "ticket": "557",
-   "dev": "hung",
-   "bien": false,
+   "dev": "bien",
+   "bien": true,
    "base": [],
    "r727": [
+    {
+     "num": 11636,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 6,
+     "del": 0,
+     "fc": 2
+    },
     {
      "num": 11318,
      "cf": "ok",
@@ -1676,7 +1685,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "在庫予測_出荷予測明細 (screen_id=704) を React 化"
+   "title": "出荷予測明細(704) 削除確認に実行チェックボックスを追加 (createCModal パリティ)"
   },
   {
    "ticket": "543",
