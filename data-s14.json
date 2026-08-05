@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-05 13:56",
+ "updated": "2026-08-05 14:32",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -48,7 +48,7 @@
     }
    ],
    "created": "08-05 13:51",
-   "drive": false,
+   "drive": true,
    "cop": 0,
    "unres": 0,
    "rvw": {
@@ -929,6 +929,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11669,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 39,
+     "del": 8,
+     "fc": 2
+    },
+    {
      "num": 11644,
      "cf": "ok",
      "st": "merged",
@@ -956,7 +965,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "261_在庫_在庫追加 のモーダル表示と未引当数バリデーションを AngularJS に揃える"
+   "title": "261_在庫_在庫追加_未引当数の小数切り捨てを修正"
   },
   {
    "ticket": "589",
