@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-04 17:58",
+ "updated": "2026-08-05 09:51",
  "tip": "be4631031e",
  "branch": "mimosa/frontend/develop/r20260727",
  "picOrder": [
@@ -139,7 +139,7 @@
    "pic": "Minh",
    "st": "done",
    "note": "",
-   "test": "wip",
+   "test": "done",
    "tester": "Đạt"
   },
   {
