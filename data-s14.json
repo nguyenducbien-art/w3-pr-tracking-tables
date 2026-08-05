@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-05 12:13",
+ "updated": "2026-08-05 13:56",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1404",
   "1508",
   "1507",
   "1506",
@@ -20,6 +21,43 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "1404",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 11665,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 10,
+     "del": 5,
+     "fc": 1
+    }
+   ],
+   "r727": [
+    {
+     "num": 11666,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 10,
+     "del": 5,
+     "fc": 1
+    }
+   ],
+   "created": "08-05 13:51",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "589_入荷実績_実績 積送データCSV出力のstdClassバインドエラー・unit_id絞り込み欠落を修正"
+  },
   {
    "ticket": "1508",
    "dev": "bien",
