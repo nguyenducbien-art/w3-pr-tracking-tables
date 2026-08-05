@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-05 09:34",
+ "updated": "2026-08-05 11:01",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1508",
   "1507",
   "1506",
   "1492",
@@ -19,6 +20,43 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260727_scaffold",
  "main": [
+  {
+   "ticket": "1508",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 11656,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 26,
+     "del": 6,
+     "fc": 1
+    }
+   ],
+   "r727": [
+    {
+     "num": 11657,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 26,
+     "del": 6,
+     "fc": 1
+    }
+   ],
+   "created": "08-05 10:52",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "一覧画面リロード時のグリッド一覧データ二重取得を解消"
+  },
   {
    "ticket": "1507",
    "dev": "bien",
@@ -1457,6 +1495,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11658,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 306,
+     "del": 237,
+     "fc": 13
+    },
+    {
      "num": 11624,
      "cf": "ok",
      "st": "merged",
@@ -1477,14 +1524,14 @@
    ],
    "created": "07-27 16:51",
    "drive": true,
-   "cop": 3,
-   "unres": 0,
+   "cop": 6,
+   "unres": 3,
    "rvw": {
     "ap": [],
     "ch": [],
     "pd": []
    },
-   "title": "直接入庫_内容追加 (402) バリデーション整合・モーダルページャ・i18n・raw ID parity 修正"
+   "title": "直接入庫_内容追加 (402) 画面移行"
   },
   {
    "ticket": "584",
