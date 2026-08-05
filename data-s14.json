@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-05 15:58",
+ "updated": "2026-08-05 16:05",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -250,6 +250,15 @@
    ],
    "r727": [
     {
+     "num": 11678,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 13,
+     "del": 1,
+     "fc": 1
+    },
+    {
      "num": 11514,
      "cf": "ok",
      "st": "merged",
@@ -286,6 +295,15 @@
     }
    ],
    "r727": [
+    {
+     "num": 11676,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 22,
+     "del": 27,
+     "fc": 4
+    },
     {
      "num": 11533,
      "cf": "ok",
@@ -530,6 +548,15 @@
     }
    ],
    "r727": [
+    {
+     "num": 11677,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 4,
+     "del": 2,
+     "fc": 1
+    },
     {
      "num": 11518,
      "cf": "ok",
@@ -996,10 +1023,19 @@
   },
   {
    "ticket": "575",
-   "dev": "minh",
+   "dev": "hung",
    "bien": false,
    "base": [],
    "r727": [
+    {
+     "num": 11675,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 546,
+     "del": 326,
+     "fc": 2
+    },
     {
      "num": 11449,
      "cf": "ok",
@@ -1028,7 +1064,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "棚卸_対象在庫一覧 (306) の一覧ボタンと行遷移アイコンを追加"
+   "title": "棚卸_対象在庫一覧 (306) の棚卸開始v2 モーダルのレイアウトを AngularJS 版に合わせる"
   },
   {
    "ticket": "605",
@@ -1590,7 +1626,7 @@
    "created": "07-27 16:51",
    "drive": true,
    "cop": 9,
-   "unres": 3,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
