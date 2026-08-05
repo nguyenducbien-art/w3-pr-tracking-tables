@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-05 14:53",
+ "updated": "2026-08-05 15:36",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1551,6 +1551,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11673,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 97,
+     "del": 25,
+     "fc": 6
+    },
+    {
      "num": 11658,
      "cf": "ok",
      "st": "merged",
@@ -1580,14 +1589,14 @@
    ],
    "created": "07-27 16:51",
    "drive": true,
-   "cop": 6,
-   "unres": 0,
+   "cop": 9,
+   "unres": 3,
    "rvw": {
     "ap": [],
     "ch": [],
     "pd": []
    },
-   "title": "直接入庫_内容追加 (402) 画面移行"
+   "title": "直接入庫_内容追加 (402) 区分 DDL の既定値を model に seed して登録失敗を修正"
   },
   {
    "ticket": "584",
