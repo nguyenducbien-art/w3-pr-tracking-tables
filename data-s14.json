@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-06 10:55",
+ "updated": "2026-08-06 11:38",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -2081,7 +2081,7 @@
     "num": 11690,
     "cf": "ok",
     "st": "open",
-    "nc": 8,
+    "nc": 9,
     "add": 178,
     "del": 22,
     "fc": 5
@@ -2103,7 +2103,7 @@
    "pr": {
     "num": 11376,
     "cf": "ok",
-    "st": "open",
+    "st": "merged",
     "nc": 6,
     "add": 178,
     "del": 66,
