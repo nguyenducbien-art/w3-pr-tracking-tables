@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-06 10:26",
+ "updated": "2026-08-06 10:48",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -2073,6 +2073,29 @@
   }
  ],
  "scaffold": [
+  {
+   "ticket": "—",
+   "dev": "minh",
+   "bien": false,
+   "pr": {
+    "num": 11690,
+    "cf": "ok",
+    "st": "open",
+    "nc": 7,
+    "add": 159,
+    "del": 22,
+    "fc": 5
+   },
+   "created": "08-06 10:42",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "scaffold 資産 (テンプレ・規約 §8.4/§8.5・NAV-NEW-02・Skill 2 本・coverage_evidence.py) を実装に追従"
+  },
   {
    "ticket": "—",
    "dev": "bien",
