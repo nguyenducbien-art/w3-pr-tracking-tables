@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-06 11:38",
+ "updated": "2026-08-06 15:10",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -712,6 +712,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11698,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 306,
+     "del": 477,
+     "fc": 4
+    },
+    {
      "num": 11460,
      "cf": "ok",
      "st": "merged",
@@ -730,7 +739,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "在庫_変更履歴明細 (254) を React へ移行"
+   "title": "在庫_変更履歴明細 (254) の変更前在庫タブで論理削除済み在庫を表示"
   },
   {
    "ticket": "1497",
