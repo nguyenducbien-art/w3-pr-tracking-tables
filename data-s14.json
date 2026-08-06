@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-06 15:24",
+ "updated": "2026-08-06 15:52",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1721,10 +1721,19 @@
   },
   {
    "ticket": "547",
-   "dev": "khoa",
+   "dev": "minh",
    "bien": false,
    "base": [],
    "r727": [
+    {
+     "num": 11699,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 61,
+     "del": 3,
+     "fc": 2
+    },
     {
      "num": 11334,
      "cf": "ok",
@@ -1737,14 +1746,14 @@
    ],
    "created": "07-27 16:31",
    "drive": false,
-   "cop": 0,
-   "unres": 0,
+   "cop": 1,
+   "unres": 1,
    "rvw": {
     "ap": [],
     "ch": [],
     "pd": []
    },
-   "title": "252_在庫_変更履歴一覧_list"
+   "title": "在庫_変更履歴一覧 (252) で ids[] 指定が絞り込みに反映されない不具合を修正"
   },
   {
    "ticket": "581",
