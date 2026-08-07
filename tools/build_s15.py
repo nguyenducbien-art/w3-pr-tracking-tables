@@ -20,9 +20,10 @@ for _l in open("build_s14.py"):
 def esc(s):
     return str(s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
-# nhãn tab ngắn cho mỗi domain (bỏ "ドメイン (...)")
+# nhãn tab tiếng Anh cho mỗi domain = phần trong ngoặc "(...)"; fallback = bỏ "ドメイン"
 for d in PLAN["domains"]:
-    d["short"] = re.split(r"ドメイン|\s*\(", d["domain"])[0].strip()
+    m = re.search(r"\((.*?)\)", d["domain"])
+    d["short"] = m.group(1).strip() if m else re.split(r"ドメイン", d["domain"])[0].strip()
 
 TYPE_ORDER = ["一覧 (list)", "登録/編集 (edit)", "明細 (details)", "特殊 (special)"]
 TYPE_LBL = {"一覧 (list)": "list", "登録/編集 (edit)": "edit", "明細 (details)": "details", "特殊 (special)": "special"}
@@ -80,8 +81,10 @@ function rowHtml(r){
   var t=TLBL[r.type]||['pill-draft',r.type];
   var wip=WIP.has(r.parent)?' <span class="badge-common" title="Minh đang làm">WIP</span>':'';
   var tickets=[tk('親',r.parent),tk('実',r.impl),tk('テ',r.test)].filter(Boolean).join(' <span style="color:var(--border)">·</span> ');
+  var ang = r.angular_url ? '<a href="'+esc(r.angular_url)+'" target="_blank" rel="noopener" title="'+esc(r.angular_url)+'">'+esc(r.angular_url.replace(/^https?:\/\/[^/]+/,''))+'</a>' : '<span class="cf-na">—</span>';
   return '<tr>'
     +'<td><span class="ticket">'+esc(r.sid)+'</span></td>'
+    +'<td>'+ang+'</td>'
     +'<td><span class="jp-cell">'+esc(r.name)+'</span></td>'
     +'<td><span class="pill '+t[0]+'">'+t[1]+'</span></td>'
     +'<td class="conflict-cell" style="white-space:nowrap">'+tickets+'</td>'
@@ -112,8 +115,8 @@ body = ('<div class="page">'
   + '<div style="margin-top:8px">' + allocation() + '</div></details>'
   + '<div class="s15tabs">' + tabs + '</div>'
   + '<div id="s15dom" class="s15dom"></div>'
-  + '<div class="scroll-wrap"><table style="min-width:940px"><thead><tr>'
-  + '<th>Screen ID / URL</th><th>Tên màn</th><th>Loại</th><th>Ticket (親 / 実装 / テスト)</th>'
+  + '<div class="scroll-wrap"><table style="min-width:1080px"><thead><tr>'
+  + '<th>Screen ID / URL</th><th>AngularJS stg</th><th>Tên màn</th><th>Loại</th><th>Ticket (親 / 実装 / テスト)</th>'
   + '<th>Impl PIC</th><th>Test PIC</th><th>Free test</th>'
   + '</tr></thead><tbody id="s15tbody"></tbody></table></div>'
   + '<div class="footnote">Loại màn: <span class="pill pill-open">list</span> 一覧 · '
