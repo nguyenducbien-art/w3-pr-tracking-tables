@@ -69,7 +69,7 @@
   .stat { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-dim); }
   .stat-val { font-weight: 700; font-size: 16px; color: var(--text); font-variant-numeric: tabular-nums; }
   .stat-val.warn { color: var(--unresolved-fg); }
-  .scroll-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 6px; box-shadow: 0 1px 3px var(--shadow); background: var(--bg-table); }
+  .scroll-wrap { overflow: auto; max-height: 75vh; border: 1px solid var(--border); border-radius: 6px; box-shadow: 0 1px 3px var(--shadow); background: var(--bg-table); }
   table { width: 100%; min-width: 1500px; border-collapse: collapse; font-variant-numeric: tabular-nums; }
   thead th { position: sticky; top: 0; z-index: 2; background: var(--bg-header); text-align: left; font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-dim); padding: 10px 9px; border-bottom: 2px solid var(--border); white-space: nowrap; }
   thead th:first-child { padding-left: 14px; }
