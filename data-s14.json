@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-07 11:16",
+ "updated": "2026-08-07 11:45",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -441,10 +441,19 @@
   },
   {
    "ticket": "546",
-   "dev": "minh",
-   "bien": false,
+   "dev": "bien",
+   "bien": true,
    "base": [],
    "r727": [
+    {
+     "num": 11726,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 94,
+     "del": 3,
+     "fc": 4
+    },
     {
      "num": 11661,
      "cf": "ok",
@@ -473,7 +482,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "在庫_情報変更の理由区分IDの既定値を AngularJS に揃える"
+   "title": "在庫_情報変更のロジック使用不可日付を Y-m-d H:i:s 形式で送信"
   },
   {
    "ticket": "941",
