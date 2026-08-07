@@ -180,12 +180,11 @@ def build(inline):
 # artifact = fragment + inline JSON
 open("table-a-s12.html","w").write(build(True))
 
-# hosted = full document, DATA NHÚNG INLINE (Sprint 12 = frozen, fetch 1 lần, KHÔNG cron / KHÔNG nhánh data)
-data_inline = '<script id="table-data" type="application/json">'+json.dumps(DATA,ensure_ascii=False)+'</script>'
+# hosted = full document, FETCH data-s12.json từ nhánh data (Sprint 12 = cron 5p như s13/s14)
 doc = ('<!DOCTYPE html>\n<html lang="vi">\n<head>\n<meta charset="utf-8">\n'
        '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
        '<meta name="robots" content="noindex, nofollow">\n<title>'+TITLE+'</title>\n'+FAVICON+'\n'+css+'\n</head>\n<body>\n'
-       +NAV+'\n<div id="app"></div>\n'+MASCOT+'\n'+data_inline+'\n<script>'+RENDER_JS+'</script>\n</body>\n</html>')
+       +NAV+'\n<div id="app"></div>\n'+MASCOT+'\n<script id="table-data" type="application/json"></script>\n<script>'+RENDER_JS+'</script>\n</body>\n</html>')
 open("s12.html","w").write(doc)
 
 print("built shell: s12.html (fetch) + table-a-s12.html (artifact,inline) từ data-s12.json |",
