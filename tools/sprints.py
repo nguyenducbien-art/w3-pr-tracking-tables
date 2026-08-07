@@ -5,6 +5,7 @@ SPRINTS = [
     {"label": "Sprint 12", "href": "s12.html"},
     {"label": "Sprint 13", "href": "index.html"},
     {"label": "Sprint 14", "href": "s14.html"},
+    {"label": "Sprint 15", "href": "s15.html"},
 ]
 
 def nav_html(active_label):
