@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-06 19:26",
+ "updated": "2026-08-07 10:04",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1411,6 +1411,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11704,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 59,
+     "del": 33,
+     "fc": 5
+    },
+    {
      "num": 11349,
      "cf": "ok",
      "st": "merged",
@@ -1422,14 +1431,14 @@
    ],
    "created": "07-28 08:53",
    "drive": false,
-   "cop": 2,
-   "unres": 0,
+   "cop": 4,
+   "unres": 2,
    "rvw": {
     "ap": [],
     "ch": [],
     "pd": []
    },
-   "title": "在庫断面_一覧 (screen_id=640) を React へ移行"
+   "title": "在庫断面_一覧/明細 の初期表示と日付引き継ぎを修正"
   },
   {
    "ticket": "586",
@@ -1510,6 +1519,15 @@
    "base": [],
    "r727": [
     {
+     "num": 11705,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 17,
+     "del": 2,
+     "fc": 1
+    },
+    {
      "num": 11429,
      "cf": "ok",
      "st": "merged",
@@ -1530,14 +1548,14 @@
    ],
    "created": "07-27 17:20",
    "drive": false,
-   "cop": 7,
-   "unres": 0,
+   "cop": 8,
+   "unres": 1,
    "rvw": {
     "ap": [],
     "ch": [],
     "pd": []
    },
-   "title": "在庫変遷_商品別 (screen_id=303) の AngularJS 差異を修正"
+   "title": "在庫変遷_商品別のCSV出力ファイル拡張子欠落を修正"
   },
   {
    "ticket": "741",
