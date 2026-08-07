@@ -51,14 +51,26 @@ def allocation():
     return ('<div class="scroll-wrap" style="max-width:520px;margin-bottom:16px"><table style="min-width:460px">'
             '<thead>' + head + '</thead><tbody>' + rows + foot + '</tbody></table></div>')
 
-# tab bar: [Tất cả] + mỗi domain
+# tab bar 1 (domain): [Tất cả] + mỗi domain
 total = sum(len(d["rows"]) for d in PLAN["domains"])
-tabs = '<button class="s15tab active" data-i="-1">Tất cả <span class="cnt">%d</span></button>' % total
+dtabs = '<button class="s15tab active" data-i="-1">Tất cả <span class="cnt">%d</span></button>' % total
 for i, d in enumerate(PLAN["domains"]):
-    tabs += '<button class="s15tab" data-i="%d">%s <span class="cnt">%d</span></button>' % (i, esc(d["short"]), len(d["rows"]))
+    dtabs += '<button class="s15tab" data-i="%d">%s <span class="cnt">%d</span></button>' % (i, esc(d["short"]), len(d["rows"]))
+
+# tab bar 2 (dev = Implement PIC)
+from collections import Counter
+devcnt = Counter((r["impl_pic"].strip() or "(để trống)") for d in PLAN["domains"] for r in d["rows"])
+DEV_ORDER = ["Minh", "Đạt09", "Khoa", "Hưng", "(để trống)"]
+dev_list = [p for p in DEV_ORDER if p in devcnt] + [p for p in devcnt if p not in DEV_ORDER]
+ptabs = ""
+for p in dev_list:
+    lbl = "(chưa gán)" if p == "(để trống)" else p
+    ptabs += '<button class="s15tab" data-pic="%s">%s <span class="cnt">%d</span></button>' % (esc(p), esc(lbl), devcnt[p])
 
 TABCSS = ("<style>"
-  ".s15tabs{display:flex;flex-wrap:wrap;gap:4px;margin:6px 0 10px;border-bottom:1px solid var(--border);padding-bottom:0}"
+  ".s15tabwrap{border-bottom:1px solid var(--border);margin:8px 0 10px}"
+  ".s15tabs{display:flex;flex-wrap:wrap;gap:4px;align-items:center;margin-bottom:3px}"
+  ".s15lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--text-dim);margin-right:8px;min-width:50px}"
   ".s15tab{padding:6px 11px;border:1px solid var(--border);border-bottom:none;border-radius:7px 7px 0 0;"
   "background:var(--bg-header);color:var(--text-dim);cursor:pointer;font:600 12.5px system-ui,sans-serif;position:relative;top:1px}"
   ".s15tab:hover{color:var(--text)}"
@@ -93,17 +105,26 @@ function rowHtml(r){
     +'<td>'+(r.free_test?esc(r.free_test):'<span class="cf-na">—</span>')+'</td>'
   +'</tr>';
 }
-function renderTab(i){
-  var rows = i<0 ? PLAN.domains.reduce(function(a,d){return a.concat(d.rows);},[]) : PLAN.domains[i].rows;
+function allRows(){ return PLAN.domains.reduce(function(a,d){return a.concat(d.rows);},[]); }
+function normPic(r){ return (r.impl_pic||'').trim() || '(để trống)'; }
+function renderView(btn){
+  var di=btn.getAttribute('data-i'), pk=btn.getAttribute('data-pic'), rows, label;
+  if(pk!=null){
+    rows = allRows().filter(function(r){return normPic(r)===pk;});
+    label = 'Dev: ' + (pk==='(để trống)'?'(chưa gán)':pk) + ' — ' + rows.length + ' màn (mọi domain)';
+  } else {
+    var i=parseInt(di,10);
+    rows = i<0 ? allRows() : PLAN.domains[i].rows;
+    label = i<0 ? ('Tất cả '+rows.length+' màn / '+PLAN.domains.length+' domain') : (PLAN.domains[i].domain+' — '+rows.length+' màn');
+  }
   document.getElementById('s15tbody').innerHTML = rows.map(rowHtml).join('');
-  document.getElementById('s15dom').textContent = i<0 ? ('Tất cả '+rows.length+' màn / '+PLAN.domains.length+' domain') : (PLAN.domains[i].domain+' — '+rows.length+' màn');
-  var btns=document.querySelectorAll('.s15tab');
-  [].forEach.call(btns,function(b){ b.classList.toggle('active', String(i)===b.getAttribute('data-i')); });
+  document.getElementById('s15dom').textContent = label;
+  [].forEach.call(document.querySelectorAll('.s15tab'),function(b){ b.classList.toggle('active', b===btn); });
 }
-document.querySelector('.s15tabs').addEventListener('click',function(e){
-  var b=e.target.closest('.s15tab'); if(b) renderTab(parseInt(b.getAttribute('data-i'),10));
+document.querySelector('.s15tabwrap').addEventListener('click',function(e){
+  var b=e.target.closest('.s15tab'); if(b) renderView(b);
 });
-renderTab(-1);
+renderView(document.querySelector('.s15tab[data-i="-1"]'));
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="http"]');if(a){e.preventDefault();window.open(a.href,'_blank','noopener');}},true);
 """
 
@@ -113,7 +134,10 @@ body = ('<div class="page">'
   + '<div class="subtitle">' + esc(PLAN["note"]) + '</div>'
   + '<details style="margin-bottom:10px"><summary style="cursor:pointer;font-size:13px;font-weight:600">Phân bổ Implement PIC (chia đều theo loại màn)</summary>'
   + '<div style="margin-top:8px">' + allocation() + '</div></details>'
-  + '<div class="s15tabs">' + tabs + '</div>'
+  + '<div class="s15tabwrap">'
+  +   '<div class="s15tabs"><span class="s15lbl">Domain</span>' + dtabs + '</div>'
+  +   '<div class="s15tabs"><span class="s15lbl">Dev</span>' + ptabs + '</div>'
+  + '</div>'
   + '<div id="s15dom" class="s15dom"></div>'
   + '<div class="scroll-wrap"><table style="min-width:1080px"><thead><tr>'
   + '<th>Screen ID / URL</th><th>AngularJS stg</th><th>Tên màn</th><th>Loại</th><th>Ticket (親 / 実装 / テスト)</th>'
