@@ -1,8 +1,13 @@
 {
- "updated": "2026-07-27 11:14",
+ "updated": "2026-08-07 13:23",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1260",
+  "453",
+  "1393",
+  "507",
+  "1395",
   "1471",
   "1472",
   "1462",
@@ -30,12 +35,151 @@
   "1322",
   "285",
   "1307",
-  "1310",
-  "1430"
+  "1310"
  ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "1260",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 11723,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 184,
+     "del": 104,
+     "fc": 4
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "08-07 11:09",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "グリッド列 autoFit を共通フックへ抽出し幅計算にテストを追加"
+  },
+  {
+   "ticket": "453",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 11722,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 29,
+     "del": 0,
+     "fc": 1
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "08-07 11:09",
+   "drive": false,
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ListScreenContainer API ボタンの再入ガードを回帰テストで固定"
+  },
+  {
+   "ticket": "1393",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 11721,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 48,
+     "del": 6,
+     "fc": 2
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "08-07 11:09",
+   "drive": false,
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "IF出力/送信の失敗文言をラベル注入+フォールバック方式へ寄せる"
+  },
+  {
+   "ticket": "507",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 11719,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 43,
+     "del": 23,
+     "fc": 2
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "08-07 11:08",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "引当明細の一括処理 WARN をエラーモーダル表示に統一し成功倒れを解消"
+  },
+  {
+   "ticket": "1395",
+   "dev": "bien",
+   "bien": true,
+   "base": [
+    {
+     "num": 11718,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 32,
+     "del": 4,
+     "fc": 4
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "08-07 11:08",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "出荷予定日絞込の列 id を ServerSync 対応の解決関数へ統一"
+  },
   {
    "ticket": "1471",
    "dev": "khoa",
@@ -54,7 +198,7 @@
     }
    ],
    "created": "07-24 14:24",
-   "drive": false,
+   "drive": true,
    "cop": 0,
    "unres": 0,
    "rvw": {
@@ -756,6 +900,15 @@
    "bien": true,
    "base": [
     {
+     "num": 11717,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 19,
+     "del": 134,
+     "fc": 2
+    },
+    {
      "num": 11069,
      "cf": "ok",
      "st": "merged",
@@ -779,16 +932,14 @@
    ],
    "created": "07-17 10:00",
    "drive": true,
-   "cop": 6,
-   "unres": 3,
+   "cop": 7,
+   "unres": 4,
    "rvw": {
-    "ap": [
-     "kanayam"
-    ],
+    "ap": [],
     "ch": [],
     "pd": []
    },
-   "title": "取込結果メッセージのAngularJS一致とダイアログラベルのi18n配線"
+   "title": "ImportDialog 取込結果テストの重複解消と破損テスト除去"
   },
   {
    "ticket": "1454",
@@ -870,9 +1021,18 @@
   },
   {
    "ticket": "1367",
-   "dev": "hung",
-   "bien": false,
+   "dev": "bien",
+   "bien": true,
    "base": [
+    {
+     "num": 11720,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 84,
+     "del": 1,
+     "fc": 2
+    },
     {
      "num": 11033,
      "cf": "ok",
@@ -900,14 +1060,11 @@
    "cop": 12,
    "unres": 0,
    "rvw": {
-    "ap": [
-     "kanayam",
-     "bien"
-    ],
+    "ap": [],
     "ch": [],
     "pd": []
    },
-   "title": "出荷履歴_一覧のCSV全件出力モード「CSV選択」モーダルを実装"
+   "title": "出荷履歴_明細に CSV「非表示データを含む」全件出力を配線"
   },
   {
    "ticket": "1450",
@@ -1135,7 +1292,7 @@
     }
    ],
    "created": "07-15 14:54",
-   "drive": false,
+   "drive": true,
    "cop": 2,
    "unres": 1,
    "rvw": {
@@ -1960,122 +2117,6 @@
     "pd": []
    },
    "title": "グリッドのソート挙動を Kendo grid に合わせる"
-  },
-  {
-   "ticket": "1430",
-   "dev": "minh",
-   "bien": false,
-   "base": [
-    {
-     "num": 10888,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 6,
-     "add": 353,
-     "del": 1,
-     "fc": 4
-    }
-   ],
-   "r629": [],
-   "r713": [
-    {
-     "num": 11221,
-     "cf": "ok",
-     "st": "open",
-     "nc": 1,
-     "add": 229,
-     "del": 38,
-     "fc": 6
-    },
-    {
-     "num": 10971,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 1,
-     "add": 222,
-     "del": 17,
-     "fc": 13
-    },
-    {
-     "num": 10889,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 5,
-     "add": 345,
-     "del": 1,
-     "fc": 4
-    }
-   ],
-   "created": "07-13 16:43",
-   "drive": true,
-   "cop": 6,
-   "unres": 0,
-   "rvw": {
-    "ap": [
-     "kanayam",
-     "bien"
-    ],
-    "ch": [],
-    "pd": []
-   },
-   "title": "共通FieldRenderer/date.tsで日付nullish番兵(5000-01-01等)を空表示にする"
-  },
-  {
-   "ticket": "544",
-   "dev": "dat",
-   "bien": false,
-   "base": [],
-   "r629": [],
-   "r713": [
-    {
-     "num": 11226,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 10,
-     "add": 479,
-     "del": 97,
-     "fc": 15
-    },
-    {
-     "num": 11176,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 1,
-     "add": 61,
-     "del": 35,
-     "fc": 3
-    },
-    {
-     "num": 11109,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 1,
-     "add": 6,
-     "del": 0,
-     "fc": 1
-    },
-    {
-     "num": 10882,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 15,
-     "add": 3534,
-     "del": 20,
-     "fc": 36
-    }
-   ],
-   "created": "07-13 15:51",
-   "drive": false,
-   "cop": 41,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
-     "bien"
-    ]
-   },
-   "title": "履歴系明細画面で表示期間の適用時に URL へ from_date/to_date を同期"
   },
   {
    "ticket": "554",
