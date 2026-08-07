@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-07 14:47",
+ "updated": "2026-08-07 14:59",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -49,11 +49,11 @@
    "base": [
     {
      "num": 11738,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 46,
-     "del": 20,
+     "nc": 3,
+     "add": 59,
+     "del": 23,
      "fc": 3
     }
    ],
@@ -61,7 +61,7 @@
    "r713": [],
    "created": "08-07 14:44",
    "drive": true,
-   "cop": 0,
+   "cop": 2,
    "unres": 0,
    "rvw": {
     "ap": [],
@@ -1476,34 +1476,6 @@
     "pd": []
    },
    "title": "219_手動引当_統合ユニットで引当できない不具合"
-  },
-  {
-   "ticket": "602",
-   "dev": "minh",
-   "bien": false,
-   "base": [],
-   "r629": [],
-   "r713": [
-    {
-     "num": 10979,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 3,
-     "add": 846,
-     "del": 2,
-     "fc": 22
-    }
-   ],
-   "created": "07-15 13:02",
-   "drive": false,
-   "cop": 5,
-   "unres": 3,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "364_荷姿変更_明細"
   },
   {
    "ticket": "1309",
