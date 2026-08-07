@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-07 13:23",
+ "updated": "2026-08-07 13:56",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1520",
   "1260",
   "453",
   "1393",
@@ -41,6 +42,34 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
   {
+   "ticket": "1520",
+   "dev": "minh",
+   "bien": false,
+   "base": [
+    {
+     "num": 11731,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 56,
+     "del": 1,
+     "fc": 3
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "08-07 13:24",
+   "drive": true,
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユーザー情報API (/me) に is_manager_privilege を追加"
+  },
+  {
    "ticket": "1260",
    "dev": "bien",
    "bien": true,
@@ -77,8 +106,8 @@
      "num": 11722,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 29,
+     "nc": 2,
+     "add": 32,
      "del": 0,
      "fc": 1
     }
@@ -88,7 +117,7 @@
    "created": "08-07 11:09",
    "drive": false,
    "cop": 1,
-   "unres": 1,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -105,10 +134,10 @@
      "num": 11721,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 48,
+     "nc": 2,
+     "add": 161,
      "del": 6,
-     "fc": 2
+     "fc": 3
     }
    ],
    "r629": [],
@@ -116,7 +145,7 @@
    "created": "08-07 11:09",
    "drive": false,
    "cop": 1,
-   "unres": 1,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -903,8 +932,8 @@
      "num": 11717,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 19,
+     "nc": 2,
+     "add": 26,
      "del": 134,
      "fc": 2
     },
@@ -933,7 +962,7 @@
    "created": "07-17 10:00",
    "drive": true,
    "cop": 7,
-   "unres": 4,
+   "unres": 3,
    "rvw": {
     "ap": [],
     "ch": [],
