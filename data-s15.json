@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10 16:28",
+ "updated": "2026-08-10 17:22",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -11,6 +11,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "616",
+   "dev": "minh",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11798,
+     "cf": "ok",
+     "st": "open",
+     "nc": 8,
+     "add": 1653,
+     "del": 12,
+     "fc": 25
+    }
+   ],
+   "created": "08-10 16:43",
+   "drive": false,
+   "cop": 4,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "取引関連_仕入先追加・編集 (screen_id=428) を実装"
+  },
   {
    "ticket": "644",
    "dev": "khoa",
@@ -461,11 +488,11 @@
    "r810": [
     {
      "num": 11768,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
-     "nc": 4,
-     "add": 4453,
-     "del": 1,
+     "nc": 5,
+     "add": 4449,
+     "del": 0,
      "fc": 32
     }
    ],
