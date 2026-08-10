@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10 17:47",
+ "updated": "2026-08-10 17:58",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -181,6 +181,15 @@
    "base": [],
    "r810": [
     {
+     "num": 11801,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 455,
+     "del": 0,
+     "fc": 2
+    },
+    {
      "num": 11787,
      "cf": "ok",
      "st": "merged",
@@ -199,7 +208,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "ユーザー登録・編集画面 (/unit/user-edits) を実装"
+   "title": "ユーザー登録・編集画面の移行資料を追補"
   },
   {
    "ticket": "1526",
