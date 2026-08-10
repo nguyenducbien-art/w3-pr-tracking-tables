@@ -1,6 +1,6 @@
 {
  "sprint": "Sprint 15",
- "note": "66 màn = 63 màn (609–675) + 3 màn Minh tự assign (親 616/619/643). Loại màn lấy từ 実装タイプ. Ticket: 親 (cha) / 実装 (implement) / テスト実施 (test). Implement PIC chia đều theo loại màn; “(để trống)” = pool màn chưa gán (ai xong pick tiếp). Test PIC / Free test: chia sau.",
+ "note": "66 màn / 6 domain (親 609–675). 画面名 / loại màn (実装タイプ) / ticket 親·実装·テスト / URL = cố định. Impl PIC + Test PIC hiển thị LIVE theo assignee thật trên Backlog (親 / テスト実施), tự cập nhật mỗi 5 phút.",
  "wip_parents": [
   "616",
   "619",

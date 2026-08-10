@@ -93,69 +93,105 @@ TABCSS = ("<style>"
 ASSIGN_RENDER = r"""(function(){
 var PLAN = JSON.parse(document.getElementById('s15-data').textContent);
 var TLBL={"一覧 (list)":["pill-open","list"],"登録/編集 (edit)":["pill-draft","edit"],"明細 (details)":["pill-merged","details"],"特殊 (special)":["pill-pinned","special"]};
-var WIP=new Set(PLAN.wip_parents||[]); var BASE=PLAN.backlogBase;
+var STP={done:["pill-approved","✅"],wip:["pill-changes","🔵"],todo:["pill-todo","⚪"]};
+var TO=["一覧 (list)","登録/編集 (edit)","明細 (details)","特殊 (special)"], LBL={"一覧 (list)":"list","登録/編集 (edit)":"edit","明細 (details)":"details","特殊 (special)":"special"};
+var DORDER=["Khoa","Đạt","Minh","Hưng","Biên","Sơn","Bồn"];
+var BASE=PLAN.backlogBase;
+var ST={impl:{},test:{},updated:""};
 function esc(s){return String(s==null?'':s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
-function tk(lbl,n){ if(!n) return ''; var body=/^\d+$/.test(String(n))?('<a href="'+BASE+n+'" target="_blank" rel="noopener">'+n+'</a>'):('<span class="ticket">'+esc(n)+'</span>'); return '<span style="color:var(--text-dim);font-size:10px">'+lbl+'</span> '+body; }
-function pic(p){ p=(p||'').trim(); return (!p||p==='(để trống)')?'<span class="cf-na">(để trống)</span>':'<span class="dev">'+esc(p)+'</span>'; }
+function allRows(){ return PLAN.domains.reduce(function(a,d){return a.concat(d.rows);},[]); }
+function livePic(r){ var x=ST.impl[String(r.parent)]; return (x&&x.pic)||'(chưa gán)'; }
+function implSt(r){ var x=ST.impl[String(r.parent)]; return x&&x.st; }
+function testRec(r){ return ST.test[String(r.test)]; }
+function tk(lbl,n){ if(!n) return ''; var b=/^\d+$/.test(String(n))?('<a href="'+BASE+n+'" target="_blank" rel="noopener">'+n+'</a>'):('<span class="ticket">'+esc(n)+'</span>'); return '<span style="color:var(--text-dim);font-size:10px">'+lbl+'</span> '+b; }
+function stpill(st){ if(!st) return ''; var x=STP[st]||STP.todo; return ' <span class="pill '+x[0]+'" title="'+st+'">'+x[1]+'</span>'; }
+function picCell(name,st){ if(!name||name==='(chưa gán)') return '<span class="cf-na">(chưa gán)</span>'; return '<span class="dev">'+esc(name)+'</span>'+stpill(st); }
 function rowHtml(r){
   var t=TLBL[r.type]||['pill-draft',r.type];
-  var wip=WIP.has(r.parent)?' <span class="badge-common" title="Minh đang làm">WIP</span>':'';
   var tickets=[tk('親',r.parent),tk('実',r.impl),tk('テ',r.test)].filter(Boolean).join(' <span style="color:var(--border)">·</span> ');
   var ang = r.angular_url ? '<a href="'+esc(r.angular_url)+'" target="_blank" rel="noopener" title="'+esc(r.angular_url)+'">'+esc(r.angular_url.replace(/^https?:\/\/[^/]+/,''))+'</a>' : '<span class="cf-na">—</span>';
+  var tr=testRec(r);
   return '<tr>'
     +'<td><span class="ticket">'+esc(r.sid)+'</span></td>'
     +'<td>'+ang+'</td>'
     +'<td><span class="jp-cell">'+esc(r.name)+'</span></td>'
     +'<td><span class="pill '+t[0]+'">'+t[1]+'</span></td>'
     +'<td class="conflict-cell" style="white-space:nowrap">'+tickets+'</td>'
-    +'<td>'+pic(r.impl_pic)+wip+'</td>'
-    +'<td>'+(r.test_pic?pic(r.test_pic):'<span class="cf-na">—</span>')+'</td>'
-    +'<td>'+(r.free_test?esc(r.free_test):'<span class="cf-na">—</span>')+'</td>'
+    +'<td>'+picCell(livePic(r),implSt(r))+'</td>'
+    +'<td>'+((tr&&tr.pic)?picCell(tr.pic,tr.st):'<span class="cf-na">—</span>')+'</td>'
   +'</tr>';
 }
-function allRows(){ return PLAN.domains.reduce(function(a,d){return a.concat(d.rows);},[]); }
-function normPic(r){ return (r.impl_pic||'').trim() || '(để trống)'; }
+function picOrder(cnt){
+  return DORDER.filter(function(p){return cnt[p];})
+    .concat(Object.keys(cnt).filter(function(p){return DORDER.indexOf(p)<0 && p!=='(chưa gán)';}))
+    .concat(cnt['(chưa gán)']?['(chưa gán)']:[]);
+}
+function renderDevTabs(){
+  var cnt={}; allRows().forEach(function(r){var p=livePic(r);cnt[p]=(cnt[p]||0)+1;});
+  document.getElementById('s15devtabs').innerHTML = picOrder(cnt).map(function(p){
+    return '<button class="s15tab" data-pic="'+esc(p)+'">'+esc(p)+' <span class="cnt">'+cnt[p]+'</span></button>';
+  }).join('');
+}
+function renderAlloc(){
+  var m={}; allRows().forEach(function(r){var p=livePic(r); if(!m[p]){m[p]={};TO.forEach(function(t){m[p][t]=0;});} m[p][r.type]++;});
+  var head='<tr><th>PIC (Backlog)</th>'+TO.map(function(t){return '<th>'+LBL[t]+'</th>';}).join('')+'<th>Tổng</th></tr>';
+  var tot={},g=0; TO.forEach(function(t){tot[t]=0;});
+  var rows=picOrder(m).map(function(p){var ss=0;var c=TO.map(function(t){ss+=m[p][t];tot[t]+=m[p][t];return '<td>'+(m[p][t]||'<span class="cf-na">·</span>')+'</td>';}).join('');g+=ss;
+    var pc=(p==='(chưa gán)')?'<span class="cf-na">(chưa gán)</span>':'<span class="dev">'+esc(p)+'</span>';
+    return '<tr><td>'+pc+'</td>'+c+'<td><b>'+ss+'</b></td></tr>';}).join('');
+  var foot='<tr style="border-top:2px solid var(--border)"><td><b>Tổng</b></td>'+TO.map(function(t){return '<td><b>'+tot[t]+'</b></td>';}).join('')+'<td><b>'+g+'</b></td></tr>';
+  document.getElementById('s15alloc').innerHTML='<div class="scroll-wrap" style="max-width:560px"><table style="min-width:480px"><thead>'+head+'</thead><tbody>'+rows+foot+'</tbody></table></div>';
+}
 function renderView(btn){
   var di=btn.getAttribute('data-i'), pk=btn.getAttribute('data-pic'), rows, label;
-  if(pk!=null){
-    rows = allRows().filter(function(r){return normPic(r)===pk;});
-    label = 'Dev: ' + (pk==='(để trống)'?'(chưa gán)':pk) + ' — ' + rows.length + ' màn (mọi domain)';
-  } else {
-    var i=parseInt(di,10);
-    rows = i<0 ? allRows() : PLAN.domains[i].rows;
-    label = i<0 ? ('Tất cả '+rows.length+' màn / '+PLAN.domains.length+' domain') : (PLAN.domains[i].domain+' — '+rows.length+' màn');
-  }
-  document.getElementById('s15tbody').innerHTML = rows.map(rowHtml).join('');
-  document.getElementById('s15dom').textContent = label;
-  [].forEach.call(document.querySelectorAll('.s15tab'),function(b){ b.classList.toggle('active', b===btn); });
+  if(pk!=null){ rows=allRows().filter(function(r){return livePic(r)===pk;}); label='Dev: '+pk+' — '+rows.length+' màn (Backlog assignee)'; }
+  else { var i=parseInt(di,10); rows=i<0?allRows():PLAN.domains[i].rows; label=i<0?('Tất cả '+rows.length+' màn / '+PLAN.domains.length+' domain'):(PLAN.domains[i].domain+' — '+rows.length+' màn'); }
+  document.getElementById('s15tbody').innerHTML=rows.map(rowHtml).join('');
+  document.getElementById('s15dom').textContent=label;
+  [].forEach.call(document.querySelectorAll('.s15tab'),function(b){b.classList.toggle('active',b===btn);});
 }
-document.querySelector('.s15tabwrap').addEventListener('click',function(e){
-  var b=e.target.closest('.s15tab'); if(b) renderView(b);
-});
-renderView(document.querySelector('.s15tab[data-i="-1"]'));
+function renderAll(){
+  var cur=document.querySelector('.s15tab.active'); var pk=cur&&cur.getAttribute('data-pic'); var di=cur&&cur.getAttribute('data-i');
+  renderDevTabs(); renderAlloc();
+  var keep = pk!=null ? document.querySelector('.s15tab[data-pic="'+(window.CSS&&CSS.escape?CSS.escape(pk):pk)+'"]')
+                      : (di!=null ? document.querySelector('.s15tab[data-i="'+di+'"]') : null);
+  renderView(keep || document.querySelector('.s15tab[data-i="-1"]'));
+  var mm=document.getElementById('s15meta'); if(mm) mm.textContent = ST.updated ? ('PIC/status theo Backlog assignee · cập nhật '+ST.updated) : 'đang tải trạng thái Backlog…';
+}
+document.querySelector('.s15tabwrap').addEventListener('click',function(e){var b=e.target.closest('.s15tab'); if(b) renderView(b);});
+function fetchStatus(){
+  var U='https://raw.githubusercontent.com/nguyenducbien-art/w3-pr-tracking-tables/data/s15-status.json';
+  return fetch(U+'?t='+Date.now()).then(function(r){return r.json();}).then(function(d){ST=d;renderAll();})
+    .catch(function(){ renderAll(); });
+}
+renderAll(); fetchStatus(); setInterval(fetchStatus,60000);
 })();
 """
 
 body = ('<div class="page">'
   + '<div class="page-header"><h1>Phân công việc — Sprint 15</h1>'
-  + '<span class="meta">' + str(total) + ' màn · ' + str(len(PLAN["domains"])) + ' domain · kế hoạch phân công (PR tracking ở Table A phía trên)</span></div>'
+  + '<span class="meta">' + str(total) + ' màn · ' + str(len(PLAN["domains"])) + ' domain · PIC LIVE từ Backlog</span></div>'
+  + '<div id="s15meta" class="subtitle" style="margin-bottom:6px;font-style:italic">đang tải trạng thái Backlog…</div>'
   + '<div class="subtitle">' + esc(PLAN["note"]) + '</div>'
-  + '<details style="margin-bottom:10px"><summary style="cursor:pointer;font-size:13px;font-weight:600">Phân bổ Implement PIC (chia đều theo loại màn)</summary>'
-  + '<div style="margin-top:8px">' + allocation() + '</div></details>'
+  + '<details style="margin-bottom:10px"><summary style="cursor:pointer;font-size:13px;font-weight:600">Phân bổ theo Backlog assignee (live)</summary>'
+  + '<div id="s15alloc" style="margin-top:8px"></div></details>'
   + '<div class="s15tabwrap">'
   +   '<div class="s15tabs"><span class="s15lbl">Domain</span>' + dtabs + '</div>'
-  +   '<div class="s15tabs"><span class="s15lbl">Dev</span>' + ptabs + '</div>'
+  +   '<div class="s15tabs"><span class="s15lbl">Dev</span><span id="s15devtabs"></span></div>'
   + '</div>'
   + '<div id="s15dom" class="s15dom"></div>'
   + '<div class="scroll-wrap"><table style="min-width:1080px"><thead><tr>'
   + '<th>Screen ID / URL</th><th>AngularJS stg</th><th>Tên màn</th><th>Loại</th><th>Ticket (親 / 実装 / テスト)</th>'
-  + '<th>Impl PIC</th><th>Test PIC</th><th>Free test</th>'
+  + '<th>Impl PIC (Backlog)</th><th>Test PIC (Backlog)</th>'
   + '</tr></thead><tbody id="s15tbody"></tbody></table></div>'
   + '<div class="footnote">Loại màn: <span class="pill pill-open">list</span> 一覧 · '
   + '<span class="pill pill-draft">edit</span> 登録/編集 · <span class="pill pill-merged">details</span> 明細 · '
   + '<span class="pill pill-pinned">special</span> 特殊. &nbsp; Ticket: <b>親</b>=cha · <b>実装</b>=implement＆単体テスト · <b>テ</b>=テスト実施 (click mở Backlog).<br>'
-  + '“(để trống)” Impl PIC = pool màn chưa gán · <b>WIP</b> = Minh đang làm (親 616/619/643). '
-  + 'Đây là <b>kế hoạch phân công</b> (data ở <code>s15-plan.json</code>); <b>Table A</b> phía trên là PR tracking thật (nhánh r20260810).</div>'
+  + '<b>Impl PIC / Test PIC = assignee THẬT trên Backlog</b> (親 / テスト実施), tự cập nhật mỗi 5p; status: '
+  + '<span class="pill pill-approved">✅</span> Resolved/Closed · <span class="pill pill-changes">🔵</span> In Progress · '
+  + '<span class="pill pill-todo">⚪</span> Open · “(chưa gán)” = chưa ai nhận trên Backlog.<br>'
+  + 'Screen list / 画面名 / loại / ticket / URL là cấu hình cố định (<code>s15-plan.json</code>); '
+  + '<b>Table A</b> phía trên = PR tracking (nhánh r20260810).</div>'
   + '</div>')
 
 doc = ('<!DOCTYPE html>\n<html lang="vi">\n<head>\n<meta charset="utf-8">\n'
