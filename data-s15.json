@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10 14:25",
+ "updated": "2026-08-10 14:30",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,6 +10,60 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "614",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11777,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 6509,
+     "del": 92,
+     "fc": 53
+    }
+   ],
+   "created": "08-10 14:29",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "489_取引関連_届け先追加・編集"
+  },
+  {
+   "ticket": "653",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11776,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 8002,
+     "del": 2,
+     "fc": 37
+    }
+   ],
+   "created": "08-10 14:26",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "452_CSV取込設定追加・編集_編集画面"
+  },
   {
    "ticket": "631",
    "dev": "khoa",
