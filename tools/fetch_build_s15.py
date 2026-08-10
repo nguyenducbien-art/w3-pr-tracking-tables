@@ -15,6 +15,7 @@ PRURL = "https://github.com/%s/pull/" % REPO
 OUT = sys.argv[1] if len(sys.argv) > 1 else "data-s15.json"
 
 EXCLUDE = {"1495"}                        # ticket ẩn hẳn khỏi bảng (mọi PR base/r810) — user yêu cầu 08-03
+BASE_COMMON_SINCE = "2026-08-10"          # LUẬT MỞ RỘNG: common PR→base (chưa có r810 PR) created >= ngày này cũng vào Sprint 15
 
 DEV = {"nguyenducbien-art":"bien","nguyennhatminh-dl":"minh","phambaohung-dl":"hung",
        "phamtiendat-oss":"dat","nguyenanhkhoa-rk":"khoa"}
@@ -150,12 +151,24 @@ def build():
         t["meta"].append({"num":p["number"],"key":"r810","author":p["author"]["login"],
                           "created":p["createdAt"],"title":p["title"],"det":det})
         if seg.startswith("common-"): t["common"] = True
-    for p in gh_list("base"):
+
+    # ---- LUẬT MỞ RỘNG (2026-08-10): common PR→base (branch `common-…`) CHƯA có r810 PR,
+    #      created >= BASE_COMMON_SINCE → kết nạp vào Sprint 15 (hiện Bảng 1, cột →r810 trống). ----
+    base_prs = gh_list("base")
+    for p in base_prs:
+        seg = p["headRefName"].split("/")[-1]
+        if is_sync(seg) or not seg.startswith("common-"): continue
+        tk = ticket_from_branch(seg)
+        if not tk or tk in EXCLUDE or tk in s15: continue   # đã có r810 PR thì bỏ (đã thuộc s15)
+        if p["createdAt"][:10] < BASE_COMMON_SINCE: continue
+        s15.add(tk)
+
+    for p in base_prs:
         seg = p["headRefName"].split("/")[-1]
         if is_sync(seg): continue
         tk = ticket_from_branch(seg)
-        if tk not in s15: continue   # chỉ ticket đã thuộc Sprint 15 (có r810 PR)
-        t = tickets[tk]
+        if tk not in s15: continue   # ticket thuộc Sprint 15 (có r810 PR HOẶC common-base created >= BASE_COMMON_SINCE)
+        t = tickets.setdefault(tk, {"base":[], "r810":[], "meta":[], "common":False})
         det = pr_detail(p["number"])
         t["base"].append({"num": p["number"], "cf": det["cf"], "st": det["st"],
                           "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"]})
