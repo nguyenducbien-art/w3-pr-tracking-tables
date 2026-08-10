@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10 14:30",
+ "updated": "2026-08-10 14:36",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -11,6 +11,33 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
   {
+   "ticket": "654",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11779,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 1099,
+     "del": 0,
+     "fc": 22
+    }
+   ],
+   "created": "08-10 14:32",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "570_帳票出力履歴一覧_一覧"
+  },
+  {
    "ticket": "614",
    "dev": "khoa",
    "bien": false,
@@ -20,16 +47,16 @@
      "num": 11777,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 6509,
+     "nc": 3,
+     "add": 6015,
      "del": 92,
-     "fc": 53
+     "fc": 52
     }
    ],
    "created": "08-10 14:29",
    "drive": false,
-   "cop": 0,
-   "unres": 0,
+   "cop": 3,
+   "unres": 3,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -55,8 +82,8 @@
    ],
    "created": "08-10 14:26",
    "drive": false,
-   "cop": 0,
-   "unres": 0,
+   "cop": 2,
+   "unres": 2,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -300,10 +327,10 @@
      "num": 11755,
      "cf": "ok",
      "st": "open",
-     "nc": 3,
-     "add": 1155,
-     "del": 2,
-     "fc": 25
+     "nc": 9,
+     "add": 1498,
+     "del": 42,
+     "fc": 32
     }
    ],
    "created": "08-10 11:52",
@@ -500,5 +527,29 @@
    "title": "ユーザー情報API (/me) に is_manager_privilege を追加"
   }
  ],
- "scaffold": []
+ "scaffold": [
+  {
+   "ticket": "1525",
+   "dev": "minh",
+   "bien": false,
+   "pr": {
+    "num": 11778,
+    "cf": "ok",
+    "st": "open",
+    "nc": 1,
+    "add": 2,
+    "del": 0,
+    "fc": 1
+   },
+   "created": "08-10 14:30",
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "共通SearchArea 検索フィールド種別の規約を追記"
+  }
+ ]
 }
