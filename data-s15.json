@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-10 17:41",
+ "updated": "2026-08-10 17:47",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1527",
   "1526",
   "1525",
   "1521",
@@ -29,8 +30,8 @@
    ],
    "created": "08-10 17:37",
    "drive": false,
-   "cop": 0,
-   "unres": 0,
+   "cop": 4,
+   "unres": 4,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -64,6 +65,33 @@
     "pd": []
    },
    "title": "取引関連_仕入先追加・編集 (screen_id=428) を実装"
+  },
+  {
+   "ticket": "1527",
+   "dev": "minh",
+   "bien": false,
+   "base": [
+    {
+     "num": 11792,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 187,
+     "del": 0,
+     "fc": 5
+    }
+   ],
+   "r810": [],
+   "created": "08-10 15:52",
+   "drive": true,
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "国コード選択用の国マスタ取得API (GET /v2/countries) を追加"
   },
   {
    "ticket": "644",
