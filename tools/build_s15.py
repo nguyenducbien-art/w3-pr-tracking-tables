@@ -17,6 +17,14 @@ for _l in open("build_s14.py"):
     if _l.startswith("FAVICON = "):
         FAVICON = ast.literal_eval(re.match(r'\s*(".*")', _l[len("FAVICON = "):]).group(1)); break
 
+# ---- PR tracking (Bảng 1 Common / Bảng 2 Màn-Fix / Bảng phụ scaffold) ----
+# Lấy RENDER_JS từ build_s12 (PR-only, không screen-list) → retarget sang r20260810 / data-s15.json.
+_pr = re.search(r'RENDER_JS = r"""(.*?)"""', open("build_s12.py").read(), re.S).group(1)
+for _a, _b in [("data-s12.json", "data-s15.json"), ("r20260629", "r20260810"),
+               ("r629", "r810"), ("Sprint 12", "Sprint 15"), ("2026-07-27", "2026-08-01")]:
+    _pr = _pr.replace(_a, _b)
+PR_RENDER = _pr
+
 def esc(s):
     return str(s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
@@ -82,7 +90,7 @@ TABCSS = ("<style>"
   ".s15dom{font-size:11.5px;color:var(--text-dim);margin:0 0 6px}"
   "</style>")
 
-RENDER = r"""
+ASSIGN_RENDER = r"""(function(){
 var PLAN = JSON.parse(document.getElementById('s15-data').textContent);
 var TLBL={"一覧 (list)":["pill-open","list"],"登録/編集 (edit)":["pill-draft","edit"],"明細 (details)":["pill-merged","details"],"特殊 (special)":["pill-pinned","special"]};
 var WIP=new Set(PLAN.wip_parents||[]); var BASE=PLAN.backlogBase;
@@ -125,12 +133,12 @@ document.querySelector('.s15tabwrap').addEventListener('click',function(e){
   var b=e.target.closest('.s15tab'); if(b) renderView(b);
 });
 renderView(document.querySelector('.s15tab[data-i="-1"]'));
-document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="http"]');if(a){e.preventDefault();window.open(a.href,'_blank','noopener');}},true);
+})();
 """
 
 body = ('<div class="page">'
   + '<div class="page-header"><h1>Phân công việc — Sprint 15</h1>'
-  + '<span class="meta">' + str(total) + ' màn · ' + str(len(PLAN["domains"])) + ' domain · kế hoạch (chưa bắt đầu code)</span></div>'
+  + '<span class="meta">' + str(total) + ' màn · ' + str(len(PLAN["domains"])) + ' domain · kế hoạch phân công (PR tracking ở Table A phía trên)</span></div>'
   + '<div class="subtitle">' + esc(PLAN["note"]) + '</div>'
   + '<details style="margin-bottom:10px"><summary style="cursor:pointer;font-size:13px;font-weight:600">Phân bổ Implement PIC (chia đều theo loại màn)</summary>'
   + '<div style="margin-top:8px">' + allocation() + '</div></details>'
@@ -147,15 +155,17 @@ body = ('<div class="page">'
   + '<span class="pill pill-draft">edit</span> 登録/編集 · <span class="pill pill-merged">details</span> 明細 · '
   + '<span class="pill pill-pinned">special</span> 特殊. &nbsp; Ticket: <b>親</b>=cha · <b>実装</b>=implement＆単体テスト · <b>テ</b>=テスト実施 (click mở Backlog).<br>'
   + '“(để trống)” Impl PIC = pool màn chưa gán · <b>WIP</b> = Minh đang làm (親 616/619/643). '
-  + 'Đây là <b>kế hoạch phân công</b> (data ở <code>s15-plan.json</code>); có PR/migrate tracking sau khi Sprint 15 bắt đầu code.</div>'
+  + 'Đây là <b>kế hoạch phân công</b> (data ở <code>s15-plan.json</code>); <b>Table A</b> phía trên là PR tracking thật (nhánh r20260810).</div>'
   + '</div>')
 
 doc = ('<!DOCTYPE html>\n<html lang="vi">\n<head>\n<meta charset="utf-8">\n'
        '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
        '<meta name="robots" content="noindex, nofollow">\n<title>Phân công — Sprint 15</title>\n'
        + FAVICON + '\n' + css + '\n' + TABCSS + '\n</head>\n<body>\n'
-       + NAV + '\n' + body + '\n' + MASCOT + '\n'
+       + NAV + '\n<div id="app"></div>\n' + body + '\n' + MASCOT + '\n'
+       + '<script id="table-data" type="application/json"></script>\n'
+       + '<script>' + PR_RENDER + '</script>\n'
        + '<script id="s15-data" type="application/json">' + json.dumps(PLAN, ensure_ascii=False) + '</script>\n'
-       + '<script>' + RENDER + '</script>\n</body>\n</html>')
+       + '<script>' + ASSIGN_RENDER + '</script>\n</body>\n</html>')
 open("s15.html", "w").write(doc)
-print("built s15.html | %d màn / %d domain (tab UI)" % (total, len(PLAN["domains"])))
+print("built s15.html | Table A PR (fetch data-s15.json) + phân công %d màn / %d domain" % (total, len(PLAN["domains"])))

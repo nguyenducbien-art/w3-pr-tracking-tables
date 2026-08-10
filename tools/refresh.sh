@@ -19,23 +19,25 @@ cd "$REPO" || exit 1
   python3 tools/fetch_build.py       data.json;         rc13=$?
   python3 tools/fetch_build_s12.py   data-s12.json;     rc12=$?
   python3 tools/fetch_build_s14.py   data-s14.json;     rcPR=$?
+  python3 tools/fetch_build_s15.py   data-s15.json;     rc15=$?
   python3 tools/fetch_screens_s14.py screens-s14.json;  rcSc=$?
   # rc: 0=đổi, 2=không đổi, khác=lỗi
-  for pair in "s13:$rc13" "s12:$rc12" "s14:$rcPR" "screens:$rcSc"; do
+  for pair in "s13:$rc13" "s12:$rc12" "s14:$rcPR" "s15:$rc15" "screens:$rcSc"; do
     n=${pair%:*}; rc=${pair#*:}
     if [ "$rc" -ne 0 ] && [ "$rc" -ne 2 ]; then echo "→ LỖI fetch $n (rc=$rc)"; exit 1; fi
   done
-  if [ "$rc13" -eq 2 ] && [ "$rc12" -eq 2 ] && [ "$rcPR" -eq 2 ] && [ "$rcSc" -eq 2 ]; then
+  if [ "$rc13" -eq 2 ] && [ "$rc12" -eq 2 ] && [ "$rcPR" -eq 2 ] && [ "$rc15" -eq 2 ] && [ "$rcSc" -eq 2 ]; then
     echo "→ Không sprint nào đổi, khỏi push."; exit 0; fi
 
   # Dựng tree cho nhánh `data`. mktree cần entries sort theo tên (byte):
-  #   'data-s12.json' < 'data-s14.json' < 'data.json' < 'screens-s14.json'
+  #   'data-s12' < 'data-s14' < 'data-s15' < 'data.json' < 'screens-s14'
   B12=$(git hash-object -w data-s12.json)
   B14=$(git hash-object -w data-s14.json)
+  B15=$(git hash-object -w data-s15.json)
   B13=$(git hash-object -w data.json)
   BSC=$(git hash-object -w screens-s14.json)
-  TREE=$(printf '100644 blob %s\tdata-s12.json\n100644 blob %s\tdata-s14.json\n100644 blob %s\tdata.json\n100644 blob %s\tscreens-s14.json\n' \
-                "$B12" "$B14" "$B13" "$BSC" | git mktree)
+  TREE=$(printf '100644 blob %s\tdata-s12.json\n100644 blob %s\tdata-s14.json\n100644 blob %s\tdata-s15.json\n100644 blob %s\tdata.json\n100644 blob %s\tscreens-s14.json\n' \
+                "$B12" "$B14" "$B15" "$B13" "$BSC" | git mktree)
   PARENT=$(git rev-parse refs/heads/data)
   COMMIT=$(git -c user.name="biennguyen" -c user.email="nguyenducbien-art@users.noreply.github.com" \
            commit-tree "$TREE" -p "$PARENT" -m "auto-refresh s12+s13+s14 (rc $rc12/$rc13/$rcPR/$rcSc) $(date '+%F %H:%M')")
