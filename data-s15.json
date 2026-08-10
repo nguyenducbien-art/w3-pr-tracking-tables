@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10 11:07",
+ "updated": "2026-08-10 11:13",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -8,6 +8,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "612",
+   "dev": "hung",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11753,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 2841,
+     "del": 3,
+     "fc": 32
+    }
+   ],
+   "created": "08-10 11:12",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "取引関連_依頼主追加・編集 (426) を Next.js へ移行"
+  },
   {
    "ticket": "993",
    "dev": "dat",
@@ -27,7 +54,7 @@
    "created": "08-10 10:40",
    "drive": false,
    "cop": 1,
-   "unres": 1,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -83,9 +110,9 @@
      "cf": "ok",
      "st": "open",
      "nc": 18,
-     "add": 3533,
+     "add": 3520,
      "del": 51,
-     "fc": 39
+     "fc": 38
     }
    ],
    "created": "08-07 14:44",
