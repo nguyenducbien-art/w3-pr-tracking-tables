@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10 13:57",
+ "updated": "2026-08-10 14:03",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,6 +10,60 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "613",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11771,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 1625,
+     "del": 90,
+     "fc": 24
+    }
+   ],
+   "created": "08-10 14:01",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "488_取引関連_届け先マスタ_一覧"
+  },
+  {
+   "ticket": "610",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11770,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 4035,
+     "del": 86,
+     "fc": 31
+    }
+   ],
+   "created": "08-10 14:00",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "424_オーナーステータス設定_編集"
+  },
   {
    "ticket": "997",
    "dev": "hung",
