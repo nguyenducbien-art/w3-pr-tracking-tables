@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10 18:05",
+ "updated": "2026-08-10 18:11",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -7,11 +7,40 @@
   "1526",
   "1525",
   "1521",
-  "1520"
+  "1520",
+  "1506",
+  "285"
  ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "638",
+   "dev": "minh",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11802,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 815,
+     "del": 2,
+     "fc": 24
+    }
+   ],
+   "created": "08-10 18:06",
+   "drive": false,
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ロール設定一覧画面 (442) を React へ移行"
+  },
   {
    "ticket": "617",
    "dev": "minh",
@@ -816,6 +845,62 @@
     "pd": []
    },
    "title": "ユーザー情報API (/me) に is_manager_privilege を追加"
+  },
+  {
+   "ticket": "1506",
+   "dev": "khoa",
+   "bien": false,
+   "base": [
+    {
+     "num": 11621,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 141,
+     "del": 4,
+     "fc": 4
+    }
+   ],
+   "r810": [],
+   "created": "08-04 11:48",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": [
+     "kanayam"
+    ]
+   },
+   "title": "文字列項目に先頭 0 を入力できない不具合を修正"
+  },
+  {
+   "ticket": "285",
+   "dev": "khoa",
+   "bien": false,
+   "base": [
+    {
+     "num": 10786,
+     "cf": "ok",
+     "st": "open",
+     "nc": 175,
+     "add": 6365,
+     "del": 631,
+     "fc": 115
+    }
+   ],
+   "r810": [],
+   "created": "07-09 15:30",
+   "drive": true,
+   "cop": 16,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "共通_マイフィルタ削除確認ダイアログ追加"
   }
  ],
  "scaffold": [
