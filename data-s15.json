@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10 15:04",
+ "updated": "2026-08-10 15:10",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -11,6 +11,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "666",
+   "dev": "bien",
+   "bien": true,
+   "base": [],
+   "r810": [
+    {
+     "num": 11787,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 1774,
+     "del": 0,
+     "fc": 20
+    }
+   ],
+   "created": "08-10 15:08",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユーザー登録・編集画面 (/unit/user-edits) を実装"
+  },
   {
    "ticket": "1526",
    "dev": "dat",
@@ -30,7 +57,7 @@
     {
      "num": 11782,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 2,
      "add": 20,
      "del": 0,
@@ -419,7 +446,7 @@
      "num": 11755,
      "cf": "ok",
      "st": "open",
-     "nc": 9,
+     "nc": 10,
      "add": 1498,
      "del": 42,
      "fc": 32
