@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10 14:03",
+ "updated": "2026-08-10 14:08",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,6 +10,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "620",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11772,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 6818,
+     "del": 2,
+     "fc": 42
+    }
+   ],
+   "created": "08-10 14:08",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "469_商品関連_商品荷姿追加・編集"
+  },
   {
    "ticket": "613",
    "dev": "khoa",
@@ -28,8 +55,8 @@
    ],
    "created": "08-10 14:01",
    "drive": false,
-   "cop": 0,
-   "unres": 0,
+   "cop": 2,
+   "unres": 2,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -55,8 +82,8 @@
    ],
    "created": "08-10 14:00",
    "drive": false,
-   "cop": 0,
-   "unres": 0,
+   "cop": 2,
+   "unres": 2,
    "rvw": {
     "ap": [],
     "ch": [],
