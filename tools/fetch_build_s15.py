@@ -176,6 +176,28 @@ def build():
                           "created":p["createdAt"],"title":p["title"],"det":det})
         if seg.startswith("common-"): t["common"] = True
 
+    # ---- ĐẶC CÁCH: PR chỉ định tay ép vào Sprint 15 (dù không nhắm r810 / lệch mốc ngày / nhắm r-branch khác).
+    #      ticket -> [(pr_number, column)] ; column ∈ {"base","r810"}. Xếp Bảng 1 (common=True).
+    FORCE_PR = {
+        "1506": [(11621, "base")],   # common-1506→base, created 08-04 (trước BASE_COMMON_SINCE 08-10)
+        "285":  [(10786, "base")],   # #10786 thực nhắm r20260629 (Sprint12) — hiện ở cột →base
+    }
+    for tk, prs in FORCE_PR.items():
+        if tk in EXCLUDE: continue
+        for num, col in prs:
+            t = tickets.setdefault(tk, {"base":[], "r810":[], "meta":[], "common":False})
+            if any(x["num"] == num for x in t["base"]+t["r810"]): continue   # đã có (scan thường bắt rồi)
+            info = json.loads(run(["gh","pr","view",str(num),"--repo",REPO,
+                                   "--json","number,author,createdAt,title,state"]))
+            if info["state"] == "CLOSED": continue    # PR đóng (không merge) → bỏ
+            det = pr_detail(num)
+            t[col].append({"num":num,"cf":det["cf"],"st":det["st"],
+                           "nc":det["nc"],"add":det["add"],"del":det["del"],"fc":det["fc"]})
+            t["meta"].append({"num":num,"key":col,"author":info["author"]["login"],
+                              "created":info["createdAt"],"title":info["title"],"det":det})
+            t["common"] = True                        # đặc cách → Bảng 1 (Common)
+            s15.add(tk)
+
     main = []
     for tk, t in tickets.items():
         metas = t["meta"]; common = t["common"]
