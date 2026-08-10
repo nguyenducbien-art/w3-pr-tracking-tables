@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-07 14:51",
+ "updated": "2026-08-10 10:01",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -47,7 +47,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "364"
+   "title": "荷姿変更_明細(364)の一覧遷移先を実装済ルート/stocks/package-headersに修正"
   },
   {
    "ticket": "1423",
