@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-10 14:53",
+ "updated": "2026-08-10 14:58",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1526",
   "1525",
   "1521",
   "1520"
@@ -10,6 +11,43 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1526",
+   "dev": "dat",
+   "bien": false,
+   "base": [
+    {
+     "num": 11783,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 20,
+     "del": 0,
+     "fc": 2
+    }
+   ],
+   "r810": [
+    {
+     "num": 11782,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 20,
+     "del": 0,
+     "fc": 2
+    }
+   ],
+   "created": "08-10 14:54",
+   "drive": false,
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ロケサイズカテゴリ選択肢取得 API を追加"
+  },
   {
    "ticket": "1029",
    "dev": "dat",
