@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10 14:36",
+ "updated": "2026-08-10 14:41",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,6 +10,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "639",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11780,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 5229,
+     "del": 2,
+     "fc": 38
+    }
+   ],
+   "created": "08-10 14:37",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "443_ロール編集"
+  },
   {
    "ticket": "654",
    "dev": "khoa",
@@ -28,8 +55,8 @@
    ],
    "created": "08-10 14:32",
    "drive": false,
-   "cop": 0,
-   "unres": 0,
+   "cop": 2,
+   "unres": 2,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -289,19 +316,19 @@
      "num": 11766,
      "cf": "ok",
      "st": "open",
-     "nc": 3,
-     "add": 185,
-     "del": 40,
-     "fc": 6
+     "nc": 416,
+     "add": 115054,
+     "del": 3341,
+     "fc": 891
     }
    ],
    "r810": [
     {
      "num": 11769,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
-     "nc": 3,
-     "add": 185,
+     "nc": 4,
+     "add": 192,
      "del": 40,
      "fc": 6
     }
@@ -536,14 +563,14 @@
     "num": 11778,
     "cf": "ok",
     "st": "open",
-    "nc": 1,
+    "nc": 2,
     "add": 2,
     "del": 0,
     "fc": 1
    },
    "created": "08-10 14:30",
    "cop": 1,
-   "unres": 1,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
