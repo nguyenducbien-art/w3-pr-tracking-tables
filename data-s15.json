@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10 11:40",
+ "updated": "2026-08-10 11:54",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -9,6 +9,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "619",
+   "dev": "minh",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11755,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 1138,
+     "del": 2,
+     "fc": 25
+    }
+   ],
+   "created": "08-10 11:52",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "商品荷姿マスタ一覧画面を React 移行"
+  },
   {
    "ticket": "612",
    "dev": "hung",
@@ -44,7 +71,7 @@
    "r810": [
     {
      "num": 11748,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 4,
      "add": 1270,
@@ -108,7 +135,7 @@
    "r810": [
     {
      "num": 11747,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
      "nc": 18,
      "add": 3520,
@@ -136,7 +163,7 @@
     {
      "num": 11736,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 6,
      "add": 3210,
      "del": 3,
