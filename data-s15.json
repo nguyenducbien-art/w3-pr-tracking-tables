@@ -1,14 +1,79 @@
 {
- "updated": "2026-08-10 13:24",
+ "updated": "2026-08-10 13:52",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1525",
   "1521",
   "1520"
  ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "997",
+   "dev": "hung",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11768,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 4377,
+     "del": 0,
+     "fc": 32
+    }
+   ],
+   "created": "08-10 13:49",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "商品関連_セット品ルール追加・編集 (screen_id=432) を実装"
+  },
+  {
+   "ticket": "1525",
+   "dev": "minh",
+   "bien": false,
+   "base": [
+    {
+     "num": 11766,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 185,
+     "del": 40,
+     "fc": 6
+    }
+   ],
+   "r810": [
+    {
+     "num": 11769,
+     "cf": "bad",
+     "st": "open",
+     "nc": 3,
+     "add": 185,
+     "del": 40,
+     "fc": 6
+    }
+   ],
+   "created": "08-10 13:40",
+   "drive": true,
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "共通SearchAreaに日付レンジ種別を追加"
+  },
   {
    "ticket": "619",
    "dev": "minh",
