@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10 16:04",
+ "updated": "2026-08-10 16:28",
  "impl": {
   "675": {
    "pic": "Minh",
@@ -34,7 +34,7 @@
    "st": "todo"
   },
   "667": {
-   "pic": "Minh",
+   "pic": "Biên",
    "st": "todo"
   },
   "666": {
@@ -87,11 +87,11 @@
   },
   "654": {
    "pic": "Khoa",
-   "st": "todo"
+   "st": "wip"
   },
   "653": {
    "pic": "Khoa",
-   "st": "todo"
+   "st": "wip"
   },
   "652": {
    "pic": "Đạt",
@@ -179,15 +179,15 @@
   },
   "631": {
    "pic": "Khoa",
-   "st": "todo"
+   "st": "wip"
   },
   "630": {
    "pic": "Đạt",
-   "st": "todo"
+   "st": "wip"
   },
   "629": {
    "pic": "Khoa",
-   "st": "todo"
+   "st": "wip"
   },
   "628": {
    "pic": "Đạt",
@@ -211,19 +211,19 @@
   },
   "623": {
    "pic": "Khoa",
-   "st": "todo"
+   "st": "wip"
   },
   "622": {
    "pic": "Hưng",
-   "st": "todo"
+   "st": "wip"
   },
   "621": {
    "pic": "Đạt",
-   "st": "todo"
+   "st": "wip"
   },
   "620": {
    "pic": "Khoa",
-   "st": "todo"
+   "st": "wip"
   },
   "619": {
    "pic": "Minh",
@@ -247,23 +247,23 @@
   },
   "614": {
    "pic": "Khoa",
-   "st": "todo"
+   "st": "wip"
   },
   "613": {
    "pic": "Khoa",
-   "st": "todo"
+   "st": "wip"
   },
   "612": {
    "pic": "Hưng",
-   "st": "todo"
+   "st": "wip"
   },
   "611": {
    "pic": "Đạt",
-   "st": "todo"
+   "st": "wip"
   },
   "610": {
    "pic": "Khoa",
-   "st": "todo"
+   "st": "wip"
   },
   "609": {
    "pic": "Đạt",
@@ -760,7 +760,7 @@
    "st": "todo"
   },
   "1179": {
-   "pic": "Minh",
+   "pic": "Biên",
    "st": "todo"
   },
   "1175": {
