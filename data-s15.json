@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10 18:11",
+ "updated": "2026-08-10 19:30",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -854,7 +854,7 @@
     {
      "num": 11621,
      "cf": "ok",
-     "st": "open",
+     "st": "approved",
      "nc": 1,
      "add": 141,
      "del": 4,
@@ -867,11 +867,11 @@
    "cop": 0,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
+    "ap": [
      "kanayam"
-    ]
+    ],
+    "ch": [],
+    "pd": []
    },
    "title": "文字列項目に先頭 0 を入力できない不具合を修正"
   },
