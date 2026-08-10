@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10 10:37",
+ "updated": "2026-08-10 10:50",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -8,6 +8,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "993",
+   "dev": "dat",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11748,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 1268,
+     "del": 2,
+     "fc": 24
+    }
+   ],
+   "created": "08-10 10:40",
+   "drive": false,
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "商品関連_セット品ルールマスタ (screen 431) を React へ移行"
+  },
   {
    "ticket": "953",
    "dev": "dat",
@@ -55,10 +82,10 @@
      "num": 11747,
      "cf": "ok",
      "st": "open",
-     "nc": 17,
-     "add": 3520,
+     "nc": 18,
+     "add": 3533,
      "del": 51,
-     "fc": 38
+     "fc": 39
     }
    ],
    "created": "08-07 14:44",
