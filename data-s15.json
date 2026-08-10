@@ -1,8 +1,10 @@
 {
- "updated": "2026-08-10 10:04",
+ "updated": "2026-08-10 10:37",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
- "common": [],
+ "common": [
+  "1521"
+ ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
@@ -32,6 +34,43 @@
     "pd": []
    },
    "title": "取引関連_依頼主マスタ (screen 425) を React へ移行"
+  },
+  {
+   "ticket": "1521",
+   "dev": "minh",
+   "bien": false,
+   "base": [
+    {
+     "num": 11738,
+     "cf": "ok",
+     "st": "open",
+     "nc": 6,
+     "add": 192,
+     "del": 27,
+     "fc": 8
+    }
+   ],
+   "r810": [
+    {
+     "num": 11747,
+     "cf": "ok",
+     "st": "open",
+     "nc": 17,
+     "add": 3520,
+     "del": 51,
+     "fc": 38
+    }
+   ],
+   "created": "08-07 14:44",
+   "drive": true,
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "画面設定（歯車）遷移を項目表示設定のパラメータ契約に整合"
   },
   {
    "ticket": "643",
