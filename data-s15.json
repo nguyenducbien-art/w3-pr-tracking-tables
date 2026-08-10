@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10 15:28",
+ "updated": "2026-08-10 15:33",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -11,6 +11,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "649",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11788,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 674,
+     "del": 5,
+     "fc": 10
+    }
+   ],
+   "created": "08-10 15:31",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "527_システム連携_取込出力履歴_一覧"
+  },
   {
    "ticket": "666",
    "dev": "bien",
@@ -202,7 +229,7 @@
    "created": "08-10 14:26",
    "drive": false,
    "cop": 2,
-   "unres": 2,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -229,7 +256,7 @@
    "created": "08-10 14:14",
    "drive": false,
    "cop": 1,
-   "unres": 1,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -247,8 +274,8 @@
      "num": 11774,
      "cf": "bad",
      "st": "open",
-     "nc": 1,
-     "add": 2854,
+     "nc": 2,
+     "add": 2877,
      "del": 2,
      "fc": 31
     }
@@ -256,7 +283,7 @@
    "created": "08-10 14:13",
    "drive": false,
    "cop": 3,
-   "unres": 3,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -274,8 +301,8 @@
      "num": 11773,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 1075,
+     "nc": 2,
+     "add": 1110,
      "del": 2,
      "fc": 20
     }
@@ -283,7 +310,7 @@
    "created": "08-10 14:10",
    "drive": false,
    "cop": 3,
-   "unres": 3,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -301,8 +328,8 @@
      "num": 11772,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 6818,
+     "nc": 2,
+     "add": 6937,
      "del": 2,
      "fc": 42
     }
@@ -310,7 +337,7 @@
    "created": "08-10 14:08",
    "drive": false,
    "cop": 3,
-   "unres": 3,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
