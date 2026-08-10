@@ -1,9 +1,10 @@
 {
- "updated": "2026-08-10 11:13",
+ "updated": "2026-08-10 11:17",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
-  "1521"
+  "1521",
+  "1520"
  ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
@@ -26,8 +27,8 @@
    ],
    "created": "08-10 11:12",
    "drive": true,
-   "cop": 0,
-   "unres": 0,
+   "cop": 1,
+   "unres": 1,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -152,6 +153,43 @@
     "pd": []
    },
    "title": "画面設定_項目表示設定 (screen 444) を React 実装"
+  },
+  {
+   "ticket": "1520",
+   "dev": "minh",
+   "bien": false,
+   "base": [
+    {
+     "num": 11731,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 56,
+     "del": 1,
+     "fc": 3
+    }
+   ],
+   "r810": [
+    {
+     "num": 11754,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 56,
+     "del": 1,
+     "fc": 3
+    }
+   ],
+   "created": "08-07 13:24",
+   "drive": true,
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユーザー情報API (/me) に is_manager_privilege を追加"
   }
  ],
  "scaffold": []
