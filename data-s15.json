@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10 15:40",
+ "updated": "2026-08-10 15:46",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -11,6 +11,60 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "644",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11790,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 3705,
+     "del": 1,
+     "fc": 27
+    }
+   ],
+   "created": "08-10 15:44",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "657_画面設定_共通項目表示設定"
+  },
+  {
+   "ticket": "664",
+   "dev": "hung",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11789,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 2998,
+     "del": 0,
+     "fc": 29
+    }
+   ],
+   "created": "08-10 15:40",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユニット作成画面を React へ移行"
+  },
   {
    "ticket": "649",
    "dev": "khoa",
@@ -435,8 +489,8 @@
      "num": 11766,
      "cf": "ok",
      "st": "open",
-     "nc": 3,
-     "add": 185,
+     "nc": 4,
+     "add": 193,
      "del": 40,
      "fc": 6
     }
