@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10 17:35",
+ "updated": "2026-08-10 17:41",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -11,6 +11,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "617",
+   "dev": "minh",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11800,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 1534,
+     "del": 3,
+     "fc": 26
+    }
+   ],
+   "created": "08-10 17:37",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "商品関連_商品マスタ一覧(429)を実装"
+  },
   {
    "ticket": "616",
    "dev": "minh",
