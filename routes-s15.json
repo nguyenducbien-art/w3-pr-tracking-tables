@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-11 15:18",
- "tip": "7a2f273efb",
+ "updated": "2026-08-11 15:47",
+ "tip": "7aa81a9ea1",
  "branch": "mimosa/frontend/develop/per-sprint",
  "base": "https://mimosa-stg-react-per-sprint.dialog-wms.com",
  "routes": {
@@ -80,6 +80,7 @@
   "443": "/unit/roll-edits",
   "444": "/unit/grid-column-display-edits",
   "446": "/unit/code-extension-edits",
+  "449": "/unit/report-pattern-edits",
   "452": "/unit/if-api-import-edits",
   "462": "/owner/stock-quality-edits",
   "468": "/owner/material-packages",
