@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-11 10:36",
+ "updated": "2026-08-11 10:47",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -12,6 +12,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "663",
+   "dev": "khoa",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11811,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 2810,
+     "del": 0,
+     "fc": 28
+    }
+   ],
+   "created": "08-11 10:38",
+   "drive": false,
+   "cop": 3,
+   "unres": 3,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "システム倉庫登録_special"
+  },
   {
    "ticket": "648",
    "dev": "khoa",
@@ -128,9 +155,9 @@
    "r810": [
     {
      "num": 11798,
-     "cf": "bad",
-     "st": "open",
-     "nc": 6,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 7,
      "add": 1483,
      "del": 3,
      "fc": 20
