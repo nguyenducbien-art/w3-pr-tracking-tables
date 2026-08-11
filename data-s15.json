@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-11 14:33",
+ "updated": "2026-08-11 14:41",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -17,6 +17,33 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
   {
+   "ticket": "1113",
+   "dev": "dat",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11838,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 2272,
+     "del": 2,
+     "fc": 23
+    }
+   ],
+   "created": "08-11 14:32",
+   "drive": false,
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "CSV設定_出力ルール一覧 (451) を React へ移行"
+  },
+  {
    "ticket": "1177",
    "dev": "bien",
    "bien": true,
@@ -26,8 +53,8 @@
      "num": 11834,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 2017,
+     "nc": 2,
+     "add": 2037,
      "del": 0,
      "fc": 23
     }
@@ -35,7 +62,7 @@
    "created": "08-11 14:21",
    "drive": false,
    "cop": 3,
-   "unres": 3,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -61,7 +88,7 @@
    "r810": [
     {
      "num": 11835,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
      "nc": 19,
      "add": 805,
@@ -98,12 +125,12 @@
    "r810": [
     {
      "num": 11828,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
-     "nc": 2,
-     "add": 2743,
-     "del": 10,
-     "fc": 33
+     "nc": 3,
+     "add": 3005,
+     "del": 17,
+     "fc": 35
     }
    ],
    "created": "08-11 13:56",
