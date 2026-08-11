@@ -1,9 +1,8 @@
 {
- "updated": "2026-08-07 15:13",
+ "updated": "2026-08-11 10:30",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
-  "285",
   "263",
   "1424",
   "261",
@@ -36,54 +35,6 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260629_scaffold",
  "main": [
-  {
-   "ticket": "285",
-   "dev": "bien",
-   "bien": true,
-   "base": [
-    {
-     "num": 10909,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 9,
-     "add": 287,
-     "del": 144,
-     "fc": 7
-    },
-    {
-     "num": 10788,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 5,
-     "add": 263,
-     "del": 34,
-     "fc": 6
-    }
-   ],
-   "r629": [
-    {
-     "num": 10786,
-     "cf": "ok",
-     "st": "open",
-     "nc": 175,
-     "add": 6365,
-     "del": 631,
-     "fc": 115
-    }
-   ],
-   "created": "07-09 15:30",
-   "drive": true,
-   "cop": 21,
-   "unres": 1,
-   "rvw": {
-    "ap": [
-     "kanayam"
-    ],
-    "ch": [],
-    "pd": []
-   },
-   "title": "共通_マイフィルタ削除確認ダイアログ追加"
-  },
   {
    "ticket": "263",
    "dev": "minh",
@@ -622,7 +573,7 @@
     {
      "num": 11665,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 1,
      "add": 10,
      "del": 5,
@@ -645,11 +596,11 @@
    "cop": 0,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
+    "ap": [
      "kanayam"
-    ]
+    ],
+    "ch": [],
+    "pd": []
    },
    "title": "589_入荷実績_実績 積送データCSV出力のstdClassバインドエラー・unit_id絞り込み欠落を修正"
   },
@@ -1860,7 +1811,7 @@
    "base": [
     {
      "num": 11723,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 1,
      "add": 184,

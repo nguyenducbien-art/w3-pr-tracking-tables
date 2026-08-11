@@ -1,8 +1,11 @@
 {
- "updated": "2026-08-10 10:33",
+ "updated": "2026-08-11 10:32",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1527",
+  "1526",
+  "1525",
   "1521",
   "1520",
   "1260",
@@ -42,6 +45,90 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "1527",
+   "dev": "minh",
+   "bien": false,
+   "base": [
+    {
+     "num": 11792,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 187,
+     "del": 0,
+     "fc": 5
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "08-10 15:52",
+   "drive": true,
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "国コード選択用の国マスタ取得API (GET /v2/countries) を追加"
+  },
+  {
+   "ticket": "1526",
+   "dev": "dat",
+   "bien": false,
+   "base": [
+    {
+     "num": 11783,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 20,
+     "del": 0,
+     "fc": 2
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "08-10 14:54",
+   "drive": false,
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ロケサイズカテゴリ選択肢取得 API を追加"
+  },
+  {
+   "ticket": "1525",
+   "dev": "minh",
+   "bien": false,
+   "base": [
+    {
+     "num": 11766,
+     "cf": "ok",
+     "st": "open",
+     "nc": 4,
+     "add": 193,
+     "del": 40,
+     "fc": 6
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "08-10 13:40",
+   "drive": true,
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "共通SearchAreaに日付レンジ種別を追加"
+  },
   {
    "ticket": "1521",
    "dev": "minh",
@@ -105,7 +192,7 @@
    "base": [
     {
      "num": 11723,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 1,
      "add": 184,
