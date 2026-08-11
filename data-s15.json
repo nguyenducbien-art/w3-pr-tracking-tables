@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-11 13:20",
+ "updated": "2026-08-11 13:45",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -14,6 +14,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1133",
+   "dev": "hung",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11823,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 4248,
+     "del": 2,
+     "fc": 41
+    }
+   ],
+   "created": "08-11 13:34",
+   "drive": true,
+   "cop": 3,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "帳票設定_納品書・送り状パターン追加・編集を実装"
+  },
   {
    "ticket": "635",
    "dev": "minh",
@@ -33,7 +60,7 @@
    "created": "08-11 13:08",
    "drive": false,
    "cop": 3,
-   "unres": 3,
+   "unres": 1,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -315,10 +342,19 @@
   },
   {
    "ticket": "644",
-   "dev": "khoa",
-   "bien": false,
+   "dev": "bien",
+   "bien": true,
    "base": [],
    "r810": [
+    {
+     "num": 11825,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 3,
+     "del": 2,
+     "fc": 1
+    },
     {
      "num": 11790,
      "cf": "ok",
@@ -338,7 +374,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "657_画面設定_共通項目表示設定"
+   "title": "657 共通項目表示設定 is_display=0 時にダッシュボードへリダイレクト"
   },
   {
    "ticket": "664",
@@ -631,10 +667,19 @@
   },
   {
    "ticket": "629",
-   "dev": "khoa",
-   "bien": false,
+   "dev": "bien",
+   "bien": true,
    "base": [],
    "r810": [
+    {
+     "num": 11822,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 3,
+     "del": 2,
+     "fc": 1
+    },
     {
      "num": 11774,
      "cf": "ok",
@@ -654,7 +699,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "462_品質区分設定_編集"
+   "title": "462 品質区分設定 is_display=0 時にダッシュボードへリダイレクト"
   },
   {
    "ticket": "623",
@@ -984,10 +1029,19 @@
   },
   {
    "ticket": "643",
-   "dev": "minh",
-   "bien": false,
+   "dev": "bien",
+   "bien": true,
    "base": [],
    "r810": [
+    {
+     "num": 11824,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 3,
+     "del": 2,
+     "fc": 1
+    },
     {
      "num": 11736,
      "cf": "ok",
@@ -1007,7 +1061,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "画面設定_項目表示設定 (screen 444) を React 実装"
+   "title": "444 項目表示設定 is_display=0 時にダッシュボードへリダイレクト"
   },
   {
    "ticket": "1520",
