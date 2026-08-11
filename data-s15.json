@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-11 14:17",
+ "updated": "2026-08-11 14:25",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -17,6 +17,33 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
   {
+   "ticket": "1177",
+   "dev": "bien",
+   "bien": true,
+   "base": [],
+   "r810": [
+    {
+     "num": 11834,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 2017,
+     "del": 0,
+     "fc": 23
+    }
+   ],
+   "created": "08-11 14:21",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "個人設定 (screen_id=639) を実装"
+  },
+  {
    "ticket": "1531",
    "dev": "minh",
    "bien": false,
@@ -31,9 +58,19 @@
      "fc": 1
     }
    ],
-   "r810": [],
+   "r810": [
+    {
+     "num": 11835,
+     "cf": "bad",
+     "st": "open",
+     "nc": 19,
+     "add": 805,
+     "del": 45,
+     "fc": 28
+    }
+   ],
    "created": "08-11 14:11",
-   "drive": false,
+   "drive": true,
    "cop": 0,
    "unres": 0,
    "rvw": {
