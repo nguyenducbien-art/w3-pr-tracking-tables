@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-11 14:09",
+ "updated": "2026-08-11 14:17",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1531",
   "1069",
   "1529",
   "1530",
@@ -15,6 +16,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1531",
+   "dev": "minh",
+   "bien": false,
+   "base": [
+    {
+     "num": 11832,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 13,
+     "del": 1,
+     "fc": 1
+    }
+   ],
+   "r810": [],
+   "created": "08-11 14:11",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ダッシュボード画面(screen_id=637)の $schDt 未定義を修正"
+  },
   {
    "ticket": "1069",
    "dev": "dat",
