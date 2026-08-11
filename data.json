@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-11 11:03",
+ "updated": "2026-08-11 11:17",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1529",
   "1530",
   "1527",
   "1526",
@@ -46,6 +47,34 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260713_scaffold",
  "main": [
+  {
+   "ticket": "1529",
+   "dev": "minh",
+   "bien": false,
+   "base": [
+    {
+     "num": 11815,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 83,
+     "del": 2,
+     "fc": 8
+    }
+   ],
+   "r629": [],
+   "r713": [],
+   "created": "08-11 11:08",
+   "drive": true,
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "一覧ページャの総件数0件時に空メッセージのみ表示"
+  },
   {
    "ticket": "1530",
    "dev": "minh",

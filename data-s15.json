@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-11 11:10",
+ "updated": "2026-08-11 11:21",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -23,8 +23,8 @@
      "num": 11815,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 83,
+     "nc": 2,
+     "add": 88,
      "del": 2,
      "fc": 8
     }
@@ -32,8 +32,8 @@
    "r810": [],
    "created": "08-11 11:08",
    "drive": true,
-   "cop": 0,
-   "unres": 0,
+   "cop": 2,
+   "unres": 1,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -105,8 +105,8 @@
      "num": 11810,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 3220,
+     "nc": 2,
+     "add": 3219,
      "del": 2,
      "fc": 16
     }
@@ -132,8 +132,8 @@
      "num": 11809,
      "cf": "ok",
      "st": "open",
-     "nc": 3,
-     "add": 1229,
+     "nc": 4,
+     "add": 1218,
      "del": 2,
      "fc": 24
     }
