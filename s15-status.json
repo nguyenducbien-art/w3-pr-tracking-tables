@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-11 16:27",
+ "updated": "2026-08-11 17:58",
  "impl": {
   "675": {
    "pic": "Minh",
@@ -27,7 +27,7 @@
   },
   "669": {
    "pic": "Khoa",
-   "st": "todo"
+   "st": "wip"
   },
   "668": {
    "pic": "Đạt",
@@ -35,11 +35,11 @@
   },
   "667": {
    "pic": "Biên",
-   "st": "todo"
+   "st": "wip"
   },
   "666": {
    "pic": "Biên",
-   "st": "todo"
+   "st": "wip"
   },
   "665": {
    "pic": "Đạt",
@@ -47,11 +47,11 @@
   },
   "664": {
    "pic": "Hưng",
-   "st": "todo"
+   "st": "wip"
   },
   "663": {
    "pic": "Khoa",
-   "st": "todo"
+   "st": "wip"
   },
   "662": {
    "pic": "Đạt",
@@ -70,16 +70,16 @@
    "st": "todo"
   },
   "658": {
-   "pic": "Đạt",
+   "pic": "Biên",
    "st": "todo"
   },
   "657": {
-   "pic": "Minh",
+   "pic": "Biên",
    "st": "todo"
   },
   "656": {
    "pic": "Hưng",
-   "st": "todo"
+   "st": "wip"
   },
   "655": {
    "pic": "Hưng",
@@ -99,7 +99,7 @@
   },
   "651": {
    "pic": "Đạt",
-   "st": "todo"
+   "st": "wip"
   },
   "650": {
    "pic": "Minh",
@@ -107,11 +107,11 @@
   },
   "649": {
    "pic": "Khoa",
-   "st": "todo"
+   "st": "wip"
   },
   "648": {
    "pic": "Khoa",
-   "st": "todo"
+   "st": "wip"
   },
   "647": {
    "pic": "Hưng",
@@ -127,7 +127,7 @@
   },
   "644": {
    "pic": "Khoa",
-   "st": "todo"
+   "st": "wip"
   },
   "643": {
    "pic": "Minh",
@@ -135,19 +135,19 @@
   },
   "642": {
    "pic": "Hưng",
-   "st": "todo"
+   "st": "wip"
   },
   "641": {
    "pic": "Khoa",
-   "st": "todo"
+   "st": "wip"
   },
   "640": {
    "pic": "Đạt",
-   "st": "todo"
+   "st": "wip"
   },
   "639": {
    "pic": "Khoa",
-   "st": "todo"
+   "st": "wip"
   },
   "638": {
    "pic": "Minh",
@@ -194,7 +194,7 @@
    "st": "todo"
   },
   "627": {
-   "pic": "Hưng",
+   "pic": "Biên",
    "st": "todo"
   },
   "626": {
@@ -796,11 +796,11 @@
    "st": "todo"
   },
   "1143": {
-   "pic": "Đạt",
+   "pic": "Biên",
    "st": "todo"
   },
   "1139": {
-   "pic": "Minh",
+   "pic": "Biên",
    "st": "todo"
   },
   "1135": {
@@ -816,7 +816,7 @@
    "st": "todo"
   },
   "1123": {
-   "pic": "Khoa",
+   "pic": "Bồn",
    "st": "todo"
   },
   "1119": {
@@ -920,7 +920,7 @@
    "st": "todo"
   },
   "1019": {
-   "pic": "Hưng",
+   "pic": "Biên",
    "st": "todo"
   },
   "1015": {
@@ -944,7 +944,7 @@
    "st": "todo"
   },
   "995": {
-   "pic": "Đạt",
+   "pic": "Bồn",
    "st": "todo"
   },
   "991": {
@@ -964,7 +964,7 @@
    "st": "todo"
   },
   "975": {
-   "pic": "Minh",
+   "pic": "Bồn",
    "st": "todo"
   },
   "971": {
@@ -980,7 +980,7 @@
    "st": "todo"
   },
   "959": {
-   "pic": "Hưng",
+   "pic": "Bồn",
    "st": "todo"
   },
   "955": {
