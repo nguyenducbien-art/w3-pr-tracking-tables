@@ -114,7 +114,7 @@
      "test_pic": "",
      "free_test": "",
      "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/supplier_edits",
-     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/owner/suppliers/edit"
+     "react_url": ""
     },
     {
      "sid": "429",
@@ -127,7 +127,7 @@
      "test_pic": "",
      "free_test": "",
      "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/materials",
-     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/owner/materials"
+     "react_url": ""
     },
     {
      "sid": "430",
@@ -302,7 +302,7 @@
      "test_pic": "",
      "free_test": "",
      "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/locations",
-     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/warehouse/locations"
+     "react_url": ""
     },
     {
      "sid": "644",
@@ -412,7 +412,7 @@
      "test_pic": "",
      "free_test": "",
      "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_rolls",
-     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/unit/roll-settings"
+     "react_url": ""
     },
     {
      "sid": "443",

@@ -98,6 +98,8 @@ var TO=["一覧 (list)","登録/編集 (edit)","明細 (details)","特殊 (speci
 var DORDER=["Khoa","Đạt","Minh","Hưng","Biên","Sơn","Bồn"];
 var BASE=PLAN.backlogBase;
 var ST={impl:{},test:{},updated:""};
+var RT={}, RTB='', RTloaded=false;   // route React live (per-sprint) từ routes-s15.json
+function reactUrl(r){ if(RTloaded){ var rt=RT[String(r.sid)]; return rt?(RTB+rt):''; } return r.react_url||''; }
 function esc(s){return String(s==null?'':s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
 function allRows(){ return PLAN.domains.reduce(function(a,d){return a.concat(d.rows);},[]); }
 function livePic(r){ var x=ST.impl[String(r.parent)]; return (x&&x.pic)||'(chưa gán)'; }
@@ -110,7 +112,8 @@ function rowHtml(r){
   var t=TLBL[r.type]||['pill-draft',r.type];
   var tickets=[tk('親',r.parent),tk('実',r.impl),tk('テ',r.test)].filter(Boolean).join(' <span style="color:var(--border)">·</span> ');
   var ang = r.angular_url ? '<a href="'+esc(r.angular_url)+'" target="_blank" rel="noopener" title="'+esc(r.angular_url)+'">'+esc(r.angular_url.replace(/^https?:\/\/[^/]+/,''))+'</a>' : '<span class="cf-na">—</span>';
-  var rea = r.react_url ? '<a href="'+esc(r.react_url)+'" target="_blank" rel="noopener" title="'+esc(r.react_url)+'">'+esc(r.react_url.replace(/^https?:\/\/[^/]+/,''))+'</a>' : '<span class="cf-na">—</span>';
+  var ru = reactUrl(r);
+  var rea = ru ? '<a href="'+esc(ru)+'" target="_blank" rel="noopener" title="'+esc(ru)+'">'+esc(ru.replace(/^https?:\/\/[^/]+/,''))+'</a>' : '<span class="cf-na">—</span>';
   var tr=testRec(r);
   return '<tr>'
     +'<td><span class="ticket">'+esc(r.sid)+'</span></td>'
@@ -166,14 +169,23 @@ function fetchStatus(){
   return fetch(U+'?t='+Date.now()).then(function(r){return r.json();}).then(function(d){ST=d;renderAll();})
     .catch(function(){ renderAll(); });
 }
-renderAll(); fetchStatus(); setInterval(fetchStatus,60000);
+function fetchRoutes(){
+  var U='https://raw.githubusercontent.com/nguyenducbien-art/w3-pr-tracking-tables/data/routes-s15.json';
+  return fetch(U+'?t='+Date.now()).then(function(r){return r.json();}).then(function(d){
+    RT=d.routes||{}; RTB=d.base||''; RTloaded=true;
+    var rm=document.getElementById('s15rmeta'); if(rm) rm.textContent='URL React = per-sprint stg (nhánh '+((d.branch||'').split('/').pop())+', cập nhật '+(d.updated||'')+')';
+    renderAll();
+  }).catch(function(){ /* giữ react_url tĩnh đã nhúng */ });
+}
+renderAll(); fetchStatus(); fetchRoutes(); setInterval(fetchStatus,60000); setInterval(fetchRoutes,60000);
 })();
 """
 
 body = ('<div class="page">'
   + '<div class="page-header"><h1>Phân công việc — Sprint 15</h1>'
   + '<span class="meta">' + str(total) + ' màn · ' + str(len(PLAN["domains"])) + ' domain · PIC LIVE từ Backlog</span></div>'
-  + '<div id="s15meta" class="subtitle" style="margin-bottom:6px;font-style:italic">đang tải trạng thái Backlog…</div>'
+  + '<div id="s15meta" class="subtitle" style="margin-bottom:2px;font-style:italic">đang tải trạng thái Backlog…</div>'
+  + '<div id="s15rmeta" class="subtitle" style="margin-bottom:6px;font-style:italic">đang tải route React…</div>'
   + '<div class="subtitle">' + esc(PLAN["note"]) + '</div>'
   + '<details style="margin-bottom:10px"><summary style="cursor:pointer;font-size:13px;font-weight:600">Phân bổ theo Backlog assignee (live)</summary>'
   + '<div id="s15alloc" style="margin-top:8px"></div></details>'
