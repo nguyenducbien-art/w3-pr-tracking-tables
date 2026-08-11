@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-11 11:59",
- "tip": "09fd153475",
+ "updated": "2026-08-11 15:18",
+ "tip": "7a2f273efb",
  "branch": "mimosa/frontend/develop/per-sprint",
  "base": "https://mimosa-stg-react-per-sprint.dialog-wms.com",
  "routes": {
@@ -100,6 +100,7 @@
   "626": "/stocks/unset-creates",
   "627": "/stocks/unset-target-headers",
   "638": "/stocks/sh-create",
+  "639": "/unit/user-me-edits",
   "640": "/stocks/snap-shot-headers",
   "641": "/stocks/snap-shot-details",
   "644": "/warehouse/pallets",
