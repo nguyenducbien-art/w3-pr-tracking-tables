@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-11 11:59",
+ "updated": "2026-08-11 12:45",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -712,10 +712,19 @@
   },
   {
    "ticket": "610",
-   "dev": "khoa",
-   "bien": false,
+   "dev": "bien",
+   "bien": true,
    "base": [],
    "r810": [
+    {
+     "num": 11818,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 5,
+     "del": 2,
+     "fc": 1
+    },
     {
      "num": 11770,
      "cf": "ok",
@@ -735,7 +744,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "424_オーナーステータス設定_編集"
+   "title": "424 オーナーステータス設定 is_display=0 時にダッシュボードへリダイレクト"
   },
   {
    "ticket": "997",
