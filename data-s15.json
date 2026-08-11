@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-11 17:50",
+ "updated": "2026-08-11 19:56",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -16,6 +16,60 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1045",
+   "dev": "hung",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11858,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 3608,
+     "del": 2,
+     "fc": 39
+    }
+   ],
+   "created": "08-11 19:18",
+   "drive": true,
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "435_システム倉庫管理_基本設定"
+  },
+  {
+   "ticket": "1077",
+   "dev": "hung",
+   "bien": false,
+   "base": [],
+   "r810": [
+    {
+     "num": 11857,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 3861,
+     "del": 2,
+     "fc": 29
+    }
+   ],
+   "created": "08-11 18:24",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "画面設定_項目別設定 (screen_id=445) を React へ移行"
+  },
   {
    "ticket": "646",
    "dev": "minh",
@@ -188,12 +242,12 @@
    "r810": [
     {
      "num": 11828,
-     "cf": "bad",
-     "st": "draft",
-     "nc": 3,
-     "add": 3005,
-     "del": 17,
-     "fc": 35
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 2366,
+     "del": 3,
+     "fc": 26
     }
    ],
    "created": "08-11 13:58",
@@ -362,7 +416,7 @@
    "created": "08-11 10:38",
    "drive": false,
    "cop": 5,
-   "unres": 2,
+   "unres": 1,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -549,6 +603,15 @@
    "base": [],
    "r810": [
     {
+     "num": 11856,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 256,
+     "del": 100,
+     "fc": 4
+    },
+    {
      "num": 11825,
      "cf": "ok",
      "st": "merged",
@@ -569,8 +632,8 @@
    ],
    "created": "08-10 15:44",
    "drive": false,
-   "cop": 1,
-   "unres": 0,
+   "cop": 3,
+   "unres": 2,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -823,7 +886,7 @@
    "created": "08-10 14:29",
    "drive": false,
    "cop": 4,
-   "unres": 1,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
