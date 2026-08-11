@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-11 14:49",
+ "updated": "2026-08-11 14:57",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -264,8 +264,8 @@
   },
   {
    "ticket": "663",
-   "dev": "bien",
-   "bien": true,
+   "dev": "khoa",
+   "bien": false,
    "base": [],
    "r810": [
     {
@@ -296,7 +296,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "システム倉庫登録のレビュー指摘対応 (国マスタ共通ヘルパー流用・通信エラー時のモーダル抑止)"
+   "title": "システム倉庫登録_special"
   },
   {
    "ticket": "648",
@@ -472,8 +472,8 @@
   },
   {
    "ticket": "644",
-   "dev": "bien",
-   "bien": true,
+   "dev": "khoa",
+   "bien": false,
    "base": [],
    "r810": [
     {
@@ -504,7 +504,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "657 共通項目表示設定 is_display=0 時にダッシュボードへリダイレクト"
+   "title": "657_画面設定_共通項目表示設定"
   },
   {
    "ticket": "664",
@@ -594,7 +594,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "ユーザー登録・編集画面の移行資料を追補"
+   "title": "ユーザー登録・編集画面 (/unit/user-edits) を実装"
   },
   {
    "ticket": "1526",
@@ -797,8 +797,8 @@
   },
   {
    "ticket": "629",
-   "dev": "bien",
-   "bien": true,
+   "dev": "khoa",
+   "bien": false,
    "base": [],
    "r810": [
     {
@@ -829,7 +829,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "462 品質区分設定 is_display=0 時にダッシュボードへリダイレクト"
+   "title": "462_品質区分設定_編集"
   },
   {
    "ticket": "623",
@@ -865,7 +865,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "433_配送関連_配送業者サービスマスタ_削除確認修正"
+   "title": "433_配送関連_配送業者サービスマスタ_一覧"
   },
   {
    "ticket": "620",
@@ -964,7 +964,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "424_オーナーステータス設定_表示パリティ修正"
+   "title": "424_オーナーステータス設定_編集"
   },
   {
    "ticket": "997",
@@ -1177,8 +1177,8 @@
   },
   {
    "ticket": "643",
-   "dev": "bien",
-   "bien": true,
+   "dev": "minh",
+   "bien": false,
    "base": [],
    "r810": [
     {
@@ -1209,7 +1209,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "444 項目表示設定 is_display=0 時にダッシュボードへリダイレクト"
+   "title": "画面設定_項目表示設定 (screen 444) を React 実装"
   },
   {
    "ticket": "1520",
