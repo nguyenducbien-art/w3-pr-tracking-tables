@@ -180,7 +180,10 @@ def build():
     for tk, t in tickets.items():
         metas = t["meta"]; common = t["common"]
         base_m = [m for m in metas if m["key"] == "base"]
-        rep = base_m[0] if base_m else metas[0]
+        # PR đại diện (dev/title/reviewers) = PR SỚM NHẤT = tác giả GỐC của ticket.
+        # KHÔNG lấy metas[0] (PR số cao nhất/mới nhất do gh sort desc) — sẽ gán nhầm cho người
+        # tạo PR fix follow-up (vd ...-fix-r20260810 / -docs) thay vì người implement gốc.
+        rep = min(metas, key=lambda m: m["created"])
         dev = dev_of(rep["author"])
         src = (base_m if base_m else metas) if common else metas   # common: copilot base-only
         cop = sum(m["det"]["cop"] for m in src)
@@ -190,7 +193,7 @@ def build():
         main.append({"ticket":tk,"dev":dev,"bien":dev=="bien",
                      "base":t["base"],"r810":t["r810"],
                      "created":created,"drive":drive,"cop":cop,"unres":unres,
-                     "rvw":rep["det"]["rvw"],   # reviewers của PR đại diện (base nếu có)
+                     "rvw":rep["det"]["rvw"],   # reviewers của PR đại diện (PR gốc/sớm nhất)
                      "title":clean_title(rep["title"]),"_common":common})
     main.sort(key=lambda m:(m["created"], 1 if m["base"] else 0), reverse=True)
     common_list = [m["ticket"] for m in main if m["_common"]]
