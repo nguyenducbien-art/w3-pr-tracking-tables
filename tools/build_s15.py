@@ -110,10 +110,12 @@ function rowHtml(r){
   var t=TLBL[r.type]||['pill-draft',r.type];
   var tickets=[tk('親',r.parent),tk('実',r.impl),tk('テ',r.test)].filter(Boolean).join(' <span style="color:var(--border)">·</span> ');
   var ang = r.angular_url ? '<a href="'+esc(r.angular_url)+'" target="_blank" rel="noopener" title="'+esc(r.angular_url)+'">'+esc(r.angular_url.replace(/^https?:\/\/[^/]+/,''))+'</a>' : '<span class="cf-na">—</span>';
+  var rea = r.react_url ? '<a href="'+esc(r.react_url)+'" target="_blank" rel="noopener" title="'+esc(r.react_url)+'">'+esc(r.react_url.replace(/^https?:\/\/[^/]+/,''))+'</a>' : '<span class="cf-na">—</span>';
   var tr=testRec(r);
   return '<tr>'
     +'<td><span class="ticket">'+esc(r.sid)+'</span></td>'
     +'<td>'+ang+'</td>'
+    +'<td>'+rea+'</td>'
     +'<td><span class="jp-cell">'+esc(r.name)+'</span></td>'
     +'<td><span class="pill '+t[0]+'">'+t[1]+'</span></td>'
     +'<td class="conflict-cell" style="white-space:nowrap">'+tickets+'</td>'
@@ -180,8 +182,8 @@ body = ('<div class="page">'
   +   '<div class="s15tabs"><span class="s15lbl">Dev</span><span id="s15devtabs"></span></div>'
   + '</div>'
   + '<div id="s15dom" class="s15dom"></div>'
-  + '<div class="scroll-wrap"><table style="min-width:1080px"><thead><tr>'
-  + '<th>Screen ID / URL</th><th>AngularJS stg</th><th>Tên màn</th><th>Loại</th><th>Ticket (親 / 実装 / テスト)</th>'
+  + '<div class="scroll-wrap"><table style="min-width:1220px"><thead><tr>'
+  + '<th>Screen ID / URL</th><th>AngularJS stg</th><th>React (per-sprint)</th><th>Tên màn</th><th>Loại</th><th>Ticket (親 / 実装 / テスト)</th>'
   + '<th>Impl PIC (Backlog)</th><th>Test PIC (Backlog)</th>'
   + '</tr></thead><tbody id="s15tbody"></tbody></table></div>'
   + '<div class="footnote">Loại màn: <span class="pill pill-open">list</span> 一覧 · '

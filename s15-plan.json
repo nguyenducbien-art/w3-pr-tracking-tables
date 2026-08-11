@@ -22,7 +22,8 @@
      "impl_pic": "Đạt09",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/element_owner_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/element_owner_edits",
+     "react_url": ""
     },
     {
      "sid": "424",
@@ -34,7 +35,8 @@
      "impl_pic": "Khoa",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/element_code_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/element_code_edits",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/owner/element-code-edits"
     },
     {
      "sid": "425",
@@ -46,7 +48,8 @@
      "impl_pic": "Đạt09",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/clients"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/clients",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/owner/clients"
     },
     {
      "sid": "426",
@@ -58,7 +61,8 @@
      "impl_pic": "Hưng",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/client_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/client_edits",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/client-edits"
     },
     {
      "sid": "488",
@@ -70,7 +74,8 @@
      "impl_pic": "Khoa",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/deliveries"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/deliveries",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/owner/deliveries"
     },
     {
      "sid": "489",
@@ -82,7 +87,8 @@
      "impl_pic": "(để trống)",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/delivery_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/delivery_edits",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/owner/delivery-edits"
     },
     {
      "sid": "427",
@@ -94,7 +100,8 @@
      "impl_pic": "Hưng",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/suppliers"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/suppliers",
+     "react_url": ""
     },
     {
      "sid": "428",
@@ -106,7 +113,8 @@
      "impl_pic": "Minh",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/supplier_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/supplier_edits",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/owner/suppliers/edit"
     },
     {
      "sid": "429",
@@ -118,7 +126,8 @@
      "impl_pic": "(để trống)",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/materials"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/materials",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/owner/materials"
     },
     {
      "sid": "430",
@@ -130,7 +139,8 @@
      "impl_pic": "Đạt09",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/material_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/material_edits",
+     "react_url": ""
     },
     {
      "sid": "468",
@@ -142,7 +152,8 @@
      "impl_pic": "Minh",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/material_packages"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/material_packages",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/owner/material-packages"
     },
     {
      "sid": "469",
@@ -154,7 +165,8 @@
      "impl_pic": "Khoa",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/material_package_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/material_package_edits",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/owner/material-package-edits"
     },
     {
      "sid": "431",
@@ -166,7 +178,8 @@
      "impl_pic": "Đạt09",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/material_sets"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/material_sets",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/owner/material-sets"
     },
     {
      "sid": "432",
@@ -178,7 +191,8 @@
      "impl_pic": "Hưng",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/material_set_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/material_set_edits",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/material-set-edits"
     },
     {
      "sid": "433",
@@ -190,7 +204,8 @@
      "impl_pic": "Khoa",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_carrier_types"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_carrier_types",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/owner/unit-carrier-types"
     },
     {
      "sid": "434",
@@ -202,7 +217,8 @@
      "impl_pic": "(để trống)",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_carrier_type_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_carrier_type_edits",
+     "react_url": ""
     },
     {
      "sid": "765",
@@ -214,7 +230,8 @@
      "impl_pic": "Hưng",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_tariffs"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_tariffs",
+     "react_url": ""
     },
     {
      "sid": "766",
@@ -226,7 +243,8 @@
      "impl_pic": "Minh",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_tariff_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_tariff_edits",
+     "react_url": ""
     },
     {
      "sid": "767",
@@ -238,7 +256,8 @@
      "impl_pic": "(để trống)",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_box_sizes"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_box_sizes",
+     "react_url": ""
     },
     {
      "sid": "768",
@@ -250,7 +269,8 @@
      "impl_pic": "Đạt09",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_box_size_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_box_size_edits",
+     "react_url": ""
     },
     {
      "sid": "462",
@@ -262,7 +282,8 @@
      "impl_pic": "Khoa",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/stock_quality_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/stock_quality_edits",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/owner/stock-quality-edits"
     }
    ]
   },
@@ -280,7 +301,8 @@
      "impl_pic": "Đạt09",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/locations"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/locations",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/warehouse/locations"
     },
     {
      "sid": "644",
@@ -292,7 +314,8 @@
      "impl_pic": "Khoa",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/pallets"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/pallets",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/warehouse/pallets"
     },
     {
      "sid": "632",
@@ -304,7 +327,8 @@
      "impl_pic": "Hưng",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/location_size_categories"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/location_size_categories",
+     "react_url": ""
     },
     {
      "sid": "633",
@@ -316,7 +340,8 @@
      "impl_pic": "(để trống)",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/material_location_size_categories"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/material_location_size_categories",
+     "react_url": ""
     },
     {
      "sid": "435",
@@ -328,7 +353,8 @@
      "impl_pic": "Hưng",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/element_warehouse_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/element_warehouse_edits",
+     "react_url": ""
     },
     {
      "sid": "437",
@@ -340,7 +366,8 @@
      "impl_pic": "(để trống)",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/location_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/location_edits",
+     "react_url": ""
     }
    ]
   },
@@ -358,7 +385,8 @@
      "impl_pic": "Minh",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_edits",
+     "react_url": ""
     },
     {
      "sid": "440",
@@ -370,7 +398,8 @@
      "impl_pic": "Đạt09",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_code_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_code_edits",
+     "react_url": ""
     },
     {
      "sid": "442",
@@ -382,7 +411,8 @@
      "impl_pic": "Minh",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_rolls"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_rolls",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/unit/roll-settings"
     },
     {
      "sid": "443",
@@ -394,7 +424,8 @@
      "impl_pic": "Khoa",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_roll_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_roll_edits",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/unit/roll-edits"
     },
     {
      "sid": "441",
@@ -406,7 +437,8 @@
      "impl_pic": "Đạt09",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/users"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/users",
+     "react_url": ""
     },
     {
      "sid": "618",
@@ -418,7 +450,8 @@
      "impl_pic": "Khoa",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_printers"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_printers",
+     "react_url": ""
     },
     {
      "sid": "445",
@@ -430,7 +463,8 @@
      "impl_pic": "Hưng",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_grid_column_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_grid_column_edits",
+     "react_url": ""
     },
     {
      "sid": "444",
@@ -442,7 +476,8 @@
      "impl_pic": "Minh",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_grid_column_display_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_grid_column_display_edits",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/unit/grid-column-display-edits"
     },
     {
      "sid": "657",
@@ -454,7 +489,8 @@
      "impl_pic": "(để trống)",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_grid_column_display_common_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_grid_column_display_common_edits",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/unit/grid-column-display-common-edits"
     },
     {
      "sid": "586",
@@ -466,7 +502,8 @@
      "impl_pic": "Minh",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/ht_view_attribute_display_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/ht_view_attribute_display_edits",
+     "react_url": ""
     },
     {
      "sid": "615",
@@ -478,7 +515,8 @@
      "impl_pic": "Hưng",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/ht_view_settings"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/ht_view_settings",
+     "react_url": ""
     },
     {
      "sid": "526",
@@ -490,7 +528,8 @@
      "impl_pic": "Khoa",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_if_apis"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_if_apis",
+     "react_url": ""
     },
     {
      "sid": "527",
@@ -502,7 +541,8 @@
      "impl_pic": "(để trống)",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_if_results"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_if_results",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/unit/if-results"
     },
     {
      "sid": "450",
@@ -514,7 +554,8 @@
      "impl_pic": "Minh",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_if_api_imports"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_if_api_imports",
+     "react_url": ""
     },
     {
      "sid": "451",
@@ -526,7 +567,8 @@
      "impl_pic": "Đạt09",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_if_api_exports"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_if_api_exports",
+     "react_url": ""
     },
     {
      "sid": "453",
@@ -538,7 +580,8 @@
      "impl_pic": "Đạt09",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_if_api_export_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_if_api_export_edits",
+     "react_url": ""
     },
     {
      "sid": "452",
@@ -550,7 +593,8 @@
      "impl_pic": "Khoa",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_if_api_import_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_if_api_import_edits",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/unit/if-api-import-edits"
     },
     {
      "sid": "570",
@@ -562,7 +606,8 @@
      "impl_pic": "Khoa",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/report_headers"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/report_headers",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/unit/report-headers"
     },
     {
      "sid": "448",
@@ -574,7 +619,8 @@
      "impl_pic": "Hưng",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_report_patterns"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_report_patterns",
+     "react_url": ""
     },
     {
      "sid": "449",
@@ -586,7 +632,8 @@
      "impl_pic": "Hưng",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_report_pattern_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_report_pattern_edits",
+     "react_url": ""
     },
     {
      "sid": "447",
@@ -598,7 +645,8 @@
      "impl_pic": "(để trống)",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_report_funcs"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_report_funcs",
+     "react_url": ""
     },
     {
      "sid": "643",
@@ -610,7 +658,8 @@
      "impl_pic": "(để trống)",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_outbound_setting/next_engine"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_outbound_setting/next_engine",
+     "react_url": ""
     }
    ]
   },
@@ -628,7 +677,8 @@
      "impl_pic": "Minh",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/inv_headers"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/inv_headers",
+     "react_url": ""
     },
     {
      "sid": "653",
@@ -640,7 +690,8 @@
      "impl_pic": "Minh",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/inv_details"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/inv_details",
+     "react_url": ""
     },
     {
      "sid": "654",
@@ -652,7 +703,8 @@
      "impl_pic": "Minh",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/inv_charge_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/inv_charge_edits",
+     "react_url": ""
     }
    ]
   },
@@ -670,7 +722,8 @@
      "impl_pic": "Đạt09",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/owner"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/owner",
+     "react_url": ""
     },
     {
      "sid": "/warehouse",
@@ -682,7 +735,8 @@
      "impl_pic": "Khoa",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/warehouse"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/warehouse",
+     "react_url": ""
     },
     {
      "sid": "/unit",
@@ -694,7 +748,8 @@
      "impl_pic": "Hưng",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit",
+     "react_url": ""
     },
     {
      "sid": "/user",
@@ -706,7 +761,8 @@
      "impl_pic": "Đạt09",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/user"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/user",
+     "react_url": ""
     },
     {
      "sid": "/user_edits",
@@ -718,7 +774,8 @@
      "impl_pic": "(để trống)",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/user_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/user_edits",
+     "react_url": ""
     },
     {
      "sid": "639",
@@ -730,7 +787,8 @@
      "impl_pic": "Minh",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/user_me_edits"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/user_me_edits",
+     "react_url": ""
     },
     {
      "sid": "/company",
@@ -742,7 +800,8 @@
      "impl_pic": "Đạt09",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/company"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/company",
+     "react_url": ""
     }
    ]
   },
@@ -760,7 +819,8 @@
      "impl_pic": "Khoa",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/dashboards"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/dashboards",
+     "react_url": ""
     },
     {
      "sid": "722",
@@ -772,7 +832,8 @@
      "impl_pic": "Hưng",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/dashboards_operations"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/dashboards_operations",
+     "react_url": ""
     },
     {
      "sid": "723",
@@ -784,7 +845,8 @@
      "impl_pic": "(để trống)",
      "test_pic": "",
      "free_test": "",
-     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/dashboards_analysis"
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/dashboards_analysis",
+     "react_url": ""
     },
     {
      "sid": "(機能)",
@@ -796,7 +858,8 @@
      "impl_pic": "Minh",
      "test_pic": "",
      "free_test": "",
-     "angular_url": ""
+     "angular_url": "",
+     "react_url": ""
     },
     {
      "sid": "(機能)",
@@ -808,7 +871,8 @@
      "impl_pic": "Hưng",
      "test_pic": "",
      "free_test": "",
-     "angular_url": ""
+     "angular_url": "",
+     "react_url": ""
     },
     {
      "sid": "(機能)",
@@ -820,7 +884,8 @@
      "impl_pic": "(để trống)",
      "test_pic": "",
      "free_test": "",
-     "angular_url": ""
+     "angular_url": "",
+     "react_url": ""
     },
     {
      "sid": "(機能)",
@@ -832,7 +897,8 @@
      "impl_pic": "Minh",
      "test_pic": "",
      "free_test": "",
-     "angular_url": ""
+     "angular_url": "",
+     "react_url": ""
     }
    ]
   }
