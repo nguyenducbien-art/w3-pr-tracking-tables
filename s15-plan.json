@@ -22,7 +22,7 @@
      "impl_pic": "Đạt09",
      "test_pic": "",
      "free_test": "",
-     "angular_url": ""
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/element_owner_edits"
     },
     {
      "sid": "424",
@@ -34,7 +34,7 @@
      "impl_pic": "Khoa",
      "test_pic": "",
      "free_test": "",
-     "angular_url": ""
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/element_code_edits"
     },
     {
      "sid": "425",
@@ -130,7 +130,7 @@
      "impl_pic": "Đạt09",
      "test_pic": "",
      "free_test": "",
-     "angular_url": ""
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/material_edits"
     },
     {
      "sid": "468",
@@ -178,7 +178,7 @@
      "impl_pic": "Hưng",
      "test_pic": "",
      "free_test": "",
-     "angular_url": ""
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/material_set_edits"
     },
     {
      "sid": "433",
@@ -202,7 +202,7 @@
      "impl_pic": "(để trống)",
      "test_pic": "",
      "free_test": "",
-     "angular_url": ""
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_carrier_type_edits"
     },
     {
      "sid": "765",
@@ -316,7 +316,7 @@
      "impl_pic": "(để trống)",
      "test_pic": "",
      "free_test": "",
-     "angular_url": ""
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/material_location_size_categories"
     },
     {
      "sid": "435",
@@ -340,7 +340,7 @@
      "impl_pic": "(để trống)",
      "test_pic": "",
      "free_test": "",
-     "angular_url": ""
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/location_edits"
     }
    ]
   },
@@ -358,7 +358,7 @@
      "impl_pic": "Minh",
      "test_pic": "",
      "free_test": "",
-     "angular_url": ""
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_edits"
     },
     {
      "sid": "440",
@@ -514,7 +514,7 @@
      "impl_pic": "Minh",
      "test_pic": "",
      "free_test": "",
-     "angular_url": ""
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_if_api_imports"
     },
     {
      "sid": "451",
@@ -562,7 +562,7 @@
      "impl_pic": "Khoa",
      "test_pic": "",
      "free_test": "",
-     "angular_url": ""
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/report_headers"
     },
     {
      "sid": "448",
@@ -730,7 +730,7 @@
      "impl_pic": "Minh",
      "test_pic": "",
      "free_test": "",
-     "angular_url": ""
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/user_me_edits"
     },
     {
      "sid": "/company",
