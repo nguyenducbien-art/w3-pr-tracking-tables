@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-12 13:25",
- "tip": "f5619ee54e",
+ "updated": "2026-08-12 15:49",
+ "tip": "06af0a01b5",
  "branch": "mimosa/frontend/develop/per-sprint",
  "base": "https://mimosa-stg-react-per-sprint.dialog-wms.com",
  "routes": {
@@ -67,6 +67,7 @@
   "412": "/stocks/outstock-history-headers",
   "414": "/stocks/outstock-history-details",
   "420": "/stocks/outstock-creates",
+  "423": "/owner/element-owner-edits",
   "424": "/owner/element-code-edits",
   "425": "/owner/clients",
   "426": "/owner/client-edits",
@@ -84,6 +85,7 @@
   "444": "/unit/grid-column-display-edits",
   "445": "/unit/grid-column-edits",
   "446": "/unit/code-extension-edits",
+  "447": "/unit/report-funcs",
   "448": "/unit/report-patterns",
   "449": "/unit/report-pattern-edits",
   "451": "/unit/if-api-exports",
@@ -107,10 +109,12 @@
   "625": "/stocks/unset-history-details",
   "626": "/stocks/unset-creates",
   "627": "/stocks/unset-target-headers",
+  "633": "/warehouse/material-location-size-categories",
   "638": "/stocks/sh-create",
   "639": "/unit/user-me-edits",
   "640": "/stocks/snap-shot-headers",
   "641": "/stocks/snap-shot-details",
+  "643": "/unit/outbound-setting/next-engine",
   "644": "/warehouse/pallets",
   "645": "/stocks/sum-headers",
   "657": "/unit/grid-column-display-common-edits",
@@ -122,6 +126,8 @@
   "706": "/stocks/predict/details",
   "721": "/shipments/history/serials",
   "722": "/dashboard/operations",
-  "725": "/shipments/inspection-pcscans"
+  "723": "/dashboard/analysis",
+  "725": "/shipments/inspection-pcscans",
+  "767": "/owner/unit-box-sizes"
  }
 }

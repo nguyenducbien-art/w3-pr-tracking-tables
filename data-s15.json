@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-12 15:40",
+ "updated": "2026-08-12 15:49",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -20,6 +20,34 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
   {
+   "ticket": "1005",
+   "dev": "dat",
+   "bien": false,
+   "sid": "434",
+   "base": [],
+   "r810": [
+    {
+     "num": 11909,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 4377,
+     "del": 5,
+     "fc": 40
+    }
+   ],
+   "created": "08-12 15:46",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "配送関連_配送業者サービス追加・編集 (screen_id=434) の実装＆単体テスト"
+  },
+  {
    "ticket": "650",
    "dev": "minh",
    "bien": false,
@@ -38,8 +66,8 @@
    ],
    "created": "08-12 15:38",
    "drive": false,
-   "cop": 0,
-   "unres": 0,
+   "cop": 2,
+   "unres": 1,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -254,8 +282,8 @@
      "num": 11891,
      "cf": "bad",
      "st": "open",
-     "nc": 3,
-     "add": 4516,
+     "nc": 4,
+     "add": 4530,
      "del": 54,
      "fc": 44
     }

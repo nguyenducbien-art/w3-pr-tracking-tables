@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-12 15:38",
+ "updated": "2026-08-12 15:48",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -2130,7 +2130,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "一覧共通コンポーネントに表示件数上限(E029)判定を追加"
   },
