@@ -1,8 +1,10 @@
 {
- "updated": "2026-08-12 14:13",
+ "updated": "2026-08-12 14:29",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1479",
+  "1541",
   "1540",
   "1532",
   "1531",
@@ -17,6 +19,90 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1479",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 11897,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 64,
+     "del": 607,
+     "fc": 16
+    }
+   ],
+   "created": "08-12 14:23",
+   "drive": false,
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "revert: [mimosa][frontend] ファイル出力中/帳票出力中モーダルの×中断機能をリバート"
+  },
+  {
+   "ticket": "1097",
+   "dev": "hung",
+   "bien": false,
+   "sid": "615",
+   "base": [],
+   "r810": [
+    {
+     "num": 11896,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 1915,
+     "del": 2,
+     "fc": 24
+    }
+   ],
+   "created": "08-12 14:23",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ハンディ設定メニューを実装"
+  },
+  {
+   "ticket": "1541",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 11894,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 203,
+     "del": 6,
+     "fc": 6
+    }
+   ],
+   "r810": [],
+   "created": "08-12 14:22",
+   "drive": true,
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ダウンロードファイル名修正のレビュー指摘を解消"
+  },
   {
    "ticket": "1037",
    "dev": "hung",
@@ -37,7 +123,7 @@
    "created": "08-12 14:06",
    "drive": true,
    "cop": 1,
-   "unres": 1,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],

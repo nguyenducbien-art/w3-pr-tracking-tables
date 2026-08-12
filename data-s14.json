@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-12 14:01",
+ "updated": "2026-08-12 14:27",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1298,18 +1298,17 @@
    "ticket": "1479",
    "dev": "bien",
    "bien": true,
-   "base": [
-    {
-     "num": 11359,
-     "cf": "ok",
-     "st": "changes",
-     "nc": 2,
-     "add": 603,
-     "del": 82,
-     "fc": 16
-    }
-   ],
+   "base": [],
    "r727": [
+    {
+     "num": 11895,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 64,
+     "del": 607,
+     "fc": 16
+    },
     {
      "num": 11360,
      "cf": "ok",
@@ -1326,12 +1325,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [
-     "kanayam"
-    ],
+    "ch": [],
     "pd": []
    },
-   "title": "ファイル出力中/帳票出力中モーダルの×で実行中処理を中断する"
+   "title": "revert: [mimosa][frontend] ファイル出力中/帳票出力中モーダルの×中断機能をリバート"
   },
   {
    "ticket": "572",
