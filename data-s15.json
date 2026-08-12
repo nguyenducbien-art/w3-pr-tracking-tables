@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-12 10:14",
+ "updated": "2026-08-12 10:38",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -20,6 +20,7 @@
    "ticket": "635",
    "dev": "minh",
    "bien": false,
+   "sid": "437",
    "base": [],
    "r810": [
     {
@@ -47,6 +48,7 @@
    "ticket": "1129",
    "dev": "hung",
    "bien": false,
+   "sid": "448",
    "base": [],
    "r810": [
     {
@@ -74,6 +76,7 @@
    "ticket": "1189",
    "dev": "hung",
    "bien": false,
+   "sid": "722",
    "base": [],
    "r810": [
     {
@@ -101,6 +104,7 @@
    "ticket": "1193",
    "dev": "hung",
    "bien": false,
+   "sid": "723",
    "base": [],
    "r810": [
     {
@@ -128,6 +132,7 @@
    "ticket": "1045",
    "dev": "hung",
    "bien": false,
+   "sid": "435",
    "base": [],
    "r810": [
     {
@@ -155,6 +160,7 @@
    "ticket": "1077",
    "dev": "hung",
    "bien": false,
+   "sid": "445",
    "base": [],
    "r810": [
     {
@@ -182,6 +188,7 @@
    "ticket": "646",
    "dev": "minh",
    "bien": false,
+   "sid": "586",
    "base": [],
    "r810": [
     {
@@ -209,6 +216,7 @@
    "ticket": "1532",
    "dev": "dat",
    "bien": false,
+   "sid": "",
    "base": [
     {
      "num": 11842,
@@ -246,6 +254,7 @@
    "ticket": "1113",
    "dev": "dat",
    "bien": false,
+   "sid": "451",
    "base": [],
    "r810": [
     {
@@ -273,6 +282,7 @@
    "ticket": "1177",
    "dev": "bien",
    "bien": true,
+   "sid": "639",
    "base": [],
    "r810": [
     {
@@ -309,6 +319,7 @@
    "ticket": "1531",
    "dev": "minh",
    "bien": false,
+   "sid": "",
    "base": [
     {
      "num": 11832,
@@ -346,14 +357,15 @@
    "ticket": "1069",
    "dev": "dat",
    "bien": false,
+   "sid": "441",
    "base": [],
    "r810": [
     {
      "num": 11828,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 2366,
+     "nc": 3,
+     "add": 2357,
      "del": 3,
      "fc": 26
     }
@@ -373,6 +385,7 @@
    "ticket": "1133",
    "dev": "hung",
    "bien": false,
+   "sid": "449",
    "base": [],
    "r810": [
     {
@@ -400,6 +413,7 @@
    "ticket": "1529",
    "dev": "minh",
    "bien": false,
+   "sid": "",
    "base": [
     {
      "num": 11815,
@@ -437,6 +451,7 @@
    "ticket": "1530",
    "dev": "minh",
    "bien": false,
+   "sid": "",
    "base": [
     {
      "num": 11814,
@@ -474,6 +489,7 @@
    "ticket": "663",
    "dev": "khoa",
    "bien": false,
+   "sid": "/warehouse",
    "base": [],
    "r810": [
     {
@@ -519,6 +535,7 @@
    "ticket": "648",
    "dev": "khoa",
    "bien": false,
+   "sid": "526",
    "base": [],
    "r810": [
     {
@@ -546,6 +563,7 @@
    "ticket": "641",
    "dev": "khoa",
    "bien": false,
+   "sid": "618",
    "base": [],
    "r810": [
     {
@@ -573,6 +591,7 @@
    "ticket": "638",
    "dev": "minh",
    "bien": false,
+   "sid": "442",
    "base": [],
    "r810": [
     {
@@ -600,6 +619,7 @@
    "ticket": "617",
    "dev": "minh",
    "bien": false,
+   "sid": "429",
    "base": [],
    "r810": [
     {
@@ -627,6 +647,7 @@
    "ticket": "616",
    "dev": "minh",
    "bien": false,
+   "sid": "428",
    "base": [],
    "r810": [
     {
@@ -654,6 +675,7 @@
    "ticket": "1527",
    "dev": "minh",
    "bien": false,
+   "sid": "",
    "base": [
     {
      "num": 11792,
@@ -691,6 +713,7 @@
    "ticket": "644",
    "dev": "khoa",
    "bien": false,
+   "sid": "657",
    "base": [],
    "r810": [
     {
@@ -736,6 +759,7 @@
    "ticket": "664",
    "dev": "hung",
    "bien": false,
+   "sid": "/unit",
    "base": [],
    "r810": [
     {
@@ -763,6 +787,7 @@
    "ticket": "649",
    "dev": "khoa",
    "bien": false,
+   "sid": "527",
    "base": [],
    "r810": [
     {
@@ -790,6 +815,7 @@
    "ticket": "666",
    "dev": "bien",
    "bien": true,
+   "sid": "/user_edits",
    "base": [],
    "r810": [
     {
@@ -826,6 +852,7 @@
    "ticket": "1526",
    "dev": "dat",
    "bien": false,
+   "sid": "",
    "base": [
     {
      "num": 11783,
@@ -863,6 +890,7 @@
    "ticket": "1029",
    "dev": "dat",
    "bien": false,
+   "sid": "436",
    "base": [],
    "r810": [
     {
@@ -890,6 +918,7 @@
    "ticket": "639",
    "dev": "khoa",
    "bien": false,
+   "sid": "443",
    "base": [],
    "r810": [
     {
@@ -926,6 +955,7 @@
    "ticket": "654",
    "dev": "khoa",
    "bien": false,
+   "sid": "570",
    "base": [],
    "r810": [
     {
@@ -953,6 +983,7 @@
    "ticket": "614",
    "dev": "khoa",
    "bien": false,
+   "sid": "489",
    "base": [],
    "r810": [
     {
@@ -960,9 +991,9 @@
      "cf": "ok",
      "st": "open",
      "nc": 4,
-     "add": 464,
-     "del": 325,
-     "fc": 10
+     "add": 525,
+     "del": 334,
+     "fc": 11
     },
     {
      "num": 11777,
@@ -989,6 +1020,7 @@
    "ticket": "653",
    "dev": "khoa",
    "bien": false,
+   "sid": "452",
    "base": [],
    "r810": [
     {
@@ -1025,6 +1057,7 @@
    "ticket": "631",
    "dev": "khoa",
    "bien": false,
+   "sid": "644",
    "base": [],
    "r810": [
     {
@@ -1052,6 +1085,7 @@
    "ticket": "629",
    "dev": "khoa",
    "bien": false,
+   "sid": "462",
    "base": [],
    "r810": [
     {
@@ -1097,6 +1131,7 @@
    "ticket": "623",
    "dev": "khoa",
    "bien": false,
+   "sid": "433",
    "base": [],
    "r810": [
     {
@@ -1133,6 +1168,7 @@
    "ticket": "620",
    "dev": "khoa",
    "bien": false,
+   "sid": "469",
    "base": [],
    "r810": [
     {
@@ -1160,6 +1196,7 @@
    "ticket": "613",
    "dev": "khoa",
    "bien": false,
+   "sid": "488",
    "base": [],
    "r810": [
     {
@@ -1187,6 +1224,7 @@
    "ticket": "610",
    "dev": "khoa",
    "bien": false,
+   "sid": "424",
    "base": [],
    "r810": [
     {
@@ -1232,6 +1270,7 @@
    "ticket": "997",
    "dev": "hung",
    "bien": false,
+   "sid": "432",
    "base": [],
    "r810": [
     {
@@ -1259,6 +1298,7 @@
    "ticket": "1525",
    "dev": "minh",
    "bien": false,
+   "sid": "",
    "base": [
     {
      "num": 11766,
@@ -1296,6 +1336,7 @@
    "ticket": "619",
    "dev": "minh",
    "bien": false,
+   "sid": "468",
    "base": [],
    "r810": [
     {
@@ -1323,6 +1364,7 @@
    "ticket": "612",
    "dev": "hung",
    "bien": false,
+   "sid": "426",
    "base": [],
    "r810": [
     {
@@ -1350,6 +1392,7 @@
    "ticket": "993",
    "dev": "dat",
    "bien": false,
+   "sid": "431",
    "base": [],
    "r810": [
     {
@@ -1377,6 +1420,7 @@
    "ticket": "953",
    "dev": "dat",
    "bien": false,
+   "sid": "425",
    "base": [],
    "r810": [
     {
@@ -1404,6 +1448,7 @@
    "ticket": "1521",
    "dev": "minh",
    "bien": false,
+   "sid": "",
    "base": [
     {
      "num": 11738,
@@ -1441,6 +1486,7 @@
    "ticket": "643",
    "dev": "minh",
    "bien": false,
+   "sid": "444",
    "base": [],
    "r810": [
     {
@@ -1477,6 +1523,7 @@
    "ticket": "1520",
    "dev": "minh",
    "bien": false,
+   "sid": "",
    "base": [
     {
      "num": 11731,
