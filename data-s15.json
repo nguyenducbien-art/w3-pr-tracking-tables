@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-12 13:13",
+ "updated": "2026-08-12 13:24",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -17,6 +17,34 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "981",
+   "dev": "dat",
+   "bien": false,
+   "sid": "430",
+   "base": [],
+   "r810": [
+    {
+     "num": 11891,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 4516,
+     "del": 54,
+     "fc": 43
+    }
+   ],
+   "created": "08-12 13:12",
+   "drive": false,
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "商品関連_商品追加・編集 (screen 430) を React へ移行"
+  },
   {
    "ticket": "1041",
    "dev": "dat",
@@ -121,7 +149,7 @@
     {
      "num": 11875,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 2,
      "add": 56,
      "del": 16,
@@ -232,12 +260,12 @@
    "r810": [
     {
      "num": 11859,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 1611,
-     "del": 301,
-     "fc": 21
+     "nc": 2,
+     "add": 1157,
+     "del": 181,
+     "fc": 19
     }
    ],
    "created": "08-11 23:33",

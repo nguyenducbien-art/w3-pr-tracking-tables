@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-12 11:49",
- "tip": "aa7e8371f1",
+ "updated": "2026-08-12 13:25",
+ "tip": "f5619ee54e",
  "branch": "mimosa/frontend/develop/per-sprint",
  "base": "https://mimosa-stg-react-per-sprint.dialog-wms.com",
  "routes": {
@@ -75,12 +75,14 @@
   "431": "/owner/material-sets",
   "432": "/material-set-edits",
   "433": "/owner/unit-carrier-types",
+  "435": "/warehouse/element-warehouse-edits",
   "436": "/warehouse/locations",
   "437": "/location-edits",
   "441": "/unit/users",
   "442": "/unit/roll-settings",
   "443": "/unit/roll-edits",
   "444": "/unit/grid-column-display-edits",
+  "445": "/unit/grid-column-edits",
   "446": "/unit/code-extension-edits",
   "448": "/unit/report-patterns",
   "449": "/unit/report-pattern-edits",
@@ -119,6 +121,7 @@
   "705": "/stocks/predict/headers",
   "706": "/stocks/predict/details",
   "721": "/shipments/history/serials",
+  "722": "/dashboard/operations",
   "725": "/shipments/inspection-pcscans"
  }
 }
