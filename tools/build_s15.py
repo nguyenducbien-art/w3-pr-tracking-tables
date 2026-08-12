@@ -23,6 +23,26 @@ _pr = re.search(r'RENDER_JS = r"""(.*?)"""', open("build_s12.py").read(), re.S).
 for _a, _b in [("data-s12.json", "data-s15.json"), ("r20260629", "r20260810"),
                ("r629", "r810"), ("Sprint 12", "Sprint 15"), ("2026-07-27", "2026-08-01")]:
     _pr = _pr.replace(_a, _b)
+# ---- CHÈN cột "Screen" (screen_id) — CHỈ Bảng 2 (normalRows), qua param showScreen ----
+# r.sid nhúng sẵn trong data-s15.json (map ticket→screen_id từ s15-plan.json). Bảng 1 (common) không có.
+_SCR_CELL = ("+(showScreen?('<td>'+(r.sid?'<span class=\"ticket\">'+esc(String(r.sid))"
+             "+'</span>':'<span class=\"cf-na\">—</span>')+'</td>'):'')")
+for _a, _b in [
+    ("function mainRow(r){", "function mainRow(r,showScreen){"),
+    ("function mainBlock(rows,title,sub){", "function mainBlock(rows,title,sub,showScreen){"),
+    ("return mainRow(r);", "return mainRow(r,showScreen);"),
+    # chèn ô screen ngay sau ô ticket trong row
+    ("+'<td><span class=\"ticket\">'+r.ticket+'</span></td>'",
+     "+'<td><span class=\"ticket\">'+r.ticket+'</span></td>'" + _SCR_CELL),
+    # chèn <th>Screen</th> sau <th>Ticket</th> trong header (chỉ mainBlock có →base, KHÔNG đụng scaffold)
+    ("'<th>Ticket</th><th>Dev</th><th>→base</th>",
+     "'<th>Ticket</th>'+(showScreen?'<th>Screen</th>':'')+'<th>Dev</th><th>→base</th>"),
+    # bật/tắt cột theo bảng
+    ("Copilot chỉ đếm PR→base.')", "Copilot chỉ đếm PR→base.',false)"),
+    ("(màn migration + fix lẻ).')", "(màn migration + fix lẻ).',true)"),
+]:
+    assert _a in _pr, "anchor không thấy: %s" % _a[:40]
+    _pr = _pr.replace(_a, _b)
 PR_RENDER = _pr
 
 def esc(s):

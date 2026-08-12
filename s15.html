@@ -144,7 +144,7 @@
 <style>.s15tabwrap{border-bottom:1px solid var(--border);margin:8px 0 10px}.s15tabs{display:flex;flex-wrap:wrap;gap:4px;align-items:center;margin-bottom:3px}.s15lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--text-dim);margin-right:8px;min-width:50px}.s15tab{padding:6px 11px;border:1px solid var(--border);border-bottom:none;border-radius:7px 7px 0 0;background:var(--bg-header);color:var(--text-dim);cursor:pointer;font:600 12.5px system-ui,sans-serif;position:relative;top:1px}.s15tab:hover{color:var(--text)}.s15tab.active{background:var(--accent);color:#fff}.s15tab .cnt{font-size:10.5px;opacity:.85;font-variant-numeric:tabular-nums}:root[data-theme="dark"] .s15tab.active{color:#10201c}@media (prefers-color-scheme:dark){.s15tab.active{color:#10201c}}:root[data-theme="light"] .s15tab.active{color:#fff}.s15dom{font-size:11.5px;color:var(--text-dim);margin:0 0 6px}</style>
 </head>
 <body>
-<nav class="topnav"><div class="topnav-inner"><span class="topnav-brand">W3 PR Tracking</span><span class="topnav-sep">/</span><a href="s12.html?v=1786420729">Sprint 12</a><a href="index.html?v=1786420729">Sprint 13</a><a href="s14.html?v=1786420729">Sprint 14</a><a href="s15.html?v=1786420729" class="active">Sprint 15</a></div></nav>
+<nav class="topnav"><div class="topnav-inner"><span class="topnav-brand">W3 PR Tracking</span><span class="topnav-sep">/</span><a href="s12.html?v=1786505563">Sprint 12</a><a href="index.html?v=1786505563">Sprint 13</a><a href="s14.html?v=1786505563">Sprint 14</a><a href="s15.html?v=1786505563" class="active">Sprint 15</a></div></nav>
 <div id="app"></div>
 <div class="page"><div class="page-header"><h1>Phân công việc — Sprint 15</h1><span class="meta">66 màn · 6 domain · PIC LIVE từ Backlog</span></div><div id="s15meta" class="subtitle" style="margin-bottom:2px;font-style:italic">đang tải trạng thái Backlog…</div><div id="s15rmeta" class="subtitle" style="margin-bottom:6px;font-style:italic">đang tải route React…</div><div class="subtitle">66 màn / 6 domain (親 609–675). 画面名 / loại màn (実装タイプ) / ticket 親·実装·テスト / URL = cố định. Impl PIC + Test PIC hiển thị LIVE theo assignee thật trên Backlog (親 / テスト実施), tự cập nhật mỗi 5 phút.</div><details style="margin-bottom:10px"><summary style="cursor:pointer;font-size:13px;font-weight:600">Phân bổ theo Backlog assignee (live)</summary><div id="s15alloc" style="margin-top:8px"></div></details><div class="s15tabwrap"><div class="s15tabs"><span class="s15lbl">Domain</span><button class="s15tab active" data-i="-1">Tất cả <span class="cnt">66</span></button><button class="s15tab" data-i="0">Owner management <span class="cnt">21</span></button><button class="s15tab" data-i="1">Warehouse management <span class="cnt">6</span></button><button class="s15tab" data-i="2">Unit management <span class="cnt">22</span></button><button class="s15tab" data-i="3">Billing <span class="cnt">3</span></button><button class="s15tab" data-i="4">System settings <span class="cnt">7</span></button><button class="s15tab" data-i="5">Dashboard / Unit-top <span class="cnt">7</span></button></div><div class="s15tabs"><span class="s15lbl">Dev</span><span id="s15devtabs"></span></div></div><div id="s15dom" class="s15dom"></div><div class="scroll-wrap"><table style="min-width:1220px"><thead><tr><th>Screen ID / URL</th><th>AngularJS stg</th><th>React (per-sprint)</th><th>Tên màn</th><th>Loại</th><th>Ticket (親 / 実装 / テスト)</th><th>Impl PIC (Backlog)</th><th>Test PIC (Backlog)</th></tr></thead><tbody id="s15tbody"></tbody></table></div><div class="footnote">Loại màn: <span class="pill pill-open">list</span> 一覧 · <span class="pill pill-draft">edit</span> 登録/編集 · <span class="pill pill-merged">details</span> 明細 · <span class="pill pill-pinned">special</span> 特殊. &nbsp; Ticket: <b>親</b>=cha · <b>実装</b>=implement＆単体テスト · <b>テ</b>=テスト実施 (click mở Backlog).<br><b>Impl PIC / Test PIC = assignee THẬT trên Backlog</b> (親 / テスト実施), tự cập nhật mỗi 5p; status: <span class="pill pill-approved">✅</span> Resolved/Closed · <span class="pill pill-changes">🔵</span> In Progress · <span class="pill pill-todo">⚪</span> Open · “(chưa gán)” = chưa ai nhận trên Backlog.<br>Screen list / 画面名 / loại / ticket / URL là cấu hình cố định (<code>s15-plan.json</code>); <b>Table A</b> phía trên = PR tracking (nhánh r20260810).</div></div>
 <script src="https://nguyenducbien-art.github.io/pixel-pets/pixel-pets.js" data-min="2" data-max="5" defer></script>
@@ -180,11 +180,11 @@ function render(D){
   }
 
   // ---- helper: 1 row bảng chính ----
-  function mainRow(r){
+  function mainRow(r,showScreen){
     var devcls=(r.dev==='bien')?'dev dev-bien':'dev';
     var rep=r.drive?'<span class="report-yes">✓</span>':'<span class="report-no">—</span>';
     return '<tr>'
-      +'<td><span class="ticket">'+r.ticket+'</span></td>'
+      +'<td><span class="ticket">'+r.ticket+'</span></td>'+(showScreen?('<td>'+(r.sid?'<span class="ticket">'+esc(String(r.sid))+'</span>':'<span class="cf-na">—</span>')+'</td>'):'')
       +'<td><span class="'+devcls+'">'+r.dev+'</span></td>'
       +'<td>'+cell(r.base||[],INVALID.has(r.ticket))+'</td>'
       +'<td>'+cell(r.r810||[],false)+'</td>'
@@ -197,13 +197,13 @@ function render(D){
     +'</tr>';
   }
   // ---- helper: 1 block bảng chính (heading + stats + table) ----
-  function mainBlock(rows,title,sub){
+  function mainBlock(rows,title,sub,showScreen){
     var nbase=0,nr810=0,npr=0,totun=0,ncf=0;
     var body=rows.map(function(r){
       var b=r.base||[],r810=r.r810||[];
       nbase+=cnt(b);nr810+=cnt(r810);npr+=cnt(b)+cnt(r810);totun+=r.unres;
       [b,r810].forEach(function(a){a.forEach(function(p){if(p.cf==='bad')ncf++;});});
-      return mainRow(r);
+      return mainRow(r,showScreen);
     }).join('');
     return '<h2 style="font-size:15px;font-weight:700;margin:24px 0 4px;letter-spacing:-0.01em;">'+title+'</h2>'
       +'<div class="subtitle">'+sub+'</div>'
@@ -216,7 +216,7 @@ function render(D){
         +'<div class="stat">Copilot unres <span class="stat-val warn">'+totun+'</span></div>'
       +'</div>'
       +'<div class="scroll-wrap"><table><thead><tr>'
-        +'<th>Ticket</th><th>Dev</th><th>→base</th><th>→r20260810</th>'
+        +'<th>Ticket</th>'+(showScreen?'<th>Screen</th>':'')+'<th>Dev</th><th>→base</th><th>→r20260810</th>'
         +'<th>Created</th><th>Reviewers</th><th>Report</th><th>Copilot</th><th>Unres.</th><th>Title</th>'
       +'</tr></thead><tbody>'+body+'</tbody></table></div>';
   }
@@ -229,7 +229,7 @@ function render(D){
     scfUn+=r.unres; if(r.pr.cf==='bad')scfCf++;
     var devcls=(r.dev==='bien')?'dev dev-bien':'dev';
     return '<tr>'
-      +'<td><span class="ticket">'+r.ticket+'</span></td>'
+      +'<td><span class="ticket">'+r.ticket+'</span></td>'+(showScreen?('<td>'+(r.sid?'<span class="ticket">'+esc(String(r.sid))+'</span>':'<span class="cf-na">—</span>')+'</td>'):'')
       +'<td><span class="'+devcls+'">'+r.dev+'</span></td>'
       +'<td>'+cell([r.pr],false)+'</td>'
       +'<td><span class="date-cell">'+r.created+'</span></td>'
@@ -244,8 +244,8 @@ function render(D){
    +'<div class="page-header"><h1>Table A — Sprint 15</h1>'
      +'<span class="meta">cập nhật '+D.updated+' · repo '+D.repo+'</span></div>'
    +'<div class="subtitle">PR team-dev Rikkei tạo từ <b>2026-08-01</b> vào <b>develop/base</b> / <b>r20260810</b> — chia 2 bảng: common component vs màn/fix thường. Loại PR CLOSED và sync/chore/evidence. <a href="index.html" style="font-family:inherit;font-size:12px">← Sprint 13</a></div>'
-   + mainBlock(commonRows,'Bảng 1 — Common component (共通)','Ticket nhánh <b>common-…</b>. Copilot chỉ đếm PR→base.')
-   + mainBlock(normalRows,'Bảng 2 — Màn / Fix thường','Ticket nhánh ANGULAR_REPLACE-… (màn migration + fix lẻ).')
+   + mainBlock(commonRows,'Bảng 1 — Common component (共通)','Ticket nhánh <b>common-…</b>. Copilot chỉ đếm PR→base.',false)
+   + mainBlock(normalRows,'Bảng 2 — Màn / Fix thường','Ticket nhánh ANGULAR_REPLACE-… (màn migration + fix lẻ).',true)
    +'<h2 style="font-size:15px;font-weight:700;margin:26px 0 4px;letter-spacing:-0.01em;">Bảng phụ — PR → '+D.scaffoldBranch.split('/').pop()+' <span style="font-weight:400;color:var(--text-dim);font-size:12px;">(giàn giáo / bake rule vào SKILL)</span></h2>'
    +'<div class="subtitle">PR trỏ vào nhánh <b>'+D.scaffoldBranch.split('/').pop()+'</b> — cập nhật giàn giáo (rules + frontend-screen-* SKILL). Loại PR sync base/r810→scaffold.</div>'
    +'<div class="stats">'

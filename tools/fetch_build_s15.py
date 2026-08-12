@@ -23,6 +23,22 @@ FORCE_DEV = {"635": "minh"}               # 635: PR gốc #11821 (Minh) CLOSED, 
 DEV = {"nguyenducbien-art":"bien","nguyennhatminh-dl":"minh","phambaohung-dl":"hung",
        "phamtiendat-oss":"dat","nguyenanhkhoa-rk":"khoa"}
 
+def load_ticket_sid():
+    """map ticket(親/実装/テスト) -> screen_id, từ s15-plan.json (repo root). {} nếu thiếu file."""
+    import os
+    p = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "s15-plan.json")
+    try:
+        plan = json.load(open(p))
+    except (OSError, ValueError):
+        return {}
+    t2s = {}
+    for dom in plan.get("domains", []):
+        for r in dom.get("rows", []):
+            for k in ("parent", "impl", "test"):
+                if r.get(k):
+                    t2s.setdefault(str(r[k]), str(r["sid"]))   # first-wins
+    return t2s
+
 def run(args):
     r = subprocess.run(args, capture_output=True, text=True)
     if r.returncode != 0:
@@ -179,6 +195,7 @@ def build():
                           "created":p["createdAt"],"title":p["title"],"det":det})
         if seg.startswith("common-"): t["common"] = True
 
+    t2s = load_ticket_sid()   # ticket -> screen_id (từ s15-plan.json)
     main = []
     for tk, t in tickets.items():
         metas = t["meta"]; common = t["common"]
@@ -193,7 +210,7 @@ def build():
         unres = sum(m["det"]["unres"] for m in src)
         drive = any(m["det"]["drive"] for m in (base_m or metas))
         created = fmt_dt(min(m["created"] for m in metas))   # PR sớm nhất, MM-DD HH:MM (giờ VN)
-        main.append({"ticket":tk,"dev":dev,"bien":dev=="bien",
+        main.append({"ticket":tk,"dev":dev,"bien":dev=="bien","sid":t2s.get(tk,""),
                      "base":t["base"],"r810":t["r810"],
                      "created":created,"drive":drive,"cop":cop,"unres":unres,
                      "rvw":rep["det"]["rvw"],   # reviewers của PR đại diện (PR gốc/sớm nhất)
