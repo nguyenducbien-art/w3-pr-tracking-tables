@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-12 15:09",
+ "updated": "2026-08-12 15:18",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -676,7 +676,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "画面メニューモーダル（ナビゲーションバー左端のグリッドアイコン）を追加"
   },

@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-12 15:11",
+ "updated": "2026-08-12 15:20",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -19,6 +19,34 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1137",
+   "dev": "bien",
+   "bien": true,
+   "sid": "447",
+   "base": [],
+   "r810": [
+    {
+     "num": 11904,
+     "cf": "bad",
+     "st": "open",
+     "nc": 2,
+     "add": 1896,
+     "del": 2,
+     "fc": 26
+    }
+   ],
+   "created": "08-12 15:15",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "帳票設定_利用帳票一覧 (screen_id=447) 一覧画面を実装"
+  },
   {
    "ticket": "1017",
    "dev": "bien",
@@ -168,7 +196,7 @@
    "r810": [
     {
      "num": 11893,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 2,
      "add": 2108,
@@ -196,11 +224,11 @@
    "r810": [
     {
      "num": 11891,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
-     "nc": 3,
-     "add": 4516,
-     "del": 54,
+     "nc": 4,
+     "add": 4510,
+     "del": 51,
      "fc": 44
     }
    ],
@@ -224,12 +252,12 @@
    "r810": [
     {
      "num": 11887,
-     "cf": "bad",
-     "st": "open",
-     "nc": 2,
-     "add": 1097,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 1095,
      "del": 2,
-     "fc": 23
+     "fc": 22
     }
    ],
    "created": "08-12 13:02",
