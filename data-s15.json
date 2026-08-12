@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-12 16:17",
+ "updated": "2026-08-12 16:26",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -20,6 +20,64 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "665",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "/user",
+   "base": [],
+   "r810": [
+    {
+     "num": 11918,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 1730,
+     "del": 2,
+     "fc": 18,
+     "cr": "08-12 16:21"
+    }
+   ],
+   "created": "08-12 16:21",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "user_登録ユーザー一覧_一覧"
+  },
+  {
+   "ticket": "1021",
+   "dev": "dat",
+   "bien": false,
+   "sid": "768",
+   "base": [],
+   "r810": [
+    {
+     "num": 11917,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 3846,
+     "del": 2,
+     "fc": 32,
+     "cr": "08-12 16:18"
+    }
+   ],
+   "created": "08-12 16:18",
+   "drive": false,
+   "cop": 3,
+   "unres": 3,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "配送料金関連_梱包箱追加・編集 (screen_id=768) 編集画面を実装"
+  },
   {
    "ticket": "1542",
    "dev": "dat",
@@ -50,7 +108,7 @@
     }
    ],
    "created": "08-12 16:13",
-   "drive": false,
+   "drive": true,
    "cop": 0,
    "unres": 0,
    "rvw": {
