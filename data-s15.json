@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-12 15:30",
+ "updated": "2026-08-12 15:40",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -20,6 +20,34 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
   {
+   "ticket": "650",
+   "dev": "minh",
+   "bien": false,
+   "sid": "450",
+   "base": [],
+   "r810": [
+    {
+     "num": 11908,
+     "cf": "bad",
+     "st": "open",
+     "nc": 6,
+     "add": 1443,
+     "del": 5,
+     "fc": 26
+    }
+   ],
+   "created": "08-12 15:38",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "取込ルール一覧の行展開廃止・バッチ呼び出し実装 + ダウンロード名修正取込 (screen 450)"
+  },
+  {
    "ticket": "1137",
    "dev": "bien",
    "bien": true,
@@ -29,7 +57,7 @@
     {
      "num": 11904,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 4,
      "add": 1905,
      "del": 2,
@@ -140,7 +168,7 @@
    "r810": [
     {
      "num": 11896,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 3,
      "add": 1931,
@@ -226,9 +254,9 @@
      "num": 11891,
      "cf": "bad",
      "st": "open",
-     "nc": 4,
-     "add": 4510,
-     "del": 51,
+     "nc": 3,
+     "add": 4516,
+     "del": 54,
      "fc": 44
     }
    ],
@@ -768,13 +796,22 @@
      "num": 11815,
      "cf": "ok",
      "st": "open",
-     "nc": 3,
-     "add": 119,
+     "nc": 4,
+     "add": 95,
      "del": 2,
-     "fc": 9
+     "fc": 8
     }
    ],
    "r810": [
+    {
+     "num": 11907,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 2,
+     "del": 26,
+     "fc": 3
+    },
     {
      "num": 11816,
      "cf": "ok",
