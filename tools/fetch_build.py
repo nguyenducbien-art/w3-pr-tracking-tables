@@ -137,23 +137,33 @@ def build():
         if is_sync(seg): continue
         tk = ticket_from_branch(seg)
         if tk: s14.add(tk)
-    # ---- bảng chính: base / r629 / r713 ----
-    lists = {"base": gh_list("base"), "r629": gh_list("r20260629"), "r713": gh_list("r20260713")}
+    # ---- bảng chính: ticket THUỘC Sprint 13 = CÓ PR nhắm r20260629 HOẶC r20260713 (nhánh r của sprint).
+    #      base PR chỉ hiện cho ticket đã thuộc Sprint 13 → KHÔNG kéo common PR→base của sprint sau
+    #      (vd Sprint 15 common-1541→base, không có r629/r713 → bị loại). Gate giống fetch_build_s15.py.
     tickets = {}
-    for key, lst in lists.items():
-        for p in lst:
+    s13 = set()
+    def add_pr(tk, key, p):
+        seg = p["headRefName"].split("/")[-1]
+        t = tickets.setdefault(tk, {"base":[], "r629":[], "r713":[], "meta":[], "common":False})
+        det = pr_detail(p["number"])
+        t[key].append({"num": p["number"], "cf": det["cf"], "st": det["st"],
+                       "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"])})
+        t["meta"].append({"num":p["number"],"key":key,"author":p["author"]["login"],
+                          "created":p["createdAt"],"title":p["title"],"det":det})
+        if seg.startswith("common-"): t["common"] = True
+    for key, br in (("r629", "r20260629"), ("r713", "r20260713")):
+        for p in gh_list(br):
             seg = p["headRefName"].split("/")[-1]
             if is_sync(seg): continue
             tk = ticket_from_branch(seg)
-            if not tk: continue
-            if tk in s14: continue   # ticket này đã sang Sprint 14
-            t = tickets.setdefault(tk, {"base":[], "r629":[], "r713":[], "meta":[], "common":False})
-            det = pr_detail(p["number"])
-            t[key].append({"num": p["number"], "cf": det["cf"], "st": det["st"],
-                           "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"])})
-            t["meta"].append({"num":p["number"],"key":key,"author":p["author"]["login"],
-                              "created":p["createdAt"],"title":p["title"],"det":det})
-            if seg.startswith("common-"): t["common"] = True
+            if not tk or tk in s14: continue   # ticket đã sang Sprint 14
+            s13.add(tk); add_pr(tk, key, p)
+    for p in gh_list("base"):
+        seg = p["headRefName"].split("/")[-1]
+        if is_sync(seg): continue
+        tk = ticket_from_branch(seg)
+        if not tk or tk not in s13: continue   # chỉ ticket đã có r629/r713 PR (thuộc Sprint 13)
+        add_pr(tk, "base", p)
 
     main = []
     for tk, t in tickets.items():
