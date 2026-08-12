@@ -31,7 +31,7 @@ function render(D){
     var nc=(p.nc!=null)?' <span class="commits" title="số commit trong PR (branch vượt base)">'+p.nc+'c</span>':'';
     var fcv=(p.fc!=null)?' <span class="files" title="số file thay đổi">'+p.fc+'f</span>':'';
     var df=(p.add!=null||p.del!=null)?' <span class="adds" title="số dòng thêm">+'+(p.add||0)+'</span><span class="dels" title="số dòng xoá">−'+(p.del||0)+'</span>':'';
-    return '<a href="'+U+p.num+'" target="_blank" rel="noopener">#'+p.num+'</a>'+inb+' '+pill(p.st)+' '+mark+nc+fcv+df;
+    return '<a href="'+U+p.num+'" target="_blank" rel="noopener">#'+p.num+'</a>'+(p.cr?' <span class="date-cell">('+p.cr+')</span>':'')+inb+' '+pill(p.st)+' '+mark+nc+fcv+df;
   }
   function cell(prs,inv){
     if(!prs||!prs.length) return '<span class="cf-na">—</span>';
@@ -58,7 +58,7 @@ function render(D){
       +'<td><span class="'+devcls+'">'+r.dev+'</span></td>'
       +'<td>'+cell(r.base||[],INVALID.has(r.ticket))+'</td>'
       +'<td>'+cell(r.r727||[],false)+'</td>'
-      +'<td><span class="date-cell">'+r.created+'</span></td>'
+      
       +'<td class="rvw-cell">'+rvwCell(r.rvw)+'</td>'
       +'<td>'+rep+'</td>'
       +'<td><span class="copilot-cell">'+r.cop+'</span></td>'
@@ -87,7 +87,7 @@ function render(D){
       +'</div>'
       +'<div class="scroll-wrap"><table><thead><tr>'
         +'<th>Ticket</th><th>Dev</th><th>→base</th><th>→r20260727</th>'
-        +'<th>Created</th><th>Reviewers</th><th>Report</th><th>Copilot</th><th>Unres.</th><th>Title</th>'
+        +'<th>Reviewers</th><th>Report</th><th>Copilot</th><th>Unres.</th><th>Title</th>'
       +'</tr></thead><tbody>'+body+'</tbody></table></div>';
   }
   var commonRows=D.main.filter(function(r){return COMMON.has(r.ticket);});
@@ -102,7 +102,7 @@ function render(D){
       +'<td><span class="ticket">'+r.ticket+'</span></td>'
       +'<td><span class="'+devcls+'">'+r.dev+'</span></td>'
       +'<td>'+cell([r.pr],false)+'</td>'
-      +'<td><span class="date-cell">'+r.created+'</span></td>'
+      
       +'<td class="rvw-cell">'+rvwCell(r.rvw)+'</td>'
       +'<td><span class="copilot-cell">'+r.cop+'</span></td>'
       +'<td>'+unb(r.unres)+'</td>'
@@ -124,7 +124,7 @@ function render(D){
      +'<div class="stat">Copilot unresolved <span class="stat-val warn">'+scfUn+'</span></div>'
    +'</div>'
    +'<div class="scroll-wrap"><table style="min-width:1000px;"><thead><tr>'
-     +'<th>Ticket</th><th>Dev</th><th>→scaffold</th><th>Created</th><th>Reviewers</th><th>Copilot</th><th>Unres.</th><th>Title</th>'
+     +'<th>Ticket</th><th>Dev</th><th>→scaffold</th><th>Reviewers</th><th>Copilot</th><th>Unres.</th><th>Title</th>'
    +'</tr></thead><tbody>'+scfRows+'</tbody></table></div>'
    +'<div class="footnote">Status pill theo từng PR: '
      +'<span class="pill pill-open">OPEN</span> <span class="pill pill-draft">DRAFT</span> '
