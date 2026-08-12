@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-12 15:58",
+ "updated": "2026-08-12 16:08",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -19,6 +19,34 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "668",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "/company",
+   "base": [],
+   "r810": [
+    {
+     "num": 11913,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 3701,
+     "del": 2,
+     "fc": 30
+    }
+   ],
+   "created": "08-12 16:00",
+   "drive": false,
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "/company_契約情報_edit"
+  },
   {
    "ticket": "1005",
    "dev": "dat",
@@ -280,11 +308,11 @@
    "r810": [
     {
      "num": 11891,
-     "cf": "bad",
-     "st": "open",
-     "nc": 4,
-     "add": 4530,
-     "del": 54,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 5,
+     "add": 4524,
+     "del": 51,
      "fc": 44
     }
    ],
