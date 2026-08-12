@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-12 14:40",
+ "updated": "2026-08-12 14:50",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -19,6 +19,34 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1141",
+   "dev": "bien",
+   "bien": true,
+   "sid": "643",
+   "base": [],
+   "r810": [
+    {
+     "num": 11898,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 394,
+     "del": 2,
+     "fc": 8
+    }
+   ],
+   "created": "08-12 14:43",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ネクストエンジン設定画面 (643) を Next.js に移行"
+  },
   {
    "ticket": "1479",
    "dev": "bien",
