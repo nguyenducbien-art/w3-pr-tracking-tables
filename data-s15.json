@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-12 10:00",
+ "updated": "2026-08-12 10:05",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -16,6 +16,33 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "635",
+   "dev": "bien",
+   "bien": true,
+   "base": [],
+   "r810": [
+    {
+     "num": 11867,
+     "cf": "ok",
+     "st": "open",
+     "nc": 9,
+     "add": 2832,
+     "del": 2,
+     "fc": 33
+    }
+   ],
+   "created": "08-12 10:01",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ロケサイズカテゴリ DDL を専用 options エンドポイントに切替"
+  },
   {
    "ticket": "1129",
    "dev": "hung",
@@ -368,33 +395,6 @@
     "pd": []
    },
    "title": "帳票設定_納品書・送り状パターン追加・編集を実装"
-  },
-  {
-   "ticket": "635",
-   "dev": "minh",
-   "bien": false,
-   "base": [],
-   "r810": [
-    {
-     "num": 11821,
-     "cf": "ok",
-     "st": "open",
-     "nc": 12,
-     "add": 2870,
-     "del": 2,
-     "fc": 37
-    }
-   ],
-   "created": "08-11 13:08",
-   "drive": false,
-   "cop": 3,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "ロケサイズカテゴリ DDL を専用 options エンドポイントに切替"
   },
   {
    "ticket": "1529",
