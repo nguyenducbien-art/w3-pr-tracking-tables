@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-12 17:03",
+ "updated": "2026-08-12 19:30",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -21,6 +21,64 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "969",
+   "dev": "hung",
+   "bien": false,
+   "sid": "427",
+   "base": [],
+   "r810": [
+    {
+     "num": 11926,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 1220,
+     "del": 2,
+     "fc": 22,
+     "cr": "08-12 18:51"
+    }
+   ],
+   "created": "08-12 18:51",
+   "drive": true,
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "取引関連_仕入先マスタ (screen_id=427) を実装"
+  },
+  {
+   "ticket": "1009",
+   "dev": "hung",
+   "bien": false,
+   "sid": "765",
+   "base": [],
+   "r810": [
+    {
+     "num": 11924,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 1170,
+     "del": 2,
+     "fc": 21,
+     "cr": "08-12 17:43"
+    }
+   ],
+   "created": "08-12 17:43",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "配送料金関連_配送タリフマスタ (765) を実装"
+  },
   {
    "ticket": "672",
    "dev": "minh",
