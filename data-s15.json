@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-12 16:44",
+ "updated": "2026-08-12 16:54",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -21,6 +21,35 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "672",
+   "dev": "minh",
+   "bien": false,
+   "sid": "(機能)",
+   "base": [],
+   "r810": [
+    {
+     "num": 11921,
+     "cf": "bad",
+     "st": "open",
+     "nc": 7,
+     "add": 826,
+     "del": 4,
+     "fc": 14,
+     "cr": "08-12 16:47"
+    }
+   ],
+   "created": "08-12 16:47",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユニット選択画面の作成系ツールバーボタン表示を修正"
+  },
   {
    "ticket": "1543",
    "dev": "minh",
@@ -371,9 +400,9 @@
    "r810": [
     {
      "num": 11896,
-     "cf": "bad",
-     "st": "open",
-     "nc": 3,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 4,
      "add": 1931,
      "del": 2,
      "fc": 24,
@@ -558,8 +587,8 @@
      "num": 11877,
      "cf": "bad",
      "st": "open",
-     "nc": 5,
-     "add": 2369,
+     "nc": 6,
+     "add": 2378,
      "del": 2,
      "fc": 25,
      "cr": "08-12 12:05"
