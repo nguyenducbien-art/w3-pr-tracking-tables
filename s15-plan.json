@@ -736,7 +736,7 @@
      "test_pic": "",
      "free_test": "",
      "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/warehouse",
-     "react_url": ""
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/warehouse/register"
     },
     {
      "sid": "/unit",
@@ -749,7 +749,7 @@
      "test_pic": "",
      "free_test": "",
      "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit",
-     "react_url": ""
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/system/unit"
     },
     {
      "sid": "/user",
@@ -775,7 +775,7 @@
      "test_pic": "",
      "free_test": "",
      "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/user_edits",
-     "react_url": ""
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/unit/user-edits"
     },
     {
      "sid": "639",

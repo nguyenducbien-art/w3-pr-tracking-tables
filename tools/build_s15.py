@@ -121,7 +121,7 @@ var DORDER=["Khoa","Đạt","Minh","Hưng","Biên","Sơn","Bồn"];
 var BASE=PLAN.backlogBase;
 var ST={impl:{},test:{},updated:""};
 var RT={}, RTB='', RTloaded=false;   // route React live (per-sprint) từ routes-s15.json
-function reactUrl(r){ if(RTloaded){ var rt=RT[String(r.sid)]; return rt?(RTB+rt):''; } return r.react_url||''; }
+function reactUrl(r){ var rt=RTloaded?RT[String(r.sid)]:null; if(rt) return RTB+rt; return r.react_url||''; }  // RT (route số) ưu tiên; setup screen không SCREEN_ID → fallback react_url tĩnh (plan)
 function esc(s){return String(s==null?'':s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
 function allRows(){ return PLAN.domains.reduce(function(a,d){return a.concat(d.rows);},[]); }
 function livePic(r){ var x=ST.impl[String(r.parent)]; return (x&&x.pic)||'(chưa gán)'; }
