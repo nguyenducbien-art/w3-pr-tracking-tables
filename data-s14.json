@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-12 14:48",
+ "updated": "2026-08-12 14:59",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -150,7 +150,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "一覧画面リロード時のグリッド一覧データ二重取得を解消"
   },
@@ -342,7 +344,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "移行済み画面の子モーダルを共通 DataTable へ統一しフィルタ/ソート/ページャを提供"
   },

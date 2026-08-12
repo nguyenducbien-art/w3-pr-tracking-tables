@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-12 14:50",
+ "updated": "2026-08-12 15:01",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -20,6 +20,34 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
   {
+   "ticket": "1017",
+   "dev": "bien",
+   "bien": true,
+   "sid": "767",
+   "base": [],
+   "r810": [
+    {
+     "num": 11900,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 607,
+     "del": 1,
+     "fc": 19
+    }
+   ],
+   "created": "08-12 14:51",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "配送料金関連_梱包箱マスタ (screen_id=767) 一覧画面"
+  },
+  {
    "ticket": "1141",
    "dev": "bien",
    "bien": true,
@@ -29,7 +57,7 @@
     {
      "num": 11898,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 1,
      "add": 394,
      "del": 2,
@@ -1737,7 +1765,7 @@
     {
      "num": 11872,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 1,
      "add": 13,
      "del": 4,
