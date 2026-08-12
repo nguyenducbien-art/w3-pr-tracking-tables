@@ -27,13 +27,15 @@ for _a, _b in [("data-s12.json", "data-s15.json"), ("r20260629", "r20260810"),
 # r.sid nhúng sẵn trong data-s15.json (map ticket→screen_id từ s15-plan.json). Bảng 1 (common) không có.
 _SCR_CELL = ("+(showScreen?('<td>'+(r.sid?'<span class=\"ticket\">'+esc(String(r.sid))"
              "+'</span>':'<span class=\"cf-na\">—</span>')+'</td>'):'')")
+# ô ticket xuất hiện 2 lần (mainRow + scfRow scaffold); CHỈ thay occurrence ĐẦU (mainRow) → count=1,
+# nếu không scfRow cũng bị chèn showScreen (không có trong scope) → ReferenceError.
+_TICKET_CELL = "+'<td><span class=\"ticket\">'+r.ticket+'</span></td>'"
+assert _pr.count(_TICKET_CELL) == 2, "kỳ vọng ô ticket 2 lần (mainRow+scfRow)"
+_pr = _pr.replace(_TICKET_CELL, _TICKET_CELL + _SCR_CELL, 1)   # count=1 → chỉ mainRow
 for _a, _b in [
     ("function mainRow(r){", "function mainRow(r,showScreen){"),
     ("function mainBlock(rows,title,sub){", "function mainBlock(rows,title,sub,showScreen){"),
     ("return mainRow(r);", "return mainRow(r,showScreen);"),
-    # chèn ô screen ngay sau ô ticket trong row
-    ("+'<td><span class=\"ticket\">'+r.ticket+'</span></td>'",
-     "+'<td><span class=\"ticket\">'+r.ticket+'</span></td>'" + _SCR_CELL),
     # chèn <th>Screen</th> sau <th>Ticket</th> trong header (chỉ mainBlock có →base, KHÔNG đụng scaffold)
     ("'<th>Ticket</th><th>Dev</th><th>→base</th>",
      "'<th>Ticket</th>'+(showScreen?'<th>Screen</th>':'')+'<th>Dev</th><th>→base</th>"),
