@@ -16,6 +16,9 @@ OUT = sys.argv[1] if len(sys.argv) > 1 else "data-s15.json"
 
 EXCLUDE = {"1495"}                        # ticket ẩn hẳn khỏi bảng (mọi PR base/r810) — user yêu cầu 08-03
 BASE_COMMON_SINCE = "2026-08-10"          # LUẬT MỞ RỘNG: common PR→base (chưa có r810 PR) created >= ngày này cũng vào Sprint 15
+# ĐẶC CÁCH dev: khi PR gốc của người sở hữu màn bị CLOSED (bị gh_list lọc) + chỉ còn PR fix của
+# người khác được merge → dev tự suy sẽ SAI. Map {ticket: dev-short} ép đúng người sở hữu.
+FORCE_DEV = {"635": "minh"}               # 635: PR gốc #11821 (Minh) CLOSED, còn #11867 (bien fix) MERGED
 
 DEV = {"nguyenducbien-art":"bien","nguyennhatminh-dl":"minh","phambaohung-dl":"hung",
        "phamtiendat-oss":"dat","nguyenanhkhoa-rk":"khoa"}
@@ -184,7 +187,7 @@ def build():
         # KHÔNG lấy metas[0] (PR số cao nhất/mới nhất do gh sort desc) — sẽ gán nhầm cho người
         # tạo PR fix follow-up (vd ...-fix-r20260810 / -docs) thay vì người implement gốc.
         rep = min(metas, key=lambda m: m["created"])
-        dev = dev_of(rep["author"])
+        dev = FORCE_DEV.get(tk, dev_of(rep["author"]))   # đặc cách override khi PR gốc bị CLOSED
         src = (base_m if base_m else metas) if common else metas   # common: copilot base-only
         cop = sum(m["det"]["cop"] for m in src)
         unres = sum(m["det"]["unres"] for m in src)
