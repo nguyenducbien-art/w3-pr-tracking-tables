@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-12 13:02",
+ "updated": "2026-08-12 13:13",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -17,6 +17,34 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1041",
+   "dev": "dat",
+   "bien": false,
+   "sid": "633",
+   "base": [],
+   "r810": [
+    {
+     "num": 11887,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 1104,
+     "del": 2,
+     "fc": 23
+    }
+   ],
+   "created": "08-12 13:02",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "庫内関連_荷姿別ロケサイズカテゴリマスタ (screen 633) を React へ移行"
+  },
   {
    "ticket": "945",
    "dev": "dat",
@@ -103,7 +131,7 @@
    "created": "08-12 11:42",
    "drive": false,
    "cop": 1,
-   "unres": 1,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -177,7 +205,7 @@
     {
      "num": 11860,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 2,
      "add": 2310,
      "del": 364,
