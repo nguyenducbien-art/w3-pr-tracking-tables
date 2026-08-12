@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-12 16:26",
+ "updated": "2026-08-12 16:35",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1543",
   "1542",
   "1479",
   "1541",
@@ -20,6 +21,35 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1543",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 11919,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 46,
+     "del": 3,
+     "fc": 2,
+     "cr": "08-12 16:31"
+    }
+   ],
+   "r810": [],
+   "created": "08-12 16:31",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "DataTable に linkColumnId を追加し列値クリックで行遷移可能にする"
+  },
   {
    "ticket": "665",
    "dev": "khoa",
@@ -40,8 +70,8 @@
    ],
    "created": "08-12 16:21",
    "drive": false,
-   "cop": 0,
-   "unres": 0,
+   "cop": 1,
+   "unres": 1,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -60,8 +90,8 @@
      "num": 11917,
      "cf": "bad",
      "st": "open",
-     "nc": 1,
-     "add": 3846,
+     "nc": 2,
+     "add": 3858,
      "del": 2,
      "fc": 32,
      "cr": "08-12 16:18"
@@ -70,7 +100,7 @@
    "created": "08-12 16:18",
    "drive": false,
    "cop": 3,
-   "unres": 3,
+   "unres": 2,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -158,8 +188,8 @@
      "num": 11909,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 4363,
+     "nc": 3,
+     "add": 4364,
      "del": 3,
      "fc": 38,
      "cr": "08-12 15:46"
@@ -168,7 +198,7 @@
    "created": "08-12 15:46",
    "drive": false,
    "cop": 1,
-   "unres": 1,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
