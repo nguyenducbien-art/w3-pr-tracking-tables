@@ -11,7 +11,9 @@
 # Đẩy vào nhánh `data` bằng git plumbing → KHÔNG checkout, KHÔNG build Pages → không chạm rate-limit.
 export PATH="/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # git fetch repo code (private, SSH host-alias github-w3, key không passphrase) chạy được non-interactive:
-export GIT_SSH_COMMAND="ssh -o BatchMode=yes -o IdentitiesOnly=yes -i $HOME/.ssh/id_ed25519_w3"
+# ConnectTimeout=20 để ssh treo (máy thrash / mạng chập) fail nhanh thay vì chờ ~2' TCP timeout.
+# Các fetch script dùng os.environ.setdefault → kế thừa đúng biến này (không tự override).
+export GIT_SSH_COMMAND="ssh -o BatchMode=yes -o IdentitiesOnly=yes -o ConnectTimeout=20 -o ServerAliveInterval=10 -o ServerAliveCountMax=2 -i $HOME/.ssh/id_ed25519_w3"
 REPO="/Volumes/Works/rikkeisoft/w3-pr-tracking-tables"
 LOG="$REPO/tools/refresh.log"
 cd "$REPO" || exit 1
@@ -24,13 +26,17 @@ cd "$REPO" || exit 1
   python3 tools/fetch_plan_s15.py    s15-status.json;   rcPl=$?
   python3 tools/fetch_routes_s15.py  routes-s15.json;   rcRt=$?
   python3 tools/fetch_screens_s14.py screens-s14.json;  rcSc=$?
-  # rc: 0=đổi, 2=không đổi, khác=lỗi
+  # rc: 0=đổi, 2=không đổi, khác=lỗi.
+  # QUAN TRỌNG: fetch lỗi (rc=1) KHÔNG chặn push nữa. Mỗi fetch script khi lỗi KHÔNG ghi đè file
+  # output → file trên đĩa vẫn là bản TỐT lần trước → carry-forward. Chỉ cảnh báo.
+  # (Bug cũ: 1 fetch ssh-timeout → exit 1 → bỏ qua push cả s15 đã fetch thành công → web đứng.)
+  changed=0
   for pair in "s14:$rcPR" "s15:$rc15" "plan15:$rcPl" "routes15:$rcRt" "screens:$rcSc"; do
     n=${pair%:*}; rc=${pair#*:}
-    if [ "$rc" -ne 0 ] && [ "$rc" -ne 2 ]; then echo "→ LỖI fetch $n (rc=$rc)"; exit 1; fi
+    if [ "$rc" -eq 0 ]; then changed=1
+    elif [ "$rc" -ne 2 ]; then echo "→ CẢNH BÁO fetch $n lỗi (rc=$rc) — giữ bản cũ trên đĩa, vẫn push phần khác"; fi
   done
-  if [ "$rcPR" -eq 2 ] && [ "$rc15" -eq 2 ] && [ "$rcPl" -eq 2 ] && [ "$rcRt" -eq 2 ] && [ "$rcSc" -eq 2 ]; then
-    echo "→ Không sprint nào đổi, khỏi push."; exit 0; fi
+  if [ "$changed" -eq 0 ]; then echo "→ Không file nào đổi (hoặc chỉ lỗi tạm) — khỏi push."; exit 0; fi
 
   # Dựng tree cho nhánh `data`. mktree cần entries sort theo tên (byte):
   #   'data-s12' < 'data-s14' < 'data-s15' < 'data.json' < 'routes-s15' < 's15-status' < 'screens-s14'
