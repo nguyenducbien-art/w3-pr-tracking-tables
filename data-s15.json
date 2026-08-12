@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-12 11:40",
+ "updated": "2026-08-12 11:49",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1540",
   "1532",
   "1531",
   "1529",
@@ -16,6 +17,44 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1540",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 11874,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 22,
+     "del": 16,
+     "fc": 1
+    }
+   ],
+   "r810": [
+    {
+     "num": 11875,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 22,
+     "del": 16,
+     "fc": 1
+    }
+   ],
+   "created": "08-12 11:42",
+   "drive": false,
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "未ログイン/セッション失効時に一部画面が白画面になりloginへ遷移しない不具合の修正"
+  },
   {
    "ticket": "635",
    "dev": "minh",
@@ -137,9 +176,9 @@
    "r810": [
     {
      "num": 11858,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
-     "nc": 3,
+     "nc": 4,
      "add": 3608,
      "del": 2,
      "fc": 39
@@ -165,9 +204,9 @@
    "r810": [
     {
      "num": 11857,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
-     "nc": 3,
+     "nc": 4,
      "add": 3861,
      "del": 2,
      "fc": 29
