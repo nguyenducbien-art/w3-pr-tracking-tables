@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-12 13:34",
+ "updated": "2026-08-12 14:13",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -17,6 +17,34 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1037",
+   "dev": "hung",
+   "bien": false,
+   "sid": "632",
+   "base": [],
+   "r810": [
+    {
+     "num": 11893,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 2108,
+     "del": 2,
+     "fc": 26
+    }
+   ],
+   "created": "08-12 14:06",
+   "drive": true,
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "庫内関連_ロケサイズカテゴリマスタ (screen_id=632) を実装"
+  },
   {
    "ticket": "981",
    "dev": "dat",
