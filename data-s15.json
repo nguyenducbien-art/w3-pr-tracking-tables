@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-13 17:07",
+ "updated": "2026-08-13 20:41",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1545",
   "1543",
   "1542",
   "1479",
@@ -21,6 +22,75 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1169",
+   "dev": "dat",
+   "bien": false,
+   "sid": "/user",
+   "base": [],
+   "r810": [
+    {
+     "num": 11980,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 137,
+     "del": 63,
+     "fc": 5,
+     "cr": "08-13 17:43"
+    }
+   ],
+   "created": "08-13 17:43",
+   "drive": false,
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "登録ユーザー一覧の外枠を共通シェルに統一しメッセージコードを付与する"
+  },
+  {
+   "ticket": "1545",
+   "dev": "dat",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 11978,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 132,
+     "del": 2,
+     "fc": 6,
+     "cr": "08-13 17:35"
+    }
+   ],
+   "r810": [
+    {
+     "num": 11979,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 131,
+     "del": 2,
+     "fc": 6,
+     "cr": "08-13 17:36"
+    }
+   ],
+   "created": "08-13 17:35",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "画面設定を持たない一覧画面の主操作ボタンを緑ボタンで描画できるようにする"
+  },
   {
    "ticket": "660",
    "dev": "minh",
