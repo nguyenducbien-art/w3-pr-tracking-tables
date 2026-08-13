@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-13 14:12",
+ "updated": "2026-08-13 14:22",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -22,6 +22,35 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
   {
+   "ticket": "1117",
+   "dev": "dat",
+   "bien": false,
+   "sid": "453",
+   "base": [],
+   "r810": [
+    {
+     "num": 11955,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 6975,
+     "del": 2,
+     "fc": 40,
+     "cr": "08-13 14:14"
+    }
+   ],
+   "created": "08-13 14:14",
+   "drive": false,
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "CSV設定_CSV出力設定追加・編集 (screen_id=453) を React へ移行"
+  },
+  {
    "ticket": "729",
    "dev": "dat",
    "bien": false,
@@ -32,17 +61,17 @@
      "num": 11942,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 8,
-     "del": 0,
-     "fc": 2,
+     "nc": 2,
+     "add": 14,
+     "del": 3,
+     "fc": 3,
      "cr": "08-13 11:01"
     }
    ],
    "created": "08-13 11:01",
    "drive": false,
    "cop": 1,
-   "unres": 1,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -342,10 +371,10 @@
    "r810": [
     {
      "num": 11913,
-     "cf": "bad",
-     "st": "open",
-     "nc": 3,
-     "add": 3706,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 4,
+     "add": 3704,
      "del": 2,
      "fc": 30,
      "cr": "08-12 16:00"
