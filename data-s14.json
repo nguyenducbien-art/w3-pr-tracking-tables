@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-13 17:15",
+ "updated": "2026-08-13 17:25",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -423,7 +423,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "is_display=0 の画面アクセス時はエラーを表示せずユニットトップへリダイレクト"
   },
