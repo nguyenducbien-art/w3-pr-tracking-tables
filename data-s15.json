@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-13 14:22",
+ "updated": "2026-08-13 14:32",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -22,6 +22,35 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
   {
+   "ticket": "1157",
+   "dev": "dat",
+   "bien": false,
+   "sid": "/owner",
+   "base": [],
+   "r810": [
+    {
+     "num": 11956,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 2993,
+     "del": 2,
+     "fc": 29,
+     "cr": "08-13 14:22"
+    }
+   ],
+   "created": "08-13 14:22",
+   "drive": false,
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "オーナー登録画面 (/owner) を実装"
+  },
+  {
    "ticket": "1117",
    "dev": "dat",
    "bien": false,
@@ -42,7 +71,7 @@
    "created": "08-13 14:14",
    "drive": false,
    "cop": 2,
-   "unres": 2,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
