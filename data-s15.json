@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-13 09:56",
+ "updated": "2026-08-13 10:06",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -21,6 +21,64 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "675",
+   "dev": "minh",
+   "bien": false,
+   "sid": "(機能)",
+   "base": [],
+   "r810": [
+    {
+     "num": 11932,
+     "cf": "bad",
+     "st": "open",
+     "nc": 3,
+     "add": 2180,
+     "del": 2,
+     "fc": 14,
+     "cr": "08-13 10:02"
+    }
+   ],
+   "created": "08-13 10:02",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユニットトップ画面（/unit/top）の開発および多言語対応"
+  },
+  {
+   "ticket": "1057",
+   "dev": "dat",
+   "bien": false,
+   "sid": "440",
+   "base": [],
+   "r810": [
+    {
+     "num": 11931,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 4817,
+     "del": 5,
+     "fc": 33,
+     "cr": "08-13 09:55"
+    }
+   ],
+   "created": "08-13 09:55",
+   "drive": false,
+   "cop": 3,
+   "unres": 3,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユニット別ステータス設定 (screen_id=440) を React へ移行"
+  },
   {
    "ticket": "969",
    "dev": "hung",
