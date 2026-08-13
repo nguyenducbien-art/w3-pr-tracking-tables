@@ -1,719 +1,763 @@
 {
- "updated": "2026-08-13 12:00",
+ "updated": "2026-08-13 16:19",
  "impl": {
-  "675": {
-   "pic": "Minh",
-   "st": "wip"
-  },
-  "674": {
-   "pic": "Hưng",
-   "st": "todo"
-  },
-  "673": {
-   "pic": "Hưng",
-   "st": "todo"
-  },
-  "672": {
-   "pic": "Minh",
-   "st": "wip"
-  },
-  "671": {
-   "pic": "Hưng",
-   "st": "todo"
-  },
-  "670": {
-   "pic": "Hưng",
-   "st": "todo"
-  },
-  "669": {
-   "pic": "Khoa",
-   "st": "wip"
-  },
-  "668": {
-   "pic": "Đạt",
-   "st": "todo"
-  },
-  "667": {
-   "pic": "Biên",
-   "st": "wip"
-  },
-  "666": {
-   "pic": "Biên",
-   "st": "wip"
-  },
-  "665": {
-   "pic": "Đạt",
-   "st": "todo"
-  },
-  "664": {
-   "pic": "Hưng",
-   "st": "wip"
-  },
-  "663": {
-   "pic": "Khoa",
-   "st": "wip"
-  },
-  "662": {
-   "pic": "Đạt",
-   "st": "todo"
-  },
-  "661": {
-   "pic": "Minh",
-   "st": "wip"
-  },
-  "660": {
-   "pic": "Minh",
-   "st": "wip"
-  },
-  "659": {
-   "pic": "Minh",
-   "st": "wip"
-  },
-  "658": {
-   "pic": "Biên",
-   "st": "todo"
-  },
-  "657": {
-   "pic": "Biên",
-   "st": "todo"
-  },
-  "656": {
-   "pic": "Hưng",
-   "st": "wip"
-  },
-  "655": {
-   "pic": "Hưng",
-   "st": "todo"
-  },
-  "654": {
-   "pic": "Khoa",
-   "st": "wip"
-  },
-  "653": {
-   "pic": "Khoa",
-   "st": "wip"
-  },
-  "652": {
-   "pic": "Đạt",
-   "st": "todo"
-  },
-  "651": {
-   "pic": "Đạt",
-   "st": "wip"
-  },
-  "650": {
-   "pic": "Minh",
-   "st": "wip"
-  },
-  "649": {
-   "pic": "Khoa",
-   "st": "wip"
-  },
-  "648": {
-   "pic": "Khoa",
-   "st": "wip"
-  },
-  "647": {
-   "pic": "Hưng",
-   "st": "todo"
-  },
-  "646": {
-   "pic": "Minh",
-   "st": "wip"
-  },
-  "645": {
-   "pic": "Đạt",
-   "st": "done"
-  },
-  "644": {
-   "pic": "Khoa",
-   "st": "wip"
-  },
-  "643": {
-   "pic": "Minh",
-   "st": "wip"
-  },
-  "642": {
-   "pic": "Hưng",
-   "st": "wip"
-  },
-  "641": {
-   "pic": "Khoa",
-   "st": "wip"
-  },
-  "640": {
-   "pic": "Đạt",
-   "st": "wip"
-  },
-  "639": {
-   "pic": "Khoa",
-   "st": "wip"
-  },
-  "638": {
-   "pic": "Minh",
-   "st": "wip"
-  },
-  "637": {
-   "pic": "Đạt",
-   "st": "todo"
-  },
-  "636": {
-   "pic": "Minh",
-   "st": "wip"
-  },
-  "635": {
-   "pic": "Minh",
-   "st": "wip"
-  },
-  "634": {
-   "pic": "Hưng",
-   "st": "todo"
-  },
-  "633": {
-   "pic": "Đạt",
-   "st": "todo"
-  },
-  "632": {
-   "pic": "Hưng",
-   "st": "todo"
-  },
-  "631": {
-   "pic": "Khoa",
-   "st": "wip"
-  },
-  "630": {
-   "pic": "Đạt",
-   "st": "wip"
-  },
-  "629": {
-   "pic": "Khoa",
-   "st": "wip"
-  },
-  "628": {
-   "pic": "Đạt",
-   "st": "todo"
-  },
-  "627": {
-   "pic": "Biên",
-   "st": "todo"
-  },
-  "626": {
-   "pic": "Minh",
-   "st": "wip"
-  },
-  "625": {
-   "pic": "Hưng",
-   "st": "todo"
-  },
-  "624": {
-   "pic": "Đạt",
-   "st": "todo"
-  },
-  "623": {
-   "pic": "Khoa",
-   "st": "wip"
-  },
-  "622": {
-   "pic": "Hưng",
-   "st": "wip"
-  },
-  "621": {
-   "pic": "Đạt",
-   "st": "wip"
-  },
-  "620": {
-   "pic": "Khoa",
-   "st": "wip"
-  },
-  "619": {
-   "pic": "Minh",
-   "st": "wip"
-  },
-  "618": {
-   "pic": "Đạt",
-   "st": "todo"
-  },
-  "617": {
-   "pic": "Minh",
-   "st": "wip"
-  },
-  "616": {
-   "pic": "Minh",
-   "st": "wip"
-  },
-  "615": {
-   "pic": "Hưng",
-   "st": "todo"
-  },
-  "614": {
-   "pic": "Khoa",
-   "st": "wip"
-  },
-  "613": {
-   "pic": "Khoa",
-   "st": "wip"
-  },
-  "612": {
-   "pic": "Hưng",
-   "st": "wip"
-  },
-  "611": {
-   "pic": "Đạt",
-   "st": "wip"
-  },
-  "610": {
-   "pic": "Khoa",
-   "st": "wip"
-  },
-  "609": {
-   "pic": "Đạt",
-   "st": "todo"
-  },
-  "608": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "607": {
-   "pic": "Minh",
-   "st": "done"
-  },
-  "606": {
-   "pic": "Biên",
-   "st": "done"
-  },
-  "605": {
-   "pic": "Minh",
-   "st": "done"
-  },
-  "604": {
-   "pic": "Minh",
-   "st": "done"
-  },
-  "603": {
-   "pic": "Đạt",
-   "st": "done"
-  },
-  "602": {
-   "pic": "Minh",
-   "st": "done"
-  },
-  "601": {
-   "pic": "Đạt",
-   "st": "done"
-  },
-  "600": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "599": {
+  "1327": {
    "pic": null,
    "st": "done"
   },
-  "598": {
-   "pic": null,
+  "1209": {
+   "pic": "Minh",
    "st": "done"
   },
-  "597": {
-   "pic": null,
+  "1205": {
+   "pic": "Hưng",
+   "st": "todo"
+  },
+  "1201": {
+   "pic": "Hưng",
+   "st": "todo"
+  },
+  "1197": {
+   "pic": "Minh",
    "st": "done"
   },
-  "596": {
-   "pic": null,
-   "st": "done"
+  "1193": {
+   "pic": "Hưng",
+   "st": "wip"
   },
-  "595": {
-   "pic": null,
-   "st": "done"
+  "1189": {
+   "pic": "Hưng",
+   "st": "wip"
   },
-  "594": {
+  "1185": {
    "pic": "Khoa",
-   "st": "done"
+   "st": "wip"
   },
-  "593": {
+  "1181": {
    "pic": "Đạt",
    "st": "done"
   },
-  "592": {
-   "pic": "Đạt",
-   "st": "done"
-  },
-  "591": {
-   "pic": "Đạt",
-   "st": "done"
-  },
-  "590": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "589": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "588": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "587": {
+  "1177": {
    "pic": "Biên",
    "st": "done"
   },
-  "586": {
+  "1173": {
    "pic": "Biên",
    "st": "done"
   },
-  "585": {
-   "pic": "Khoa",
+  "1169": {
+   "pic": "Đạt",
    "st": "done"
   },
-  "584": {
+  "1165": {
+   "pic": "Hưng",
+   "st": "wip"
+  },
+  "1161": {
    "pic": "Khoa",
+   "st": "wip"
+  },
+  "1157": {
+   "pic": "Đạt",
    "st": "done"
   },
-  "583": {
-   "pic": "Khoa",
-   "st": "done"
-  },
-  "582": {
-   "pic": "Khoa",
-   "st": "done"
-  },
-  "581": {
-   "pic": "Khoa",
-   "st": "done"
-  },
-  "580": {
+  "1153": {
    "pic": "Minh",
    "st": "done"
   },
-  "579": {
+  "1149": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "1145": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "1141": {
+   "pic": "Biên",
+   "st": "done"
+  },
+  "1137": {
+   "pic": "Biên",
+   "st": "done"
+  },
+  "1133": {
+   "pic": "Hưng",
+   "st": "wip"
+  },
+  "1129": {
+   "pic": "Hưng",
+   "st": "wip"
+  },
+  "1125": {
+   "pic": "Khoa",
+   "st": "wip"
+  },
+  "1121": {
+   "pic": "Khoa",
+   "st": "wip"
+  },
+  "1117": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "1113": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "1109": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "1105": {
+   "pic": "Khoa",
+   "st": "wip"
+  },
+  "1101": {
+   "pic": "Khoa",
+   "st": "wip"
+  },
+  "1097": {
+   "pic": "Hưng",
+   "st": "wip"
+  },
+  "1093": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "1089": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "1085": {
+   "pic": "Khoa",
+   "st": "wip"
+  },
+  "1081": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "1077": {
+   "pic": "Hưng",
+   "st": "wip"
+  },
+  "1073": {
+   "pic": "Khoa",
+   "st": "wip"
+  },
+  "1069": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "1065": {
+   "pic": "Khoa",
+   "st": "wip"
+  },
+  "1061": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "1057": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "1053": {
+   "pic": "Minh",
+   "st": "wip"
+  },
+  "1049": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "1045": {
+   "pic": "Hưng",
+   "st": "wip"
+  },
+  "1041": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "1037": {
+   "pic": "Hưng",
+   "st": "wip"
+  },
+  "1033": {
+   "pic": "Khoa",
+   "st": "wip"
+  },
+  "1029": {
+   "pic": "Đạt",
+   "st": "wip"
+  },
+  "1025": {
+   "pic": "Khoa",
+   "st": "wip"
+  },
+  "1021": {
+   "pic": "Đạt",
+   "st": "wip"
+  },
+  "1017": {
+   "pic": "Biên",
+   "st": "done"
+  },
+  "1013": {
+   "pic": "Minh",
+   "st": "wip"
+  },
+  "1009": {
+   "pic": "Hưng",
+   "st": "wip"
+  },
+  "1005": {
+   "pic": "Đạt",
+   "st": "wip"
+  },
+  "1001": {
+   "pic": "Khoa",
+   "st": "wip"
+  },
+  "997": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "993": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "989": {
+   "pic": "Khoa",
+   "st": "wip"
+  },
+  "985": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "981": {
+   "pic": "Đạt",
+   "st": "wip"
+  },
+  "977": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "973": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "969": {
+   "pic": "Hưng",
+   "st": "wip"
+  },
+  "965": {
+   "pic": "Khoa",
+   "st": "wip"
+  },
+  "961": {
+   "pic": "Khoa",
+   "st": "wip"
+  },
+  "957": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "953": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "949": {
+   "pic": "Khoa",
+   "st": "wip"
+  },
+  "945": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "941": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "937": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "933": {
+   "pic": "Biên",
+   "st": "done"
+  },
+  "929": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "925": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "921": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "917": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "913": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "909": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "905": {
    "pic": null,
    "st": "done"
   },
-  "578": {
-   "pic": "Khoa",
+  "901": {
+   "pic": null,
    "st": "done"
   },
-  "577": {
-   "pic": "Minh",
+  "897": {
+   "pic": null,
    "st": "done"
   },
-  "576": {
-   "pic": "Hưng",
+  "893": {
+   "pic": null,
    "st": "done"
   },
-  "575": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "574": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "573": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "572": {
-   "pic": "Biên",
-   "st": "done"
-  },
-  "571": {
-   "pic": "Minh",
-   "st": "done"
-  },
-  "570": {
-   "pic": "Đạt",
-   "st": "done"
-  },
-  "569": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "568": {
-   "pic": "Khoa",
-   "st": "done"
-  },
-  "567": {
-   "pic": "Khoa",
-   "st": "done"
-  },
-  "566": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "565": {
-   "pic": "Khoa",
-   "st": "done"
-  },
-  "564": {
-   "pic": "Khoa",
-   "st": "done"
-  },
-  "563": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "562": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "561": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "560": {
-   "pic": "Khoa",
-   "st": "done"
-  },
-  "559": {
-   "pic": "Đạt",
-   "st": "done"
-  },
-  "558": {
-   "pic": "Đạt",
-   "st": "done"
-  },
-  "557": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "556": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "555": {
-   "pic": "Minh",
-   "st": "done"
-  },
-  "554": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "553": {
-   "pic": "Minh",
-   "st": "done"
-  },
-  "552": {
-   "pic": "Minh",
-   "st": "done"
-  },
-  "551": {
-   "pic": "Minh",
-   "st": "done"
-  },
-  "550": {
+  "889": {
    "pic": null,
    "st": "todo"
   },
-  "549": {
+  "885": {
    "pic": "Khoa",
    "st": "done"
   },
-  "548": {
-   "pic": "Minh",
-   "st": "done"
-  },
-  "547": {
-   "pic": "Khoa",
-   "st": "done"
-  },
-  "546": {
-   "pic": "Khoa",
-   "st": "done"
-  },
-  "545": {
+  "881": {
    "pic": "Đạt",
    "st": "done"
   },
-  "544": {
-   "pic": "Minh",
-   "st": "done"
-  },
-  "543": {
+  "877": {
    "pic": "Đạt",
    "st": "done"
   },
-  "542": {
-   "pic": "Khoa",
-   "st": "done"
-  },
-  "54": {
+  "873": {
    "pic": "Đạt",
    "st": "done"
   },
-  "53": {
-   "pic": "Khoa",
+  "869": {
+   "pic": "Hưng",
    "st": "done"
   },
-  "52": {
-   "pic": "Khoa",
+  "865": {
+   "pic": "Hưng",
    "st": "done"
   },
-  "51": {
+  "861": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "857": {
    "pic": "Biên",
    "st": "done"
   },
-  "50": {
-   "pic": "Đạt",
-   "st": "done"
-  },
-  "47": {
-   "pic": "Khoa",
-   "st": "done"
-  },
-  "46": {
-   "pic": "Khoa",
-   "st": "done"
-  },
-  "45": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "44": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "43": {
-   "pic": "Minh",
-   "st": "done"
-  },
-  "42": {
-   "pic": "Đạt",
-   "st": "done"
-  },
-  "41": {
-   "pic": "Minh",
-   "st": "done"
-  },
-  "40": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "39": {
-   "pic": "Khoa",
-   "st": "done"
-  },
-  "38": {
-   "pic": "Khoa",
-   "st": "done"
-  },
-  "37": {
-   "pic": "Đạt",
-   "st": "done"
-  },
-  "36": {
-   "pic": "Khoa",
-   "st": "done"
-  },
-  "35": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "29": {
-   "pic": "Đạt",
-   "st": "done"
-  },
-  "28": {
-   "pic": "Khoa",
-   "st": "done"
-  },
-  "27": {
-   "pic": "Minh",
-   "st": "done"
-  },
-  "26": {
+  "853": {
    "pic": "Biên",
    "st": "done"
   },
-  "25": {
-   "pic": "Biên",
-   "st": "done"
-  },
-  "24": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "23": {
-   "pic": "Đạt",
-   "st": "done"
-  },
-  "22": {
-   "pic": "Minh",
-   "st": "done"
-  },
-  "21": {
+  "849": {
    "pic": "Khoa",
    "st": "done"
   },
-  "20": {
-   "pic": "Hưng",
+  "845": {
+   "pic": "Khoa",
    "st": "done"
   },
-  "19": {
+  "841": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "837": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "833": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "829": {
    "pic": "Minh",
    "st": "done"
   },
-  "18": {
+  "825": {
+   "pic": null,
+   "st": "done"
+  },
+  "821": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "817": {
    "pic": "Minh",
    "st": "done"
   },
-  "17": {
+  "813": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "809": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "805": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "801": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "797": {
+   "pic": "Biên",
+   "st": "done"
+  },
+  "793": {
    "pic": "Minh",
    "st": "done"
   },
-  "16": {
+  "789": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "785": {
    "pic": "Hưng",
    "st": "done"
   },
-  "15": {
+  "781": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "777": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "773": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "769": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "765": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "761": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "757": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "753": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "749": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "745": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "741": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "737": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "733": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "729": {
    "pic": "Minh",
    "st": "done"
   },
-  "13": {
+  "725": {
    "pic": "Hưng",
    "st": "done"
   },
-  "12": {
+  "721": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "717": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "713": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "709": {
+   "pic": null,
+   "st": "todo"
+  },
+  "705": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "701": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "697": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "693": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "689": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "685": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "681": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "677": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "425": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "421": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "417": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "413": {
+   "pic": "Biên",
+   "st": "done"
+  },
+  "409": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "405": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "401": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "397": {
    "pic": "Hưng",
    "st": "done"
   },
-  "11": {
+  "393": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "389": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "385": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "381": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "377": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "373": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "369": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "365": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "361": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "357": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "353": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "349": {
+   "pic": "Biên",
+   "st": "done"
+  },
+  "345": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "341": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "337": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "333": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "326": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "318": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "314": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "310": {
+   "pic": "Biên",
+   "st": "done"
+  },
+  "306": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "302": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "297": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "293": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "246": {
+   "pic": "Biên",
+   "st": "done"
+  },
+  "239": {
    "pic": "RK_ハオ/ラム・ニャット・",
    "st": "done"
   },
-  "10": {
-   "pic": "Minh",
-   "st": "done"
-  },
-  "9": {
-   "pic": "Đạt",
-   "st": "done"
-  },
-  "8": {
-   "pic": "Hưng",
-   "st": "done"
-  },
-  "7": {
-   "pic": "Đạt",
-   "st": "done"
-  },
-  "6": {
+  "235": {
    "pic": "Khoa",
    "st": "done"
   },
-  "5": {
-   "pic": "Hưng",
+  "234": {
+   "pic": "Biên",
    "st": "done"
   },
-  "4": {
-   "pic": "RK_ハオ/ラム・ニャット・",
+  "214": {
+   "pic": "Minh",
    "st": "done"
   },
-  "3": {
+  "213": {
+   "pic": "Biên",
+   "st": "done"
+  },
+  "209": {
+   "pic": "Biên",
+   "st": "done"
+  },
+  "202": {
    "pic": "Đạt",
    "st": "done"
   },
-  "2": {
+  "198": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "195": {
+   "pic": "Đạt",
+   "st": "done"
+  },
+  "166": {
+   "pic": "Biên",
+   "st": "done"
+  },
+  "150": {
+   "pic": "DL_愛甲譲",
+   "st": "done"
+  },
+  "146": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "143": {
+   "pic": "Biên",
+   "st": "done"
+  },
+  "140": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "137": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "136": {
+   "pic": "Hưng",
+   "st": "done"
+  },
+  "131": {
+   "pic": "Minh",
+   "st": "done"
+  },
+  "34": {
+   "pic": "DL_愛甲譲",
+   "st": "done"
+  },
+  "33": {
+   "pic": "Biên",
+   "st": "done"
+  },
+  "32": {
+   "pic": "Biên",
+   "st": "done"
+  },
+  "31": {
+   "pic": "Biên",
+   "st": "done"
+  },
+  "30": {
    "pic": "Biên",
    "st": "done"
   }
