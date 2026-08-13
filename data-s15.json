@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-13 10:58",
+ "updated": "2026-08-13 11:09",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -21,6 +21,35 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "729",
+   "dev": "dat",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 11942,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 8,
+     "del": 0,
+     "fc": 2,
+     "cr": "08-13 11:01"
+    }
+   ],
+   "created": "08-13 11:01",
+   "drive": false,
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "商品マスタ複数選択モーダルの再検索でローディングが出ない問題を修正"
+  },
   {
    "ticket": "675",
    "dev": "minh",
