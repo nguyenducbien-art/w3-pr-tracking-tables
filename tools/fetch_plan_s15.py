@@ -3,13 +3,13 @@
 """
 Lấy TRẠNG THÁI phân công Sprint 15 từ Backlog (assignee + status) → s15-status.json.
 Bảng phân công (build_s15.py) fetch file này để hiển thị LIVE:
-  - Implement PIC = assignee của ticket 親 (タスク(親)) — chỗ team gán khi nhận màn.
-  - Test PIC      = assignee của ticket テスト実施.
-  - status        = trạng thái ticket đó (Open→todo / In Progress→wip / Resolved,Closed→done).
+  - Impl PIC = assignee của ticket 実装 (タスク(実装＆単体テスト)) — người CODE thực tế + status thực tế.
+  - Test PIC = assignee của ticket テスト実施.
+  - status   = trạng thái ticket đó (Open→todo / In Progress,レビュー待ち→wip / Resolved,Closed→done / 保留→todo).
 
-⚠️ Ticket Sprint 15 KHÔNG gán milestone đồng nhất → query theo issueType(親/テスト実施)+category 画面実装
-(179 親 toàn sprint), lọc client-side về đúng số ticket trong report (s15-plan.json).
-Key theo SỐ TICKET (keyId): impl theo 親 ticket, test theo テスト実施 ticket.
+⚠️ Ticket Sprint 15 KHÔNG gán milestone đồng nhất → query theo issueType(実装/テスト実施)+category 画面実装,
+lọc client-side về đúng số ticket trong report (s15-plan.json).
+Key theo SỐ TICKET (keyId): impl theo 実装 ticket (khớp r.impl), test theo テスト実施 ticket (khớp r.test).
 
 API key đọc từ env BACKLOG_API_KEY hoặc tools/.backlog_key (gitignored). Best-effort:
 thiếu key / API lỗi → exit khác 0/2 (refresh.sh coi là lỗi, giữ file cũ, KHÔNG đè rỗng).
@@ -20,11 +20,13 @@ import json, os, re, sys, datetime, urllib.request, urllib.parse
 OUT = sys.argv[1] if len(sys.argv) > 1 else "s15-status.json"
 BACKLOG_HOST = "dialog-inc.backlog.com"
 CATEGORY_UI  = 2230051     # category 画面実装
-TYPE_PARENT  = 4092231     # タスク(親)   → Implement PIC
+TYPE_IMPL    = 4042066     # タスク(実装＆単体テスト) → Impl PIC (assignee + status THỰC TẾ của việc code)
 TYPE_TEST    = 4092260     # タスク(テスト実施) → Test PIC
 NAME = {"nguyenanhkhoa": "Khoa", "nguyenducbien": "Biên", "nguyennhatminh": "Minh",
         "phambaohung": "Hưng", "phamtiendat": "Đạt", "phamngocson": "Sơn", "trinhduybong": "Bồn"}
-STATE = {"Open": "todo", "In Progress": "wip", "Resolved": "done", "Closed": "done"}
+# status Backlog (space này trộn Anh + Nhật): レビュー待ち=chờ review→wip · 保留=tạm hoãn→todo
+STATE = {"Open": "todo", "In Progress": "wip", "レビュー待ち": "wip",
+         "Resolved": "done", "Closed": "done", "保留": "todo"}
 
 def backlog_key():
     k = os.environ.get("BACKLOG_API_KEY")
@@ -46,7 +48,7 @@ def fetch_all(key):
     out, offset = [], 0
     while True:
         q = [("apiKey", key), ("categoryId[]", CATEGORY_UI),
-             ("issueTypeId[]", TYPE_PARENT), ("issueTypeId[]", TYPE_TEST),
+             ("issueTypeId[]", TYPE_IMPL), ("issueTypeId[]", TYPE_TEST),
              ("count", 100), ("offset", offset)]
         url = "https://%s/api/v2/issues?%s" % (BACKLOG_HOST, urllib.parse.urlencode(q))
         with urllib.request.urlopen(url, timeout=45) as r:
@@ -78,8 +80,8 @@ def main():
         rec = {"pic": short(it.get("assignee")),
                "st": STATE.get((it.get("status") or {}).get("name"), "todo")}
         t = (it.get("issueType") or {}).get("id")
-        if t == TYPE_PARENT:
-            impl[tid] = rec
+        if t == TYPE_IMPL:
+            impl[tid] = rec        # key = số ticket 実装 (khớp r.impl trong s15-plan.json)
         elif t == TYPE_TEST:
             test[tid] = rec
 
@@ -96,7 +98,7 @@ def main():
 
     json.dump(data, open(OUT, "w"), ensure_ascii=False, indent=1)
     na = sum(1 for v in impl.values() if v["pic"])
-    print("[fetch_plan] %s | 親=%d (assigned %d) · テスト実施=%d | %s"
+    print("[fetch_plan] %s | 実装=%d (assigned %d) · テスト実施=%d | %s"
           % (OUT, len(impl), na, len(test), now))
 
 if __name__ == "__main__":

@@ -124,8 +124,8 @@ var RT={}, RTB='', RTloaded=false;   // route React live (per-sprint) từ route
 function reactUrl(r){ var rt=RTloaded?RT[String(r.sid)]:null; if(rt) return RTB+rt; return r.react_url||''; }  // RT (route số) ưu tiên; setup screen không SCREEN_ID → fallback react_url tĩnh (plan)
 function esc(s){return String(s==null?'':s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
 function allRows(){ return PLAN.domains.reduce(function(a,d){return a.concat(d.rows);},[]); }
-function livePic(r){ var x=ST.impl[String(r.parent)]; return (x&&x.pic)||'(chưa gán)'; }
-function implSt(r){ var x=ST.impl[String(r.parent)]; return x&&x.st; }
+function livePic(r){ var x=ST.impl[String(r.impl)]; return (x&&x.pic)||'(chưa gán)'; }   // PIC/status theo ticket 実装 (không phải 親)
+function implSt(r){ var x=ST.impl[String(r.impl)]; return x&&x.st; }
 function testRec(r){ return ST.test[String(r.test)]; }
 function tk(lbl,n){ if(!n) return ''; var b=/^\d+$/.test(String(n))?('<a href="'+BASE+n+'" target="_blank" rel="noopener">'+n+'</a>'):('<span class="ticket">'+esc(n)+'</span>'); return '<span style="color:var(--text-dim);font-size:10px">'+lbl+'</span> '+b; }
 function stpill(st){ if(!st) return ''; var x=STP[st]||STP.todo; return ' <span class="pill '+x[0]+'" title="'+st+'">'+x[1]+'</span>'; }
@@ -223,9 +223,9 @@ body = ('<div class="page">'
   + '<div class="footnote">Loại màn: <span class="pill pill-open">list</span> 一覧 · '
   + '<span class="pill pill-draft">edit</span> 登録/編集 · <span class="pill pill-merged">details</span> 明細 · '
   + '<span class="pill pill-pinned">special</span> 特殊. &nbsp; Ticket: <b>親</b>=cha · <b>実装</b>=implement＆単体テスト · <b>テ</b>=テスト実施 (click mở Backlog).<br>'
-  + '<b>Impl PIC / Test PIC = assignee THẬT trên Backlog</b> (親 / テスト実施), tự cập nhật mỗi 5p; status: '
-  + '<span class="pill pill-approved">✅</span> Resolved/Closed · <span class="pill pill-changes">🔵</span> In Progress · '
-  + '<span class="pill pill-todo">⚪</span> Open · “(chưa gán)” = chưa ai nhận trên Backlog.<br>'
+  + '<b>Impl PIC / Test PIC = assignee THẬT trên Backlog</b> (実装＆単体テスト / テスト実施), tự cập nhật mỗi 5p; status: '
+  + '<span class="pill pill-approved">✅</span> Resolved/Closed · <span class="pill pill-changes">🔵</span> In Progress/レビュー待ち · '
+  + '<span class="pill pill-todo">⚪</span> Open/保留 · “(chưa gán)” = chưa ai nhận trên Backlog.<br>'
   + 'Screen list / 画面名 / loại / ticket / URL là cấu hình cố định (<code>s15-plan.json</code>); '
   + '<b>Table A</b> phía trên = PR tracking (nhánh r20260810).</div>'
   + '</div>')
