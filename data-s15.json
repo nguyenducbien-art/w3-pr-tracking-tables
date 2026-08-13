@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-13 15:54",
+ "updated": "2026-08-13 16:05",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -21,6 +21,35 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "660",
+   "dev": "minh",
+   "bien": false,
+   "sid": "653",
+   "base": [],
+   "r810": [
+    {
+     "num": 11972,
+     "cf": "bad",
+     "st": "open",
+     "nc": 1,
+     "add": 803,
+     "del": 1,
+     "fc": 17,
+     "cr": "08-13 15:56"
+    }
+   ],
+   "created": "08-13 15:56",
+   "drive": false,
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "請求管理_明細 (screen_id=653) を React 移行"
+  },
   {
    "ticket": "659",
    "dev": "minh",
