@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-17 15:44",
+ "updated": "2026-08-17 15:53",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -55,7 +55,7 @@
     }
    ],
    "created": "08-17 15:39",
-   "drive": false,
+   "drive": true,
    "cop": 0,
    "unres": 0,
    "rvw": {
