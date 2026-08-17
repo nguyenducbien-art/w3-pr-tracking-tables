@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-17 14:27",
+ "updated": "2026-08-17 14:36",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -23,6 +23,35 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "636",
+   "dev": "minh",
+   "bien": false,
+   "sid": "439",
+   "base": [],
+   "r810": [
+    {
+     "num": 12041,
+     "cf": "bad",
+     "st": "open",
+     "nc": 7,
+     "add": 4766,
+     "del": 5,
+     "fc": 92,
+     "cr": "08-17 14:29"
+    }
+   ],
+   "created": "08-17 14:29",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユニット設定_基本設定画面を実装 (439)"
+  },
   {
    "ticket": "1546",
    "dev": "bien",
