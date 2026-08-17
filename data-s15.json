@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-17 11:20",
+ "updated": "2026-08-17 11:41",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1546",
   "1545",
   "1543",
   "1542",
@@ -22,6 +23,35 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1546",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 12024,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 10,
+     "del": 0,
+     "fc": 1,
+     "cr": "08-17 11:39"
+    }
+   ],
+   "r810": [],
+   "created": "08-17 11:39",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "Server Action の bodySizeLimit を 10mb に引き上げ (画像1MB超保存の無言失敗を解消)"
+  },
   {
    "ticket": "1169",
    "dev": "dat",
