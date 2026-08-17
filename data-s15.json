@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-17 14:56",
+ "updated": "2026-08-17 15:24",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1549",
   "1546",
   "1545",
   "1543",
@@ -23,6 +24,35 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1549",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 12047,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 1,
+     "del": 2,
+     "fc": 1,
+     "cr": "08-17 15:23"
+    }
+   ],
+   "r810": [],
+   "created": "08-17 15:23",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "基本設定ソート設定マスタ取得APIのルートを有効化"
+  },
   {
    "ticket": "636",
    "dev": "minh",
