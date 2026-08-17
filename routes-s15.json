@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-17 12:14",
- "tip": "1c9c8e3087",
+ "updated": "2026-08-17 17:08",
+ "tip": "e5584ff8ba",
  "branch": "mimosa/frontend/develop/per-sprint",
  "base": "https://mimosa-stg-react-per-sprint.dialog-wms.com",
  "routes": {
@@ -82,6 +82,7 @@
   "435": "/warehouse/element-warehouse-edits",
   "436": "/warehouse/locations",
   "437": "/location-edits",
+  "439": "/unit/basic-settings",
   "440": "/unit/code-edits",
   "441": "/unit/users",
   "442": "/unit/roll-settings",
