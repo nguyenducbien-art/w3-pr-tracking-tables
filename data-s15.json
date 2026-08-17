@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-17 10:06",
+ "updated": "2026-08-17 10:17",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -2770,12 +2770,36 @@
  ],
  "scaffold": [
   {
+   "ticket": "—",
+   "dev": "bien",
+   "bien": true,
+   "pr": {
+    "num": 12018,
+    "cf": "ok",
+    "st": "merged",
+    "nc": 39,
+    "add": 476,
+    "del": 119,
+    "fc": 29,
+    "cr": "08-17 10:13"
+   },
+   "created": "08-17 10:13",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "develop/base → r20260810_scaffold ベース同期"
+  },
+  {
    "ticket": "945",
    "dev": "dat",
    "bien": false,
    "pr": {
     "num": 11886,
-    "cf": "ok",
+    "cf": "bad",
     "st": "open",
     "nc": 2,
     "add": 40,
