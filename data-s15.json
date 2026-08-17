@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-17 15:34",
+ "updated": "2026-08-17 15:44",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1548",
   "1549",
   "1546",
   "1545",
@@ -24,6 +25,46 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1548",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 12049,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 134,
+     "del": 11,
+     "fc": 4,
+     "cr": "08-17 15:39"
+    }
+   ],
+   "r810": [
+    {
+     "num": 12050,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 134,
+     "del": 11,
+     "fc": 4,
+     "cr": "08-17 15:39"
+    }
+   ],
+   "created": "08-17 15:39",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "flag カラムのフィルタに異常値が重複表示される不具合を修正"
+  },
   {
    "ticket": "1549",
    "dev": "minh",
@@ -73,11 +114,11 @@
    "r810": [
     {
      "num": 12041,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
-     "nc": 7,
-     "add": 4442,
-     "del": 2,
+     "nc": 8,
+     "add": 4439,
+     "del": 5,
      "fc": 43,
      "cr": "08-17 14:29"
     }
