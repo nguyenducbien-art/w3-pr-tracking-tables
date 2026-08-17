@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-17 16:04",
+ "updated": "2026-08-17 16:15",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1550",
   "1548",
   "1549",
   "1546",
@@ -25,6 +26,35 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1550",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 12052,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 74,
+     "del": 30,
+     "fc": 2,
+     "cr": "08-17 16:14"
+    }
+   ],
+   "r810": [],
+   "created": "08-17 16:14",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "列フィルタで空白/空白でない選択時に入力値を保持する"
+  },
   {
    "ticket": "1548",
    "dev": "bien",
@@ -86,7 +116,7 @@
     {
      "num": 12048,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 1,
      "add": 1,
      "del": 2,
@@ -466,7 +496,7 @@
     {
      "num": 12051,
      "cf": "ok",
-     "st": "open",
+     "st": "draft",
      "nc": 1,
      "add": 292,
      "del": 76,
