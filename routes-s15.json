@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-13 17:07",
- "tip": "23492fad57",
+ "updated": "2026-08-17 12:14",
+ "tip": "1c9c8e3087",
  "branch": "mimosa/frontend/develop/per-sprint",
  "base": "https://mimosa-stg-react-per-sprint.dialog-wms.com",
  "routes": {
@@ -126,6 +126,7 @@
   "644": "/warehouse/pallets",
   "645": "/stocks/sum-headers",
   "652": "/billing/inv-headers",
+  "653": "/billing/details",
   "654": "/billing/inv-charge-edits",
   "657": "/unit/grid-column-display-common-edits",
   "685": "/stocks/serial-headers",
