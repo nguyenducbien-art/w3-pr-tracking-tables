@@ -32,20 +32,44 @@ _SCR_CELL = ("+(showScreen?('<td>'+(r.sid?'<span class=\"ticket\">'+esc(String(r
 _TICKET_CELL = "+'<td><span class=\"ticket\">'+r.ticket+'</span></td>'"
 assert _pr.count(_TICKET_CELL) == 2, "kỳ vọng ô ticket 2 lần (mainRow+scfRow)"
 _pr = _pr.replace(_TICKET_CELL, _TICKET_CELL + _SCR_CELL, 1)   # count=1 → chỉ mainRow
+# ---- FILTER theo cột 'dev' — CHỈ Bảng 2 (filterable). Dropdown lọc + data-dev trên mỗi <tr>. ----
+_FILTERBAR = (
+    "+(filterable?('<div class=\"devfilter\" style=\"margin:8px 0 2px;font-size:12px;color:var(--text-dim)\">"
+    "Lọc dev: <select data-body=\"prdevbody\" style=\"font-size:12px;padding:2px 6px;border-radius:6px\">'"
+    "+'<option value=\"\">Tất cả ('+rows.length+')</option>'"
+    "+Array.from(new Set(rows.map(function(x){return x.dev;}))).sort().map(function(dv){"
+    "return '<option value=\"'+esc(dv)+'\">'+esc(dv)+' ('+rows.filter(function(x){return x.dev===dv;}).length+')</option>';"
+    "}).join('')+'</select></div>'):'')"
+)
+_CHANGE_HANDLER = (
+    "\n;document.addEventListener('change',function(e){var s=e.target;"
+    "if(!s||!s.matches||!s.matches('.devfilter select'))return;"
+    "var tb=document.getElementById(s.getAttribute('data-body'));if(!tb)return;var dv=s.value;"
+    "[].forEach.call(tb.querySelectorAll('tr'),function(tr){"
+    "tr.style.display=(!dv||tr.getAttribute('data-dev')===dv)?'':'none';});});\n"
+)
 for _a, _b in [
     ("function mainRow(r){", "function mainRow(r,showScreen){"),
-    ("function mainBlock(rows,title,sub){", "function mainBlock(rows,title,sub,showScreen){"),
+    ("function mainBlock(rows,title,sub){", "function mainBlock(rows,title,sub,showScreen,filterable){"),
     ("return mainRow(r);", "return mainRow(r,showScreen);"),
     # chèn <th>Screen</th> sau <th>Ticket</th> trong header (chỉ mainBlock có →base, KHÔNG đụng scaffold)
     ("'<th>Ticket</th><th>Dev</th><th>→base</th>",
      "'<th>Ticket</th>'+(showScreen?'<th>Screen</th>':'')+'<th>Dev</th><th>→base</th>"),
-    # bật/tắt cột theo bảng
+    # bật/tắt cột + filter theo bảng: Bảng 1 (false) · Bảng 2 (showScreen=true, filterable=true)
     ("Copilot chỉ đếm PR→base.')", "Copilot chỉ đếm PR→base.',false)"),
-    ("(màn migration + fix lẻ).')", "(màn migration + fix lẻ).',true)"),
+    ("(màn migration + fix lẻ).')", "(màn migration + fix lẻ).',true,true)"),
+    # dropdown filter trước bảng + id cho tbody (chỉ khi filterable)
+    ("+'<div class=\"scroll-wrap\"><table><thead><tr>'",
+     _FILTERBAR + "+'<div class=\"scroll-wrap\"><table><thead><tr>'"),
+    ("'</tr></thead><tbody>'+body",
+     "'</tr></thead><tbody'+(filterable?' id=\"prdevbody\"':'')+'>'+body"),
 ]:
     assert _a in _pr, "anchor không thấy: %s" % _a[:40]
     _pr = _pr.replace(_a, _b)
-PR_RENDER = _pr
+# data-dev trên mỗi <tr> bảng chính (mainRow + scfRow — harmless cho bảng không filter)
+assert _pr.count("return '<tr>'") == 2, "kỳ vọng return '<tr>' 2 lần (mainRow+scfRow)"
+_pr = _pr.replace("return '<tr>'", "return '<tr data-dev=\"'+esc(r.dev)+'\">'")
+PR_RENDER = _pr + _CHANGE_HANDLER
 
 def esc(s):
     return str(s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
