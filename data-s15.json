@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-18 15:02",
+ "updated": "2026-08-18 15:26",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -29,6 +29,35 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
   {
+   "ticket": "264",
+   "dev": "dat",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12091,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 433,
+     "del": 19,
+     "fc": 31,
+     "cr": "08-18 15:08"
+    }
+   ],
+   "created": "08-18 15:08",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "モーダル内グリッドの数値列を schema から判定しソート順を AngularJS と一致させる"
+  },
+  {
    "ticket": "1551",
    "dev": "bien",
    "bien": true,
@@ -49,7 +78,7 @@
     {
      "num": 12088,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 2,
      "add": 168,
      "del": 3,
@@ -58,7 +87,7 @@
     }
    ],
    "created": "08-18 14:38",
-   "drive": false,
+   "drive": true,
    "cop": 0,
    "unres": 0,
    "rvw": {
@@ -783,8 +812,8 @@
     {
      "num": 11921,
      "cf": "ok",
-     "st": "open",
-     "nc": 8,
+     "st": "merged",
+     "nc": 9,
      "add": 756,
      "del": 1,
      "fc": 11,
@@ -2463,6 +2492,16 @@
    "base": [],
    "r810": [
     {
+     "num": 12094,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 226,
+     "del": 114,
+     "fc": 11,
+     "cr": "08-18 15:20"
+    },
+    {
      "num": 11850,
      "cf": "ok",
      "st": "merged",
@@ -2902,6 +2941,16 @@
    "sid": "432",
    "base": [],
    "r810": [
+    {
+     "num": 12093,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 23,
+     "del": 1,
+     "fc": 2,
+     "cr": "08-18 15:20"
+    },
     {
      "num": 11933,
      "cf": "ok",
