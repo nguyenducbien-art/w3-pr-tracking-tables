@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-17 17:08",
- "tip": "e5584ff8ba",
+ "updated": "2026-08-18 13:16",
+ "tip": "15417e8c6a",
  "branch": "mimosa/frontend/develop/per-sprint",
  "base": "https://mimosa-stg-react-per-sprint.dialog-wms.com",
  "routes": {
@@ -141,6 +141,7 @@
   "723": "/dashboard/analysis",
   "725": "/shipments/inspection-pcscans",
   "765": "/owner/unit-tariffs",
+  "766": "/owner/unit-tariff-edits",
   "767": "/owner/unit-box-sizes",
   "768": "/owner/unit-box-size-edits"
  }
