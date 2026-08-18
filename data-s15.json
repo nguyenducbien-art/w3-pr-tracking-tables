@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-18 17:07",
+ "updated": "2026-08-18 17:32",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1553",
   "1551",
   "1552",
   "1550",
@@ -29,6 +30,35 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
   {
+   "ticket": "1553",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12108,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 144,
+     "del": 206,
+     "fc": 6,
+     "cr": "08-18 17:27"
+    }
+   ],
+   "created": "08-18 17:27",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "共通 AutoGrowTextarea を抽出し 424/440/462 の自動伸長セル重複を解消"
+  },
+  {
    "ticket": "264",
    "dev": "dat",
    "bien": false,
@@ -38,7 +68,7 @@
     {
      "num": 12091,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 2,
      "add": 433,
      "del": 19,
