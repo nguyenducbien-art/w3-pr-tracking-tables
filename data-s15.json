@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-18 15:54",
+ "updated": "2026-08-18 16:06",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1154,6 +1154,45 @@
    "title": "ネクストエンジン設定画面 (643) を Next.js に移行"
   },
   {
+   "ticket": "1097",
+   "dev": "hung",
+   "bien": false,
+   "sid": "615",
+   "base": [],
+   "r810": [
+    {
+     "num": 12100,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 10,
+     "del": 19,
+     "fc": 3,
+     "cr": "08-18 16:01"
+    },
+    {
+     "num": 11896,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 4,
+     "add": 1931,
+     "del": 2,
+     "fc": 24,
+     "cr": "08-12 14:23"
+    }
+   ],
+   "created": "08-12 14:23",
+   "drive": true,
+   "cop": 3,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ハンディ設定メニューを実装"
+  },
+  {
    "ticket": "1479",
    "dev": "bien",
    "bien": true,
@@ -1181,35 +1220,6 @@
     "pd": []
    },
    "title": "revert: [mimosa][frontend] ファイル出力中/帳票出力中モーダルの×中断機能をリバート"
-  },
-  {
-   "ticket": "1097",
-   "dev": "hung",
-   "bien": false,
-   "sid": "615",
-   "base": [],
-   "r810": [
-    {
-     "num": 11896,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 4,
-     "add": 1931,
-     "del": 2,
-     "fc": 24,
-     "cr": "08-12 14:23"
-    }
-   ],
-   "created": "08-12 14:23",
-   "drive": true,
-   "cop": 3,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "ハンディ設定メニューを実装"
   },
   {
    "ticket": "1541",
@@ -2618,6 +2628,16 @@
    "sid": "452",
    "base": [],
    "r810": [
+    {
+     "num": 12101,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 1,
+     "del": 0,
+     "fc": 1,
+     "cr": "08-18 16:01"
+    },
     {
      "num": 12097,
      "cf": "ok",
