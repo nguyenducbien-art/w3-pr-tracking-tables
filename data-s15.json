@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-18 11:56",
+ "updated": "2026-08-18 12:07",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -27,6 +27,35 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1161",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "/warehouse",
+   "base": [],
+   "r810": [
+    {
+     "num": 12069,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 39,
+     "del": 25,
+     "fc": 6,
+     "cr": "08-18 11:54"
+    }
+   ],
+   "created": "08-18 11:54",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "システム倉庫登録_バックエンドのエラーメッセージが表示されない不具合を修正"
+  },
   {
    "ticket": "1552",
    "dev": "bien",
