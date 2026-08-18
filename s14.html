@@ -143,13 +143,36 @@
 </style>
 </head>
 <body>
-<nav class="topnav"><div class="topnav-inner"><span class="topnav-brand">W3 PR Tracking</span><span class="topnav-sep">/</span><a href="s12.html?v=1786525842">Sprint 12</a><a href="index.html?v=1786525842">Sprint 13</a><a href="s14.html?v=1786525842" class="active">Sprint 14</a><a href="s15.html?v=1786525842">Sprint 15</a></div></nav>
+<nav class="topnav"><div class="topnav-inner"><span class="topnav-brand">W3 PR Tracking</span><span class="topnav-sep">/</span><a href="s12.html?v=1787049350">Sprint 12</a><a href="index.html?v=1787049350">Sprint 13</a><a href="s14.html?v=1787049350" class="active">Sprint 14</a><a href="s15.html?v=1787049350">Sprint 15</a></div></nav>
 <div id="app"></div>
 <div id="screens"><div class="page"><div class="subtitle">đang tải danh sách màn…</div></div></div>
 <script src="https://nguyenducbien-art.github.io/pixel-pets/pixel-pets.js" data-min="2" data-max="5" defer></script>
 <script id="table-data" type="application/json"></script>
 <script>
 function esc(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+// ---- FILTER theo người (dev / PIC) — dùng chung mọi bảng ----
+// filterBlock(rows,key) -> {bar, id}: dropdown + id gắn cho <tbody>. <2 giá trị thì không hiện.
+// Mỗi <tr> mang data-<key> (data-dev / data-pic); handler ẩn/hiện theo lựa chọn.
+var _FBN=0;
+function filterBlock(rows,key){
+  var vals=[]; (rows||[]).forEach(function(x){var v=x&&x[key]; if(v&&vals.indexOf(v)<0)vals.push(v);});
+  if(vals.length<2) return {bar:'',id:''};
+  vals.sort();
+  var id='fb'+(++_FBN), lbl=(key==='pic')?'PIC':'dev';
+  var opts='<option value="">Tất cả ('+rows.length+')</option>'+vals.map(function(v){
+    var n=rows.filter(function(x){return x[key]===v;}).length;
+    return '<option value="'+esc(v)+'">'+esc(v)+' ('+n+')</option>';}).join('');
+  return {id:id, bar:'<div class="devfilter" style="margin:8px 0 2px;font-size:12px;color:var(--text-dim)">'
+    +'Lọc '+lbl+': <select data-body="'+id+'" data-key="'+key+'" style="font-size:12px;padding:2px 6px;border-radius:6px">'
+    +opts+'</select></div>'};
+}
+document.addEventListener('change',function(e){
+  var s=e.target; if(!s||!s.matches||!s.matches('.devfilter select'))return;
+  var tb=document.getElementById(s.getAttribute('data-body')); if(!tb)return;
+  var k=s.getAttribute('data-key')||'dev', v=s.value;
+  [].forEach.call(tb.querySelectorAll('tr'),function(tr){
+    tr.style.display=(!v||tr.getAttribute('data-'+k)===v)?'':'none';});
+});
 function render(D){
   var U=D.prUrlBase, COMMON=new Set(D.common), INVALID=new Set(D.invalidBase);
   var PILL={merged:['merged','MERGED'],draft:['draft','DRAFT'],approved:['approved','APPROVED'],changes:['changes','CHANGES'],open:['open','OPEN']};
@@ -182,7 +205,7 @@ function render(D){
   function mainRow(r){
     var devcls=(r.dev==='bien')?'dev dev-bien':'dev';
     var rep=r.drive?'<span class="report-yes">✓</span>':'<span class="report-no">—</span>';
-    return '<tr>'
+    return '<tr data-dev="'+esc(r.dev)+'">'
       +'<td><span class="ticket">'+r.ticket+'</span></td>'
       +'<td><span class="'+devcls+'">'+r.dev+'</span></td>'
       +'<td>'+cell(r.base||[],INVALID.has(r.ticket))+'</td>'
@@ -197,6 +220,7 @@ function render(D){
   }
   // ---- helper: 1 block bảng chính (heading + stats + table) ----
   function mainBlock(rows,title,sub){
+    var _F=filterBlock(rows,'dev');
     var nbase=0,nr727=0,npr=0,totun=0,ncf=0;
     var body=rows.map(function(r){
       var b=r.base||[],r727=r.r727||[];
@@ -214,20 +238,21 @@ function render(D){
         +'<div class="stat">conflict <span class="stat-val warn">'+ncf+'</span></div>'
         +'<div class="stat">Copilot unres <span class="stat-val warn">'+totun+'</span></div>'
       +'</div>'
-      +'<div class="scroll-wrap"><table><thead><tr>'
+      +_F.bar+'<div class="scroll-wrap"><table><thead><tr>'
         +'<th>Ticket</th><th>Dev</th><th>→base</th><th>→r20260727</th>'
         +'<th>Reviewers</th><th>Report</th><th>Copilot</th><th>Unres.</th><th>Title</th>'
-      +'</tr></thead><tbody>'+body+'</tbody></table></div>';
+      +'</tr></thead><tbody'+(_F.id?' id="'+_F.id+'"':'')+'>'+body+'</tbody></table></div>';
   }
   var commonRows=D.main.filter(function(r){return COMMON.has(r.ticket);});
   var normalRows=D.main.filter(function(r){return !COMMON.has(r.ticket);});
 
   // ---- bảng phụ scaffold ----
+  var _SF=filterBlock(D.scaffold,'dev');
   var scfUn=0,scfCf=0;
   var scfRows=D.scaffold.map(function(r){
     scfUn+=r.unres; if(r.pr.cf==='bad')scfCf++;
     var devcls=(r.dev==='bien')?'dev dev-bien':'dev';
-    return '<tr>'
+    return '<tr data-dev="'+esc(r.dev)+'">'
       +'<td><span class="ticket">'+r.ticket+'</span></td>'
       +'<td><span class="'+devcls+'">'+r.dev+'</span></td>'
       +'<td>'+cell([r.pr],false)+'</td>'
@@ -252,9 +277,9 @@ function render(D){
      +'<div class="stat">conflict <span class="stat-val warn">'+scfCf+'</span></div>'
      +'<div class="stat">Copilot unresolved <span class="stat-val warn">'+scfUn+'</span></div>'
    +'</div>'
-   +'<div class="scroll-wrap"><table style="min-width:1000px;"><thead><tr>'
+   +_SF.bar+'<div class="scroll-wrap"><table style="min-width:1000px;"><thead><tr>'
      +'<th>Ticket</th><th>Dev</th><th>→scaffold</th><th>Reviewers</th><th>Copilot</th><th>Unres.</th><th>Title</th>'
-   +'</tr></thead><tbody>'+scfRows+'</tbody></table></div>'
+   +'</tr></thead><tbody'+(_SF.id?' id="'+_SF.id+'"':'')+'>'+scfRows+'</tbody></table></div>'
    +'<div class="footnote">Status pill theo từng PR: '
      +'<span class="pill pill-open">OPEN</span> <span class="pill pill-draft">DRAFT</span> '
      +'<span class="pill pill-approved">APPROVED</span> <span class="pill pill-changes">CHANGES</span> '
@@ -305,7 +330,7 @@ function renderScreens(S){
     var t=ST_S[s.st]||ST_S.todo;
     var rt=s.route?'<span class="ticket">'+esc(s.route)+'</span>':'<span class="cf-na">—</span>';
     var picc=(s.pic==='Biên')?' style="color:var(--accent);font-weight:600"':'';
-    return '<tr><td><span class="ticket">'+s.sid+'</span></td>'
+    return '<tr data-pic="'+esc(s.pic)+'"><td><span class="ticket">'+s.sid+'</span></td>'
       +'<td><span class="jp-cell">'+esc(s.name)+'</span></td>'
       +'<td>'+rt+'</td>'
       +'<td><span class="ticket">'+esc(s.ticket)+'</span></td>'
@@ -315,6 +340,7 @@ function renderScreens(S){
       +'<td>'+(s.tester?'<span class="dev">'+esc(s.tester)+'</span>':'<span class="cf-na">—</span>')+'</td>'
       +'<td><span class="note-cell">'+esc(s.note||'')+'</span></td></tr>';
   }).join('');
+  var _PF=filterBlock(scr,'pic');
   var html='<div class="page">'
     +'<div class="page-header"><h1>Danh sách màn — Sprint 14 (Kho / Inventory)</h1>'
       +'<span class="meta">'+scr.length+' màn · tự động từ code r20260727 · '+esc(S.updated||'')+(S.tip?(' @ '+esc(S.tip)):'')+'</span></div>'
@@ -328,9 +354,9 @@ function renderScreens(S){
         +'<div class="stat">⚪ chưa <span class="stat-val warn">'+nt('todo')+'</span></div>'):'')
     +'</div>'
     +'<div class="pic-summary">'+chips+'</div>'
-    +'<div class="scroll-wrap"><table style="min-width:1040px"><thead><tr>'
+    +_PF.bar+'<div class="scroll-wrap"><table style="min-width:1040px"><thead><tr>'
       +'<th>Screen ID</th><th>Tên màn</th><th>Route Next.js</th><th>Ticket</th><th>PIC</th><th>Migrate</th><th>Test tích hợp</th><th>Người test</th><th>Ghi chú</th>'
-    +'</tr></thead><tbody>'+body+'</tbody></table></div>'
+    +'</tr></thead><tbody'+(_PF.id?' id="'+_PF.id+'"':'')+'>'+body+'</tbody></table></div>'
     +'<div class="footnote">✅ migrated = có folder màn (khai báo <code>SCREEN_ID</code>) trên r20260727 · 🔴 chưa = chưa có folder (đang làm ở branch riêng hoặc chưa bắt đầu).<br>'
       +'Test tích hợp (integration test): ✅ xong = Resolved/Closed · 🔵 đang = In Progress · ⚪ chưa = Open — lấy từ task <b>テスト実施</b> (test execution, milestone Sprint 14) trên Backlog; Người test = assignee của task đó.<br>'
       +'Danh sách màn = milestone “Sprint 14” trên Backlog (category 画面実装 = screen impl). Cron điều tra r20260727 + Backlog mỗi 5 phút; ticket = issueKey Backlog. Reassign PIC / thêm-bớt màn: sửa CONFIG trong <code>tools/fetch_screens_s14.py</code>.</div>'

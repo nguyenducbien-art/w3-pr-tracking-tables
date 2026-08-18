@@ -18,6 +18,31 @@ MASCOT = ('<script src="https://nguyenducbien-art.github.io/pixel-pets/pixel-pet
 
 RENDER_JS = r"""
 function esc(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+
+// ---- FILTER theo người (dev / PIC) — dùng chung mọi bảng ----
+// filterBlock(rows,key) -> {bar, id}: dropdown + id gắn cho <tbody>. <2 giá trị thì không hiện.
+// Mỗi <tr> mang data-<key> (data-dev / data-pic); handler ẩn/hiện theo lựa chọn.
+var _FBN=0;
+function filterBlock(rows,key){
+  var vals=[]; (rows||[]).forEach(function(x){var v=x&&x[key]; if(v&&vals.indexOf(v)<0)vals.push(v);});
+  if(vals.length<2) return {bar:'',id:''};
+  vals.sort();
+  var id='fb'+(++_FBN), lbl=(key==='pic')?'PIC':'dev';
+  var opts='<option value="">Tất cả ('+rows.length+')</option>'+vals.map(function(v){
+    var n=rows.filter(function(x){return x[key]===v;}).length;
+    return '<option value="'+esc(v)+'">'+esc(v)+' ('+n+')</option>';}).join('');
+  return {id:id, bar:'<div class="devfilter" style="margin:8px 0 2px;font-size:12px;color:var(--text-dim)">'
+    +'Lọc '+lbl+': <select data-body="'+id+'" data-key="'+key+'" style="font-size:12px;padding:2px 6px;border-radius:6px">'
+    +opts+'</select></div>'};
+}
+document.addEventListener('change',function(e){
+  var s=e.target; if(!s||!s.matches||!s.matches('.devfilter select'))return;
+  var tb=document.getElementById(s.getAttribute('data-body')); if(!tb)return;
+  var k=s.getAttribute('data-key')||'dev', v=s.value;
+  [].forEach.call(tb.querySelectorAll('tr'),function(tr){
+    tr.style.display=(!v||tr.getAttribute('data-'+k)===v)?'':'none';});
+});
+
 function render(D){
   var U=D.prUrlBase, COMMON=new Set(D.common), INVALID=new Set(D.invalidBase);
   var PILL={merged:['merged','MERGED'],draft:['draft','DRAFT'],approved:['approved','APPROVED'],changes:['changes','CHANGES'],open:['open','OPEN']};
@@ -50,7 +75,7 @@ function render(D){
   function mainRow(r){
     var devcls=(r.dev==='bien')?'dev dev-bien':'dev';
     var rep=r.drive?'<span class="report-yes">✓</span>':'<span class="report-no">—</span>';
-    return '<tr>'
+    return '<tr data-dev="'+esc(r.dev)+'">'
       +'<td><span class="ticket">'+r.ticket+'</span></td>'
       +'<td><span class="'+devcls+'">'+r.dev+'</span></td>'
       +'<td>'+cell(r.base||[],INVALID.has(r.ticket))+'</td>'
@@ -65,6 +90,7 @@ function render(D){
   }
   // ---- helper: 1 block bảng chính (heading + stats + table) ----
   function mainBlock(rows,title,sub){
+    var _F=filterBlock(rows,'dev');
     var nbase=0,nr629=0,npr=0,totun=0,ncf=0;
     var body=rows.map(function(r){
       var b=r.base||[],r629=r.r629||[];
@@ -82,20 +108,21 @@ function render(D){
         +'<div class="stat">conflict <span class="stat-val warn">'+ncf+'</span></div>'
         +'<div class="stat">Copilot unres <span class="stat-val warn">'+totun+'</span></div>'
       +'</div>'
-      +'<div class="scroll-wrap"><table><thead><tr>'
+      +_F.bar+'<div class="scroll-wrap"><table><thead><tr>'
         +'<th>Ticket</th><th>Dev</th><th>→base</th><th>→r20260629</th>'
         +'<th>Reviewers</th><th>Report</th><th>Copilot</th><th>Unres.</th><th>Title</th>'
-      +'</tr></thead><tbody>'+body+'</tbody></table></div>';
+      +'</tr></thead><tbody'+(_F.id?' id="'+_F.id+'"':'')+'>'+body+'</tbody></table></div>';
   }
   var commonRows=D.main.filter(function(r){return COMMON.has(r.ticket);});
   var normalRows=D.main.filter(function(r){return !COMMON.has(r.ticket);});
 
   // ---- bảng phụ scaffold ----
+  var _SF=filterBlock(D.scaffold,'dev');
   var scfUn=0,scfCf=0;
   var scfRows=D.scaffold.map(function(r){
     scfUn+=r.unres; if(r.pr.cf==='bad')scfCf++;
     var devcls=(r.dev==='bien')?'dev dev-bien':'dev';
-    return '<tr>'
+    return '<tr data-dev="'+esc(r.dev)+'">'
       +'<td><span class="ticket">'+r.ticket+'</span></td>'
       +'<td><span class="'+devcls+'">'+r.dev+'</span></td>'
       +'<td>'+cell([r.pr],false)+'</td>'
@@ -120,9 +147,9 @@ function render(D){
      +'<div class="stat">conflict <span class="stat-val warn">'+scfCf+'</span></div>'
      +'<div class="stat">Copilot unresolved <span class="stat-val warn">'+scfUn+'</span></div>'
    +'</div>'
-   +'<div class="scroll-wrap"><table style="min-width:1000px;"><thead><tr>'
+   +_SF.bar+'<div class="scroll-wrap"><table style="min-width:1000px;"><thead><tr>'
      +'<th>Ticket</th><th>Dev</th><th>→scaffold</th><th>Reviewers</th><th>Copilot</th><th>Unres.</th><th>Title</th>'
-   +'</tr></thead><tbody>'+scfRows+'</tbody></table></div>'
+   +'</tr></thead><tbody'+(_SF.id?' id="'+_SF.id+'"':'')+'>'+scfRows+'</tbody></table></div>'
    +'<div class="footnote">Status pill theo từng PR: '
      +'<span class="pill pill-open">OPEN</span> <span class="pill pill-draft">DRAFT</span> '
      +'<span class="pill pill-approved">APPROVED</span> <span class="pill pill-changes">CHANGES</span> '
