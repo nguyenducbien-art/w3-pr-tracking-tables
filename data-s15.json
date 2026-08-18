@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-18 14:26",
+ "updated": "2026-08-18 14:51",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1551",
   "1552",
   "1550",
   "1548",
@@ -27,6 +28,35 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1551",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 12083,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 163,
+     "del": 3,
+     "fc": 4,
+     "cr": "08-18 14:38"
+    }
+   ],
+   "r810": [],
+   "created": "08-18 14:38",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ulink セルに認証付きダウンロードハンドラの口を追加"
+  },
   {
    "ticket": "1535",
    "dev": "bien",
@@ -2528,6 +2558,16 @@
    "sid": "452",
    "base": [],
    "r810": [
+    {
+     "num": 12085,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 58,
+     "del": 19,
+     "fc": 4,
+     "cr": "08-18 14:42"
+    },
     {
      "num": 11852,
      "cf": "ok",
