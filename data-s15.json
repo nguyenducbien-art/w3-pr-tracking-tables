@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-18 13:16",
+ "updated": "2026-08-18 14:14",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -27,6 +27,35 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1535",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12079,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 295,
+     "del": 61,
+     "fc": 13,
+     "cr": "08-18 14:01"
+    }
+   ],
+   "created": "08-18 14:01",
+   "drive": false,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "462 品質区分設定 表示順序を空欄可・空欄登録時に必須エラー"
+  },
   {
    "ticket": "1161",
    "dev": "khoa",
@@ -2147,6 +2176,16 @@
    "sid": "657",
    "base": [],
    "r810": [
+    {
+     "num": 12081,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 67,
+     "del": 1,
+     "fc": 4,
+     "cr": "08-18 14:10"
+    },
     {
      "num": 11856,
      "cf": "ok",
