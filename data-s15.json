@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-19 15:19",
+ "updated": "2026-08-19 15:39",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -29,6 +29,35 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1205",
+   "dev": "hung",
+   "bien": false,
+   "sid": "(機能)",
+   "base": [],
+   "r810": [
+    {
+     "num": 12145,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 2073,
+     "del": 62,
+     "fc": 18,
+     "cr": "08-19 15:30"
+    }
+   ],
+   "created": "08-19 15:30",
+   "drive": true,
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ダッシュボード_入荷出荷状況テーブル・ToDoリスト"
+  },
   {
    "ticket": "1201",
    "dev": "hung",
@@ -687,10 +716,10 @@
     {
      "num": 12141,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 4,
-     "add": 168,
-     "del": 55,
+     "add": 169,
+     "del": 54,
      "fc": 7,
      "cr": "08-19 14:33"
     },
@@ -1780,7 +1809,7 @@
     {
      "num": 12143,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 1,
      "add": 53,
      "del": 1,
