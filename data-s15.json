@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-19 14:00",
+ "updated": "2026-08-19 14:13",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -29,6 +29,35 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1201",
+   "dev": "hung",
+   "bien": false,
+   "sid": "(機能)",
+   "base": [],
+   "r810": [
+    {
+     "num": 12140,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 2053,
+     "del": 0,
+     "fc": 17,
+     "cr": "08-19 14:03"
+    }
+   ],
+   "created": "08-19 14:03",
+   "drive": true,
+   "cop": 2,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ダッシュボード_入荷出荷状況テーブル"
+  },
   {
    "ticket": "1553",
    "dev": "bien",
@@ -1371,8 +1400,8 @@
      "num": 12125,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 15,
+     "nc": 2,
+     "add": 12,
      "del": 12,
      "fc": 4,
      "cr": "08-19 10:47"
