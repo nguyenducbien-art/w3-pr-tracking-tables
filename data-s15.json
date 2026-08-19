@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-19 10:01",
+ "updated": "2026-08-19 10:23",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -3453,30 +3453,6 @@
     "pd": []
    },
    "title": "develop/base → r20260810_scaffold ベース同期"
-  },
-  {
-   "ticket": "620",
-   "dev": "bien",
-   "bien": true,
-   "pr": {
-    "num": 12032,
-    "cf": "bad",
-    "st": "open",
-    "nc": 1,
-    "add": 75,
-    "del": 15,
-    "fc": 6,
-    "cr": "08-17 13:24"
-   },
-   "created": "08-17 13:24",
-   "cop": 0,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "移行 scaffold 規約・SKILL 更新 (MODAL-NEW-09/10・API-NEW-15 ほか)"
   },
   {
    "ticket": "—",
