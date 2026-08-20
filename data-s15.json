@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-20 17:57",
+ "updated": "2026-08-20 19:03",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -38,6 +38,16 @@
    "base": [],
    "r810": [
     {
+     "num": 12198,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 147,
+     "del": 11,
+     "fc": 2,
+     "cr": "08-20 18:53"
+    },
+    {
      "num": 12192,
      "cf": "ok",
      "st": "merged",
@@ -51,8 +61,8 @@
    "created": "08-20 17:19",
    "drive": false,
    "drvurl": "",
-   "cop": 1,
-   "unres": 1,
+   "cop": 2,
+   "unres": 2,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -1933,8 +1943,8 @@
      "num": 12189,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 1091,
+     "nc": 2,
+     "add": 1181,
      "del": 199,
      "fc": 9,
      "cr": "08-20 16:40"
@@ -1994,7 +2004,7 @@
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/1i8d6Jtb0SrC-b13bB1a3y17lgiLAz_8D/view?usp=sharing",
    "cop": 6,
-   "unres": 5,
+   "unres": 3,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -3506,6 +3516,16 @@
    "base": [],
    "r810": [
     {
+     "num": 12197,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 254,
+     "del": 1,
+     "fc": 4,
+     "cr": "08-20 18:17"
+    },
+    {
      "num": 12093,
      "cf": "ok",
      "st": "merged",
@@ -3539,7 +3559,7 @@
    "created": "08-10 13:49",
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/1VpS-cQngqdC5mh3en_SZp5RjxGD8RJpu/view?usp=drive_link",
-   "cop": 4,
+   "cop": 6,
    "unres": 1,
    "rvw": {
     "ap": [],
@@ -3637,6 +3657,16 @@
    "base": [],
    "r810": [
     {
+     "num": 12195,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 38,
+     "del": 7,
+     "fc": 2,
+     "cr": "08-20 17:56"
+    },
+    {
      "num": 11871,
      "cf": "ok",
      "st": "merged",
@@ -3660,7 +3690,7 @@
    "created": "08-10 11:12",
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/1lGaM_PB308YT8Zma_SPcfx1jC8lVBQYn/view?usp=drive_link",
-   "cop": 1,
+   "cop": 3,
    "unres": 0,
    "rvw": {
     "ap": [],
@@ -3800,10 +3830,10 @@
     {
      "num": 12193,
      "cf": "ok",
-     "st": "open",
-     "nc": 3,
+     "st": "merged",
+     "nc": 4,
      "add": 15,
-     "del": 7,
+     "del": 6,
      "fc": 4,
      "cr": "08-20 17:23"
     },
