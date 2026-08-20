@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-20 09:55",
+ "updated": "2026-08-20 10:08",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1557",
   "1553",
   "1551",
   "1552",
@@ -29,6 +30,46 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1557",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 12162,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 46,
+     "del": 5,
+     "fc": 4,
+     "cr": "08-20 10:02"
+    }
+   ],
+   "r810": [
+    {
+     "num": 12163,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 34,
+     "del": 5,
+     "fc": 6,
+     "cr": "08-20 10:04"
+    }
+   ],
+   "created": "08-20 10:02",
+   "drive": false,
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "perf: [mimosa][frontend] next/link の prefetch を無効化し RSC 先読みによるバックエンド負荷を軽減"
+  },
   {
    "ticket": "1205",
    "dev": "hung",
@@ -1205,7 +1246,7 @@
     {
      "num": 12152,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 1,
      "add": 8,
      "del": 1,
@@ -1420,7 +1461,7 @@
     {
      "num": 12160,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 1,
      "add": 7,
      "del": 1,
