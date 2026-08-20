@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-19 14:22",
+ "updated": "2026-08-20 11:27",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -41,6 +41,7 @@
    ],
    "created": "08-07 14:45",
    "drive": false,
+   "drvurl": "",
    "cop": 0,
    "unres": 0,
    "rvw": {
@@ -69,6 +70,7 @@
    ],
    "created": "08-07 11:03",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1_2fVXb-SVCWmWblLtJpnaXIAACVgyWqP/view?usp=sharing",
    "cop": 2,
    "unres": 2,
    "rvw": {
@@ -108,6 +110,7 @@
    ],
    "created": "08-05 13:51",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1qNBQataJzUgG8bI0VFOnbAsU2cW8HuPz/view?usp=sharing",
    "cop": 0,
    "unres": 0,
    "rvw": {
@@ -149,6 +152,7 @@
    ],
    "created": "08-05 10:52",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1LCthgR9Z0IPmwa8QklofxhU-_Mm8QZJs/view?usp=sharing",
    "cop": 0,
    "unres": 0,
    "rvw": {
@@ -192,6 +196,7 @@
    ],
    "created": "08-04 14:55",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1YlIcScFCA8VJfTKIL26XA096t0WdRvps/view?usp=sharing",
    "cop": 0,
    "unres": 0,
    "rvw": {
@@ -233,6 +238,7 @@
    ],
    "created": "08-04 11:48",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1YY4PwbQgcgY_47H6NfNL4LyO4nVG5sVF/view?usp=sharing",
    "cop": 0,
    "unres": 0,
    "rvw": {
@@ -274,6 +280,7 @@
    ],
    "created": "08-04 09:20",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1kqsbCScfHdzZrumQtGDXGuj6RRyVCrF3/view?usp=sharing",
    "cop": 2,
    "unres": 0,
    "rvw": {
@@ -304,6 +311,7 @@
    ],
    "created": "08-03 17:11",
    "drive": false,
+   "drvurl": "",
    "cop": 1,
    "unres": 0,
    "rvw": {
@@ -353,6 +361,7 @@
    ],
    "created": "07-31 15:25",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1KQydvIBDvFXXy34fmfyfPMOOfWKqQhM8/view?usp=sharing",
    "cop": 4,
    "unres": 0,
    "rvw": {
@@ -416,6 +425,7 @@
    ],
    "created": "07-31 14:56",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1jhDPw3bLFgbEuTbOaOSeWOjLIbjq8ozx/view?usp=sharing",
    "cop": 2,
    "unres": 0,
    "rvw": {
@@ -458,6 +468,7 @@
    ],
    "created": "07-31 11:39",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1acMUk65AEN0q9Q-u5VWfrqcpYQpU7Q6F/view?usp=drive_link",
    "cop": 2,
    "unres": 0,
    "rvw": {
@@ -486,6 +497,7 @@
    ],
    "created": "07-30 20:03",
    "drive": false,
+   "drvurl": "",
    "cop": 1,
    "unres": 0,
    "rvw": {
@@ -534,6 +546,7 @@
    ],
    "created": "07-30 18:06",
    "drive": false,
+   "drvurl": "",
    "cop": 8,
    "unres": 0,
    "rvw": {
@@ -592,6 +605,7 @@
    ],
    "created": "07-30 16:34",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1shwE64nDIS8jpt6iU05owkKcb0950mos/view?usp=drive_link",
    "cop": 4,
    "unres": 2,
    "rvw": {
@@ -640,6 +654,7 @@
    ],
    "created": "07-30 16:11",
    "drive": false,
+   "drvurl": "",
    "cop": 0,
    "unres": 0,
    "rvw": {
@@ -709,6 +724,7 @@
    ],
    "created": "07-30 15:50",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1xo99CiZM3piln2hEj2UlRxq6PhfcuGeE/view?usp=sharing",
    "cop": 3,
    "unres": 0,
    "rvw": {
@@ -761,6 +777,7 @@
    ],
    "created": "07-30 14:19",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1n5_WGCHpg_7Ngw_ICS1guO21ZtUWyUJF/view?usp=drive_link",
    "cop": 5,
    "unres": 2,
    "rvw": {
@@ -810,6 +827,7 @@
    ],
    "created": "07-30 13:05",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/15AX5c2yR5trCXsTunEEdwzZkgwAJpdc0/view?usp=sharing",
    "cop": 5,
    "unres": 0,
    "rvw": {
@@ -850,6 +868,7 @@
    ],
    "created": "07-30 13:00",
    "drive": false,
+   "drvurl": "",
    "cop": 6,
    "unres": 0,
    "rvw": {
@@ -889,6 +908,7 @@
    ],
    "created": "07-30 10:49",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1wIbZPxZ7p2AEld_9wm3G4M6kdDcfB4cH/view?usp=sharing",
    "cop": 0,
    "unres": 0,
    "rvw": {
@@ -919,6 +939,7 @@
    ],
    "created": "07-30 10:05",
    "drive": false,
+   "drvurl": "",
    "cop": 1,
    "unres": 0,
    "rvw": {
@@ -957,6 +978,7 @@
    ],
    "created": "07-29 17:09",
    "drive": false,
+   "drvurl": "",
    "cop": 4,
    "unres": 0,
    "rvw": {
@@ -985,6 +1007,7 @@
    ],
    "created": "07-29 16:25",
    "drive": false,
+   "drvurl": "",
    "cop": 2,
    "unres": 0,
    "rvw": {
@@ -1013,6 +1036,7 @@
    ],
    "created": "07-29 13:28",
    "drive": false,
+   "drvurl": "",
    "cop": 2,
    "unres": 0,
    "rvw": {
@@ -1041,6 +1065,7 @@
    ],
    "created": "07-29 11:54",
    "drive": false,
+   "drvurl": "",
    "cop": 1,
    "unres": 0,
    "rvw": {
@@ -1069,6 +1094,7 @@
    ],
    "created": "07-29 10:28",
    "drive": false,
+   "drvurl": "",
    "cop": 0,
    "unres": 0,
    "rvw": {
@@ -1097,6 +1123,7 @@
    ],
    "created": "07-29 09:43",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1RJ0Eg2lj6rQ-z5dUHubuoW0iaJ6vJ5pT/view?usp=drive_link",
    "cop": 2,
    "unres": 0,
    "rvw": {
@@ -1145,6 +1172,7 @@
    ],
    "created": "07-28 17:20",
    "drive": false,
+   "drvurl": "",
    "cop": 5,
    "unres": 2,
    "rvw": {
@@ -1173,6 +1201,7 @@
    ],
    "created": "07-28 16:17",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1MPAEGvg4go-ILL2EsE1VqU1jt54YlDRq/view?usp=drive_link",
    "cop": 0,
    "unres": 0,
    "rvw": {
@@ -1221,6 +1250,7 @@
    ],
    "created": "07-28 16:10",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1mSfJimGH09wpd6TcS2id6PzKqgRBxcID/view?usp=drive_link",
    "cop": 2,
    "unres": 0,
    "rvw": {
@@ -1249,6 +1279,7 @@
    ],
    "created": "07-28 15:50",
    "drive": false,
+   "drvurl": "",
    "cop": 1,
    "unres": 0,
    "rvw": {
@@ -1277,6 +1308,7 @@
    ],
    "created": "07-28 15:42",
    "drive": false,
+   "drvurl": "",
    "cop": 0,
    "unres": 0,
    "rvw": {
@@ -1335,6 +1367,7 @@
    ],
    "created": "07-28 15:32",
    "drive": false,
+   "drvurl": "",
    "cop": 3,
    "unres": 0,
    "rvw": {
@@ -1363,6 +1396,7 @@
    ],
    "created": "07-28 14:25",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1nsb9ON2v4bZ-iZ4Uw3gNAYIbCu-OE4xp/view?usp=drive_link",
    "cop": 1,
    "unres": 0,
    "rvw": {
@@ -1401,6 +1435,7 @@
    ],
    "created": "07-28 11:36",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1iW8h6l6fBxMdE3XmYj5ESSWFp_xUBK5g/view?usp=sharing",
    "cop": 2,
    "unres": 1,
    "rvw": {
@@ -1449,6 +1484,7 @@
    ],
    "created": "07-28 10:50",
    "drive": false,
+   "drvurl": "",
    "cop": 2,
    "unres": 0,
    "rvw": {
@@ -1477,6 +1513,7 @@
    ],
    "created": "07-28 10:47",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1whbq8cGz0-zsWl8bF9TREylJ5qp8Hnj3/view?usp=drive_link",
    "cop": 1,
    "unres": 0,
    "rvw": {
@@ -1515,6 +1552,7 @@
    ],
    "created": "07-28 10:39",
    "drive": false,
+   "drvurl": "",
    "cop": 5,
    "unres": 0,
    "rvw": {
@@ -1543,6 +1581,7 @@
    ],
    "created": "07-28 09:53",
    "drive": false,
+   "drvurl": "",
    "cop": 2,
    "unres": 0,
    "rvw": {
@@ -1581,6 +1620,7 @@
    ],
    "created": "07-28 08:53",
    "drive": false,
+   "drvurl": "",
    "cop": 4,
    "unres": 0,
    "rvw": {
@@ -1629,6 +1669,7 @@
    ],
    "created": "07-27 17:44",
    "drive": false,
+   "drvurl": "",
    "cop": 3,
    "unres": 3,
    "rvw": {
@@ -1657,6 +1698,7 @@
    ],
    "created": "07-27 17:43",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1hwh9gEfU6CGNa8QJXi3XYrOdZQSaDVL1/view?usp=drive_link",
    "cop": 3,
    "unres": 0,
    "rvw": {
@@ -1705,6 +1747,7 @@
    ],
    "created": "07-27 17:20",
    "drive": false,
+   "drvurl": "",
    "cop": 8,
    "unres": 0,
    "rvw": {
@@ -1753,6 +1796,7 @@
    ],
    "created": "07-27 17:17",
    "drive": false,
+   "drvurl": "",
    "cop": 2,
    "unres": 0,
    "rvw": {
@@ -1781,6 +1825,7 @@
    ],
    "created": "07-27 16:57",
    "drive": false,
+   "drvurl": "",
    "cop": 0,
    "unres": 0,
    "rvw": {
@@ -1839,6 +1884,7 @@
    ],
    "created": "07-27 16:51",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1p11VRf6qpzg5tzzwT2xM2r6t8aw9kDp-/view?usp=drive_link",
    "cop": 9,
    "unres": 0,
    "rvw": {
@@ -1867,6 +1913,7 @@
    ],
    "created": "07-27 16:47",
    "drive": false,
+   "drvurl": "",
    "cop": 1,
    "unres": 1,
    "rvw": {
@@ -1895,6 +1942,7 @@
    ],
    "created": "07-27 16:40",
    "drive": false,
+   "drvurl": "",
    "cop": 1,
    "unres": 0,
    "rvw": {
@@ -1933,6 +1981,7 @@
    ],
    "created": "07-27 16:31",
    "drive": false,
+   "drvurl": "",
    "cop": 1,
    "unres": 1,
    "rvw": {
@@ -1961,6 +2010,7 @@
    ],
    "created": "07-27 16:26",
    "drive": false,
+   "drvurl": "",
    "cop": 1,
    "unres": 0,
    "rvw": {
@@ -1989,6 +2039,7 @@
    ],
    "created": "07-27 15:30",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1OkwiN9iBWENgIUMrmHNgf2OZ6ksdGr-8/view?usp=drive_link",
    "cop": 2,
    "unres": 0,
    "rvw": {
@@ -2017,6 +2068,7 @@
    ],
    "created": "07-27 14:40",
    "drive": false,
+   "drvurl": "",
    "cop": 3,
    "unres": 0,
    "rvw": {
@@ -2045,6 +2097,7 @@
    ],
    "created": "07-27 13:46",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1Bl9Zpd0VCuLj0zEuVe4i6xiAWvosbX1d/view?usp=drive_link",
    "cop": 2,
    "unres": 0,
    "rvw": {
@@ -2073,6 +2126,7 @@
    ],
    "created": "07-27 13:26",
    "drive": false,
+   "drvurl": "",
    "cop": 4,
    "unres": 0,
    "rvw": {
@@ -2131,6 +2185,7 @@
    ],
    "created": "07-27 11:57",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1YuQS94CfLIj3rq5DmECZ5jKj8Dtvz_L9/view?usp=drive_link",
    "cop": 4,
    "unres": 1,
    "rvw": {
@@ -2159,6 +2214,7 @@
    ],
    "created": "07-27 11:47",
    "drive": false,
+   "drvurl": "",
    "cop": 3,
    "unres": 1,
    "rvw": {
@@ -2198,6 +2254,7 @@
    ],
    "created": "07-23 11:15",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1WFiS2NRU8Jt4FeCDoqRtpYCuyEYhnxla/view?usp=sharing",
    "cop": 0,
    "unres": 0,
    "rvw": {
@@ -2239,6 +2296,7 @@
    ],
    "created": "07-22 14:20",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1RqSnf8RjR2hJo4u8UJ4UqgLEREs2dGiX/view?usp=sharing",
    "cop": 0,
    "unres": 0,
    "rvw": {
@@ -2282,6 +2340,7 @@
    ],
    "created": "07-13 16:43",
    "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1fOt8i4D3_IUgRFhPD0VYWfw5HMvOXh-n/view?usp=sharing",
    "cop": 6,
    "unres": 0,
    "rvw": {
