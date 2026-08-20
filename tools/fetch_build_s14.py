@@ -110,7 +110,10 @@ def pr_detail(n):
     th = [t for t in d["reviewThreads"]["nodes"]
           if t["comments"]["nodes"] and re.search("[Cc]opilot", t["comments"]["nodes"][0]["author"]["login"] or "")]
     total = len(th); unres = len([t for t in th if not t["isResolved"]])
-    drive = bool(re.search(r'drive\.google\.com', d.get("body") or "", re.I))
+    # link file report (Google Drive) trong PR body → cột Report mở được, không chỉ ✓
+    _mdrv = re.search(r'https?://drive\.google\.com/[^\s)>\]"\'`]+', d.get("body") or "", re.I)
+    drive = bool(_mdrv)
+    drvurl = _mdrv.group(0) if _mdrv else ""
     cf = resolve_cf(d, n)   # bad/ok/unk (retry mergeable khi UNKNOWN)
     nc = (d.get("commits") or {}).get("totalCount", 0)   # số commit của PR (branch ahead base)
     add = d.get("additions") or 0; dele = d.get("deletions") or 0   # số dòng thêm/xoá (diff stat)
@@ -128,7 +131,7 @@ def pr_detail(n):
         if rv.get("state") == "APPROVED" and nm not in approved: approved.append(nm)
         elif rv.get("state") == "CHANGES_REQUESTED" and nm not in changes: changes.append(nm)
     rvw = {"ap": approved, "ch": changes, "pd": pending}
-    return {"cop": total, "unres": unres, "drive": drive, "cf": cf, "st": status_of(d),
+    return {"cop": total, "unres": unres, "drive": drive, "drvurl": drvurl, "cf": cf, "st": status_of(d),
             "nc": nc, "add": add, "del": dele, "fc": fc, "rvw": rvw}
 
 def build():
@@ -173,10 +176,11 @@ def build():
         cop = sum(m["det"]["cop"] for m in src)
         unres = sum(m["det"]["unres"] for m in src)
         drive = any(m["det"]["drive"] for m in (base_m or metas))
+        drvurl = next((m["det"].get("drvurl") for m in (base_m or metas) if m["det"].get("drvurl")), "")
         created = fmt_dt(min(m["created"] for m in metas))   # PR sớm nhất, MM-DD HH:MM (giờ VN)
         main.append({"ticket":tk,"dev":dev,"bien":dev=="bien",
                      "base":t["base"],"r727":t["r727"],
-                     "created":created,"drive":drive,"cop":cop,"unres":unres,
+                     "created":created,"drive":drive,"drvurl":drvurl,"cop":cop,"unres":unres,
                      "rvw":rep["det"]["rvw"],   # reviewers của PR đại diện (base nếu có)
                      "title":clean_title(rep["title"]),"_common":common})
     main.sort(key=lambda m:(m["created"], 1 if m["base"] else 0), reverse=True)

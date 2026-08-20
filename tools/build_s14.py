@@ -75,7 +75,8 @@ function render(D){
   // ---- helper: 1 row bảng chính ----
   function mainRow(r){
     var devcls=(r.dev==='bien')?'dev dev-bien':'dev';
-    var rep=r.drive?'<span class="report-yes">✓</span>':'<span class="report-no">—</span>';
+    var rep=r.drvurl?('<a class="report-yes" href="'+esc(r.drvurl)+'" target="_blank" rel="noopener" title="Mở file report">✓ mở</a>')
+      :(r.drive?'<span class="report-yes">✓</span>':'<span class="report-no">—</span>');
     return '<tr data-dev="'+esc(r.dev)+'">'
       +'<td><span class="ticket">'+r.ticket+'</span></td>'
       +'<td><span class="'+devcls+'">'+r.dev+'</span></td>'
