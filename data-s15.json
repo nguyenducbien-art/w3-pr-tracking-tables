@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-20 13:23",
+ "updated": "2026-08-20 14:17",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -3794,28 +3794,28 @@
  ],
  "scaffold": [
   {
-   "ticket": "620",
+   "ticket": "—",
    "dev": "bien",
    "bien": true,
    "pr": {
-    "num": 12123,
+    "num": 12173,
     "cf": "ok",
     "st": "open",
-    "nc": 3,
-    "add": 96,
-    "del": 14,
-    "fc": 6,
-    "cr": "08-19 10:41"
+    "nc": 6,
+    "add": 147,
+    "del": 28,
+    "fc": 8,
+    "cr": "08-20 14:07"
    },
-   "created": "08-19 10:41",
-   "cop": 0,
-   "unres": 0,
+   "created": "08-20 14:07",
+   "cop": 2,
+   "unres": 2,
    "rvw": {
     "ap": [],
     "ch": [],
     "pd": []
    },
-   "title": "移行 scaffold 規約・SKILL 更新 (MODAL-NEW-09/10・UI-NEW-25/26・DATA-NEW-04/05・SDUI-NEW-09・API-NEW-16・Anti-Pattern #60〜64)"
+   "title": "scaffold 3PR 統合 (#11886 / #11778 / #12123) — §8 節番号衝突解消 + counter 整合"
   },
   {
    "ticket": "—",
@@ -3864,54 +3864,6 @@
     "pd": []
    },
    "title": "develop/base → r20260810_scaffold ベース同期"
-  },
-  {
-   "ticket": "945",
-   "dev": "dat",
-   "bien": false,
-   "pr": {
-    "num": 11886,
-    "cf": "bad",
-    "st": "open",
-    "nc": 2,
-    "add": 40,
-    "del": 5,
-    "fc": 4,
-    "cr": "08-12 12:51"
-   },
-   "created": "08-12 12:51",
-   "cop": 1,
-   "unres": 1,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "サブナビ群 edit 画面の外枠規約 (EDIT-NEW-07 例外) を追加"
-  },
-  {
-   "ticket": "1525",
-   "dev": "minh",
-   "bien": false,
-   "pr": {
-    "num": 11778,
-    "cf": "ok",
-    "st": "open",
-    "nc": 2,
-    "add": 2,
-    "del": 0,
-    "fc": 1,
-    "cr": "08-10 14:30"
-   },
-   "created": "08-10 14:30",
-   "cop": 1,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "共通SearchArea 検索フィールド種別の規約を追記"
   }
  ]
 }
