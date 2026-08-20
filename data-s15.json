@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-20 17:03",
+ "updated": "2026-08-20 17:25",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -30,6 +30,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1561",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12192,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 12,
+     "del": 1,
+     "fc": 1,
+     "cr": "08-20 17:19"
+    }
+   ],
+   "created": "08-20 17:19",
+   "drive": false,
+   "drvurl": "",
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "Shopify連携セットアップ完了後の遷移先が404になる問題を修正"
+  },
   {
    "ticket": "1557",
    "dev": "bien",
@@ -2112,8 +2142,8 @@
      "num": 11842,
      "cf": "ok",
      "st": "open",
-     "nc": 4,
-     "add": 666,
+     "nc": 5,
+     "add": 665,
      "del": 14,
      "fc": 9,
      "cr": "08-11 14:58"
@@ -2847,8 +2877,8 @@
      "num": 11783,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 20,
+     "nc": 3,
+     "add": 19,
      "del": 0,
      "fc": 2,
      "cr": "08-10 14:54"
