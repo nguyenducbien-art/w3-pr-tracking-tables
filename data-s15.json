@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-21 11:34",
+ "updated": "2026-08-21 11:46",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -3982,21 +3982,21 @@
     "num": 12217,
     "cf": "ok",
     "st": "open",
-    "nc": 1,
-    "add": 19508,
-    "del": 59,
-    "fc": 51,
+    "nc": 3,
+    "add": 30,
+    "del": 0,
+    "fc": 3,
     "cr": "08-21 11:30"
    },
    "created": "08-21 11:30",
-   "cop": 0,
-   "unres": 0,
+   "cop": 4,
+   "unres": 2,
    "rvw": {
     "ap": [],
     "ch": [],
     "pd": []
    },
-   "title": "develop/r20260810 → r20260810_scaffold 足場資産の同期 (規約 §8.9・SKILL・画面リファレンス・テンプレート)"
+   "title": "移行 scaffold 規約・SKILL 更新 (§8.9 ファイル選択欄の読み込みの共通化を反映)"
   },
   {
    "ticket": "—",
