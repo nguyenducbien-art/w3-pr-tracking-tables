@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-21 11:22",
+ "updated": "2026-08-21 11:34",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1497",
   "1557",
   "1553",
   "1551",
@@ -30,6 +31,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1497",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12215,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 164,
+     "del": 41,
+     "fc": 5,
+     "cr": "08-21 11:24"
+    }
+   ],
+   "created": "08-21 11:24",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "共通ヘッダーのトップメニューのリンク先を修正し404を解消"
+  },
   {
    "ticket": "1565",
    "dev": "bien",
@@ -342,7 +373,7 @@
     {
      "num": 12188,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 6,
      "add": 447,
      "del": 174,
@@ -3548,7 +3579,7 @@
     {
      "num": 12197,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 3,
      "add": 422,
      "del": 250,
@@ -3689,11 +3720,11 @@
     {
      "num": 12195,
      "cf": "ok",
-     "st": "open",
-     "nc": 1,
-     "add": 38,
-     "del": 7,
-     "fc": 2,
+     "st": "merged",
+     "nc": 2,
+     "add": 120,
+     "del": 12,
+     "fc": 6,
      "cr": "08-20 17:56"
     },
     {
@@ -3943,6 +3974,30 @@
   }
  ],
  "scaffold": [
+  {
+   "ticket": "1161",
+   "dev": "bien",
+   "bien": true,
+   "pr": {
+    "num": 12217,
+    "cf": "ok",
+    "st": "open",
+    "nc": 1,
+    "add": 19508,
+    "del": 59,
+    "fc": 51,
+    "cr": "08-21 11:30"
+   },
+   "created": "08-21 11:30",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "develop/r20260810 → r20260810_scaffold 足場資産の同期 (規約 §8.9・SKILL・画面リファレンス・テンプレート)"
+  },
   {
    "ticket": "—",
    "dev": "bien",
