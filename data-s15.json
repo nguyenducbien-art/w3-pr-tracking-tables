@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-20 22:22",
+ "updated": "2026-08-21 09:32",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -30,6 +30,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1565",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12202,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 90,
+     "del": 7,
+     "fc": 3,
+     "cr": "08-21 00:56"
+    }
+   ],
+   "created": "08-21 00:56",
+   "drive": false,
+   "drvurl": "",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "商品マスタ画面に Shopify商品マスタ取込 のハンドラを追加"
+  },
   {
    "ticket": "1561",
    "dev": "bien",
@@ -1942,7 +1972,7 @@
     {
      "num": 12189,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 2,
      "add": 1181,
      "del": 199,
@@ -2615,7 +2645,7 @@
    "r810": [
     {
      "num": 12175,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 3,
      "add": 174,
