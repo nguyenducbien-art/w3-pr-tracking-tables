@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-21 14:03",
+ "updated": "2026-08-21 14:14",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -32,6 +32,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1185",
+   "dev": "dat",
+   "bien": false,
+   "sid": "637",
+   "base": [],
+   "r810": [
+    {
+     "num": 12228,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 84,
+     "del": 1,
+     "fc": 2,
+     "cr": "08-21 14:06"
+    }
+   ],
+   "created": "08-21 14:06",
+   "drive": false,
+   "drvurl": "",
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "保護領域シェルで縦スクロールバーが二重化しフッターが下端から外れる不具合を修正"
+  },
   {
    "ticket": "1566",
    "dev": "minh",
@@ -251,16 +281,6 @@
    "sid": "(機能)",
    "base": [],
    "r810": [
-    {
-     "num": 12227,
-     "cf": "ok",
-     "st": "open",
-     "nc": 1,
-     "add": 84,
-     "del": 1,
-     "fc": 2,
-     "cr": "08-21 13:58"
-    },
     {
      "num": 12140,
      "cf": "ok",
@@ -4058,9 +4078,9 @@
     "num": 12217,
     "cf": "ok",
     "st": "open",
-    "nc": 4,
-    "add": 95,
-    "del": 9,
+    "nc": 5,
+    "add": 119,
+    "del": 14,
     "fc": 4,
     "cr": "08-21 11:30"
    },
@@ -4072,7 +4092,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "移行 scaffold 規約・SKILL 更新 (§8.9 ファイル選択欄の読み込みの共通化を反映)"
+   "title": "移行 scaffold 規約・SKILL 更新 (§8.9 ファイル選択欄 / §8.10 モーダルページャ / §8.11 コードマスタ並び順、MODAL-NEW-11・DATA-NEW-06 新設)"
   },
   {
    "ticket": "—",
