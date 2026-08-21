@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-21 12:25",
+ "updated": "2026-08-21 13:00",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1566",
   "1497",
   "1557",
   "1553",
@@ -31,6 +32,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1566",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 12221,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 251,
+     "del": 8,
+     "fc": 6,
+     "cr": "08-21 13:00"
+    }
+   ],
+   "r810": [],
+   "created": "08-21 13:00",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1KPJohA7QE6Y9B9DQGdKsdulPxpMz-mnR/view?usp=sharing",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "一覧グリッドに番兵値を空欄表示するcolumnOverridesを追加"
+  },
   {
    "ticket": "1497",
    "dev": "bien",
@@ -2677,7 +2708,7 @@
     {
      "num": 12175,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 5,
      "add": 143,
      "del": 17,
