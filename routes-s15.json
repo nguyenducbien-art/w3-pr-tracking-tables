@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-24 14:46",
- "tip": "240d931a50",
+ "updated": "2026-08-24 17:32",
+ "tip": "6c67aca8ba",
  "branch": "mimosa/frontend/develop/per-sprint",
  "base": "https://mimosa-stg-react-per-sprint.dialog-wms.com",
  "routes": {
@@ -120,7 +120,7 @@
   "632": "/warehouse/location-size-categories",
   "633": "/warehouse/material-location-size-categories",
   "638": "/stocks/sh-create",
-  "639": "/unit/user-me-edits",
+  "639": "/system/user-me-edits",
   "640": "/stocks/snap-shot-headers",
   "641": "/stocks/snap-shot-details",
   "643": "/unit/outbound-setting/next-engine",
