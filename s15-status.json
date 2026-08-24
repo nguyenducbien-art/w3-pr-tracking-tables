@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-21 14:36",
+ "updated": "2026-08-24 09:59",
  "impl": {
   "1327": {
    "pic": null,
@@ -322,8 +322,8 @@
    "st": "done"
   },
   "889": {
-   "pic": null,
-   "st": "todo"
+   "pic": "Khoa",
+   "st": "done"
   },
   "885": {
    "pic": "Khoa",
@@ -776,7 +776,7 @@
    "st": "todo"
   },
   "1199": {
-   "pic": "Minh",
+   "pic": "Bồn",
    "st": "todo"
   },
   "1195": {
@@ -789,23 +789,23 @@
   },
   "1187": {
    "pic": "Khoa",
-   "st": "todo"
+   "st": "wip"
   },
   "1183": {
    "pic": "Đạt",
-   "st": "todo"
+   "st": "wip"
   },
   "1179": {
-   "pic": "Biên",
+   "pic": "Bồn",
    "st": "todo"
   },
   "1175": {
-   "pic": "Biên",
-   "st": "todo"
+   "pic": "Khoa",
+   "st": "wip"
   },
   "1171": {
    "pic": "Đạt",
-   "st": "todo"
+   "st": "wip"
   },
   "1167": {
    "pic": "Hưng",
@@ -821,23 +821,23 @@
   },
   "1155": {
    "pic": "Minh",
-   "st": "todo"
+   "st": "wip"
   },
   "1151": {
    "pic": "Minh",
-   "st": "todo"
+   "st": "wip"
   },
   "1147": {
    "pic": "Minh",
-   "st": "todo"
+   "st": "wip"
   },
   "1143": {
-   "pic": "Biên",
+   "pic": "Bồn",
    "st": "todo"
   },
   "1139": {
-   "pic": "Biên",
-   "st": "todo"
+   "pic": "Khoa",
+   "st": "wip"
   },
   "1135": {
    "pic": "Hưng",
