@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-24 15:59",
+ "updated": "2026-08-24 16:13",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1573",
   "1570",
   "1566",
   "1497",
@@ -33,6 +34,47 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1573",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 12266,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 232,
+     "del": 2,
+     "fc": 2,
+     "cr": "08-24 16:05"
+    }
+   ],
+   "r810": [
+    {
+     "num": 12267,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 253,
+     "del": 20,
+     "fc": 2,
+     "cr": "08-24 16:07"
+    }
+   ],
+   "created": "08-24 16:05",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "共通 DataTable に rowStyle / cellLinks を追加"
+  },
   {
    "ticket": "1570",
    "dev": "bien",
@@ -2497,11 +2539,11 @@
     },
     {
      "num": 12261,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
-     "nc": 3,
-     "add": 367,
-     "del": 336,
+     "nc": 4,
+     "add": 371,
+     "del": 340,
      "fc": 46,
      "cr": "08-24 15:04"
     },
