@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-24 16:42",
+ "updated": "2026-08-24 16:55",
  "impl": {
   "1327": {
    "pic": null,
@@ -760,55 +760,51 @@
  },
  "test": {
   "1630": {
-   "pic": "Biên",
+   "pic": "Bồn",
    "st": "todo"
   },
   "1626": {
-   "pic": "Minh",
+   "pic": "Khoa",
    "st": "todo"
   },
   "1622": {
-   "pic": "Biên",
+   "pic": "Bồn",
    "st": "todo"
   },
   "1620": {
-   "pic": "Biên",
+   "pic": "Hưng",
    "st": "todo"
   },
   "1616": {
-   "pic": "Biên",
+   "pic": "Hưng",
    "st": "todo"
   },
   "1614": {
-   "pic": "Minh",
+   "pic": "Khoa",
    "st": "todo"
   },
   "1612": {
-   "pic": "Biên",
+   "pic": "Hưng",
    "st": "todo"
   },
   "1610": {
-   "pic": "Biên",
+   "pic": "Hưng",
    "st": "todo"
   },
   "1608": {
-   "pic": "Minh",
+   "pic": "Khoa",
    "st": "todo"
   },
   "1606": {
-   "pic": "Minh",
+   "pic": "Khoa",
    "st": "todo"
   },
   "1600": {
    "pic": "Biên",
    "st": "todo"
   },
-  "1598": {
-   "pic": "Sơn",
-   "st": "todo"
-  },
   "1590": {
-   "pic": "Minh",
+   "pic": "Hưng",
    "st": "todo"
   },
   "1588": {
@@ -820,7 +816,7 @@
    "st": "todo"
   },
   "1584": {
-   "pic": "Minh",
+   "pic": "Đạt",
    "st": "todo"
   },
   "1582": {
