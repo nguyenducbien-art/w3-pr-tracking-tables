@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-24 17:55",
+ "updated": "2026-08-24 20:03",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -34,6 +34,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1631",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12271,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 15,
+     "del": 3,
+     "fc": 2,
+     "cr": "08-24 17:57"
+    }
+   ],
+   "created": "08-24 17:57",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユニットトップからダッシュボードアイコンを削除しラベルを運営・分析に修正"
+  },
   {
    "ticket": "1573",
    "dev": "bien",
@@ -1375,7 +1405,7 @@
     {
      "num": 12255,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 5,
      "add": 264,
      "del": 0,
