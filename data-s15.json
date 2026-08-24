@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-21 18:26",
+ "updated": "2026-08-24 10:24",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -42,7 +42,7 @@
     {
      "num": 12228,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 2,
      "add": 91,
      "del": 1,
@@ -83,7 +83,7 @@
     {
      "num": 12233,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 2,
      "add": 97,
      "del": 15,
@@ -405,7 +405,7 @@
    ],
    "created": "08-18 14:38",
    "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1rLsLau-exPYH2Nb52guJA0Xuy9r7GzpM/view?usp=sharing",
+   "drvurl": "https://drive.google.com/file/d/1GDA2GVwm_2LzEub9HdCwryLfH_qbflp_/view?usp=sharing",
    "cop": 0,
    "unres": 0,
    "rvw": {
@@ -616,8 +616,8 @@
     }
    ],
    "created": "08-17 16:14",
-   "drive": false,
-   "drvurl": "",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1vmRy3_gPtgFTDMJ6NBm2Nr0C-AuZL6Hf/view?usp=sharing",
    "cop": 0,
    "unres": 0,
    "rvw": {
@@ -861,7 +861,7 @@
    ],
    "created": "08-13 17:35",
    "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1HeinV748OiuqILdY8tCPES3wlzmVQ8Hj/view?usp=drive_link",
+   "drvurl": "https://drive.google.com/file/d/1ZV9U37DSvgg9bcneyBy5EFN-4NeZK_FV/view?usp=sharing",
    "cop": 0,
    "unres": 0,
    "rvw": {
@@ -1302,7 +1302,7 @@
    ],
    "created": "08-12 16:31",
    "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1wMVPzyDGIfmHLX0U3IDZTdcPClW524mh/view?usp=sharing",
+   "drvurl": "https://drive.google.com/file/d/1CNi5tVJsel9rTjSpqd6-N77anCl97fWq/view?usp=sharing",
    "cop": 2,
    "unres": 0,
    "rvw": {
@@ -2316,7 +2316,7 @@
    ],
    "created": "08-11 14:58",
    "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1yU3mZIKwWlxMciKhraqoh5-xuCuxOG11/view?usp=sharing",
+   "drvurl": "https://drive.google.com/file/d/1ZaBw2rIB7NLPbrgV0diAmqupKyVXcWFt/view?usp=sharing",
    "cop": 1,
    "unres": 0,
    "rvw": {
@@ -3050,8 +3050,8 @@
     }
    ],
    "created": "08-10 14:54",
-   "drive": false,
-   "drvurl": "",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1jIgl8HUSp4cO2JFQRfH-UY1yPngg2O2D/view?usp=sharing",
    "cop": 1,
    "unres": 0,
    "rvw": {
@@ -4044,7 +4044,7 @@
    ],
    "created": "08-07 13:24",
    "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1W05zrnnvlPeMvweSMCcs8f6-QHC0Vist/view?usp=sharing",
+   "drvurl": "https://drive.google.com/file/d/1y7DSS_jbj6hlGeJa4fmHXcMIt54amRqg/view?usp=sharing",
    "cop": 1,
    "unres": 0,
    "rvw": {
