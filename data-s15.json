@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-25 16:26",
+ "updated": "2026-08-25 16:50",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1636",
   "1633",
   "1573",
   "1570",
@@ -33,6 +34,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1636",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 12300,
+     "cf": "ok",
+     "st": "open",
+     "nc": 4,
+     "add": 232,
+     "del": 1,
+     "fc": 5,
+     "cr": "08-25 16:43"
+    }
+   ],
+   "r810": [],
+   "created": "08-25 16:43",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/17YYM8RCcicVYuE3dk5T2qvup_mOspeZv/view?usp=sharing",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "帳票発行前チェックを行う onBeforeExecute フックを追加"
+  },
   {
    "ticket": "1633",
    "dev": "bien",
