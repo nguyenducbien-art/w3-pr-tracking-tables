@@ -1,12 +1,11 @@
 {
- "updated": "2026-08-25 09:46",
+ "updated": "2026-08-25 10:03",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
   "1573",
   "1570",
   "1566",
-  "1497",
   "1557",
   "1553",
   "1551",
@@ -18,7 +17,6 @@
   "1545",
   "1543",
   "1542",
-  "1479",
   "1541",
   "1540",
   "1532",
@@ -236,36 +234,6 @@
     "pd": []
    },
    "title": "一覧グリッドに番兵値を空欄表示するcolumnOverridesを追加"
-  },
-  {
-   "ticket": "1497",
-   "dev": "bien",
-   "bien": true,
-   "sid": "",
-   "base": [],
-   "r810": [
-    {
-     "num": 12215,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 4,
-     "add": 186,
-     "del": 42,
-     "fc": 5,
-     "cr": "08-21 11:24"
-    }
-   ],
-   "created": "08-21 11:24",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1wIbZPxZ7p2AEld_9wm3G4M6kdDcfB4cH/view?usp=sharing",
-   "cop": 2,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "共通ヘッダーのトップメニューのリンク先を修正し404を解消"
   },
   {
    "ticket": "1565",
@@ -1856,36 +1824,6 @@
     "pd": []
    },
    "title": "ハンディ設定メニューを実装"
-  },
-  {
-   "ticket": "1479",
-   "dev": "bien",
-   "bien": true,
-   "sid": "",
-   "base": [],
-   "r810": [
-    {
-     "num": 11897,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 1,
-     "add": 64,
-     "del": 607,
-     "fc": 16,
-     "cr": "08-12 14:23"
-    }
-   ],
-   "created": "08-12 14:23",
-   "drive": false,
-   "drvurl": "",
-   "cop": 1,
-   "unres": 1,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "revert: [mimosa][frontend] ファイル出力中/帳票出力中モーダルの×中断機能をリバート"
   },
   {
    "ticket": "1541",
