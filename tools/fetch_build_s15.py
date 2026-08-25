@@ -14,7 +14,8 @@ SINCE = "2026-08-01"                      # bound scan; Sprint 15 gate thực = 
 PRURL = "https://github.com/%s/pull/" % REPO
 OUT = sys.argv[1] if len(sys.argv) > 1 else "data-s15.json"
 
-EXCLUDE = {"1495"}                        # ticket ẩn hẳn khỏi bảng (mọi PR base/r810) — user yêu cầu 08-03
+EXCLUDE = {"1495", "1479", "1497"}       # ticket ẩn hẳn khỏi bảng (mọi PR base/r810) — user yêu cầu:
+                                          #   1495 (08-03) · 1479 + 1497 (08-20, đều ở Bảng 1 common)
 BASE_COMMON_SINCE = "2026-08-10"          # LUẬT MỞ RỘNG: common PR→base (chưa có r810 PR) created >= ngày này cũng vào Sprint 15
 # ĐẶC CÁCH dev: khi PR gốc của người sở hữu màn bị CLOSED (bị gh_list lọc) + chỉ còn PR fix của
 # người khác được merge → dev tự suy sẽ SAI. Map {ticket: dev-short} ép đúng người sở hữu.
