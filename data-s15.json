@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-25 10:32",
+ "updated": "2026-08-25 11:59",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -32,6 +32,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1173",
+   "dev": "dat",
+   "bien": false,
+   "sid": "/user_edits",
+   "base": [],
+   "r810": [
+    {
+     "num": 12286,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 262,
+     "del": 14,
+     "fc": 7,
+     "cr": "08-25 11:49"
+    }
+   ],
+   "created": "08-25 11:49",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユーザー登録・編集と個人設定で登録済みロゴが表示されない不具合を修正"
+  },
   {
    "ticket": "1631",
    "dev": "bien",
