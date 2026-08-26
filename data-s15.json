@@ -1,8 +1,10 @@
 {
- "updated": "2026-08-26 11:41",
+ "updated": "2026-08-26 11:54",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1516",
+  "1515",
   "1636",
   "1633",
   "1573",
@@ -34,6 +36,66 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1516",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 12319,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 509,
+     "del": 68,
+     "fc": 12,
+     "cr": "08-26 11:49"
+    }
+   ],
+   "r810": [],
+   "created": "08-26 11:49",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "一覧データ取得を中断シグナル対応にし React Strict Mode を有効化する"
+  },
+  {
+   "ticket": "1515",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 12318,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 162,
+     "del": 74,
+     "fc": 7,
+     "cr": "08-26 11:49"
+    }
+   ],
+   "r810": [],
+   "created": "08-26 11:49",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "サーバーエラー文言の解決を共通ユーティリティへ集約し多言語対応にする"
+  },
   {
    "ticket": "1636",
    "dev": "minh",
