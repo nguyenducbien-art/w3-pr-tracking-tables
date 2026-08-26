@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-26 15:12",
+ "updated": "2026-08-26 15:26",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -37,6 +37,36 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
   {
+   "ticket": "1644",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12331,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 3185,
+     "del": 0,
+     "fc": 30,
+     "cr": "08-26 15:15"
+    }
+   ],
+   "created": "08-26 15:15",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "プリンター新規登録・編集画面を追加"
+  },
+  {
    "ticket": "1639",
    "dev": "bien",
    "bien": true,
@@ -47,10 +77,10 @@
      "num": 12329,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 2884,
-     "del": 2,
-     "fc": 29,
+     "nc": 2,
+     "add": 2912,
+     "del": 4,
+     "fc": 31,
      "cr": "08-26 14:23"
     }
    ],
@@ -58,7 +88,7 @@
    "drive": false,
    "drvurl": "",
    "cop": 3,
-   "unres": 3,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
