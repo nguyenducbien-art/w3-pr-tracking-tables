@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-26 11:54",
+ "updated": "2026-08-26 12:08",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -53,12 +53,23 @@
      "cr": "08-26 11:49"
     }
    ],
-   "r810": [],
+   "r810": [
+    {
+     "num": 12321,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 568,
+     "del": 78,
+     "fc": 14,
+     "cr": "08-26 11:50"
+    }
+   ],
    "created": "08-26 11:49",
    "drive": false,
    "drvurl": "",
-   "cop": 0,
-   "unres": 0,
+   "cop": 2,
+   "unres": 2,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -83,7 +94,18 @@
      "cr": "08-26 11:49"
     }
    ],
-   "r810": [],
+   "r810": [
+    {
+     "num": 12320,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 171,
+     "del": 441,
+     "fc": 21,
+     "cr": "08-26 11:50"
+    }
+   ],
    "created": "08-26 11:49",
    "drive": false,
    "drvurl": "",
@@ -1717,6 +1739,16 @@
    "sid": "768",
    "base": [],
    "r810": [
+    {
+     "num": 12323,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 84,
+     "del": 26,
+     "fc": 1,
+     "cr": "08-26 11:52"
+    },
     {
      "num": 12134,
      "cf": "ok",
