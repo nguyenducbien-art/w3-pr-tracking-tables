@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-24 17:32",
- "tip": "6c67aca8ba",
+ "updated": "2026-08-26 16:36",
+ "tip": "3bbf8f36d6",
  "branch": "mimosa/frontend/develop/per-sprint",
  "base": "https://mimosa-stg-react-per-sprint.dialog-wms.com",
  "routes": {
@@ -111,6 +111,7 @@
   "589": "/arrivals/results",
   "615": "/unit/ht-view-settings",
   "618": "/unit/printers",
+  "619": "/unit/printer-edits",
   "622": "/stocks/unset-headers",
   "623": "/stocks/unset-details",
   "624": "/stocks/unset-history-headers",
@@ -126,6 +127,7 @@
   "643": "/unit/outbound-setting/next-engine",
   "644": "/warehouse/pallets",
   "645": "/stocks/sum-headers",
+  "650": "/warehouse/pallet-edits",
   "652": "/billing/headers",
   "653": "/billing/details",
   "654": "/billing/inv-charge-edits",
