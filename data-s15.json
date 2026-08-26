@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-26 16:22",
+ "updated": "2026-08-26 17:49",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -36,6 +36,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1654",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12340,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 28,
+     "del": 30,
+     "fc": 4,
+     "cr": "08-26 17:43"
+    }
+   ],
+   "created": "08-26 17:43",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "項目表示設定の並び替え・登録を一般権限でも可能にしAngularJS版と整合"
+  },
   {
    "ticket": "1644",
    "dev": "bien",
