@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-26 13:32",
+ "updated": "2026-08-26 14:02",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -37,6 +37,36 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
   {
+   "ticket": "1638",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12327,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 20,
+     "del": 13,
+     "fc": 3,
+     "cr": "08-26 13:47"
+    }
+   ],
+   "created": "08-26 13:47",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "基本設定画面のDDL空選択肢削除と帳票出力設定の列数をAngularJS版と整合"
+  },
+  {
    "ticket": "1516",
    "dev": "bien",
    "bien": true,
@@ -58,8 +88,8 @@
      "num": 12321,
      "cf": "ok",
      "st": "open",
-     "nc": 3,
-     "add": 649,
+     "nc": 4,
+     "add": 650,
      "del": 79,
      "fc": 15,
      "cr": "08-26 11:50"
@@ -69,7 +99,7 @@
    "drive": false,
    "drvurl": "",
    "cop": 2,
-   "unres": 2,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -87,7 +117,7 @@
      "num": 12318,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
+     "nc": 3,
      "add": 307,
      "del": 74,
      "fc": 10,
@@ -99,7 +129,7 @@
      "num": 12320,
      "cf": "ok",
      "st": "open",
-     "nc": 3,
+     "nc": 4,
      "add": 317,
      "del": 441,
      "fc": 24,
