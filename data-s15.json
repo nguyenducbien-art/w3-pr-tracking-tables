@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-26 11:13",
+ "updated": "2026-08-26 11:27",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -81,7 +81,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "帳票発行前チェックを行う onBeforeExecute フックを追加"
   },
@@ -638,6 +640,16 @@
     }
    ],
    "r810": [
+    {
+     "num": 12317,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 4,
+     "del": 2,
+     "fc": 2,
+     "cr": "08-26 11:10"
+    },
     {
      "num": 12088,
      "cf": "ok",
