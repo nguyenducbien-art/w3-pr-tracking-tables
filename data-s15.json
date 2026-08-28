@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-28 16:22",
+ "updated": "2026-08-28 17:39",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1703",
   "1702",
   "1645",
   "1671",
@@ -43,6 +44,47 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1703",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 12448,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 393,
+     "del": 74,
+     "fc": 12,
+     "cr": "08-28 17:32"
+    }
+   ],
+   "r810": [
+    {
+     "num": 12449,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 379,
+     "del": 64,
+     "fc": 12,
+     "cr": "08-28 17:32"
+    }
+   ],
+   "created": "08-28 17:32",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "帳票PDFダウンロード経路の認証を検証し経路を堅牢化"
+  },
   {
    "ticket": "1702",
    "dev": "minh",
