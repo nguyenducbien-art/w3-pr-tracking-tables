@@ -1,11 +1,11 @@
 {
- "updated": "2026-08-28 10:59",
+ "updated": "2026-08-28 11:13",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1645",
   "1671",
   "1655",
-  "1645",
   "1652",
   "1667",
   "1651",
@@ -42,6 +42,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1645",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 12398,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 495,
+     "del": 12,
+     "fc": 7,
+     "cr": "08-28 11:04"
+    }
+   ],
+   "r810": [],
+   "created": "08-28 11:04",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ログイン_セッション失効時の next-auth Cookie 破棄"
+  },
   {
    "ticket": "1671",
    "dev": "bien",
@@ -112,36 +142,6 @@
     "pd": []
    },
    "title": "ユニット作成後に再ログインなしで切替候補へ反映する"
-  },
-  {
-   "ticket": "1645",
-   "dev": "khoa",
-   "bien": false,
-   "sid": "",
-   "base": [],
-   "r810": [
-    {
-     "num": 12380,
-     "cf": "ok",
-     "st": "open",
-     "nc": 1,
-     "add": 495,
-     "del": 12,
-     "fc": 7,
-     "cr": "08-27 16:55"
-    }
-   ],
-   "created": "08-27 16:55",
-   "drive": false,
-   "drvurl": "",
-   "cop": 0,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "共通_ログイン_セッション失効処理 #ANGUALR_REPLACE-1645"
   },
   {
    "ticket": "1652",
