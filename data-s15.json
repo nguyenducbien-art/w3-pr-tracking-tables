@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-28 14:36",
+ "updated": "2026-08-28 15:39",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1702",
   "1645",
   "1671",
   "1655",
@@ -42,6 +43,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1702",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 12443,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 384,
+     "del": 77,
+     "fc": 9,
+     "cr": "08-28 15:28"
+    }
+   ],
+   "r810": [],
+   "created": "08-28 15:28",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1Uh_AfqJ0J8QkRUOicJWsQPXcMFKoyv7q/view?usp=sharing",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "項目別設定のカラム単位背景色・文字色をグリッドへ反映"
+  },
   {
    "ticket": "1645",
    "dev": "khoa",
