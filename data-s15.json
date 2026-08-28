@@ -1,8 +1,13 @@
 {
- "updated": "2026-08-26 19:17",
+ "updated": "2026-08-28 10:33",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1655",
+  "1645",
+  "1652",
+  "1667",
+  "1651",
   "1516",
   "1515",
   "1636",
@@ -36,6 +41,178 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1655",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12389,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 273,
+     "del": 38,
+     "fc": 11,
+     "cr": "08-28 10:17"
+    }
+   ],
+   "created": "08-28 10:17",
+   "drive": false,
+   "drvurl": "",
+   "cop": 3,
+   "unres": 3,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユニット作成後に再ログインなしで切替候補へ反映する"
+  },
+  {
+   "ticket": "1645",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12380,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 495,
+     "del": 12,
+     "fc": 7,
+     "cr": "08-27 16:55"
+    }
+   ],
+   "created": "08-27 16:55",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "共通_ログイン_セッション失効処理 #ANGUALR_REPLACE-1645"
+  },
+  {
+   "ticket": "1652",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 12373,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 901,
+     "del": 62,
+     "fc": 15,
+     "cr": "08-27 15:41"
+    }
+   ],
+   "r810": [
+    {
+     "num": 12374,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 1165,
+     "del": 81,
+     "fc": 19,
+     "cr": "08-27 15:57"
+    }
+   ],
+   "created": "08-27 15:41",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1wSbEe-vDWKCesBGYkD3KFsg8-Tv3jKkx/view?usp=sharing",
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "共通_帳票 / IF出力ダイアログ_本体文言の配線"
+  },
+  {
+   "ticket": "1667",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 12366,
+     "cf": "ok",
+     "st": "open",
+     "nc": 5,
+     "add": 891,
+     "del": 116,
+     "fc": 27,
+     "cr": "08-27 15:00"
+    }
+   ],
+   "r810": [
+    {
+     "num": 12367,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 5,
+     "add": 898,
+     "del": 123,
+     "fc": 30,
+     "cr": "08-27 15:05"
+    }
+   ],
+   "created": "08-27 15:00",
+   "drive": false,
+   "drvurl": "",
+   "cop": 4,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "セッションのユニット情報を id 一覧に絞り Cookie サイズ超過を解消"
+  },
+  {
+   "ticket": "1651",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 12361,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 395,
+     "del": 2,
+     "fc": 2,
+     "cr": "08-27 14:21"
+    }
+   ],
+   "r810": [],
+   "created": "08-27 14:21",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1Ky72lBSS8hhkUvW8EUcA0aCr0cgTEqBd/view?usp=sharing",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "共通_一覧CSV_選択行出力の行順をグリッド表示順に揃える"
+  },
   {
    "ticket": "1654",
    "dev": "minh",
