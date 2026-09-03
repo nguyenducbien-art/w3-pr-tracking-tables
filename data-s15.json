@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-03 12:00",
+ "updated": "2026-09-03 13:04",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -45,6 +45,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1705",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12521,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 486,
+     "del": 40,
+     "fc": 9,
+     "cr": "09-03 12:54"
+    }
+   ],
+   "created": "09-03 12:54",
+   "drive": false,
+   "drvurl": "",
+   "cop": 3,
+   "unres": 3,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "HT設定_項目表示設定の保存直後の初期化とドロップダウンの応答順逆転を修正"
+  },
   {
    "ticket": "1704",
    "dev": "bien",
