@@ -1,8 +1,9 @@
 {
- "updated": "2026-08-28 17:39",
+ "updated": "2026-09-03 10:31",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1704",
   "1703",
   "1702",
   "1645",
@@ -44,6 +45,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1704",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12512,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 667,
+     "del": 18,
+     "fc": 13,
+     "cr": "09-03 10:02"
+    }
+   ],
+   "created": "09-03 10:02",
+   "drive": false,
+   "drvurl": "",
+   "cop": 3,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "取込出力履歴のファイルダウンロードを認証付き経路に統一する"
+  },
   {
    "ticket": "1703",
    "dev": "bien",
@@ -95,9 +126,9 @@
      "num": 12443,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 384,
-     "del": 77,
+     "nc": 3,
+     "add": 487,
+     "del": 83,
      "fc": 9,
      "cr": "08-28 15:28"
     }
@@ -248,10 +279,10 @@
      "num": 12373,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 922,
-     "del": 63,
-     "fc": 16,
+     "nc": 3,
+     "add": 1152,
+     "del": 83,
+     "fc": 19,
      "cr": "08-27 15:41"
     }
    ],
@@ -259,7 +290,7 @@
     {
      "num": 12374,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 3,
      "add": 1165,
      "del": 81,
