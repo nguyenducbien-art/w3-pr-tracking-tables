@@ -1,8 +1,9 @@
 {
- "updated": "2026-09-04 14:19",
+ "updated": "2026-09-04 14:30",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1725",
   "1722",
   "1704",
   "1703",
@@ -46,6 +47,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1725",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 12559,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 8,
+     "del": 3,
+     "fc": 1,
+     "cr": "09-04 14:21"
+    }
+   ],
+   "r810": [],
+   "created": "09-04 14:21",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1I_nmxQg9ZHZsL0TsWSdVeDUjaEK95BQo/view?usp=sharing",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "帳票アイコン保存を Intervention Image v3 API に修正"
+  },
   {
    "ticket": "1722",
    "dev": "dat",
