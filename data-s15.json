@@ -1,8 +1,9 @@
 {
- "updated": "2026-09-04 14:08",
+ "updated": "2026-09-04 14:19",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1722",
   "1704",
   "1703",
   "1702",
@@ -45,6 +46,47 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1722",
+   "dev": "dat",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 12556,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 510,
+     "del": 50,
+     "fc": 10,
+     "cr": "09-04 14:11"
+    }
+   ],
+   "r810": [
+    {
+     "num": 12557,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 510,
+     "del": 58,
+     "fc": 14,
+     "cr": "09-04 14:11"
+    }
+   ],
+   "created": "09-04 14:11",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1QqdS_xdjxmzR_cyuKlmWtTDYo7vjkPlH/view?usp=drive_link",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "EC取込結果のエラーログをボタン押下で取得するよう共通処理を修正"
+  },
   {
    "ticket": "1726",
    "dev": "khoa",
@@ -4378,10 +4420,10 @@
      "num": 12547,
      "cf": "ok",
      "st": "open",
-     "nc": 3,
-     "add": 17,
-     "del": 4,
-     "fc": 2,
+     "nc": 4,
+     "add": 32,
+     "del": 2,
+     "fc": 3,
      "cr": "09-04 11:18"
     },
     {
