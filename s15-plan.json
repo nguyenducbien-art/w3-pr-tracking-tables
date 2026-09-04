@@ -289,7 +289,7 @@
   },
   {
    "domain": "倉庫管理ドメイン (Warehouse management)",
-   "count": 6,
+   "count": 7,
    "rows": [
     {
      "sid": "436",
@@ -368,12 +368,25 @@
      "free_test": "",
      "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/location_edits",
      "react_url": ""
+    },
+    {
+     "sid": "650",
+     "name": "庫内関連_パレットマスタ登録・変更",
+     "type": "登録/編集 (edit)",
+     "parent": "1639",
+     "impl": "1640",
+     "test": "1642",
+     "impl_pic": "Biên",
+     "test_pic": "",
+     "free_test": "",
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/pallet_edits",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/warehouse/pallet-edits"
     }
    ]
   },
   {
    "domain": "ユニット管理ドメイン (Unit management)",
-   "count": 22,
+   "count": 23,
    "rows": [
     {
      "sid": "439",
@@ -660,6 +673,19 @@
      "free_test": "",
      "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_outbound_setting/next_engine",
      "react_url": ""
+    },
+    {
+     "sid": "619",
+     "name": "プリンター新規登録・編集",
+     "type": "登録/編集 (edit)",
+     "parent": "1644",
+     "impl": "1646",
+     "test": "1648",
+     "impl_pic": "Biên",
+     "test_pic": "",
+     "free_test": "",
+     "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/unit_printer_edits",
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/unit/printer-edits"
     }
    ]
   },
@@ -723,7 +749,7 @@
      "test_pic": "",
      "free_test": "",
      "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/owner",
-     "react_url": ""
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/system/owner"
     },
     {
      "sid": "/warehouse",
@@ -762,7 +788,7 @@
      "test_pic": "",
      "free_test": "",
      "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/user",
-     "react_url": ""
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/system/user"
     },
     {
      "sid": "/user_edits",
@@ -775,7 +801,7 @@
      "test_pic": "",
      "free_test": "",
      "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/user_edits",
-     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/unit/user-edits"
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/system/user-edits"
     },
     {
      "sid": "639",
@@ -801,7 +827,7 @@
      "test_pic": "",
      "free_test": "",
      "angular_url": "https://mimosa-stg-legacy.dialog-wms.com/company",
-     "react_url": ""
+     "react_url": "https://mimosa-stg-react-per-sprint.dialog-wms.com/system/company"
     }
    ]
   },
