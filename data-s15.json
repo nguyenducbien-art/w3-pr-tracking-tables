@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-04 13:15",
+ "updated": "2026-09-04 13:33",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -45,6 +45,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1726",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12553,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 89,
+     "del": 7,
+     "fc": 2,
+     "cr": "09-04 13:25"
+    }
+   ],
+   "created": "09-04 13:25",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "641_在庫断面_明細_サブナビ並び順パリティ修正"
+  },
   {
    "ticket": "1705",
    "dev": "minh",
@@ -4348,9 +4378,9 @@
      "num": 12547,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 10,
-     "del": 1,
+     "nc": 3,
+     "add": 17,
+     "del": 4,
      "fc": 2,
      "cr": "09-04 11:18"
     },
