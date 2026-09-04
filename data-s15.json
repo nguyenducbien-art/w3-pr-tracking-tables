@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-04 15:27",
+ "updated": "2026-09-04 16:06",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -119,7 +119,7 @@
     {
      "num": 12557,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 2,
      "add": 510,
      "del": 58,
@@ -610,7 +610,7 @@
    "ticket": "1644",
    "dev": "bien",
    "bien": true,
-   "sid": "",
+   "sid": "619",
    "base": [],
    "r810": [
     {
@@ -640,7 +640,7 @@
    "ticket": "1639",
    "dev": "bien",
    "bien": true,
-   "sid": "",
+   "sid": "650",
    "base": [],
    "r810": [
     {
