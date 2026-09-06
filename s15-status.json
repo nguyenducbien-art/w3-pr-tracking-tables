@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-04 14:30",
+ "updated": "2026-09-06 22:39",
  "impl": {
   "1646": {
    "pic": "Biên",
@@ -767,6 +767,274 @@
   }
  },
  "test": {
+  "1888": {
+   "pic": "Đạt",
+   "st": "todo"
+  },
+  "1882": {
+   "pic": "Biên",
+   "st": "todo"
+  },
+  "1864": {
+   "pic": "Hưng",
+   "st": "todo"
+  },
+  "1862": {
+   "pic": "Biên",
+   "st": "todo"
+  },
+  "1860": {
+   "pic": "DL_金谷美法",
+   "st": "todo"
+  },
+  "1858": {
+   "pic": "Biên",
+   "st": "todo"
+  },
+  "1856": {
+   "pic": "Đạt",
+   "st": "todo"
+  },
+  "1854": {
+   "pic": "Đạt",
+   "st": "todo"
+  },
+  "1852": {
+   "pic": "DL_金谷美法",
+   "st": "todo"
+  },
+  "1850": {
+   "pic": "DL_金谷美法",
+   "st": "todo"
+  },
+  "1848": {
+   "pic": "Hưng",
+   "st": "todo"
+  },
+  "1846": {
+   "pic": "Khoa",
+   "st": "todo"
+  },
+  "1844": {
+   "pic": "Khoa",
+   "st": "todo"
+  },
+  "1842": {
+   "pic": "Đạt",
+   "st": "todo"
+  },
+  "1840": {
+   "pic": "Khoa",
+   "st": "todo"
+  },
+  "1838": {
+   "pic": "Khoa",
+   "st": "todo"
+  },
+  "1836": {
+   "pic": "Khoa",
+   "st": "todo"
+  },
+  "1834": {
+   "pic": "Sơn",
+   "st": "todo"
+  },
+  "1832": {
+   "pic": "Hưng",
+   "st": "todo"
+  },
+  "1830": {
+   "pic": "Khoa",
+   "st": "todo"
+  },
+  "1828": {
+   "pic": "Khoa",
+   "st": "todo"
+  },
+  "1826": {
+   "pic": "Hưng",
+   "st": "todo"
+  },
+  "1824": {
+   "pic": "Biên",
+   "st": "todo"
+  },
+  "1822": {
+   "pic": "Hưng",
+   "st": "todo"
+  },
+  "1820": {
+   "pic": "Biên",
+   "st": "todo"
+  },
+  "1818": {
+   "pic": "Hưng",
+   "st": "todo"
+  },
+  "1816": {
+   "pic": "Hưng",
+   "st": "todo"
+  },
+  "1808": {
+   "pic": "Đạt",
+   "st": "todo"
+  },
+  "1806": {
+   "pic": "Khoa",
+   "st": "todo"
+  },
+  "1804": {
+   "pic": "Đạt",
+   "st": "todo"
+  },
+  "1802": {
+   "pic": "Biên",
+   "st": "todo"
+  },
+  "1800": {
+   "pic": "Minh",
+   "st": "todo"
+  },
+  "1798": {
+   "pic": "Đạt",
+   "st": "todo"
+  },
+  "1796": {
+   "pic": "DL_金谷美法",
+   "st": "todo"
+  },
+  "1794": {
+   "pic": "Biên",
+   "st": "todo"
+  },
+  "1790": {
+   "pic": "Minh",
+   "st": "todo"
+  },
+  "1788": {
+   "pic": "Minh",
+   "st": "todo"
+  },
+  "1786": {
+   "pic": "DL_金谷美法",
+   "st": "todo"
+  },
+  "1784": {
+   "pic": "Hưng",
+   "st": "todo"
+  },
+  "1782": {
+   "pic": "Minh",
+   "st": "todo"
+  },
+  "1780": {
+   "pic": "Hưng",
+   "st": "todo"
+  },
+  "1778": {
+   "pic": "Minh",
+   "st": "todo"
+  },
+  "1776": {
+   "pic": "Minh",
+   "st": "todo"
+  },
+  "1774": {
+   "pic": "Hưng",
+   "st": "todo"
+  },
+  "1772": {
+   "pic": "Khoa",
+   "st": "todo"
+  },
+  "1770": {
+   "pic": "Khoa",
+   "st": "todo"
+  },
+  "1768": {
+   "pic": "Đạt",
+   "st": "todo"
+  },
+  "1766": {
+   "pic": "Minh",
+   "st": "todo"
+  },
+  "1764": {
+   "pic": "Hưng",
+   "st": "todo"
+  },
+  "1762": {
+   "pic": "Biên",
+   "st": "todo"
+  },
+  "1760": {
+   "pic": "Khoa",
+   "st": "todo"
+  },
+  "1758": {
+   "pic": "Khoa",
+   "st": "todo"
+  },
+  "1756": {
+   "pic": "Hưng",
+   "st": "todo"
+  },
+  "1754": {
+   "pic": "Đạt",
+   "st": "todo"
+  },
+  "1752": {
+   "pic": "Minh",
+   "st": "todo"
+  },
+  "1750": {
+   "pic": "Hưng",
+   "st": "todo"
+  },
+  "1748": {
+   "pic": "Minh",
+   "st": "todo"
+  },
+  "1746": {
+   "pic": "Đạt",
+   "st": "todo"
+  },
+  "1744": {
+   "pic": "Minh",
+   "st": "todo"
+  },
+  "1742": {
+   "pic": "DLレビュー依頼",
+   "st": "todo"
+  },
+  "1740": {
+   "pic": "Hưng",
+   "st": "todo"
+  },
+  "1738": {
+   "pic": "Hưng",
+   "st": "todo"
+  },
+  "1736": {
+   "pic": "Hưng",
+   "st": "todo"
+  },
+  "1734": {
+   "pic": "Đạt",
+   "st": "todo"
+  },
+  "1732": {
+   "pic": "Minh",
+   "st": "todo"
+  },
+  "1730": {
+   "pic": "Biên",
+   "st": "todo"
+  },
+  "1728": {
+   "pic": "Biên",
+   "st": "todo"
+  },
   "1716": {
    "pic": "Minh",
    "st": "done"
