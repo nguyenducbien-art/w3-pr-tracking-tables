@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-06 23:11",
+ "updated": "2026-09-06 23:22",
  "impl": {
   "1646": {
    "pic": "Biên",
@@ -768,31 +768,31 @@
  },
  "test": {
   "1888": {
-   "pic": "Đạt",
+   "pic": "Bồn",
    "st": "todo"
   },
   "1882": {
-   "pic": "Biên",
+   "pic": "Bồn",
    "st": "todo"
   },
   "1864": {
-   "pic": "Hưng",
+   "pic": "Khoa",
    "st": "todo"
   },
   "1862": {
-   "pic": "Biên",
+   "pic": "Khoa",
    "st": "todo"
   },
   "1858": {
-   "pic": "Biên",
+   "pic": "Khoa",
    "st": "todo"
   },
   "1848": {
-   "pic": "Hưng",
+   "pic": "Khoa",
    "st": "todo"
   },
   "1842": {
-   "pic": "Đạt",
+   "pic": "Khoa",
    "st": "todo"
   },
   "1840": {
@@ -812,15 +812,15 @@
    "st": "todo"
   },
   "1824": {
-   "pic": "Biên",
+   "pic": "Khoa",
    "st": "todo"
   },
   "1822": {
-   "pic": "Hưng",
+   "pic": "Khoa",
    "st": "todo"
   },
   "1820": {
-   "pic": "Biên",
+   "pic": "Hưng",
    "st": "todo"
   },
   "1816": {
@@ -828,63 +828,63 @@
    "st": "todo"
   },
   "1806": {
-   "pic": "Khoa",
+   "pic": "Hưng",
    "st": "todo"
   },
   "1804": {
-   "pic": "Đạt",
+   "pic": "Hưng",
    "st": "todo"
   },
   "1802": {
-   "pic": "Biên",
+   "pic": "Hưng",
    "st": "todo"
   },
   "1800": {
-   "pic": "Minh",
+   "pic": "Hưng",
    "st": "todo"
   },
   "1798": {
-   "pic": "Đạt",
+   "pic": "Hưng",
    "st": "todo"
   },
   "1794": {
-   "pic": "Biên",
+   "pic": "Hưng",
    "st": "todo"
   },
   "1790": {
-   "pic": "Minh",
+   "pic": "Hưng",
    "st": "todo"
   },
   "1788": {
-   "pic": "Minh",
+   "pic": "Đạt",
    "st": "todo"
   },
   "1784": {
-   "pic": "Hưng",
+   "pic": "Đạt",
    "st": "todo"
   },
   "1782": {
-   "pic": "Minh",
+   "pic": "Đạt",
    "st": "todo"
   },
   "1780": {
-   "pic": "Hưng",
+   "pic": "Đạt",
    "st": "todo"
   },
   "1778": {
-   "pic": "Minh",
+   "pic": "Đạt",
    "st": "todo"
   },
   "1776": {
-   "pic": "Minh",
+   "pic": "Đạt",
    "st": "todo"
   },
   "1774": {
-   "pic": "Hưng",
+   "pic": "Đạt",
    "st": "todo"
   },
   "1772": {
-   "pic": "Khoa",
+   "pic": "Đạt",
    "st": "todo"
   },
   "1768": {
@@ -892,19 +892,19 @@
    "st": "todo"
   },
   "1766": {
-   "pic": "Minh",
+   "pic": "Đạt",
    "st": "todo"
   },
   "1764": {
-   "pic": "Hưng",
+   "pic": "Đạt",
    "st": "todo"
   },
   "1758": {
-   "pic": "Khoa",
+   "pic": "Đạt",
    "st": "todo"
   },
   "1754": {
-   "pic": "Đạt",
+   "pic": "Minh",
    "st": "todo"
   },
   "1752": {
@@ -912,7 +912,7 @@
    "st": "todo"
   },
   "1750": {
-   "pic": "Hưng",
+   "pic": "Minh",
    "st": "todo"
   },
   "1748": {
@@ -920,7 +920,7 @@
    "st": "todo"
   },
   "1746": {
-   "pic": "Đạt",
+   "pic": "Minh",
    "st": "todo"
   },
   "1742": {
@@ -928,11 +928,11 @@
    "st": "todo"
   },
   "1740": {
-   "pic": "Hưng",
+   "pic": "Minh",
    "st": "todo"
   },
   "1734": {
-   "pic": "Đạt",
+   "pic": "Minh",
    "st": "todo"
   },
   "1732": {
@@ -940,11 +940,11 @@
    "st": "todo"
   },
   "1730": {
-   "pic": "Biên",
+   "pic": "Minh",
    "st": "todo"
   },
   "1728": {
-   "pic": "Biên",
+   "pic": "Minh",
    "st": "todo"
   },
   "1716": {
