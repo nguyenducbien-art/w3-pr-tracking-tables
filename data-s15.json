@@ -1,8 +1,9 @@
 {
- "updated": "2026-09-07 14:35",
+ "updated": "2026-09-07 15:18",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "260",
   "1725",
   "1722",
   "1704",
@@ -47,6 +48,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "260",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12598,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 83,
+     "del": 7,
+     "fc": 5,
+     "cr": "09-07 15:05"
+    }
+   ],
+   "created": "09-07 15:05",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1cXTTGWgypr4JXducxIw39u-PB6Epc9hZ/view?usp=sharing",
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ブラウザタブタイトルの AngularJS 未一致 3 件を解消"
+  },
   {
    "ticket": "1766",
    "dev": "dat",
