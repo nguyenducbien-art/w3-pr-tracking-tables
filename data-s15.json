@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-04 16:20",
+ "updated": "2026-09-07 14:35",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -47,6 +47,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1766",
+   "dev": "dat",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12592,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 19,
+     "del": 0,
+     "fc": 10,
+     "cr": "09-07 14:21"
+    }
+   ],
+   "created": "09-07 14:21",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ご利用ガイドボタンのラベルを UI 言語に追随させる"
+  },
   {
    "ticket": "1725",
    "dev": "hung",
