@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-08 13:55",
+ "updated": "2026-09-08 15:04",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -48,6 +48,66 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1742",
+   "dev": "dat",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12629,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 226,
+     "del": 28,
+     "fc": 9,
+     "cr": "09-08 14:48"
+    }
+   ],
+   "created": "09-08 14:48",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "出荷指示登録 (230) マスタ選択モーダルのタイトル・検索ラベル・ページャ表示を AngularJS に揃える"
+  },
+  {
+   "ticket": "1730",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12628,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 34,
+     "del": 5,
+     "fc": 3,
+     "cr": "09-08 14:38"
+    }
+   ],
+   "created": "09-08 14:38",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ログイン画面に共通フッターを表示"
+  },
   {
    "ticket": "544",
    "dev": "bien",
