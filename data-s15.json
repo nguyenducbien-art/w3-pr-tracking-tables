@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-07 17:23",
+ "updated": "2026-09-08 11:02",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -48,6 +48,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "544",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12614,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 6,
+     "del": 6,
+     "fc": 1,
+     "cr": "09-08 10:51"
+    }
+   ],
+   "created": "09-08 10:51",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "在庫_明細 (247) 検索エリアのラベルが vi/zh-CN で英語のまま表示される不具合を修正"
+  },
   {
    "ticket": "260",
    "dev": "hung",
