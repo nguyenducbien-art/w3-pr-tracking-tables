@@ -1,8 +1,9 @@
 {
- "updated": "2026-09-08 15:58",
+ "updated": "2026-09-08 16:56",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2029",
   "260",
   "1725",
   "1722",
@@ -48,6 +49,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "2029",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 12635,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 783,
+     "del": 49,
+     "fc": 3,
+     "cr": "09-08 16:45"
+    }
+   ],
+   "r810": [],
+   "created": "09-08 16:45",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1MCY7quCrW1SGkJekmAzpa_QkV7CvYtYw/view?usp=sharing",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "共通_一覧選択_列フィルタ・並べ替え変更時に選択を保持する"
+  },
   {
    "ticket": "1742",
    "dev": "dat",
