@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-08 11:24",
+ "updated": "2026-09-08 13:55",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -5307,30 +5307,6 @@
   }
  ],
  "scaffold": [
-  {
-   "ticket": "1566",
-   "dev": "minh",
-   "bien": false,
-   "pr": {
-    "num": 12226,
-    "cf": "bad",
-    "st": "open",
-    "nc": 4,
-    "add": 42,
-    "del": 2,
-    "fc": 2,
-    "cr": "08-21 13:57"
-   },
-   "created": "08-21 13:57",
-   "cop": 2,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "columnOverrides/blankValues と UI-NEW-16 の lbl 常時送信例外を規約に還元 #ANGULAR_REPLACE-1566"
-  },
   {
    "ticket": "1161",
    "dev": "bien",
