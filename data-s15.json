@@ -1,8 +1,9 @@
 {
- "updated": "2026-09-09 15:19",
+ "updated": "2026-09-09 16:02",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1412",
   "1457",
   "2029",
   "260",
@@ -50,6 +51,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1412",
+   "dev": "dat",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 12665,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 240,
+     "del": 25,
+     "fc": 4,
+     "cr": "09-09 15:59"
+    }
+   ],
+   "r810": [],
+   "created": "09-09 15:59",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/12AnI47CBJN0NhHH3VWu4WiqXLqZKr37h/view?usp=drive_link",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "日付入力の有効範囲外と Tab 移動時の E040 検証を移行前の挙動へ揃える"
+  },
   {
    "ticket": "1410",
    "dev": "hung",
