@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-09 11:12",
+ "updated": "2026-09-09 11:32",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -51,6 +51,36 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
   {
+   "ticket": "1410",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12648,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 6,
+     "del": 25,
+     "fc": 2,
+     "cr": "09-09 11:09"
+    }
+   ],
+   "created": "09-09 11:09",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1TU5vZZKhusqVBRZOnQr8Hv1wAQMwVByz/view?usp=sharing",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "入荷_検品登録・修正のロケーション/パレット選択モーダルを共通 DataTable の radio 単一選択へ統一"
+  },
+  {
    "ticket": "1409",
    "dev": "bien",
    "bien": true,
@@ -90,8 +120,8 @@
      "num": 12639,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 195,
+     "nc": 3,
+     "add": 254,
      "del": 5,
      "fc": 3,
      "cr": "09-08 17:34"
@@ -102,8 +132,8 @@
      "num": 12640,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 195,
+     "nc": 3,
+     "add": 254,
      "del": 5,
      "fc": 3,
      "cr": "09-08 17:35"
@@ -1105,9 +1135,9 @@
      "cf": "ok",
      "st": "open",
      "nc": 8,
-     "add": 1437,
-     "del": 29,
-     "fc": 22,
+     "add": 0,
+     "del": 0,
+     "fc": 0,
      "cr": "08-25 13:06"
     }
    ],
