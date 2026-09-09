@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-09 16:36",
+ "updated": "2026-09-09 16:57",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -51,6 +51,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "2032",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12669,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 36,
+     "del": 11,
+     "fc": 2,
+     "cr": "09-09 16:47"
+    }
+   ],
+   "created": "09-09 16:47",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "諸掛明細登録の単価小数落ちと丸め区分未適用を修正"
+  },
   {
    "ticket": "1412",
    "dev": "dat",
