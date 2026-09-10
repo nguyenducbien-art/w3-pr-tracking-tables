@@ -1,8 +1,9 @@
 {
- "updated": "2026-09-09 22:39",
+ "updated": "2026-09-10 18:10",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1656",
   "1412",
   "1457",
   "2029",
@@ -51,6 +52,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1656",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12696,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 999,
+     "del": 182,
+     "fc": 18,
+     "cr": "09-10 17:56"
+    }
+   ],
+   "created": "09-10 17:56",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1U0vwnPA-JWigAAXMrbHEX75uW0iynw-9/view?usp=sharing",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "表示期間の日付直接入力と年月ピッカーの年→10年→100年ドリル対応"
+  },
   {
    "ticket": "2032",
    "dev": "minh",
