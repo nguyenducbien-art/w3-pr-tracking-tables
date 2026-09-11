@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-11 14:23",
+ "updated": "2026-09-11 16:02",
  "impl": {
   "1646": {
    "pic": "Biên",
@@ -840,7 +840,7 @@
    "st": "todo"
   },
   "1993": {
-   "pic": "Khoa",
+   "pic": "Hưng",
    "st": "todo"
   },
   "1991": {
@@ -848,11 +848,11 @@
    "st": "todo"
   },
   "1989": {
-   "pic": "Khoa",
+   "pic": "Hưng",
    "st": "todo"
   },
   "1987": {
-   "pic": "Khoa",
+   "pic": "Hưng",
    "st": "todo"
   },
   "1985": {
@@ -985,11 +985,11 @@
   },
   "1921": {
    "pic": "Minh",
-   "st": "todo"
+   "st": "wip"
   },
   "1919": {
    "pic": "Minh",
-   "st": "todo"
+   "st": "wip"
   },
   "1917": {
    "pic": "Minh",
@@ -1000,16 +1000,16 @@
    "st": "todo"
   },
   "1913": {
-   "pic": "Minh",
+   "pic": "Khoa",
    "st": "todo"
   },
   "1911": {
-   "pic": "Minh",
+   "pic": "Khoa",
    "st": "todo"
   },
   "1909": {
-   "pic": "Minh",
-   "st": "todo"
+   "pic": "Khoa",
+   "st": "wip"
   },
   "1907": {
    "pic": "Bồn",
