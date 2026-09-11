@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-11 13:19",
+ "updated": "2026-09-11 13:47",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -53,6 +53,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1955",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12718,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 78,
+     "del": 155,
+     "fc": 13,
+     "cr": "09-11 13:31"
+    }
+   ],
+   "created": "09-11 13:31",
+   "drive": false,
+   "drvurl": "",
+   "cop": 3,
+   "unres": 3,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ロール編集の入口ゲートとロール名の検証を AngularJS に揃える"
+  },
   {
    "ticket": "2037",
    "dev": "bien",
