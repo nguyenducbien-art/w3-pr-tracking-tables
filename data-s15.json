@@ -1,8 +1,9 @@
 {
- "updated": "2026-09-10 19:15",
+ "updated": "2026-09-11 13:19",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2037",
   "1656",
   "1412",
   "1457",
@@ -53,6 +54,36 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
   {
+   "ticket": "2037",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12708,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 411,
+     "del": 10,
+     "fc": 2,
+     "cr": "09-11 10:57"
+    }
+   ],
+   "created": "09-11 10:57",
+   "drive": false,
+   "drvurl": "",
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "共通_一覧CSV_列フィルタで隠れた選択行も件数に数える"
+  },
+  {
    "ticket": "1656",
    "dev": "hung",
    "bien": false,
@@ -62,10 +93,10 @@
      "num": 12697,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 938,
-     "del": 181,
-     "fc": 11,
+     "nc": 2,
+     "add": 1003,
+     "del": 177,
+     "fc": 14,
      "cr": "09-10 18:11"
     }
    ],
@@ -85,7 +116,7 @@
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/1U0vwnPA-JWigAAXMrbHEX75uW0iynw-9/view?usp=sharing",
    "cop": 4,
-   "unres": 4,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -2578,6 +2609,16 @@
    "base": [],
    "r810": [
     {
+     "num": 12709,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 368,
+     "del": 28,
+     "fc": 6,
+     "cr": "09-11 11:33"
+    },
+    {
      "num": 12103,
      "cf": "ok",
      "st": "merged",
@@ -2621,8 +2662,8 @@
    "created": "08-13 09:55",
    "drive": false,
    "drvurl": "",
-   "cop": 3,
-   "unres": 0,
+   "cop": 10,
+   "unres": 7,
    "rvw": {
     "ap": [],
     "ch": [],
