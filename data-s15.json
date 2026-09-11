@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-11 16:36",
+ "updated": "2026-09-11 16:57",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -53,6 +53,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "973",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "428",
+   "base": [],
+   "r810": [
+    {
+     "num": 12728,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 137,
+     "del": 17,
+     "fc": 6,
+     "cr": "09-11 16:41"
+    }
+   ],
+   "created": "09-11 16:41",
+   "drive": false,
+   "drvurl": "",
+   "cop": 3,
+   "unres": 3,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "428_仕入先追加・編集_単体テスト指摘4件修正"
+  },
   {
    "ticket": "1955",
    "dev": "hung",
