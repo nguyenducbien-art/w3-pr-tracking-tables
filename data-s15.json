@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14 14:22",
+ "updated": "2026-09-14 14:34",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1941,7 +1941,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "ulink セルに認証付きダウンロードハンドラの口を追加"
   },
@@ -2052,7 +2054,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "配送タリフマスタ取込 拡張子不一致時のエラー表示を共通ダイアログで揃える"
   },
@@ -2153,7 +2157,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "列フィルタで空白/空白でない選択時に入力値を保持する"
   },
@@ -2194,7 +2200,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "flag カラムのフィルタに異常値が重複表示される不具合を修正"
   },
@@ -2235,7 +2243,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "基本設定ソート設定マスタ取得APIのルートを有効化"
   },
@@ -2336,7 +2346,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "Server Action の bodySizeLimit を 10mb に引き上げ (画像1MB超保存の無言失敗を解消)"
   },
@@ -2407,7 +2419,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "画面設定を持たない一覧画面の主操作ボタンを緑ボタンで描画できるようにする"
   },
@@ -2918,7 +2932,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "DataTable に linkColumnId を追加し列値クリックで行遷移可能にする"
   },
@@ -3039,7 +3055,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "EditSection に readOnlyFor 追加・FieldRenderer の未選択 flag を値なし表示 (→base)"
   },
@@ -3350,7 +3368,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "ダウンロードファイル名修正のレビュー指摘を解消"
   },
