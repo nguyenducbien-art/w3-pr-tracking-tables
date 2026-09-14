@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-11 23:06",
+ "updated": "2026-09-14 09:21",
  "impl": {
   "1646": {
    "pic": "Biên",
@@ -812,15 +812,15 @@
    "st": "todo"
   },
   "2007": {
-   "pic": "Bồn",
+   "pic": "Đạt",
    "st": "done"
   },
   "2005": {
-   "pic": "Bồn",
+   "pic": "Đạt",
    "st": "todo"
   },
   "2003": {
-   "pic": "Bồn",
+   "pic": "Minh",
    "st": "todo"
   },
   "2001": {
@@ -856,7 +856,7 @@
    "st": "todo"
   },
   "1985": {
-   "pic": "Bồn",
+   "pic": "Hưng",
    "st": "wip"
   },
   "1983": {
@@ -864,19 +864,19 @@
    "st": "todo"
   },
   "1981": {
-   "pic": "Khoa",
+   "pic": "Hưng",
    "st": "todo"
   },
   "1979": {
-   "pic": "Khoa",
+   "pic": "Hưng",
    "st": "todo"
   },
   "1977": {
-   "pic": "Khoa",
+   "pic": "Đạt",
    "st": "todo"
   },
   "1975": {
-   "pic": "Hưng",
+   "pic": "Đạt",
    "st": "todo"
   },
   "1973": {
@@ -884,7 +884,7 @@
    "st": "todo"
   },
   "1971": {
-   "pic": "Hưng",
+   "pic": "Minh",
    "st": "todo"
   },
   "1969": {
@@ -912,11 +912,11 @@
    "st": "todo"
   },
   "1957": {
-   "pic": "Hưng",
+   "pic": "Đạt",
    "st": "todo"
   },
   "1955": {
-   "pic": "Hưng",
+   "pic": "Đạt",
    "st": "todo"
   },
   "1953": {
@@ -956,7 +956,7 @@
    "st": "done"
   },
   "1935": {
-   "pic": "Đạt",
+   "pic": "Khoa",
    "st": "todo"
   },
   "1933": {
@@ -980,23 +980,23 @@
    "st": "done"
   },
   "1923": {
-   "pic": "Đạt",
+   "pic": "Minh",
    "st": "done"
   },
   "1921": {
-   "pic": "Minh",
+   "pic": "Khoa",
    "st": "wip"
   },
   "1919": {
-   "pic": "Minh",
+   "pic": "Khoa",
    "st": "wip"
   },
   "1917": {
-   "pic": "Minh",
+   "pic": "Khoa",
    "st": "todo"
   },
   "1915": {
-   "pic": "Minh",
+   "pic": "Khoa",
    "st": "todo"
   },
   "1913": {
@@ -1020,7 +1020,7 @@
    "st": "todo"
   },
   "1903": {
-   "pic": "Minh",
+   "pic": "Bồn",
    "st": "todo"
   },
   "1901": {
@@ -1028,7 +1028,7 @@
    "st": "todo"
   },
   "1899": {
-   "pic": "Minh",
+   "pic": "Bồn",
    "st": "done"
   },
   "1897": {
