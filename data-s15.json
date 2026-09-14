@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14 14:56",
+ "updated": "2026-09-14 15:08",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -54,6 +54,36 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
   {
+   "ticket": "1109",
+   "dev": "dat",
+   "bien": false,
+   "sid": "450",
+   "base": [],
+   "r810": [
+    {
+     "num": 12755,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 19,
+     "del": 0,
+     "fc": 3,
+     "cr": "09-14 14:51"
+    }
+   ],
+   "created": "09-14 14:51",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "CSV設定_取込ルール一覧の設定コピー作成ダイアログ確定ボタン文言を修正"
+  },
+  {
    "ticket": "977",
    "dev": "khoa",
    "bien": false,
@@ -74,8 +104,8 @@
    "created": "09-14 14:47",
    "drive": false,
    "drvurl": "",
-   "cop": 0,
-   "unres": 0,
+   "cop": 2,
+   "unres": 2,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -105,7 +135,7 @@
    "drive": false,
    "drvurl": "",
    "cop": 2,
-   "unres": 2,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -1715,9 +1745,9 @@
      "cf": "ok",
      "st": "merged",
      "nc": 2,
-     "add": 97,
-     "del": 15,
-     "fc": 8,
+     "add": 0,
+     "del": 0,
+     "fc": 0,
      "cr": "08-21 17:12"
     },
     {
