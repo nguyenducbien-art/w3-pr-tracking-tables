@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14 11:26",
+ "updated": "2026-09-14 11:39",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -53,6 +53,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "949",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "424",
+   "base": [],
+   "r810": [
+    {
+     "num": 12747,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 302,
+     "del": 144,
+     "fc": 8,
+     "cr": "09-14 11:30"
+    }
+   ],
+   "created": "09-14 11:30",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "424_オーナーステータス設定_数値入力バリデーションパリティ修正"
+  },
   {
    "ticket": "973",
    "dev": "khoa",
