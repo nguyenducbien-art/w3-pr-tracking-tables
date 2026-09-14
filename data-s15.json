@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14 14:45",
+ "updated": "2026-09-14 14:56",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -54,6 +54,66 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
   {
+   "ticket": "977",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "429",
+   "base": [],
+   "r810": [
+    {
+     "num": 12754,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 852,
+     "del": 0,
+     "fc": 9,
+     "cr": "09-14 14:47"
+    }
+   ],
+   "created": "09-14 14:47",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "429_商品関連_商品マスタ_DB由来ラベル多言語キー補完(共通)"
+  },
+  {
+   "ticket": "1901",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12753,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 20,
+     "del": 8,
+     "fc": 3,
+     "cr": "09-14 14:46"
+    }
+   ],
+   "created": "09-14 14:46",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "依頼主追加・編集の新規モードでデータ保存期間の既定値を空欄に修正"
+  },
+  {
    "ticket": "10",
    "dev": "bien",
    "bien": true,
@@ -74,8 +134,8 @@
    "created": "09-14 14:39",
    "drive": false,
    "drvurl": "",
-   "cop": 0,
-   "unres": 0,
+   "cop": 1,
+   "unres": 1,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -3252,8 +3312,8 @@
    "created": "08-12 15:15",
    "drive": false,
    "drvurl": "",
-   "cop": 3,
-   "unres": 0,
+   "cop": 5,
+   "unres": 2,
    "rvw": {
     "ap": [],
     "ch": [],
