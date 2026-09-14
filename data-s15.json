@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14 16:06",
+ "updated": "2026-09-14 16:17",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -54,6 +54,36 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
   {
+   "ticket": "1979",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12760,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 149,
+     "del": 9,
+     "fc": 5,
+     "cr": "09-14 16:05"
+    }
+   ],
+   "created": "09-14 16:05",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "CSV出力設定の詳細設定で文字数を空欄のままにできるよう修正"
+  },
+  {
    "ticket": "1109",
    "dev": "dat",
    "bien": false,
@@ -63,7 +93,7 @@
     {
      "num": 12755,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 4,
      "add": 72,
      "del": 5,
@@ -4127,6 +4157,16 @@
    "sid": "451",
    "base": [],
    "r810": [
+    {
+     "num": 12761,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 3,
+     "del": 3,
+     "fc": 1,
+     "cr": "09-14 16:09"
+    },
     {
      "num": 12071,
      "cf": "ok",
