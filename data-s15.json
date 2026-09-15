@@ -1,8 +1,9 @@
 {
- "updated": "2026-09-14 17:45",
+ "updated": "2026-09-15 09:46",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2047",
   "2037",
   "1656",
   "1412",
@@ -53,6 +54,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "2047",
+   "dev": "dat",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12768,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 147,
+     "del": 4,
+     "fc": 3,
+     "cr": "09-15 09:37"
+    }
+   ],
+   "created": "09-15 09:37",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/11SEMPZkZkcGho88vF8o8b79g4cesFPtC/view?usp=drive_link",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "Blob ダウンロード失敗時にサーバーの文言を保持する"
+  },
   {
    "ticket": "1979",
    "dev": "hung",
