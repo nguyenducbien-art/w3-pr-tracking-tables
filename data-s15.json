@@ -1,8 +1,9 @@
 {
- "updated": "2026-09-15 09:46",
+ "updated": "2026-09-15 10:08",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2050",
   "2047",
   "2037",
   "1656",
@@ -55,6 +56,36 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
   {
+   "ticket": "2050",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 12770,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 291,
+     "del": 9,
+     "fc": 2,
+     "cr": "09-15 09:50"
+    }
+   ],
+   "r810": [],
+   "created": "09-15 09:50",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1B2yzziE5gshBD1f1-x8IQftT5TkfkRyJ/view?usp=sharing",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ServerSync モードの CSV 出力で確認ダイアログ (Q015) が表示されない問題を修正"
+  },
+  {
    "ticket": "2047",
    "dev": "dat",
    "bien": false,
@@ -65,17 +96,17 @@
      "num": 12768,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 147,
-     "del": 4,
+     "nc": 2,
+     "add": 149,
+     "del": 6,
      "fc": 3,
      "cr": "09-15 09:37"
     }
    ],
    "created": "09-15 09:37",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/11SEMPZkZkcGho88vF8o8b79g4cesFPtC/view?usp=drive_link",
-   "cop": 0,
+   "drive": false,
+   "drvurl": "",
+   "cop": 1,
    "unres": 0,
    "rvw": {
     "ap": [],
@@ -245,8 +276,8 @@
      "num": 12747,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 310,
+     "nc": 3,
+     "add": 306,
      "del": 146,
      "fc": 8,
      "cr": "09-14 11:30"
