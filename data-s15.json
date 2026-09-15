@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15 15:49",
+ "updated": "2026-09-15 16:03",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -58,6 +58,36 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
   {
+   "ticket": "1049",
+   "dev": "dat",
+   "bien": false,
+   "sid": "437",
+   "base": [],
+   "r810": [
+    {
+     "num": 12788,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 72,
+     "del": 26,
+     "fc": 3,
+     "cr": "09-15 15:55"
+    }
+   ],
+   "created": "09-15 15:55",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ロケ基本情報編集_フラグをOFFへ変更しても保存されない"
+  },
+  {
    "ticket": "1718",
    "dev": "bien",
    "bien": true,
@@ -78,7 +108,7 @@
     {
      "num": 12784,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 3,
      "add": 445,
      "del": 16,
@@ -108,10 +138,10 @@
      "num": 12782,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 267,
+     "nc": 2,
+     "add": 434,
      "del": 8,
-     "fc": 6,
+     "fc": 7,
      "cr": "09-15 14:15"
     }
    ],
@@ -131,7 +161,7 @@
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/1w2PqLOCzN2tU_bFxMjXQA8gf9BiIjYBT/view?usp=sharing",
    "cop": 2,
-   "unres": 2,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -160,7 +190,7 @@
     {
      "num": 12772,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 3,
      "add": 291,
      "del": 9,
@@ -3345,10 +3375,10 @@
      "num": 11914,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 133,
-     "del": 2,
-     "fc": 4,
+     "nc": 2,
+     "add": 213,
+     "del": 3,
+     "fc": 7,
      "cr": "08-12 16:13"
     }
    ],
@@ -3367,8 +3397,8 @@
    "created": "08-12 16:13",
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/1MAebwqrQGVitkm61dyL4fQdYll4sS7CH/view?usp=sharing",
-   "cop": 0,
-   "unres": 0,
+   "cop": 1,
+   "unres": 1,
    "rvw": {
     "ap": [],
     "ch": [],
