@@ -1,8 +1,10 @@
 {
- "updated": "2026-09-15 14:04",
+ "updated": "2026-09-15 14:23",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1718",
+  "1719",
   "2050",
   "2047",
   "2037",
@@ -55,6 +57,88 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1718",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 12781,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 305,
+     "del": 2,
+     "fc": 4,
+     "cr": "09-15 14:15"
+    }
+   ],
+   "r810": [
+    {
+     "num": 12784,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 305,
+     "del": 2,
+     "fc": 4,
+     "cr": "09-15 14:16"
+    }
+   ],
+   "created": "09-15 14:15",
+   "drive": false,
+   "drvurl": "",
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "一覧の展開行の開閉状態を行番号でなく行単位で保持するよう修正"
+  },
+  {
+   "ticket": "1719",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 12782,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 267,
+     "del": 8,
+     "fc": 6,
+     "cr": "09-15 14:15"
+    }
+   ],
+   "r810": [
+    {
+     "num": 12783,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 268,
+     "del": 8,
+     "fc": 6,
+     "cr": "09-15 14:15"
+    }
+   ],
+   "created": "09-15 14:15",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1w2PqLOCzN2tU_bFxMjXQA8gf9BiIjYBT/view?usp=sharing",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "一覧の列フィルタがサーバーとクライアントに二重適用される不具合を修正"
+  },
   {
    "ticket": "2050",
    "dev": "minh",
@@ -418,10 +502,10 @@
      "num": 12696,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 1094,
-     "del": 181,
-     "fc": 35,
+     "nc": 3,
+     "add": 1114,
+     "del": 227,
+     "fc": 39,
      "cr": "09-10 17:56"
     }
    ],
@@ -2582,6 +2666,16 @@
    "sid": "/user",
    "base": [],
    "r810": [
+    {
+     "num": 12780,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 212,
+     "del": 1,
+     "fc": 2,
+     "cr": "09-15 14:14"
+    },
     {
      "num": 11980,
      "cf": "ok",
