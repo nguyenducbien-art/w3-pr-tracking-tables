@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15 17:56",
+ "updated": "2026-09-15 20:12",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -57,6 +57,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1708",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12804,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 2345,
+     "del": 3,
+     "fc": 21,
+     "cr": "09-15 19:58"
+    }
+   ],
+   "created": "09-15 19:58",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1EuF7mRpRSLW2-0HUB9JGaesVufxlChc_/view",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "代理ログイン機能"
+  },
   {
    "ticket": "1993",
    "dev": "hung",
