@@ -1,8 +1,9 @@
 {
- "updated": "2026-09-16 11:13",
+ "updated": "2026-09-16 11:26",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2054",
   "1718",
   "1719",
   "2050",
@@ -58,6 +59,36 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
   {
+   "ticket": "2054",
+   "dev": "dat",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12812,
+     "cf": "ok",
+     "st": "open",
+     "nc": 4,
+     "add": 279,
+     "del": 75,
+     "fc": 9,
+     "cr": "09-16 11:06"
+    }
+   ],
+   "created": "09-16 11:06",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1afeXBf29Yyy7DsOYBeGzncZtwQYXZfGo/view?usp=drive_link",
+   "cop": 3,
+   "unres": 3,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユニット設定_基本設定の登録済みロゴが表示されない不具合を修正"
+  },
+  {
    "ticket": "1963",
    "dev": "hung",
    "bien": false,
@@ -109,7 +140,7 @@
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/1EuF7mRpRSLW2-0HUB9JGaesVufxlChc_/view",
    "cop": 7,
-   "unres": 7,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -3476,7 +3507,7 @@
     {
      "num": 12799,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 5,
      "add": 140,
      "del": 44,
@@ -3872,10 +3903,10 @@
      "num": 12809,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 773,
-     "del": 28,
-     "fc": 11,
+     "nc": 3,
+     "add": 747,
+     "del": 26,
+     "fc": 9,
      "cr": "09-16 10:17"
     },
     {
