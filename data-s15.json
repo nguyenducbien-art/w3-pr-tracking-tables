@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16 14:00",
+ "updated": "2026-09-16 14:25",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -58,6 +58,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1995",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12823,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 25,
+     "del": 57,
+     "fc": 4,
+     "cr": "09-16 14:13"
+    }
+   ],
+   "created": "09-16 14:13",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "請求管理_明細の帳票ボタンを AngularJS に合わせて非活性化"
+  },
   {
    "ticket": "2054",
    "dev": "dat",
@@ -4548,7 +4578,7 @@
     {
      "num": 12819,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 1,
      "add": 15,
      "del": 11,
