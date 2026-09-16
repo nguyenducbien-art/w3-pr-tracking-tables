@@ -1,8 +1,9 @@
 {
- "updated": "2026-09-16 18:07",
+ "updated": "2026-09-16 23:53",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2048",
   "2054",
   "1708",
   "1718",
@@ -59,6 +60,47 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "2048",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 12845,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 465,
+     "del": 40,
+     "fc": 3,
+     "cr": "09-16 23:42"
+    }
+   ],
+   "r810": [
+    {
+     "num": 12844,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 465,
+     "del": 40,
+     "fc": 3,
+     "cr": "09-16 23:42"
+    }
+   ],
+   "created": "09-16 23:42",
+   "drive": false,
+   "drvurl": "",
+   "cop": 3,
+   "unres": 3,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ServerSync の列フィルタで空白演算子と2条件目をバックエンドへ反映"
+  },
   {
    "ticket": "1013",
    "dev": "dat",
