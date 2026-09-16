@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16 10:22",
+ "updated": "2026-09-16 10:34",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -57,6 +57,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1963",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12810,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 293,
+     "del": 105,
+     "fc": 4,
+     "cr": "09-16 10:26"
+    }
+   ],
+   "created": "09-16 10:26",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "項目表示設定のマトリクスを固定列幅にして設定項目名の入力欄が潰れるのを修正"
+  },
   {
    "ticket": "1708",
    "dev": "bien",
@@ -3839,6 +3869,16 @@
    "base": [],
    "r810": [
     {
+     "num": 12809,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 655,
+     "del": 24,
+     "fc": 9,
+     "cr": "09-16 10:17"
+    },
+    {
      "num": 12125,
      "cf": "ok",
      "st": "merged",
@@ -3862,8 +3902,8 @@
    "created": "08-12 13:12",
    "drive": false,
    "drvurl": "",
-   "cop": 2,
-   "unres": 0,
+   "cop": 6,
+   "unres": 4,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -6034,8 +6074,8 @@
      "num": 12803,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 276,
+     "nc": 2,
+     "add": 331,
      "del": 58,
      "fc": 8,
      "cr": "09-15 17:35"
@@ -6065,7 +6105,7 @@
    "drive": false,
    "drvurl": "",
    "cop": 4,
-   "unres": 3,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
