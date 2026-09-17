@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-17 11:52",
+ "updated": "2026-09-17 12:04",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -60,6 +60,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1646",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "619",
+   "base": [],
+   "r810": [
+    {
+     "num": 12863,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 121,
+     "del": 68,
+     "fc": 4,
+     "cr": "09-17 11:52"
+    }
+   ],
+   "created": "09-17 11:52",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "619_プリンター新規登録・編集_バックエンド不具合修正"
+  },
   {
    "ticket": "1053",
    "dev": "dat",
@@ -3267,10 +3297,10 @@
      "num": 12862,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 16,
-     "del": 11,
-     "fc": 1,
+     "nc": 2,
+     "add": 32,
+     "del": 24,
+     "fc": 3,
      "cr": "09-17 11:28"
     },
     {
@@ -3298,7 +3328,7 @@
    "drive": false,
    "drvurl": "",
    "cop": 5,
-   "unres": 3,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
