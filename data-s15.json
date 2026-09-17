@@ -1,8 +1,9 @@
 {
- "updated": "2026-09-17 13:43",
+ "updated": "2026-09-17 14:11",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2049",
   "1322",
   "2048",
   "2054",
@@ -61,6 +62,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "2049",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12869,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 1239,
+     "del": 91,
+     "fc": 41,
+     "cr": "09-17 13:56"
+    }
+   ],
+   "created": "09-17 13:56",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユニット切替時にマスタ選択モーダルの検索結果と解決済み unit_screen_id を破棄する"
+  },
   {
    "ticket": "1322",
    "dev": "bien",
@@ -1793,7 +1824,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "セッションのユニット情報を id 一覧に絞り Cookie サイズ超過を解消"
   },
@@ -1834,7 +1867,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "共通_一覧CSV_選択行出力の行順をグリッド表示順に揃える"
   },
@@ -1995,7 +2030,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "一覧データ取得を中断シグナル対応にし React Strict Mode を有効化する"
   },
@@ -2036,7 +2073,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "サーバーエラー文言の解決を共通ユーティリティへ集約し多言語対応にする"
   },
@@ -2087,7 +2126,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "帳票発行前チェックを行う onBeforeExecute フックを追加"
   },
@@ -2148,7 +2189,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "共通ヘッダーにユーザーメニュー(アバターのポップアップ)とロゴ・ヘルプリンクを追加"
   },
@@ -2259,7 +2302,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "共通 DataTable に rowStyle / cellLinks を追加"
   },
@@ -2310,7 +2355,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "在庫系タブバッジの件数取得を一覧 API から件数 API に変更"
   },
@@ -2391,7 +2438,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "一覧グリッドに番兵値を空欄表示するcolumnOverridesを追加"
   },
@@ -2502,7 +2551,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "perf: [mimosa][frontend] next/link の prefetch を無効化し RSC 先読みによるバックエンド負荷を軽減"
   },
