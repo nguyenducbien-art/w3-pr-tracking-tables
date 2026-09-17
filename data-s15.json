@@ -1,8 +1,9 @@
 {
- "updated": "2026-09-17 12:45",
+ "updated": "2026-09-17 13:27",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1322",
   "2048",
   "2054",
   "1708",
@@ -61,6 +62,36 @@
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
   {
+   "ticket": "1322",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 12867,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 7,
+     "del": 7,
+     "fc": 1,
+     "cr": "09-17 13:19"
+    }
+   ],
+   "r810": [],
+   "created": "09-17 13:19",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "取込結果モーダルのテストを AngularJS と同じ件数文言 (成功 : N 件) に合わせる"
+  },
+  {
    "ticket": "1646",
    "dev": "khoa",
    "bien": false,
@@ -100,9 +131,9 @@
     {
      "num": 12860,
      "cf": "ok",
-     "st": "open",
-     "nc": 1,
-     "add": 162,
+     "st": "merged",
+     "nc": 2,
+     "add": 160,
      "del": 22,
      "fc": 7,
      "cr": "09-17 11:23"
@@ -130,9 +161,9 @@
     {
      "num": 12859,
      "cf": "ok",
-     "st": "open",
-     "nc": 2,
-     "add": 227,
+     "st": "merged",
+     "nc": 3,
+     "add": 220,
      "del": 89,
      "fc": 10,
      "cr": "09-17 11:23"
@@ -2131,9 +2162,9 @@
     {
      "num": 12857,
      "cf": "ok",
-     "st": "open",
-     "nc": 1,
-     "add": 15,
+     "st": "merged",
+     "nc": 2,
+     "add": 14,
      "del": 11,
      "fc": 1,
      "cr": "09-17 11:22"
@@ -2698,9 +2729,9 @@
     {
      "num": 12861,
      "cf": "ok",
-     "st": "open",
-     "nc": 1,
-     "add": 16,
+     "st": "merged",
+     "nc": 2,
+     "add": 15,
      "del": 6,
      "fc": 1,
      "cr": "09-17 11:25"
@@ -3296,7 +3327,7 @@
     {
      "num": 12862,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 2,
      "add": 32,
      "del": 24,
@@ -4598,7 +4629,7 @@
     {
      "num": 12858,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 2,
      "add": 13,
      "del": 6,
