@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-17 16:43",
+ "updated": "2026-09-17 16:59",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -73,10 +73,10 @@
      "num": 12876,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 71,
-     "del": 27,
-     "fc": 5,
+     "nc": 3,
+     "add": 181,
+     "del": 32,
+     "fc": 7,
      "cr": "09-17 16:24"
     }
    ],
@@ -163,9 +163,9 @@
      "num": 12863,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 122,
-     "del": 68,
+     "nc": 3,
+     "add": 133,
+     "del": 67,
      "fc": 4,
      "cr": "09-17 11:52"
     }
@@ -302,8 +302,8 @@
     }
    ],
    "created": "09-16 23:42",
-   "drive": false,
-   "drvurl": "",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1qL4ctjHW8NKV1Q-9-rTjuJtpwgch1bLO/view",
    "cop": 3,
    "unres": 2,
    "rvw": {
@@ -3706,6 +3706,16 @@
    "base": [],
    "r810": [
     {
+     "num": 12877,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 12,
+     "del": 1,
+     "fc": 1,
+     "cr": "09-17 16:36"
+    },
+    {
      "num": 12255,
      "cf": "ok",
      "st": "merged",
@@ -3739,7 +3749,7 @@
    "created": "08-12 16:47",
    "drive": false,
    "drvurl": "",
-   "cop": 4,
+   "cop": 5,
    "unres": 0,
    "rvw": {
     "ap": [],
