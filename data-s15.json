@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-17 11:20",
+ "updated": "2026-09-17 11:35",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -60,6 +60,66 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1053",
+   "dev": "dat",
+   "bien": false,
+   "sid": "439",
+   "base": [],
+   "r810": [
+    {
+     "num": 12860,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 162,
+     "del": 22,
+     "fc": 7,
+     "cr": "09-17 11:23"
+    }
+   ],
+   "created": "09-17 11:23",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "439_ロゴで画像以外選択時にエラーを表示する"
+  },
+  {
+   "ticket": "989",
+   "dev": "dat",
+   "bien": false,
+   "sid": "469",
+   "base": [],
+   "r810": [
+    {
+     "num": 12859,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 212,
+     "del": 89,
+     "fc": 10,
+     "cr": "09-17 11:23"
+    }
+   ],
+   "created": "09-17 11:23",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "商品荷姿の画像で画像以外選択時にエラーを表示する"
+  },
   {
    "ticket": "1125",
    "dev": "khoa",
@@ -2039,6 +2099,16 @@
    "base": [],
    "r810": [
     {
+     "num": 12857,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 15,
+     "del": 11,
+     "fc": 1,
+     "cr": "09-17 11:22"
+    },
+    {
      "num": 12286,
      "cf": "ok",
      "st": "merged",
@@ -2052,8 +2122,8 @@
    "created": "08-25 11:49",
    "drive": false,
    "drvurl": "",
-   "cop": 2,
-   "unres": 0,
+   "cop": 3,
+   "unres": 1,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -2595,6 +2665,16 @@
    "sid": "/warehouse",
    "base": [],
    "r810": [
+    {
+     "num": 12861,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 16,
+     "del": 6,
+     "fc": 1,
+     "cr": "09-17 11:25"
+    },
     {
      "num": 12188,
      "cf": "ok",
@@ -4475,6 +4555,16 @@
    "sid": "435",
    "base": [],
    "r810": [
+    {
+     "num": 12858,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 14,
+     "del": 6,
+     "fc": 1,
+     "cr": "09-17 11:22"
+    },
     {
      "num": 12155,
      "cf": "ok",
