@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16 23:53",
+ "updated": "2026-09-17 11:20",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -60,6 +60,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1125",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "570",
+   "base": [],
+   "r810": [
+    {
+     "num": 12856,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 386,
+     "del": 5,
+     "fc": 7,
+     "cr": "09-17 11:09"
+    }
+   ],
+   "created": "09-17 11:09",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "570_帳票出力履歴一覧_統合ユニット直打ち防止とセッション失効検知"
+  },
   {
    "ticket": "2048",
    "dev": "bien",
@@ -2071,7 +2101,7 @@
      "num": 12266,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
+     "nc": 3,
      "add": 335,
      "del": 2,
      "fc": 2,
