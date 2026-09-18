@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18 13:35",
+ "updated": "2026-09-18 14:44",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -474,10 +474,10 @@
      "num": 12910,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 375,
-     "del": 25,
-     "fc": 12,
+     "nc": 3,
+     "add": 602,
+     "del": 34,
+     "fc": 14,
      "cr": "09-18 13:24"
     },
     {
@@ -1473,7 +1473,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "帳票アイコン保存を Intervention Image v3 API に修正"
   },
@@ -1675,7 +1677,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "帳票PDFダウンロード経路の認証を検証し経路を堅牢化"
   },
@@ -6626,10 +6630,10 @@
      "num": 12803,
      "cf": "ok",
      "st": "open",
-     "nc": 6,
-     "add": 603,
-     "del": 76,
-     "fc": 14,
+     "nc": 7,
+     "add": 616,
+     "del": 92,
+     "fc": 15,
      "cr": "09-15 17:35"
     },
     {
