@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18 12:06",
+ "updated": "2026-09-18 12:43",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1704,7 +1704,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "項目別設定のカラム単位背景色・文字色をグリッドへ反映"
   },
@@ -1788,7 +1790,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "日付列のフィルタ既定演算子を「以降」に揃える"
   },
