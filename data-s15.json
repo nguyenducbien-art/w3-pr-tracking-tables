@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18 14:58",
+ "updated": "2026-09-18 15:35",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1516,7 +1516,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "EC取込結果のエラーログをボタン押下で取得するよう共通処理を修正"
   },
