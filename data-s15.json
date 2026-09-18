@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18 13:10",
+ "updated": "2026-09-18 13:23",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1838,14 +1838,24 @@
      "num": 12373,
      "cf": "ok",
      "st": "open",
-     "nc": 4,
-     "add": 1152,
-     "del": 83,
+     "nc": 5,
+     "add": 1155,
+     "del": 84,
      "fc": 19,
      "cr": "08-27 15:41"
     }
    ],
    "r810": [
+    {
+     "num": 12906,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 8,
+     "del": 8,
+     "fc": 2,
+     "cr": "09-18 13:05"
+    },
     {
      "num": 12374,
      "cf": "ok",
@@ -1865,7 +1875,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "共通_帳票 / IF出力ダイアログ_本体文言の配線"
   },
