@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18 14:44",
+ "updated": "2026-09-18 14:58",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1677,9 +1677,7 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "帳票PDFダウンロード経路の認証を検証し経路を堅牢化"
   },
@@ -6630,10 +6628,10 @@
      "num": 12803,
      "cf": "ok",
      "st": "open",
-     "nc": 7,
-     "add": 616,
+     "nc": 8,
+     "add": 594,
      "del": 92,
-     "fc": 15,
+     "fc": 14,
      "cr": "09-15 17:35"
     },
     {
