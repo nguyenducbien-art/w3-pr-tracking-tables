@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18 10:17",
+ "updated": "2026-09-18 10:54",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -62,6 +62,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
  "main": [
+  {
+   "ticket": "1025",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "462",
+   "base": [],
+   "r810": [
+    {
+     "num": 12901,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 473,
+     "del": 19,
+     "fc": 15,
+     "cr": "09-18 10:46"
+    }
+   ],
+   "created": "09-18 10:46",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "462_品質区分設定_二重登録・表示順序の丸め込み・内部キー露出"
+  },
   {
    "ticket": "506",
    "dev": "hung",
