@@ -1,7 +1,9 @@
 #!/bin/bash
 # Làm mới dữ liệu PR-tracking (launchd cron mỗi 5' + chạy tay được).
-# REFRESH — CHỈ Sprint 17 (sprint đang active, từ 07/09/2026):
-#   - fetch_build_s17.py    → data-s17.json     (Sprint 17 = PR created >= 07/09, qua gh)
+# REFRESH — Sprint 18 (active, từ 21/09/2026) + Sprint 17 (vừa chốt 20/09 nhưng còn PR OPEN):
+#   - fetch_build_s18.py    → data-s18.json     (Sprint 18 = PR created >= 21/09, qua gh)
+#   - fetch_build_s17.py    → data-s17.json     (07/09–20/09; còn ~21 PR OPEN nên trạng thái vẫn đổi)
+#     → khi Sprint 17 chốt hẳn: đặt mặc định REFRESH_S17=0 ở dưới (đông lạnh như s15).
 # ĐÔNG LẠNH: Sprint 12 (data-s12.json) + Sprint 13 (data.json) từ 2026-08-11,
 #            Sprint 14 (data-s14.json + screens-s14.json) từ 2026-08-25,
 #            Sprint 15+16 (data-s15.json + s15-status.json + routes-s15.json) từ 2026-09-21
@@ -21,7 +23,13 @@ cd "$REPO" || exit 1
   echo "=== $(date '+%F %T') ==="
   gh auth switch --user nguyenducbien-art >/dev/null 2>&1
   # Máy này là nguồn commit duy nhất → KHÔNG kéo commit về (no fetch/merge/reset trên repo tracking).
-  python3 tools/fetch_build_s17.py   data-s17.json;     rc17=$?
+  python3 tools/fetch_build_s18.py   data-s18.json;     rc18=$?
+  # s17 vừa hết sprint nhưng còn PR OPEN → vẫn refresh; REFRESH_S17=0 để đông lạnh.
+  if [ "${REFRESH_S17:-1}" = "1" ]; then
+    python3 tools/fetch_build_s17.py data-s17.json;     rc17=$?
+  else
+    rc17=2
+  fi
   # s15 đông lạnh; REFRESH_S15=1 (chạy tay) thì fetch lại — dùng khi đổi luật/mốc cắt của page s15.
   if [ "${REFRESH_S15:-0}" = "1" ]; then
     python3 tools/fetch_build_s15.py data-s15.json;     rc15=$?
@@ -33,7 +41,7 @@ cd "$REPO" || exit 1
   # output → file trên đĩa vẫn là bản TỐT lần trước → carry-forward. Chỉ cảnh báo.
   # (Bug cũ: 1 fetch ssh-timeout → exit 1 → bỏ qua push cả s15 đã fetch thành công → web đứng.)
   changed=0
-  for pair in "s17:$rc17" "s15:$rc15"; do
+  for pair in "s18:$rc18" "s17:$rc17" "s15:$rc15"; do
     n=${pair%:*}; rc=${pair#*:}
     if [ "$rc" -eq 0 ]; then changed=1
     elif [ "$rc" -ne 2 ]; then echo "→ CẢNH BÁO fetch $n lỗi (rc=$rc) — giữ bản cũ trên đĩa, vẫn push phần khác"; fi
@@ -41,10 +49,15 @@ cd "$REPO" || exit 1
   if [ "$changed" -eq 0 ]; then echo "→ Không file nào đổi (hoặc chỉ lỗi tạm) — khỏi push."; exit 0; fi
 
   # Dựng tree cho nhánh `data`. mktree cần entries sort theo tên (byte):
-  #   'data-s12' < 'data-s14' < 'data-s15' < 'data-s17' < 'data.json' < 'routes-s15' < 's15-status' < 'screens-s14'
+  #   'data-s12' < 'data-s14' < 'data-s15' < 'data-s17' < 'data-s18' < 'data.json' < 'routes-s15' < 's15-status' < 'screens-s14'
   #   ('-' = 0x2D < '.' = 0x2E → mọi 'data-*' đứng trước 'data.json')
   # s12 + s13 + s14 + s15 = ĐÔNG LẠNH → carry-forward blob cũ từ refs/heads/data.
-  B17=$(git hash-object -w data-s17.json)
+  B18=$(git hash-object -w data-s18.json)
+  if [ "${REFRESH_S17:-1}" = "1" ]; then
+    B17=$(git hash-object -w data-s17.json)
+  else
+    B17=$(git rev-parse refs/heads/data:data-s17.json)     # frozen (Sprint 17)
+  fi
   if [ "${REFRESH_S15:-0}" = "1" ]; then
     B15=$(git hash-object -w data-s15.json)               # fetch lại (chạy tay)
   else
@@ -56,13 +69,13 @@ cd "$REPO" || exit 1
   B13=$(git rev-parse refs/heads/data:data.json)          # frozen (Sprint 13)
   B14=$(git rev-parse refs/heads/data:data-s14.json)      # frozen (Sprint 14)
   BSC=$(git rev-parse refs/heads/data:screens-s14.json)   # frozen (Sprint 14 screen list)
-  TREE=$(printf '100644 blob %s\tdata-s12.json\n100644 blob %s\tdata-s14.json\n100644 blob %s\tdata-s15.json\n100644 blob %s\tdata-s17.json\n100644 blob %s\tdata.json\n100644 blob %s\troutes-s15.json\n100644 blob %s\ts15-status.json\n100644 blob %s\tscreens-s14.json\n' \
-                "$B12" "$B14" "$B15" "$B17" "$B13" "$BRT" "$BPL" "$BSC" | git mktree)
+  TREE=$(printf '100644 blob %s\tdata-s12.json\n100644 blob %s\tdata-s14.json\n100644 blob %s\tdata-s15.json\n100644 blob %s\tdata-s17.json\n100644 blob %s\tdata-s18.json\n100644 blob %s\tdata.json\n100644 blob %s\troutes-s15.json\n100644 blob %s\ts15-status.json\n100644 blob %s\tscreens-s14.json\n' \
+                "$B12" "$B14" "$B15" "$B17" "$B18" "$B13" "$BRT" "$BPL" "$BSC" | git mktree)
   PARENT=$(git rev-parse refs/heads/data)
   COMMIT=$(git -c user.name="biennguyen" -c user.email="nguyenducbien-art@users.noreply.github.com" \
-           commit-tree "$TREE" -p "$PARENT" -m "auto-refresh s17 only (rc s17=$rc17 s15=$rc15) $(date '+%F %H:%M')")
+           commit-tree "$TREE" -p "$PARENT" -m "auto-refresh s18+s17 (rc s18=$rc18 s17=$rc17 s15=$rc15) $(date '+%F %H:%M')")
   git update-ref refs/heads/data "$COMMIT"
   git push -q origin data 2>/dev/null \
-    && echo "→ Đã push nhánh data (chỉ s17; s12/s13/s14/s15 đông lạnh, KHÔNG build Pages). Web tươi ~5p." \
+    && echo "→ Đã push nhánh data (s18+s17; s12/s13/s14/s15 đông lạnh, KHÔNG build Pages). Web tươi ~5p." \
     || echo "→ push FAIL (kiểm tra tay)"
 } > >(tee -a "$LOG") 2>&1

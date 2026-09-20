@@ -1,34 +1,34 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Fetch live PR data từ GitHub (dialog-inc/w3package_v2) → build data-s17.json cho
-Table A Sprint 17 (07/09/2026 → nay).
+Fetch live PR data từ GitHub (dialog-inc/w3package_v2) → build data-s18.json cho
+Table A Sprint 18 (21/09/2026 → nay).
 
-⚠️ Sprint 16 + 17 KHÔNG có nhánh r riêng (chỉ có *_scaffold) — mọi PR vẫn nhắm r20260810/base
-→ Sprint 17 chia theo NGÀY TẠO PR, không chia theo nhánh:
-    thuộc Sprint 17  =  PR (r20260810 / base / *_scaffold, không CLOSED) created >= SINCE.
-Sprint 15+16 (page s15) cắt ở 06/09 → mỗi PR chỉ nằm ở ĐÚNG 1 page, không trùng.
-🔴 CHẶN TRÊN (21/09): chỉ lấy PR created <= UNTIL (20/09) — ngày cuối Sprint 17;
-   PR từ 21/09 thuộc Sprint 18 → page s18 (fetch_build_s18.py).
+⚠️ Từ Sprint 16 trở đi KHÔNG có nhánh r riêng cho mỗi sprint — PR vẫn nhắm r20260810/base
+→ chia sprint theo NGÀY TẠO PR (giờ VN), không chia theo nhánh:
+    thuộc Sprint 18  =  PR (nhánh trong R_BRANCHES / base / *_scaffold, không CLOSED) created >= SINCE.
+Sprint 17 (page s17) cắt ở 20/09 → mỗi PR chỉ nằm ở ĐÚNG 1 page, không trùng.
+🔵 Phòng xa: R_BRANCHES có sẵn r20260921 — nhánh này CHƯA tồn tại (21/09), gh trả [] nên vô hại;
+   ngày team tạo nhánh thì PR tự vào bảng, khỏi sửa script.
 Self-contained: chỉ dùng gh + python stdlib. KHÔNG chứa secret.
-Usage: python3 fetch_build_s17.py [output_data.json]
+Usage: python3 fetch_build_s18.py [output_data.json]
 """
 import json, re, subprocess, sys, datetime, time
 
 REPO = "dialog-inc/w3package_v2"
 OWNER, NAME = "dialog-inc", "w3package_v2"
-SINCE = "2026-09-07"                      # 🔴 mốc bắt đầu Sprint 17 = GATE THỰC (PR created >= ngày này)
-UNTIL = "2026-09-20"                      # 🔴 ngày CUỐI Sprint 17 — PR sau mốc này là của Sprint 18
+SINCE = "2026-09-21"                      # 🔴 mốc bắt đầu Sprint 18 = GATE THỰC (PR created >= ngày này, giờ VN)
 PRURL = "https://github.com/%s/pull/" % REPO
-OUT = sys.argv[1] if len(sys.argv) > 1 else "data-s17.json"
+OUT = sys.argv[1] if len(sys.argv) > 1 else "data-s18.json"
 
 EXCLUDE = {"1495", "1479", "1497"}       # ticket ẩn hẳn khỏi bảng (mọi PR base/r810) — user yêu cầu:
                                           #   1495 (08-03) · 1479 + 1497 (08-20, đều ở Bảng 1 common)
 # ĐẶC CÁCH dev: khi PR gốc của người sở hữu màn bị CLOSED (bị gh_list lọc) + chỉ còn PR fix của
 # người khác được merge → dev tự suy sẽ SAI. Map {ticket: dev-short} ép đúng người sở hữu.
 FORCE_DEV = {}                            # (Sprint 17 chưa có ca nào)
-SCAFFOLD_BRANCHES = ("r20260907_scaffold", "r20260824_scaffold", "r20260810_scaffold")
-SCAFFOLD_LABEL = "scaffold (r0907 + r0824 + r0810)"   # nhãn tiêu đề bảng phụ (RENDER_JS lấy phần sau dấu /)
+R_BRANCHES = ("r20260810", "r20260921")   # nhánh r đang nhận PR (r20260921 chưa có → gh trả [])
+SCAFFOLD_BRANCHES = ("r20260921_scaffold", "r20260907_scaffold", "r20260824_scaffold", "r20260810_scaffold")
+SCAFFOLD_LABEL = "scaffold (r0921 + r0907 + r0824 + r0810)"   # nhãn tiêu đề bảng phụ (RENDER_JS lấy phần sau dấu /)
 
 DEV = {"nguyenducbien-art":"bien","nguyennhatminh-dl":"minh","phambaohung-dl":"hung",
        "phamtiendat-oss":"dat","nguyenanhkhoa-rk":"khoa"}
@@ -89,7 +89,8 @@ def ticket_from_title(t):
 
 def is_sync(seg):
     if seg in ('base','r20260629','r20260713','r20260713_scaffold','r20260810','r20260810_scaffold',
-               'r20260824_scaffold','r20260907_scaffold','per-sprint'): return True
+               'r20260824_scaffold','r20260907_scaffold','r20260921','r20260921_scaffold',
+               'per-sprint'): return True
     if re.match(r'^pr\d+', seg): return True
     if 'evidences' in seg: return True
     if re.match(r'^r2026\d{4}-', seg): return True
@@ -106,7 +107,7 @@ def gh_list(branch):
     out = run(["gh","pr","list","--repo",REPO,"--base","mimosa/frontend/develop/"+branch,
                "--state","all","--limit","400","--json","number,state,createdAt,headRefName,author,title"])
     return [p for p in json.loads(out)
-            if p["state"] != "CLOSED" and SINCE <= vn_date(p["createdAt"]) <= UNTIL]
+            if p["state"] != "CLOSED" and vn_date(p["createdAt"]) >= SINCE]
 
 _Q = ('query($n:Int!){repository(owner:"%s",name:"%s"){pullRequest(number:$n){'
       'state isDraft reviewDecision mergeable additions deletions changedFiles commits{totalCount} '
@@ -188,13 +189,12 @@ def merge_rvw(ms):
 
 def build():
     ensure_account()
-    # ---- Sprint 17 = MỌI PR created >= SINCE (07/09), bất kể ticket cũ hay mới ----
-    # gh_list đã lọc sẵn theo SINCE → cứ PR nào lọt vào đây là của Sprint 17.
-    # Khác s15 (gate = "có PR nhắm nhánh r của sprint"): 16+17 dùng chung r20260810 nên
-    # chỉ còn ngày tạo PR phân biệt được. Ticket cũ chỉ có PR fix mới → vẫn hiện, nhưng
-    # CHỈ kèm các PR >= 07/09 (PR cũ của nó nằm ở page s15).
+    # ---- Sprint 18 = MỌI PR created >= SINCE (21/09), bất kể ticket cũ hay mới ----
+    # gh_list đã lọc sẵn theo SINCE → cứ PR nào lọt vào đây là của Sprint 18.
+    # Ticket cũ chỉ có PR fix mới → vẫn hiện, nhưng CHỈ kèm các PR >= 21/09
+    # (PR cũ hơn nằm ở page s17 / s15). Cột "→r" gộp mọi nhánh trong R_BRANCHES.
     tickets = {}
-    for p in gh_list("r20260810"):
+    for p in [q for br in R_BRANCHES for q in gh_list(br)]:
         seg = p["headRefName"].split("/")[-1]
         if is_sync(seg): continue
         tk = ticket_from_branch(seg)
@@ -248,8 +248,8 @@ def build():
     for m in main: m.pop("_common", None)
 
     # ---- bảng phụ scaffold ----
-    # 3 nhánh scaffold cùng sống trong Sprint 17 (r0907 mới, r0824 + r0810 còn PR mở) —
-    # gom chung 1 bảng phụ, gh_list đã lọc created >= SINCE nên không lấn sang page s15.
+    # Mọi nhánh *_scaffold còn sống gom chung 1 bảng phụ; gh_list đã lọc created >= SINCE
+    # nên không lấn sang page s17. (r20260921_scaffold chưa tồn tại → [].)
     scaffold = []
     for p in [q for br in SCAFFOLD_BRANCHES for q in gh_list(br)]:
         seg = p["headRefName"].split("/")[-1]
@@ -278,7 +278,7 @@ def build():
     except (FileNotFoundError, ValueError):
         pass
     json.dump(data, open(OUT,"w"), ensure_ascii=False, indent=1)
-    print("[fetch_build s17] %s | main=%d scaffold=%d common=%d updated=%s"
+    print("[fetch_build s18] %s | main=%d scaffold=%d common=%d updated=%s"
           % (OUT, len(main), len(scaffold), len(common_list), now))
 
 if __name__ == "__main__":
