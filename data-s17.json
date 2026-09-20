@@ -1,0 +1,2067 @@
+{
+ "updated": "2026-09-21 01:39",
+ "repo": "dialog-inc/w3package_v2",
+ "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
+ "common": [
+  "1652",
+  "2049",
+  "1322",
+  "2048",
+  "2054",
+  "1708",
+  "1542",
+  "1718",
+  "1719",
+  "2050",
+  "2047",
+  "1540",
+  "2037",
+  "1656",
+  "1412",
+  "1457",
+  "2029",
+  "260"
+ ],
+ "invalidBase": [],
+ "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0907 + r0824 + r0810)",
+ "main": [
+  {
+   "ticket": "1652",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12906,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 11,
+     "del": 9,
+     "fc": 2,
+     "cr": "09-18 13:05"
+    }
+   ],
+   "created": "09-18 13:05",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1dESdkecmJXkqj4UWUseLf8TLbRl8c6qi/view?usp=sharing",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "帳票 / IF出力ダイアログ本体文言の prop 名を reportDialog / exportDialog へ統一"
+  },
+  {
+   "ticket": "1025",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "462",
+   "base": [],
+   "r810": [
+    {
+     "num": 12901,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 473,
+     "del": 19,
+     "fc": 15,
+     "cr": "09-18 10:46"
+    }
+   ],
+   "created": "09-18 10:46",
+   "drive": false,
+   "drvurl": "",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "462_品質区分設定_二重登録・表示順序の丸め込み・内部キー露出"
+  },
+  {
+   "ticket": "672",
+   "dev": "minh",
+   "bien": false,
+   "sid": "(機能)",
+   "base": [],
+   "r810": [
+    {
+     "num": 12877,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 12,
+     "del": 1,
+     "fc": 1,
+     "cr": "09-17 16:36"
+    }
+   ],
+   "created": "09-17 16:36",
+   "drive": false,
+   "drvurl": "",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユニット選択画面のページネーション文言を多言語化する"
+  },
+  {
+   "ticket": "506",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12876,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 181,
+     "del": 32,
+     "fc": 7,
+     "cr": "09-17 16:24"
+    }
+   ],
+   "created": "09-17 16:24",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "出荷状況照会_一覧のsch_dt絞り込みとダッシュボード進捗リンク色を修正"
+  },
+  {
+   "ticket": "2049",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12869,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 1685,
+     "del": 123,
+     "fc": 45,
+     "cr": "09-17 13:56"
+    }
+   ],
+   "created": "09-17 13:56",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/14wwGZJly0jj8AlKmrrJxRvghfGEmUZjp/view",
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユニット切替時にマスタ選択モーダルの検索結果と解決済み unit_screen_id を破棄する"
+  },
+  {
+   "ticket": "1322",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 12867,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 7,
+     "del": 7,
+     "fc": 1,
+     "cr": "09-17 13:19"
+    }
+   ],
+   "r810": [],
+   "created": "09-17 13:19",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "取込結果モーダルのテストを AngularJS と同じ件数文言 (成功 : N 件) に合わせる"
+  },
+  {
+   "ticket": "1646",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "619",
+   "base": [],
+   "r810": [
+    {
+     "num": 12863,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 133,
+     "del": 67,
+     "fc": 4,
+     "cr": "09-17 11:52"
+    }
+   ],
+   "created": "09-17 11:52",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "619_プリンター新規登録・編集_バックエンド不具合修正"
+  },
+  {
+   "ticket": "1157",
+   "dev": "dat",
+   "bien": false,
+   "sid": "/owner",
+   "base": [],
+   "r810": [
+    {
+     "num": 12862,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 32,
+     "del": 24,
+     "fc": 3,
+     "cr": "09-17 11:28"
+    }
+   ],
+   "created": "09-17 11:28",
+   "drive": false,
+   "drvurl": "",
+   "cop": 3,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "オーナー登録のロゴで画像以外選択時にエラーを表示する"
+  },
+  {
+   "ticket": "1161",
+   "dev": "dat",
+   "bien": false,
+   "sid": "/warehouse",
+   "base": [],
+   "r810": [
+    {
+     "num": 12861,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 15,
+     "del": 6,
+     "fc": 1,
+     "cr": "09-17 11:25"
+    }
+   ],
+   "created": "09-17 11:25",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "システム倉庫登録のロゴで画像以外選択時にエラーを表示する"
+  },
+  {
+   "ticket": "1053",
+   "dev": "dat",
+   "bien": false,
+   "sid": "439",
+   "base": [],
+   "r810": [
+    {
+     "num": 12860,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 160,
+     "del": 22,
+     "fc": 7,
+     "cr": "09-17 11:23"
+    }
+   ],
+   "created": "09-17 11:23",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "439_ロゴで画像以外選択時にエラーを表示する"
+  },
+  {
+   "ticket": "989",
+   "dev": "dat",
+   "bien": false,
+   "sid": "469",
+   "base": [],
+   "r810": [
+    {
+     "num": 12859,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 220,
+     "del": 89,
+     "fc": 10,
+     "cr": "09-17 11:23"
+    }
+   ],
+   "created": "09-17 11:23",
+   "drive": false,
+   "drvurl": "",
+   "cop": 6,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "商品荷姿の画像で画像以外選択時にエラーを表示する"
+  },
+  {
+   "ticket": "1045",
+   "dev": "dat",
+   "bien": false,
+   "sid": "435",
+   "base": [],
+   "r810": [
+    {
+     "num": 12858,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 13,
+     "del": 6,
+     "fc": 1,
+     "cr": "09-17 11:22"
+    }
+   ],
+   "created": "09-17 11:22",
+   "drive": false,
+   "drvurl": "",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "システム倉庫管理_基本設定のロゴで画像以外選択時にエラーを表示する"
+  },
+  {
+   "ticket": "1173",
+   "dev": "dat",
+   "bien": false,
+   "sid": "/user_edits",
+   "base": [],
+   "r810": [
+    {
+     "num": 12857,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 14,
+     "del": 11,
+     "fc": 1,
+     "cr": "09-17 11:22"
+    }
+   ],
+   "created": "09-17 11:22",
+   "drive": false,
+   "drvurl": "",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユーザー登録・編集のロゴで画像以外選択時にエラーを表示する"
+  },
+  {
+   "ticket": "1125",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "570",
+   "base": [],
+   "r810": [
+    {
+     "num": 12856,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 489,
+     "del": 6,
+     "fc": 9,
+     "cr": "09-17 11:09"
+    }
+   ],
+   "created": "09-17 11:09",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "570_帳票出力履歴一覧_統合ユニット直打ち防止とセッション失効検知"
+  },
+  {
+   "ticket": "2048",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 12845,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 597,
+     "del": 51,
+     "fc": 3,
+     "cr": "09-16 23:42"
+    }
+   ],
+   "r810": [
+    {
+     "num": 12844,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 597,
+     "del": 51,
+     "fc": 3,
+     "cr": "09-16 23:42"
+    }
+   ],
+   "created": "09-16 23:42",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1qL4ctjHW8NKV1Q-9-rTjuJtpwgch1bLO/view",
+   "cop": 3,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ServerSync の列フィルタで空白演算子と2条件目をバックエンドへ反映"
+  },
+  {
+   "ticket": "997",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "432",
+   "base": [],
+   "r810": [
+    {
+     "num": 12839,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 312,
+     "del": 193,
+     "fc": 3,
+     "cr": "09-16 17:03"
+    }
+   ],
+   "created": "09-16 17:03",
+   "drive": false,
+   "drvurl": "",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "432_商品関連_セット品ルール追加・編集_初期ロード失敗時の表示修正"
+  },
+  {
+   "ticket": "1013",
+   "dev": "dat",
+   "bien": false,
+   "sid": "766",
+   "base": [],
+   "r810": [
+    {
+     "num": 12832,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 1,
+     "del": 1,
+     "fc": 1,
+     "cr": "09-16 15:20"
+    }
+   ],
+   "created": "09-16 15:20",
+   "drive": false,
+   "drvurl": "",
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "配送タリフ追加・編集(766)のタブURLマップを有効化"
+  },
+  {
+   "ticket": "1189",
+   "dev": "minh",
+   "bien": false,
+   "sid": "722",
+   "base": [],
+   "r810": [
+    {
+     "num": 12830,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 726,
+     "del": 67,
+     "fc": 9,
+     "cr": "09-16 14:49"
+    }
+   ],
+   "created": "09-16 14:49",
+   "drive": false,
+   "drvurl": "",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "運営ダッシュボードのグラフ描画をAngularJSに合わせる"
+  },
+  {
+   "ticket": "1995",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12823,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 25,
+     "del": 57,
+     "fc": 4,
+     "cr": "09-16 14:13"
+    }
+   ],
+   "created": "09-16 14:13",
+   "drive": false,
+   "drvurl": "",
+   "cop": 3,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "請求管理_明細の帳票ボタンを AngularJS に合わせて非活性化"
+  },
+  {
+   "ticket": "1177",
+   "dev": "dat",
+   "bien": false,
+   "sid": "639",
+   "base": [],
+   "r810": [
+    {
+     "num": 12819,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 15,
+     "del": 11,
+     "fc": 1,
+     "cr": "09-16 13:41"
+    }
+   ],
+   "created": "09-16 13:41",
+   "drive": false,
+   "drvurl": "",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "個人設定のロゴで画像以外選択時にエラーを表示する"
+  },
+  {
+   "ticket": "664",
+   "dev": "minh",
+   "bien": false,
+   "sid": "/unit",
+   "base": [],
+   "r810": [
+    {
+     "num": 12814,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 44,
+     "del": 16,
+     "fc": 2,
+     "cr": "09-16 12:00"
+    }
+   ],
+   "created": "09-16 12:00",
+   "drive": false,
+   "drvurl": "",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユニット作成の完了ダイアログが表示されない不具合を修正"
+  },
+  {
+   "ticket": "2054",
+   "dev": "dat",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12812,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 4,
+     "add": 279,
+     "del": 75,
+     "fc": 9,
+     "cr": "09-16 11:06"
+    }
+   ],
+   "created": "09-16 11:06",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1afeXBf29Yyy7DsOYBeGzncZtwQYXZfGo/view?usp=drive_link",
+   "cop": 3,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユニット設定_基本設定の登録済みロゴが表示されない不具合を修正"
+  },
+  {
+   "ticket": "1963",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12810,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 269,
+     "del": 105,
+     "fc": 4,
+     "cr": "09-16 10:26"
+    }
+   ],
+   "created": "09-16 10:26",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "項目表示設定のマトリクスを固定列幅にして設定項目名の入力欄が潰れるのを修正"
+  },
+  {
+   "ticket": "981",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "430",
+   "base": [],
+   "r810": [
+    {
+     "num": 12809,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 4,
+     "add": 822,
+     "del": 26,
+     "fc": 11,
+     "cr": "09-16 10:17"
+    }
+   ],
+   "created": "09-16 10:17",
+   "drive": false,
+   "drvurl": "",
+   "cop": 4,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "430_商品関連_商品追加・編集_不具合修正"
+  },
+  {
+   "ticket": "1708",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12910,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 602,
+     "del": 34,
+     "fc": 14,
+     "cr": "09-18 13:24"
+    },
+    {
+     "num": 12904,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 84,
+     "del": 3,
+     "fc": 2,
+     "cr": "09-18 11:31"
+    },
+    {
+     "num": 12829,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 7,
+     "add": 2556,
+     "del": 5,
+     "fc": 22,
+     "cr": "09-16 14:43"
+    },
+    {
+     "num": 12828,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 5,
+     "del": 2556,
+     "fc": 22,
+     "cr": "09-16 14:40"
+    },
+    {
+     "num": 12804,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 7,
+     "add": 2556,
+     "del": 5,
+     "fc": 22,
+     "cr": "09-15 19:58"
+    }
+   ],
+   "created": "09-15 19:58",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1EuF7mRpRSLW2-0HUB9JGaesVufxlChc_/view",
+   "cop": 20,
+   "unres": 13,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "代理ログイン機能"
+  },
+  {
+   "ticket": "993",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "431",
+   "base": [],
+   "r810": [
+    {
+     "num": 12803,
+     "cf": "ok",
+     "st": "open",
+     "nc": 8,
+     "add": 594,
+     "del": 92,
+     "fc": 14,
+     "cr": "09-15 17:35"
+    }
+   ],
+   "created": "09-15 17:35",
+   "drive": false,
+   "drvurl": "",
+   "cop": 3,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "431_セット品ルールマスタ_統合ユニットガード"
+  },
+  {
+   "ticket": "1542",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12799,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 5,
+     "add": 140,
+     "del": 44,
+     "fc": 21,
+     "cr": "09-15 17:11"
+    }
+   ],
+   "created": "09-15 17:11",
+   "drive": false,
+   "drvurl": "",
+   "cop": 4,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "読み取り専用セルの値なし表示を修正 (→r20260810)"
+  },
+  {
+   "ticket": "1993",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12791,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 76,
+     "del": 0,
+     "fc": 2,
+     "cr": "09-15 16:21"
+    }
+   ],
+   "created": "09-15 16:21",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "統合管理ユニットで統合対象外画面を URL 直打ちで開けないようにする"
+  },
+  {
+   "ticket": "1049",
+   "dev": "dat",
+   "bien": false,
+   "sid": "437",
+   "base": [],
+   "r810": [
+    {
+     "num": 12788,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 112,
+     "del": 27,
+     "fc": 3,
+     "cr": "09-15 15:55"
+    }
+   ],
+   "created": "09-15 15:55",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ロケ基本情報編集_フラグをOFFへ変更しても保存されない"
+  },
+  {
+   "ticket": "1718",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 12781,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 441,
+     "del": 11,
+     "fc": 4,
+     "cr": "09-15 14:15"
+    }
+   ],
+   "r810": [
+    {
+     "num": 12784,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 445,
+     "del": 16,
+     "fc": 4,
+     "cr": "09-15 14:16"
+    }
+   ],
+   "created": "09-15 14:15",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1IsesPpMkExM2ngFkbCMJu93qZb_s4IGC/view",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "一覧の展開行の開閉状態を行番号でなく行単位で保持するよう修正"
+  },
+  {
+   "ticket": "1719",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 12782,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 432,
+     "del": 7,
+     "fc": 6,
+     "cr": "09-15 14:15"
+    }
+   ],
+   "r810": [
+    {
+     "num": 12783,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 4,
+     "add": 504,
+     "del": 34,
+     "fc": 7,
+     "cr": "09-15 14:15"
+    }
+   ],
+   "created": "09-15 14:15",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1w2PqLOCzN2tU_bFxMjXQA8gf9BiIjYBT/view?usp=sharing",
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "一覧の列フィルタがサーバーとクライアントに二重適用される不具合を修正"
+  },
+  {
+   "ticket": "1169",
+   "dev": "dat",
+   "bien": false,
+   "sid": "/user",
+   "base": [],
+   "r810": [
+    {
+     "num": 12780,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 223,
+     "del": 1,
+     "fc": 3,
+     "cr": "09-15 14:14"
+    }
+   ],
+   "created": "09-15 14:14",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "登録ユーザー一覧_削除実行中に全画面ローディングが表示されない"
+  },
+  {
+   "ticket": "953",
+   "dev": "minh",
+   "bien": false,
+   "sid": "425",
+   "base": [],
+   "r810": [
+    {
+     "num": 12773,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 18,
+     "del": 0,
+     "fc": 3,
+     "cr": "09-15 10:26"
+    }
+   ],
+   "created": "09-15 10:26",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "依頼主マスタの予備項目カラム名を多言語化"
+  },
+  {
+   "ticket": "2050",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 12770,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 291,
+     "del": 9,
+     "fc": 2,
+     "cr": "09-15 09:50"
+    }
+   ],
+   "r810": [
+    {
+     "num": 12772,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 291,
+     "del": 9,
+     "fc": 2,
+     "cr": "09-15 10:07"
+    }
+   ],
+   "created": "09-15 09:50",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1B2yzziE5gshBD1f1-x8IQftT5TkfkRyJ/view?usp=sharing",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ServerSync モードの CSV 出力で確認ダイアログ (Q015) が表示されない問題を修正"
+  },
+  {
+   "ticket": "2047",
+   "dev": "dat",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12768,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 149,
+     "del": 6,
+     "fc": 3,
+     "cr": "09-15 09:37"
+    }
+   ],
+   "created": "09-15 09:37",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/11SEMPZkZkcGho88vF8o8b79g4cesFPtC/view?usp=drive_link",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "Blob ダウンロード失敗時にサーバーの文言を保持する"
+  },
+  {
+   "ticket": "1113",
+   "dev": "dat",
+   "bien": false,
+   "sid": "451",
+   "base": [],
+   "r810": [
+    {
+     "num": 12761,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 3,
+     "del": 3,
+     "fc": 1,
+     "cr": "09-14 16:09"
+    }
+   ],
+   "created": "09-14 16:09",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "CSV設定_出力ルール一覧のテンプレート出力エラー文言を共通処理に統一"
+  },
+  {
+   "ticket": "1979",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12760,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 148,
+     "del": 9,
+     "fc": 5,
+     "cr": "09-14 16:05"
+    }
+   ],
+   "created": "09-14 16:05",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "CSV出力設定の詳細設定で文字数を空欄のままにできるよう修正"
+  },
+  {
+   "ticket": "1109",
+   "dev": "dat",
+   "bien": false,
+   "sid": "450",
+   "base": [],
+   "r810": [
+    {
+     "num": 12755,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 4,
+     "add": 72,
+     "del": 5,
+     "fc": 3,
+     "cr": "09-14 14:51"
+    }
+   ],
+   "created": "09-14 14:51",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "CSV設定_取込ルール一覧の設定コピー作成ダイアログ確定ボタン文言を修正"
+  },
+  {
+   "ticket": "977",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "429",
+   "base": [],
+   "r810": [
+    {
+     "num": 12754,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 852,
+     "del": 0,
+     "fc": 9,
+     "cr": "09-14 14:47"
+    }
+   ],
+   "created": "09-14 14:47",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "429_商品関連_商品マスタ_DB由来ラベル多言語キー補完(共通)"
+  },
+  {
+   "ticket": "1901",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12753,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 20,
+     "del": 8,
+     "fc": 3,
+     "cr": "09-14 14:46"
+    }
+   ],
+   "created": "09-14 14:46",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "依頼主追加・編集の新規モードでデータ保存期間の既定値を空欄に修正"
+  },
+  {
+   "ticket": "10",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12752,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 44,
+     "del": 22,
+     "fc": 2,
+     "cr": "09-14 14:39"
+    }
+   ],
+   "created": "09-14 14:39",
+   "drive": false,
+   "drvurl": "",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "134_出荷検品_一覧 STREAM連携の認可ポップアップが localhost を開く不具合を修正"
+  },
+  {
+   "ticket": "1137",
+   "dev": "bien",
+   "bien": true,
+   "sid": "447",
+   "base": [],
+   "r810": [
+    {
+     "num": 12751,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 279,
+     "del": 18,
+     "fc": 10,
+     "cr": "09-14 14:39"
+    }
+   ],
+   "created": "09-14 14:39",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "帳票設定_利用帳票一覧 (screen_id=447) 帳票情報設定モーダルのアイコンが localhost を参照して表示されない不具合を修正"
+  },
+  {
+   "ticket": "949",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "424",
+   "base": [],
+   "r810": [
+    {
+     "num": 12747,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 306,
+     "del": 146,
+     "fc": 8,
+     "cr": "09-14 11:30"
+    }
+   ],
+   "created": "09-14 11:30",
+   "drive": false,
+   "drvurl": "",
+   "cop": 3,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "424_オーナーステータス設定_数値入力バリデーションパリティ修正"
+  },
+  {
+   "ticket": "973",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "428",
+   "base": [],
+   "r810": [
+    {
+     "num": 12728,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 135,
+     "del": 18,
+     "fc": 6,
+     "cr": "09-11 16:41"
+    }
+   ],
+   "created": "09-11 16:41",
+   "drive": false,
+   "drvurl": "",
+   "cop": 3,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "428_仕入先追加・編集_単体テスト指摘4件修正"
+  },
+  {
+   "ticket": "1540",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12722,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 211,
+     "del": 12,
+     "fc": 4,
+     "cr": "09-11 14:47"
+    }
+   ],
+   "created": "09-11 14:47",
+   "drive": false,
+   "drvurl": "",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "未認証時の Server Action がログイン画面へ遷移しない不具合を修正"
+  },
+  {
+   "ticket": "1955",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12718,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 131,
+     "del": 160,
+     "fc": 13,
+     "cr": "09-11 13:31"
+    }
+   ],
+   "created": "09-11 13:31",
+   "drive": false,
+   "drvurl": "",
+   "cop": 3,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ロール編集の入口ゲートとロール名の検証を AngularJS に揃える"
+  },
+  {
+   "ticket": "1057",
+   "dev": "dat",
+   "bien": false,
+   "sid": "440",
+   "base": [],
+   "r810": [
+    {
+     "num": 12709,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 573,
+     "del": 28,
+     "fc": 6,
+     "cr": "09-11 11:33"
+    }
+   ],
+   "created": "09-11 11:33",
+   "drive": false,
+   "drvurl": "",
+   "cop": 7,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユニット別ステータス設定の数値欄に増減ボタンを追加"
+  },
+  {
+   "ticket": "2037",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12708,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 662,
+     "del": 44,
+     "fc": 4,
+     "cr": "09-11 10:57"
+    }
+   ],
+   "created": "09-11 10:57",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/16pfPac1SZ-KzjW0fafxcdShSmGjT5_QM/view?usp=drive_link",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "共通_一覧CSV_列フィルタで隠れた選択行も件数に数える"
+  },
+  {
+   "ticket": "1656",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 12697,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 1018,
+     "del": 177,
+     "fc": 14,
+     "cr": "09-10 18:11"
+    }
+   ],
+   "r810": [
+    {
+     "num": 12696,
+     "cf": "ok",
+     "st": "open",
+     "nc": 4,
+     "add": 1173,
+     "del": 231,
+     "fc": 39,
+     "cr": "09-10 17:56"
+    }
+   ],
+   "created": "09-10 17:56",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1U0vwnPA-JWigAAXMrbHEX75uW0iynw-9/view?usp=sharing",
+   "cop": 4,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "表示期間の日付直接入力と年月ピッカーの年→10年→100年ドリル対応"
+  },
+  {
+   "ticket": "2032",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12669,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 36,
+     "del": 11,
+     "fc": 2,
+     "cr": "09-09 16:47"
+    }
+   ],
+   "created": "09-09 16:47",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "諸掛明細登録の単価小数落ちと丸め区分未適用を修正"
+  },
+  {
+   "ticket": "643",
+   "dev": "minh",
+   "bien": false,
+   "sid": "444",
+   "base": [],
+   "r810": [
+    {
+     "num": 12666,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 5,
+     "add": 1196,
+     "del": 53,
+     "fc": 8,
+     "cr": "09-09 16:13"
+    }
+   ],
+   "created": "09-09 16:13",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "項目表示設定の項目名を複数選択してまとめて並び替えられるようにする"
+  },
+  {
+   "ticket": "1412",
+   "dev": "dat",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 12665,
+     "cf": "ok",
+     "st": "changes",
+     "nc": 2,
+     "add": 261,
+     "del": 25,
+     "fc": 4,
+     "cr": "09-09 15:59"
+    }
+   ],
+   "r810": [
+    {
+     "num": 12664,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 257,
+     "del": 24,
+     "fc": 4,
+     "cr": "09-09 15:58"
+    }
+   ],
+   "created": "09-09 15:58",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/11JkF7aTivitaqTwmo2CtlYTauXS-SLv-/view?usp=sharing",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [
+     "kanayam"
+    ],
+    "pd": []
+   },
+   "title": "日付入力の有効範囲外と Tab 移動時の E040 検証を移行前の挙動へ揃える"
+  },
+  {
+   "ticket": "1410",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12648,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 6,
+     "del": 25,
+     "fc": 2,
+     "cr": "09-09 11:09"
+    }
+   ],
+   "created": "09-09 11:09",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1TU5vZZKhusqVBRZOnQr8Hv1wAQMwVByz/view?usp=sharing",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "入荷_検品登録・修正のロケーション/パレット選択モーダルを共通 DataTable の radio 単一選択へ統一"
+  },
+  {
+   "ticket": "1409",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12643,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 299,
+     "del": 28,
+     "fc": 6,
+     "cr": "09-09 09:22"
+    }
+   ],
+   "created": "09-09 09:22",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1k6caRGav8c-hYzD2DhkqaDOJrZn3vzhA/view?usp=sharing",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "移動_対象在庫一覧の件数バッジを「全 N 種類」表示に是正"
+  },
+  {
+   "ticket": "1457",
+   "dev": "dat",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 12639,
+     "cf": "ok",
+     "st": "approved",
+     "nc": 3,
+     "add": 254,
+     "del": 5,
+     "fc": 3,
+     "cr": "09-08 17:34"
+    }
+   ],
+   "r810": [
+    {
+     "num": 12640,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 254,
+     "del": 5,
+     "fc": 3,
+     "cr": "09-08 17:35"
+    }
+   ],
+   "created": "09-08 17:34",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1CSdPJAnnjv0kXDV9hY98E5sLKpNYI1ZG/view?usp=sharing",
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [
+     "kanayam"
+    ],
+    "ch": [],
+    "pd": []
+   },
+   "title": "DataTable 列フィルタの否定系演算子で値の無いセルの行が消える不具合を修正"
+  },
+  {
+   "ticket": "2029",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 12635,
+     "cf": "ok",
+     "st": "changes",
+     "nc": 2,
+     "add": 786,
+     "del": 50,
+     "fc": 3,
+     "cr": "09-08 16:45"
+    }
+   ],
+   "r810": [
+    {
+     "num": 12650,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 3,
+     "add": 798,
+     "del": 53,
+     "fc": 3,
+     "cr": "09-09 11:42"
+    }
+   ],
+   "created": "09-08 16:45",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1tWU17TN4hOexGCSBK5fFUySWZhGMO2gH/view?usp=sharing",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [
+     "kanayam"
+    ],
+    "pd": []
+   },
+   "title": "共通_一覧選択_列フィルタ・並べ替え変更時に選択を保持する"
+  },
+  {
+   "ticket": "1742",
+   "dev": "dat",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12629,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 4,
+     "add": 383,
+     "del": 38,
+     "fc": 11,
+     "cr": "09-08 14:48"
+    }
+   ],
+   "created": "09-08 14:48",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "出荷指示登録 (230) マスタ選択モーダルのタイトル・検索ラベル・ページャ表示を AngularJS に揃える"
+  },
+  {
+   "ticket": "1730",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12628,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 34,
+     "del": 5,
+     "fc": 3,
+     "cr": "09-08 14:38"
+    }
+   ],
+   "created": "09-08 14:38",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ログイン画面に共通フッターを表示"
+  },
+  {
+   "ticket": "544",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12614,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 6,
+     "del": 6,
+     "fc": 1,
+     "cr": "09-08 10:51"
+    }
+   ],
+   "created": "09-08 10:51",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "在庫_明細 (247) 検索エリアのラベルが vi/zh-CN で英語のまま表示される不具合を修正"
+  },
+  {
+   "ticket": "260",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12598,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 200,
+     "del": 20,
+     "fc": 6,
+     "cr": "09-07 15:05"
+    }
+   ],
+   "created": "09-07 15:05",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1cXTTGWgypr4JXducxIw39u-PB6Epc9hZ/view?usp=sharing",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ブラウザタブタイトルの AngularJS 未一致 3 件を解消"
+  },
+  {
+   "ticket": "1766",
+   "dev": "dat",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12592,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 19,
+     "del": 0,
+     "fc": 10,
+     "cr": "09-07 14:21"
+    }
+   ],
+   "created": "09-07 14:21",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ご利用ガイドボタンのラベルを UI 言語に追随させる"
+  }
+ ],
+ "scaffold": [
+  {
+   "ticket": "—",
+   "dev": "bien",
+   "bien": true,
+   "pr": {
+    "num": 12866,
+    "cf": "ok",
+    "st": "open",
+    "nc": 3,
+    "add": 122,
+    "del": 38,
+    "fc": 6,
+    "cr": "09-17 13:19"
+   },
+   "created": "09-17 13:19",
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "共通コンポーネント 8 件の規約・テンプレート還元 (CC-NEW-13 検査手順・§8.3 rowStyle/cellLinks・§8.6 絞り込みと選択・§8.12 失効 Cookie の短絡・§8.15 isBlankValue 訂正・edit-screen テンプレート)"
+  },
+  {
+   "ticket": "1566",
+   "dev": "bien",
+   "bien": true,
+   "pr": {
+    "num": 12624,
+    "cf": "ok",
+    "st": "merged",
+    "nc": 5,
+    "add": 42,
+    "del": 2,
+    "fc": 2,
+    "cr": "09-08 13:43"
+   },
+   "created": "09-08 13:43",
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "columnOverrides/blankValues と UI-NEW-16 の lbl 常時送信例外を規約に還元 #ANGULAR_REPLACE-1566"
+  },
+  {
+   "ticket": "—",
+   "dev": "bien",
+   "bien": true,
+   "pr": {
+    "num": 12623,
+    "cf": "ok",
+    "st": "merged",
+    "nc": 2,
+    "add": 119,
+    "del": 22,
+    "fc": 7,
+    "cr": "09-08 13:30"
+   },
+   "created": "09-08 13:30",
+   "cop": 5,
+   "unres": 5,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "移行 scaffold 規約・SKILL 更新 (EDIT-NEW-09/10・API-NEW-17/18・SEC-NEW-24・I18N-NEW-04・Anti-Pattern #65〜70・§8.14)"
+  }
+ ]
+}
