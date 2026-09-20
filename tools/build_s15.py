@@ -8,7 +8,7 @@ import json, re, sys, ast
 from sprints import nav_html
 
 PLAN = json.load(open(sys.argv[1] if len(sys.argv) > 1 else "s15-plan.json"))
-NAV  = nav_html("Sprint 15")
+NAV  = nav_html("Sprint 15+16")
 css  = re.search(r'<style>.*?</style>', open("_head.html").read(), re.S).group(0)
 MASCOT = ('<script src="https://nguyenducbien-art.github.io/pixel-pets/pixel-pets.js" '
           'data-min="2" data-max="5" defer></script>')
@@ -43,6 +43,12 @@ for _a, _b in [
     # bật cột Screen: Bảng 1 (false) · Bảng 2 (true)
     ("Copilot chỉ đếm PR→base.')", "Copilot chỉ đếm PR→base.',false)"),
     ("(màn migration + fix lẻ).')", "(màn migration + fix lẻ).',true)"),
+    # page s15 = Sprint 15 + 16, chốt 06/09 (PR từ 07/09 sang page Sprint 17) → nói rõ ở subtitle
+    ("tạo từ <b>2026-08-01</b> vào <b>develop/base</b> / <b>r20260810</b> — chia 2 bảng",
+     "tạo từ <b>2026-08-01</b> đến hết <b>2026-09-06</b> (ngày cuối Sprint 15+16) vào <b>develop/base</b>"
+     " / <b>r20260810</b> — PR từ 07/09 xem ở page Sprint 17. Chia 2 bảng"),
+    ('<a href="index.html" style="font-family:inherit;font-size:12px">← Sprint 13</a>',
+     '<a href="s17.html" style="font-family:inherit;font-size:12px">Sprint 17 →</a>'),
 ]:
     assert _a in _pr, "anchor không thấy: %s" % _a[:40]
     _pr = _pr.replace(_a, _b)
