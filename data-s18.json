@@ -1,13 +1,44 @@
 {
- "updated": "2026-09-21 15:20",
+ "updated": "2026-09-21 16:12",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2043",
   "2048"
  ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2043",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12939,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 619,
+     "del": 21,
+     "fc": 14,
+     "cr": "09-21 16:09"
+    }
+   ],
+   "created": "09-21 16:09",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1_jSrBVx2r7rx4HtwQ4QCdXReIw7buUCU/view?usp=sharing",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ログイン後に未認証で弾かれた画面へ戻るよう修正"
+  },
   {
    "ticket": "2048",
    "dev": "bien",
