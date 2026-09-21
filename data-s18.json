@@ -1,10 +1,43 @@
 {
- "updated": "2026-09-21 02:05",
+ "updated": "2026-09-21 14:38",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
- "common": [],
+ "common": [
+  "2048"
+ ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
- "main": [],
+ "main": [
+  {
+   "ticket": "2048",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12936,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 74,
+     "del": 18,
+     "fc": 2,
+     "cr": "09-21 14:36"
+    }
+   ],
+   "created": "09-21 14:36",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1qL4ctjHW8NKV1Q-9-rTjuJtpwgch1bLO/view",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "空白判定の文字集合とorフィルタの結合を是正"
+  }
+ ],
  "scaffold": []
 }
