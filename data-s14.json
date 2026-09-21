@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-21 13:09",
+ "updated": "2026-09-21 18:02",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -131,10 +131,10 @@
      "num": 11656,
      "cf": "ok",
      "st": "changes",
-     "nc": 4,
-     "add": 107,
-     "del": 6,
-     "fc": 4,
+     "nc": 5,
+     "add": 251,
+     "del": 8,
+     "fc": 5,
      "cr": "08-05 10:52"
     }
    ],
@@ -369,9 +369,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "移行済み画面の子モーダルを共通 DataTable へ統一しフィルタ/ソート/ページャを提供"
   },
@@ -383,7 +381,7 @@
     {
      "num": 11510,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 6,
      "add": 377,
      "del": 71,
@@ -429,13 +427,11 @@
    "cop": 2,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "is_display=0 の画面アクセス時はエラーを表示せずユニットトップへリダイレクト"
   },
@@ -672,7 +668,7 @@
     {
      "num": 11473,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 9,
      "add": 1122,
      "del": 14,
@@ -728,13 +724,11 @@
    "cop": 3,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "画面メニューモーダル（ナビゲーションバー左端のグリッドアイコン）を追加"
   },
@@ -886,7 +880,7 @@
     {
      "num": 11454,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 5,
      "add": 225,
      "del": 28,
@@ -912,13 +906,11 @@
    "cop": 0,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "共通ヘッダーのトップメニューのリンク先を修正し404を解消"
   },
@@ -2276,7 +2268,7 @@
     {
      "num": 11216,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 9,
      "add": 229,
      "del": 34,
@@ -2302,13 +2294,11 @@
    "cop": 0,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "一覧共通コンポーネントに表示件数上限(E029)判定を追加"
   },
