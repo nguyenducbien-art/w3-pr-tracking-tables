@@ -1,8 +1,10 @@
 {
- "updated": "2026-09-22 14:25",
+ "updated": "2026-09-22 14:30",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1521",
+  "1636",
   "2063",
   "1500",
   "1499",
@@ -12,6 +14,66 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "1521",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12954,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 187,
+     "del": 5,
+     "fc": 2,
+     "cr": "09-22 14:29"
+    }
+   ],
+   "created": "09-22 14:29",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユニット切替後の取得待ち中に前ユニットのロール id を返さないよう修正"
+  },
+  {
+   "ticket": "1636",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12953,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 209,
+     "del": 12,
+     "fc": 2,
+     "cr": "09-22 14:29"
+    }
+   ],
+   "created": "09-22 14:29",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "帳票発行前チェックの待機中にダイアログを閉じた実行を無効化し発行させない"
+  },
   {
    "ticket": "2063",
    "dev": "dat",
