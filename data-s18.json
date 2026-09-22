@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-21 16:34",
+ "updated": "2026-09-22 09:54",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -9,6 +9,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "8",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12941,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 128,
+     "del": 22,
+     "fc": 3,
+     "cr": "09-22 09:53"
+    }
+   ],
+   "created": "09-22 09:53",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "出荷履歴_一覧のCSV全件出力で screen_id に unit_screen_id を渡すよう修正"
+  },
   {
    "ticket": "2043",
    "dev": "minh",
