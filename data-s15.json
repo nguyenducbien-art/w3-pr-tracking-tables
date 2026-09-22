@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-22 15:01",
+ "updated": "2026-09-22 15:42",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -251,7 +251,7 @@
    "base": [
     {
      "num": 12448,
-     "cf": "ok",
+     "cf": "bad",
      "st": "approved",
      "nc": 3,
      "add": 411,
@@ -314,7 +314,7 @@
    "base": [
     {
      "num": 12443,
-     "cf": "ok",
+     "cf": "bad",
      "st": "approved",
      "nc": 3,
      "add": 487,
@@ -357,7 +357,7 @@
    "base": [
     {
      "num": 12398,
-     "cf": "ok",
+     "cf": "bad",
      "st": "approved",
      "nc": 2,
      "add": 493,
@@ -2548,10 +2548,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [
+    "ch": [],
+    "pd": [
      "kanayam"
-    ],
-    "pd": []
+    ]
    },
    "title": "EditSection に readOnlyFor 追加・FieldRenderer の未選択 flag を値なし表示 (→base)"
   },
@@ -2823,10 +2823,10 @@
    "base": [
     {
      "num": 11894,
-     "cf": "bad",
-     "st": "approved",
-     "nc": 5,
-     "add": 240,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 7,
+     "add": 239,
      "del": 7,
      "fc": 8,
      "cr": "08-12 14:22"
@@ -3067,7 +3067,7 @@
     {
      "num": 11874,
      "cf": "ok",
-     "st": "approved",
+     "st": "merged",
      "nc": 7,
      "add": 258,
      "del": 20,
@@ -3439,10 +3439,10 @@
    "base": [
     {
      "num": 11842,
-     "cf": "bad",
-     "st": "approved",
-     "nc": 6,
-     "add": 665,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 8,
+     "add": 669,
      "del": 14,
      "fc": 9,
      "cr": "08-11 14:58"
@@ -3583,7 +3583,7 @@
     {
      "num": 11832,
      "cf": "ok",
-     "st": "approved",
+     "st": "merged",
      "nc": 1,
      "add": 13,
      "del": 1,
@@ -3686,7 +3686,7 @@
     {
      "num": 11815,
      "cf": "ok",
-     "st": "approved",
+     "st": "merged",
      "nc": 7,
      "add": 111,
      "del": 2,
