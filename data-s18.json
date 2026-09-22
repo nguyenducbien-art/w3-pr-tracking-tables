@@ -1,12 +1,14 @@
 {
- "updated": "2026-09-22 15:35",
+ "updated": "2026-09-22 15:51",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2029",
   "2045",
   "1521",
   "1636",
   "2063",
+  "2097",
   "1500",
   "1499",
   "2043",
@@ -16,6 +18,36 @@
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
   {
+   "ticket": "2029",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12959,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 475,
+     "del": 179,
+     "fc": 15,
+     "cr": "09-22 15:36"
+    }
+   ],
+   "created": "09-22 15:36",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1MCY7quCrW1SGkJekmAzpa_QkV7CvYtYw/view?usp=sharing",
+   "cop": 5,
+   "unres": 5,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "共通_一覧選択_並べ替え後にチェック表示と処理対象がずれる問題を修正"
+  },
+  {
    "ticket": "2045",
    "dev": "minh",
    "bien": false,
@@ -23,9 +55,9 @@
    "base": [
     {
      "num": 12957,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
-     "nc": 3,
+     "nc": 4,
      "add": 1299,
      "del": 95,
      "fc": 31,
@@ -35,9 +67,9 @@
    "r810": [],
    "created": "09-22 15:18",
    "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1al_F0neeh_jzi_-9bejVfTuefC2iJFfd/view?usp=sharing",
+   "drvurl": "https://drive.google.com/file/d/1MheXG1WUpCbVpr1YWcBz9N5Pp9_qzI8S/view?usp=sharing",
    "cop": 4,
-   "unres": 4,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -143,6 +175,26 @@
    "base": [],
    "r810": [
     {
+     "num": 12961,
+     "cf": "ok",
+     "st": "open",
+     "nc": 9,
+     "add": 793,
+     "del": 37,
+     "fc": 12,
+     "cr": "09-22 15:49"
+    },
+    {
+     "num": 12960,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 37,
+     "del": 793,
+     "fc": 12,
+     "cr": "09-22 15:48"
+    },
+    {
      "num": 12946,
      "cf": "ok",
      "st": "merged",
@@ -156,8 +208,8 @@
    "created": "09-22 13:59",
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/1KNs42xOdETjTt4ESuvSO0REy1TC-JsAn/view?usp=sharing",
-   "cop": 7,
-   "unres": 0,
+   "cop": 8,
+   "unres": 1,
    "rvw": {
     "ap": [],
     "ch": [],
