@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-22 13:51",
+ "updated": "2026-09-22 14:01",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -11,6 +11,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2097",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12946,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 452,
+     "del": 38,
+     "fc": 10,
+     "cr": "09-22 13:59"
+    }
+   ],
+   "created": "09-22 13:59",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ヘッダーにユニット情報を追加し、ナビゲーションの欠けと余白を是正"
+  },
   {
    "ticket": "1500",
    "dev": "bien",
