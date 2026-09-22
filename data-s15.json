@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-22 14:16",
+ "updated": "2026-09-22 15:01",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -810,9 +810,9 @@
      "num": 12300,
      "cf": "ok",
      "st": "changes",
-     "nc": 8,
-     "add": 441,
-     "del": 14,
+     "nc": 9,
+     "add": 639,
+     "del": 15,
      "fc": 5,
      "cr": "08-25 16:43"
     }
@@ -1408,10 +1408,10 @@
      "num": 12083,
      "cf": "ok",
      "st": "changes",
-     "nc": 3,
-     "add": 165,
+     "nc": 4,
+     "add": 262,
      "del": 3,
-     "fc": 4,
+     "fc": 5,
      "cr": "08-18 14:38"
     }
    ],
@@ -3739,7 +3739,7 @@
     {
      "num": 11814,
      "cf": "ok",
-     "st": "approved",
+     "st": "merged",
      "nc": 3,
      "add": 38,
      "del": 0,
@@ -4002,7 +4002,7 @@
     {
      "num": 11792,
      "cf": "ok",
-     "st": "approved",
+     "st": "merged",
      "nc": 3,
      "add": 187,
      "del": 0,
@@ -4205,7 +4205,7 @@
     {
      "num": 11783,
      "cf": "ok",
-     "st": "approved",
+     "st": "merged",
      "nc": 3,
      "add": 19,
      "del": 0,
@@ -4948,7 +4948,7 @@
     {
      "num": 11766,
      "cf": "ok",
-     "st": "approved",
+     "st": "merged",
      "nc": 9,
      "add": 265,
      "del": 40,
@@ -5160,10 +5160,10 @@
    "base": [
     {
      "num": 11738,
-     "cf": "ok",
+     "cf": "bad",
      "st": "changes",
-     "nc": 6,
-     "add": 192,
+     "nc": 7,
+     "add": 361,
      "del": 27,
      "fc": 8,
      "cr": "08-07 14:44"
@@ -5254,7 +5254,7 @@
     {
      "num": 11731,
      "cf": "ok",
-     "st": "approved",
+     "st": "merged",
      "nc": 3,
      "add": 56,
      "del": 1,

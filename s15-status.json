@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-22 14:16",
+ "updated": "2026-09-22 15:02",
  "impl": {
   "1646": {
    "pic": "Biên",
@@ -768,16 +768,16 @@
  },
  "test": {
   "2096": {
-   "pic": "Bồn",
-   "st": "todo"
+   "pic": "Hưng",
+   "st": "done"
   },
   "2094": {
    "pic": "Minh",
    "st": "done"
   },
   "2090": {
-   "pic": "Bồn",
-   "st": "todo"
+   "pic": "Khoa",
+   "st": "done"
   },
   "2087": {
    "pic": "Bồn",
