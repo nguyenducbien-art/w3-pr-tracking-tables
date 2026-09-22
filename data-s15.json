@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-22 16:20",
+ "updated": "2026-09-22 16:56",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -400,7 +400,7 @@
    "base": [
     {
      "num": 12393,
-     "cf": "ok",
+     "cf": "bad",
      "st": "approved",
      "nc": 1,
      "add": 93,
@@ -722,11 +722,11 @@
    "base": [
     {
      "num": 12319,
-     "cf": "bad",
+     "cf": "ok",
      "st": "approved",
-     "nc": 2,
-     "add": 590,
-     "del": 69,
+     "nc": 4,
+     "add": 594,
+     "del": 70,
      "fc": 13,
      "cr": "08-26 11:49"
     }
@@ -765,11 +765,11 @@
    "base": [
     {
      "num": 12318,
-     "cf": "bad",
-     "st": "approved",
-     "nc": 4,
-     "add": 313,
-     "del": 78,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 6,
+     "add": 314,
+     "del": 79,
      "fc": 10,
      "cr": "08-26 11:49"
     }
@@ -846,10 +846,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [
+    "ch": [],
+    "pd": [
      "kanayam"
-    ],
-    "pd": []
+    ]
    },
    "title": "帳票発行前チェックを行う onBeforeExecute フックを追加"
   },
@@ -861,11 +861,11 @@
    "base": [
     {
      "num": 12289,
-     "cf": "bad",
-     "st": "approved",
-     "nc": 8,
-     "add": 1437,
-     "del": 29,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 10,
+     "add": 1432,
+     "del": 28,
      "fc": 22,
      "cr": "08-25 13:06"
     }
@@ -984,11 +984,11 @@
    "base": [
     {
      "num": 12266,
-     "cf": "bad",
-     "st": "approved",
-     "nc": 3,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 4,
      "add": 335,
-     "del": 2,
+     "del": 9,
      "fc": 2,
      "cr": "08-24 16:05"
     }
@@ -1028,7 +1028,7 @@
     {
      "num": 12252,
      "cf": "ok",
-     "st": "approved",
+     "st": "merged",
      "nc": 13,
      "add": 218,
      "del": 50,
@@ -1111,7 +1111,7 @@
     {
      "num": 12221,
      "cf": "ok",
-     "st": "approved",
+     "st": "merged",
      "nc": 3,
      "add": 306,
      "del": 9,
@@ -1234,7 +1234,7 @@
     {
      "num": 12162,
      "cf": "ok",
-     "st": "approved",
+     "st": "merged",
      "nc": 3,
      "add": 31,
      "del": 3,
@@ -1444,10 +1444,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [
+    "ch": [],
+    "pd": [
      "kanayam"
-    ],
-    "pd": []
+    ]
    },
    "title": "ulink セルに認証付きダウンロードハンドラの口を追加"
   },
@@ -1530,7 +1530,7 @@
     {
      "num": 12065,
      "cf": "ok",
-     "st": "approved",
+     "st": "merged",
      "nc": 1,
      "add": 198,
      "del": 3,
@@ -1633,7 +1633,7 @@
     {
      "num": 12052,
      "cf": "ok",
-     "st": "approved",
+     "st": "merged",
      "nc": 2,
      "add": 110,
      "del": 40,
@@ -5160,7 +5160,7 @@
    "base": [
     {
      "num": 11738,
-     "cf": "ok",
+     "cf": "bad",
      "st": "changes",
      "nc": 8,
      "add": 361,
@@ -5188,10 +5188,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [
+    "ch": [],
+    "pd": [
      "kanayam"
-    ],
-    "pd": []
+    ]
    },
    "title": "画面設定（歯車）遷移を項目表示設定のパラメータ契約に整合"
   },
