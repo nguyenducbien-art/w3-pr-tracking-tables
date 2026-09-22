@@ -1,8 +1,9 @@
 {
- "updated": "2026-09-22 14:36",
+ "updated": "2026-09-22 15:24",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2045",
   "1521",
   "1636",
   "2063",
@@ -14,6 +15,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2045",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 12957,
+     "cf": "bad",
+     "st": "open",
+     "nc": 2,
+     "add": 1115,
+     "del": 85,
+     "fc": 29,
+     "cr": "09-22 15:18"
+    }
+   ],
+   "r810": [],
+   "created": "09-22 15:18",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1al_F0neeh_jzi_-9bejVfTuefC2iJFfd/view?usp=sharing",
+   "cop": 4,
+   "unres": 4,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "通信失敗時のエラー文言を多言語化し内部文言の露出を止める"
+  },
   {
    "ticket": "1521",
    "dev": "bien",
@@ -115,10 +146,10 @@
      "num": 12946,
      "cf": "ok",
      "st": "open",
-     "nc": 8,
-     "add": 450,
-     "del": 38,
-     "fc": 10,
+     "nc": 9,
+     "add": 793,
+     "del": 37,
+     "fc": 12,
      "cr": "09-22 13:59"
     }
    ],
@@ -142,7 +173,7 @@
    "base": [
     {
      "num": 12950,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 1,
      "add": 149,
