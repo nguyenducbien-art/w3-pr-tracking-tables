@@ -1,8 +1,9 @@
 {
- "updated": "2026-09-22 14:01",
+ "updated": "2026-09-22 14:07",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2063",
   "1500",
   "1499",
   "2043",
@@ -11,6 +12,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2063",
+   "dev": "dat",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12947,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 2220,
+     "del": 78,
+     "fc": 38,
+     "cr": "09-22 14:01"
+    }
+   ],
+   "created": "09-22 14:01",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/13pFIMD7_5Gt9W5zmqzKJnlzCe7Bimcf0/view?usp=drive_link",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "個人設定で変更した表示言語が React 側に反映されない不具合を修正"
+  },
   {
    "ticket": "2097",
    "dev": "hung",

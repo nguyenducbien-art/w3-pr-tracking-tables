@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-21 01:44",
+ "updated": "2026-09-22 14:16",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -722,7 +722,7 @@
    "base": [
     {
      "num": 12319,
-     "cf": "ok",
+     "cf": "bad",
      "st": "approved",
      "nc": 2,
      "add": 590,
@@ -765,7 +765,7 @@
    "base": [
     {
      "num": 12318,
-     "cf": "ok",
+     "cf": "bad",
      "st": "approved",
      "nc": 4,
      "add": 313,
@@ -861,7 +861,7 @@
    "base": [
     {
      "num": 12289,
-     "cf": "ok",
+     "cf": "bad",
      "st": "approved",
      "nc": 8,
      "add": 1437,
@@ -1110,7 +1110,7 @@
    "base": [
     {
      "num": 12221,
-     "cf": "ok",
+     "cf": "bad",
      "st": "approved",
      "nc": 2,
      "add": 311,
@@ -1233,7 +1233,7 @@
    "base": [
     {
      "num": 12162,
-     "cf": "ok",
+     "cf": "bad",
      "st": "approved",
      "nc": 2,
      "add": 53,
@@ -1894,7 +1894,7 @@
    "base": [
     {
      "num": 11978,
-     "cf": "ok",
+     "cf": "bad",
      "st": "approved",
      "nc": 1,
      "add": 132,
@@ -2823,7 +2823,7 @@
    "base": [
     {
      "num": 11894,
-     "cf": "ok",
+     "cf": "bad",
      "st": "approved",
      "nc": 5,
      "add": 240,
@@ -3439,7 +3439,7 @@
    "base": [
     {
      "num": 11842,
-     "cf": "ok",
+     "cf": "bad",
      "st": "approved",
      "nc": 6,
      "add": 665,

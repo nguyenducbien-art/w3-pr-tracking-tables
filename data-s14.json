@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-22 13:55",
+ "updated": "2026-09-22 14:19",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -379,6 +379,16 @@
    "bien": true,
    "base": [
     {
+     "num": 12950,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 149,
+     "del": 83,
+     "fc": 5,
+     "cr": "09-22 14:14"
+    },
+    {
      "num": 12944,
      "cf": "ok",
      "st": "merged",
@@ -434,14 +444,14 @@
    "created": "07-31 14:56",
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/1jhDPw3bLFgbEuTbOaOSeWOjLIbjq8ozx/view?usp=sharing",
-   "cop": 2,
-   "unres": 0,
+   "cop": 3,
+   "unres": 1,
    "rvw": {
     "ap": [],
     "ch": [],
     "pd": []
    },
-   "title": "TC品仕分登録フックのテストが resolveScreenForPage 未モックで失敗する問題を修正"
+   "title": "403 時の画面遷移を画面入口に限定する（補助取得では離脱させない）"
   },
   {
    "ticket": "1089",
