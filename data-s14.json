@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-22 12:36",
+ "updated": "2026-09-22 13:55",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -379,9 +379,19 @@
    "bien": true,
    "base": [
     {
+     "num": 12944,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 21,
+     "del": 6,
+     "fc": 1,
+     "cr": "09-22 13:16"
+    },
+    {
      "num": 11510,
      "cf": "ok",
-     "st": "approved",
+     "st": "merged",
      "nc": 6,
      "add": 377,
      "del": 71,
@@ -427,13 +437,11 @@
    "cop": 2,
    "unres": 0,
    "rvw": {
-    "ap": [
-     "kanayam"
-    ],
+    "ap": [],
     "ch": [],
     "pd": []
    },
-   "title": "is_display=0 の画面アクセス時はエラーを表示せずユニットトップへリダイレクト"
+   "title": "TC品仕分登録フックのテストが resolveScreenForPage 未モックで失敗する問題を修正"
   },
   {
    "ticket": "1089",
