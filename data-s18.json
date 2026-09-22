@@ -1,14 +1,76 @@
 {
- "updated": "2026-09-22 09:54",
+ "updated": "2026-09-22 13:19",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1500",
+  "1499",
   "2043",
   "2048"
  ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "1500",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 12944,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 21,
+     "del": 6,
+     "fc": 1,
+     "cr": "09-22 13:16"
+    }
+   ],
+   "r810": [],
+   "created": "09-22 13:16",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "TC品仕分登録フックのテストが resolveScreenForPage 未モックで失敗する問題を修正"
+  },
+  {
+   "ticket": "1499",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 12945,
+     "cf": "ok",
+     "st": "open",
+     "nc": 47,
+     "add": 402,
+     "del": 153,
+     "fc": 23,
+     "cr": "09-22 13:16"
+    }
+   ],
+   "created": "09-22 13:16",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1RqSnf8RjR2hJo4u8UJ4UqgLEREs2dGiX/view?usp=sharing",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "base同期: develop/base → r20260810 (AR-1453, AR-1497, AR-1499, AR-1500)"
+  },
   {
    "ticket": "8",
    "dev": "minh",
