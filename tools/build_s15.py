@@ -29,7 +29,7 @@ _SCR_CELL = ("+(showScreen?('<td>'+(r.sid?'<span class=\"ticket\">'+esc(String(r
              "+'</span>':'<span class=\"cf-na\">—</span>')+'</td>'):'')")
 # ô ticket xuất hiện 2 lần (mainRow + scfRow scaffold); CHỈ thay occurrence ĐẦU (mainRow) → count=1,
 # nếu không scfRow cũng bị chèn showScreen (không có trong scope) → ReferenceError.
-_TICKET_CELL = "+'<td><span class=\"ticket\">'+r.ticket+'</span></td>'"
+_TICKET_CELL = "+'<td>'+tkLink(r.ticket)+'</td>'"
 assert _pr.count(_TICKET_CELL) == 2, "kỳ vọng ô ticket 2 lần (mainRow+scfRow)"
 _pr = _pr.replace(_TICKET_CELL, _TICKET_CELL + _SCR_CELL, 1)   # count=1 → chỉ mainRow
 # Filter theo dev cho MỌI bảng đã nằm sẵn trong RENDER_JS của build_s12 (filterBlock) → s15 kế thừa.

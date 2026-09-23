@@ -90,6 +90,7 @@
   .dev-bien { color: var(--accent); }
   a { color: var(--link); text-decoration: none; font-family: "SF Mono", "Fira Code", ui-monospace, monospace; font-size: 11px; }
   a:hover { text-decoration: underline; }
+  a.ticket { color: var(--link); }
   .pill { display: inline-block; padding: 2px 7px; border-radius: 3px; font-size: 10px; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase; line-height: 1.5; }
   .pill-approved { background: var(--pill-approved-bg); color: var(--pill-approved-fg); }
   .pill-changes { background: var(--pill-changes-bg); color: var(--pill-changes-fg); }
@@ -143,12 +144,16 @@
 </style>
 </head>
 <body>
-<nav class="topnav"><div class="topnav-inner"><span class="topnav-brand">W3 PR Tracking</span><span class="topnav-sep">/</span><a href="s12.html?v=1790144782">Sprint 12</a><a href="index.html?v=1790144782">Sprint 13</a><a href="s14.html?v=1790144782">Sprint 14</a><a href="s15.html?v=1790144782">Sprint 15+16</a><a href="s17.html?v=1790144782">Sprint 17</a><a href="s18.html?v=1790144782" class="active">Sprint 18</a></div></nav><script src="search.js?v=1790144782" data-sprints="[{&quot;label&quot;: &quot;Sprint 12&quot;, &quot;href&quot;: &quot;s12.html&quot;, &quot;data&quot;: &quot;data-s12.json&quot;}, {&quot;label&quot;: &quot;Sprint 13&quot;, &quot;href&quot;: &quot;index.html&quot;, &quot;data&quot;: &quot;data.json&quot;}, {&quot;label&quot;: &quot;Sprint 14&quot;, &quot;href&quot;: &quot;s14.html&quot;, &quot;data&quot;: &quot;data-s14.json&quot;, &quot;screens&quot;: &quot;screens-s14.json&quot;}, {&quot;label&quot;: &quot;Sprint 15+16&quot;, &quot;href&quot;: &quot;s15.html&quot;, &quot;data&quot;: &quot;data-s15.json&quot;, &quot;plan&quot;: &quot;s15-plan.json&quot;}, {&quot;label&quot;: &quot;Sprint 17&quot;, &quot;href&quot;: &quot;s17.html&quot;, &quot;data&quot;: &quot;data-s17.json&quot;}, {&quot;label&quot;: &quot;Sprint 18&quot;, &quot;href&quot;: &quot;s18.html&quot;, &quot;data&quot;: &quot;data-s18.json&quot;, &quot;rlabel&quot;: &quot;→r0810/0921&quot;}]" defer></script>
+<nav class="topnav"><div class="topnav-inner"><span class="topnav-brand">W3 PR Tracking</span><span class="topnav-sep">/</span><a href="s12.html?v=1790146673">Sprint 12</a><a href="index.html?v=1790146673">Sprint 13</a><a href="s14.html?v=1790146673">Sprint 14</a><a href="s15.html?v=1790146673">Sprint 15+16</a><a href="s17.html?v=1790146673">Sprint 17</a><a href="s18.html?v=1790146673" class="active">Sprint 18</a></div></nav><script src="search.js?v=1790146673" data-sprints="[{&quot;label&quot;: &quot;Sprint 12&quot;, &quot;href&quot;: &quot;s12.html&quot;, &quot;data&quot;: &quot;data-s12.json&quot;}, {&quot;label&quot;: &quot;Sprint 13&quot;, &quot;href&quot;: &quot;index.html&quot;, &quot;data&quot;: &quot;data.json&quot;}, {&quot;label&quot;: &quot;Sprint 14&quot;, &quot;href&quot;: &quot;s14.html&quot;, &quot;data&quot;: &quot;data-s14.json&quot;, &quot;screens&quot;: &quot;screens-s14.json&quot;}, {&quot;label&quot;: &quot;Sprint 15+16&quot;, &quot;href&quot;: &quot;s15.html&quot;, &quot;data&quot;: &quot;data-s15.json&quot;, &quot;plan&quot;: &quot;s15-plan.json&quot;}, {&quot;label&quot;: &quot;Sprint 17&quot;, &quot;href&quot;: &quot;s17.html&quot;, &quot;data&quot;: &quot;data-s17.json&quot;}, {&quot;label&quot;: &quot;Sprint 18&quot;, &quot;href&quot;: &quot;s18.html&quot;, &quot;data&quot;: &quot;data-s18.json&quot;, &quot;rlabel&quot;: &quot;→r0810/0921&quot;}]" defer></script>
 <div id="app"></div>
 <script src="https://nguyenducbien-art.github.io/pixel-pets/pixel-pets.js" data-min="2" data-max="5" defer></script>
 <script id="table-data" type="application/json"></script>
 <script>
 function esc(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+// Ticket cell → link to the Backlog issue (non-numeric such as "—" stays plain text).
+function tkLink(t){var s=String(t==null?'':t);return /^\d+$/.test(s)
+  ?'<a class="ticket" href="https://dialog-inc.backlog.com/view/ANGULAR_REPLACE-'+s+'" target="_blank" rel="noopener" title="Mở ticket '+s+' trên Backlog">'+s+'</a>'
+  :'<span class="ticket">'+esc(s)+'</span>';}
 
 // ---- FILTER theo người (dev / PIC) — dùng chung mọi bảng ----
 // filterBlock(rows,key) -> {bar, id}: dropdown + id gắn cho <tbody>. <2 giá trị thì không hiện.
@@ -208,7 +213,7 @@ function render(D){
     var rep=r.drvurl?('<a class="report-yes" href="'+esc(r.drvurl)+'" target="_blank" rel="noopener" title="Mở file report">✓ mở</a>')
       :(r.drive?'<span class="report-yes">✓</span>':'<span class="report-no">—</span>');
     return '<tr data-dev="'+esc(r.dev)+'">'
-      +'<td><span class="ticket">'+r.ticket+'</span></td>'+(showScreen?('<td>'+(r.sid?'<span class="ticket">'+esc(String(r.sid))+'</span>':'<span class="cf-na">—</span>')+'</td>'):'')
+      +'<td>'+tkLink(r.ticket)+'</td>'+(showScreen?('<td>'+(r.sid?'<span class="ticket">'+esc(String(r.sid))+'</span>':'<span class="cf-na">—</span>')+'</td>'):'')
       +'<td><span class="'+devcls+'">'+r.dev+'</span></td>'
       +'<td>'+cell(r.base||[],INVALID.has(r.ticket))+'</td>'
       +'<td>'+cell(r.r810||[],false)+'</td>'
@@ -255,7 +260,7 @@ function render(D){
     scfUn+=r.unres; if(r.pr.cf==='bad')scfCf++;
     var devcls=(r.dev==='bien')?'dev dev-bien':'dev';
     return '<tr data-dev="'+esc(r.dev)+'">'
-      +'<td><span class="ticket">'+r.ticket+'</span></td>'
+      +'<td>'+tkLink(r.ticket)+'</td>'
       +'<td><span class="'+devcls+'">'+r.dev+'</span></td>'
       +'<td>'+cell([r.pr],false)+'</td>'
       

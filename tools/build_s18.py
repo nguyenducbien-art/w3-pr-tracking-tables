@@ -29,7 +29,7 @@ for _a, _b in [("data-s12.json", "data-s18.json"), ("r20260629", "r20260810"),
 # nên chỉ khớp được ticket của màn Sprint 15 làm tiếp).
 _SCR_CELL = ("+(showScreen?('<td>'+(r.sid?'<span class=\"ticket\">'+esc(String(r.sid))"
              "+'</span>':'<span class=\"cf-na\">—</span>')+'</td>'):'')")
-_TICKET_CELL = "+'<td><span class=\"ticket\">'+r.ticket+'</span></td>'"
+_TICKET_CELL = "+'<td>'+tkLink(r.ticket)+'</td>'"
 assert _pr.count(_TICKET_CELL) == 2, "kỳ vọng ô ticket 2 lần (mainRow+scfRow)"
 _pr = _pr.replace(_TICKET_CELL, _TICKET_CELL + _SCR_CELL, 1)   # count=1 → chỉ mainRow
 for _a, _b in [

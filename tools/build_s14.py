@@ -21,6 +21,10 @@ SCREENS_BOX = '<div id="screens"><div class="page"><div class="subtitle">đang t
 
 RENDER_JS = r"""
 function esc(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+// Ticket cell → link to the Backlog issue (non-numeric such as "—" stays plain text).
+function tkLink(t){var s=String(t==null?'':t);return /^\d+$/.test(s)
+  ?'<a class="ticket" href="https://dialog-inc.backlog.com/view/ANGULAR_REPLACE-'+s+'" target="_blank" rel="noopener" title="Mở ticket '+s+' trên Backlog">'+s+'</a>'
+  :'<span class="ticket">'+esc(s)+'</span>';}
 // ---- FILTER theo người (dev / PIC) — dùng chung mọi bảng ----
 // filterBlock(rows,key) -> {bar, id}: dropdown + id gắn cho <tbody>. <2 giá trị thì không hiện.
 // Mỗi <tr> mang data-<key> (data-dev / data-pic); handler ẩn/hiện theo lựa chọn.
@@ -78,7 +82,7 @@ function render(D){
     var rep=r.drvurl?('<a class="report-yes" href="'+esc(r.drvurl)+'" target="_blank" rel="noopener" title="Mở file report">✓ mở</a>')
       :(r.drive?'<span class="report-yes">✓</span>':'<span class="report-no">—</span>');
     return '<tr data-dev="'+esc(r.dev)+'">'
-      +'<td><span class="ticket">'+r.ticket+'</span></td>'
+      +'<td>'+tkLink(r.ticket)+'</td>'
       +'<td><span class="'+devcls+'">'+r.dev+'</span></td>'
       +'<td>'+cell(r.base||[],INVALID.has(r.ticket))+'</td>'
       +'<td>'+cell(r.r727||[],false)+'</td>'
@@ -125,7 +129,7 @@ function render(D){
     scfUn+=r.unres; if(r.pr.cf==='bad')scfCf++;
     var devcls=(r.dev==='bien')?'dev dev-bien':'dev';
     return '<tr data-dev="'+esc(r.dev)+'">'
-      +'<td><span class="ticket">'+r.ticket+'</span></td>'
+      +'<td>'+tkLink(r.ticket)+'</td>'
       +'<td><span class="'+devcls+'">'+r.dev+'</span></td>'
       +'<td>'+cell([r.pr],false)+'</td>'
       
@@ -205,7 +209,7 @@ function renderScreens(S){
     return '<tr data-pic="'+esc(s.pic)+'"><td><span class="ticket">'+s.sid+'</span></td>'
       +'<td><span class="jp-cell">'+esc(s.name)+'</span></td>'
       +'<td>'+rt+'</td>'
-      +'<td><span class="ticket">'+esc(s.ticket)+'</span></td>'
+      +'<td>'+tkLink(s.ticket)+'</td>'
       +'<td><span class="dev"'+picc+'>'+esc(s.pic)+'</span></td>'
       +'<td><span class="pill '+t[0]+'">'+t[1]+'</span></td>'
       +'<td>'+testCell(s.test)+'</td>'

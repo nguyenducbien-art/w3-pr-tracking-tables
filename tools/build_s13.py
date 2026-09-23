@@ -17,6 +17,10 @@ PETS = ('<script src="https://nguyenducbien-art.github.io/pixel-pets/pixel-pets.
 
 RENDER_JS = r"""
 function esc(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+// Ticket cell → link to the Backlog issue (non-numeric such as "—" stays plain text).
+function tkLink(t){var s=String(t==null?'':t);return /^\d+$/.test(s)
+  ?'<a class="ticket" href="https://dialog-inc.backlog.com/view/ANGULAR_REPLACE-'+s+'" target="_blank" rel="noopener" title="Mở ticket '+s+' trên Backlog">'+s+'</a>'
+  :'<span class="ticket">'+esc(s)+'</span>';}
 
 // ---- FILTER theo người (dev / PIC) — dùng chung mọi bảng ----
 // filterBlock(rows,key) -> {bar, id}: dropdown + id gắn cho <tbody>. <2 giá trị thì không hiện.
@@ -76,7 +80,7 @@ function render(D){
     var rep=r.drvurl?('<a class="report-yes" href="'+esc(r.drvurl)+'" target="_blank" rel="noopener" title="Mở file report">✓ mở</a>')
       :(r.drive?'<span class="report-yes">✓</span>':'<span class="report-no">—</span>');
     return '<tr data-dev="'+esc(r.dev)+'">'
-      +'<td><span class="ticket">'+r.ticket+'</span></td>'
+      +'<td>'+tkLink(r.ticket)+'</td>'
       +'<td><span class="'+devcls+'">'+r.dev+'</span></td>'
       +'<td>'+cell(r.base||[],INVALID.has(r.ticket))+'</td>'
       +'<td>'+cell(r.r629||[],false)+'</td>'
@@ -125,7 +129,7 @@ function render(D){
     scfUn+=r.unres; if(r.pr.cf==='bad')scfCf++;
     var devcls=(r.dev==='bien')?'dev dev-bien':'dev';
     return '<tr data-dev="'+esc(r.dev)+'">'
-      +'<td><span class="ticket">'+r.ticket+'</span></td>'
+      +'<td>'+tkLink(r.ticket)+'</td>'
       +'<td><span class="'+devcls+'">'+r.dev+'</span></td>'
       +'<td>'+cell([r.pr],false)+'</td>'
       
