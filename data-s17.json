@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-23 13:09",
+ "updated": "2026-09-23 13:41",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1686,10 +1686,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [
+    "ch": [],
+    "pd": [
      "kanayam"
-    ],
-    "pd": []
+    ]
    },
    "title": "日付入力の有効範囲外と Tab 移動時の E040 検証を移行前の挙動へ揃える"
   },
@@ -1832,10 +1832,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [
+    "ch": [],
+    "pd": [
      "kanayam"
-    ],
-    "pd": []
+    ]
    },
    "title": "共通_一覧選択_列フィルタ・並べ替え変更時に選択を保持する"
   },
@@ -1999,9 +1999,9 @@
     "num": 12866,
     "cf": "ok",
     "st": "open",
-    "nc": 4,
-    "add": 153,
-    "del": 41,
+    "nc": 5,
+    "add": 181,
+    "del": 43,
     "fc": 9,
     "cr": "09-17 13:19"
    },
