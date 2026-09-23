@@ -1,17 +1,15 @@
 #!/bin/bash
 # Làm mới dữ liệu PR-tracking (launchd cron mỗi 5' + chạy tay được).
-# REFRESH — CHỈ Sprint 18 (active, từ 21/09/2026):
-#   - fetch_build_s18.py    → data-s18.json     (Sprint 18 = PR created >= 21/09, qua gh)
-# ĐÔNG LẠNH: Sprint 17 (data-s17.json, PR 07/09–20/09) từ 2026-09-21 09:5x theo yêu cầu user
-#            (lúc đông lạnh còn ~21 PR OPEN → page s17 giữ trạng thái chốt, không cập nhật merge/review nữa)
-#   → chạy tay `REFRESH_S17=1 tools/refresh.sh` nếu cần fetch lại s17.
-#            Sprint 12 (data-s12.json) + Sprint 13 (data.json) từ 2026-08-11,
-#            Sprint 14 (data-s14.json + screens-s14.json) từ 2026-08-25,
-#            Sprint 15+16 (data-s15.json + s15-status.json + routes-s15.json) từ 2026-09-21
-#            (sprint chốt 06/09; data-s15.json đã fetch lại 1 lần với chặn trên UNTIL=06/09) — KHÔNG refresh nữa
-#   → LÀM MỚI TAY sprint đông lạnh bằng cờ (gộp được): `REFRESH_S14=1 REFRESH_S15=1 REFRESH_S17=1 tools/refresh.sh`
-#     REFRESH_S17 → data-s17.json · REFRESH_S15 → data-s15 + s15-status (Backlog) + routes-s15 (route React)
-#     REFRESH_S14 → data-s14 + screens-s14 (danh sách màn, git r20260727). Chạy xong vẫn đông lạnh như cũ.
+# LỊCH LÀM MỚI (từ 2026-09-22, user yêu cầu bật cron cho 14/15/17/18):
+#   - Sprint 18 (active)  → data-s18.json                                  MỖI TICK (5')
+#   - Sprint 17           → data-s17.json                                  mỗi OLD_EVERY_MIN (30')
+#   - Sprint 15+16        → data-s15 + s15-status (Backlog) + routes-s15   mỗi OLD_EVERY_MIN (30')
+#   - Sprint 14           → data-s14 + screens-s14 (git r20260727)         mỗi OLD_EVERY_MIN (30')
+#   Vì sao 14/15/17 không chạy mỗi tick: 3 sprint này ~470 lời gọi GraphQL/lượt (s18 vài chục) và ~10'/lượt
+#   → mỗi tick sẽ ăn ~3000/giờ = 60% hạn mức 5000/giờ DÙNG CHUNG với mọi phiên gh khác + s18 chậm còn 10'.
+#   Mốc lần chạy OK gần nhất: tools/.last_s14|s15|s17 (gitignored; xoá file = ép chạy ở tick sau).
+#   Cờ chạy tay: REFRESH_Sxx=1 ép chạy ngay · REFRESH_Sxx=0 tắt hẳn (đông lạnh) · không đặt = theo lịch 30'.
+# ĐÔNG LẠNH: Sprint 12 (data-s12.json) + Sprint 13 (data.json) từ 2026-08-11 — KHÔNG refresh.
 #   → carry-forward blob cũ từ refs/heads/data để trang s12/index/s14 vẫn đọc bản chốt cuối.
 # Đẩy vào nhánh `data` bằng git plumbing → KHÔNG checkout, KHÔNG build Pages → không chạm rate-limit.
 export PATH="/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
@@ -27,18 +25,29 @@ cd "$REPO" || exit 1
   gh auth switch --user nguyenducbien-art >/dev/null 2>&1
   # Máy này là nguồn commit duy nhất → KHÔNG kéo commit về (no fetch/merge/reset trên repo tracking).
   python3 tools/fetch_build_s18.py   data-s18.json;     rc18=$?
-  # Sprint đông lạnh CHỈ fetch khi chạy tay với cờ REFRESH_Sxx=1 (xem đầu file). Không cờ → rc=2 (bỏ qua).
+  # Sprint 14/15/17 theo lịch OLD_EVERY_MIN (xem đầu file); không chạy lượt này → rc=2 (bỏ qua).
+  OLD_EVERY_MIN=30
+  due() {   # $1 = s14|s15|s17 → đến hạn khi chưa có mốc hoặc mốc cũ hơn OLD_EVERY_MIN phút
+    [ ! -f "tools/.last_$1" ] || [ -n "$(find "tools/.last_$1" -mmin +$((OLD_EVERY_MIN - 1)))" ]
+  }
+  mark() {  # chỉ ghi mốc khi fetch OK (rc 0/2) → fetch lỗi thì tick sau thử lại
+    { [ "$2" -eq 0 ] || [ "$2" -eq 2 ]; } && touch "tools/.last_$1"
+  }
+  RUN_S17=${REFRESH_S17:-$(due s17 && echo 1 || echo 0)}
+  RUN_S15=${REFRESH_S15:-$(due s15 && echo 1 || echo 0)}
+  RUN_S14=${REFRESH_S14:-$(due s14 && echo 1 || echo 0)}
+  echo "→ lượt này: s18 · s17=$RUN_S17 · s15=$RUN_S15 · s14=$RUN_S14"
   rc17=2; rc15=2; rcPl=2; rcRt=2; rc14=2; rcSc=2
-  if [ "${REFRESH_S17:-0}" = "1" ]; then
-    python3 tools/fetch_build_s17.py   data-s17.json;     rc17=$?
+  if [ "$RUN_S17" = "1" ]; then
+    python3 tools/fetch_build_s17.py   data-s17.json;     rc17=$?; mark s17 $rc17
   fi
-  if [ "${REFRESH_S15:-0}" = "1" ]; then
-    python3 tools/fetch_build_s15.py   data-s15.json;     rc15=$?
+  if [ "$RUN_S15" = "1" ]; then
+    python3 tools/fetch_build_s15.py   data-s15.json;     rc15=$?; mark s15 $rc15
     python3 tools/fetch_plan_s15.py    s15-status.json;   rcPl=$?
     python3 tools/fetch_routes_s15.py  routes-s15.json;   rcRt=$?
   fi
-  if [ "${REFRESH_S14:-0}" = "1" ]; then
-    python3 tools/fetch_build_s14.py   data-s14.json;     rc14=$?
+  if [ "$RUN_S14" = "1" ]; then
+    python3 tools/fetch_build_s14.py   data-s14.json;     rc14=$?; mark s14 $rc14
     python3 tools/fetch_screens_s14.py screens-s14.json;  rcSc=$?
   fi
   # rc: 0=đổi, 2=không đổi, khác=lỗi.
@@ -64,12 +73,12 @@ cd "$REPO" || exit 1
     else git rev-parse "refs/heads/data:$1"; fi
   }
   B18=$(blob data-s18.json    "$rc18" 1)                        # active (Sprint 18)
-  B17=$(blob data-s17.json    "$rc17" "${REFRESH_S17:-0}")      # Sprint 17
-  B15=$(blob data-s15.json    "$rc15" "${REFRESH_S15:-0}")      # Sprint 15+16
-  BPL=$(blob s15-status.json  "$rcPl" "${REFRESH_S15:-0}")      # phân công S15 — Backlog
-  BRT=$(blob routes-s15.json  "$rcRt" "${REFRESH_S15:-0}")      # route React S15
-  B14=$(blob data-s14.json    "$rc14" "${REFRESH_S14:-0}")      # Sprint 14
-  BSC=$(blob screens-s14.json "$rcSc" "${REFRESH_S14:-0}")      # Sprint 14 screen list
+  B17=$(blob data-s17.json    "$rc17" "$RUN_S17")      # Sprint 17
+  B15=$(blob data-s15.json    "$rc15" "$RUN_S15")      # Sprint 15+16
+  BPL=$(blob s15-status.json  "$rcPl" "$RUN_S15")      # phân công S15 — Backlog
+  BRT=$(blob routes-s15.json  "$rcRt" "$RUN_S15")      # route React S15
+  B14=$(blob data-s14.json    "$rc14" "$RUN_S14")      # Sprint 14
+  BSC=$(blob screens-s14.json "$rcSc" "$RUN_S14")      # Sprint 14 screen list
   B12=$(git rev-parse refs/heads/data:data-s12.json)     # frozen (Sprint 12)
   B13=$(git rev-parse refs/heads/data:data.json)          # frozen (Sprint 13)
   TREE=$(printf '100644 blob %s\tdata-s12.json\n100644 blob %s\tdata-s14.json\n100644 blob %s\tdata-s15.json\n100644 blob %s\tdata-s17.json\n100644 blob %s\tdata-s18.json\n100644 blob %s\tdata.json\n100644 blob %s\troutes-s15.json\n100644 blob %s\ts15-status.json\n100644 blob %s\tscreens-s14.json\n' \
@@ -79,6 +88,6 @@ cd "$REPO" || exit 1
            commit-tree "$TREE" -p "$PARENT" -m "auto-refresh (rc s18=$rc18 s17=$rc17 s15=$rc15/$rcPl/$rcRt s14=$rc14/$rcSc) $(date '+%F %H:%M')")
   git update-ref refs/heads/data "$COMMIT"
   git push -q origin data 2>/dev/null \
-    && echo "→ Đã push nhánh data (s18 + cờ tay: S17=${REFRESH_S17:-0} S15=${REFRESH_S15:-0} S14=${REFRESH_S14:-0}; KHÔNG build Pages). Web tươi ~5p." \
+    && echo "→ Đã push nhánh data (s18 + S17=$RUN_S17 S15=$RUN_S15 S14=$RUN_S14; KHÔNG build Pages). Web tươi ~5p." \
     || echo "→ push FAIL (kiểm tra tay)"
 } > >(tee -a "$LOG") 2>&1
