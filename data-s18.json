@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-24 14:07",
+ "updated": "2026-09-24 22:00",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -30,10 +30,10 @@
      "num": 13002,
      "cf": "ok",
      "st": "draft",
-     "nc": 3,
-     "add": 176,
-     "del": 378,
-     "fc": 43,
+     "nc": 8,
+     "add": 4550,
+     "del": 5151,
+     "fc": 231,
      "cr": "09-24 13:39"
     }
    ],
@@ -452,22 +452,22 @@
      "num": 12996,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 599,
-     "del": 19,
-     "fc": 12,
+     "nc": 6,
+     "add": 960,
+     "del": 29,
+     "fc": 17,
      "cr": "09-24 12:52"
     }
    ],
    "r810": [
     {
      "num": 12939,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 638,
-     "del": 22,
-     "fc": 14,
+     "nc": 7,
+     "add": 1000,
+     "del": 32,
+     "fc": 18,
      "cr": "09-21 16:09"
     }
    ],
@@ -516,6 +516,30 @@
  ],
  "scaffold": [
   {
+   "ticket": "447",
+   "dev": "bien",
+   "bien": true,
+   "pr": {
+    "num": 13005,
+    "cf": "ok",
+    "st": "open",
+    "nc": 3,
+    "add": 26,
+    "del": 0,
+    "fc": 1,
+    "cr": "09-24 14:16"
+   },
+   "created": "09-24 14:16",
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "list-screenテンプレートに extraToolbarButtons 使用例を追記"
+  },
+  {
    "ticket": "1893",
    "dev": "minh",
    "bien": false,
@@ -523,8 +547,8 @@
     "num": 12998,
     "cf": "ok",
     "st": "open",
-    "nc": 4,
-    "add": 65,
+    "nc": 5,
+    "add": 68,
     "del": 4,
     "fc": 4,
     "cr": "09-24 13:21"
