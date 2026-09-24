@@ -1,8 +1,10 @@
 {
- "updated": "2026-09-23 16:01",
+ "updated": "2026-09-24 14:07",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1576",
+  "1893",
   "2029",
   "2045",
   "1521",
@@ -17,6 +19,77 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "1576",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13002,
+     "cf": "ok",
+     "st": "draft",
+     "nc": 3,
+     "add": 176,
+     "del": 378,
+     "fc": 43,
+     "cr": "09-24 13:39"
+    }
+   ],
+   "created": "09-24 13:39",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "一覧・明細画面の取得方式を都度取得へ統一する（第1段: React 共通基盤の設定参照撤去・take 削除 + BE 総件数の上限撤廃）"
+  },
+  {
+   "ticket": "1893",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 12985,
+     "cf": "ok",
+     "st": "open",
+     "nc": 7,
+     "add": 1679,
+     "del": 41,
+     "fc": 36,
+     "cr": "09-24 08:56"
+    }
+   ],
+   "r810": [
+    {
+     "num": 12990,
+     "cf": "ok",
+     "st": "open",
+     "nc": 15,
+     "add": 2060,
+     "del": 736,
+     "fc": 67,
+     "cr": "09-24 10:30"
+    }
+   ],
+   "created": "09-24 08:56",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1Qp648KKGJTHqTU9n4ahAmJo4j3CfhkEa/view?usp=sharing",
+   "cop": 3,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "共通_統合表示ユニットの制御 (共通コンポーネント・バックエンド)"
+  },
   {
    "ticket": "2029",
    "dev": "bien",
@@ -157,7 +230,7 @@
    "r810": [
     {
      "num": 12947,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 2,
      "add": 2366,
@@ -185,6 +258,26 @@
    "sid": "",
    "base": [],
    "r810": [
+    {
+     "num": 12999,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 181,
+     "del": 116,
+     "fc": 12,
+     "cr": "09-24 13:25"
+    },
+    {
+     "num": 12986,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 114,
+     "del": 12,
+     "fc": 5,
+     "cr": "09-24 09:56"
+    },
     {
      "num": 12976,
      "cf": "ok",
@@ -229,8 +322,8 @@
    "created": "09-22 13:59",
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/1KNs42xOdETjTt4ESuvSO0REy1TC-JsAn/view?usp=sharing",
-   "cop": 9,
-   "unres": 2,
+   "cop": 11,
+   "unres": 4,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -354,7 +447,18 @@
    "dev": "minh",
    "bien": false,
    "sid": "",
-   "base": [],
+   "base": [
+    {
+     "num": 12996,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 599,
+     "del": 19,
+     "fc": 12,
+     "cr": "09-24 12:52"
+    }
+   ],
    "r810": [
     {
      "num": 12939,
@@ -370,7 +474,7 @@
    "created": "09-21 16:09",
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/1_jSrBVx2r7rx4HtwQ4QCdXReIw7buUCU/view?usp=sharing",
-   "cop": 16,
+   "cop": 1,
    "unres": 0,
    "rvw": {
     "ap": [],
@@ -410,5 +514,30 @@
    "title": "空白判定の文字集合とorフィルタの結合を是正"
   }
  ],
- "scaffold": []
+ "scaffold": [
+  {
+   "ticket": "1893",
+   "dev": "minh",
+   "bien": false,
+   "pr": {
+    "num": 12998,
+    "cf": "ok",
+    "st": "open",
+    "nc": 4,
+    "add": 65,
+    "del": 4,
+    "fc": 4,
+    "cr": "09-24 13:21"
+   },
+   "created": "09-24 13:21",
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "統合表示ユニットの共通制御 (§8.16)・認証 middleware の戻り先 (§8.12)・通信失敗時の文言注入 (§8.17) を規約に還元 #ANGULAR_REPLACE-1893 #ANGULAR_REPLACE-2043 #ANGULAR_REPLACE-2045- #12994"
+  }
+ ]
 }
