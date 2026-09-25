@@ -1,8 +1,10 @@
 {
- "updated": "2026-09-25 09:58",
+ "updated": "2026-09-25 10:18",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1708",
+  "2047",
   "1576",
   "1893",
   "2029",
@@ -19,6 +21,66 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "1708",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 13021,
+     "cf": "ok",
+     "st": "open",
+     "nc": 11,
+     "add": 3242,
+     "del": 12,
+     "fc": 28,
+     "cr": "09-25 10:10"
+    }
+   ],
+   "r810": [],
+   "created": "09-25 10:10",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1EuF7mRpRSLW2-0HUB9JGaesVufxlChc_/view",
+   "cop": 6,
+   "unres": 6,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "代理ログイン機能"
+  },
+  {
+   "ticket": "2047",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 13020,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 124,
+     "del": 5,
+     "fc": 2,
+     "cr": "09-25 10:10"
+    }
+   ],
+   "r810": [],
+   "created": "09-25 10:10",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/11SEMPZkZkcGho88vF8o8b79g4cesFPtC/view?usp=drive_link",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "Blob ダウンロード失敗時にサーバーの文言を保持する"
+  },
   {
    "ticket": "1576",
    "dev": "bien",
@@ -142,10 +204,10 @@
      "num": 12971,
      "cf": "ok",
      "st": "open",
-     "nc": 21,
+     "nc": 22,
      "add": 1869,
-     "del": 842,
-     "fc": 155,
+     "del": 702,
+     "fc": 154,
      "cr": "09-22 19:36"
     }
    ],
@@ -361,7 +423,7 @@
    "r810": [
     {
      "num": 12951,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 1,
      "add": 149,
@@ -463,7 +525,7 @@
     {
      "num": 12939,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 7,
      "add": 1000,
      "del": 32,
