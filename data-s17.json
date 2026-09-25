@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-25 14:46",
+ "updated": "2026-09-25 15:21",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -761,7 +761,18 @@
    "dev": "bien",
    "bien": true,
    "sid": "",
-   "base": [],
+   "base": [
+    {
+     "num": 13021,
+     "cf": "ok",
+     "st": "open",
+     "nc": 14,
+     "add": 3326,
+     "del": 12,
+     "fc": 28,
+     "cr": "09-25 10:10"
+    }
+   ],
    "r810": [
     {
      "num": 12910,
@@ -817,12 +828,14 @@
    "created": "09-15 19:58",
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/1EuF7mRpRSLW2-0HUB9JGaesVufxlChc_/view",
-   "cop": 20,
-   "unres": 13,
+   "cop": 6,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "代理ログイン機能"
   },
@@ -836,7 +849,7 @@
     {
      "num": 12803,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 10,
      "add": 602,
      "del": 94,
@@ -1134,7 +1147,18 @@
    "dev": "dat",
    "bien": false,
    "sid": "",
-   "base": [],
+   "base": [
+    {
+     "num": 13020,
+     "cf": "ok",
+     "st": "open",
+     "nc": 4,
+     "add": 129,
+     "del": 5,
+     "fc": 2,
+     "cr": "09-25 10:10"
+    }
+   ],
    "r810": [
     {
      "num": 12768,
@@ -1150,12 +1174,14 @@
    "created": "09-15 09:37",
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/11SEMPZkZkcGho88vF8o8b79g4cesFPtC/view?usp=drive_link",
-   "cop": 1,
+   "cop": 0,
    "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "Blob ダウンロード失敗時にサーバーの文言を保持する"
   },

@@ -1,10 +1,8 @@
 {
- "updated": "2026-09-25 15:12",
+ "updated": "2026-09-25 15:19",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
-  "1708",
-  "2047",
   "1576",
   "1893",
   "2029",
@@ -21,70 +19,6 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
-  {
-   "ticket": "1708",
-   "dev": "bien",
-   "bien": true,
-   "sid": "",
-   "base": [
-    {
-     "num": 13021,
-     "cf": "ok",
-     "st": "open",
-     "nc": 14,
-     "add": 3326,
-     "del": 12,
-     "fc": 28,
-     "cr": "09-25 10:10"
-    }
-   ],
-   "r810": [],
-   "created": "09-25 10:10",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1EuF7mRpRSLW2-0HUB9JGaesVufxlChc_/view",
-   "cop": 6,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
-     "kanayam"
-    ]
-   },
-   "title": "代理ログイン機能"
-  },
-  {
-   "ticket": "2047",
-   "dev": "bien",
-   "bien": true,
-   "sid": "",
-   "base": [
-    {
-     "num": 13020,
-     "cf": "ok",
-     "st": "open",
-     "nc": 4,
-     "add": 129,
-     "del": 5,
-     "fc": 2,
-     "cr": "09-25 10:10"
-    }
-   ],
-   "r810": [],
-   "created": "09-25 10:10",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/11SEMPZkZkcGho88vF8o8b79g4cesFPtC/view?usp=drive_link",
-   "cop": 0,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
-     "kanayam"
-    ]
-   },
-   "title": "Blob ダウンロード失敗時にサーバーの文言を保持する"
-  },
   {
    "ticket": "1576",
    "dev": "bien",
