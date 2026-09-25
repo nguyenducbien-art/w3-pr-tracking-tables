@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-22 18:13",
+ "updated": "2026-09-25 11:24",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -846,7 +846,9 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
+    "ch": [
+     "kanayam"
+    ],
     "pd": [
      "kanayam"
     ]
@@ -1444,7 +1446,9 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
+    "ch": [
+     "kanayam"
+    ],
     "pd": [
      "kanayam"
     ]
@@ -2548,7 +2552,9 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
+    "ch": [
+     "kanayam"
+    ],
     "pd": [
      "kanayam"
     ]
@@ -5188,7 +5194,9 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
+    "ch": [
+     "kanayam"
+    ],
     "pd": [
      "kanayam"
     ]
