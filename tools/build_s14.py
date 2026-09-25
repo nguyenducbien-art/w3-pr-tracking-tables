@@ -69,10 +69,16 @@ function render(D){
   // reviewers: ✓approve (xanh) · ✗changes (đỏ) · ⏳được request chưa review (xám)
   function rvwCell(r){
     if(!r) return '<span class="cf-na">—</span>';
-    var o=[];
-    (r.ap||[]).forEach(function(n){o.push('<span class="rv-ap" title="đã approve">✓'+esc(n)+'</span>');});
-    (r.ch||[]).forEach(function(n){o.push('<span class="rv-ch" title="request changes">✗'+esc(n)+'</span>');});
-    (r.pd||[]).forEach(function(n){o.push('<span class="rv-pd" title="được assign, chưa review">⏳'+esc(n)+'</span>');});
+    var o=[], ap=r.ap||[], ch=r.ch||[], pd=r.pd||[];
+    // GitHub keeps a reviewer's last opinion (ap/ch) after a re-request (pd) → same person in both;
+    // render ONE combined marker instead of "✗name ⏳name".
+    ap.forEach(function(n){ if(pd.indexOf(n)<0) o.push('<span class="rv-ap" title="đã approve">✓'+esc(n)+'</span>');});
+    ch.forEach(function(n){ if(pd.indexOf(n)<0) o.push('<span class="rv-ch" title="request changes">✗'+esc(n)+'</span>');});
+    pd.forEach(function(n){
+      if(ch.indexOf(n)>=0) o.push('<span class="rv-pd" title="đã request changes, đang chờ review lại"><span class="rv-ch" style="margin:0">✗</span>→⏳'+esc(n)+'</span>');
+      else if(ap.indexOf(n)>=0) o.push('<span class="rv-pd" title="đã approve, được mời review lại"><span class="rv-ap" style="margin:0">✓</span>→⏳'+esc(n)+'</span>');
+      else o.push('<span class="rv-pd" title="được assign, chưa review">⏳'+esc(n)+'</span>');
+    });
     return o.length?o.join(' '):'<span class="cf-na">—</span>';
   }
 
@@ -161,7 +167,7 @@ function render(D){
      +'<span class="pill pill-approved">APPROVED</span> <span class="pill pill-changes">CHANGES</span> '
      +'<span class="pill pill-merged">MERGED</span>.<br>'
      +'Conflict: ✓ MERGEABLE / ✗ CONFLICTING. Report ✓ = có link Drive self-review.<br>'
-     +'Reviewers (theo PR→base): <span class="rv-ap">✓tên</span> đã approve · <span class="rv-ch">✗tên</span> request changes · <span class="rv-pd">⏳tên</span> được assign chưa review.<br>'
+     +'Reviewers (theo PR→base): <span class="rv-ap">✓tên</span> đã approve · <span class="rv-ch">✗tên</span> request changes · <span class="rv-pd">⏳tên</span> được assign chưa review · <span class="rv-pd"><span class="rv-ch" style="margin:0">✗</span>→⏳tên</span> đã request changes, đang chờ review lại.<br>'
      +'🔴 Bảng 1 (common) đếm Copilot chỉ từ PR→base (bỏ r727 cùng code sync).<br>'
      +'Created = thời điểm tạo PR sớm nhất của ticket, định dạng MM-DD HH:MM (giờ VN, UTC+7).</div>'
    +'</div>';

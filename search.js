@@ -154,10 +154,15 @@
   }
   function rvw(r) {
     if (!r) return '—';
-    var o = [];
-    (r.ap || []).forEach(function (x) { o.push('<span class="rv-ap">✓' + esc(x) + '</span>'); });
-    (r.ch || []).forEach(function (x) { o.push('<span class="rv-ch">✗' + esc(x) + '</span>'); });
-    (r.pd || []).forEach(function (x) { o.push('<span class="rv-pd">⏳' + esc(x) + '</span>'); });
+    var o = [], ap = r.ap || [], ch = r.ch || [], pd = r.pd || [];
+    // same combined marker as the tables: last opinion + re-requested → "✗→⏳name" / "✓→⏳name"
+    ap.forEach(function (x) { if (pd.indexOf(x) < 0) o.push('<span class="rv-ap">✓' + esc(x) + '</span>'); });
+    ch.forEach(function (x) { if (pd.indexOf(x) < 0) o.push('<span class="rv-ch">✗' + esc(x) + '</span>'); });
+    pd.forEach(function (x) {
+      if (ch.indexOf(x) >= 0) o.push('<span class="rv-pd" title="đã request changes, đang chờ review lại"><span class="rv-ch" style="margin:0">✗</span>→⏳' + esc(x) + '</span>');
+      else if (ap.indexOf(x) >= 0) o.push('<span class="rv-pd" title="đã approve, được mời review lại"><span class="rv-ap" style="margin:0">✓</span>→⏳' + esc(x) + '</span>');
+      else o.push('<span class="rv-pd" title="được assign, chưa review">⏳' + esc(x) + '</span>');
+    });
     return o.length ? o.join(' ') : '—';
   }
   function pageLink(s, n) { return esc(s.href) + '#q=' + encodeURIComponent(n); }

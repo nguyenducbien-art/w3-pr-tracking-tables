@@ -165,19 +165,25 @@ def pr_detail(n):
             "nc": nc, "add": add, "del": dele, "fc": fc, "rvw": rvw}
 
 def merge_rvw(ms):
-    """Ticket reviewers = union over its source PRs, one state per person (pending > changes > approved).
+    """Ticket reviewers = union over its source PRs.
+    ap/ch = each person's opinion (changes beats approved across PRs); pd = currently requested.
+    A person can be in pd AND ap/ch (re-requested after reviewing) — kept on purpose: the page renders
+    one combined marker "✗→⏳name" (same as s12–s14, whose data carries both).
     Common ticket: pass base PRs only — the r810 sync PR is merged without human review (same as Copilot count)."""
-    rank = {"pd": 0, "ch": 1, "ap": 2}
-    st = {}
+    op, pend = {}, []
     for m in sorted(ms, key=lambda m: m["created"]):
-        for k in ("pd", "ch", "ap"):
-            for nm in m["det"]["rvw"][k]:
-                if nm not in st or rank[k] < rank[st[nm]]:
-                    st[nm] = k
-    out = {"ap": [], "ch": [], "pd": []}
-    for nm, k in st.items():
-        out[k].append(nm)
-    return out
+        r = m["det"]["rvw"]
+        for nm in r["ch"]:
+            op[nm] = "ch"
+        for nm in r["ap"]:
+            if op.get(nm) != "ch":
+                op[nm] = "ap"
+        for nm in r["pd"]:
+            if nm not in pend:
+                pend.append(nm)
+    return {"ap": [n for n, k in op.items() if k == "ap"],
+            "ch": [n for n, k in op.items() if k == "ch"],
+            "pd": pend}
 
 def build():
     ensure_account()

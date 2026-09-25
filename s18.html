@@ -144,7 +144,7 @@
 </style>
 </head>
 <body>
-<nav class="topnav"><div class="topnav-inner"><span class="topnav-brand">W3 PR Tracking</span><span class="topnav-sep">/</span><a href="s12.html?v=1790146673">Sprint 12</a><a href="index.html?v=1790146673">Sprint 13</a><a href="s14.html?v=1790146673">Sprint 14</a><a href="s15.html?v=1790146673">Sprint 15+16</a><a href="s17.html?v=1790146673">Sprint 17</a><a href="s18.html?v=1790146673" class="active">Sprint 18</a></div></nav><script src="search.js?v=1790146673" data-sprints="[{&quot;label&quot;: &quot;Sprint 12&quot;, &quot;href&quot;: &quot;s12.html&quot;, &quot;data&quot;: &quot;data-s12.json&quot;}, {&quot;label&quot;: &quot;Sprint 13&quot;, &quot;href&quot;: &quot;index.html&quot;, &quot;data&quot;: &quot;data.json&quot;}, {&quot;label&quot;: &quot;Sprint 14&quot;, &quot;href&quot;: &quot;s14.html&quot;, &quot;data&quot;: &quot;data-s14.json&quot;, &quot;screens&quot;: &quot;screens-s14.json&quot;}, {&quot;label&quot;: &quot;Sprint 15+16&quot;, &quot;href&quot;: &quot;s15.html&quot;, &quot;data&quot;: &quot;data-s15.json&quot;, &quot;plan&quot;: &quot;s15-plan.json&quot;}, {&quot;label&quot;: &quot;Sprint 17&quot;, &quot;href&quot;: &quot;s17.html&quot;, &quot;data&quot;: &quot;data-s17.json&quot;}, {&quot;label&quot;: &quot;Sprint 18&quot;, &quot;href&quot;: &quot;s18.html&quot;, &quot;data&quot;: &quot;data-s18.json&quot;, &quot;rlabel&quot;: &quot;→r0810/0921&quot;}]" defer></script>
+<nav class="topnav"><div class="topnav-inner"><span class="topnav-brand">W3 PR Tracking</span><span class="topnav-sep">/</span><a href="s12.html?v=1790309753">Sprint 12</a><a href="index.html?v=1790309753">Sprint 13</a><a href="s14.html?v=1790309753">Sprint 14</a><a href="s15.html?v=1790309753">Sprint 15+16</a><a href="s17.html?v=1790309753">Sprint 17</a><a href="s18.html?v=1790309753" class="active">Sprint 18</a></div></nav><script src="search.js?v=1790309753" data-sprints="[{&quot;label&quot;: &quot;Sprint 12&quot;, &quot;href&quot;: &quot;s12.html&quot;, &quot;data&quot;: &quot;data-s12.json&quot;}, {&quot;label&quot;: &quot;Sprint 13&quot;, &quot;href&quot;: &quot;index.html&quot;, &quot;data&quot;: &quot;data.json&quot;}, {&quot;label&quot;: &quot;Sprint 14&quot;, &quot;href&quot;: &quot;s14.html&quot;, &quot;data&quot;: &quot;data-s14.json&quot;, &quot;screens&quot;: &quot;screens-s14.json&quot;}, {&quot;label&quot;: &quot;Sprint 15+16&quot;, &quot;href&quot;: &quot;s15.html&quot;, &quot;data&quot;: &quot;data-s15.json&quot;, &quot;plan&quot;: &quot;s15-plan.json&quot;}, {&quot;label&quot;: &quot;Sprint 17&quot;, &quot;href&quot;: &quot;s17.html&quot;, &quot;data&quot;: &quot;data-s17.json&quot;}, {&quot;label&quot;: &quot;Sprint 18&quot;, &quot;href&quot;: &quot;s18.html&quot;, &quot;data&quot;: &quot;data-s18.json&quot;, &quot;rlabel&quot;: &quot;→r0810/0921&quot;}]" defer></script>
 <div id="app"></div>
 <script src="https://nguyenducbien-art.github.io/pixel-pets/pixel-pets.js" data-min="2" data-max="5" defer></script>
 <script id="table-data" type="application/json"></script>
@@ -200,10 +200,16 @@ function render(D){
   // reviewers: ✓approve (xanh) · ✗changes (đỏ) · ⏳được request chưa review (xám)
   function rvwCell(r){
     if(!r) return '<span class="cf-na">—</span>';
-    var o=[];
-    (r.ap||[]).forEach(function(n){o.push('<span class="rv-ap" title="đã approve">✓'+esc(n)+'</span>');});
-    (r.ch||[]).forEach(function(n){o.push('<span class="rv-ch" title="request changes">✗'+esc(n)+'</span>');});
-    (r.pd||[]).forEach(function(n){o.push('<span class="rv-pd" title="được assign, chưa review">⏳'+esc(n)+'</span>');});
+    var o=[], ap=r.ap||[], ch=r.ch||[], pd=r.pd||[];
+    // GitHub keeps a reviewer's last opinion (ap/ch) after a re-request (pd) → same person in both;
+    // render ONE combined marker instead of "✗name ⏳name".
+    ap.forEach(function(n){ if(pd.indexOf(n)<0) o.push('<span class="rv-ap" title="đã approve">✓'+esc(n)+'</span>');});
+    ch.forEach(function(n){ if(pd.indexOf(n)<0) o.push('<span class="rv-ch" title="request changes">✗'+esc(n)+'</span>');});
+    pd.forEach(function(n){
+      if(ch.indexOf(n)>=0) o.push('<span class="rv-pd" title="đã request changes, đang chờ review lại"><span class="rv-ch" style="margin:0">✗</span>→⏳'+esc(n)+'</span>');
+      else if(ap.indexOf(n)>=0) o.push('<span class="rv-pd" title="đã approve, được mời review lại"><span class="rv-ap" style="margin:0">✓</span>→⏳'+esc(n)+'</span>');
+      else o.push('<span class="rv-pd" title="được assign, chưa review">⏳'+esc(n)+'</span>');
+    });
     return o.length?o.join(' '):'<span class="cf-na">—</span>';
   }
 
@@ -292,7 +298,7 @@ function render(D){
      +'<span class="pill pill-approved">APPROVED</span> <span class="pill pill-changes">CHANGES</span> '
      +'<span class="pill pill-merged">MERGED</span>.<br>'
      +'Conflict: ✓ MERGEABLE / ✗ CONFLICTING. Report ✓ = có link Drive self-review.<br>'
-     +'Reviewers (theo PR→base): <span class="rv-ap">✓tên</span> đã approve · <span class="rv-ch">✗tên</span> request changes · <span class="rv-pd">⏳tên</span> được assign chưa review.<br>'
+     +'Reviewers (theo PR→base): <span class="rv-ap">✓tên</span> đã approve · <span class="rv-ch">✗tên</span> request changes · <span class="rv-pd">⏳tên</span> được assign chưa review · <span class="rv-pd"><span class="rv-ch" style="margin:0">✗</span>→⏳tên</span> đã request changes, đang chờ review lại.<br>'
      +'🔴 Bảng 1 (common) đếm Copilot chỉ từ PR→base (bỏ r810 cùng code sync).<br>'
      +'Created = thời điểm tạo PR sớm nhất của ticket, định dạng MM-DD HH:MM (giờ VN, UTC+7).</div>'
    +'</div>';
