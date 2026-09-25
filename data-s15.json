@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-25 11:24",
+ "updated": "2026-09-25 17:16",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -849,9 +849,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "帳票発行前チェックを行う onBeforeExecute フックを追加"
   },
@@ -1449,9 +1447,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "ulink セルに認証付きダウンロードハンドラの口を追加"
   },
@@ -2555,9 +2551,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "EditSection に readOnlyFor 追加・FieldRenderer の未選択 flag を値なし表示 (→base)"
   },
@@ -5197,9 +5191,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "画面設定（歯車）遷移を項目表示設定のパラメータ契約に整合"
   },
