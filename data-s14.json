@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-25 17:27",
+ "updated": "2026-09-28 09:35",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -129,9 +129,9 @@
    "base": [
     {
      "num": 11656,
-     "cf": "bad",
-     "st": "changes",
-     "nc": 5,
+     "cf": "ok",
+     "st": "approved",
+     "nc": 6,
      "add": 251,
      "del": 8,
      "fc": 5,
@@ -156,10 +156,10 @@
    "cop": 0,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
+    "ch": [],
     "pd": []
    },
    "title": "一覧画面リロード時のグリッド一覧データ二重取得を解消"

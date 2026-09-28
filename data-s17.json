@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-25 17:24",
+ "updated": "2026-09-28 09:27",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -765,7 +765,7 @@
     {
      "num": 13021,
      "cf": "ok",
-     "st": "open",
+     "st": "changes",
      "nc": 14,
      "add": 3326,
      "del": 12,
@@ -832,10 +832,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
-    "pd": [
+    "ch": [
      "kanayam"
-    ]
+    ],
+    "pd": []
    },
    "title": "代理ログイン機能"
   },
@@ -1151,7 +1151,7 @@
     {
      "num": 13020,
      "cf": "ok",
-     "st": "open",
+     "st": "approved",
      "nc": 4,
      "add": 129,
      "del": 5,
@@ -1177,11 +1177,11 @@
    "cop": 0,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
+    "ap": [
      "kanayam"
-    ]
+    ],
+    "ch": [],
+    "pd": []
    },
    "title": "Blob ダウンロード失敗時にサーバーの文言を保持する"
   },
@@ -1685,10 +1685,10 @@
     {
      "num": 12665,
      "cf": "ok",
-     "st": "changes",
-     "nc": 3,
-     "add": 326,
-     "del": 28,
+     "st": "approved",
+     "nc": 4,
+     "add": 396,
+     "del": 54,
      "fc": 4,
      "cr": "09-09 15:59"
     }
@@ -1711,10 +1711,10 @@
    "cop": 0,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
+    "ch": [],
     "pd": []
    },
    "title": "日付入力の有効範囲外と Tab 移動時の E040 検証を移行前の挙動へ揃える"
@@ -1831,11 +1831,11 @@
     {
      "num": 12635,
      "cf": "ok",
-     "st": "changes",
-     "nc": 7,
-     "add": 1710,
+     "st": "approved",
+     "nc": 8,
+     "add": 2017,
      "del": 229,
-     "fc": 17,
+     "fc": 18,
      "cr": "09-08 16:45"
     }
    ],
@@ -1857,10 +1857,10 @@
    "cop": 1,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
+    "ch": [],
     "pd": []
    },
    "title": "共通_一覧選択_列フィルタ・並べ替え変更時に選択を保持する"
@@ -2025,8 +2025,8 @@
     "num": 12866,
     "cf": "ok",
     "st": "open",
-    "nc": 5,
-    "add": 181,
+    "nc": 6,
+    "add": 182,
     "del": 43,
     "fc": 9,
     "cr": "09-17 13:19"
