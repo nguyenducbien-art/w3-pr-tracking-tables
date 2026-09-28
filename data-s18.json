@@ -1,8 +1,9 @@
 {
- "updated": "2026-09-26 21:14",
+ "updated": "2026-09-28 11:14",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2037",
   "1576",
   "1893",
   "2029",
@@ -19,6 +20,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2037",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 13051,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 746,
+     "del": 97,
+     "fc": 6,
+     "cr": "09-28 10:58"
+    }
+   ],
+   "r810": [],
+   "created": "09-28 10:58",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/16pfPac1SZ-KzjW0fafxcdShSmGjT5_QM/view?usp=drive_link",
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "共通_一覧CSV_列フィルタで隠れた選択行も件数に数える"
+  },
   {
    "ticket": "1576",
    "dev": "bien",
