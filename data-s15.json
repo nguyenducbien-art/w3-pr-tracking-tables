@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-25 17:16",
+ "updated": "2026-09-28 09:34",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -2522,10 +2522,10 @@
      "num": 11914,
      "cf": "ok",
      "st": "changes",
-     "nc": 2,
-     "add": 213,
-     "del": 3,
-     "fc": 7,
+     "nc": 3,
+     "add": 231,
+     "del": 4,
+     "fc": 8,
      "cr": "08-12 16:13"
     }
    ],
@@ -2551,7 +2551,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "EditSection に readOnlyFor 追加・FieldRenderer の未選択 flag を値なし表示 (→base)"
   },
