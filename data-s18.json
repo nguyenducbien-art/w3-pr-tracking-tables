@@ -1,8 +1,9 @@
 {
- "updated": "2026-09-28 14:55",
+ "updated": "2026-09-28 15:07",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1708",
   "2037",
   "1576",
   "1893",
@@ -20,6 +21,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "1708",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13064,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 103,
+     "del": 20,
+     "fc": 6,
+     "cr": "09-28 15:01"
+    }
+   ],
+   "created": "09-28 15:01",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1EuF7mRpRSLW2-0HUB9JGaesVufxlChc_/view",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "代理ログインの切替先の選択の破棄と応答の検証を r20260810 へ反映する"
+  },
   {
    "ticket": "2037",
    "dev": "bien",
