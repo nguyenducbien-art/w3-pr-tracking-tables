@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-28 14:31",
+ "updated": "2026-09-28 14:55",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -379,7 +379,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "ヘッダーにユニット情報を追加し、ナビゲーションの欠けと余白を是正"
   },
