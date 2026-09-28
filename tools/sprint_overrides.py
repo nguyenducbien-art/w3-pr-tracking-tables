@@ -7,6 +7,8 @@
 PR_SPRINT = {
     13020: 17,   # AR-2047 port → base (tạo 25/09) — việc Sprint 17; user yêu cầu 25/09
     13021: 17,   # AR-1708 port → base (tạo 25/09) — việc Sprint 17; user yêu cầu 25/09
+    13051: 17,   # AR-2037 port → base (tạo 28/09) — việc Sprint 17; user yêu cầu 28/09
+    13068: 17,   # AR-2037 fix tiếp → r20260810 (tạo 28/09) — việc Sprint 17; user yêu cầu 28/09
 }
 
 
