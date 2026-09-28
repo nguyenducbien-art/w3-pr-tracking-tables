@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-28 16:36",
+ "updated": "2026-09-28 16:50",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,7 +10,6 @@
   "2029",
   "2045",
   "1521",
-  "1636",
   "2063",
   "2097",
   "1500",
@@ -252,36 +251,6 @@
     "pd": []
    },
    "title": "画面設定(歯車)遷移の unit_roll_id を can_display_setting から取得する (r20260810 取り込み)"
-  },
-  {
-   "ticket": "1636",
-   "dev": "bien",
-   "bien": true,
-   "sid": "",
-   "base": [],
-   "r810": [
-    {
-     "num": 12953,
-     "cf": "ok",
-     "st": "open",
-     "nc": 6,
-     "add": 325,
-     "del": 21,
-     "fc": 4,
-     "cr": "09-22 14:29"
-    }
-   ],
-   "created": "09-22 14:29",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1-VoZx4zeN5F3YXoHamx0YOM6Pu2nVirk/view?usp=sharing",
-   "cop": 2,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "帳票発行前チェックの待機中にダイアログを閉じた実行を無効化し発行させない"
   },
   {
    "ticket": "2063",
