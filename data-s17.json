@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-28 14:46",
+ "updated": "2026-09-28 15:21",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -766,8 +766,8 @@
      "num": 13021,
      "cf": "ok",
      "st": "changes",
-     "nc": 15,
-     "add": 3347,
+     "nc": 16,
+     "add": 3377,
      "del": 12,
      "fc": 28,
      "cr": "09-25 10:10"
@@ -829,13 +829,15 @@
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/1EuF7mRpRSLW2-0HUB9JGaesVufxlChc_/view",
    "cop": 7,
-   "unres": 1,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "代理ログイン機能"
   },
