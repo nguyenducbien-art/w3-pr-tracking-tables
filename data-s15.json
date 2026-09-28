@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-28 18:32",
+ "updated": "2026-09-29 01:23",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -445,10 +445,10 @@
      "num": 13073,
      "cf": "ok",
      "st": "open",
-     "nc": 4,
-     "add": 420,
-     "del": 18,
-     "fc": 8,
+     "nc": 7,
+     "add": 725,
+     "del": 32,
+     "fc": 10,
      "cr": "09-28 17:56"
     }
    ],
@@ -465,14 +465,16 @@
     }
    ],
    "created": "08-28 10:17",
-   "drive": false,
-   "drvurl": "",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1CFcqLLRQAv0cfKEyQ5f9mldZqSyn4Nj4/view",
    "cop": 4,
-   "unres": 4,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "ユニット作成後に再ログインなしで切替候補へ反映する"
   },

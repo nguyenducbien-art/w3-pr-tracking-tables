@@ -1,8 +1,9 @@
 {
- "updated": "2026-09-28 18:27",
+ "updated": "2026-09-29 01:15",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1553",
   "1478",
   "1708",
   "1576",
@@ -19,6 +20,38 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "1553",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 13077,
+     "cf": "ok",
+     "st": "open",
+     "nc": 6,
+     "add": 344,
+     "del": 5,
+     "fc": 8,
+     "cr": "09-29 00:39"
+    }
+   ],
+   "r810": [],
+   "created": "09-29 00:39",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1_Srg-sOKSEiij-642y0kOLWhZKZHkJ-Y/view",
+   "cop": 3,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": [
+     "kanayam"
+    ]
+   },
+   "title": "共通 AutoGrowTextarea を base へ追加する"
+  },
   {
    "ticket": "1478",
    "dev": "khoa",
