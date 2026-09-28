@@ -1,8 +1,9 @@
 {
- "updated": "2026-09-28 16:50",
+ "updated": "2026-09-28 16:58",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1551",
   "1478",
   "1708",
   "1576",
@@ -20,6 +21,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "1551",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13072,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 454,
+     "del": 44,
+     "fc": 8,
+     "cr": "09-28 16:51"
+    }
+   ],
+   "created": "09-28 16:51",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1Ki-48xqESrnlmX6Fnbo0pd5tknIZQ5Q0/view?usp=sharing",
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ulink セルの描画オプションの型を公開バレルから export する #ANGULAR…"
+  },
   {
    "ticket": "1478",
    "dev": "khoa",
