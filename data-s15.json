@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-28 14:02",
+ "updated": "2026-09-28 14:38",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -809,7 +809,7 @@
     {
      "num": 12300,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 11,
      "add": 749,
      "del": 18,
@@ -845,13 +845,11 @@
    "cop": 6,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "帳票発行前チェックを行う onBeforeExecute フックを追加"
   },
@@ -5163,7 +5161,7 @@
     {
      "num": 11738,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 12,
      "add": 317,
      "del": 69,
@@ -5189,13 +5187,11 @@
    "cop": 4,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "画面設定（歯車）遷移を項目表示設定のパラメータ契約に整合"
   },
