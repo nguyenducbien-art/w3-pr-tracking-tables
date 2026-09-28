@@ -6,6 +6,10 @@
 # Usage: python3 build_s15.py [../s15-plan.json]
 import json, re, sys, ast
 from sprints import nav_html
+from sprint_overrides import PR_SPRINT
+# PR xếp tay vào Sprint 15+16 dù tạo sau 06/09 — ghi rõ trên subtitle để khỏi thắc mắc
+_MANUAL = sorted(n for n, sp in PR_SPRINT.items() if sp == 15)
+_MANUAL_TXT = (" Xếp tay vào Sprint 15+16 (PR tạo sau 06/09): " + ", ".join("#%d" % n for n in _MANUAL) + ".") if _MANUAL else ""
 
 PLAN = json.load(open(sys.argv[1] if len(sys.argv) > 1 else "s15-plan.json"))
 NAV  = nav_html("Sprint 15+16")
@@ -46,7 +50,7 @@ for _a, _b in [
     # page s15 = Sprint 15 + 16, chốt 06/09 (PR từ 07/09 sang page Sprint 17) → nói rõ ở subtitle
     ("tạo từ <b>2026-08-01</b> vào <b>develop/base</b> / <b>r20260810</b> — chia 2 bảng",
      "tạo từ <b>2026-08-01</b> đến hết <b>2026-09-06</b> (ngày cuối Sprint 15+16) vào <b>develop/base</b>"
-     " / <b>r20260810</b> — PR từ 07/09 xem ở page Sprint 17. Chia 2 bảng"),
+     " / <b>r20260810</b> — PR từ 07/09 xem ở page Sprint 17." + _MANUAL_TXT + " Chia 2 bảng"),
     ('<a href="index.html" style="font-family:inherit;font-size:12px">← Sprint 13</a>',
      '<a href="s17.html" style="font-family:inherit;font-size:12px">Sprint 17 →</a>'),
 ]:
