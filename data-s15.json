@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-28 15:13",
+ "updated": "2026-09-28 18:25",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1406,16 +1406,26 @@
    "base": [
     {
      "num": 12083,
-     "cf": "bad",
+     "cf": "ok",
      "st": "changes",
-     "nc": 7,
-     "add": 582,
-     "del": 9,
+     "nc": 8,
+     "add": 591,
+     "del": 19,
      "fc": 9,
      "cr": "08-18 14:38"
     }
    ],
    "r810": [
+    {
+     "num": 13072,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 454,
+     "del": 44,
+     "fc": 8,
+     "cr": "09-28 16:51"
+    },
     {
      "num": 12317,
      "cf": "ok",
@@ -1447,7 +1457,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "ulink セルに認証付きダウンロードハンドラの口を追加"
   },
