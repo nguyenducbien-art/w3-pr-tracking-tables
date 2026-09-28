@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-28 15:21",
+ "updated": "2026-09-28 16:06",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1552,7 +1552,18 @@
    "dev": "bien",
    "bien": true,
    "sid": "",
-   "base": [],
+   "base": [
+    {
+     "num": 13051,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 888,
+     "del": 131,
+     "fc": 6,
+     "cr": "09-28 10:58"
+    }
+   ],
    "r810": [
     {
      "num": 12708,
@@ -1568,12 +1579,14 @@
    "created": "09-11 10:57",
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/16pfPac1SZ-KzjW0fafxcdShSmGjT5_QM/view?usp=drive_link",
-   "cop": 1,
+   "cop": 2,
    "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "共通_一覧CSV_列フィルタで隠れた選択行も件数に数える"
   },
