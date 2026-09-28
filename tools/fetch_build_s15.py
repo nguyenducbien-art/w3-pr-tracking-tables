@@ -10,6 +10,7 @@ Self-contained: chỉ dùng gh + python stdlib. KHÔNG chứa secret.
 Usage: python3 fetch_build_s15.py [output_data.json]
 """
 import json, re, subprocess, sys, datetime, time
+from sprint_overrides import keep
 
 REPO = "dialog-inc/w3package_v2"
 OWNER, NAME = "dialog-inc", "w3package_v2"
@@ -98,8 +99,9 @@ def clean_title(t):
 def gh_list(branch):
     out = run(["gh","pr","list","--repo",REPO,"--base","mimosa/frontend/develop/"+branch,
                "--state","all","--limit","400","--json","number,state,createdAt,headRefName,author,title"])
+    # sprint_overrides: PR xếp tay đè luật ngày (vd PR port → base của việc sprint trước)
     return [p for p in json.loads(out)
-            if p["state"] != "CLOSED" and SINCE <= vn_date(p["createdAt"]) <= UNTIL]
+            if p["state"] != "CLOSED" and keep(p, 15, SINCE <= vn_date(p["createdAt"]) <= UNTIL)]
 
 _Q = ('query($n:Int!){repository(owner:"%s",name:"%s"){pullRequest(number:$n){'
       'state isDraft reviewDecision mergeable additions deletions changedFiles commits{totalCount} '
