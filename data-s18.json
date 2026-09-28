@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-28 17:32",
+ "updated": "2026-09-28 17:43",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -533,7 +533,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "ログイン後に未認証で弾かれた画面へ戻るよう修正"
   },
