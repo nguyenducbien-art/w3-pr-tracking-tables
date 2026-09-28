@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-28 11:49",
+ "updated": "2026-09-28 13:17",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -203,10 +203,10 @@
      "num": 12954,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 187,
-     "del": 5,
-     "fc": 2,
+     "nc": 4,
+     "add": 314,
+     "del": 222,
+     "fc": 17,
      "cr": "09-22 14:29"
     }
    ],
@@ -214,13 +214,13 @@
    "drive": false,
    "drvurl": "",
    "cop": 1,
-   "unres": 1,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
     "pd": []
    },
-   "title": "ユニット切替後の取得待ち中に前ユニットのロール id を返さないよう修正"
+   "title": "画面設定(歯車)遷移の unit_roll_id を can_display_setting から取得する (r20260810 取り込み)"
   },
   {
    "ticket": "1636",

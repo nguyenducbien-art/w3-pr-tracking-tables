@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-28 12:42",
+ "updated": "2026-09-28 13:23",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -2523,7 +2523,7 @@
     {
      "num": 11914,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 3,
      "add": 231,
      "del": 4,
@@ -2549,13 +2549,11 @@
    "cop": 1,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "EditSection に readOnlyFor 追加・FieldRenderer の未選択 flag を値なし表示 (→base)"
   },
@@ -5188,8 +5186,8 @@
    "created": "08-07 14:44",
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/1yab_onhbnvUVzinqnnFr0fu9gxwIq8-G/view?usp=sharing",
-   "cop": 2,
-   "unres": 0,
+   "cop": 4,
+   "unres": 2,
    "rvw": {
     "ap": [],
     "ch": [
