@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-28 16:58",
+ "updated": "2026-09-28 17:15",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,7 +10,6 @@
   "1893",
   "2029",
   "2045",
-  "1521",
   "2063",
   "2097",
   "1500",
@@ -252,36 +251,6 @@
     "pd": []
    },
    "title": "通信失敗時のエラー文言を多言語化し内部文言の露出を止める"
-  },
-  {
-   "ticket": "1521",
-   "dev": "bien",
-   "bien": true,
-   "sid": "",
-   "base": [],
-   "r810": [
-    {
-     "num": 12954,
-     "cf": "bad",
-     "st": "open",
-     "nc": 5,
-     "add": 316,
-     "del": 224,
-     "fc": 17,
-     "cr": "09-22 14:29"
-    }
-   ],
-   "created": "09-22 14:29",
-   "drive": false,
-   "drvurl": "",
-   "cop": 1,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "画面設定(歯車)遷移の unit_roll_id を can_display_setting から取得する (r20260810 取り込み)"
   },
   {
    "ticket": "2063",
