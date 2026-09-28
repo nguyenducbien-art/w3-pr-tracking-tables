@@ -1,9 +1,8 @@
 {
- "updated": "2026-09-28 18:20",
+ "updated": "2026-09-28 18:27",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
-  "1655",
   "1478",
   "1708",
   "1576",
@@ -20,36 +19,6 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
-  {
-   "ticket": "1655",
-   "dev": "bien",
-   "bien": true,
-   "sid": "",
-   "base": [
-    {
-     "num": 13073,
-     "cf": "ok",
-     "st": "open",
-     "nc": 4,
-     "add": 420,
-     "del": 18,
-     "fc": 8,
-     "cr": "09-28 17:56"
-    }
-   ],
-   "r810": [],
-   "created": "09-28 17:56",
-   "drive": false,
-   "drvurl": "",
-   "cop": 4,
-   "unres": 4,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "ユニット作成後に再ログインなしで切替候補へ反映する"
-  },
   {
    "ticket": "1478",
    "dev": "khoa",
