@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29 12:26",
+ "updated": "2026-09-29 12:38",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -91,7 +91,7 @@
     {
      "num": 13077,
      "cf": "ok",
-     "st": "open",
+     "st": "changes",
      "nc": 6,
      "add": 344,
      "del": 5,
@@ -107,10 +107,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
-    "pd": [
+    "ch": [
      "kanayam"
-    ]
+    ],
+    "pd": []
    },
    "title": "共通 AutoGrowTextarea を base へ追加する"
   },
@@ -367,7 +367,7 @@
     {
      "num": 13031,
      "cf": "ok",
-     "st": "open",
+     "st": "approved",
      "nc": 15,
      "add": 1105,
      "del": 121,
@@ -443,11 +443,11 @@
    "cop": 1,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
+    "ap": [
      "kanayam"
-    ]
+    ],
+    "ch": [],
+    "pd": []
    },
    "title": "ヘッダーにユニット情報を追加し、ナビゲーションの欠けと余白を是正"
   },
@@ -571,7 +571,7 @@
     {
      "num": 12996,
      "cf": "ok",
-     "st": "open",
+     "st": "approved",
      "nc": 9,
      "add": 1305,
      "del": 196,
@@ -607,11 +607,11 @@
    "cop": 1,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
+    "ap": [
      "kanayam"
-    ]
+    ],
+    "ch": [],
+    "pd": []
    },
    "title": "ログイン後に未認証で弾かれた画面へ戻るよう修正"
   },
