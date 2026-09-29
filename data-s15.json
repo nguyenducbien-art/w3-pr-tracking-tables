@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29 14:32",
+ "updated": "2026-09-29 15:28",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1462,7 +1462,7 @@
    ],
    "created": "08-18 14:38",
    "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1Ki-48xqESrnlmX6Fnbo0pd5tknIZQ5Q0/view?usp=sharing",
+   "drvurl": "https://drive.google.com/file/d/1lxIYv9rIRLrS2QT5e0w8pKi5rpcdhXIR/view?usp=sharing",
    "cop": 2,
    "unres": 0,
    "rvw": {
@@ -1470,7 +1470,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "ulink セルに認証付きダウンロードハンドラの口を追加"
   },
