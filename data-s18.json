@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29 13:36",
+ "updated": "2026-09-29 13:50",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -122,8 +122,8 @@
      "num": 13077,
      "cf": "ok",
      "st": "changes",
-     "nc": 7,
-     "add": 470,
+     "nc": 6,
+     "add": 344,
      "del": 5,
      "fc": 8,
      "cr": "09-29 00:39"
@@ -140,9 +140,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "共通 AutoGrowTextarea を base へ追加する"
   },
