@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29 16:10",
+ "updated": "2026-09-29 17:29",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -22,6 +22,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "642",
+   "dev": "hung",
+   "bien": false,
+   "sid": "445",
+   "base": [],
+   "r810": [
+    {
+     "num": 13115,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 815,
+     "del": 26,
+     "fc": 5,
+     "cr": "09-29 17:17"
+    }
+   ],
+   "created": "09-29 17:17",
+   "drive": false,
+   "drvurl": "",
+   "cop": 7,
+   "unres": 7,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "画面設定_項目別設定の設定背景色・設定文字色を AngularJS の kendo-color-picker と同じ形・挙動にする"
+  },
   {
    "ticket": "674",
    "dev": "hung",
