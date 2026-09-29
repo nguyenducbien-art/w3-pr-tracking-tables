@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29 12:20",
+ "updated": "2026-09-29 12:53",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -765,7 +765,7 @@
     {
      "num": 13021,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 16,
      "add": 3377,
      "del": 12,
@@ -831,13 +831,11 @@
    "cop": 7,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "代理ログイン機能"
   },
@@ -970,7 +968,7 @@
     {
      "num": 12781,
      "cf": "ok",
-     "st": "open",
+     "st": "approved",
      "nc": 6,
      "add": 480,
      "del": 13,
@@ -996,11 +994,11 @@
    "cop": 2,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
+    "ap": [
      "kanayam"
-    ]
+    ],
+    "ch": [],
+    "pd": []
    },
    "title": "一覧の展開行の開閉状態を行番号でなく行単位で保持するよう修正"
   },
@@ -1013,7 +1011,7 @@
     {
      "num": 12782,
      "cf": "ok",
-     "st": "open",
+     "st": "changes",
      "nc": 6,
      "add": 578,
      "del": 42,
@@ -1040,10 +1038,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
-    "pd": [
+    "ch": [
      "kanayam"
-    ]
+    ],
+    "pd": []
    },
    "title": "一覧の列フィルタがサーバーとクライアントに二重適用される不具合を修正"
   },
@@ -1116,7 +1114,7 @@
     {
      "num": 12770,
      "cf": "ok",
-     "st": "open",
+     "st": "approved",
      "nc": 4,
      "add": 285,
      "del": 9,
@@ -1142,11 +1140,11 @@
    "cop": 1,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
+    "ap": [
      "kanayam"
-    ]
+    ],
+    "ch": [],
+    "pd": []
    },
    "title": "ServerSync モードの CSV 出力で確認ダイアログ (Q015) が表示されない問題を修正"
   },
@@ -1562,7 +1560,7 @@
     {
      "num": 13051,
      "cf": "ok",
-     "st": "open",
+     "st": "changes",
      "nc": 2,
      "add": 888,
      "del": 131,
@@ -1599,10 +1597,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
-    "pd": [
+    "ch": [
      "kanayam"
-    ]
+    ],
+    "pd": []
    },
    "title": "共通_一覧CSV_列フィルタで隠れた選択行も件数に数える"
   },
