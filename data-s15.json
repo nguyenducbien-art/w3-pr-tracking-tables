@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29 01:23",
+ "updated": "2026-09-29 13:10",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -444,7 +444,7 @@
     {
      "num": 13073,
      "cf": "ok",
-     "st": "open",
+     "st": "approved",
      "nc": 7,
      "add": 725,
      "del": 32,
@@ -470,11 +470,11 @@
    "cop": 4,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
+    "ap": [
      "kanayam"
-    ]
+    ],
+    "ch": [],
+    "pd": []
    },
    "title": "ユニット作成後に再ログインなしで切替候補へ反映する"
   },
@@ -1470,9 +1470,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "ulink セルに認証付きダウンロードハンドラの口を追加"
   },
