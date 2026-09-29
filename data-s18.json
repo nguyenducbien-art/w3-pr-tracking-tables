@@ -1,8 +1,9 @@
 {
- "updated": "2026-09-29 10:22",
+ "updated": "2026-09-29 10:28",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2050",
   "1718",
   "1553",
   "1478",
@@ -21,6 +22,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2050",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13086,
+     "cf": "ok",
+     "st": "open",
+     "nc": 4,
+     "add": 449,
+     "del": 5,
+     "fc": 13,
+     "cr": "09-29 10:25"
+    }
+   ],
+   "created": "09-29 10:25",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1B2yzziE5gshBD1f1-x8IQftT5TkfkRyJ/view?usp=sharing",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "Q015 レビュー指摘是正の r20260810 取り込みと出荷履歴_明細・出荷検品_個口情報の CSV 全件出力配線"
+  },
   {
    "ticket": "1718",
    "dev": "minh",
