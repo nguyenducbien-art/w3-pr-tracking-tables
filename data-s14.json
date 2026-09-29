@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-28 17:18",
+ "updated": "2026-09-29 12:46",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -367,9 +367,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "移行済み画面の子モーダルを共通 DataTable へ統一しフィルタ/ソート/ページャを提供"
   },
