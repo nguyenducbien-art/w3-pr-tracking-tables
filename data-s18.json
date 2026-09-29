@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29 15:36",
+ "updated": "2026-09-29 15:58",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -22,6 +22,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "674",
+   "dev": "hung",
+   "bien": false,
+   "sid": "(機能)",
+   "base": [],
+   "r810": [
+    {
+     "num": 13111,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 69,
+     "del": 31,
+     "fc": 3,
+     "cr": "09-29 15:49"
+    }
+   ],
+   "created": "09-29 15:49",
+   "drive": false,
+   "drvurl": "",
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ダッシュボードの ToDoリストを出荷状況と同じ高さにし、一覧を内側でスクロールさせる #NGULAR_REPLACE-674"
+  },
   {
    "ticket": "672",
    "dev": "minh",
