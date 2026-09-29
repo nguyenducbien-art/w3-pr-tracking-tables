@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29 16:28",
+ "updated": "2026-09-29 20:40",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1565,10 +1565,10 @@
      "num": 13051,
      "cf": "ok",
      "st": "changes",
-     "nc": 6,
-     "add": 1486,
-     "del": 288,
-     "fc": 8,
+     "nc": 8,
+     "add": 1757,
+     "del": 294,
+     "fc": 10,
      "cr": "09-28 10:58"
     }
    ],
@@ -1604,7 +1604,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "共通_一覧CSV_列フィルタで隠れた選択行も件数に数える"
   },
