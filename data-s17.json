@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29 10:36",
+ "updated": "2026-09-29 11:12",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -998,7 +998,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "一覧の展開行の開閉状態を行番号でなく行単位で保持するよう修正"
   },
@@ -1142,7 +1144,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "ServerSync モードの CSV 出力で確認ダイアログ (Q015) が表示されない問題を修正"
   },
