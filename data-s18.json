@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29 12:43",
+ "updated": "2026-09-29 13:25",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -22,6 +22,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "672",
+   "dev": "minh",
+   "bien": false,
+   "sid": "(機能)",
+   "base": [],
+   "r810": [
+    {
+     "num": 13101,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 76,
+     "del": 80,
+     "fc": 5,
+     "cr": "09-29 13:22"
+    }
+   ],
+   "created": "09-29 13:22",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユニットが 1 件のときにユニット選択画面で自動確定・ダッシュボード直行しないよう修正"
+  },
   {
    "ticket": "2050",
    "dev": "minh",
@@ -92,8 +122,8 @@
      "num": 13077,
      "cf": "ok",
      "st": "changes",
-     "nc": 6,
-     "add": 344,
+     "nc": 7,
+     "add": 470,
      "del": 5,
      "fc": 8,
      "cr": "09-29 00:39"
@@ -110,7 +140,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "共通 AutoGrowTextarea を base へ追加する"
   },

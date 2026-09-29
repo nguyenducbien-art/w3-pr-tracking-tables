@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29 12:53",
+ "updated": "2026-09-29 13:27",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -482,7 +482,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "ServerSync の列フィルタで空白演算子と2条件目をバックエンドへ反映"
   },
@@ -1612,12 +1614,12 @@
    "base": [
     {
      "num": 12697,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
-     "nc": 4,
-     "add": 1265,
-     "del": 195,
-     "fc": 16,
+     "nc": 6,
+     "add": 1292,
+     "del": 206,
+     "fc": 17,
      "cr": "09-10 18:11"
     }
    ],
@@ -1635,9 +1637,9 @@
    ],
    "created": "09-10 17:56",
    "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1GhgNTGI3DJT2gO0gjQX6Otu2o3uL3n1O/view?usp=sharing",
-   "cop": 4,
-   "unres": 0,
+   "drvurl": "https://drive.google.com/file/d/1EYp3JdmYF9EgmBOkdt5e-AmgcItu8NVQ/view?usp=sharing",
+   "cop": 7,
+   "unres": 3,
    "rvw": {
     "ap": [],
     "ch": [],
