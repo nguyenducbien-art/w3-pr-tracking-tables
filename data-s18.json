@@ -1,8 +1,9 @@
 {
- "updated": "2026-09-29 01:15",
+ "updated": "2026-09-29 10:01",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1718",
   "1553",
   "1478",
   "1708",
@@ -20,6 +21,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "1718",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13084,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 47,
+     "del": 10,
+     "fc": 4,
+     "cr": "09-29 09:59"
+    }
+   ],
+   "created": "09-29 09:59",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1IsesPpMkExM2ngFkbCMJu93qZb_s4IGC/view",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "列フィルタ変更で展開行を解除することをテストで固定し TSDoc を実装に追従"
+  },
   {
    "ticket": "1553",
    "dev": "bien",
@@ -223,7 +254,7 @@
      "num": 12957,
      "cf": "ok",
      "st": "open",
-     "nc": 11,
+     "nc": 12,
      "add": 1041,
      "del": 79,
      "fc": 25,
