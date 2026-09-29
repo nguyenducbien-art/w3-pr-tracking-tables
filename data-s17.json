@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29 13:27",
+ "updated": "2026-09-29 14:04",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1014,8 +1014,8 @@
      "num": 12782,
      "cf": "ok",
      "st": "changes",
-     "nc": 6,
-     "add": 578,
+     "nc": 7,
+     "add": 584,
      "del": 42,
      "fc": 11,
      "cr": "09-15 14:15"
@@ -1043,7 +1043,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "一覧の列フィルタがサーバーとクライアントに二重適用される不具合を修正"
   },
@@ -1616,9 +1618,9 @@
      "num": 12697,
      "cf": "ok",
      "st": "open",
-     "nc": 6,
-     "add": 1292,
-     "del": 206,
+     "nc": 7,
+     "add": 1413,
+     "del": 210,
      "fc": 17,
      "cr": "09-10 18:11"
     }
@@ -1639,7 +1641,7 @@
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/1EYp3JdmYF9EgmBOkdt5e-AmgcItu8NVQ/view?usp=sharing",
    "cop": 7,
-   "unres": 3,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
