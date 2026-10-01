@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-01 10:34",
+ "updated": "2026-10-01 11:46",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1043,9 +1043,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "一覧の列フィルタがサーバーとクライアントに二重適用される不具合を修正"
   },
