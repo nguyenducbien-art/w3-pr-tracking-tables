@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-30 14:25",
+ "updated": "2026-10-01 09:25",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -305,7 +305,7 @@
     {
      "num": 12985,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 12,
      "add": 2017,
      "del": 45,
@@ -341,13 +341,11 @@
    "cop": 5,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "共通_統合表示ユニットの制御 (共通コンポーネント・バックエンド)"
   },
