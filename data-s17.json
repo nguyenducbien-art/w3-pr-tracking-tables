@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-01 12:56",
+ "updated": "2026-10-01 14:49",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -454,7 +454,7 @@
     {
      "num": 12845,
      "cf": "ok",
-     "st": "open",
+     "st": "changes",
      "nc": 6,
      "add": 1248,
      "del": 62,
@@ -481,10 +481,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
-    "pd": [
+    "ch": [
      "kanayam"
-    ]
+    ],
+    "pd": []
    },
    "title": "ServerSync の列フィルタで空白演算子と2条件目をバックエンドへ反映"
   },
@@ -1605,7 +1605,7 @@
     {
      "num": 12697,
      "cf": "bad",
-     "st": "open",
+     "st": "changes",
      "nc": 7,
      "add": 1413,
      "del": 210,
@@ -1632,10 +1632,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
-    "pd": [
+    "ch": [
      "kanayam"
-    ]
+    ],
+    "pd": []
    },
    "title": "表示期間の日付直接入力と年月ピッカーの年→10年→100年ドリル対応"
   },
