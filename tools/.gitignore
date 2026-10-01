@@ -1,2 +1,3 @@
 *.log
 .last_*
+.refresh.lock

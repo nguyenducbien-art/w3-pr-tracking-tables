@@ -20,9 +20,23 @@ export GIT_SSH_COMMAND="ssh -o BatchMode=yes -o IdentitiesOnly=yes -o ConnectTim
 REPO="/Volumes/Works/rikkeisoft/w3-pr-tracking-tables"
 LOG="$REPO/tools/refresh.log"
 cd "$REPO" || exit 1
+# Khoá chống chạy chồng: 1 lượt s14/s15 có thể >5' → launchd/chạy tay đè lên nhau → 2 lượt cùng
+# update-ref nhánh data (push FAIL) và log lẫn vào nhau (sự cố 2026-10-01 09:24). Khoá kẹt >30' = coi là chết.
+LOCK="$REPO/tools/.refresh.lock"
+if ! mkdir "$LOCK" 2>/dev/null; then
+  if [ -n "$(find "$LOCK" -maxdepth 0 -mmin +30)" ]; then rm -rf "$LOCK"; mkdir "$LOCK" || exit 0
+  else echo "=== $(date '+%F %T') === lượt trước còn chạy → bỏ qua tick này" >> "$LOG"; exit 0; fi
+fi
+trap 'rm -rf "$LOCK"' EXIT
+# Token của ĐÚNG account W3 cho riêng process này (gh + git credential helper `gh auth git-credential`
+# đều đọc GH_TOKEN). TRƯỚC đây dùng `gh auth switch` → đổi account active TOÀN MÁY, mà lệnh này hành xử
+# như toggle → đang đúng account lại bị lật sang account cá nhân; phiên khác switch giữa chừng cũng làm
+# lượt đang chạy gãy: "Could not resolve to a Repository 'dialog-inc/w3package_v2'" (2026-10-01).
+GH_TOKEN=$(gh auth token --user nguyenducbien-art 2>/dev/null) || GH_TOKEN=""
+export GH_TOKEN
 {
   echo "=== $(date '+%F %T') ==="
-  gh auth switch --user nguyenducbien-art >/dev/null 2>&1
+  [ -n "$GH_TOKEN" ] || echo "→ CẢNH BÁO không lấy được token nguyenducbien-art (gh auth token) — dùng account active"
   # Máy này là nguồn commit duy nhất → KHÔNG kéo commit về (no fetch/merge/reset trên repo tracking).
   python3 tools/fetch_build_s18.py   data-s18.json;     rc18=$?
   # Sprint 14/15/17 theo lịch OLD_EVERY_MIN (xem đầu file); không chạy lượt này → rc=2 (bỏ qua).
