@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-01 10:13",
+ "updated": "2026-10-01 10:56",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -326,10 +326,10 @@
    "base": [
     {
      "num": 11513,
-     "cf": "bad",
-     "st": "approved",
-     "nc": 16,
-     "add": 5645,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 18,
+     "add": 5655,
      "del": 1215,
      "fc": 56,
      "cr": "07-31 15:25"
