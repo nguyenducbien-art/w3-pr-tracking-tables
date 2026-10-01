@@ -1,12 +1,11 @@
 {
- "updated": "2026-10-01 09:45",
+ "updated": "2026-10-01 12:32",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
   "2050",
   "1718",
   "1553",
-  "1478",
   "1708",
   "1576",
   "1893",
@@ -207,36 +206,6 @@
    "title": "共通 AutoGrowTextarea を base へ追加する"
   },
   {
-   "ticket": "1478",
-   "dev": "khoa",
-   "bien": false,
-   "sid": "",
-   "base": [],
-   "r810": [
-    {
-     "num": 13067,
-     "cf": "ok",
-     "st": "open",
-     "nc": 6,
-     "add": 3309,
-     "del": 253,
-     "fc": 43,
-     "cr": "09-28 16:00"
-    }
-   ],
-   "created": "09-28 16:00",
-   "drive": false,
-   "drvurl": "",
-   "cop": 1,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "選択モーダルの翻訳済みラベル・届け先番号列・列定義取得失敗時の代替列を r20260810 へ反映"
-  },
-  {
    "ticket": "1708",
    "dev": "minh",
    "bien": false,
@@ -275,7 +244,7 @@
    "r810": [
     {
      "num": 13002,
-     "cf": "ok",
+     "cf": "bad",
      "st": "draft",
      "nc": 16,
      "add": 2228,
@@ -314,16 +283,6 @@
     }
    ],
    "r810": [
-    {
-     "num": 13096,
-     "cf": "ok",
-     "st": "open",
-     "nc": 3,
-     "add": 391,
-     "del": 69,
-     "fc": 18,
-     "cr": "09-29 12:39"
-    },
     {
      "num": 12990,
      "cf": "ok",
