@@ -1,8 +1,9 @@
 {
- "updated": "2026-10-01 15:10",
+ "updated": "2026-10-01 15:34",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2049",
   "2050",
   "1718",
   "1553",
@@ -21,6 +22,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2049",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 13147,
+     "cf": "ok",
+     "st": "open",
+     "nc": 5,
+     "add": 875,
+     "del": 80,
+     "fc": 24,
+     "cr": "10-01 15:31"
+    }
+   ],
+   "r810": [],
+   "created": "10-01 15:31",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/14wwGZJly0jj8AlKmrrJxRvghfGEmUZjp/view",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユニット切替時にマスタ選択モーダルの検索結果と解決済み unit_screen_id を破棄する"
+  },
   {
    "ticket": "642",
    "dev": "hung",
@@ -382,7 +413,18 @@
    "dev": "dat",
    "bien": false,
    "sid": "",
-   "base": [],
+   "base": [
+    {
+     "num": 13148,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 2217,
+     "del": 43,
+     "fc": 27,
+     "cr": "10-01 15:31"
+    }
+   ],
    "r810": [
     {
      "num": 13058,
@@ -407,8 +449,8 @@
    ],
    "created": "09-22 14:01",
    "drive": true,
-   "drvurl": "https://drive.google.com/file/d/13pFIMD7_5Gt9W5zmqzKJnlzCe7Bimcf0/view?usp=drive_link",
-   "cop": 3,
+   "drvurl": "https://drive.google.com/file/d/13pFIMD7_5Gt9W5zmqzKJnlzCe7Bimcf0/view",
+   "cop": 0,
    "unres": 0,
    "rvw": {
     "ap": [],
