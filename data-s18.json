@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02 11:50",
+ "updated": "2026-10-02 12:03",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -23,6 +23,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2118",
+   "dev": "hung",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13165,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 463,
+     "del": 28,
+     "fc": 8,
+     "cr": "10-02 11:57"
+    }
+   ],
+   "created": "10-02 11:57",
+   "drive": false,
+   "drvurl": "",
+   "cop": 10,
+   "unres": 10,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユニット選択画面のグリッドに列フィルタを追加する"
+  },
   {
    "ticket": "1551",
    "dev": "bien",
