@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02 11:22",
+ "updated": "2026-10-02 11:31",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -22,6 +22,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "654",
+   "dev": "minh",
+   "bien": false,
+   "sid": "570",
+   "base": [],
+   "r810": [
+    {
+     "num": 13162,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 18,
+     "del": 23,
+     "fc": 3,
+     "cr": "10-02 11:24"
+    }
+   ],
+   "created": "10-02 11:24",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "帳票出力履歴一覧(570) ダウンロードの選択件数エラーを E001/E007 に分ける (挙動変更)"
+  },
   {
    "ticket": "653",
    "dev": "minh",
