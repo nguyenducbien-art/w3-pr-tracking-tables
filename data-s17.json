@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02 14:02",
+ "updated": "2026-10-02 18:30",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1635,7 +1635,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "表示期間の日付直接入力と年月ピッカーの年→10年→100年ドリル対応"
   },
