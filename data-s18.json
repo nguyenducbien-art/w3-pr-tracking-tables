@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02 17:59",
+ "updated": "2026-10-02 18:05",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -644,8 +644,8 @@
      "num": 13148,
      "cf": "ok",
      "st": "changes",
-     "nc": 4,
-     "add": 2812,
+     "nc": 5,
+     "add": 2828,
      "del": 90,
      "fc": 33,
      "cr": "10-01 15:31"
@@ -677,13 +677,15 @@
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/14kG8DNKfi_LHjMwK9Rgk4xlvXNi3aeI8/view?usp=sharing",
    "cop": 7,
-   "unres": 1,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "個人設定で変更した表示言語が React 側に反映されない不具合を修正"
   },
