@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02 10:34",
+ "updated": "2026-10-02 10:46",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -55,11 +55,13 @@
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/14wwGZJly0jj8AlKmrrJxRvghfGEmUZjp/view",
    "cop": 4,
-   "unres": 3,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "ユニット切替時にマスタ選択モーダルの検索結果と解決済み unit_screen_id を破棄する"
   },
@@ -464,11 +466,13 @@
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/13pFIMD7_5Gt9W5zmqzKJnlzCe7Bimcf0/view",
    "cop": 5,
-   "unres": 4,
+   "unres": 1,
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "個人設定で変更した表示言語が React 側に反映されない不具合を修正"
   },
