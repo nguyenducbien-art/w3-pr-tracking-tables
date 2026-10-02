@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02 11:05",
+ "updated": "2026-10-02 11:11",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -22,6 +22,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "653",
+   "dev": "minh",
+   "bien": false,
+   "sid": "452",
+   "base": [],
+   "r810": [
+    {
+     "num": 13161,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 160,
+     "del": 17,
+     "fc": 2,
+     "cr": "10-02 11:06"
+    }
+   ],
+   "created": "10-02 11:06",
+   "drive": false,
+   "drvurl": "",
+   "cop": 3,
+   "unres": 3,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "452_取込ルール追加・編集_初期値・日付書式のツールチップをホバーで即時表示"
+  },
   {
    "ticket": "639",
    "dev": "minh",
@@ -320,10 +350,10 @@
      "num": 13002,
      "cf": "ok",
      "st": "draft",
-     "nc": 25,
-     "add": 2734,
-     "del": 2252,
-     "fc": 176,
+     "nc": 26,
+     "add": 2745,
+     "del": 2265,
+     "fc": 186,
      "cr": "09-24 13:39"
     }
    ],
