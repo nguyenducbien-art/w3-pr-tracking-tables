@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-03 00:48",
+ "updated": "2026-10-03 01:00",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -988,6 +988,30 @@
   }
  ],
  "scaffold": [
+  {
+   "ticket": "1576",
+   "dev": "bien",
+   "bien": true,
+   "pr": {
+    "num": 13182,
+    "cf": "ok",
+    "st": "merged",
+    "nc": 1,
+    "add": 47,
+    "del": 55,
+    "fc": 7,
+    "cr": "10-03 00:53"
+   },
+   "created": "10-03 00:53",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "1576 の規約還元を r20260907_scaffold から外し #13002 (1576 ブランチ) へ移す"
+  },
   {
    "ticket": "—",
    "dev": "bien",
