@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02 11:56",
+ "updated": "2026-10-02 15:13",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1463,14 +1463,16 @@
    "created": "08-18 14:38",
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/1lxIYv9rIRLrS2QT5e0w8pKi5rpcdhXIR/view?usp=sharing",
-   "cop": 2,
+   "cop": 3,
    "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "#12512 の ulink 認証付きダウンロード口（cellLinkDownload）を base へ取り込む"
   },
