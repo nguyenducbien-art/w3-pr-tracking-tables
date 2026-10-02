@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02 12:04",
+ "updated": "2026-10-02 14:02",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -454,7 +454,7 @@
     {
      "num": 12845,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 8,
      "add": 1354,
      "del": 62,
@@ -480,13 +480,11 @@
    "cop": 6,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "ServerSync の列フィルタで空白演算子と2条件目をバックエンドへ反映"
   },
@@ -1015,7 +1013,7 @@
     {
      "num": 12782,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 11,
      "add": 1656,
      "del": 64,
@@ -1041,13 +1039,11 @@
    "cop": 6,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "一覧の列フィルタがサーバーとクライアントに二重適用される不具合を修正"
   },
@@ -1639,9 +1635,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "表示期間の日付直接入力と年月ピッカーの年→10年→100年ドリル対応"
   },
