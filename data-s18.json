@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02 23:44",
+ "updated": "2026-10-03 00:19",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -988,6 +988,30 @@
   }
  ],
  "scaffold": [
+  {
+   "ticket": "—",
+   "dev": "bien",
+   "bien": true,
+   "pr": {
+    "num": 13180,
+    "cf": "ok",
+    "st": "merged",
+    "nc": 1,
+    "add": 19,
+    "del": 13,
+    "fc": 2,
+    "cr": "10-03 00:08"
+   },
+   "created": "10-03 00:08",
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "base 同期 (#13179) 後の現状注記を実コードに合わせる (マージ済み 9 件の更新・1576 未マージ分の注記追加・§8 節一覧に 8.18/8.19)"
+  },
   {
    "ticket": "447",
    "dev": "bien",
