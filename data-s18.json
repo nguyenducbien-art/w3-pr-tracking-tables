@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02 13:10",
+ "updated": "2026-10-02 13:50",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -213,7 +213,7 @@
     {
      "num": 13147,
      "cf": "ok",
-     "st": "open",
+     "st": "changes",
      "nc": 8,
      "add": 1447,
      "del": 102,
@@ -240,10 +240,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
-    "pd": [
+    "ch": [
      "kanayam"
-    ]
+    ],
+    "pd": []
    },
    "title": "ユニット切替時にマスタ選択モーダルの検索結果と解決済み unit_screen_id を破棄する"
   },
@@ -406,7 +406,7 @@
     {
      "num": 13077,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 11,
      "add": 680,
      "del": 5,
@@ -421,13 +421,11 @@
    "cop": 3,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "共通 AutoGrowTextarea を base へ追加する"
   },
@@ -472,10 +470,10 @@
      "num": 13002,
      "cf": "ok",
      "st": "draft",
-     "nc": 26,
-     "add": 2745,
-     "del": 2265,
-     "fc": 186,
+     "nc": 27,
+     "add": 2748,
+     "del": 2271,
+     "fc": 187,
      "cr": "09-24 13:39"
     }
    ],
@@ -489,7 +487,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "一覧・明細画面の取得方式を都度取得へ統一する（第1段: React 共通基盤の設定参照撤去・take 削除 + BE 総件数の上限撤廃）"
+   "title": "一覧・明細画面の取得方式を都度取得へ統一する（BE 都度取得 API 追加 + React 共通基盤 + E029/設定項目撤去。AngularJS は対象外）"
   },
   {
    "ticket": "1893",
@@ -614,7 +612,7 @@
     {
      "num": 13148,
      "cf": "ok",
-     "st": "open",
+     "st": "changes",
      "nc": 3,
      "add": 2508,
      "del": 52,
@@ -651,10 +649,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
-    "pd": [
+    "ch": [
      "kanayam"
-    ]
+    ],
+    "pd": []
    },
    "title": "個人設定で変更した表示言語が React 側に反映されない不具合を修正"
   },
