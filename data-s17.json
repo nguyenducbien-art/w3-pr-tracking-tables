@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02 10:28",
+ "updated": "2026-10-02 10:59",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -455,8 +455,8 @@
      "num": 12845,
      "cf": "ok",
      "st": "changes",
-     "nc": 6,
-     "add": 1248,
+     "nc": 8,
+     "add": 1354,
      "del": 62,
      "fc": 8,
      "cr": "09-16 23:42"
@@ -1606,12 +1606,12 @@
    "base": [
     {
      "num": 12697,
-     "cf": "bad",
+     "cf": "ok",
      "st": "changes",
-     "nc": 7,
-     "add": 1413,
-     "del": 210,
-     "fc": 17,
+     "nc": 9,
+     "add": 1809,
+     "del": 231,
+     "fc": 18,
      "cr": "09-10 18:11"
     }
    ],
@@ -1629,7 +1629,7 @@
    ],
    "created": "09-10 17:56",
    "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1EYp3JdmYF9EgmBOkdt5e-AmgcItu8NVQ/view?usp=sharing",
+   "drvurl": "https://drive.google.com/file/d/1GhgNTGI3DJT2gO0gjQX6Otu2o3uL3n1O/view?usp=sharing",
    "cop": 7,
    "unres": 0,
    "rvw": {
@@ -1637,7 +1637,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "表示期間の日付直接入力と年月ピッカーの年→10年→100年ドリル対応"
   },
@@ -2050,7 +2052,7 @@
     "num": 12866,
     "cf": "ok",
     "st": "open",
-    "nc": 11,
+    "nc": 12,
     "add": 233,
     "del": 89,
     "fc": 12,

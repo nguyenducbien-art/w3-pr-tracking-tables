@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02 10:52",
+ "updated": "2026-10-02 10:58",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -22,6 +22,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "639",
+   "dev": "minh",
+   "bien": false,
+   "sid": "443",
+   "base": [],
+   "r810": [
+    {
+     "num": 13159,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 7,
+     "del": 2,
+     "fc": 1,
+     "cr": "10-02 10:53"
+    }
+   ],
+   "created": "10-02 10:53",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "443_ロール編集_帳票出力可否一括設定の非活性チェックボックスをグレーアウト表示"
+  },
   {
    "ticket": "2049",
    "dev": "bien",
