@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02 23:32",
+ "updated": "2026-10-02 23:44",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1018,10 +1018,10 @@
    "bien": false,
    "pr": {
     "num": 12998,
-    "cf": "bad",
-    "st": "open",
-    "nc": 9,
-    "add": 100,
+    "cf": "ok",
+    "st": "merged",
+    "nc": 10,
+    "add": 101,
     "del": 12,
     "fc": 5,
     "cr": "09-24 13:21"
@@ -1034,7 +1034,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "統合表示ユニットの共通制御 (§8.16)・認証 middleware の戻り先 (§8.12)・通信失敗時の文言注入 (§8.17)・展開行の開閉状態 (§8.3) を規約に還元 #ANGULAR_REPLACE-1893 #ANGULAR_REPLACE-2043 #ANGULAR_REPLACE-2045 #ANGULAR_REPLACE-1636"
+   "title": "統合表示ユニットの共通制御 (§8.19)・認証 middleware の戻り先 (§8.12)・通信失敗時の文言注入 (§8.20)・展開行の開閉状態 (§8.3) を規約に還元 #ANGULAR_REPLACE-1893 #ANGULAR_REPLACE-2043 #ANGULAR_REPLACE-2045 #ANGULAR_REPLACE-1636"
   }
  ]
 }
