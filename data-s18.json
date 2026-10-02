@@ -1,8 +1,9 @@
 {
- "updated": "2026-10-02 14:01",
+ "updated": "2026-10-02 14:50",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2117",
   "1719",
   "1551",
   "2049",
@@ -24,6 +25,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2117",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13172,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 577,
+     "del": 69,
+     "fc": 12,
+     "cr": "10-02 14:47"
+    }
+   ],
+   "created": "10-02 14:47",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユニット選択画面でヘッダーのナビ項目とユニット切替を非表示にする"
+  },
   {
    "ticket": "1719",
    "dev": "minh",
@@ -73,8 +104,8 @@
     }
    ],
    "created": "10-02 11:57",
-   "drive": false,
-   "drvurl": "",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1xUBJza9bh0T2YSxUahmihoUD7PEkfoCt/view?usp=sharing",
    "cop": 10,
    "unres": 0,
    "rvw": {
