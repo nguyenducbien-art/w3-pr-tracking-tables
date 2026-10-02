@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02 11:16",
+ "updated": "2026-10-02 11:56",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1472,7 +1472,7 @@
     ],
     "pd": []
    },
-   "title": "ulink セルに認証付きダウンロードハンドラの口を追加"
+   "title": "#12512 の ulink 認証付きダウンロード口（cellLinkDownload）を base へ取り込む"
   },
   {
    "ticket": "1535",

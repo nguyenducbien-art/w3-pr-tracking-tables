@@ -1,8 +1,9 @@
 {
- "updated": "2026-10-02 11:31",
+ "updated": "2026-10-02 11:50",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1551",
   "2049",
   "2050",
   "1718",
@@ -22,6 +23,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "1551",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13164,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 432,
+     "del": 57,
+     "fc": 10,
+     "cr": "10-02 11:48"
+    }
+   ],
+   "created": "10-02 11:48",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1lxIYv9rIRLrS2QT5e0w8pKi5rpcdhXIR/view?usp=sharing",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ulink セルの href を内部パスに限定し、一覧と展開行の配線を共通化する"
+  },
   {
    "ticket": "654",
    "dev": "minh",
