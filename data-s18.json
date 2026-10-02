@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-03 01:00",
+ "updated": "2026-10-03 01:11",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -501,9 +501,9 @@
      "num": 13002,
      "cf": "ok",
      "st": "draft",
-     "nc": 33,
-     "add": 2799,
-     "del": 2317,
+     "nc": 34,
+     "add": 2801,
+     "del": 2318,
      "fc": 194,
      "cr": "09-24 13:39"
     }
@@ -989,6 +989,30 @@
  ],
  "scaffold": [
   {
+   "ticket": "—",
+   "dev": "bien",
+   "bien": true,
+   "pr": {
+    "num": 13183,
+    "cf": "ok",
+    "st": "merged",
+    "nc": 1,
+    "add": 11,
+    "del": 5,
+    "fc": 4,
+    "cr": "10-03 01:05"
+   },
+   "created": "10-03 01:05",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "#13181 / #13180 の Copilot 指摘対応 (選択行 CSV の契約・edit テンプレートの signal と前提確認・帳票確認文言の i18n)"
+  },
+  {
    "ticket": "1576",
    "dev": "bien",
    "bien": true,
@@ -1028,7 +1052,7 @@
    },
    "created": "10-03 00:08",
    "cop": 2,
-   "unres": 2,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
