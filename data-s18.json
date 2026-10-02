@@ -1,8 +1,9 @@
 {
- "updated": "2026-10-02 12:03",
+ "updated": "2026-10-02 13:04",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1719",
   "1551",
   "2049",
   "2050",
@@ -23,6 +24,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "1719",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13166,
+     "cf": "ok",
+     "st": "open",
+     "nc": 6,
+     "add": 1297,
+     "del": 83,
+     "fc": 13,
+     "cr": "10-02 12:58"
+    }
+   ],
+   "created": "10-02 12:58",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1FLw9AbnXsumxP9ujEtVx3yZkwvT5wZxn/view?usp=sharing",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "serverSync の列フィルタ・選択の修正を r20260810 へ統合し、欠落した select / boolean の完全一致を復元 (common-1719 取込)"
+  },
   {
    "ticket": "2118",
    "dev": "hung",
