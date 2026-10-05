@@ -1,60 +1,21 @@
 {
- "updated": "2026-10-05 14:30",
+ "updated": "2026-10-05 14:54",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
-  "1704",
   "2117",
-  "1551",
-  "2049",
-  "2050",
-  "1718",
-  "1553",
-  "1708",
   "1576",
   "1893",
-  "2029",
   "2045",
   "2063",
   "2097",
   "1500",
   "1499",
-  "2043",
-  "2048"
+  "2043"
  ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
-  {
-   "ticket": "1704",
-   "dev": "bien",
-   "bien": true,
-   "sid": "",
-   "base": [
-    {
-     "num": 13197,
-     "cf": "ok",
-     "st": "open",
-     "nc": 4,
-     "add": 517,
-     "del": 17,
-     "fc": 7,
-     "cr": "10-05 13:01"
-    }
-   ],
-   "r810": [],
-   "created": "10-05 13:01",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1iAxR3vnvpxXFnJccuPjnLgaTZyyhgcnd/view",
-   "cop": 2,
-   "unres": 2,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "/jwt 中継でファイル取得のナビゲーションに認証を補う"
-  },
   {
    "ticket": "2117",
    "dev": "khoa",
@@ -116,181 +77,6 @@
    "title": "ユニット選択画面のグリッドに列フィルタを追加する"
   },
   {
-   "ticket": "1551",
-   "dev": "bien",
-   "bien": true,
-   "sid": "",
-   "base": [],
-   "r810": [
-    {
-     "num": 13164,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 1,
-     "add": 432,
-     "del": 57,
-     "fc": 10,
-     "cr": "10-02 11:48"
-    }
-   ],
-   "created": "10-02 11:48",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1lxIYv9rIRLrS2QT5e0w8pKi5rpcdhXIR/view?usp=sharing",
-   "cop": 0,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "ulink セルの href を内部パスに限定し、一覧と展開行の配線を共通化する"
-  },
-  {
-   "ticket": "654",
-   "dev": "minh",
-   "bien": false,
-   "sid": "570",
-   "base": [],
-   "r810": [
-    {
-     "num": 13162,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 1,
-     "add": 18,
-     "del": 23,
-     "fc": 3,
-     "cr": "10-02 11:24"
-    }
-   ],
-   "created": "10-02 11:24",
-   "drive": false,
-   "drvurl": "",
-   "cop": 2,
-   "unres": 2,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "帳票出力履歴一覧(570) ダウンロードの選択件数エラーを E001/E007 に分ける (挙動変更)"
-  },
-  {
-   "ticket": "653",
-   "dev": "minh",
-   "bien": false,
-   "sid": "452",
-   "base": [],
-   "r810": [
-    {
-     "num": 13161,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 2,
-     "add": 160,
-     "del": 17,
-     "fc": 2,
-     "cr": "10-02 11:06"
-    }
-   ],
-   "created": "10-02 11:06",
-   "drive": false,
-   "drvurl": "",
-   "cop": 3,
-   "unres": 3,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "452_取込ルール追加・編集_初期値・日付書式のツールチップをホバーで即時表示"
-  },
-  {
-   "ticket": "639",
-   "dev": "minh",
-   "bien": false,
-   "sid": "443",
-   "base": [],
-   "r810": [
-    {
-     "num": 13159,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 2,
-     "add": 7,
-     "del": 2,
-     "fc": 1,
-     "cr": "10-02 10:53"
-    }
-   ],
-   "created": "10-02 10:53",
-   "drive": false,
-   "drvurl": "",
-   "cop": 0,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "443_ロール編集_帳票出力可否一括設定の非活性チェックボックスをグレーアウト表示"
-  },
-  {
-   "ticket": "2049",
-   "dev": "bien",
-   "bien": true,
-   "sid": "",
-   "base": [
-    {
-     "num": 13147,
-     "cf": "ok",
-     "st": "changes",
-     "nc": 13,
-     "add": 1935,
-     "del": 107,
-     "fc": 44,
-     "cr": "10-01 15:31"
-    }
-   ],
-   "r810": [
-    {
-     "num": 13192,
-     "cf": "ok",
-     "st": "open",
-     "nc": 1,
-     "add": 625,
-     "del": 24,
-     "fc": 9,
-     "cr": "10-05 11:36"
-    },
-    {
-     "num": 13158,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 1,
-     "add": 198,
-     "del": 6,
-     "fc": 8,
-     "cr": "10-02 10:22"
-    }
-   ],
-   "created": "10-01 15:31",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/14wwGZJly0jj8AlKmrrJxRvghfGEmUZjp/view",
-   "cop": 4,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [
-     "kanayam"
-    ],
-    "pd": [
-     "kanayam"
-    ]
-   },
-   "title": "ユニット切替時にマスタ選択モーダルの検索結果と解決済み unit_screen_id を破棄する"
-  },
-  {
    "ticket": "642",
    "dev": "hung",
    "bien": false,
@@ -349,158 +135,6 @@
     "pd": []
    },
    "title": "ダッシュボードの ToDoリストを出荷状況と同じ高さにし、一覧を内側でスクロールさせる #NGULAR_REPLACE-674"
-  },
-  {
-   "ticket": "672",
-   "dev": "minh",
-   "bien": false,
-   "sid": "(機能)",
-   "base": [],
-   "r810": [
-    {
-     "num": 13101,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 1,
-     "add": 76,
-     "del": 80,
-     "fc": 5,
-     "cr": "09-29 13:22"
-    }
-   ],
-   "created": "09-29 13:22",
-   "drive": false,
-   "drvurl": "",
-   "cop": 5,
-   "unres": 5,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "ユニットが 1 件のときにユニット選択画面で自動確定・ダッシュボード直行しないよう修正"
-  },
-  {
-   "ticket": "2050",
-   "dev": "minh",
-   "bien": false,
-   "sid": "",
-   "base": [],
-   "r810": [
-    {
-     "num": 13086,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 4,
-     "add": 449,
-     "del": 5,
-     "fc": 13,
-     "cr": "09-29 10:25"
-    }
-   ],
-   "created": "09-29 10:25",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1B2yzziE5gshBD1f1-x8IQftT5TkfkRyJ/view?usp=sharing",
-   "cop": 1,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "Q015 レビュー指摘是正の r20260810 取り込みと出荷履歴_明細・出荷検品_個口情報の CSV 全件出力配線"
-  },
-  {
-   "ticket": "1718",
-   "dev": "minh",
-   "bien": false,
-   "sid": "",
-   "base": [],
-   "r810": [
-    {
-     "num": 13084,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 2,
-     "add": 47,
-     "del": 10,
-     "fc": 4,
-     "cr": "09-29 09:59"
-    }
-   ],
-   "created": "09-29 09:59",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1IsesPpMkExM2ngFkbCMJu93qZb_s4IGC/view",
-   "cop": 0,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "列フィルタ変更で展開行を解除することをテストで固定し TSDoc を実装に追従"
-  },
-  {
-   "ticket": "1553",
-   "dev": "bien",
-   "bien": true,
-   "sid": "",
-   "base": [
-    {
-     "num": 13077,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 11,
-     "add": 680,
-     "del": 5,
-     "fc": 8,
-     "cr": "09-29 00:39"
-    }
-   ],
-   "r810": [],
-   "created": "09-29 00:39",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1_Srg-sOKSEiij-642y0kOLWhZKZHkJ-Y/view?usp=sharing",
-   "cop": 3,
-   "unres": 0,
-   "rvw": {
-    "ap": [
-     "kanayam"
-    ],
-    "ch": [],
-    "pd": []
-   },
-   "title": "共通 AutoGrowTextarea を base へ追加する"
-  },
-  {
-   "ticket": "1708",
-   "dev": "minh",
-   "bien": false,
-   "sid": "",
-   "base": [],
-   "r810": [
-    {
-     "num": 13064,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 3,
-     "add": 103,
-     "del": 20,
-     "fc": 6,
-     "cr": "09-28 15:01"
-    }
-   ],
-   "created": "09-28 15:01",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1EuF7mRpRSLW2-0HUB9JGaesVufxlChc_/view",
-   "cop": 0,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "代理ログインの切替先の選択の破棄と応答の検証を r20260810 へ反映する"
   },
   {
    "ticket": "1576",
@@ -574,36 +208,6 @@
     "pd": []
    },
    "title": "共通_統合表示ユニットの制御 (共通コンポーネント・バックエンド)"
-  },
-  {
-   "ticket": "2029",
-   "dev": "bien",
-   "bien": true,
-   "sid": "",
-   "base": [],
-   "r810": [
-    {
-     "num": 12959,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 2,
-     "add": 838,
-     "del": 283,
-     "fc": 22,
-     "cr": "09-22 15:36"
-    }
-   ],
-   "created": "09-22 15:36",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1MCY7quCrW1SGkJekmAzpa_QkV7CvYtYw/view?usp=sharing",
-   "cop": 5,
-   "unres": 5,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "共通_一覧選択_並べ替え後にチェック表示と処理対象がずれる問題を修正"
   },
   {
    "ticket": "2045",
@@ -977,36 +581,6 @@
     "pd": []
    },
    "title": "ログイン後に未認証で弾かれた画面へ戻るよう修正"
-  },
-  {
-   "ticket": "2048",
-   "dev": "bien",
-   "bien": true,
-   "sid": "",
-   "base": [],
-   "r810": [
-    {
-     "num": 12936,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 1,
-     "add": 74,
-     "del": 18,
-     "fc": 2,
-     "cr": "09-21 14:36"
-    }
-   ],
-   "created": "09-21 14:36",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1qL4ctjHW8NKV1Q-9-rTjuJtpwgch1bLO/view",
-   "cop": 2,
-   "unres": 2,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "空白判定の文字集合とorフィルタの結合を是正"
   }
  ],
  "scaffold": [
