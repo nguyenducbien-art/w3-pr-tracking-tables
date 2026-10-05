@@ -45,7 +45,7 @@ for _a, _b in [
     # subtitle: nói rõ luật chia theo ngày + trỏ ngược về page Sprint 15+16
     ("tạo từ <b>2026-09-21</b> vào <b>develop/base</b> / <b>r20260810</b> — chia 2 bảng",
      "tạo từ <b>2026-09-21</b> (ngày bắt đầu Sprint 18) vào <b>develop/base</b> / <b>r20260810</b> (+ r20260921 khi nhánh này ra đời)"
-     " — từ Sprint 16 không còn nhánh r riêng mỗi sprint nên chia theo NGÀY TẠO PR, PR trước 21/09 xem ở page Sprint 17."
+     " — từ Sprint 16 không còn nhánh r riêng mỗi sprint nên chia theo NGÀY TẠO PR, PR trước 21/09 xem ở page Sprint 17. PR mới của ticket đã có ở sprint trước tự về page của sprint đó."
      " Chia 2 bảng"),
     ('<a href="index.html" style="font-family:inherit;font-size:12px">← Sprint 13</a>',
      '<a href="s17.html" style="font-family:inherit;font-size:12px">← Sprint 17</a>'),

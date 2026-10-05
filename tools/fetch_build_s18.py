@@ -14,7 +14,7 @@ Self-contained: chỉ dùng gh + python stdlib. KHÔNG chứa secret.
 Usage: python3 fetch_build_s18.py [output_data.json]
 """
 import json, re, subprocess, sys, datetime, time
-from sprint_overrides import keep
+from sprint_overrides import keep_auto, ticket_home, HOME_BRANCHES
 
 REPO = "dialog-inc/w3package_v2"
 OWNER, NAME = "dialog-inc", "w3package_v2"
@@ -104,12 +104,31 @@ def clean_title(t):
     t = re.sub(r'\s*#ANGULAR_REPLACE-\d+\s*$', '', t)
     return t.strip()
 
+_RAW = {}
+def gh_raw(branch):
+    if branch not in _RAW:
+        _RAW[branch] = json.loads(run(["gh","pr","list","--repo",REPO,"--base","mimosa/frontend/develop/"+branch,
+               "--state","all","--limit","400","--json","number,state,createdAt,headRefName,author,title"]))
+    return _RAW[branch]
+
+def _ticket_of(head):
+    seg = head.split("/")[-1]
+    if is_sync(seg): return None
+    tk = ticket_from_branch(seg)
+    return tk if tk and tk not in EXCLUDE else None
+
+_HOME = None
 def gh_list(branch):
-    out = run(["gh","pr","list","--repo",REPO,"--base","mimosa/frontend/develop/"+branch,
-               "--state","all","--limit","400","--json","number,state,createdAt,headRefName,author,title"])
-    # sprint_overrides: PR xếp tay đè luật ngày (vd PR port → base của việc sprint trước)
-    return [p for p in json.loads(out)
-            if p["state"] != "CLOSED" and keep(p, 18, vn_date(p["createdAt"]) >= SINCE)]
+    # sprint_overrides: PR xếp tay > sprint gốc của ticket (PR mới của ticket sprint cũ về page sprint cũ) > luật ngày.
+    # Nhánh scaffold không gắn ticket → chỉ xếp tay / luật ngày.
+    global _HOME
+    by_ticket = branch in HOME_BRANCHES
+    if by_ticket and _HOME is None:
+        _HOME = ticket_home({b: gh_raw(b) for b in HOME_BRANCHES}, vn_date, _ticket_of)
+    return [p for p in gh_raw(branch)
+            if p["state"] != "CLOSED" and keep_auto(p, 18, vn_date(p["createdAt"]) >= SINCE,
+                                                    _HOME if by_ticket else {}, _ticket_of(p["headRefName"]),
+                                                    vn_date(p["createdAt"]))]
 
 _Q = ('query($n:Int!){repository(owner:"%s",name:"%s"){pullRequest(number:$n){'
       'state isDraft reviewDecision mergeable additions deletions changedFiles commits{totalCount} '
