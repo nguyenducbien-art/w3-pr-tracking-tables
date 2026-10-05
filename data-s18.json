@@ -1,8 +1,9 @@
 {
- "updated": "2026-10-05 11:50",
+ "updated": "2026-10-05 13:05",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "1704",
   "2117",
   "1551",
   "2049",
@@ -24,6 +25,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "1704",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 13197,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 494,
+     "del": 14,
+     "fc": 6,
+     "cr": "10-05 13:01"
+    }
+   ],
+   "r810": [],
+   "created": "10-05 13:01",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1iAxR3vnvpxXFnJccuPjnLgaTZyyhgcnd/view",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "/jwt 中継でファイル取得のナビゲーションに認証を補う"
+  },
   {
    "ticket": "2117",
    "dev": "khoa",
