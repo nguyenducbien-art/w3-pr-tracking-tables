@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-05 16:21",
+ "updated": "2026-10-05 16:57",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -26,8 +26,8 @@
      "num": 13202,
      "cf": "ok",
      "st": "open",
-     "nc": 3,
-     "add": 633,
+     "nc": 4,
+     "add": 656,
      "del": 69,
      "fc": 12,
      "cr": "10-05 15:37"
@@ -36,10 +36,10 @@
    "r810": [
     {
      "num": 13172,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 577,
+     "nc": 5,
+     "add": 656,
      "del": 69,
      "fc": 12,
      "cr": "10-02 14:47"
@@ -173,7 +173,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "aikoyd"
+    ]
    },
    "title": "一覧・明細画面の取得方式を都度取得へ統一する（BE 都度取得 API 追加 + React 共通基盤 + E029/設定項目撤去。AngularJS は対象外）"
   },
