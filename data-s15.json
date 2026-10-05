@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-05 15:10",
+ "updated": "2026-10-05 16:02",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -213,14 +213,24 @@
      "num": 13197,
      "cf": "ok",
      "st": "open",
-     "nc": 5,
-     "add": 614,
+     "nc": 6,
+     "add": 643,
      "del": 17,
      "fc": 7,
      "cr": "10-05 13:01"
     }
    ],
    "r810": [
+    {
+     "num": 13201,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 394,
+     "del": 154,
+     "fc": 6,
+     "cr": "10-05 15:15"
+    },
     {
      "num": 12530,
      "cf": "ok",
@@ -246,11 +256,13 @@
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/1iAxR3vnvpxXFnJccuPjnLgaTZyyhgcnd/view",
    "cop": 2,
-   "unres": 2,
+   "unres": 1,
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "取込出力履歴のファイルダウンロードを認証付き経路に統一する"
   },
