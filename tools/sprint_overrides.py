@@ -23,12 +23,12 @@ def keep(p, sprint, in_window):
 # ---- Tự động: PR mới của ticket sprint cũ → về page của sprint ĐẦU TIÊN ticket xuất hiện (user yêu cầu 05/10) ----
 # "Sprint gốc" của ticket = sprint nhỏ nhất mà ticket có PR (không CLOSED) theo đúng luật vào page đó:
 #   - Sprint 15+16: phải có PR nhắm r20260810 trong khoảng ngày (page s15 chỉ nhận ticket có PR r810)
-#   - Sprint 17 / 18: có PR nhắm nhánh r hoặc base trong khoảng ngày
+#   - Sprint 17 / 18 / 19: có PR nhắm nhánh r hoặc base trong khoảng ngày
 # PR xếp tay (PR_SPRINT) vẫn ưu tiên cao nhất và cũng được tính là bằng chứng cho sprint được xếp.
 # Ticket chỉ có PR trước Sprint 15 (Sprint 14 trở về trước, page dựng theo nhánh r) → không có sprint gốc
 # ở đây → PR mới của nó vẫn theo luật ngày.
-WINDOWS = ((15, "2026-08-01", "2026-09-06"), (17, "2026-09-07", "2026-09-20"), (18, "2026-09-21", "9999-12-31"))
-HOME_BRANCHES = ("r20260810", "r20260921", "base")
+WINDOWS = ((15, "2026-08-01", "2026-09-06"), (17, "2026-09-07", "2026-09-20"), (18, "2026-09-21", "2026-10-04"), (19, "2026-10-05", "9999-12-31"))
+HOME_BRANCHES = ("r20260810", "r20260921", "r20261005", "base")
 
 
 def sprint_of_date(d):

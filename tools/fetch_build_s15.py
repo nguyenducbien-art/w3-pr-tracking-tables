@@ -83,7 +83,8 @@ def ticket_from_title(t):
     m = re.search(r'ANGULAR_REPLACE-(\d+)', t or ''); return m.group(1) if m else None
 
 def is_sync(seg):
-    if seg in ('base','r20260629','r20260713','r20260713_scaffold','r20260810','r20260810_scaffold'): return True
+    if seg in ('base','r20260629','r20260713','r20260713_scaffold','r20260810','r20260810_scaffold',
+               'r20260921','r20260921_scaffold','r20261005','r20261005_scaffold'): return True
     if re.match(r'^pr\d+', seg): return True
     if 'evidences' in seg: return True
     if re.match(r'^r2026\d{4}-', seg): return True
