@@ -1,10 +1,43 @@
 {
- "updated": "2026-10-05 15:25",
+ "updated": "2026-10-05 16:46",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
- "common": [],
+ "common": [
+  "1423"
+ ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1005 + r0921 + r0907 + r0824 + r0810)",
- "main": [],
+ "main": [
+  {
+   "ticket": "1423",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 13203,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 203,
+     "del": 560,
+     "fc": 17,
+     "cr": "10-05 16:41"
+    }
+   ],
+   "r810": [],
+   "created": "10-05 16:41",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1_2fVXb-SVCWmWblLtJpnaXIAACVgyWqP/view?usp=sharing",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "マルチユニット判定ヘルパを共通化し型を統一 (CC-NEW-15/CC-NEW-11)"
+  }
+ ],
  "scaffold": []
 }

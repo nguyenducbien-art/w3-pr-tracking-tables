@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-01 10:56",
+ "updated": "2026-10-05 16:50",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -55,7 +55,18 @@
    "ticket": "1423",
    "dev": "bien",
    "bien": true,
-   "base": [],
+   "base": [
+    {
+     "num": 13203,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 237,
+     "del": 566,
+     "fc": 17,
+     "cr": "10-05 16:41"
+    }
+   ],
    "r727": [
     {
      "num": 11715,
