@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06 13:29",
+ "updated": "2026-10-06 13:41",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -8,6 +8,36 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2044",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13222,
+     "cf": "ok",
+     "st": "open",
+     "nc": 124,
+     "add": 494,
+     "del": 494,
+     "fc": 128,
+     "cr": "10-06 13:38"
+    }
+   ],
+   "created": "10-06 13:38",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "画面別リファレンスの「要確認」を解消"
+  },
   {
    "ticket": "2122",
    "dev": "khoa",
