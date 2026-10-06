@@ -1,11 +1,43 @@
 {
- "updated": "2026-10-06 14:40",
+ "updated": "2026-10-06 15:00",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
- "common": [],
+ "common": [
+  "2123"
+ ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2123",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 13229,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 397,
+     "del": 13,
+     "fc": 8,
+     "cr": "10-06 14:51"
+    }
+   ],
+   "r810": [],
+   "created": "10-06 14:51",
+   "drive": false,
+   "drvurl": "",
+   "cop": 5,
+   "unres": 5,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "入荷_検品登録・修正のロケーション・パレット選択モーダルを統合ユニット管理では /mu で検索する"
+  },
   {
    "ticket": "2044",
    "dev": "khoa",
