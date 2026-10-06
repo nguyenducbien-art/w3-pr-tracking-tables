@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-05 17:30",
+ "updated": "2026-10-06 10:06",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -173,9 +173,7 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": [
-     "aikoyd"
-    ]
+    "pd": []
    },
    "title": "一覧・明細画面の取得方式を都度取得へ統一する（BE 都度取得 API 追加 + React 共通基盤 + E029/設定項目撤去。AngularJS は対象外）"
   },
