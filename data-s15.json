@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06 13:27",
+ "updated": "2026-10-06 15:36",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -2267,6 +2267,46 @@
     "pd": []
    },
    "title": "CSV設定_CSV出力設定追加・編集 (screen_id=453) を React へ移行"
+  },
+  {
+   "ticket": "993",
+   "dev": "bien",
+   "bien": true,
+   "sid": "431",
+   "base": [],
+   "r810": [
+    {
+     "num": 12803,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 10,
+     "add": 602,
+     "del": 94,
+     "fc": 15,
+     "cr": "09-15 17:35"
+    },
+    {
+     "num": 11949,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 3,
+     "del": 0,
+     "fc": 3,
+     "cr": "08-13 13:30"
+    }
+   ],
+   "created": "08-13 13:30",
+   "drive": false,
+   "drvurl": "",
+   "cop": 3,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "セット品ルールマスタ (431)「セット品ルールマスタ出力」ボタンが日本語以外で翻訳されない不具合を修正"
   },
   {
    "ticket": "729",
@@ -5440,56 +5480,6 @@
     "pd": []
    },
    "title": "取引関連_依頼主追加・編集 (426) を Next.js へ移行"
-  },
-  {
-   "ticket": "993",
-   "dev": "dat",
-   "bien": false,
-   "sid": "431",
-   "base": [],
-   "r810": [
-    {
-     "num": 12803,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 10,
-     "add": 602,
-     "del": 94,
-     "fc": 15,
-     "cr": "09-15 17:35"
-    },
-    {
-     "num": 11949,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 1,
-     "add": 3,
-     "del": 0,
-     "fc": 3,
-     "cr": "08-13 13:30"
-    },
-    {
-     "num": 11748,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 6,
-     "add": 1270,
-     "del": 2,
-     "fc": 24,
-     "cr": "08-10 10:40"
-    }
-   ],
-   "created": "08-10 10:40",
-   "drive": false,
-   "drvurl": "",
-   "cop": 4,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "商品関連_セット品ルールマスタ (screen 431) を React へ移行"
   },
   {
    "ticket": "1521",
