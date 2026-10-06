@@ -14,7 +14,7 @@ Self-contained: chỉ dùng gh + python stdlib. KHÔNG chứa secret.
 Usage: python3 fetch_build_s18.py [output_data.json]
 """
 import json, re, subprocess, sys, datetime, time
-from sprint_overrides import keep_auto, ticket_home, HOME_BRANCHES, s14_tickets, S14_BRANCH, PR_SPRINT
+from sprint_overrides import keep_auto, ticket_home, HOME_BRANCHES, s14_tickets, S14_BRANCH, PR_SPRINT, s14_follow
 
 REPO = "dialog-inc/w3package_v2"
 OWNER, NAME = "dialog-inc", "w3package_v2"
@@ -132,6 +132,9 @@ def gh_list(branch):
             if p["state"] != "CLOSED"
             # PR → base của ticket Sprint 14 chỉ ở page s14 (trừ PR xếp tay)
             and not (branch == "base" and p["number"] not in PR_SPRINT and _ticket_of(p["headRefName"]) in _S14)
+            # PR nhánh r của ticket Sprint 14 (chưa sang s15) → page s14
+            and not (by_ticket and branch != "base" and p["number"] not in PR_SPRINT
+                     and s14_follow(_ticket_of(p["headRefName"]), _S14, _HOME))
             and keep_auto(p, 18, SINCE <= vn_date(p["createdAt"]) <= UNTIL,
                                                     _HOME if by_ticket else {}, _ticket_of(p["headRefName"]),
                                                     vn_date(p["createdAt"]))]

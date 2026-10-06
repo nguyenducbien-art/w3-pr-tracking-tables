@@ -7,6 +7,7 @@ Self-contained: chỉ dùng gh + python stdlib. KHÔNG chứa secret.
 Usage: python3 fetch_build_s14.py [output_data.json]
 """
 import json, re, subprocess, sys, datetime, time
+from sprint_overrides import ticket_home, HOME_BRANCHES, s14_follow, PR_SPRINT
 
 REPO = "dialog-inc/w3package_v2"
 OWNER, NAME = "dialog-inc", "w3package_v2"
@@ -165,6 +166,29 @@ def build():
         t["meta"].append({"num":p["number"],"key":"base","author":p["author"]["login"],
                           "created":p["createdAt"],"title":p["title"],"det":det})
         if seg.startswith("common-"): t["common"] = True
+
+    # ---- PR nhánh r sau (r20260810 / r20260921 / r20261005) của ticket Sprint 14 chưa sang page s15 ----
+    # → đi theo ticket về page này, gộp vào cột →r (user yêu cầu 06/10: #13205 theo 1423).
+    raw = {b: [p for p in json.loads(run(["gh","pr","list","--repo",REPO,"--base","mimosa/frontend/develop/"+b,
+               "--state","all","--limit","400","--json","number,state,createdAt,headRefName,author,title"]))]
+           for b in HOME_BRANCHES}
+    def _tk(head):
+        seg = head.split("/")[-1]
+        return None if is_sync(seg) else ticket_from_branch(seg)
+    def _vn(iso):
+        return (datetime.datetime.strptime(iso, "%Y-%m-%dT%H:%M:%SZ") + datetime.timedelta(hours=7)).strftime("%Y-%m-%d")
+    home = ticket_home(raw, _vn, _tk)
+    for b in HOME_BRANCHES:
+        if b == "base": continue
+        for p in raw[b]:
+            tk = _tk(p["headRefName"])
+            if p["state"] == "CLOSED" or p["number"] in PR_SPRINT or not s14_follow(tk, s14, home): continue
+            t = tickets[tk]
+            det = pr_detail(p["number"])
+            t["r727"].append({"num": p["number"], "cf": det["cf"], "st": det["st"],
+                              "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"])})
+            t["meta"].append({"num":p["number"],"key":"r727","author":p["author"]["login"],
+                              "created":p["createdAt"],"title":p["title"],"det":det})
 
     main = []
     for tk, t in tickets.items():

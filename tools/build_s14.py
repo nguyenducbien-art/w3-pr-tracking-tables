@@ -121,7 +121,7 @@ function render(D){
         +'<div class="stat">Copilot unres <span class="stat-val warn">'+totun+'</span></div>'
       +'</div>'
       +_F.bar+'<div class="scroll-wrap"><table><thead><tr>'
-        +'<th>Ticket</th><th>Dev</th><th>→base</th><th>→r20260727</th>'
+        +'<th>Ticket</th><th>Dev</th><th>→base</th><th>→r 0727/0810</th>'
         +'<th>Reviewers</th><th>Report</th><th>Copilot</th><th>Unres.</th><th>Title</th>'
       +'</tr></thead><tbody'+(_F.id?' id="'+_F.id+'"':'')+'>'+body+'</tbody></table></div>';
   }

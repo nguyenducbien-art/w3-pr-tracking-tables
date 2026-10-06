@@ -72,3 +72,10 @@ S14_BRANCH, S14_SINCE = "r20260727", "2026-07-13"
 def s14_tickets(prs, ticket_of):
     return {tk for p in prs if p["state"] != "CLOSED" and p["createdAt"][:10] >= S14_SINCE
             for tk in [ticket_of(p["headRefName"])] if tk}
+
+
+# ---- PR nhánh r (r20260810…) của ticket Sprint 14 → về page s14 (user yêu cầu 06/10: #13205 đi theo 1423) ----
+# Ticket S14 có sprint gốc = 15 (đã có PR r20260810 trong Sprint 15) → đang hiện ở page s15, giữ nguyên.
+# Các ticket S14 còn lại: PR nhánh r mới cũng nằm ở page s14 (cột →r gộp r0727 + r0810), không ở s17/18/19.
+def s14_follow(tk, s14, home):
+    return tk in s14 and home.get(tk) != 15
