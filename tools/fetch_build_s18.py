@@ -14,7 +14,7 @@ Self-contained: chỉ dùng gh + python stdlib. KHÔNG chứa secret.
 Usage: python3 fetch_build_s18.py [output_data.json]
 """
 import json, re, subprocess, sys, datetime, time
-from sprint_overrides import keep_auto, ticket_home, HOME_BRANCHES
+from sprint_overrides import keep_auto, ticket_home, HOME_BRANCHES, s14_tickets, S14_BRANCH, PR_SPRINT
 
 REPO = "dialog-inc/w3package_v2"
 OWNER, NAME = "dialog-inc", "w3package_v2"
@@ -119,15 +119,20 @@ def _ticket_of(head):
     return tk if tk and tk not in EXCLUDE else None
 
 _HOME = None
+_S14 = None
 def gh_list(branch):
     # sprint_overrides: PR xếp tay > sprint gốc của ticket (PR mới của ticket sprint cũ về page sprint cũ) > luật ngày.
     # Nhánh scaffold không gắn ticket → chỉ xếp tay / luật ngày.
-    global _HOME
+    global _HOME, _S14
+    if _S14 is None: _S14 = s14_tickets(gh_raw(S14_BRANCH), _ticket_of)
     by_ticket = branch in HOME_BRANCHES
     if by_ticket and _HOME is None:
         _HOME = ticket_home({b: gh_raw(b) for b in HOME_BRANCHES}, vn_date, _ticket_of)
     return [p for p in gh_raw(branch)
-            if p["state"] != "CLOSED" and keep_auto(p, 18, SINCE <= vn_date(p["createdAt"]) <= UNTIL,
+            if p["state"] != "CLOSED"
+            # PR → base của ticket Sprint 14 chỉ ở page s14 (trừ PR xếp tay)
+            and not (branch == "base" and p["number"] not in PR_SPRINT and _ticket_of(p["headRefName"]) in _S14)
+            and keep_auto(p, 18, SINCE <= vn_date(p["createdAt"]) <= UNTIL,
                                                     _HOME if by_ticket else {}, _ticket_of(p["headRefName"]),
                                                     vn_date(p["createdAt"]))]
 

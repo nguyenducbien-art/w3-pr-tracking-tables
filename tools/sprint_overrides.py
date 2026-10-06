@@ -59,3 +59,15 @@ def keep_auto(p, sprint, in_window, home, tk, d):
     ds = sprint_of_date(d)
     if ds is not None and tk in home and home[tk] < ds: return home[tk] == sprint
     return in_window
+
+
+# ---- Ticket Sprint 14: PR → base chỉ nằm ở page s14 (user báo trùng #13203 ở s14 + s19, 06/10) ----
+# Page s14 dựng theo NHÁNH: ticket có PR (không CLOSED) nhắm r20260727 → lấy MỌI PR → base của ticket đó,
+# không chặn ngày. Nên PR → base mới của ticket Sprint 14 phải bị loại khỏi các page chia theo ngày
+# (s17 / s18 / s19), không thì hiện 2 nơi. Page s15 giữ nguyên (ticket S14 làm tiếp ở r20260810 vẫn kèm PR base).
+S14_BRANCH, S14_SINCE = "r20260727", "2026-07-13"
+
+
+def s14_tickets(prs, ticket_of):
+    return {tk for p in prs if p["state"] != "CLOSED" and p["createdAt"][:10] >= S14_SINCE
+            for tk in [ticket_of(p["headRefName"])] if tk}
