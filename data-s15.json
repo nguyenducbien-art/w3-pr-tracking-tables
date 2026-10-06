@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06 11:34",
+ "updated": "2026-10-06 13:27",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -3291,6 +3291,46 @@
    "title": "未ログイン/セッション失効時に一部画面が白画面になりloginへ遷移しない不具合の修正"
   },
   {
+   "ticket": "953",
+   "dev": "dat",
+   "bien": false,
+   "sid": "425",
+   "base": [],
+   "r810": [
+    {
+     "num": 12773,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 18,
+     "del": 0,
+     "fc": 3,
+     "cr": "09-15 10:26"
+    },
+    {
+     "num": 11872,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 13,
+     "del": 4,
+     "fc": 3,
+     "cr": "08-12 11:12"
+    }
+   ],
+   "created": "08-12 11:12",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "依頼主マスタ (screen 425) の表示件数超過モーダル (E029) が出ない不具合を修正"
+  },
+  {
    "ticket": "635",
    "dev": "minh",
    "bien": false,
@@ -5450,56 +5490,6 @@
     "pd": []
    },
    "title": "商品関連_セット品ルールマスタ (screen 431) を React へ移行"
-  },
-  {
-   "ticket": "953",
-   "dev": "dat",
-   "bien": false,
-   "sid": "425",
-   "base": [],
-   "r810": [
-    {
-     "num": 12773,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 2,
-     "add": 18,
-     "del": 0,
-     "fc": 3,
-     "cr": "09-15 10:26"
-    },
-    {
-     "num": 11872,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 1,
-     "add": 13,
-     "del": 4,
-     "fc": 3,
-     "cr": "08-12 11:12"
-    },
-    {
-     "num": 11745,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 3,
-     "add": 1163,
-     "del": 2,
-     "fc": 24,
-     "cr": "08-10 09:28"
-    }
-   ],
-   "created": "08-10 09:28",
-   "drive": false,
-   "drvurl": "",
-   "cop": 3,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "取引関連_依頼主マスタ (screen 425) を React へ移行"
   },
   {
    "ticket": "1521",
