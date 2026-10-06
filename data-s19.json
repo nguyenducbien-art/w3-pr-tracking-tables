@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06 15:28",
+ "updated": "2026-10-06 15:43",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -34,7 +34,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "入荷_検品登録・修正のロケーション・パレット選択モーダルを統合ユニット管理では /mu で検索する"
   },
