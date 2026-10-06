@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06 11:53",
+ "updated": "2026-10-06 13:12",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -34,7 +34,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "リファレンス章 9 の規約提案 8 件を規約・変換対応表・Skill に反映"
   },
@@ -103,18 +105,7 @@
    "dev": "bien",
    "bien": true,
    "sid": "",
-   "base": [
-    {
-     "num": 13203,
-     "cf": "ok",
-     "st": "open",
-     "nc": 4,
-     "add": 237,
-     "del": 566,
-     "fc": 17,
-     "cr": "10-05 16:41"
-    }
-   ],
+   "base": [],
    "r810": [
     {
      "num": 13205,
@@ -127,7 +118,7 @@
      "cr": "10-05 17:09"
     }
    ],
-   "created": "10-05 16:41",
+   "created": "10-05 17:09",
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/1_2fVXb-SVCWmWblLtJpnaXIAACVgyWqP/view?usp=sharing",
    "cop": 2,
@@ -137,7 +128,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "マルチユニット判定ヘルパを共通化し型を統一 (CC-NEW-15/CC-NEW-11)"
+   "title": "マルチユニット判定ヘルパの TSDoc を規約の書式へ揃える"
   }
  ],
  "scaffold": []
