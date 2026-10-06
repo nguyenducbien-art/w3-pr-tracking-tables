@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-05 16:02",
+ "updated": "2026-10-06 10:36",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -3877,6 +3877,56 @@
    "title": "ユーザー設定 (screen_id=441) 一覧画面を React 実装"
   },
   {
+   "ticket": "643",
+   "dev": "bien",
+   "bien": true,
+   "sid": "444",
+   "base": [],
+   "r810": [
+    {
+     "num": 12666,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 5,
+     "add": 1196,
+     "del": 53,
+     "fc": 8,
+     "cr": "09-09 16:13"
+    },
+    {
+     "num": 12193,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 4,
+     "add": 15,
+     "del": 6,
+     "fc": 4,
+     "cr": "08-20 17:23"
+    },
+    {
+     "num": 11824,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 3,
+     "del": 2,
+     "fc": 1,
+     "cr": "08-11 13:36"
+    }
+   ],
+   "created": "08-11 13:36",
+   "drive": false,
+   "drvurl": "",
+   "cop": 3,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "444 項目表示設定 is_display=0 時にダッシュボードへリダイレクト"
+  },
+  {
    "ticket": "1133",
    "dev": "hung",
    "bien": false,
@@ -5493,66 +5543,6 @@
     "pd": []
    },
    "title": "画面設定（歯車）遷移を項目表示設定のパラメータ契約に整合"
-  },
-  {
-   "ticket": "643",
-   "dev": "minh",
-   "bien": false,
-   "sid": "444",
-   "base": [],
-   "r810": [
-    {
-     "num": 12666,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 5,
-     "add": 1196,
-     "del": 53,
-     "fc": 8,
-     "cr": "09-09 16:13"
-    },
-    {
-     "num": 12193,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 4,
-     "add": 15,
-     "del": 6,
-     "fc": 4,
-     "cr": "08-20 17:23"
-    },
-    {
-     "num": 11824,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 1,
-     "add": 3,
-     "del": 2,
-     "fc": 1,
-     "cr": "08-11 13:36"
-    },
-    {
-     "num": 11736,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 6,
-     "add": 3210,
-     "del": 3,
-     "fc": 26,
-     "cr": "08-07 13:44"
-    }
-   ],
-   "created": "08-07 13:44",
-   "drive": false,
-   "drvurl": "",
-   "cop": 6,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "画面設定_項目表示設定 (screen 444) を React 実装"
   },
   {
    "ticket": "1520",
