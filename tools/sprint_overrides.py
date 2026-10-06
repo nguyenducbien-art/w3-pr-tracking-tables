@@ -64,7 +64,8 @@ def keep_auto(p, sprint, in_window, home, tk, d):
 # ---- Ticket Sprint 14: PR → base chỉ nằm ở page s14 (user báo trùng #13203 ở s14 + s19, 06/10) ----
 # Page s14 dựng theo NHÁNH: ticket có PR (không CLOSED) nhắm r20260727 → lấy MỌI PR → base của ticket đó,
 # không chặn ngày. Nên PR → base mới của ticket Sprint 14 phải bị loại khỏi các page chia theo ngày
-# (s17 / s18 / s19), không thì hiện 2 nơi. Page s15 giữ nguyên (ticket S14 làm tiếp ở r20260810 vẫn kèm PR base).
+# (s15 / s17 / s18 / s19), không thì hiện 2 nơi. s15 áp từ 06/10 (user yêu cầu): ticket S14 làm tiếp ở
+# r20260810 vẫn hiện ở s15 nhưng chỉ kèm PR r20260810, PR → base của nó xem ở page s14.
 S14_BRANCH, S14_SINCE = "r20260727", "2026-07-13"
 
 
