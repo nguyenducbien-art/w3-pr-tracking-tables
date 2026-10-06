@@ -1,10 +1,8 @@
 {
- "updated": "2026-10-06 13:47",
+ "updated": "2026-10-06 14:40",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
- "common": [
-  "1423"
- ],
+ "common": [],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
@@ -131,36 +129,6 @@
     "pd": []
    },
    "title": "screen-ids.ts の実装済み画面に残っていた「未実装」コメントを修正"
-  },
-  {
-   "ticket": "1423",
-   "dev": "bien",
-   "bien": true,
-   "sid": "",
-   "base": [],
-   "r810": [
-    {
-     "num": 13205,
-     "cf": "ok",
-     "st": "open",
-     "nc": 5,
-     "add": 92,
-     "del": 113,
-     "fc": 7,
-     "cr": "10-05 17:09"
-    }
-   ],
-   "created": "10-05 17:09",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1_2fVXb-SVCWmWblLtJpnaXIAACVgyWqP/view?usp=sharing",
-   "cop": 2,
-   "unres": 2,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "マルチユニット判定ヘルパの TSDoc を規約の書式へ揃える"
   }
  ],
  "scaffold": []

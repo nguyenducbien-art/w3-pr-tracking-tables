@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06 13:14",
+ "updated": "2026-10-06 14:41",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -7,10 +7,8 @@
   "1576",
   "1893",
   "2045",
-  "1500",
   "2063",
   "2097",
-  "1499",
   "2043"
  ],
  "invalidBase": [],
@@ -158,10 +156,10 @@
      "num": 13002,
      "cf": "bad",
      "st": "open",
-     "nc": 35,
-     "add": 2800,
-     "del": 2317,
-     "fc": 194,
+     "nc": 38,
+     "add": 3116,
+     "del": 2430,
+     "fc": 197,
      "cr": "09-24 13:39"
     }
    ],
@@ -272,36 +270,6 @@
     ]
    },
    "title": "通信失敗時のエラー文言を多言語化し内部文言の露出を止める"
-  },
-  {
-   "ticket": "1500",
-   "dev": "bien",
-   "bien": true,
-   "sid": "",
-   "base": [],
-   "r810": [
-    {
-     "num": 12951,
-     "cf": "bad",
-     "st": "open",
-     "nc": 1,
-     "add": 149,
-     "del": 82,
-     "fc": 5,
-     "cr": "09-22 14:14"
-    }
-   ],
-   "created": "09-22 14:14",
-   "drive": false,
-   "drvurl": "",
-   "cop": 0,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "403 時の画面遷移を画面入口に限定する（補助取得では離脱させない）"
   },
   {
    "ticket": "2063",
@@ -458,36 +426,6 @@
     "pd": []
    },
    "title": "ヘッダーにユニット情報を追加し、ナビゲーションの欠けと余白を是正"
-  },
-  {
-   "ticket": "1499",
-   "dev": "bien",
-   "bien": true,
-   "sid": "",
-   "base": [],
-   "r810": [
-    {
-     "num": 12945,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 47,
-     "add": 402,
-     "del": 153,
-     "fc": 23,
-     "cr": "09-22 13:16"
-    }
-   ],
-   "created": "09-22 13:16",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1RqSnf8RjR2hJo4u8UJ4UqgLEREs2dGiX/view?usp=sharing",
-   "cop": 1,
-   "unres": 1,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "base同期: develop/base → r20260810 (AR-1453, AR-1497, AR-1499, AR-1500)"
   },
   {
    "ticket": "8",
