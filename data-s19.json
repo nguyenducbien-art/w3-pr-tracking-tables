@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07 09:55",
+ "updated": "2026-10-07 11:01",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -57,20 +57,18 @@
     {
      "num": 13222,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 149,
      "add": 547,
      "del": 547,
      "fc": 128,
      "cr": "10-06 13:38",
      "rv": {
-      "ap": [],
-      "ch": [
+      "ap": [
        "kanayam"
       ],
-      "pd": [
-       "kanayam"
-      ]
+      "ch": [],
+      "pd": []
      }
     }
    ],
@@ -80,13 +78,11 @@
    "cop": 0,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "画面別リファレンスの「要確認」を解消"
   },
@@ -110,9 +106,7 @@
       "ch": [
        "kanayam"
       ],
-      "pd": [
-       "kanayam"
-      ]
+      "pd": []
      }
     }
    ],
@@ -127,9 +121,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "リファレンス章 9 の規約提案 8 件を規約・変換対応表・Skill に反映"
   },
