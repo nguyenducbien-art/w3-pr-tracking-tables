@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06 17:09",
+ "updated": "2026-10-07 16:18",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -41,8 +41,7 @@
   "1527",
   "1526",
   "1525",
-  "1521",
-  "1520"
+  "1521"
  ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/r20260810_scaffold",
@@ -4278,6 +4277,56 @@
    "title": "依頼主マスタ (screen 425) の表示件数超過モーダル (E029) が出ない不具合を修正"
   },
   {
+   "ticket": "612",
+   "dev": "bien",
+   "bien": true,
+   "sid": "426",
+   "base": [],
+   "r810": [
+    {
+     "num": 12195,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 120,
+     "del": 12,
+     "fc": 6,
+     "cr": "08-20 17:56",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    },
+    {
+     "num": 11871,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 8,
+     "del": 9,
+     "fc": 24,
+     "cr": "08-12 11:05",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    }
+   ],
+   "created": "08-12 11:05",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "426 依頼主追加・編集 のルートを /owner/client-edits へ修正"
+  },
+  {
    "ticket": "635",
    "dev": "minh",
    "bien": false,
@@ -6953,71 +7002,6 @@
    "title": "商品荷姿マスタ一覧画面を React 移行"
   },
   {
-   "ticket": "612",
-   "dev": "hung",
-   "bien": false,
-   "sid": "426",
-   "base": [],
-   "r810": [
-    {
-     "num": 12195,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 2,
-     "add": 120,
-     "del": 12,
-     "fc": 6,
-     "cr": "08-20 17:56",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     }
-    },
-    {
-     "num": 11871,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 1,
-     "add": 8,
-     "del": 9,
-     "fc": 24,
-     "cr": "08-12 11:05",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     }
-    },
-    {
-     "num": 11753,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 4,
-     "add": 2797,
-     "del": 2,
-     "fc": 32,
-     "cr": "08-10 11:12",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     }
-    }
-   ],
-   "created": "08-10 11:12",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1lGaM_PB308YT8Zma_SPcfx1jC8lVBQYn/view?usp=drive_link",
-   "cop": 3,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "取引関連_依頼主追加・編集 (426) を Next.js へ移行"
-  },
-  {
    "ticket": "1521",
    "dev": "minh",
    "bien": false,
@@ -7071,61 +7055,6 @@
     "pd": []
    },
    "title": "画面設定（歯車）遷移を項目表示設定のパラメータ契約に整合"
-  },
-  {
-   "ticket": "1520",
-   "dev": "minh",
-   "bien": false,
-   "sid": "",
-   "base": [
-    {
-     "num": 11731,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 3,
-     "add": 56,
-     "del": 1,
-     "fc": 3,
-     "cr": "08-07 13:24",
-     "rv": {
-      "ap": [
-       "kanayam"
-      ],
-      "ch": [],
-      "pd": []
-     }
-    }
-   ],
-   "r810": [
-    {
-     "num": 11754,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 3,
-     "add": 56,
-     "del": 1,
-     "fc": 3,
-     "cr": "08-10 11:14",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     }
-    }
-   ],
-   "created": "08-07 13:24",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1y7DSS_jbj6hlGeJa4fmHXcMIt54amRqg/view?usp=sharing",
-   "cop": 1,
-   "unres": 0,
-   "rvw": {
-    "ap": [
-     "kanayam"
-    ],
-    "ch": [],
-    "pd": []
-   },
-   "title": "ユーザー情報API (/me) に is_manager_privilege を追加"
   }
  ],
  "scaffold": [
