@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06 17:02",
+ "updated": "2026-10-07 10:54",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -181,10 +181,10 @@
      "num": 13002,
      "cf": "bad",
      "st": "open",
-     "nc": 38,
-     "add": 3116,
-     "del": 2430,
-     "fc": 197,
+     "nc": 42,
+     "add": 3670,
+     "del": 2437,
+     "fc": 201,
      "cr": "09-24 13:39",
      "rv": {
       "ap": [],
@@ -203,7 +203,7 @@
     "ch": [],
     "pd": []
    },
-   "title": "一覧・明細画面の取得方式を都度取得へ統一する（BE 都度取得 API 追加 + React 共通基盤 + E029/設定項目撤去。AngularJS は対象外）"
+   "title": "一覧・明細画面の取得方式を都度取得へ統一する（BE 都度取得 API 追加 + React 共通基盤 + E029 撤去・一覧表示件数を CSV 出力件数上限として表示。AngularJS は対象外）"
   },
   {
    "ticket": "1893",
