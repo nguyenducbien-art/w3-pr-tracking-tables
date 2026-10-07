@@ -150,7 +150,7 @@ def build():
         t = tickets.setdefault(tk, {"base":[], "r727":[], "meta":[], "common":False})
         det = pr_detail(p["number"])
         t["r727"].append({"num": p["number"], "cf": det["cf"], "st": det["st"],
-                          "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"])})
+                          "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"]), "rv": det["rvw"]})
         t["meta"].append({"num":p["number"],"key":"r727","author":p["author"]["login"],
                           "created":p["createdAt"],"title":p["title"],"det":det})
         if seg.startswith("common-"): t["common"] = True
@@ -162,7 +162,7 @@ def build():
         t = tickets[tk]
         det = pr_detail(p["number"])
         t["base"].append({"num": p["number"], "cf": det["cf"], "st": det["st"],
-                          "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"])})
+                          "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"]), "rv": det["rvw"]})
         t["meta"].append({"num":p["number"],"key":"base","author":p["author"]["login"],
                           "created":p["createdAt"],"title":p["title"],"det":det})
         if seg.startswith("common-"): t["common"] = True
@@ -186,7 +186,7 @@ def build():
             t = tickets[tk]
             det = pr_detail(p["number"])
             t["r727"].append({"num": p["number"], "cf": det["cf"], "st": det["st"],
-                              "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"])})
+                              "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"]), "rv": det["rvw"]})
             t["meta"].append({"num":p["number"],"key":"r727","author":p["author"]["login"],
                               "created":p["createdAt"],"title":p["title"],"det":det})
 
@@ -219,7 +219,7 @@ def build():
         det = pr_detail(p["number"])
         dev = dev_of(p["author"]["login"])
         scaffold.append({"ticket":ticket_from_title(p["title"]) or "—","dev":dev,"bien":dev=="bien",
-                         "pr":{"num":p["number"],"cf":det["cf"],"st":det["st"],"nc":det["nc"],"add":det["add"],"del":det["del"],"fc":det["fc"],"cr":fmt_dt(p["createdAt"])},"created":fmt_dt(p["createdAt"]),
+                         "pr":{"num":p["number"],"cf":det["cf"],"st":det["st"],"nc":det["nc"],"add":det["add"],"del":det["del"],"fc":det["fc"],"cr":fmt_dt(p["createdAt"]),"rv":det["rvw"]},"created":fmt_dt(p["createdAt"]),
                          "cop":det["cop"],"unres":det["unres"],"rvw":det["rvw"],"title":clean_title(p["title"])})
     scaffold.sort(key=lambda m:m["created"], reverse=True)
 

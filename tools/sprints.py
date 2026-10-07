@@ -33,6 +33,9 @@ def nav_html(active_label):
             s["href"], q, ' class="active"' if s["label"] == active_label else "", s["label"])
         for s in SPRINTS
     )
+    # Page tổng hợp (không phải sprint): PR đang chờ Kanaya review — gom từ mọi sprint.
+    items += '<a href="kanaya.html%s"%s style="margin-left:10px">⏳ Chờ Kanaya</a>' % (
+        q, ' class="active"' if active_label == "Chờ Kanaya" else "")
     # search.js tự chèn ô tìm kiếm vào .topnav-inner; data-sprints = danh sách file để tra.
     search = ('<script src="search.js%s" data-sprints="%s" defer></script>'
               % (q, html.escape(json.dumps(SPRINTS, ensure_ascii=False), quote=True)))
