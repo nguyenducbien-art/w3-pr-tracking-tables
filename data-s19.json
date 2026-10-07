@@ -1,13 +1,88 @@
 {
- "updated": "2026-10-07 13:38",
+ "updated": "2026-10-07 13:57",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2128",
   "2123"
  ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2128",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13245,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 357,
+     "del": 29,
+     "fc": 3,
+     "cr": "10-07 13:53",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    }
+   ],
+   "created": "10-07 13:53",
+   "drive": false,
+   "drvurl": "",
+   "cop": 3,
+   "unres": 3,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "一覧グリッドの列フィルタ・並べ替え変更で画面全体を再取得しないよう修正"
+  },
+  {
+   "ticket": "2136",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13244,
+     "cf": "ok",
+     "st": "open",
+     "nc": 27,
+     "add": 117,
+     "del": 112,
+     "fc": 27,
+     "cr": "10-07 13:45",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": [
+       "kanayam"
+      ]
+     }
+    }
+   ],
+   "created": "10-07 13:45",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": [
+     "kanayam"
+    ]
+   },
+   "title": "画面別リファレンスの古い記述・誤りを直す"
+  },
   {
    "ticket": "2123",
    "dev": "khoa",
