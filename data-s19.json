@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06 17:17",
+ "updated": "2026-10-07 09:55",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -58,7 +58,7 @@
      "num": 13222,
      "cf": "ok",
      "st": "changes",
-     "nc": 148,
+     "nc": 149,
      "add": 547,
      "del": 547,
      "fc": 128,
@@ -68,7 +68,9 @@
       "ch": [
        "kanayam"
       ],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      }
     }
    ],
@@ -82,7 +84,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "画面別リファレンスの「要確認」を解消"
   },
