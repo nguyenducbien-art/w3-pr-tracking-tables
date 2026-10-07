@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07 16:01",
+ "updated": "2026-10-07 17:21",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -51,8 +51,8 @@
     }
    ],
    "created": "10-07 15:37",
-   "drive": false,
-   "drvurl": "",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/11SwC_rsmFdak0-WoLl0HYfFALsHXNxiW/view",
    "cop": 0,
    "unres": 0,
    "rvw": {
@@ -102,8 +102,8 @@
     }
    ],
    "created": "10-07 15:37",
-   "drive": false,
-   "drvurl": "",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1W5iEHcKMW8CqjBigmTUa5_TInffW0BSV/view",
    "cop": 0,
    "unres": 0,
    "rvw": {
