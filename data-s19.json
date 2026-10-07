@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07 17:21",
+ "updated": "2026-10-07 17:43",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -118,16 +118,32 @@
    "dev": "bien",
    "bien": true,
    "sid": "",
-   "base": [],
+   "base": [
+    {
+     "num": 13257,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 361,
+     "del": 32,
+     "fc": 4,
+     "cr": "10-07 17:36",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    }
+   ],
    "r810": [
     {
      "num": 13245,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 357,
-     "del": 29,
-     "fc": 3,
+     "nc": 2,
+     "add": 361,
+     "del": 32,
+     "fc": 4,
      "cr": "10-07 13:53",
      "rv": {
       "ap": [],
@@ -137,10 +153,10 @@
     }
    ],
    "created": "10-07 13:53",
-   "drive": false,
-   "drvurl": "",
-   "cop": 3,
-   "unres": 3,
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1SFDyWmoUvpLiX-iKCGhfa9G416KbLqFO/view",
+   "cop": 2,
+   "unres": 2,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -278,20 +294,18 @@
     {
      "num": 13218,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 6,
      "add": 37,
      "del": 24,
      "fc": 11,
      "cr": "10-06 11:31",
      "rv": {
-      "ap": [],
-      "ch": [
+      "ap": [
        "kanayam"
       ],
-      "pd": [
-       "kanayam"
-      ]
+      "ch": [],
+      "pd": []
      }
     }
    ],
@@ -302,13 +316,11 @@
    "cop": 7,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "リファレンス章 9 の規約提案 8 件を規約・変換対応表・Skill に反映"
   },
