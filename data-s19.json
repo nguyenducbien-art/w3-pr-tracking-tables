@@ -1,14 +1,118 @@
 {
- "updated": "2026-10-07 15:11",
+ "updated": "2026-10-07 15:46",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2057",
+  "2105",
   "2128",
   "2123"
  ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2057",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 13251,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 283,
+     "del": 83,
+     "fc": 6,
+     "cr": "10-07 15:37",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    }
+   ],
+   "r810": [
+    {
+     "num": 13252,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 179,
+     "del": 15,
+     "fc": 6,
+     "cr": "10-07 15:37",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    }
+   ],
+   "created": "10-07 15:37",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "画像プロキシを共通の proxyLaravelImage へ寄せ X-Content-Type-Options: nosniff を付与する"
+  },
+  {
+   "ticket": "2105",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 13249,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 822,
+     "del": 336,
+     "fc": 24,
+     "cr": "10-07 15:37",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    }
+   ],
+   "r810": [
+    {
+     "num": 13250,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 822,
+     "del": 336,
+     "fc": 24,
+     "cr": "10-07 15:37",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    }
+   ],
+   "created": "10-07 15:37",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "選択モーダルの表を I18nDataTable に統一し翻訳済みラベルと 1 ページ 50 件を適用する"
+  },
   {
    "ticket": "2128",
    "dev": "bien",
