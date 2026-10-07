@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07 13:32",
+ "updated": "2026-10-07 13:38",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -106,7 +106,9 @@
       "ch": [
        "kanayam"
       ],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      }
     }
    ],
@@ -121,7 +123,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "リファレンス章 9 の規約提案 8 件を規約・変換対応表・Skill に反映"
   },
