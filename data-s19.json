@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07 15:46",
+ "updated": "2026-10-07 15:53",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -167,9 +167,7 @@
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": [
-       "kanayam"
-      ]
+      "pd": []
      }
     }
    ],
@@ -181,9 +179,7 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "画面別リファレンスの古い記述・誤りを直す"
   },
