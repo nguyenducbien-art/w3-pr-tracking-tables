@@ -1,8 +1,9 @@
 {
- "updated": "2026-10-08 13:38",
+ "updated": "2026-10-08 14:06",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2137",
   "2065",
   "2130",
   "2057",
@@ -13,6 +14,57 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2137",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 13285,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 321,
+     "del": 2,
+     "fc": 2,
+     "cr": "10-08 14:02",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    }
+   ],
+   "r810": [
+    {
+     "num": 13286,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 321,
+     "del": 2,
+     "fc": 2,
+     "cr": "10-08 14:04",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    }
+   ],
+   "created": "10-08 14:02",
+   "drive": false,
+   "drvurl": "",
+   "cop": 4,
+   "unres": 4,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "統合ユニットの検品登録・検品キャンセルで、統合されていないユニットの入荷データを拒否する"
+  },
   {
    "ticket": "2065",
    "dev": "bien",
@@ -92,7 +144,7 @@
     {
      "num": 13284,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 2,
      "add": 173,
      "del": 0,
