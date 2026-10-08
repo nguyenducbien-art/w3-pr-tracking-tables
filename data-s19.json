@@ -1,8 +1,9 @@
 {
- "updated": "2026-10-08 14:39",
+ "updated": "2026-10-08 15:01",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2039",
   "2137",
   "2065",
   "2130",
@@ -14,6 +15,57 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2039",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 13290,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 737,
+     "del": 15,
+     "fc": 7,
+     "cr": "10-08 14:53",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    }
+   ],
+   "r810": [
+    {
+     "num": 13291,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 732,
+     "del": 14,
+     "fc": 7,
+     "cr": "10-08 15:00",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    }
+   ],
+   "created": "10-08 14:53",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/11dsUurS1welYGa_v12sC9jRD5lIgLzIv/view?usp=sharing",
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "バリデーション文言の英語・ベトナム語の未翻訳を解消する"
+  },
   {
    "ticket": "2137",
    "dev": "khoa",
@@ -58,8 +110,8 @@
     }
    ],
    "created": "10-08 14:02",
-   "drive": false,
-   "drvurl": "",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1TO0ywE-iaQ1J2C8vMc3I6edNVi0U8UBj/view?usp=sharing",
    "cop": 4,
    "unres": 0,
    "rvw": {
