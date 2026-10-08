@@ -1,8 +1,9 @@
 {
- "updated": "2026-10-07 17:59",
+ "updated": "2026-10-08 11:13",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2130",
   "2057",
   "2105",
   "2128",
@@ -11,6 +12,41 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2130",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 13273,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 172,
+     "del": 0,
+     "fc": 3,
+     "cr": "10-08 11:04",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    }
+   ],
+   "r810": [],
+   "created": "10-08 11:04",
+   "drive": false,
+   "drvurl": "",
+   "cop": 3,
+   "unres": 3,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "契約情報の更新 API で、契約情報ボタンを使えない利用者の更新と事業会社区分の格上げを拒否する"
+  },
   {
    "ticket": "2057",
    "dev": "bien",
