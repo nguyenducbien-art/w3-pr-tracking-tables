@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-08 14:06",
+ "updated": "2026-10-08 14:21",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -24,15 +24,17 @@
      "num": 13285,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 321,
+     "nc": 2,
+     "add": 329,
      "del": 2,
      "fc": 2,
      "cr": "10-08 14:02",
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      }
     }
    ],
@@ -41,15 +43,17 @@
      "num": 13286,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 321,
+     "nc": 5,
+     "add": 502,
      "del": 2,
-     "fc": 2,
+     "fc": 5,
      "cr": "10-08 14:04",
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": []
+      "pd": [
+       "bien"
+      ]
      }
     }
    ],
@@ -57,11 +61,13 @@
    "drive": false,
    "drvurl": "",
    "cop": 4,
-   "unres": 4,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "統合ユニットの検品登録・検品キャンセルで、統合されていないユニットの入荷データを拒否する"
   },
