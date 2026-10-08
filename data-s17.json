@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09 00:12",
+ "updated": "2026-10-09 01:55",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -707,10 +707,10 @@
      "num": 13298,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 1177,
-     "del": 73,
-     "fc": 21,
+     "nc": 4,
+     "add": 1239,
+     "del": 82,
+     "fc": 22,
      "cr": "10-09 00:00",
      "rv": {
       "ap": [],
@@ -737,8 +737,8 @@
     }
    ],
    "created": "09-15 16:21",
-   "drive": false,
-   "drvurl": "",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1gXczRHBO0QttReBDBtWoag-A1ZJpN4ma/view?usp=sharing",
    "cop": 4,
    "unres": 4,
    "rvw": {
@@ -1788,10 +1788,10 @@
      "num": 13296,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 261,
+     "nc": 2,
+     "add": 309,
      "del": 14,
-     "fc": 8,
+     "fc": 9,
      "cr": "10-08 23:32",
      "rv": {
       "ap": [],
@@ -1818,8 +1818,8 @@
     }
    ],
    "created": "09-07 15:05",
-   "drive": false,
-   "drvurl": "",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1vkX_aZrc5L0cEN7SeUIramVg6TTibFdb/view?usp=sharing",
    "cop": 1,
    "unres": 1,
    "rvw": {
