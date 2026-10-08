@@ -1,8 +1,9 @@
 {
- "updated": "2026-10-08 11:13",
+ "updated": "2026-10-08 11:42",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2065",
   "2130",
   "2057",
   "2105",
@@ -12,6 +13,41 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2065",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 13279,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 1808,
+     "del": 121,
+     "fc": 50,
+     "cr": "10-08 11:26",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    }
+   ],
+   "r810": [],
+   "created": "10-08 11:26",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1S5w87iwGCbgYtGvTyTmIJP4-I8XL2eCN/view",
+   "cop": 4,
+   "unres": 4,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "選択モーダルで一覧データの取得に失敗したらエラーダイアログで通知する"
+  },
   {
    "ticket": "2130",
    "dev": "khoa",
