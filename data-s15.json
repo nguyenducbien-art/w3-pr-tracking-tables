@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07 16:18",
+ "updated": "2026-10-08 12:20",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -6965,41 +6965,6 @@
     "pd": []
    },
    "title": "共通SearchAreaに日付レンジ種別を追加"
-  },
-  {
-   "ticket": "619",
-   "dev": "minh",
-   "bien": false,
-   "sid": "468",
-   "base": [],
-   "r810": [
-    {
-     "num": 11755,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 8,
-     "add": 1290,
-     "del": 2,
-     "fc": 26,
-     "cr": "08-10 11:52",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     }
-    }
-   ],
-   "created": "08-10 11:52",
-   "drive": false,
-   "drvurl": "",
-   "cop": 2,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "商品荷姿マスタ一覧画面を React 移行"
   },
   {
    "ticket": "1521",
