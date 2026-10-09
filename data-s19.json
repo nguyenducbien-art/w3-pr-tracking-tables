@@ -1,8 +1,9 @@
 {
- "updated": "2026-10-08 15:38",
+ "updated": "2026-10-09 13:11",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2133",
   "2039",
   "2137",
   "2065",
@@ -15,6 +16,57 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2133",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 13313,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 117,
+     "del": 2,
+     "fc": 2,
+     "cr": "10-09 13:06",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    }
+   ],
+   "r810": [
+    {
+     "num": 13314,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 490,
+     "del": 117,
+     "fc": 9,
+     "cr": "10-09 13:07",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    }
+   ],
+   "created": "10-09 13:06",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "編集画面の列設定取得 API で、表示しない設定の子画面を返さず、子画面が無くても children を返す"
+  },
   {
    "ticket": "2039",
    "dev": "khoa",
