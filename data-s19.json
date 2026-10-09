@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09 16:01",
+ "updated": "2026-10-09 17:14",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -16,6 +16,41 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2134",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13328,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 205,
+     "del": 3,
+     "fc": 3,
+     "cr": "10-09 17:03",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    }
+   ],
+   "created": "10-09 17:03",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "在庫_全在庫一覧を単一ユニットでは画面URLの入口で開けないようにする"
+  },
   {
    "ticket": "2135",
    "dev": "bien",
