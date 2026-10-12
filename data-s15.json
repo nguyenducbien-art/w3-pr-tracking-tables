@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12 11:30",
+ "updated": "2026-10-12 16:32",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -3064,7 +3064,9 @@
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      }
     }
    ],
@@ -3153,7 +3155,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "セット品ルールマスタから追加・編集画面への遷移 URL 修正 (screen_id=431→432)"
   },
