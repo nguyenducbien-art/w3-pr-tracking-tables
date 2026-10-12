@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09 17:14",
+ "updated": "2026-10-12 11:24",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -16,6 +16,41 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2127",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13336,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 52,
+     "del": 13,
+     "fc": 4,
+     "cr": "10-12 11:17",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    }
+   ],
+   "created": "10-12 11:17",
+   "drive": false,
+   "drvurl": "",
+   "cop": 1,
+   "unres": 1,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユニット設定_基本設定の1行1項目のドロップダウン幅を選択肢の最長文字列に合わせる"
+  },
   {
    "ticket": "2134",
    "dev": "bien",
