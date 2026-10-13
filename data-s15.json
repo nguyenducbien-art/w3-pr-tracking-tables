@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13 10:18",
+ "updated": "2026-10-13 10:55",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -6705,56 +6705,6 @@
     "pd": []
    },
    "title": "443_ロール編集"
-  },
-  {
-   "ticket": "654",
-   "dev": "khoa",
-   "bien": false,
-   "sid": "570",
-   "base": [],
-   "r810": [
-    {
-     "num": 13162,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 1,
-     "add": 18,
-     "del": 23,
-     "fc": 3,
-     "cr": "10-02 11:24",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     }
-    },
-    {
-     "num": 11779,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 3,
-     "add": 1106,
-     "del": 0,
-     "fc": 23,
-     "cr": "08-10 14:32",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     }
-    }
-   ],
-   "created": "08-10 14:32",
-   "drive": false,
-   "drvurl": "",
-   "cop": 4,
-   "unres": 2,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "570_帳票出力履歴一覧_一覧"
   },
   {
    "ticket": "1525",
