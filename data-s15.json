@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13 15:31",
+ "updated": "2026-10-13 17:24",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -2412,6 +2412,56 @@
    "title": "ユニット設定_基本設定画面を実装 (439)"
   },
   {
+   "ticket": "1029",
+   "dev": "dat",
+   "bien": false,
+   "sid": "436",
+   "base": [],
+   "r810": [
+    {
+     "num": 12037,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 9,
+     "del": 2,
+     "fc": 2,
+     "cr": "08-17 14:09",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    },
+    {
+     "num": 12031,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 46,
+     "del": 7,
+     "fc": 1,
+     "cr": "08-17 12:29",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    }
+   ],
+   "created": "08-17 12:29",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "庫内関連_ロケマスタ (436) のロケコード検索入力の幅を AngularJS に合わせる"
+  },
+  {
    "ticket": "1546",
    "dev": "bien",
    "bien": true,
@@ -2629,6 +2679,21 @@
    "base": [],
    "r810": [
     {
+     "num": 13358,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 474,
+     "del": 43,
+     "fc": 4,
+     "cr": "10-13 16:50",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    },
+    {
      "num": 12535,
      "cf": "ok",
      "st": "merged",
@@ -2692,8 +2757,8 @@
    "created": "08-13 15:40",
    "drive": false,
    "drvurl": "",
-   "cop": 8,
-   "unres": 0,
+   "cop": 17,
+   "unres": 9,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -5137,6 +5202,71 @@
    "title": "HT設定_項目表示設定 (screen 586) React migration"
   },
   {
+   "ticket": "639",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "443",
+   "base": [],
+   "r810": [
+    {
+     "num": 13159,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 7,
+     "del": 2,
+     "fc": 1,
+     "cr": "10-02 10:53",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    },
+    {
+     "num": 12094,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 2,
+     "add": 301,
+     "del": 132,
+     "fc": 11,
+     "cr": "08-18 15:20",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    },
+    {
+     "num": 11850,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 42,
+     "del": 31,
+     "fc": 2,
+     "cr": "08-11 15:44",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     }
+    }
+   ],
+   "created": "08-11 15:44",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "443_ロール編集_表示レイアウトのパリティ修正"
+  },
+  {
    "ticket": "1532",
    "dev": "dat",
    "bien": false,
@@ -6560,151 +6690,6 @@
     "pd": []
    },
    "title": "ロケサイズカテゴリ選択肢取得 API を追加"
-  },
-  {
-   "ticket": "1029",
-   "dev": "dat",
-   "bien": false,
-   "sid": "436",
-   "base": [],
-   "r810": [
-    {
-     "num": 12037,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 1,
-     "add": 9,
-     "del": 2,
-     "fc": 2,
-     "cr": "08-17 14:09",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     }
-    },
-    {
-     "num": 12031,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 1,
-     "add": 46,
-     "del": 7,
-     "fc": 1,
-     "cr": "08-17 12:29",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     }
-    },
-    {
-     "num": 11781,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 5,
-     "add": 1713,
-     "del": 1,
-     "fc": 25,
-     "cr": "08-10 14:46",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     }
-    }
-   ],
-   "created": "08-10 14:46",
-   "drive": false,
-   "drvurl": "",
-   "cop": 1,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "庫内関連_ロケマスタ (screen_id=436) 一覧画面を React 実装"
-  },
-  {
-   "ticket": "639",
-   "dev": "khoa",
-   "bien": false,
-   "sid": "443",
-   "base": [],
-   "r810": [
-    {
-     "num": 13159,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 2,
-     "add": 7,
-     "del": 2,
-     "fc": 1,
-     "cr": "10-02 10:53",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     }
-    },
-    {
-     "num": 12094,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 2,
-     "add": 301,
-     "del": 132,
-     "fc": 11,
-     "cr": "08-18 15:20",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     }
-    },
-    {
-     "num": 11850,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 1,
-     "add": 42,
-     "del": 31,
-     "fc": 2,
-     "cr": "08-11 15:44",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     }
-    },
-    {
-     "num": 11780,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 3,
-     "add": 5247,
-     "del": 2,
-     "fc": 39,
-     "cr": "08-10 14:37",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     }
-    }
-   ],
-   "created": "08-10 14:37",
-   "drive": false,
-   "drvurl": "",
-   "cop": 3,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "443_ロール編集"
   },
   {
    "ticket": "1525",
