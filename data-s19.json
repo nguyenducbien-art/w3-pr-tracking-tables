@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13 14:37",
+ "updated": "2026-10-13 14:44",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -623,8 +623,8 @@
     }
    ],
    "created": "10-06 15:00",
-   "drive": false,
-   "drvurl": "",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1loYKHAkpfq5DWIZIQNWk7SpdIsvyY6ER/view?usp=sharing",
    "cop": 5,
    "unres": 0,
    "rvw": {
