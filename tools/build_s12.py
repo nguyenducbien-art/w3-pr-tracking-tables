@@ -104,10 +104,10 @@ function render(D){
   // ---- helper: 1 block bảng chính (heading + stats + table) ----
   function mainBlock(rows,title,sub){
     var _F=filterBlock(rows,'dev');
-    var nbase=0,nr629=0,npr=0,totun=0,ncf=0;
+    var nbase=0,nr629=0,npr=0,totun=0,ncf=0,nbr=0;
     var body=rows.map(function(r){
       var b=r.base||[],r629=r.r629||[];
-      nbase+=cnt(b);nr629+=cnt(r629);npr+=cnt(b)+cnt(r629);totun+=r.unres;
+      nbase+=cnt(b);nr629+=cnt(r629);nbr+=r629.filter(function(p){return p.br==='1005';}).length;npr+=cnt(b)+cnt(r629);totun+=r.unres;
       [b,r629].forEach(function(a){a.forEach(function(p){if(p.cf==='bad')ncf++;});});
       return mainRow(r);
     }).join('');
@@ -118,6 +118,7 @@ function render(D){
         +'<div class="stat"><span class="stat-val">'+npr+'</span> PR</div>'
         +'<div class="stat">→base <span class="stat-val">'+nbase+'</span></div>'
         +'<div class="stat">→r629 <span class="stat-val">'+nr629+'</span></div>'
+        +(nbr?'<div class="stat">trong đó <span class="br-tag">r1005</span> <span class="stat-val">'+nbr+'</span></div>':'')
         +'<div class="stat">conflict <span class="stat-val warn">'+ncf+'</span></div>'
         +'<div class="stat">Copilot unres <span class="stat-val warn">'+totun+'</span></div>'
       +'</div>'

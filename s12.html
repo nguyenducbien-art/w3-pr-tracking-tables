@@ -96,7 +96,7 @@
   .pill-changes { background: var(--pill-changes-bg); color: var(--pill-changes-fg); }
   .pill-draft { background: var(--pill-draft-bg); color: var(--pill-draft-fg); }
   .pill-open { background: var(--pill-open-bg); color: var(--pill-open-fg); }
-  .br-tag { font-size: 10px; font-weight: 700; padding: 1px 5px; border-radius: 4px; border: 1px solid var(--link); color: var(--link); white-space: nowrap; }
+  .br-tag { font-size: 10px; font-weight: 800; padding: 1px 6px; border-radius: 4px; background: #f0a830; color: #241600; white-space: nowrap; letter-spacing: .3px; }
   .pill-merged { background: var(--pill-merged-bg); color: var(--pill-merged-fg); }
   .pill-pinned { background: var(--pill-pinned-bg); color: var(--pill-pinned-fg); }
   .pill-todo { background: var(--unresolved-bg); color: var(--unresolved-fg); }
@@ -145,7 +145,7 @@
 </style>
 </head>
 <body>
-<nav class="topnav"><div class="topnav-inner"><span class="topnav-brand">W3 PR Tracking</span><span class="topnav-sep">/</span><a href="s12.html?v=1791947733" class="active">Sprint 12</a><a href="index.html?v=1791947733">Sprint 13</a><a href="s14.html?v=1791947733">Sprint 14</a><a href="s15.html?v=1791947733">Sprint 15+16</a><a href="s17.html?v=1791947733">Sprint 17</a><a href="s18.html?v=1791947733">Sprint 18</a><a href="s19.html?v=1791947733">Sprint 19</a><a href="kanaya.html?v=1791947733" style="margin-left:10px">⏳ Chờ Kanaya</a></div></nav><script src="search.js?v=1791947733" data-sprints="[{&quot;label&quot;: &quot;Sprint 12&quot;, &quot;href&quot;: &quot;s12.html&quot;, &quot;data&quot;: &quot;data-s12.json&quot;}, {&quot;label&quot;: &quot;Sprint 13&quot;, &quot;href&quot;: &quot;index.html&quot;, &quot;data&quot;: &quot;data.json&quot;}, {&quot;label&quot;: &quot;Sprint 14&quot;, &quot;href&quot;: &quot;s14.html&quot;, &quot;data&quot;: &quot;data-s14.json&quot;, &quot;screens&quot;: &quot;screens-s14.json&quot;}, {&quot;label&quot;: &quot;Sprint 15+16&quot;, &quot;href&quot;: &quot;s15.html&quot;, &quot;data&quot;: &quot;data-s15.json&quot;, &quot;plan&quot;: &quot;s15-plan.json&quot;}, {&quot;label&quot;: &quot;Sprint 17&quot;, &quot;href&quot;: &quot;s17.html&quot;, &quot;data&quot;: &quot;data-s17.json&quot;}, {&quot;label&quot;: &quot;Sprint 18&quot;, &quot;href&quot;: &quot;s18.html&quot;, &quot;data&quot;: &quot;data-s18.json&quot;, &quot;rlabel&quot;: &quot;→r0810/0921&quot;}, {&quot;label&quot;: &quot;Sprint 19&quot;, &quot;href&quot;: &quot;s19.html&quot;, &quot;data&quot;: &quot;data-s19.json&quot;, &quot;rlabel&quot;: &quot;→r0810/0921/1005&quot;}]" defer></script>
+<nav class="topnav"><div class="topnav-inner"><span class="topnav-brand">W3 PR Tracking</span><span class="topnav-sep">/</span><a href="s12.html?v=1791948697" class="active">Sprint 12</a><a href="index.html?v=1791948697">Sprint 13</a><a href="s14.html?v=1791948697">Sprint 14</a><a href="s15.html?v=1791948697">Sprint 15+16</a><a href="s17.html?v=1791948697">Sprint 17</a><a href="s18.html?v=1791948697">Sprint 18</a><a href="s19.html?v=1791948697">Sprint 19</a><a href="kanaya.html?v=1791948697" style="margin-left:10px">⏳ Chờ Kanaya</a></div></nav><script src="search.js?v=1791948697" data-sprints="[{&quot;label&quot;: &quot;Sprint 12&quot;, &quot;href&quot;: &quot;s12.html&quot;, &quot;data&quot;: &quot;data-s12.json&quot;}, {&quot;label&quot;: &quot;Sprint 13&quot;, &quot;href&quot;: &quot;index.html&quot;, &quot;data&quot;: &quot;data.json&quot;}, {&quot;label&quot;: &quot;Sprint 14&quot;, &quot;href&quot;: &quot;s14.html&quot;, &quot;data&quot;: &quot;data-s14.json&quot;, &quot;screens&quot;: &quot;screens-s14.json&quot;}, {&quot;label&quot;: &quot;Sprint 15+16&quot;, &quot;href&quot;: &quot;s15.html&quot;, &quot;data&quot;: &quot;data-s15.json&quot;, &quot;plan&quot;: &quot;s15-plan.json&quot;}, {&quot;label&quot;: &quot;Sprint 17&quot;, &quot;href&quot;: &quot;s17.html&quot;, &quot;data&quot;: &quot;data-s17.json&quot;}, {&quot;label&quot;: &quot;Sprint 18&quot;, &quot;href&quot;: &quot;s18.html&quot;, &quot;data&quot;: &quot;data-s18.json&quot;, &quot;rlabel&quot;: &quot;→r0810/0921&quot;}, {&quot;label&quot;: &quot;Sprint 19&quot;, &quot;href&quot;: &quot;s19.html&quot;, &quot;data&quot;: &quot;data-s19.json&quot;, &quot;rlabel&quot;: &quot;→r0810/0921/1005&quot;}]" defer></script>
 <div id="app"></div>
 <script src="https://nguyenducbien-art.github.io/pixel-pets/pixel-pets.js" data-min="2" data-max="5" defer></script>
 <script id="table-data" type="application/json"></script>
@@ -237,10 +237,10 @@ function render(D){
   // ---- helper: 1 block bảng chính (heading + stats + table) ----
   function mainBlock(rows,title,sub){
     var _F=filterBlock(rows,'dev');
-    var nbase=0,nr629=0,npr=0,totun=0,ncf=0;
+    var nbase=0,nr629=0,npr=0,totun=0,ncf=0,nbr=0;
     var body=rows.map(function(r){
       var b=r.base||[],r629=r.r629||[];
-      nbase+=cnt(b);nr629+=cnt(r629);npr+=cnt(b)+cnt(r629);totun+=r.unres;
+      nbase+=cnt(b);nr629+=cnt(r629);nbr+=r629.filter(function(p){return p.br==='1005';}).length;npr+=cnt(b)+cnt(r629);totun+=r.unres;
       [b,r629].forEach(function(a){a.forEach(function(p){if(p.cf==='bad')ncf++;});});
       return mainRow(r);
     }).join('');
@@ -251,6 +251,7 @@ function render(D){
         +'<div class="stat"><span class="stat-val">'+npr+'</span> PR</div>'
         +'<div class="stat">→base <span class="stat-val">'+nbase+'</span></div>'
         +'<div class="stat">→r629 <span class="stat-val">'+nr629+'</span></div>'
+        +(nbr?'<div class="stat">trong đó <span class="br-tag">r1005</span> <span class="stat-val">'+nbr+'</span></div>':'')
         +'<div class="stat">conflict <span class="stat-val warn">'+ncf+'</span></div>'
         +'<div class="stat">Copilot unres <span class="stat-val warn">'+totun+'</span></div>'
       +'</div>'
