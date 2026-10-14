@@ -1,8 +1,9 @@
 {
- "updated": "2026-10-14 15:10",
+ "updated": "2026-10-14 16:00",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2124",
   "2123",
   "2133",
   "2039",
@@ -16,6 +17,59 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2124",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 13399,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 3,
+     "del": 2,
+     "fc": 3,
+     "cr": "10-14 15:53",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": null
+    }
+   ],
+   "r810": [
+    {
+     "num": 13400,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 76,
+     "del": 84,
+     "fc": 24,
+     "cr": "10-14 15:54",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1005"
+    }
+   ],
+   "created": "10-14 15:53",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "select-init が選ぶ既定値の説明を「最初の実際のコード」に直す"
+  },
   {
    "ticket": "1325",
    "dev": "bien",
