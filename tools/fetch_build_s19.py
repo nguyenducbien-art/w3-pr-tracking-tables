@@ -109,6 +109,7 @@ def gh_raw(branch):
     if branch not in _RAW:
         _RAW[branch] = json.loads(run(["gh","pr","list","--repo",REPO,"--base","mimosa/frontend/develop/"+branch,
                "--state","all","--limit","400","--json","number,state,createdAt,headRefName,author,title"]))
+        for p in _RAW[branch]: p["_br"] = branch[-4:] if re.match(r"^r\d{8}$", branch) else None
     return _RAW[branch]
 
 def _ticket_of(head):
@@ -237,7 +238,7 @@ def build():
         t = tickets.setdefault(tk, {"base":[], "r810":[], "meta":[], "common":False})
         det = pr_detail(p["number"])
         t["r810"].append({"num": p["number"], "cf": det["cf"], "st": det["st"],
-                          "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"]), "rv": det["rvw"]})
+                          "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"]), "rv": det["rvw"], "br": p.get("_br")})
         t["meta"].append({"num":p["number"],"key":"r810","author":p["author"]["login"],
                           "created":p["createdAt"],"title":p["title"],"det":det})
         if seg.startswith("common-"): t["common"] = True
@@ -252,7 +253,7 @@ def build():
         t = tickets.setdefault(tk, {"base":[], "r810":[], "meta":[], "common":False})
         det = pr_detail(p["number"])
         t["base"].append({"num": p["number"], "cf": det["cf"], "st": det["st"],
-                          "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"]), "rv": det["rvw"]})
+                          "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"]), "rv": det["rvw"], "br": p.get("_br")})
         t["meta"].append({"num":p["number"],"key":"base","author":p["author"]["login"],
                           "created":p["createdAt"],"title":p["title"],"det":det})
         if seg.startswith("common-"): t["common"] = True

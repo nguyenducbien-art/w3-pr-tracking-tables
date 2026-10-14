@@ -26,7 +26,7 @@ cd "$REPO" || exit 1
 LOCK="$REPO/tools/.refresh.lock"
 if ! mkdir "$LOCK" 2>/dev/null; then
   if [ -n "$(find "$LOCK" -maxdepth 0 -mmin +30)" ]; then rm -rf "$LOCK"; mkdir "$LOCK" || exit 0
-  else echo "=== $(date '+%F %T') === lượt trước còn chạy → bỏ qua tick này" >> "$LOG"; exit 0; fi
+  else echo "=== $(date '+%F %T') === lượt trước còn chạy → bỏ qua tick này" | tee -a "$LOG"; exit 0; fi   # tee: chạy tay cũng thấy lý do
 fi
 trap 'rm -rf "$LOCK"' EXIT
 # Token của ĐÚNG account W3 cho riêng process này (gh + git credential helper `gh auth git-credential`

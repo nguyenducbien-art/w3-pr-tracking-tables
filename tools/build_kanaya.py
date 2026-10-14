@@ -36,7 +36,7 @@ function collect(S,D){
     var rv=p.rv||r.rvw||{};            // per-PR reviewers when available, else row-level (frozen data)
     if(!has(rv.pd)) return;
     out.push({sprint:S.label,href:S.href,ticket:r.ticket,dev:r.dev,num:p.num,st:p.st,cf:p.cf,cr:p.cr||'',
-      nc:p.nc,fc:p.fc,add:p.add,del:p.del,target:target,kind:kind,
+      nc:p.nc,fc:p.fc,add:p.add,del:p.del,target:(target==='r'&&p.br&&/^\d{4}$/.test(p.br))?'r'+p.br:target,kind:kind,
       again:has(rv.ch)?'ch':(has(rv.ap)?'ap':''),approx:!p.rv,
       drvurl:r.drvurl,drive:r.drive,unres:r.unres||0,title:r.title||'',url:D.prUrlBase});
   }

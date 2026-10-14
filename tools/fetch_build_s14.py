@@ -186,7 +186,7 @@ def build():
             t = tickets[tk]
             det = pr_detail(p["number"])
             t["r727"].append({"num": p["number"], "cf": det["cf"], "st": det["st"],
-                              "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"]), "rv": det["rvw"]})
+                              "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"]), "rv": det["rvw"], "br": b[-4:]})
             t["meta"].append({"num":p["number"],"key":"r727","author":p["author"]["login"],
                               "created":p["createdAt"],"title":p["title"],"det":det})
 

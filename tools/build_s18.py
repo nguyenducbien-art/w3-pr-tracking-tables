@@ -40,7 +40,7 @@ for _a, _b in [
      "'<th>Ticket</th>'+(showScreen?'<th>Screen</th>':'')+'<th>Dev</th><th>→base</th>"),
     ("Copilot chỉ đếm PR→base.')", "Copilot chỉ đếm PR→base.',false)"),
     # cột "→r" gộp r20260810 + r20260921 (nhánh sau chưa tồn tại) → không ghi cứng 1 tên nhánh
-    ("<th>→r20260810</th>", "<th>→r 0810/0921</th>"),
+    ("<th>→r20260810</th>", "<th>→r 0810/1005</th>"),
     ("(màn migration + fix lẻ).')", "(màn migration + fix lẻ).',true)"),
     # subtitle: nói rõ luật chia theo ngày + trỏ ngược về page Sprint 15+16
     ("tạo từ <b>2026-09-21</b> vào <b>develop/base</b> / <b>r20260810</b> — chia 2 bảng",

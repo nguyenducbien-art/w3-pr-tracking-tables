@@ -58,7 +58,9 @@ function render(D){
     var nc=(p.nc!=null)?' <span class="commits" title="số commit trong PR (branch vượt base)">'+p.nc+'c</span>':'';
     var fcv=(p.fc!=null)?' <span class="files" title="số file thay đổi">'+p.fc+'f</span>':'';
     var df=(p.add!=null||p.del!=null)?' <span class="adds" title="số dòng thêm">+'+(p.add||0)+'</span><span class="dels" title="số dòng xoá">−'+(p.del||0)+'</span>':'';
-    return '<a href="'+U+p.num+'" target="_blank" rel="noopener">#'+p.num+'</a>'+(p.cr?' <span class="date-cell">('+p.cr+')</span>':'')+inb+' '+pill(p.st)+' '+mark+nc+fcv+df;
+    // badge nhánh r khác r0810 / r0727 (vd r20261005 từ Sprint 19) — PR r0810 giữ nguyên như cũ
+    var brb=(p.br&&/^\d{4}$/.test(p.br)&&p.br!=='0810'&&p.br!=='0727')?' <span class="br-tag" title="PR nhắm nhánh r2026'+p.br+'">r'+p.br+'</span>':'';
+    return '<a href="'+U+p.num+'" target="_blank" rel="noopener">#'+p.num+'</a>'+brb+(p.cr?' <span class="date-cell">('+p.cr+')</span>':'')+inb+' '+pill(p.st)+' '+mark+nc+fcv+df;
   }
   function cell(prs,inv){
     if(!prs||!prs.length) return '<span class="cf-na">—</span>';

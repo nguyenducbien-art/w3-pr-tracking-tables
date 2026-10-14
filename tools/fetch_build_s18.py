@@ -28,7 +28,7 @@ EXCLUDE = {"1495", "1479", "1497"}       # ticket ẩn hẳn khỏi bảng (mọ
 # ĐẶC CÁCH dev: khi PR gốc của người sở hữu màn bị CLOSED (bị gh_list lọc) + chỉ còn PR fix của
 # người khác được merge → dev tự suy sẽ SAI. Map {ticket: dev-short} ép đúng người sở hữu.
 FORCE_DEV = {}                            # (Sprint 17 chưa có ca nào)
-R_BRANCHES = ("r20260810", "r20260921")   # nhánh r đang nhận PR (r20260921 chưa có → gh trả [])
+R_BRANCHES = ("r20260810", "r20260921", "r20261005")   # + r20261005 (14/10): PR mới của ticket Sprint 18 nhắm nhánh mới
 SCAFFOLD_BRANCHES = ("r20260921_scaffold", "r20260907_scaffold", "r20260824_scaffold", "r20260810_scaffold")
 SCAFFOLD_LABEL = "scaffold (r0921 + r0907 + r0824 + r0810)"   # nhãn tiêu đề bảng phụ (RENDER_JS lấy phần sau dấu /)
 
@@ -110,6 +110,7 @@ def gh_raw(branch):
     if branch not in _RAW:
         _RAW[branch] = json.loads(run(["gh","pr","list","--repo",REPO,"--base","mimosa/frontend/develop/"+branch,
                "--state","all","--limit","400","--json","number,state,createdAt,headRefName,author,title"]))
+        for p in _RAW[branch]: p["_br"] = branch[-4:] if re.match(r"^r\d{8}$", branch) else None
     return _RAW[branch]
 
 def _ticket_of(head):
@@ -238,7 +239,7 @@ def build():
         t = tickets.setdefault(tk, {"base":[], "r810":[], "meta":[], "common":False})
         det = pr_detail(p["number"])
         t["r810"].append({"num": p["number"], "cf": det["cf"], "st": det["st"],
-                          "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"]), "rv": det["rvw"]})
+                          "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"]), "rv": det["rvw"], "br": p.get("_br")})
         t["meta"].append({"num":p["number"],"key":"r810","author":p["author"]["login"],
                           "created":p["createdAt"],"title":p["title"],"det":det})
         if seg.startswith("common-"): t["common"] = True
@@ -253,7 +254,7 @@ def build():
         t = tickets.setdefault(tk, {"base":[], "r810":[], "meta":[], "common":False})
         det = pr_detail(p["number"])
         t["base"].append({"num": p["number"], "cf": det["cf"], "st": det["st"],
-                          "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"]), "rv": det["rvw"]})
+                          "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"]), "rv": det["rvw"], "br": p.get("_br")})
         t["meta"].append({"num":p["number"],"key":"base","author":p["author"]["login"],
                           "created":p["createdAt"],"title":p["title"],"det":det})
         if seg.startswith("common-"): t["common"] = True
