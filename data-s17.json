@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13 16:56",
+ "updated": "2026-10-14 10:12",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -113,9 +113,7 @@
       "ch": [
        "kanayam"
       ],
-      "pd": [
-       "kanayam"
-      ]
+      "pd": []
      }
     }
    ],
@@ -176,9 +174,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "ユニット切替時にマスタ選択モーダルの検索結果と解決済み unit_screen_id を破棄する"
   },
@@ -715,9 +711,7 @@
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": [
-       "kanayam"
-      ]
+      "pd": []
      }
     }
    ],
@@ -761,9 +755,7 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "統合管理ユニットで統合対象外画面を URL 直打ちで開けないようにする"
   },

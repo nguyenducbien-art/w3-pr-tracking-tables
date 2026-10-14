@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14 10:04",
+ "updated": "2026-10-14 10:17",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -259,9 +259,7 @@
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": [
-       "kanayam"
-      ]
+      "pd": []
      }
     }
    ],
@@ -320,9 +318,7 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "取込出力履歴のファイルダウンロードを認証付き経路に統一する"
   },
@@ -3129,9 +3125,7 @@
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": [
-       "kanayam"
-      ]
+      "pd": []
      }
     }
    ],
@@ -3220,9 +3214,7 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "セット品ルールマスタから追加・編集画面への遷移 URL 修正 (screen_id=431→432)"
   },

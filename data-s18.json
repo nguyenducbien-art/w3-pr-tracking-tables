@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13 15:01",
+ "updated": "2026-10-14 10:11",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -317,9 +317,7 @@
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": [
-       "kanayam"
-      ]
+      "pd": []
      }
     }
    ],
@@ -363,9 +361,7 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "通信失敗時のエラー文言を多言語化し内部文言の露出を止める"
   },
