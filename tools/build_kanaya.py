@@ -31,19 +31,19 @@ function has(a){return (a||[]).indexOf(WHO)>=0;}
 // Collect every not-merged PR on which WHO is a requested (pending) reviewer.
 function collect(S,D){
   var out=[], common={}; (D.common||[]).forEach(function(t){common[t]=1;});
-  function take(r,p,target,kind){
+  function take(r,p,target,kind,rk){
     if(!p||p.st==='merged') return;
     var rv=p.rv||r.rvw||{};            // per-PR reviewers when available, else row-level (frozen data)
     if(!has(rv.pd)) return;
     out.push({sprint:S.label,href:S.href,ticket:r.ticket,dev:r.dev,num:p.num,st:p.st,cf:p.cf,cr:p.cr||'',
-      nc:p.nc,fc:p.fc,add:p.add,del:p.del,target:(target==='r'&&p.br&&/^\d{4}$/.test(p.br))?'r'+p.br:target,kind:kind,
+      nc:p.nc,fc:p.fc,add:p.add,del:p.del,target:target==='r'?'r'+((p.br&&/^\d{4}$/.test(p.br))?p.br:('0000'+rk.slice(1)).slice(-4)):target,kind:kind,
       again:has(rv.ch)?'ch':(has(rv.ap)?'ap':''),approx:!p.rv,
       drvurl:r.drvurl,drive:r.drive,unres:r.unres||0,title:r.title||'',url:D.prUrlBase});
   }
   (D.main||[]).forEach(function(r){
     var kind=common[r.ticket]?'common':'màn/fix';
     (r.base||[]).forEach(function(p){take(r,p,'base',kind);});
-    ['r629','r713','r727','r810'].forEach(function(k){(r[k]||[]).forEach(function(p){take(r,p,'r',kind);});});
+    ['r629','r713','r727','r810'].forEach(function(k){(r[k]||[]).forEach(function(p){take(r,p,'r',kind,k);});});
   });
   (D.scaffold||[]).forEach(function(r){take(r,r.pr,'scaffold','scaffold');});
   return out;

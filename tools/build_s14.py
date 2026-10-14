@@ -52,19 +52,21 @@ function render(D){
   var U=D.prUrlBase, COMMON=new Set(D.common), INVALID=new Set(D.invalidBase);
   var PILL={merged:['merged','MERGED'],draft:['draft','DRAFT'],approved:['approved','APPROVED'],changes:['changes','CHANGES'],open:['open','OPEN']};
   function pill(st){var x=PILL[st]||PILL.open;return '<span class="pill pill-'+x[0]+'">'+x[1]+'</span>';}
-  function one(p,inv){
+// Tag nhánh r đích ở bên phải #PR (mọi PR nhắm nhánh r; base/scaffold không có tag).
+  // Nguồn: p.br (data từ 14/10) → nếu thiếu (data cũ / sprint đông lạnh) suy từ cột: 'r629' → '0629'.
+  function brTag(p,key){var b=(p&&p.br&&/^\d{4}$/.test(p.br))?p.br:((key&&/^r\d{3,4}$/.test(key))?('0000'+key.slice(1)).slice(-4):'');
+    return b?' <span class="br-tag br-'+b+'" title="PR nhắm nhánh r2026'+b+'">r'+b+'</span>':'';}
+  function one(p,inv,key){
     var mark=p.cf==='bad'?'<span class="cf-bad">✗</span>':(p.cf==='unk'?'<span class="cf-unk" title="GitHub chưa tính xong mergeable">?</span>':'<span class="cf-ok">✓</span>');
     var inb=inv?' <span class="badge-invalid" title="ルール違反">invalid</span>':'';
     var nc=(p.nc!=null)?' <span class="commits" title="số commit trong PR (branch vượt base)">'+p.nc+'c</span>':'';
     var fcv=(p.fc!=null)?' <span class="files" title="số file thay đổi">'+p.fc+'f</span>':'';
     var df=(p.add!=null||p.del!=null)?' <span class="adds" title="số dòng thêm">+'+(p.add||0)+'</span><span class="dels" title="số dòng xoá">−'+(p.del||0)+'</span>':'';
-    // badge nhánh r khác r0810 / r0727 (vd r20261005 từ Sprint 19) — PR r0810 giữ nguyên như cũ
-    var brb=(p.br&&/^\d{4}$/.test(p.br)&&p.br!=='0810'&&p.br!=='0727')?' <span class="br-tag" title="PR nhắm nhánh r2026'+p.br+'">r'+p.br+'</span>':'';
-    return '<a href="'+U+p.num+'" target="_blank" rel="noopener">#'+p.num+'</a>'+brb+(p.cr?' <span class="date-cell">('+p.cr+')</span>':'')+inb+' '+pill(p.st)+' '+mark+nc+fcv+df;
+    return '<a href="'+U+p.num+'" target="_blank" rel="noopener">#'+p.num+'</a>'+brTag(p,key)+(p.cr?' <span class="date-cell">('+p.cr+')</span>':'')+inb+' '+pill(p.st)+' '+mark+nc+fcv+df;
   }
-  function cell(prs,inv){
+  function cell(prs,inv,key){
     if(!prs||!prs.length) return '<span class="cf-na">—</span>';
-    return prs.map(function(p){return one(p,inv);}).join('<br>');
+    return prs.map(function(p){return one(p,inv,key);}).join('<br>');
   }
   function unb(n){return n>0?'<span class="unresolved">'+n+'</span>':'0';}
   function cnt(a){return a?a.length:0;}
@@ -93,7 +95,7 @@ function render(D){
       +'<td>'+tkLink(r.ticket)+'</td>'
       +'<td><span class="'+devcls+'">'+r.dev+'</span></td>'
       +'<td>'+cell(r.base||[],INVALID.has(r.ticket))+'</td>'
-      +'<td>'+cell(r.r727||[],false)+'</td>'
+      +'<td>'+cell(r.r727||[],false,'r727')+'</td>'
       
       +'<td class="rvw-cell">'+rvwCell(r.rvw)+'</td>'
       +'<td>'+rep+'</td>'

@@ -44,7 +44,7 @@ for _a, _b in [
     ("(màn migration + fix lẻ).')", "(màn migration + fix lẻ).',true)"),
     # subtitle: nói rõ luật chia theo ngày + trỏ ngược về page Sprint 15+16
     ("tạo từ <b>2026-10-05</b> vào <b>develop/base</b> / <b>r20260810</b> — chia 2 bảng",
-     "tạo từ <b>2026-10-05</b> (ngày bắt đầu Sprint 19) vào <b>develop/base</b> / <b>r20260810</b> / <b>r20261005</b> (nhánh của Sprint 19 từ 14/10 — PR nhắm r20261005 mang nhãn <span class=\"br-tag\">r1005</span>)"
+     "tạo từ <b>2026-10-05</b> (ngày bắt đầu Sprint 19) vào <b>develop/base</b> / <b>r20260810</b> / <b>r20261005</b> (nhánh của Sprint 19 từ 14/10 — PR nhắm r20261005 mang nhãn <span class=\"br-tag br-1005\">r1005</span>)"
      " — từ Sprint 16 không còn nhánh r riêng mỗi sprint nên chia theo NGÀY TẠO PR, PR trước 05/10 xem ở page Sprint 18. PR mới của ticket đã có ở sprint trước tự về page của sprint đó."
      " Chia 2 bảng"),
     ('<a href="index.html" style="font-family:inherit;font-size:12px">← Sprint 13</a>',

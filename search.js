@@ -141,14 +141,19 @@
 
   // ---- rendering ----
   function pill(st) { return '<span class="pill pill-' + esc(PILL[st] ? st : 'open') + '">' + (PILL[st] || 'OPEN') + '</span>'; }
-  function prLine(p, U, n) {
+  // tag nhánh r đích (giống bảng): p.br, hoặc suy từ key cột ('r810' → '0810')
+  function brTag(p, key) {
+    var b = (p && p.br && /^\d{4}$/.test(p.br)) ? p.br : ((key && /^r\d{3,4}$/.test(key)) ? ('0000' + key.slice(1)).slice(-4) : '');
+    return b ? ' <span class="br-tag br-' + b + '" title="PR nhắm nhánh r2026' + b + '">r' + b + '</span>' : '';
+  }
+  function prLine(p, U, n, key) {
     var cf = p.cf === 'bad' ? '<span class="cf-bad" title="CONFLICTING">✗ conflict</span>'
       : (p.cf === 'unk' ? '<span class="cf-unk">?</span>' : '<span class="cf-ok">✓</span>');
     var stat = [];
     if (p.nc != null) stat.push(p.nc + 'c');
     if (p.fc != null) stat.push(p.fc + 'f');
     if (p.add != null || p.del != null) stat.push('+' + (p.add || 0) + '−' + (p.del || 0));
-    return '<a href="' + url(U + p.num) + '" target="_blank" rel="noopener">#' + esc(p.num) + '</a>'
+    return '<a href="' + url(U + p.num) + '" target="_blank" rel="noopener">#' + esc(p.num) + '</a>' + brTag(p, key)
       + (p.cr ? ' <span class="date-cell">(' + esc(p.cr) + ')</span>' : '')
       + ' ' + pill(p.st) + ' ' + cf + (stat.length ? ' <span class="date-cell">' + esc(stat.join(' ')) + '</span>' : '');
   }
@@ -171,7 +176,7 @@
     var rows = h.prs.map(function (l) {
       var lbl = (l.key === 'r810' && h.s.rlabel) ? h.s.rlabel : (BR[l.key] || ('→' + l.key));
       return l.list.map(function (p) {
-        return '<tr' + (String(p.num) === n ? ' class="srch-hit"' : '') + '><td>' + esc(lbl) + '</td><td>' + prLine(p, U, n) + '</td></tr>';
+        return '<tr' + (String(p.num) === n ? ' class="srch-hit"' : '') + '><td>' + esc(lbl) + '</td><td>' + prLine(p, U, n, l.key) + '</td></tr>';
       }).join('');
     }).join('');
     var tk = /^\d+$/.test(String(r.ticket))
