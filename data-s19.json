@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14 16:00",
+ "updated": "2026-10-14 16:12",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -22,24 +22,7 @@
    "dev": "khoa",
    "bien": false,
    "sid": "",
-   "base": [
-    {
-     "num": 13399,
-     "cf": "ok",
-     "st": "open",
-     "nc": 1,
-     "add": 3,
-     "del": 2,
-     "fc": 3,
-     "cr": "10-14 15:53",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     },
-     "br": null
-    }
-   ],
+   "base": [],
    "r810": [
     {
      "num": 13400,
@@ -53,12 +36,14 @@
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": []
+      "pd": [
+       "bien"
+      ]
      },
      "br": "1005"
     }
    ],
-   "created": "10-14 15:53",
+   "created": "10-14 15:54",
    "drive": false,
    "drvurl": "",
    "cop": 0,
@@ -66,9 +51,11 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "bien"
+    ]
    },
-   "title": "select-init が選ぶ既定値の説明を「最初の実際のコード」に直す"
+   "title": "リファレンスの select-init の既定値の記述を直し、在庫追加の区分コードの既定値を先頭にする"
   },
   {
    "ticket": "1325",
@@ -817,17 +804,15 @@
      "num": 13244,
      "cf": "ok",
      "st": "open",
-     "nc": 29,
-     "add": 117,
-     "del": 112,
-     "fc": 27,
+     "nc": 45,
+     "add": 150,
+     "del": 142,
+     "fc": 28,
      "cr": "10-07 13:45",
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": [
-       "kanayam"
-      ]
+      "pd": []
      },
      "br": "0810"
     }
@@ -840,9 +825,7 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "画面別リファレンスの古い記述・誤りを直す"
   },
