@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14 11:01",
+ "updated": "2026-10-14 11:52",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -16,58 +16,6 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
-  {
-   "ticket": "1325",
-   "dev": "khoa",
-   "bien": false,
-   "sid": "",
-   "base": [],
-   "r810": [
-    {
-     "num": 13359,
-     "cf": "ok",
-     "st": "open",
-     "nc": 1,
-     "add": 378,
-     "del": 52,
-     "fc": 7,
-     "cr": "10-13 17:04",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     },
-     "br": "0810"
-    },
-    {
-     "num": 13381,
-     "cf": "ok",
-     "st": "open",
-     "nc": 1,
-     "add": 378,
-     "del": 52,
-     "fc": 7,
-     "cr": "10-14 10:05",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     },
-     "br": "1005"
-    }
-   ],
-   "created": "10-13 17:04",
-   "drive": false,
-   "drvurl": "",
-   "cop": 3,
-   "unres": 3,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "ジョブ管理_一覧のピック数・間口数ダイアログで不正値の理由を入力欄の下に表示する"
-  },
   {
    "ticket": "2127",
    "dev": "bien",
