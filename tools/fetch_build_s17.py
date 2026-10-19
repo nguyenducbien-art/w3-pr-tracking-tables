@@ -289,13 +289,16 @@ def build():
     # 3 nhánh scaffold cùng sống trong Sprint 17 (r0907 mới, r0824 + r0810 còn PR mở) —
     # gom chung 1 bảng phụ, gh_list đã lọc created >= SINCE nên không lấn sang page s15.
     scaffold = []
-    for p in [q for br in SCAFFOLD_BRANCHES for q in gh_list(br)]:
+    # + PR đưa nhánh *_scaffold lên base (head = r2026MMDD_scaffold → base; vd #13388): is_sync() coi head
+    #   là nhánh sync nên bảng chính bỏ qua → hiện ở bảng phụ này, tag "→base" (user hỏi 19/10).
+    _up = [q for q in gh_list("base") if re.match(r"^r\d{8}_scaffold$", q["headRefName"].split("/")[-1])]
+    for p in list([q for br in SCAFFOLD_BRANCHES for q in gh_list(br)]) + _up:
         seg = p["headRefName"].split("/")[-1]
-        if is_sync(seg): continue
+        if is_sync(seg) and p not in _up: continue
         det = pr_detail(p["number"])
         dev = dev_of(p["author"]["login"])
         scaffold.append({"ticket":ticket_from_title(p["title"]) or "—","dev":dev,"bien":dev=="bien",
-                         "pr":{"num":p["number"],"cf":det["cf"],"st":det["st"],"nc":det["nc"],"add":det["add"],"del":det["del"],"fc":det["fc"],"cr":fmt_dt(p["createdAt"]),"rv":det["rvw"]},"created":fmt_dt(p["createdAt"]),
+                         "pr":{"num":p["number"],"cf":det["cf"],"st":det["st"],"nc":det["nc"],"add":det["add"],"del":det["del"],"fc":det["fc"],"cr":fmt_dt(p["createdAt"]),"rv":det["rvw"],"up":("base" if p in _up else None)},"created":fmt_dt(p["createdAt"]),
                          "cop":det["cop"],"unres":det["unres"],"rvw":det["rvw"],"title":clean_title(p["title"])})
     scaffold.sort(key=lambda m:m["created"], reverse=True)
 

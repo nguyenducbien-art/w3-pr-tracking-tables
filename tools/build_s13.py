@@ -53,6 +53,7 @@ function render(D){
 // Tag nhánh r đích ở bên phải #PR (mọi PR nhắm nhánh r; base/scaffold không có tag).
   // Nguồn: p.br (data từ 14/10) → nếu thiếu (data cũ / sprint đông lạnh) suy từ cột: 'r629' → '0629'.
   function brTag(p,key){var b=(p&&p.br&&/^\d{4}$/.test(p.br))?p.br:((key&&/^r\d{3,4}$/.test(key))?('0000'+key.slice(1)).slice(-4):'');
+    if(p&&p.up) return ' <span class="br-tag br-up" title="PR đưa nhánh scaffold lên '+p.up+'">→'+p.up+'</span>';
     return b?' <span class="br-tag br-'+b+'" title="PR nhắm nhánh r2026'+b+'">r'+b+'</span>':'';}
   function one(p,inv,key){
     var mark=p.cf==='bad'?'<span class="cf-bad">✗</span>':(p.cf==='unk'?'<span class="cf-unk" title="GitHub chưa tính xong mergeable">?</span>':'<span class="cf-ok">✓</span>');
@@ -157,7 +158,7 @@ function render(D){
    + mainBlock(commonRows,'Bảng 1 — Common component (共通)','Ticket nhánh <b>common-…</b>. Copilot chỉ đếm PR→base.')
    + mainBlock(normalRows,'Bảng 2 — Màn / Fix thường','Ticket nhánh ANGULAR_REPLACE-… (màn migration + fix lẻ).')
    +'<h2 style="font-size:15px;font-weight:700;margin:26px 0 4px;letter-spacing:-0.01em;">Bảng phụ — PR → '+D.scaffoldBranch.split('/').pop()+' <span style="font-weight:400;color:var(--text-dim);font-size:12px;">(giàn giáo / bake rule vào SKILL)</span></h2>'
-   +'<div class="subtitle">PR trỏ vào nhánh <b>'+D.scaffoldBranch.split('/').pop()+'</b> — cập nhật giàn giáo (rules + frontend-screen-* SKILL). Loại PR sync base/r713→scaffold.</div>'
+   +'<div class="subtitle">PR trỏ vào nhánh <b>'+D.scaffoldBranch.split('/').pop()+'</b> — cập nhật giàn giáo (rules + frontend-screen-* SKILL), kèm PR đưa scaffold lên base (tag →base). Loại PR sync base/r713→scaffold.</div>'
    +'<div class="stats">'
      +'<div class="stat"><span class="stat-val">'+D.scaffold.length+'</span> PR sống</div>'
      +'<div class="stat">conflict <span class="stat-val warn">'+scfCf+'</span></div>'
