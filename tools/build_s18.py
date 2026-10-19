@@ -52,6 +52,9 @@ for _a, _b in [
 ]:
     assert _a in _pr, "anchor không thấy: %s" % _a[:50]
     _pr = _pr.replace(_a, _b)
+# PR → r0810 đã CLOSED vẫn hiện khi ticket có twin → r20261005 (fetch_build: _TWIN) → nói rõ ở subtitle
+assert "Loại PR CLOSED và" in _pr
+_pr = _pr.replace("Loại PR CLOSED và", "Loại PR CLOSED (trừ PR → r0810 đã đóng khi ticket có PR song sinh → r1005, pill CLOSED) và")
 RENDER_JS = _pr
 
 TITLE = "Table A — Sprint 18"

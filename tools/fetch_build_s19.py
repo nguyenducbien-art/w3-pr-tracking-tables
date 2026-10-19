@@ -121,16 +121,20 @@ def _ticket_of(head):
 
 _HOME = None
 _S14 = None
+_TWIN = None
 def gh_list(branch):
     # sprint_overrides: PR xếp tay > sprint gốc của ticket (PR mới của ticket sprint cũ về page sprint cũ) > luật ngày.
     # Nhánh scaffold không gắn ticket → chỉ xếp tay / luật ngày.
-    global _HOME, _S14
+    global _HOME, _S14, _TWIN
+    # PR → r20260810 đã CLOSED vẫn hiện nếu ticket có PR song sinh (twin) → r20261005 còn sống:
+    # team đóng PR r0810 khi chuyển sang nhánh sprint r20261005 → giữ dấu vết PR cũ cạnh twin (user yêu cầu 19/10).
+    if _TWIN is None: _TWIN = {_ticket_of(q["headRefName"]) for q in gh_raw("r20261005") if q["state"] != "CLOSED"} - {None}
     if _S14 is None: _S14 = s14_tickets(gh_raw(S14_BRANCH), _ticket_of)
     by_ticket = branch in HOME_BRANCHES
     if by_ticket and _HOME is None:
         _HOME = ticket_home({b: gh_raw(b) for b in HOME_BRANCHES}, vn_date, _ticket_of)
     return [p for p in gh_raw(branch)
-            if p["state"] != "CLOSED"
+            if (p["state"] != "CLOSED" or (branch == "r20260810" and _ticket_of(p["headRefName"]) in _TWIN))
             # PR → base của ticket Sprint 14 chỉ ở page s14 (trừ PR xếp tay)
             and not (branch == "base" and p["number"] not in PR_SPRINT and _ticket_of(p["headRefName"]) in _S14)
             # PR nhánh r của ticket Sprint 14 (chưa sang s15) → page s14
@@ -153,6 +157,7 @@ _QM = ('query($n:Int!){repository(owner:"%s",name:"%s"){pullRequest(number:$n){m
 def resolve_cf(d, n):
     """CONFLICTING→bad, MERGEABLE→ok, MERGED→ok; OPEN mà UNKNOWN thì retry, cuối cùng vẫn UNKNOWN→unk."""
     if d.get("state") == "MERGED": return "ok"
+    if d.get("state") == "CLOSED": return "na"   # closed: no merge check
     mg = d.get("mergeable")
     if d.get("state") == "OPEN" and mg == "UNKNOWN":
         for _ in range(3):
@@ -168,6 +173,7 @@ def resolve_cf(d, n):
 
 def status_of(d):
     if d.get("state") == "MERGED": return "merged"
+    if d.get("state") == "CLOSED": return "closed"
     if d.get("isDraft"): return "draft"
     rd = d.get("reviewDecision")
     if rd == "APPROVED": return "approved"

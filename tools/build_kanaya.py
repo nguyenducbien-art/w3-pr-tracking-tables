@@ -24,7 +24,7 @@ function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return
 function tkLink(t){var s=String(t==null?'':t);return /^\d+$/.test(s)
   ?'<a class="ticket" href="https://dialog-inc.backlog.com/view/ANGULAR_REPLACE-'+s+'" target="_blank" rel="noopener" title="Mở ticket '+s+' trên Backlog">'+s+'</a>'
   :'<span class="ticket">'+esc(s)+'</span>';}
-var PILL={merged:['merged','MERGED'],draft:['draft','DRAFT'],approved:['approved','APPROVED'],changes:['changes','CHANGES'],open:['open','OPEN']};
+var PILL={merged:['merged','MERGED'],draft:['draft','DRAFT'],approved:['approved','APPROVED'],changes:['changes','CHANGES'],open:['open','OPEN'],closed:['closed','CLOSED']};
 function pill(st){var x=PILL[st]||PILL.open;return '<span class="pill pill-'+x[0]+'">'+x[1]+'</span>';}
 function has(a){return (a||[]).indexOf(WHO)>=0;}
 
@@ -32,7 +32,7 @@ function has(a){return (a||[]).indexOf(WHO)>=0;}
 function collect(S,D){
   var out=[], common={}; (D.common||[]).forEach(function(t){common[t]=1;});
   function take(r,p,target,kind,rk){
-    if(!p||p.st==='merged') return;
+    if(!p||p.st==='merged'||p.st==='closed') return;
     var rv=p.rv||r.rvw||{};            // per-PR reviewers when available, else row-level (frozen data)
     if(!has(rv.pd)) return;
     out.push({sprint:S.label,href:S.href,ticket:r.ticket,dev:r.dev,num:p.num,st:p.st,cf:p.cf,cr:p.cr||'',

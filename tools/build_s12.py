@@ -49,7 +49,7 @@ document.addEventListener('change',function(e){
 
 function render(D){
   var U=D.prUrlBase, COMMON=new Set(D.common), INVALID=new Set(D.invalidBase);
-  var PILL={merged:['merged','MERGED'],draft:['draft','DRAFT'],approved:['approved','APPROVED'],changes:['changes','CHANGES'],open:['open','OPEN']};
+  var PILL={merged:['merged','MERGED'],draft:['draft','DRAFT'],approved:['approved','APPROVED'],changes:['changes','CHANGES'],open:['open','OPEN'],closed:['closed','CLOSED']};
   function pill(st){var x=PILL[st]||PILL.open;return '<span class="pill pill-'+x[0]+'">'+x[1]+'</span>';}
 // Tag nhánh r đích ở bên phải #PR (mọi PR nhắm nhánh r; base/scaffold không có tag).
   // Nguồn: p.br (data từ 14/10) → nếu thiếu (data cũ / sprint đông lạnh) suy từ cột: 'r629' → '0629'.
@@ -57,7 +57,7 @@ function render(D){
     if(p&&p.up) return ' <span class="br-tag br-up" title="PR đưa nhánh scaffold lên '+p.up+'">→'+p.up+'</span>';
     return b?' <span class="br-tag br-'+b+'" title="PR nhắm nhánh r2026'+b+'">r'+b+'</span>':'';}
   function one(p,inv,key){
-    var mark=p.cf==='bad'?'<span class="cf-bad">✗</span>':(p.cf==='unk'?'<span class="cf-unk" title="GitHub chưa tính xong mergeable">?</span>':'<span class="cf-ok">✓</span>');
+    var mark=p.st==='closed'?'':p.cf==='bad'?'<span class="cf-bad">✗</span>':(p.cf==='unk'?'<span class="cf-unk" title="GitHub chưa tính xong mergeable">?</span>':'<span class="cf-ok">✓</span>');
     var inb=inv?' <span class="badge-invalid" title="ルール違反">invalid</span>':'';
     var nc=(p.nc!=null)?' <span class="commits" title="số commit trong PR (branch vượt base)">'+p.nc+'c</span>':'';
     var fcv=(p.fc!=null)?' <span class="files" title="số file thay đổi">'+p.fc+'f</span>':'';

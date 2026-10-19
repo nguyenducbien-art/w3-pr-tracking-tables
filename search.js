@@ -15,7 +15,7 @@
   var BACKLOG = 'https://dialog-inc.backlog.com/view/ANGULAR_REPLACE-';
   var GH = 'https://github.com/dialog-inc/w3package_v2/';
   var BR = { base: '→base', r629: '→r0629', r713: '→r0713', r727: '→r0727', r810: '→r0810', scaffold: '→scaffold' };
-  var PILL = { merged: 'MERGED', draft: 'DRAFT', approved: 'APPROVED', changes: 'CHANGES', open: 'OPEN' };
+  var PILL = { merged: 'MERGED', draft: 'DRAFT', approved: 'APPROVED', changes: 'CHANGES', open: 'OPEN', closed: 'CLOSED' };
   var ROLE = { parent: '親 (parent)', impl: '実装 (implementation)', test: 'テスト実施 (test execution)' };
 
   function esc(s) {

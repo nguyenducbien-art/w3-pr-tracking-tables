@@ -85,6 +85,7 @@ _QM = ('query($n:Int!){repository(owner:"%s",name:"%s"){pullRequest(number:$n){m
 def resolve_cf(d, n):
     """CONFLICTING→bad, MERGEABLE→ok, MERGED→ok; OPEN mà UNKNOWN thì retry, cuối cùng vẫn UNKNOWN→unk."""
     if d.get("state") == "MERGED": return "ok"
+    if d.get("state") == "CLOSED": return "na"   # closed: no merge check
     mg = d.get("mergeable")
     if d.get("state") == "OPEN" and mg == "UNKNOWN":
         for _ in range(3):
@@ -100,6 +101,7 @@ def resolve_cf(d, n):
 
 def status_of(d):
     if d.get("state") == "MERGED": return "merged"
+    if d.get("state") == "CLOSED": return "closed"
     if d.get("isDraft"): return "draft"
     rd = d.get("reviewDecision")
     if rd == "APPROVED": return "approved"
