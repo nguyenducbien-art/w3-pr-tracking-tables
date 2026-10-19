@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19 12:06",
+ "updated": "2026-10-19 14:31",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -39,7 +39,8 @@
       "ap": [],
       "ch": [],
       "pd": [
-       "bien"
+       "bien",
+       "kanayam"
       ]
      },
      "br": "1005"
@@ -54,7 +55,8 @@
     "ap": [],
     "ch": [],
     "pd": [
-     "bien"
+     "bien",
+     "kanayam"
     ]
    },
    "title": "リファレンスの select-init の既定値の記述を直し、在庫追加の区分コードの既定値を先頭にする"
@@ -355,7 +357,9 @@
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      },
      "br": "1005"
     }
@@ -368,7 +372,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "編集画面の列設定取得 API で、表示しない設定の子画面を返さず、子画面が無くても children を返す"
   },
@@ -940,7 +946,9 @@
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      },
      "br": "1005"
     }
@@ -955,7 +963,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "入荷_検品登録・修正のロケーション・パレット選択モーダルを統合ユニット管理では /mu で検索する"
   },
