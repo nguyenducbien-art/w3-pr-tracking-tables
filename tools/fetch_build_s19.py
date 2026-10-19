@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Fetch live PR data từ GitHub (dialog-inc/w3package_v2) → build data-s19.json cho
-Table A Sprint 19 (05/10/2026 → nay).
+Table A Sprint 19 (05/10/2026 → 18/10/2026).
 
 ⚠️ Từ Sprint 16 trở đi KHÔNG có nhánh r riêng cho mỗi sprint — PR vẫn nhắm r20260810/base
 → chia sprint theo NGÀY TẠO PR (giờ VN), không chia theo nhánh:
@@ -19,6 +19,7 @@ from sprint_overrides import keep_auto, ticket_home, HOME_BRANCHES, s14_tickets,
 REPO = "dialog-inc/w3package_v2"
 OWNER, NAME = "dialog-inc", "w3package_v2"
 SINCE = "2026-10-05"                      # 🔴 mốc bắt đầu Sprint 19 = GATE THỰC (PR created >= ngày này, giờ VN)
+UNTIL = "2026-10-18"                      # 🔴 ngày CUỐI Sprint 19 — PR sau mốc này là của Sprint 20
 PRURL = "https://github.com/%s/pull/" % REPO
 OUT = sys.argv[1] if len(sys.argv) > 1 else "data-s19.json"
 
@@ -27,7 +28,7 @@ EXCLUDE = {"1495", "1479", "1497"}       # ticket ẩn hẳn khỏi bảng (mọ
 # ĐẶC CÁCH dev: khi PR gốc của người sở hữu màn bị CLOSED (bị gh_list lọc) + chỉ còn PR fix của
 # người khác được merge → dev tự suy sẽ SAI. Map {ticket: dev-short} ép đúng người sở hữu.
 FORCE_DEV = {}                            # (Sprint 17 chưa có ca nào)
-R_BRANCHES = ("r20260810", "r20260921", "r20261005")   # nhánh r đang nhận PR (2 nhánh sau chưa có → gh trả [])
+R_BRANCHES = ("r20260810", "r20260921", "r20261005", "r20261019")   # nhánh r đang nhận PR (2 nhánh sau chưa có → gh trả [])
 SCAFFOLD_BRANCHES = ("r20261005_scaffold", "r20260921_scaffold", "r20260907_scaffold", "r20260824_scaffold", "r20260810_scaffold")
 SCAFFOLD_LABEL = "scaffold (r1005 + r0921 + r0907 + r0824 + r0810)"   # nhãn tiêu đề bảng phụ (RENDER_JS lấy phần sau dấu /)
 
@@ -91,7 +92,7 @@ def ticket_from_title(t):
 def is_sync(seg):
     if seg in ('base','r20260629','r20260713','r20260713_scaffold','r20260810','r20260810_scaffold',
                'r20260824_scaffold','r20260907_scaffold','r20260921','r20260921_scaffold',
-               'r20261005','r20261005_scaffold','per-sprint'): return True
+               'r20261005','r20261005_scaffold','r20261019','r20261019_scaffold','per-sprint'): return True
     if re.match(r'^pr\d+', seg): return True
     if 'evidences' in seg: return True
     if re.match(r'^r2026\d{4}-', seg): return True
@@ -135,7 +136,7 @@ def gh_list(branch):
             # PR nhánh r của ticket Sprint 14 (chưa sang s15) → page s14
             and not (by_ticket and branch != "base" and p["number"] not in PR_SPRINT
                      and s14_follow(_ticket_of(p["headRefName"]), _S14, _HOME))
-            and keep_auto(p, 19, vn_date(p["createdAt"]) >= SINCE,
+            and keep_auto(p, 19, SINCE <= vn_date(p["createdAt"]) <= UNTIL,
                                                     _HOME if by_ticket else {}, _ticket_of(p["headRefName"]),
                                                     vn_date(p["createdAt"]))]
 

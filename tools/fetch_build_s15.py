@@ -84,7 +84,7 @@ def ticket_from_title(t):
 
 def is_sync(seg):
     if seg in ('base','r20260629','r20260713','r20260713_scaffold','r20260810','r20260810_scaffold',
-               'r20260921','r20260921_scaffold','r20261005','r20261005_scaffold'): return True
+               'r20260921','r20260921_scaffold','r20261005','r20261005_scaffold','r20261019','r20261019_scaffold'): return True
     if re.match(r'^pr\d+', seg): return True
     if 'evidences' in seg: return True
     if re.match(r'^r2026\d{4}-', seg): return True
@@ -220,7 +220,7 @@ def build():
     tickets = {}
     s15 = set()
     # r20260921 / r20261005: PR mới của ticket sprint này (theo sprint gốc) cũng về đây — cột →r có badge nhánh
-    for p in [q for br in ("r20260810", "r20260921", "r20261005") for q in gh_list(br)]:
+    for p in [q for br in ("r20260810", "r20260921", "r20261005", "r20261019") for q in gh_list(br)]:
         seg = p["headRefName"].split("/")[-1]
         if is_sync(seg): continue
         tk = ticket_from_branch(seg)

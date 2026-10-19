@@ -28,7 +28,7 @@ EXCLUDE = {"1495", "1479", "1497"}       # ticket ẩn hẳn khỏi bảng (mọ
 # ĐẶC CÁCH dev: khi PR gốc của người sở hữu màn bị CLOSED (bị gh_list lọc) + chỉ còn PR fix của
 # người khác được merge → dev tự suy sẽ SAI. Map {ticket: dev-short} ép đúng người sở hữu.
 FORCE_DEV = {}                            # (Sprint 17 chưa có ca nào)
-R_BRANCHES = ("r20260810", "r20260921", "r20261005")   # + r20261005 (14/10): PR mới của ticket Sprint 18 nhắm nhánh mới
+R_BRANCHES = ("r20260810", "r20260921", "r20261005", "r20261019")   # + r20261005 (14/10): PR mới của ticket Sprint 18 nhắm nhánh mới
 SCAFFOLD_BRANCHES = ("r20260921_scaffold", "r20260907_scaffold", "r20260824_scaffold", "r20260810_scaffold")
 SCAFFOLD_LABEL = "scaffold (r0921 + r0907 + r0824 + r0810)"   # nhãn tiêu đề bảng phụ (RENDER_JS lấy phần sau dấu /)
 
@@ -92,7 +92,7 @@ def ticket_from_title(t):
 def is_sync(seg):
     if seg in ('base','r20260629','r20260713','r20260713_scaffold','r20260810','r20260810_scaffold',
                'r20260824_scaffold','r20260907_scaffold','r20260921','r20260921_scaffold',
-               'r20261005','r20261005_scaffold','per-sprint'): return True
+               'r20261005','r20261005_scaffold','r20261019','r20261019_scaffold','per-sprint'): return True
     if re.match(r'^pr\d+', seg): return True
     if 'evidences' in seg: return True
     if re.match(r'^r2026\d{4}-', seg): return True

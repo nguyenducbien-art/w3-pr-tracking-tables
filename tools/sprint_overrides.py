@@ -27,8 +27,8 @@ def keep(p, sprint, in_window):
 # PR xếp tay (PR_SPRINT) vẫn ưu tiên cao nhất và cũng được tính là bằng chứng cho sprint được xếp.
 # Ticket chỉ có PR trước Sprint 15 (Sprint 14 trở về trước, page dựng theo nhánh r) → không có sprint gốc
 # ở đây → PR mới của nó vẫn theo luật ngày.
-WINDOWS = ((15, "2026-08-01", "2026-09-06"), (17, "2026-09-07", "2026-09-20"), (18, "2026-09-21", "2026-10-04"), (19, "2026-10-05", "9999-12-31"))
-HOME_BRANCHES = ("r20260810", "r20260921", "r20261005", "base")
+WINDOWS = ((15, "2026-08-01", "2026-09-06"), (17, "2026-09-07", "2026-09-20"), (18, "2026-09-21", "2026-10-04"), (19, "2026-10-05", "2026-10-18"), (20, "2026-10-19", "9999-12-31"))
+HOME_BRANCHES = ("r20260810", "r20260921", "r20261005", "r20261019", "base")
 
 
 def sprint_of_date(d):

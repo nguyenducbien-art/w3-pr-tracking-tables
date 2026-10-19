@@ -12,6 +12,7 @@ SPRINTS = [
     {"label": "Sprint 17", "href": "s17.html", "data": "data-s17.json"},   # Sprint 16 nằm chung page s15 (không có nhánh r riêng)
     {"label": "Sprint 18", "href": "s18.html", "data": "data-s18.json", "rlabel": "→r0810/0921"},
     {"label": "Sprint 19", "href": "s19.html", "data": "data-s19.json", "rlabel": "→r0810/0921/1005"},
+    {"label": "Sprint 20", "href": "s20.html", "data": "data-s20.json", "rlabel": "→r0810/1005/1019"},
 ]
 
 def _ver():

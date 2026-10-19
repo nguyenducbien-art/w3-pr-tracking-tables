@@ -1,0 +1,321 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Fetch live PR data từ GitHub (dialog-inc/w3package_v2) → build data-s20.json cho
+Table A Sprint 20 (19/10/2026 → nay).
+
+⚠️ Từ Sprint 16 trở đi KHÔNG có nhánh r riêng cho mỗi sprint — PR vẫn nhắm r20260810/base
+→ chia sprint theo NGÀY TẠO PR (giờ VN), không chia theo nhánh:
+    thuộc Sprint 20  =  PR (nhánh trong R_BRANCHES / base / *_scaffold, không CLOSED) created >= SINCE.
+Sprint 19 (page s19) cắt ở 18/10 → mỗi PR chỉ nằm ở ĐÚNG 1 page, không trùng.
+🔵 Phòng xa: R_BRANCHES có sẵn r20260921 + r20261005 — CHƯA tồn tại (05/10), gh trả [] nên vô hại;
+   ngày team tạo nhánh thì PR tự vào bảng, khỏi sửa script.
+Self-contained: chỉ dùng gh + python stdlib. KHÔNG chứa secret.
+Usage: python3 fetch_build_s20.py [output_data.json]
+"""
+import json, re, subprocess, sys, datetime, time
+from sprint_overrides import keep_auto, ticket_home, HOME_BRANCHES, s14_tickets, S14_BRANCH, PR_SPRINT, s14_follow
+
+REPO = "dialog-inc/w3package_v2"
+OWNER, NAME = "dialog-inc", "w3package_v2"
+SINCE = "2026-10-19"                      # 🔴 mốc bắt đầu Sprint 20 = GATE THỰC (PR created >= ngày này, giờ VN)
+PRURL = "https://github.com/%s/pull/" % REPO
+OUT = sys.argv[1] if len(sys.argv) > 1 else "data-s20.json"
+
+EXCLUDE = {"1495", "1479", "1497"}       # ticket ẩn hẳn khỏi bảng (mọi PR base/r810) — user yêu cầu:
+                                          #   1495 (08-03) · 1479 + 1497 (08-20, đều ở Bảng 1 common)
+# ĐẶC CÁCH dev: khi PR gốc của người sở hữu màn bị CLOSED (bị gh_list lọc) + chỉ còn PR fix của
+# người khác được merge → dev tự suy sẽ SAI. Map {ticket: dev-short} ép đúng người sở hữu.
+FORCE_DEV = {}                            # (Sprint 17 chưa có ca nào)
+R_BRANCHES = ("r20260810", "r20260921", "r20261005", "r20261019")   # r20261019 = nhánh r của Sprint 20 (tạo 19/10)
+SCAFFOLD_BRANCHES = ("r20261019_scaffold", "r20261005_scaffold", "r20260921_scaffold", "r20260907_scaffold", "r20260824_scaffold", "r20260810_scaffold")
+SCAFFOLD_LABEL = "scaffold (r1019 + r1005 + r0921 + r0907 + r0824 + r0810)"   # nhãn tiêu đề bảng phụ (RENDER_JS lấy phần sau dấu /)
+
+DEV = {"nguyenducbien-art":"bien","nguyennhatminh-dl":"minh","phambaohung-dl":"hung",
+       "phamtiendat-oss":"dat","nguyenanhkhoa-rk":"khoa"}
+
+def load_ticket_sid():
+    """map ticket(親/実装/テスト) -> screen_id, từ s15-plan.json (repo root). {} nếu thiếu file.
+    Sprint 17 chưa có plan riêng → dùng plan S15: chỉ khớp được ticket của màn S15 (fix tiếp)."""
+    import os
+    p = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "s15-plan.json")
+    try:
+        plan = json.load(open(p))
+    except (OSError, ValueError):
+        return {}
+    t2s = {}
+    for dom in plan.get("domains", []):
+        for r in dom.get("rows", []):
+            for k in ("parent", "impl", "test"):
+                if r.get(k):
+                    t2s.setdefault(str(r[k]), str(r["sid"]))   # first-wins
+    return t2s
+
+def run(args):
+    r = subprocess.run(args, capture_output=True, text=True)
+    if r.returncode != 0:
+        raise RuntimeError("cmd fail: %s\n%s" % (" ".join(args), r.stderr[:500]))
+    return r.stdout
+
+def ensure_account():
+    subprocess.run(["gh","auth","switch","--user","nguyenducbien-art"],
+                   capture_output=True, text=True)
+    who = run(["gh","api","user","--jq",".login"]).strip()
+    if who != "nguyenducbien-art":
+        raise RuntimeError("sai gh account: %s (cần nguyenducbien-art)" % who)
+
+def dev_of(login): return DEV.get(login, login)
+
+_SUF = re.compile(r'-(dl|oss|rk|art|dialog|inc)$', re.I)
+def short_name(login):
+    if not login: return None
+    return DEV.get(login) or _SUF.sub('', login)   # map dev đã biết, else bỏ hậu tố -dl/-rk/...
+
+def fmt_dt(iso):
+    # "2026-07-14T15:07:32Z" (UTC) -> "MM-DD HH:MM" giờ VN (UTC+7)
+    dt = datetime.datetime.strptime(iso, "%Y-%m-%dT%H:%M:%SZ") + datetime.timedelta(hours=7)
+    return dt.strftime("%m-%d %H:%M")
+
+def vn_date(iso):
+    """Ngày theo giờ VN (UTC+7) — CÙNG múi với cột created hiển thị trên bảng, nên mốc cắt sprint
+    khớp đúng cái user nhìn thấy (createdAt thô là UTC, lệch ngày với PR tạo sau 17:00Z)."""
+    return (datetime.datetime.strptime(iso, "%Y-%m-%dT%H:%M:%SZ") + datetime.timedelta(hours=7)).strftime("%Y-%m-%d")
+
+def ticket_from_branch(seg):
+    s = re.sub(r'^#','',seg); s = re.sub(r'^ANGULAR_REPLACE-','',s); s = re.sub(r'^common-','',s)
+    m = re.match(r'(\d+)', s); return m.group(1) if m else None
+
+def ticket_from_title(t):
+    m = re.search(r'ANGULAR_REPLACE-(\d+)', t or ''); return m.group(1) if m else None
+
+def is_sync(seg):
+    if seg in ('base','r20260629','r20260713','r20260713_scaffold','r20260810','r20260810_scaffold',
+               'r20260824_scaffold','r20260907_scaffold','r20260921','r20260921_scaffold',
+               'r20261005','r20261005_scaffold','r20261019','r20261019_scaffold','per-sprint'): return True
+    if re.match(r'^pr\d+', seg): return True
+    if 'evidences' in seg: return True
+    if re.match(r'^r2026\d{4}-', seg): return True
+    return False
+
+def clean_title(t):
+    t = t or ''
+    t = re.sub(r'^(fix|feat|chore|test|refactor|docs)\s*:\s*', '', t)
+    t = re.sub(r'^(\[[^\]]*\]\s*)+', '', t)
+    t = re.sub(r'\s*#ANGULAR_REPLACE-\d+\s*$', '', t)
+    return t.strip()
+
+_RAW = {}
+def gh_raw(branch):
+    if branch not in _RAW:
+        _RAW[branch] = json.loads(run(["gh","pr","list","--repo",REPO,"--base","mimosa/frontend/develop/"+branch,
+               "--state","all","--limit","400","--json","number,state,createdAt,headRefName,author,title"]))
+        for p in _RAW[branch]: p["_br"] = branch[-4:] if re.match(r"^r\d{8}$", branch) else None
+    return _RAW[branch]
+
+def _ticket_of(head):
+    seg = head.split("/")[-1]
+    if is_sync(seg): return None
+    tk = ticket_from_branch(seg)
+    return tk if tk and tk not in EXCLUDE else None
+
+_HOME = None
+_S14 = None
+def gh_list(branch):
+    # sprint_overrides: PR xếp tay > sprint gốc của ticket (PR mới của ticket sprint cũ về page sprint cũ) > luật ngày.
+    # Nhánh scaffold không gắn ticket → chỉ xếp tay / luật ngày.
+    global _HOME, _S14
+    if _S14 is None: _S14 = s14_tickets(gh_raw(S14_BRANCH), _ticket_of)
+    by_ticket = branch in HOME_BRANCHES
+    if by_ticket and _HOME is None:
+        _HOME = ticket_home({b: gh_raw(b) for b in HOME_BRANCHES}, vn_date, _ticket_of)
+    return [p for p in gh_raw(branch)
+            if p["state"] != "CLOSED"
+            # PR → base của ticket Sprint 14 chỉ ở page s14 (trừ PR xếp tay)
+            and not (branch == "base" and p["number"] not in PR_SPRINT and _ticket_of(p["headRefName"]) in _S14)
+            # PR nhánh r của ticket Sprint 14 (chưa sang s15) → page s14
+            and not (by_ticket and branch != "base" and p["number"] not in PR_SPRINT
+                     and s14_follow(_ticket_of(p["headRefName"]), _S14, _HOME))
+            and keep_auto(p, 20, vn_date(p["createdAt"]) >= SINCE,
+                                                    _HOME if by_ticket else {}, _ticket_of(p["headRefName"]),
+                                                    vn_date(p["createdAt"]))]
+
+_Q = ('query($n:Int!){repository(owner:"%s",name:"%s"){pullRequest(number:$n){'
+      'state isDraft reviewDecision mergeable additions deletions changedFiles commits{totalCount} '
+      'reviewRequests(first:20){nodes{requestedReviewer{__typename ... on User{login} ... on Team{name} ... on Mannequin{login}}}} '
+      'latestOpinionatedReviews(first:20){nodes{author{login} state}} '
+      'body reviewThreads(first:100){nodes{isResolved '
+      'comments(first:1){nodes{author{login}}}}}}}}' % (OWNER, NAME))
+
+# query nhẹ chỉ lấy mergeable — dùng retry khi GitHub trả UNKNOWN (tính lazy)
+_QM = ('query($n:Int!){repository(owner:"%s",name:"%s"){pullRequest(number:$n){mergeable}}}' % (OWNER, NAME))
+
+def resolve_cf(d, n):
+    """CONFLICTING→bad, MERGEABLE→ok, MERGED→ok; OPEN mà UNKNOWN thì retry, cuối cùng vẫn UNKNOWN→unk."""
+    if d.get("state") == "MERGED": return "ok"
+    mg = d.get("mergeable")
+    if d.get("state") == "OPEN" and mg == "UNKNOWN":
+        for _ in range(3):
+            time.sleep(2)
+            try:
+                mg = json.loads(run(["gh","api","graphql","-F","n=%d"%n,"-f","query="+_QM]))["data"]["repository"]["pullRequest"]["mergeable"]
+            except Exception:
+                break
+            if mg != "UNKNOWN": break
+    if mg == "CONFLICTING": return "bad"
+    if mg == "MERGEABLE":   return "ok"
+    return "unk"
+
+def status_of(d):
+    if d.get("state") == "MERGED": return "merged"
+    if d.get("isDraft"): return "draft"
+    rd = d.get("reviewDecision")
+    if rd == "APPROVED": return "approved"
+    if rd == "CHANGES_REQUESTED": return "changes"
+    return "open"
+
+def pr_detail(n):
+    d = json.loads(run(["gh","api","graphql","-F","n=%d"%n,"-f","query="+_Q]))["data"]["repository"]["pullRequest"]
+    th = [t for t in d["reviewThreads"]["nodes"]
+          if t["comments"]["nodes"] and re.search("[Cc]opilot", t["comments"]["nodes"][0]["author"]["login"] or "")]
+    total = len(th); unres = len([t for t in th if not t["isResolved"]])
+    # link file report (Google Drive) trong PR body → cột Report mở được, không chỉ ✓
+    _mdrv = re.search(r'https?://drive\.google\.com/[^\s)>\]"\'`]+', d.get("body") or "", re.I)
+    drive = bool(_mdrv)
+    drvurl = _mdrv.group(0) if _mdrv else ""
+    cf = resolve_cf(d, n)   # bad/ok/unk (retry mergeable khi UNKNOWN)
+    nc = (d.get("commits") or {}).get("totalCount", 0)   # số commit của PR (branch ahead base)
+    add = d.get("additions") or 0; dele = d.get("deletions") or 0   # số dòng thêm/xoá (diff stat)
+    fc = d.get("changedFiles") or 0                                  # số file thay đổi
+    # reviewers: pending = được request nhưng chưa review; ap/ch = latest approve / changes-requested
+    pending = []
+    for rn in ((d.get("reviewRequests") or {}).get("nodes") or []):
+        rev = rn.get("requestedReviewer") or {}
+        nm = short_name(rev.get("login") or rev.get("name"))
+        if nm and nm not in pending: pending.append(nm)
+    approved, changes = [], []
+    for rv in ((d.get("latestOpinionatedReviews") or {}).get("nodes") or []):
+        nm = short_name((rv.get("author") or {}).get("login"))
+        if not nm: continue
+        if rv.get("state") == "APPROVED" and nm not in approved: approved.append(nm)
+        elif rv.get("state") == "CHANGES_REQUESTED" and nm not in changes: changes.append(nm)
+    rvw = {"ap": approved, "ch": changes, "pd": pending}
+    return {"cop": total, "unres": unres, "drive": drive, "drvurl": drvurl, "cf": cf, "st": status_of(d),
+            "nc": nc, "add": add, "del": dele, "fc": fc, "rvw": rvw}
+
+def merge_rvw(ms):
+    """Ticket reviewers = union over its source PRs.
+    ap/ch = each person's opinion (changes beats approved across PRs); pd = currently requested.
+    A person can be in pd AND ap/ch (re-requested after reviewing) — kept on purpose: the page renders
+    one combined marker "✗→⏳name" (same as s12–s14, whose data carries both).
+    Common ticket: pass base PRs only — the r810 sync PR is merged without human review (same as Copilot count)."""
+    op, pend = {}, []
+    for m in sorted(ms, key=lambda m: m["created"]):
+        r = m["det"]["rvw"]
+        for nm in r["ch"]:
+            op[nm] = "ch"
+        for nm in r["ap"]:
+            if op.get(nm) != "ch":
+                op[nm] = "ap"
+        for nm in r["pd"]:
+            if nm not in pend:
+                pend.append(nm)
+    return {"ap": [n for n, k in op.items() if k == "ap"],
+            "ch": [n for n, k in op.items() if k == "ch"],
+            "pd": pend}
+
+def build():
+    ensure_account()
+    # ---- Sprint 20 = MỌI PR created >= SINCE (19/10), bất kể ticket cũ hay mới ----
+    # gh_list đã lọc sẵn theo SINCE → cứ PR nào lọt vào đây là của Sprint 18.
+    # Ticket cũ chỉ có PR fix mới → vẫn hiện, nhưng CHỈ kèm các PR >= 21/09
+    # (PR cũ hơn nằm ở page s17 / s15). Cột "→r" gộp mọi nhánh trong R_BRANCHES.
+    tickets = {}
+    for p in [q for br in R_BRANCHES for q in gh_list(br)]:
+        seg = p["headRefName"].split("/")[-1]
+        if is_sync(seg): continue
+        tk = ticket_from_branch(seg)
+        if not tk or tk in EXCLUDE: continue
+        t = tickets.setdefault(tk, {"base":[], "r810":[], "meta":[], "common":False})
+        det = pr_detail(p["number"])
+        t["r810"].append({"num": p["number"], "cf": det["cf"], "st": det["st"],
+                          "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"]), "rv": det["rvw"], "br": p.get("_br")})
+        t["meta"].append({"num":p["number"],"key":"r810","author":p["author"]["login"],
+                          "created":p["createdAt"],"title":p["title"],"det":det})
+        if seg.startswith("common-"): t["common"] = True
+
+    # ---- PR → base created >= SINCE: KHÔNG cần ticket đã có PR r810 (khác s15) ----
+    # Giữ nguyên nguyên tắc "1 PR chỉ ở 1 page": base PR của Sprint 17 hiện ở đây, không ở s15.
+    for p in gh_list("base"):
+        seg = p["headRefName"].split("/")[-1]
+        if is_sync(seg): continue
+        tk = ticket_from_branch(seg)
+        if not tk or tk in EXCLUDE: continue
+        t = tickets.setdefault(tk, {"base":[], "r810":[], "meta":[], "common":False})
+        det = pr_detail(p["number"])
+        t["base"].append({"num": p["number"], "cf": det["cf"], "st": det["st"],
+                          "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"]), "rv": det["rvw"], "br": p.get("_br")})
+        t["meta"].append({"num":p["number"],"key":"base","author":p["author"]["login"],
+                          "created":p["createdAt"],"title":p["title"],"det":det})
+        if seg.startswith("common-"): t["common"] = True
+
+    t2s = load_ticket_sid()   # ticket -> screen_id (từ s15-plan.json)
+    main = []
+    for tk, t in tickets.items():
+        metas = t["meta"]; common = t["common"]
+        base_m = [m for m in metas if m["key"] == "base"]
+        # PR đại diện (dev/title) = PR SỚM NHẤT = tác giả GỐC của ticket.
+        # KHÔNG lấy metas[0] (PR số cao nhất/mới nhất do gh sort desc) — sẽ gán nhầm cho người
+        # tạo PR fix follow-up (vd ...-fix-r20260810 / -docs) thay vì người implement gốc.
+        rep = min(metas, key=lambda m: m["created"])
+        dev = FORCE_DEV.get(tk, dev_of(rep["author"]))   # đặc cách override khi PR gốc bị CLOSED
+        src = (base_m if base_m else metas) if common else metas   # common: copilot base-only
+        cop = sum(m["det"]["cop"] for m in src)
+        unres = sum(m["det"]["unres"] for m in src)
+        drive = any(m["det"]["drive"] for m in (base_m or metas))
+        drvurl = next((m["det"].get("drvurl") for m in (base_m or metas) if m["det"].get("drvurl")), "")
+        created = fmt_dt(min(m["created"] for m in metas))   # PR sớm nhất, MM-DD HH:MM (giờ VN)
+        main.append({"ticket":tk,"dev":dev,"bien":dev=="bien","sid":t2s.get(tk,""),
+                     "base":t["base"],"r810":t["r810"],
+                     "created":created,"drive":drive,"drvurl":drvurl,"cop":cop,"unres":unres,
+                     "rvw":merge_rvw(src),   # reviewers from src PRs (common → base PRs), not from rep
+                     "title":clean_title(rep["title"]),"_common":common})
+    main.sort(key=lambda m:(m["created"], 1 if m["base"] else 0), reverse=True)
+    common_list = [m["ticket"] for m in main if m["_common"]]
+    for m in main: m.pop("_common", None)
+
+    # ---- bảng phụ scaffold ----
+    # Mọi nhánh *_scaffold còn sống gom chung 1 bảng phụ; gh_list đã lọc created >= SINCE
+    # nên không lấn sang page s17. (r20260921_scaffold chưa tồn tại → [].)
+    scaffold = []
+    for p in [q for br in SCAFFOLD_BRANCHES for q in gh_list(br)]:
+        seg = p["headRefName"].split("/")[-1]
+        if is_sync(seg): continue
+        det = pr_detail(p["number"])
+        dev = dev_of(p["author"]["login"])
+        scaffold.append({"ticket":ticket_from_title(p["title"]) or "—","dev":dev,"bien":dev=="bien",
+                         "pr":{"num":p["number"],"cf":det["cf"],"st":det["st"],"nc":det["nc"],"add":det["add"],"del":det["del"],"fc":det["fc"],"cr":fmt_dt(p["createdAt"]),"rv":det["rvw"]},"created":fmt_dt(p["createdAt"]),
+                         "cop":det["cop"],"unres":det["unres"],"rvw":det["rvw"],"title":clean_title(p["title"])})
+    scaffold.sort(key=lambda m:m["created"], reverse=True)
+
+    now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+    data = {"updated":now,"repo":REPO,"prUrlBase":PRURL,
+            "common":common_list,"invalidBase":[],
+            "scaffoldBranch":"mimosa/frontend/develop/" + SCAFFOLD_LABEL,
+            "main":main,"scaffold":scaffold}
+
+    # dedupe: nếu nội dung (BỎ 'updated') không đổi so với file cũ → không ghi, exit 2
+    def strip_ts(d):
+        d = dict(d); d.pop("updated", None); return json.dumps(d, ensure_ascii=False, sort_keys=True)
+    try:
+        old = json.load(open(OUT))
+        if strip_ts(old) == strip_ts(data):
+            print("[fetch_build] no change (bỏ qua push)")
+            sys.exit(2)
+    except (FileNotFoundError, ValueError):
+        pass
+    json.dump(data, open(OUT,"w"), ensure_ascii=False, indent=1)
+    print("[fetch_build s20] %s | main=%d scaffold=%d common=%d updated=%s"
+          % (OUT, len(main), len(scaffold), len(common_list), now))
+
+if __name__ == "__main__":
+    build()
