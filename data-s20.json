@@ -1,14 +1,51 @@
 {
- "updated": "2026-10-19 13:00",
+ "updated": "2026-10-19 14:12",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2155",
   "2154",
   "2150"
  ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2155",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13490,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 492,
+     "del": 41,
+     "fc": 9,
+     "cr": "10-19 14:09",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1005"
+    }
+   ],
+   "created": "10-19 14:09",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "子画面を表示しない設定でも、帳票パターン追加・編集で保存済みの文言を消さず、一括配送業者設定・棚卸_調査結果登録で行えない操作を出さない"
+  },
   {
    "ticket": "2154",
    "dev": "bien",
