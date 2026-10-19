@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15 10:48",
+ "updated": "2026-10-19 09:51",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1020,5 +1020,40 @@
    "title": "screen-ids.ts の実装済み画面に残っていた「未実装」コメントを修正"
   }
  ],
- "scaffold": []
+ "scaffold": [
+  {
+   "ticket": "—",
+   "dev": "bien",
+   "bien": true,
+   "pr": {
+    "num": 13388,
+    "cf": "ok",
+    "st": "open",
+    "nc": 14,
+    "add": 1053,
+    "del": 236,
+    "fc": 19,
+    "cr": "10-14 10:55",
+    "rv": {
+     "ap": [],
+     "ch": [],
+     "pd": [
+      "kanayam"
+     ]
+    },
+    "up": "base"
+   },
+   "created": "10-14 10:55",
+   "cop": 2,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": [
+     "kanayam"
+    ]
+   },
+   "title": "r20261005_scaffold の足場資産更新を base に取り込み"
+  }
+ ]
 }

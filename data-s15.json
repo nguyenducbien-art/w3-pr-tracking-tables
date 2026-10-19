@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14 14:52",
+ "updated": "2026-10-19 09:58",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -7036,7 +7036,8 @@
      "ap": [],
      "ch": [],
      "pd": []
-    }
+    },
+    "up": null
    },
    "created": "08-21 11:30",
    "cop": 4,
@@ -7047,6 +7048,40 @@
     "pd": []
    },
    "title": "移行 scaffold 規約・SKILL 更新 (§8.9 ファイル選択欄 / §8.10 モーダルページャ / §8.11 コードマスタ並び順、MODAL-NEW-11・DATA-NEW-06 新設)"
+  },
+  {
+   "ticket": "—",
+   "dev": "bien",
+   "bien": true,
+   "pr": {
+    "num": 12177,
+    "cf": "ok",
+    "st": "merged",
+    "nc": 10,
+    "add": 397,
+    "del": 74,
+    "fc": 8,
+    "cr": "08-20 14:59",
+    "rv": {
+     "ap": [
+      "kanayam"
+     ],
+     "ch": [],
+     "pd": []
+    },
+    "up": "base"
+   },
+   "created": "08-20 14:59",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [
+     "kanayam"
+    ],
+    "ch": [],
+    "pd": []
+   },
+   "title": "r20260810_scaffold の足場資産更新を base に取り込み"
   },
   {
    "ticket": "—",
@@ -7065,7 +7100,8 @@
      "ap": [],
      "ch": [],
      "pd": []
-    }
+    },
+    "up": null
    },
    "created": "08-20 14:07",
    "cop": 2,
@@ -7094,7 +7130,8 @@
      "ap": [],
      "ch": [],
      "pd": []
-    }
+    },
+    "up": null
    },
    "created": "08-19 09:42",
    "cop": 0,
@@ -7123,7 +7160,8 @@
      "ap": [],
      "ch": [],
      "pd": []
-    }
+    },
+    "up": null
    },
    "created": "08-17 10:13",
    "cop": 0,
@@ -7134,6 +7172,40 @@
     "pd": []
    },
    "title": "develop/base → r20260810_scaffold ベース同期"
+  },
+  {
+   "ticket": "—",
+   "dev": "bien",
+   "bien": true,
+   "pr": {
+    "num": 11692,
+    "cf": "ok",
+    "st": "merged",
+    "nc": 19,
+    "add": 356,
+    "del": 88,
+    "fc": 19,
+    "cr": "08-06 12:13",
+    "rv": {
+     "ap": [
+      "kanayam"
+     ],
+     "ch": [],
+     "pd": []
+    },
+    "up": "base"
+   },
+   "created": "08-06 12:13",
+   "cop": 3,
+   "unres": 0,
+   "rvw": {
+    "ap": [
+     "kanayam"
+    ],
+    "ch": [],
+    "pd": []
+   },
+   "title": "r20260727_scaffold の足場資産更新を base に取り込み"
   }
  ]
 }

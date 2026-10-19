@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14 11:44",
+ "updated": "2026-10-19 09:53",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1976,7 +1976,8 @@
      "ap": [],
      "ch": [],
      "pd": []
-    }
+    },
+    "up": null
    },
    "created": "09-17 13:19",
    "cop": 2,
@@ -1987,6 +1988,40 @@
     "pd": []
    },
    "title": "共通コンポーネント 8 件の規約・テンプレート還元 (CC-NEW-13 検査手順・§8.3 rowStyle/cellLinks・§8.6 絞り込みと選択・§8.12 失効 Cookie の短絡・§8.15 isBlankValue 訂正・edit-screen テンプレート)"
+  },
+  {
+   "ticket": "—",
+   "dev": "bien",
+   "bien": true,
+   "pr": {
+    "num": 12626,
+    "cf": "ok",
+    "st": "merged",
+    "nc": 10,
+    "add": 184,
+    "del": 26,
+    "fc": 9,
+    "cr": "09-08 14:15",
+    "rv": {
+     "ap": [
+      "kanayam"
+     ],
+     "ch": [],
+     "pd": []
+    },
+    "up": "base"
+   },
+   "created": "09-08 14:15",
+   "cop": 5,
+   "unres": 0,
+   "rvw": {
+    "ap": [
+     "kanayam"
+    ],
+    "ch": [],
+    "pd": []
+   },
+   "title": "r20260824_scaffold の足場資産更新を base に取り込み"
   },
   {
    "ticket": "1566",
@@ -2005,7 +2040,8 @@
      "ap": [],
      "ch": [],
      "pd": []
-    }
+    },
+    "up": null
    },
    "created": "09-08 13:43",
    "cop": 1,
@@ -2034,7 +2070,8 @@
      "ap": [],
      "ch": [],
      "pd": []
-    }
+    },
+    "up": null
    },
    "created": "09-08 13:30",
    "cop": 5,

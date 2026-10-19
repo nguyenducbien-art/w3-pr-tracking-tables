@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14 15:11",
+ "updated": "2026-10-19 09:51",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -763,7 +763,8 @@
      "ap": [],
      "ch": [],
      "pd": []
-    }
+    },
+    "up": null
    },
    "created": "10-03 01:05",
    "cop": 0,
@@ -792,7 +793,8 @@
      "ap": [],
      "ch": [],
      "pd": []
-    }
+    },
+    "up": null
    },
    "created": "10-03 00:53",
    "cop": 0,
@@ -803,6 +805,40 @@
     "pd": []
    },
    "title": "1576 の規約還元を r20260907_scaffold から外し #13002 (1576 ブランチ) へ移す"
+  },
+  {
+   "ticket": "—",
+   "dev": "bien",
+   "bien": true,
+   "pr": {
+    "num": 13181,
+    "cf": "ok",
+    "st": "merged",
+    "nc": 39,
+    "add": 395,
+    "del": 74,
+    "fc": 14,
+    "cr": "10-03 00:12",
+    "rv": {
+     "ap": [
+      "kanayam"
+     ],
+     "ch": [],
+     "pd": []
+    },
+    "up": "base"
+   },
+   "created": "10-03 00:12",
+   "cop": 6,
+   "unres": 0,
+   "rvw": {
+    "ap": [
+     "kanayam"
+    ],
+    "ch": [],
+    "pd": []
+   },
+   "title": "r20260907_scaffold の足場資産更新を base に取り込み"
   },
   {
    "ticket": "—",
@@ -821,7 +857,8 @@
      "ap": [],
      "ch": [],
      "pd": []
-    }
+    },
+    "up": null
    },
    "created": "10-03 00:08",
    "cop": 2,
@@ -850,7 +887,8 @@
      "ap": [],
      "ch": [],
      "pd": []
-    }
+    },
+    "up": null
    },
    "created": "09-24 14:16",
    "cop": 1,
@@ -879,7 +917,8 @@
      "ap": [],
      "ch": [],
      "pd": []
-    }
+    },
+    "up": null
    },
    "created": "09-24 13:21",
    "cop": 2,
