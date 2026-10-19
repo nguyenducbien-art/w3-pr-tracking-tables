@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19 14:12",
+ "updated": "2026-10-19 14:22",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -29,7 +29,9 @@
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": []
+      "pd": [
+       "bien"
+      ]
      },
      "br": "1005"
     }
@@ -42,7 +44,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "bien"
+    ]
    },
    "title": "子画面を表示しない設定でも、帳票パターン追加・編集で保存済みの文言を消さず、一括配送業者設定・棚卸_調査結果登録で行えない操作を出さない"
   },
