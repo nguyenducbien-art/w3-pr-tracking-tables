@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19 11:35",
+ "updated": "2026-10-19 12:06",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -13,7 +13,8 @@
   "2057",
   "2105",
   "2128",
-  "2123"
+  "2123",
+  "2117"
  ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1005 + r0921 + r0907 + r0824 + r0810)",
@@ -48,7 +49,7 @@
    "drive": false,
    "drvurl": "",
    "cop": 5,
-   "unres": 5,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -1141,6 +1142,59 @@
     "pd": []
    },
    "title": "screen-ids.ts の実装済み画面に残っていた「未実装」コメントを修正"
+  },
+  {
+   "ticket": "2117",
+   "dev": "minh",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 13202,
+     "cf": "ok",
+     "st": "open",
+     "nc": 4,
+     "add": 656,
+     "del": 69,
+     "fc": 12,
+     "cr": "10-05 15:37",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": null
+    }
+   ],
+   "r810": [
+    {
+     "num": 13367,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 5,
+     "add": 656,
+     "del": 69,
+     "fc": 12,
+     "cr": "10-14 10:05",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1005"
+    }
+   ],
+   "created": "10-05 15:37",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1xMv9PmWiiZdNXtmdNWtOX1tzATp3dM5N/view?usp=sharing",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ユニット選択画面でヘッダーのナビ項目とユニット切替を非表示にする"
   }
  ],
  "scaffold": [

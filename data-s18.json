@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19 11:35",
+ "updated": "2026-10-19 12:06",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -19,29 +19,12 @@
    "dev": "khoa",
    "bien": false,
    "sid": "",
-   "base": [
-    {
-     "num": 13202,
-     "cf": "ok",
-     "st": "open",
-     "nc": 4,
-     "add": 656,
-     "del": 69,
-     "fc": 12,
-     "cr": "10-05 15:37",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     },
-     "br": null
-    }
-   ],
+   "base": [],
    "r810": [
     {
      "num": 13172,
-     "cf": "ok",
-     "st": "open",
+     "cf": "na",
+     "st": "closed",
      "nc": 5,
      "add": 656,
      "del": 69,
@@ -69,29 +52,13 @@
       "pd": []
      },
      "br": "0810"
-    },
-    {
-     "num": 13367,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 5,
-     "add": 656,
-     "del": 69,
-     "fc": 12,
-     "cr": "10-14 10:05",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     },
-     "br": "1005"
     }
    ],
    "created": "10-02 14:41",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1xMv9PmWiiZdNXtmdNWtOX1tzATp3dM5N/view?usp=sharing",
-   "cop": 1,
-   "unres": 0,
+   "drive": false,
+   "drvurl": "",
+   "cop": 3,
+   "unres": 1,
    "rvw": {
     "ap": [],
     "ch": [],
