@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19 10:41",
+ "updated": "2026-10-19 11:02",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -118,8 +118,8 @@
    "r810": [
     {
      "num": 13336,
-     "cf": "ok",
-     "st": "open",
+     "cf": "na",
+     "st": "closed",
      "nc": 3,
      "add": 51,
      "del": 13,
@@ -291,8 +291,8 @@
    "r810": [
     {
      "num": 13314,
-     "cf": "ok",
-     "st": "open",
+     "cf": "na",
+     "st": "closed",
      "nc": 6,
      "add": 605,
      "del": 121,
@@ -344,9 +344,9 @@
      "num": 13290,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 788,
-     "del": 15,
+     "nc": 3,
+     "add": 754,
+     "del": 18,
      "fc": 7,
      "cr": "10-08 14:53",
      "rv": {
@@ -360,11 +360,11 @@
    "r810": [
     {
      "num": 13291,
-     "cf": "ok",
-     "st": "open",
-     "nc": 2,
-     "add": 783,
-     "del": 14,
+     "cf": "na",
+     "st": "closed",
+     "nc": 3,
+     "add": 749,
+     "del": 17,
      "fc": 7,
      "cr": "10-08 15:00",
      "rv": {
@@ -378,9 +378,9 @@
      "num": 13376,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 783,
-     "del": 14,
+     "nc": 3,
+     "add": 749,
+     "del": 17,
      "fc": 7,
      "cr": "10-14 10:05",
      "rv": {
@@ -484,8 +484,8 @@
    "r810": [
     {
      "num": 13281,
-     "cf": "bad",
-     "st": "open",
+     "cf": "na",
+     "st": "closed",
      "nc": 6,
      "add": 1953,
      "del": 119,
@@ -624,8 +624,8 @@
    "r810": [
     {
      "num": 13252,
-     "cf": "bad",
-     "st": "open",
+     "cf": "na",
+     "st": "closed",
      "nc": 3,
      "add": 181,
      "del": 16,
@@ -693,8 +693,8 @@
    "r810": [
     {
      "num": 13250,
-     "cf": "ok",
-     "st": "open",
+     "cf": "na",
+     "st": "closed",
      "nc": 1,
      "add": 822,
      "del": 336,
@@ -762,8 +762,8 @@
    "r810": [
     {
      "num": 13245,
-     "cf": "ok",
-     "st": "open",
+     "cf": "na",
+     "st": "closed",
      "nc": 3,
      "add": 383,
      "del": 32,
@@ -894,9 +894,9 @@
      "num": 13370,
      "cf": "ok",
      "st": "open",
-     "nc": 6,
-     "add": 798,
-     "del": 43,
+     "nc": 7,
+     "add": 964,
+     "del": 49,
      "fc": 17,
      "cr": "10-14 10:05",
      "rv": {
@@ -911,7 +911,7 @@
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/1loYKHAkpfq5DWIZIQNWk7SpdIsvyY6ER/view?usp=sharing",
    "cop": 8,
-   "unres": 3,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [
@@ -1010,8 +1010,8 @@
    "r810": [
     {
      "num": 13213,
-     "cf": "ok",
-     "st": "open",
+     "cf": "na",
+     "st": "closed",
      "nc": 1,
      "add": 116,
      "del": 4,
@@ -1062,8 +1062,8 @@
    "r810": [
     {
      "num": 13212,
-     "cf": "ok",
-     "st": "open",
+     "cf": "na",
+     "st": "closed",
      "nc": 1,
      "add": 4,
      "del": 4,
