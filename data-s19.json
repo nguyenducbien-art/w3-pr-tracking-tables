@@ -1,9 +1,10 @@
 {
- "updated": "2026-10-19 11:02",
+ "updated": "2026-10-19 11:35",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
   "2124",
+  "1576",
   "2133",
   "2039",
   "2137",
@@ -28,7 +29,7 @@
      "num": 13400,
      "cf": "ok",
      "st": "open",
-     "nc": 3,
+     "nc": 4,
      "add": 156,
      "del": 102,
      "fc": 32,
@@ -46,8 +47,8 @@
    "created": "10-14 15:54",
    "drive": false,
    "drvurl": "",
-   "cop": 0,
-   "unres": 0,
+   "cop": 5,
+   "unres": 5,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -56,6 +57,42 @@
     ]
    },
    "title": "リファレンスの select-init の既定値の記述を直し、在庫追加の区分コードの既定値を先頭にする"
+  },
+  {
+   "ticket": "1576",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13366,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 50,
+     "add": 4004,
+     "del": 2420,
+     "fc": 193,
+     "cr": "10-14 10:05",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1005"
+    }
+   ],
+   "created": "10-14 10:05",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1JNKIgQqiKYxZjioiXSF0Dx7RxtxdFqa5/view",
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "一覧・明細画面の取得方式を都度取得へ統一する（BE 都度取得 API 追加 + React 共通基盤 + E029 撤去・一覧表示件数を CSV 出力件数上限として表示。AngularJS は対象外）"
   },
   {
    "ticket": "1325",
