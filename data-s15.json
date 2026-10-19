@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19 09:58",
+ "updated": "2026-10-19 11:52",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -2498,58 +2498,6 @@
     "pd": []
    },
    "title": "ユニット設定_基本設定画面を実装 (439)"
-  },
-  {
-   "ticket": "1029",
-   "dev": "dat",
-   "bien": false,
-   "sid": "436",
-   "base": [],
-   "r810": [
-    {
-     "num": 12037,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 1,
-     "add": 9,
-     "del": 2,
-     "fc": 2,
-     "cr": "08-17 14:09",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     },
-     "br": "0810"
-    },
-    {
-     "num": 12031,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 1,
-     "add": 46,
-     "del": 7,
-     "fc": 1,
-     "cr": "08-17 12:29",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     },
-     "br": "0810"
-    }
-   ],
-   "created": "08-17 12:29",
-   "drive": false,
-   "drvurl": "",
-   "cop": 0,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "庫内関連_ロケマスタ (436) のロケコード検索入力の幅を AngularJS に合わせる"
   },
   {
    "ticket": "1546",
@@ -6959,6 +6907,74 @@
     "pd": []
    },
    "title": "ロケサイズカテゴリ選択肢取得 API を追加"
+  },
+  {
+   "ticket": "1029",
+   "dev": "dat",
+   "bien": false,
+   "sid": "436",
+   "base": [],
+   "r810": [
+    {
+     "num": 12037,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 9,
+     "del": 2,
+     "fc": 2,
+     "cr": "08-17 14:09",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "0810"
+    },
+    {
+     "num": 12031,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 1,
+     "add": 46,
+     "del": 7,
+     "fc": 1,
+     "cr": "08-17 12:29",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "0810"
+    },
+    {
+     "num": 11781,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 5,
+     "add": 1713,
+     "del": 1,
+     "fc": 25,
+     "cr": "08-10 14:46",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "0810"
+    }
+   ],
+   "created": "08-10 14:46",
+   "drive": false,
+   "drvurl": "",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "庫内関連_ロケマスタ (screen_id=436) 一覧画面を React 実装"
   },
   {
    "ticket": "1525",
