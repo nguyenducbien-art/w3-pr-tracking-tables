@@ -1,13 +1,50 @@
 {
- "updated": "2026-10-19 12:48",
+ "updated": "2026-10-19 13:00",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2154",
   "2150"
  ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2154",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13485,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 56,
+     "del": 10,
+     "fc": 2,
+     "cr": "10-19 12:56",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1019"
+    }
+   ],
+   "created": "10-19 12:56",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "画面初期表示で units/available?is_integrated=true が中断されないよう、ユニット一覧の取得は unitIds の中身が変わったときだけやり直す"
+  },
   {
    "ticket": "2150",
    "dev": "bien",
