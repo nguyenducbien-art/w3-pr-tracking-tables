@@ -1,10 +1,49 @@
 {
- "updated": "2026-10-19 09:39",
+ "updated": "2026-10-19 12:48",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
- "common": [],
+ "common": [
+  "2150"
+ ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
- "main": [],
+ "main": [
+  {
+   "ticket": "2150",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13484,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 951,
+     "del": 84,
+     "fc": 58,
+     "cr": "10-19 12:45",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1019"
+    }
+   ],
+   "created": "10-19 12:45",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "入荷・出荷一覧のヘッダー・明細・個数を表示中ページではなく絞り込み後の全件で集計する"
+  }
+ ],
  "scaffold": []
 }
