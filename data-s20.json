@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19 15:14",
+ "updated": "2026-10-19 15:38",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -119,5 +119,36 @@
    "title": "入荷・出荷一覧のヘッダー・明細・個数を表示中ページではなく絞り込み後の全件で集計する"
   }
  ],
- "scaffold": []
+ "scaffold": [
+  {
+   "ticket": "—",
+   "dev": "bien",
+   "bien": true,
+   "pr": {
+    "num": 13502,
+    "cf": "ok",
+    "st": "draft",
+    "nc": 1,
+    "add": 18,
+    "del": 6,
+    "fc": 8,
+    "cr": "10-19 15:30",
+    "rv": {
+     "ap": [],
+     "ch": [],
+     "pd": []
+    },
+    "up": "base"
+   },
+   "created": "10-19 15:30",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "r20261019_scaffold の足場資産更新を base に取り込み"
+  }
+ ]
 }

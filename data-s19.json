@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19 15:08",
+ "updated": "2026-10-19 15:39",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -96,6 +96,46 @@
     "pd": []
    },
    "title": "一覧・明細画面の取得方式を都度取得へ統一する（BE 都度取得 API 追加 + React 共通基盤 + E029 撤去・一覧表示件数を CSV 出力件数上限として表示。AngularJS は対象外）"
+  },
+  {
+   "ticket": "2133",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13377,
+     "cf": "ok",
+     "st": "open",
+     "nc": 7,
+     "add": 603,
+     "del": 119,
+     "fc": 8,
+     "cr": "10-14 10:05",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": [
+       "kanayam"
+      ]
+     },
+     "br": "1019"
+    }
+   ],
+   "created": "10-14 10:05",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1ZUTy0Myii7SfjCV7iVMoEdqu0tZNN5Dk/view?usp=sharing",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": [
+     "kanayam"
+    ]
+   },
+   "title": "編集画面の列設定取得 API で、表示しない設定の子画面を返さず、子画面が無くても children を返す"
   },
   {
    "ticket": "1325",
@@ -323,62 +363,6 @@
    "title": "セット品作成_内容追加の登録時にセット品の構成が 0 件でも 500 エラーにせず業務エラーを返す"
   },
   {
-   "ticket": "2133",
-   "dev": "khoa",
-   "bien": false,
-   "sid": "",
-   "base": [],
-   "r810": [
-    {
-     "num": 13314,
-     "cf": "na",
-     "st": "closed",
-     "nc": 6,
-     "add": 605,
-     "del": 121,
-     "fc": 9,
-     "cr": "10-09 13:07",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     },
-     "br": "0810"
-    },
-    {
-     "num": 13377,
-     "cf": "ok",
-     "st": "open",
-     "nc": 7,
-     "add": 603,
-     "del": 119,
-     "fc": 8,
-     "cr": "10-14 10:05",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": [
-       "kanayam"
-      ]
-     },
-     "br": "1005"
-    }
-   ],
-   "created": "10-09 13:07",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1ZUTy0Myii7SfjCV7iVMoEdqu0tZNN5Dk/view?usp=sharing",
-   "cop": 3,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
-     "kanayam"
-    ]
-   },
-   "title": "編集画面の列設定取得 API で、表示しない設定の子画面を返さず、子画面が無くても children を返す"
-  },
-  {
    "ticket": "2039",
    "dev": "khoa",
    "bien": false,
@@ -421,7 +405,7 @@
     {
      "num": 13376,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 3,
      "add": 749,
      "del": 17,
@@ -1127,7 +1111,7 @@
     {
      "num": 13368,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 1,
      "add": 4,
      "del": 4,
