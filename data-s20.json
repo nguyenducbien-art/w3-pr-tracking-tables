@@ -1,8 +1,9 @@
 {
- "updated": "2026-10-19 16:13",
+ "updated": "2026-10-20 13:23",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2165",
   "2155",
   "2154",
   "2150"
@@ -10,6 +11,59 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2165",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 13530,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 29,
+     "del": 0,
+     "fc": 2,
+     "cr": "10-20 13:18",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": null
+    }
+   ],
+   "r810": [
+    {
+     "num": 13531,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 41,
+     "del": 0,
+     "fc": 2,
+     "cr": "10-20 13:18",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1019"
+    }
+   ],
+   "created": "10-20 13:18",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1R4UPa_rHd2QBaK5qL8Gh8sqq18A6kK_J/view?usp=sharing",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "統合ユニットで使える画面の許可リストに 入荷_検品登録・修正 (61)・ロール編集 (443)・CSV取込設定追加・編集 (452) を追加する"
+  },
   {
    "ticket": "2155",
    "dev": "khoa",
