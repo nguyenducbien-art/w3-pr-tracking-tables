@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20 12:49",
+ "updated": "2026-10-20 14:04",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -871,7 +871,7 @@
     {
      "num": 13406,
      "cf": "ok",
-     "st": "open",
+     "st": "changes",
      "nc": 45,
      "add": 150,
      "del": 142,
@@ -879,10 +879,11 @@
      "cr": "10-14 16:50",
      "rv": {
       "ap": [],
-      "ch": [],
-      "pd": [
-       "khoa",
+      "ch": [
        "kanayam"
+      ],
+      "pd": [
+       "khoa"
       ]
      },
      "br": "1005"
@@ -895,7 +896,9 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
+    "ch": [
+     "kanayam"
+    ],
     "pd": [
      "kanayam",
      "khoa"
@@ -1205,17 +1208,17 @@
    "pr": {
     "num": 13388,
     "cf": "ok",
-    "st": "changes",
-    "nc": 15,
-    "add": 1058,
-    "del": 241,
+    "st": "approved",
+    "nc": 16,
+    "add": 1055,
+    "del": 247,
     "fc": 20,
     "cr": "10-14 10:55",
     "rv": {
-     "ap": [],
-     "ch": [
+     "ap": [
       "kanayam"
      ],
+     "ch": [],
      "pd": []
     },
     "up": "base"
@@ -1224,10 +1227,10 @@
    "cop": 2,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
+    "ch": [],
     "pd": []
    },
    "title": "r20261005_scaffold の足場資産更新を base に取り込み"
