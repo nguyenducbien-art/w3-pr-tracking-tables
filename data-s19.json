@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20 14:43",
+ "updated": "2026-10-21 17:01",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -883,7 +883,8 @@
        "kanayam"
       ],
       "pd": [
-       "khoa"
+       "khoa",
+       "kanayam"
       ]
      },
      "br": "1005"
