@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22 15:26",
+ "updated": "2026-10-22 16:04",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -517,21 +517,6 @@
    "bien": true,
    "base": [
     {
-     "num": 12950,
-     "cf": "bad",
-     "st": "open",
-     "nc": 1,
-     "add": 149,
-     "del": 83,
-     "fc": 5,
-     "cr": "09-22 14:14",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     }
-    },
-    {
      "num": 12944,
      "cf": "ok",
      "st": "merged",
@@ -609,35 +594,19 @@
       "ch": [],
       "pd": []
      }
-    },
-    {
-     "num": 12951,
-     "cf": "bad",
-     "st": "open",
-     "nc": 1,
-     "add": 149,
-     "del": 82,
-     "fc": 5,
-     "cr": "09-22 14:14",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     },
-     "br": "1019"
     }
    ],
    "created": "07-31 14:56",
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/1jhDPw3bLFgbEuTbOaOSeWOjLIbjq8ozx/view?usp=sharing",
-   "cop": 3,
-   "unres": 1,
+   "cop": 2,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
     "pd": []
    },
-   "title": "403 時の画面遷移を画面入口に限定する（補助取得では離脱させない）"
+   "title": "TC品仕分登録フックのテストが resolveScreenForPage 未モックで失敗する問題を修正"
   },
   {
    "ticket": "1089",
