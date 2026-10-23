@@ -1,11 +1,11 @@
 {
- "updated": "2026-10-22 15:22",
+ "updated": "2026-10-23 11:02",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
   "2124",
-  "1576",
   "2133",
+  "1576",
   "2039",
   "2137",
   "2065",
@@ -60,6 +60,59 @@
    "title": "リファレンスの select-init の既定値の記述を直し、在庫追加の区分コードの既定値を先頭にする"
   },
   {
+   "ticket": "2133",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 13603,
+     "cf": "ok",
+     "st": "open",
+     "nc": 5,
+     "add": 583,
+     "del": 119,
+     "fc": 7,
+     "cr": "10-23 10:54",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": null
+    }
+   ],
+   "r810": [
+    {
+     "num": 13377,
+     "cf": "ok",
+     "st": "open",
+     "nc": 7,
+     "add": 603,
+     "del": 119,
+     "fc": 8,
+     "cr": "10-14 10:05",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1019"
+    }
+   ],
+   "created": "10-14 10:05",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "編集画面の列設定取得 API で、表示しない設定の子画面を返さず、子画面が無くても children を返す"
+  },
+  {
    "ticket": "1576",
    "dev": "bien",
    "bien": true,
@@ -94,42 +147,6 @@
     "pd": []
    },
    "title": "一覧・明細画面の取得方式を都度取得へ統一する（BE 都度取得 API 追加 + React 共通基盤 + E029 撤去・一覧表示件数を CSV 出力件数上限として表示。AngularJS は対象外）"
-  },
-  {
-   "ticket": "2133",
-   "dev": "bien",
-   "bien": true,
-   "sid": "",
-   "base": [],
-   "r810": [
-    {
-     "num": 13377,
-     "cf": "ok",
-     "st": "open",
-     "nc": 7,
-     "add": 603,
-     "del": 119,
-     "fc": 8,
-     "cr": "10-14 10:05",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     },
-     "br": "1019"
-    }
-   ],
-   "created": "10-14 10:05",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1ZUTy0Myii7SfjCV7iVMoEdqu0tZNN5Dk/view?usp=sharing",
-   "cop": 1,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "編集画面の列設定取得 API で、表示しない設定の子画面を返さず、子画面が無くても children を返す"
   },
   {
    "ticket": "1325",
@@ -1241,7 +1258,7 @@
    "pr": {
     "num": 13388,
     "cf": "ok",
-    "st": "approved",
+    "st": "merged",
     "nc": 16,
     "add": 1055,
     "del": 247,
