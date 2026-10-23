@@ -1,8 +1,9 @@
 {
- "updated": "2026-10-23 14:39",
+ "updated": "2026-10-23 14:49",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2146",
   "2165",
   "2155",
   "2154",
@@ -11,6 +12,42 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2146",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13612,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 992,
+     "del": 134,
+     "fc": 47,
+     "cr": "10-23 14:45",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1019"
+    }
+   ],
+   "created": "10-23 14:45",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1LLjIgSUwbNGEbqlDL0ngYf8kigwqma05/view",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "URL の表示期間が上限 90 日を超える・開始日と終了日が逆転するときは既定の期間で一覧を表示し E027 を出す"
+  },
   {
    "ticket": "2165",
    "dev": "khoa",
@@ -197,8 +234,8 @@
     "up": "base"
    },
    "created": "10-19 15:30",
-   "cop": 0,
-   "unres": 0,
+   "cop": 1,
+   "unres": 1,
    "rvw": {
     "ap": [],
     "ch": [],
