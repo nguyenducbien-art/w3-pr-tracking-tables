@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28 15:02",
+ "updated": "2026-10-28 15:34",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -19,6 +19,50 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2136",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13406,
+     "cf": "ok",
+     "st": "approved",
+     "nc": 83,
+     "add": 312,
+     "del": 305,
+     "fc": 29,
+     "cr": "10-14 16:50",
+     "rv": {
+      "ap": [
+       "kanayam"
+      ],
+      "ch": [],
+      "pd": [
+       "khoa"
+      ]
+     },
+     "br": "1019"
+    }
+   ],
+   "created": "10-14 16:50",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [
+     "kanayam"
+    ],
+    "ch": [],
+    "pd": [
+     "khoa"
+    ]
+   },
+   "title": "画面別リファレンスの古い記述・誤りを直す"
+  },
   {
    "ticket": "2124",
    "dev": "khoa",
@@ -947,69 +991,6 @@
     "pd": []
    },
    "title": "一覧グリッドの列フィルタ・並べ替え変更で画面全体を再取得しないよう修正"
-  },
-  {
-   "ticket": "2136",
-   "dev": "khoa",
-   "bien": false,
-   "sid": "",
-   "base": [],
-   "r810": [
-    {
-     "num": 13244,
-     "cf": "na",
-     "st": "closed",
-     "nc": 45,
-     "add": 150,
-     "del": 142,
-     "fc": 28,
-     "cr": "10-07 13:45",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": [
-       "kanayam"
-      ]
-     },
-     "br": "0810"
-    },
-    {
-     "num": 13406,
-     "cf": "ok",
-     "st": "approved",
-     "nc": 83,
-     "add": 312,
-     "del": 305,
-     "fc": 29,
-     "cr": "10-14 16:50",
-     "rv": {
-      "ap": [
-       "kanayam"
-      ],
-      "ch": [],
-      "pd": [
-       "khoa"
-      ]
-     },
-     "br": "1005"
-    }
-   ],
-   "created": "10-07 13:45",
-   "drive": false,
-   "drvurl": "",
-   "cop": 0,
-   "unres": 0,
-   "rvw": {
-    "ap": [
-     "kanayam"
-    ],
-    "ch": [],
-    "pd": [
-     "kanayam",
-     "khoa"
-    ]
-   },
-   "title": "画面別リファレンスの古い記述・誤りを直す"
   },
   {
    "ticket": "2044",
