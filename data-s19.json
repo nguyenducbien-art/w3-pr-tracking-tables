@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28 13:58",
+ "updated": "2026-10-28 15:02",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -976,20 +976,19 @@
     {
      "num": 13406,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 83,
      "add": 312,
      "del": 305,
      "fc": 29,
      "cr": "10-14 16:50",
      "rv": {
-      "ap": [],
-      "ch": [
+      "ap": [
        "kanayam"
       ],
+      "ch": [],
       "pd": [
-       "khoa",
-       "kanayam"
+       "khoa"
       ]
      },
      "br": "1005"
@@ -1001,10 +1000,10 @@
    "cop": 0,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
+    "ch": [],
     "pd": [
      "kanayam",
      "khoa"
