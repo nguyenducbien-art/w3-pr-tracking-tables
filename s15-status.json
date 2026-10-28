@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24 01:34",
+ "updated": "2026-10-28 13:33",
  "impl": {
   "1646": {
    "pic": "Biên",
@@ -767,9 +767,29 @@
   }
  },
  "test": {
-  "2179": {
-   "pic": null,
+  "2189": {
+   "pic": "Khoa",
    "st": "todo"
+  },
+  "2187": {
+   "pic": "Biên",
+   "st": "done"
+  },
+  "2185": {
+   "pic": "Biên",
+   "st": "done"
+  },
+  "2184": {
+   "pic": "Biên",
+   "st": "done"
+  },
+  "2181": {
+   "pic": "Khoa",
+   "st": "done"
+  },
+  "2179": {
+   "pic": "Khoa",
+   "st": "done"
   },
   "2177": {
    "pic": "Khoa",
@@ -788,12 +808,12 @@
    "st": "done"
   },
   "2114": {
-   "pic": "Biên",
-   "st": "todo"
+   "pic": "Khoa",
+   "st": "done"
   },
   "2112": {
-   "pic": "Biên",
-   "st": "todo"
+   "pic": "Khoa",
+   "st": "done"
   },
   "2110": {
    "pic": "Biên",
@@ -820,7 +840,7 @@
    "st": "done"
   },
   "2087": {
-   "pic": "Bồn",
+   "pic": "Biên",
    "st": "done"
   },
   "2085": {
@@ -1172,7 +1192,7 @@
    "st": "done"
   },
   "1820": {
-   "pic": "Hưng",
+   "pic": "Biên",
    "st": "done"
   },
   "1816": {
@@ -1304,7 +1324,7 @@
    "st": "done"
   },
   "1715": {
-   "pic": "Minh",
+   "pic": "Khoa",
    "st": "done"
   },
   "1714": {

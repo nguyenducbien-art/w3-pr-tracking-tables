@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19 11:37",
+ "updated": "2026-10-28 13:28",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -727,7 +727,7 @@
     {
      "num": 13298,
      "cf": "ok",
-     "st": "draft",
+     "st": "open",
      "nc": 15,
      "add": 1707,
      "del": 119,
@@ -736,7 +736,9 @@
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      },
      "br": null
     }
@@ -783,7 +785,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "統合管理ユニットで統合対象外画面を URL 直打ちで開けないようにする"
   },
@@ -1870,7 +1874,9 @@
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      },
      "br": null
     }
@@ -1917,7 +1923,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "ブラウザタブタイトルの AngularJS 未一致 3 件を解消"
   },
