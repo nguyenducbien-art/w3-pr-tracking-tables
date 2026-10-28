@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28 16:52",
+ "updated": "2026-10-28 17:29",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1865,7 +1865,7 @@
     {
      "num": 13296,
      "cf": "ok",
-     "st": "open",
+     "st": "changes",
      "nc": 3,
      "add": 310,
      "del": 14,
@@ -1873,10 +1873,10 @@
      "cr": "10-08 23:32",
      "rv": {
       "ap": [],
-      "ch": [],
-      "pd": [
+      "ch": [
        "kanayam"
-      ]
+      ],
+      "pd": []
      },
      "br": null
     }
@@ -1922,10 +1922,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
-    "pd": [
+    "ch": [
      "kanayam"
-    ]
+    ],
+    "pd": []
    },
    "title": "ブラウザタブタイトルの AngularJS 未一致 3 件を解消"
   },

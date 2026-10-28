@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28 16:49",
+ "updated": "2026-10-28 17:27",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -468,7 +468,7 @@
     {
      "num": 13290,
      "cf": "ok",
-     "st": "open",
+     "st": "changes",
      "nc": 4,
      "add": 751,
      "del": 19,
@@ -476,10 +476,10 @@
      "cr": "10-08 14:53",
      "rv": {
       "ap": [],
-      "ch": [],
-      "pd": [
+      "ch": [
        "kanayam"
-      ]
+      ],
+      "pd": []
      },
      "br": null
     }
@@ -525,10 +525,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
-    "pd": [
+    "ch": [
      "kanayam"
-    ]
+    ],
+    "pd": []
    },
    "title": "バリデーション文言の英語・ベトナム語の未翻訳を解消する"
   },
@@ -792,7 +792,7 @@
     {
      "num": 13251,
      "cf": "ok",
-     "st": "open",
+     "st": "changes",
      "nc": 5,
      "add": 279,
      "del": 80,
@@ -800,10 +800,10 @@
      "cr": "10-07 15:37",
      "rv": {
       "ap": [],
-      "ch": [],
-      "pd": [
+      "ch": [
        "kanayam"
-      ]
+      ],
+      "pd": []
      },
      "br": null
     }
@@ -849,10 +849,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
-    "pd": [
+    "ch": [
      "kanayam"
-    ]
+    ],
+    "pd": []
    },
    "title": "画像プロキシを共通の proxyLaravelImage へ寄せ X-Content-Type-Options: nosniff を付与する"
   },
@@ -1191,7 +1191,7 @@
     {
      "num": 13202,
      "cf": "ok",
-     "st": "open",
+     "st": "changes",
      "nc": 4,
      "add": 656,
      "del": 69,
@@ -1199,10 +1199,10 @@
      "cr": "10-05 15:37",
      "rv": {
       "ap": [],
-      "ch": [],
-      "pd": [
+      "ch": [
        "kanayam"
-      ]
+      ],
+      "pd": []
      },
      "br": null
     }
@@ -1232,10 +1232,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
-    "pd": [
+    "ch": [
      "kanayam"
-    ]
+    ],
+    "pd": []
    },
    "title": "ユニット選択画面でヘッダーのナビ項目とユニット切替を非表示にする"
   }
