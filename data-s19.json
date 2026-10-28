@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28 16:12",
+ "updated": "2026-10-28 16:49",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -541,18 +541,18 @@
     {
      "num": 13285,
      "cf": "ok",
-     "st": "open",
+     "st": "approved",
      "nc": 4,
      "add": 333,
      "del": 6,
      "fc": 2,
      "cr": "10-08 14:02",
      "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": [
+      "ap": [
        "kanayam"
-      ]
+      ],
+      "ch": [],
+      "pd": []
      },
      "br": null
     }
@@ -583,11 +583,11 @@
    "cop": 4,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
+    "ap": [
      "kanayam"
-    ]
+    ],
+    "ch": [],
+    "pd": []
    },
    "title": "統合ユニットの検品登録・検品キャンセルで、統合されていないユニットの入荷データを拒否する"
   },
@@ -600,18 +600,18 @@
     {
      "num": 13279,
      "cf": "ok",
-     "st": "open",
+     "st": "approved",
      "nc": 6,
      "add": 2056,
      "del": 111,
      "fc": 45,
      "cr": "10-08 11:26",
      "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": [
+      "ap": [
        "kanayam"
-      ]
+      ],
+      "ch": [],
+      "pd": []
      },
      "br": null
     }
@@ -656,11 +656,11 @@
    "cop": 4,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
+    "ap": [
      "kanayam"
-    ]
+    ],
+    "ch": [],
+    "pd": []
    },
    "title": "選択モーダルで一覧データの取得に失敗したらエラーダイアログで通知する"
   },
@@ -865,18 +865,18 @@
     {
      "num": 13249,
      "cf": "ok",
-     "st": "open",
+     "st": "approved",
      "nc": 1,
      "add": 822,
      "del": 336,
      "fc": 24,
      "cr": "10-07 15:37",
      "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": [
+      "ap": [
        "kanayam"
-      ]
+      ],
+      "ch": [],
+      "pd": []
      },
      "br": null
     }
@@ -921,11 +921,11 @@
    "cop": 0,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
+    "ap": [
      "kanayam"
-    ]
+    ],
+    "ch": [],
+    "pd": []
    },
    "title": "選択モーダルの表を I18nDataTable に統一し翻訳済みラベルと 1 ページ 50 件を適用する"
   },

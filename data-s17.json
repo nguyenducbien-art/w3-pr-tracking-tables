@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28 13:28",
+ "updated": "2026-10-28 16:52",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -727,18 +727,18 @@
     {
      "num": 13298,
      "cf": "ok",
-     "st": "open",
+     "st": "approved",
      "nc": 15,
      "add": 1707,
      "del": 119,
      "fc": 35,
      "cr": "10-09 00:00",
      "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": [
+      "ap": [
        "kanayam"
-      ]
+      ],
+      "ch": [],
+      "pd": []
      },
      "br": null
     }
@@ -783,11 +783,11 @@
    "cop": 4,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
+    "ap": [
      "kanayam"
-    ]
+    ],
+    "ch": [],
+    "pd": []
    },
    "title": "統合管理ユニットで統合対象外画面を URL 直打ちで開けないようにする"
   },
