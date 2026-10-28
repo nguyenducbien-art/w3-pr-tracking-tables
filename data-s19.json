@@ -1,11 +1,12 @@
 {
- "updated": "2026-10-28 13:26",
+ "updated": "2026-10-28 13:58",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
   "2124",
   "2133",
   "1576",
+  "2123",
   "2039",
   "2137",
   "2065",
@@ -13,7 +14,6 @@
   "2057",
   "2105",
   "2128",
-  "2123",
   "2117"
  ],
  "invalidBase": [],
@@ -42,7 +42,7 @@
        "bien"
       ]
      },
-     "br": "1005"
+     "br": "1019"
     }
    ],
    "created": "10-14 15:54",
@@ -147,6 +147,42 @@
     "pd": []
    },
    "title": "一覧・明細画面の取得方式を都度取得へ統一する（BE 都度取得 API 追加 + React 共通基盤 + E029 撤去・一覧表示件数を CSV 出力件数上限として表示。AngularJS は対象外）"
+  },
+  {
+   "ticket": "2123",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13370,
+     "cf": "ok",
+     "st": "open",
+     "nc": 7,
+     "add": 964,
+     "del": 49,
+     "fc": 17,
+     "cr": "10-14 10:05",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1019"
+    }
+   ],
+   "created": "10-14 10:05",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1loYKHAkpfq5DWIZIQNWk7SpdIsvyY6ER/view?usp=sharing",
+   "cop": 3,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "入荷_検品登録・修正のロケーション・パレット選択モーダルを統合ユニット管理では /mu で検索する"
   },
   {
    "ticket": "1325",
@@ -975,62 +1011,6 @@
     ]
    },
    "title": "画面別リファレンスの古い記述・誤りを直す"
-  },
-  {
-   "ticket": "2123",
-   "dev": "khoa",
-   "bien": false,
-   "sid": "",
-   "base": [],
-   "r810": [
-    {
-     "num": 13230,
-     "cf": "na",
-     "st": "closed",
-     "nc": 5,
-     "add": 780,
-     "del": 41,
-     "fc": 13,
-     "cr": "10-06 15:00",
-     "rv": {
-      "ap": [],
-      "ch": [
-       "kanayam"
-      ],
-      "pd": []
-     },
-     "br": "0810"
-    },
-    {
-     "num": 13370,
-     "cf": "ok",
-     "st": "open",
-     "nc": 7,
-     "add": 964,
-     "del": 49,
-     "fc": 17,
-     "cr": "10-14 10:05",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     },
-     "br": "1005"
-    }
-   ],
-   "created": "10-06 15:00",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1loYKHAkpfq5DWIZIQNWk7SpdIsvyY6ER/view?usp=sharing",
-   "cop": 8,
-   "unres": 0,
-   "rvw": {
-    "ap": [],
-    "ch": [
-     "kanayam"
-    ],
-    "pd": []
-   },
-   "title": "入荷_検品登録・修正のロケーション・パレット選択モーダルを統合ユニット管理では /mu で検索する"
   },
   {
    "ticket": "2044",
