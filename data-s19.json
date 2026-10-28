@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28 15:34",
+ "updated": "2026-10-28 16:12",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -29,7 +29,7 @@
     {
      "num": 13406,
      "cf": "ok",
-     "st": "approved",
+     "st": "merged",
      "nc": 83,
      "add": 312,
      "del": 305,
@@ -83,7 +83,8 @@
       "ap": [],
       "ch": [],
       "pd": [
-       "bien"
+       "bien",
+       "kanayam"
       ]
      },
      "br": "1019"
@@ -98,7 +99,8 @@
     "ap": [],
     "ch": [],
     "pd": [
-     "bien"
+     "bien",
+     "kanayam"
     ]
    },
    "title": "リファレンスの select-init の既定値の記述を直し、在庫追加の区分コードの既定値を先頭にする"
@@ -211,7 +213,9 @@
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      },
      "br": "1019"
     }
@@ -224,7 +228,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "入荷_検品登録・修正のロケーション・パレット選択モーダルを統合ユニット管理では /mu で検索する"
   },
