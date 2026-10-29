@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30 04:14",
+ "updated": "2026-10-30 04:52",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -481,9 +481,7 @@
       "ch": [
        "kanayam"
       ],
-      "pd": [
-       "kanayam"
-      ]
+      "pd": []
      },
      "br": null
     }
@@ -532,9 +530,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "バリデーション文言の英語・ベトナム語の未翻訳を解消する"
   },
@@ -809,9 +805,7 @@
       "ch": [
        "kanayam"
       ],
-      "pd": [
-       "kanayam"
-      ]
+      "pd": []
      },
      "br": null
     }
@@ -860,9 +854,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "画像プロキシを共通の proxyLaravelImage へ寄せ X-Content-Type-Options: nosniff を付与する"
   },
@@ -1212,9 +1204,7 @@
       "ch": [
        "kanayam"
       ],
-      "pd": [
-       "kanayam"
-      ]
+      "pd": []
      },
      "br": null
     }
@@ -1247,9 +1237,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "ユニット選択画面でヘッダーのナビ項目とユニット切替を非表示にする"
   }
