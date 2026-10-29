@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28 17:27",
+ "updated": "2026-10-29 15:53",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -73,7 +73,7 @@
     {
      "num": 13400,
      "cf": "ok",
-     "st": "open",
+     "st": "changes",
      "nc": 5,
      "add": 102,
      "del": 52,
@@ -81,10 +81,11 @@
      "cr": "10-14 15:54",
      "rv": {
       "ap": [],
-      "ch": [],
-      "pd": [
-       "bien",
+      "ch": [
        "kanayam"
+      ],
+      "pd": [
+       "bien"
       ]
      },
      "br": "1019"
@@ -97,10 +98,11 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
-    "pd": [
-     "bien",
+    "ch": [
      "kanayam"
+    ],
+    "pd": [
+     "bien"
     ]
    },
    "title": "リファレンスの select-init の既定値の記述を直し、在庫追加の区分コードの既定値を先頭にする"
@@ -204,7 +206,7 @@
     {
      "num": 13370,
      "cf": "ok",
-     "st": "open",
+     "st": "changes",
      "nc": 7,
      "add": 964,
      "del": 49,
@@ -212,10 +214,10 @@
      "cr": "10-14 10:05",
      "rv": {
       "ap": [],
-      "ch": [],
-      "pd": [
+      "ch": [
        "kanayam"
-      ]
+      ],
+      "pd": []
      },
      "br": "1019"
     }
@@ -227,10 +229,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
-    "pd": [
+    "ch": [
      "kanayam"
-    ]
+    ],
+    "pd": []
    },
    "title": "入荷_検品登録・修正のロケーション・パレット選択モーダルを統合ユニット管理では /mu で検索する"
   },
