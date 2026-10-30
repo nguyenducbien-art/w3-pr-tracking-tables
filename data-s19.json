@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30 17:07",
+ "updated": "2026-10-30 17:45",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -129,7 +129,9 @@
        "khoa"
       ],
       "ch": [],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      },
      "br": null
     }
@@ -162,7 +164,9 @@
      "khoa"
     ],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "編集画面の列設定取得 API で、表示しない設定の子画面を返さず、子画面が無くても children を返す"
   },
@@ -977,7 +981,9 @@
        "khoa"
       ],
       "ch": [],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      },
      "br": null
     }
@@ -1026,7 +1032,9 @@
      "khoa"
     ],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "一覧グリッドの列フィルタ・並べ替え変更で画面全体を再取得しないよう修正"
   },
