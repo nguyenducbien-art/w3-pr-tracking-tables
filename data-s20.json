@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30 15:11",
+ "updated": "2026-10-30 17:15",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -32,7 +32,9 @@
        "khoa"
       ],
       "ch": [],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      },
      "br": null
     }
@@ -65,7 +67,9 @@
      "khoa"
     ],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "URL の表示期間が上限 90 日を超える・開始日と終了日が逆転するときは既定の期間で一覧を表示し E027 を出す"
   },
@@ -89,7 +93,9 @@
        "bien"
       ],
       "ch": [],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      },
      "br": null
     }
@@ -124,7 +130,9 @@
      "bien"
     ],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "統合ユニットで使える画面の許可リストに 入荷_検品登録・修正 (61)・ロール編集 (443)・CSV取込設定追加・編集 (452) を追加する"
   },
