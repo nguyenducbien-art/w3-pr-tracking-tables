@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30 14:24",
+ "updated": "2026-10-30 17:36",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -268,7 +268,9 @@
        "khoa"
       ],
       "ch": [],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      },
      "br": null
     }
@@ -333,7 +335,9 @@
      "khoa"
     ],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "取込出力履歴のファイルダウンロードを認証付き経路に統一する"
   },
@@ -3185,7 +3189,9 @@
        "khoa"
       ],
       "ch": [],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      },
      "br": null
     }
@@ -3282,7 +3288,9 @@
      "khoa"
     ],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "セット品ルールマスタから追加・編集画面への遷移 URL 修正 (screen_id=431→432)"
   },
