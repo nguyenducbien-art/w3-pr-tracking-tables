@@ -176,9 +176,14 @@ def status_of(d):
     if d.get("state") == "CLOSED": return "closed"
     if d.get("isDraft"): return "draft"
     rd = d.get("reviewDecision")
-    if rd == "APPROVED": return "approved"
     if rd == "CHANGES_REQUESTED": return "changes"
+    # "approved" only counts Kanaya's approval — approvals by anyone else stay "open"
+    if kanaya_approved(d): return "approved"
     return "open"
+
+def kanaya_approved(d):
+    return any((rv.get("author") or {}).get("login") == "kanayam" and rv.get("state") == "APPROVED"
+               for rv in ((d.get("latestOpinionatedReviews") or {}).get("nodes") or []))
 
 def pr_detail(n):
     d = json.loads(run(["gh","api","graphql","-F","n=%d"%n,"-f","query="+_Q]))["data"]["repository"]["pullRequest"]
