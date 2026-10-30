@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30 14:17",
+ "updated": "2026-10-30 17:07",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -85,7 +85,8 @@
        "kanayam"
       ],
       "pd": [
-       "bien"
+       "bien",
+       "kanayam"
       ]
      },
      "br": "1019"
@@ -102,7 +103,8 @@
      "kanayam"
     ],
     "pd": [
-     "bien"
+     "bien",
+     "kanayam"
     ]
    },
    "title": "リファレンスの select-init の既定値の記述を直し、在庫追加の区分コードの既定値を先頭にする"
@@ -221,7 +223,9 @@
       "ch": [
        "kanayam"
       ],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      },
      "br": "1019"
     }
@@ -236,7 +240,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "入荷_検品登録・修正のロケーション・パレット選択モーダルを統合ユニット管理では /mu で検索する"
   },
@@ -487,7 +493,9 @@
       "ch": [
        "kanayam"
       ],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      },
      "br": null
     }
@@ -538,7 +546,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "バリデーション文言の英語・ベトナム語の未翻訳を解消する"
   },
@@ -815,7 +825,9 @@
       "ch": [
        "kanayam"
       ],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      },
      "br": null
     }
@@ -866,7 +878,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "画像プロキシを共通の proxyLaravelImage へ寄せ X-Content-Type-Options: nosniff を付与する"
   },
@@ -1222,7 +1236,9 @@
       "ch": [
        "kanayam"
       ],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      },
      "br": null
     }
@@ -1257,7 +1273,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "ユニット選択画面でヘッダーのナビ項目とユニット切替を非表示にする"
   }
