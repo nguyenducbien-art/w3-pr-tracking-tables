@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30 17:09",
+ "updated": "2026-10-30 19:01",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1886,9 +1886,7 @@
       "ch": [
        "kanayam"
       ],
-      "pd": [
-       "kanayam"
-      ]
+      "pd": []
      },
      "br": null
     }
@@ -1939,9 +1937,7 @@
     "ch": [
      "kanayam"
     ],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "ブラウザタブタイトルの AngularJS 未一致 3 件を解消"
   },
