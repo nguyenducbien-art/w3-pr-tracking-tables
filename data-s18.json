@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30 10:50",
+ "updated": "2026-10-30 12:37",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -324,6 +324,7 @@
      "cr": "09-22 15:18",
      "rv": {
       "ap": [
+       "khoa",
        "bien"
       ],
       "ch": [],
@@ -373,6 +374,7 @@
    "unres": 0,
    "rvw": {
     "ap": [
+     "khoa",
      "bien"
     ],
     "ch": [],

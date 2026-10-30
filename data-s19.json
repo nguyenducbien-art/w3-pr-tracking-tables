@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30 04:52",
+ "updated": "2026-10-30 12:37",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -116,14 +116,16 @@
     {
      "num": 13603,
      "cf": "ok",
-     "st": "open",
+     "st": "approved",
      "nc": 5,
      "add": 583,
      "del": 119,
      "fc": 7,
      "cr": "10-23 10:54",
      "rv": {
-      "ap": [],
+      "ap": [
+       "khoa"
+      ],
       "ch": [],
       "pd": []
      },
@@ -154,7 +156,9 @@
    "cop": 0,
    "unres": 0,
    "rvw": {
-    "ap": [],
+    "ap": [
+     "khoa"
+    ],
     "ch": [],
     "pd": []
    },
@@ -477,7 +481,9 @@
      "fc": 7,
      "cr": "10-08 14:53",
      "rv": {
-      "ap": [],
+      "ap": [
+       "bien"
+      ],
       "ch": [
        "kanayam"
       ],
@@ -526,7 +532,9 @@
    "cop": 1,
    "unres": 0,
    "rvw": {
-    "ap": [],
+    "ap": [
+     "bien"
+    ],
     "ch": [
      "kanayam"
     ],
@@ -801,7 +809,9 @@
      "fc": 3,
      "cr": "10-07 15:37",
      "rv": {
-      "ap": [],
+      "ap": [
+       "khoa"
+      ],
       "ch": [
        "kanayam"
       ],
@@ -850,7 +860,9 @@
    "cop": 0,
    "unres": 0,
    "rvw": {
-    "ap": [],
+    "ap": [
+     "khoa"
+    ],
     "ch": [
      "kanayam"
     ],
@@ -940,14 +952,16 @@
     {
      "num": 13257,
      "cf": "ok",
-     "st": "open",
+     "st": "approved",
      "nc": 5,
      "add": 747,
      "del": 48,
      "fc": 4,
      "cr": "10-07 17:36",
      "rv": {
-      "ap": [],
+      "ap": [
+       "khoa"
+      ],
       "ch": [],
       "pd": []
      },
@@ -994,7 +1008,9 @@
    "cop": 2,
    "unres": 0,
    "rvw": {
-    "ap": [],
+    "ap": [
+     "khoa"
+    ],
     "ch": [],
     "pd": []
    },
@@ -1200,7 +1216,9 @@
      "fc": 12,
      "cr": "10-05 15:37",
      "rv": {
-      "ap": [],
+      "ap": [
+       "khoa"
+      ],
       "ch": [
        "kanayam"
       ],
@@ -1233,7 +1251,9 @@
    "cop": 1,
    "unres": 0,
    "rvw": {
-    "ap": [],
+    "ap": [
+     "khoa"
+    ],
     "ch": [
      "kanayam"
     ],
