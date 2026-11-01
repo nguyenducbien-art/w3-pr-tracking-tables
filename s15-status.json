@@ -1,6 +1,134 @@
 {
- "updated": "2026-10-30 10:34",
+ "updated": "2026-11-01 23:00",
  "impl": {
+  "2286": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2283": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2280": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2277": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2274": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2271": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2268": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2265": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2262": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2259": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2256": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2253": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2250": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2247": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2244": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2241": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2238": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2235": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2232": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2229": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2226": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2223": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2220": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2217": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2214": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2211": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2208": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2205": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2202": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2199": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2196": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2193": {
+   "pic": null,
+   "st": "todo"
+  },
   "1646": {
    "pic": "Biên",
    "st": "done"
@@ -767,6 +895,134 @@
   }
  },
  "test": {
+  "2288": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2285": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2282": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2279": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2276": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2273": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2270": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2267": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2264": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2261": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2258": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2255": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2252": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2249": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2246": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2243": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2240": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2237": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2234": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2231": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2228": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2225": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2222": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2219": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2216": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2213": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2210": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2207": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2204": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2201": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2198": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2195": {
+   "pic": null,
+   "st": "todo"
+  },
   "2189": {
    "pic": "Khoa",
    "st": "done"
