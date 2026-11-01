@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30 18:22",
+ "updated": "2026-11-01 14:43",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -478,7 +478,7 @@
     {
      "num": 13290,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 4,
      "add": 751,
      "del": 19,
@@ -486,14 +486,11 @@
      "cr": "10-08 14:53",
      "rv": {
       "ap": [
+       "kanayam",
        "bien"
       ],
-      "ch": [
-       "kanayam"
-      ],
-      "pd": [
-       "kanayam"
-      ]
+      "ch": [],
+      "pd": []
      },
      "br": null
     }
@@ -539,14 +536,11 @@
    "unres": 0,
    "rvw": {
     "ap": [
+     "kanayam",
      "bien"
     ],
-    "ch": [
-     "kanayam"
-    ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "バリデーション文言の英語・ベトナム語の未翻訳を解消する"
   },
@@ -810,7 +804,7 @@
     {
      "num": 13251,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 5,
      "add": 279,
      "del": 80,
@@ -818,14 +812,11 @@
      "cr": "10-07 15:37",
      "rv": {
       "ap": [
+       "kanayam",
        "khoa"
       ],
-      "ch": [
-       "kanayam"
-      ],
-      "pd": [
-       "kanayam"
-      ]
+      "ch": [],
+      "pd": []
      },
      "br": null
     }
@@ -871,14 +862,11 @@
    "unres": 0,
    "rvw": {
     "ap": [
+     "kanayam",
      "khoa"
     ],
-    "ch": [
-     "kanayam"
-    ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "画像プロキシを共通の proxyLaravelImage へ寄せ X-Content-Type-Options: nosniff を付与する"
   },
@@ -964,7 +952,7 @@
     {
      "num": 13257,
      "cf": "ok",
-     "st": "open",
+     "st": "approved",
      "nc": 5,
      "add": 747,
      "del": 48,
@@ -972,12 +960,11 @@
      "cr": "10-07 17:36",
      "rv": {
       "ap": [
+       "kanayam",
        "khoa"
       ],
       "ch": [],
-      "pd": [
-       "kanayam"
-      ]
+      "pd": []
      },
      "br": null
     }
@@ -1023,12 +1010,11 @@
    "unres": 0,
    "rvw": {
     "ap": [
+     "kanayam",
      "khoa"
     ],
     "ch": [],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "一覧グリッドの列フィルタ・並べ替え変更で画面全体を再取得しないよう修正"
   },
@@ -1225,7 +1211,7 @@
     {
      "num": 13202,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 4,
      "add": 656,
      "del": 69,
@@ -1233,14 +1219,11 @@
      "cr": "10-05 15:37",
      "rv": {
       "ap": [
+       "kanayam",
        "khoa"
       ],
-      "ch": [
-       "kanayam"
-      ],
-      "pd": [
-       "kanayam"
-      ]
+      "ch": [],
+      "pd": []
      },
      "br": null
     }
@@ -1270,14 +1253,11 @@
    "unres": 0,
    "rvw": {
     "ap": [
+     "kanayam",
      "khoa"
     ],
-    "ch": [
-     "kanayam"
-    ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "ユニット選択画面でヘッダーのナビ項目とユニット切替を非表示にする"
   }

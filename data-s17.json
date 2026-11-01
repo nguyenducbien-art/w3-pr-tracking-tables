@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30 21:14",
+ "updated": "2026-11-01 14:46",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -104,7 +104,7 @@
     {
      "num": 13147,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 19,
      "add": 2726,
      "del": 109,
@@ -112,14 +112,11 @@
      "cr": "10-01 15:31",
      "rv": {
       "ap": [
+       "kanayam",
        "khoa"
       ],
-      "ch": [
-       "kanayam"
-      ],
-      "pd": [
-       "kanayam"
-      ]
+      "ch": [],
+      "pd": []
      },
      "br": null
     }
@@ -181,14 +178,11 @@
    "unres": 0,
    "rvw": {
     "ap": [
+     "kanayam",
      "khoa"
     ],
-    "ch": [
-     "kanayam"
-    ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "ユニット切替時にマスタ選択モーダルの検索結果と解決済み unit_screen_id を破棄する"
   },
@@ -1873,7 +1867,7 @@
     {
      "num": 13296,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 3,
      "add": 310,
      "del": 14,
@@ -1881,14 +1875,11 @@
      "cr": "10-08 23:32",
      "rv": {
       "ap": [
+       "kanayam",
        "khoa"
       ],
-      "ch": [
-       "kanayam"
-      ],
-      "pd": [
-       "kanayam"
-      ]
+      "ch": [],
+      "pd": []
      },
      "br": null
     }
@@ -1934,14 +1925,11 @@
    "unres": 0,
    "rvw": {
     "ap": [
+     "kanayam",
      "khoa"
     ],
-    "ch": [
-     "kanayam"
-    ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "ブラウザタブタイトルの AngularJS 未一致 3 件を解消"
   },

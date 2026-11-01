@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30 17:15",
+ "updated": "2026-11-01 14:42",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -82,7 +82,7 @@
     {
      "num": 13530,
      "cf": "ok",
-     "st": "open",
+     "st": "approved",
      "nc": 1,
      "add": 29,
      "del": 0,
@@ -90,12 +90,11 @@
      "cr": "10-20 13:18",
      "rv": {
       "ap": [
+       "kanayam",
        "bien"
       ],
       "ch": [],
-      "pd": [
-       "kanayam"
-      ]
+      "pd": []
      },
      "br": null
     }
@@ -127,12 +126,11 @@
    "unres": 0,
    "rvw": {
     "ap": [
+     "kanayam",
      "bien"
     ],
     "ch": [],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "統合ユニットで使える画面の許可リストに 入荷_検品登録・修正 (61)・ロール編集 (443)・CSV取込設定追加・編集 (452) を追加する"
   },
