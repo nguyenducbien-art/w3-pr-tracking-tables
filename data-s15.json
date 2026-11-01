@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30 19:28",
+ "updated": "2026-11-01 15:13",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -257,7 +257,7 @@
     {
      "num": 13197,
      "cf": "ok",
-     "st": "open",
+     "st": "approved",
      "nc": 9,
      "add": 639,
      "del": 14,
@@ -265,12 +265,11 @@
      "cr": "10-05 13:01",
      "rv": {
       "ap": [
+       "kanayam",
        "khoa"
       ],
       "ch": [],
-      "pd": [
-       "kanayam"
-      ]
+      "pd": []
      },
      "br": null
     }
@@ -332,12 +331,11 @@
    "unres": 0,
    "rvw": {
     "ap": [
+     "kanayam",
      "khoa"
     ],
     "ch": [],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "取込出力履歴のファイルダウンロードを認証付き経路に統一する"
   },
