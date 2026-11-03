@@ -13,6 +13,7 @@ SPRINTS = [
     {"label": "Sprint 18", "href": "s18.html", "data": "data-s18.json", "rlabel": "→r0810/0921"},
     {"label": "Sprint 19", "href": "s19.html", "data": "data-s19.json", "rlabel": "→r0810/0921/1005"},
     {"label": "Sprint 20", "href": "s20.html", "data": "data-s20.json", "rlabel": "→r0810/1005/1019"},
+    {"label": "Sprint 21", "href": "s21.html", "data": "data-s21.json", "rlabel": "→r0810/1019/1102"},
 ]
 
 def _ver():

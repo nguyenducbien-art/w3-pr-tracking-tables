@@ -44,11 +44,11 @@ for _a, _b in [
     ("(màn migration + fix lẻ).')", "(màn migration + fix lẻ).',true)"),
     # subtitle: nói rõ luật chia theo ngày + trỏ ngược về page Sprint 15+16
     ("tạo từ <b>2026-10-19</b> vào <b>develop/base</b> / <b>r20260810</b> — chia 2 bảng",
-     "tạo từ <b>2026-10-19</b> (ngày bắt đầu Sprint 20) vào <b>develop/base</b> / <b>r20261019</b> (nhánh của Sprint 20) / <b>r20260810</b> / <b>r20261005</b>"
-     " — chia theo NGÀY TẠO PR, PR trước 19/10 xem ở page Sprint 19. PR mới của ticket đã có ở sprint trước tự về page của sprint đó. Bên phải #PR là tag nhánh r đích."
+     "tạo từ <b>2026-10-19</b> đến hết <b>2026-11-01</b> (ngày cuối Sprint 20) vào <b>develop/base</b> / <b>r20261019</b> (nhánh của Sprint 20) / <b>r20260810</b> / <b>r20261005</b>"
+     " — chia theo NGÀY TẠO PR, PR trước 19/10 xem ở page Sprint 19, PR từ 02/11 xem ở page Sprint 21. PR mới của ticket đã có ở sprint trước tự về page của sprint đó. Bên phải #PR là tag nhánh r đích."
      " Chia 2 bảng"),
     ('<a href="index.html" style="font-family:inherit;font-size:12px">← Sprint 13</a>',
-     '<a href="s19.html" style="font-family:inherit;font-size:12px">← Sprint 19</a>'),
+     '<a href="s19.html" style="font-family:inherit;font-size:12px">← Sprint 19</a> · <a href="s21.html" style="font-family:inherit;font-size:12px">Sprint 21 →</a>'),
 ]:
     assert _a in _pr, "anchor không thấy: %s" % _a[:50]
     _pr = _pr.replace(_a, _b)
@@ -65,7 +65,7 @@ def build(inline):
 # artifact = fragment + inline JSON
 open("table-a-s20.html", "w").write(build(True))
 
-# hosted = full document, FETCH data-s20.json từ nhánh data (Sprint 20 = sprint active, cron 5p)
+# hosted = full document, FETCH data-s20.json từ nhánh data (Sprint 20 — cron 30p từ 02/11)
 doc = ('<!DOCTYPE html>\n<html lang="vi">\n<head>\n<meta charset="utf-8">\n'
        '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
        '<meta name="robots" content="noindex, nofollow">\n<title>' + TITLE + '</title>\n' + FAVICON + '\n' + css + '\n</head>\n<body>\n'
