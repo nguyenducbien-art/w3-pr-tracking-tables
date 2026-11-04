@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04 10:21",
+ "updated": "2026-11-04 11:30",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -316,17 +316,17 @@
    "pr": {
     "num": 13502,
     "cf": "ok",
-    "st": "changes",
+    "st": "merged",
     "nc": 12,
     "add": 18509,
     "del": 143,
     "fc": 58,
     "cr": "10-19 15:30",
     "rv": {
-     "ap": [],
-     "ch": [
+     "ap": [
       "kanayam"
      ],
+     "ch": [],
      "pd": []
     },
     "up": "base"
@@ -335,10 +335,10 @@
    "cop": 1,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [
+    "ap": [
      "kanayam"
     ],
+    "ch": [],
     "pd": []
    },
    "title": "r20261019_scaffold の足場資産更新を base に取り込み"
