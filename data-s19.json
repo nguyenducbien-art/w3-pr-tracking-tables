@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03 21:33",
+ "updated": "2026-11-04 17:29",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -129,7 +129,9 @@
       "ch": [
        "kanayam"
       ],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      },
      "br": null
     }
@@ -180,7 +182,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "編集画面の列設定取得 API で、表示しない設定の子画面を返さず、子画面が無くても children を返す"
   },

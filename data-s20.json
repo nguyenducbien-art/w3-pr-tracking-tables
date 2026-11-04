@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04 11:30",
+ "updated": "2026-11-04 17:28",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -34,7 +34,9 @@
       "ch": [
        "kanayam"
       ],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      },
      "br": null
     }
@@ -85,7 +87,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "URL の表示期間が上限 90 日を超える・開始日と終了日が逆転するときは既定の期間で一覧を表示し E027 を出す"
   },
