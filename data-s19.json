@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04 17:29",
+ "updated": "2026-11-04 18:31",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -116,7 +116,7 @@
     {
      "num": 13603,
      "cf": "ok",
-     "st": "changes",
+     "st": "approved",
      "nc": 6,
      "add": 755,
      "del": 125,
@@ -124,14 +124,11 @@
      "cr": "10-23 10:54",
      "rv": {
       "ap": [
+       "kanayam",
        "khoa"
       ],
-      "ch": [
-       "kanayam"
-      ],
-      "pd": [
-       "kanayam"
-      ]
+      "ch": [],
+      "pd": []
      },
      "br": null
     }
@@ -177,14 +174,11 @@
    "unres": 0,
    "rvw": {
     "ap": [
+     "kanayam",
      "khoa"
     ],
-    "ch": [
-     "kanayam"
-    ],
-    "pd": [
-     "kanayam"
-    ]
+    "ch": [],
+    "pd": []
    },
    "title": "編集画面の列設定取得 API で、表示しない設定の子画面を返さず、子画面が無くても children を返す"
   },

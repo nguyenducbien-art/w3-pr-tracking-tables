@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01 15:13",
+ "updated": "2026-11-04 18:40",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -3176,7 +3176,7 @@
     {
      "num": 13297,
      "cf": "ok",
-     "st": "open",
+     "st": "approved",
      "nc": 7,
      "add": 532,
      "del": 34,
@@ -3184,12 +3184,11 @@
      "cr": "10-08 23:32",
      "rv": {
       "ap": [
+       "kanayam",
        "khoa"
       ],
       "ch": [],
-      "pd": [
-       "kanayam"
-      ]
+      "pd": []
      },
      "br": null
     }
@@ -3283,12 +3282,11 @@
    "unres": 0,
    "rvw": {
     "ap": [
+     "kanayam",
      "khoa"
     ],
     "ch": [],
-    "pd": [
-     "kanayam"
-    ]
+    "pd": []
    },
    "title": "セット品ルールマスタから追加・編集画面への遷移 URL 修正 (screen_id=431→432)"
   },
