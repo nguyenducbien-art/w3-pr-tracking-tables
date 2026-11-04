@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30 17:38",
+ "updated": "2026-11-04 17:40",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -64,7 +64,7 @@
     {
      "num": 13203,
      "cf": "ok",
-     "st": "open",
+     "st": "changes",
      "nc": 9,
      "add": 241,
      "del": 615,
@@ -74,10 +74,10 @@
       "ap": [
        "khoa"
       ],
-      "ch": [],
-      "pd": [
+      "ch": [
        "kanayam"
-      ]
+      ],
+      "pd": []
      }
     }
    ],
@@ -123,10 +123,10 @@
     "ap": [
      "khoa"
     ],
-    "ch": [],
-    "pd": [
+    "ch": [
      "kanayam"
-    ]
+    ],
+    "pd": []
    },
    "title": "マルチユニット判定ヘルパを共通化し型を統一 (CC-NEW-15/CC-NEW-11)"
   },
