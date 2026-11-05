@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05 14:31",
+ "updated": "2026-11-05 18:20",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -77,7 +77,9 @@
       "ch": [
        "kanayam"
       ],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      }
     }
    ],
@@ -142,7 +144,9 @@
     "ch": [
      "kanayam"
     ],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "マルチユニット判定ヘルパを共通化し型を統一 (CC-NEW-15/CC-NEW-11)"
   },
