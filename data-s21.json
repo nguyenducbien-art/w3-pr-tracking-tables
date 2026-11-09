@@ -1,10 +1,47 @@
 {
- "updated": "2026-11-03 17:06",
+ "updated": "2026-11-09 19:15",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1102 + r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
- "main": [],
+ "main": [
+  {
+   "ticket": "2192",
+   "dev": "kanayam",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 13926,
+     "cf": "ok",
+     "st": "open",
+     "nc": 560,
+     "add": 217576,
+     "del": 1371,
+     "fc": 816,
+     "cr": "11-09 18:44",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": null
+    }
+   ],
+   "r810": [],
+   "created": "11-09 18:44",
+   "drive": false,
+   "drvurl": "",
+   "cop": 7,
+   "unres": 7,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "W3 本体のアップデート（mimosa/master e9983dd74a1）を develop/base に取り込む"
+  }
+ ],
  "scaffold": []
 }
