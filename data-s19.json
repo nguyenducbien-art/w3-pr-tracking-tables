@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-05 12:00",
+ "updated": "2026-11-09 14:11",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
   "2124",
-  "2133",
   "1576",
+  "2133",
   "2123",
   "2039",
   "2137",
@@ -108,6 +108,59 @@
    "title": "リファレンスの select-init の既定値の記述を直し、在庫追加の区分コードの既定値を先頭にする"
   },
   {
+   "ticket": "1576",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 13915,
+     "cf": "ok",
+     "st": "open",
+     "nc": 31,
+     "add": 3762,
+     "del": 1967,
+     "fc": 121,
+     "cr": "11-09 13:41",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": null
+    }
+   ],
+   "r810": [
+    {
+     "num": 13366,
+     "cf": "ok",
+     "st": "merged",
+     "nc": 50,
+     "add": 4004,
+     "del": 2420,
+     "fc": 193,
+     "cr": "10-14 10:05",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1005"
+    }
+   ],
+   "created": "10-14 10:05",
+   "drive": false,
+   "drvurl": "",
+   "cop": 5,
+   "unres": 5,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "一覧・明細画面の取得方式を都度取得へ統一する（BE 都度取得 API 追加 + React 共通基盤 + E029 撤去・一覧表示件数を CSV 出力件数上限として表示。AngularJS は対象外）"
+  },
+  {
    "ticket": "2133",
    "dev": "bien",
    "bien": true,
@@ -181,42 +234,6 @@
     "pd": []
    },
    "title": "編集画面の列設定取得 API で、表示しない設定の子画面を返さず、子画面が無くても children を返す"
-  },
-  {
-   "ticket": "1576",
-   "dev": "bien",
-   "bien": true,
-   "sid": "",
-   "base": [],
-   "r810": [
-    {
-     "num": 13366,
-     "cf": "ok",
-     "st": "merged",
-     "nc": 50,
-     "add": 4004,
-     "del": 2420,
-     "fc": 193,
-     "cr": "10-14 10:05",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": []
-     },
-     "br": "1005"
-    }
-   ],
-   "created": "10-14 10:05",
-   "drive": true,
-   "drvurl": "https://drive.google.com/file/d/1JNKIgQqiKYxZjioiXSF0Dx7RxtxdFqa5/view",
-   "cop": 2,
-   "unres": 2,
-   "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": []
-   },
-   "title": "一覧・明細画面の取得方式を都度取得へ統一する（BE 都度取得 API 追加 + React 共通基盤 + E029 撤去・一覧表示件数を CSV 出力件数上限として表示。AngularJS は対象外）"
   },
   {
    "ticket": "2123",
