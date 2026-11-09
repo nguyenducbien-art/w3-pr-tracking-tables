@@ -1,9 +1,17 @@
 {
- "updated": "2026-11-05 14:28",
+ "updated": "2026-11-09 12:46",
  "impl": {
-  "2286": {
+  "2310": {
    "pic": null,
    "st": "todo"
+  },
+  "2307": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2286": {
+   "pic": null,
+   "st": "done"
   },
   "2283": {
    "pic": null,
@@ -75,7 +83,7 @@
   },
   "2232": {
    "pic": null,
-   "st": "todo"
+   "st": "done"
   },
   "2229": {
    "pic": null,
@@ -115,7 +123,7 @@
   },
   "2202": {
    "pic": null,
-   "st": "todo"
+   "st": "done"
   },
   "2199": {
    "pic": null,
@@ -895,6 +903,14 @@
   }
  },
  "test": {
+  "2312": {
+   "pic": null,
+   "st": "todo"
+  },
+  "2309": {
+   "pic": null,
+   "st": "todo"
+  },
   "2301": {
    "pic": "Biên",
    "st": "done"
@@ -905,7 +921,7 @@
   },
   "2288": {
    "pic": null,
-   "st": "todo"
+   "st": "done"
   },
   "2285": {
    "pic": null,
@@ -977,7 +993,7 @@
   },
   "2234": {
    "pic": null,
-   "st": "todo"
+   "st": "done"
   },
   "2231": {
    "pic": null,
@@ -1017,7 +1033,7 @@
   },
   "2204": {
    "pic": null,
-   "st": "todo"
+   "st": "done"
   },
   "2201": {
    "pic": null,
