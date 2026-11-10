@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10 08:37",
+ "updated": "2026-11-10 15:20",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [],
@@ -43,5 +43,36 @@
    "title": "W3 本体のアップデート（mimosa/master e9983dd74a1）を develop/base に取り込む"
   }
  ],
- "scaffold": []
+ "scaffold": [
+  {
+   "ticket": "—",
+   "dev": "bien",
+   "bien": true,
+   "pr": {
+    "num": 13948,
+    "cf": "ok",
+    "st": "open",
+    "nc": 1,
+    "add": 5,
+    "del": 3,
+    "fc": 3,
+    "cr": "11-10 15:19",
+    "rv": {
+     "ap": [],
+     "ch": [],
+     "pd": []
+    },
+    "up": "base"
+   },
+   "created": "11-10 15:19",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "r20261102_scaffold の足場資産更新を base に取り込み"
+  }
+ ]
 }
