@@ -1,11 +1,49 @@
 {
- "updated": "2026-11-10 17:26",
+ "updated": "2026-11-11 00:10",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
- "common": [],
+ "common": [
+  "2324"
+ ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1102 + r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2324",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 13962,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 619,
+     "del": 145,
+     "fc": 29,
+     "cr": "11-11 00:01",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": null
+    }
+   ],
+   "r810": [],
+   "created": "11-11 00:01",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "スプリントブランチにだけある共通部品の小さな差分を develop/base へ反映する"
+  },
   {
    "ticket": "2193",
    "dev": "vophucson-2605",
