@@ -1,11 +1,47 @@
 {
- "updated": "2026-11-10 15:31",
+ "updated": "2026-11-10 16:10",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1102 + r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2193",
+   "dev": "vophucson-2605",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13954,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 961,
+     "del": 196,
+     "fc": 16,
+     "cr": "11-10 16:09",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1102"
+    }
+   ],
+   "created": "11-10 16:09",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ANGULAR_REPLACE-2193 W3アップデート取り込み_出荷状況照会_一覧 (screen_id=73)_実装&単体テスト"
+  },
   {
    "ticket": "2192",
    "dev": "kanayam",
