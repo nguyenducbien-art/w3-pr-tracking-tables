@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11 12:09",
+ "updated": "2026-11-11 13:05",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -8,6 +8,78 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1102 + r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2205",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13983,
+     "cf": "ok",
+     "st": "open",
+     "nc": 4,
+     "add": 1486,
+     "del": 446,
+     "fc": 28,
+     "cr": "11-11 12:58",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1102"
+    }
+   ],
+   "created": "11-11 12:58",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "出荷履歴_明細に W3 本体の請求可否一括変更 (W3_DEV-1401) を取り込む"
+  },
+  {
+   "ticket": "2199",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13982,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 3145,
+     "del": 911,
+     "fc": 48,
+     "cr": "11-11 12:57",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1102"
+    }
+   ],
+   "created": "11-11 12:57",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "出荷指示登録(230) に W3 本体の保存済み明細の削除と明細見出しの変更を取り込む"
+  },
   {
    "ticket": "2253",
    "dev": "khoa",
