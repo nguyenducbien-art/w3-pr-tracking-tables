@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11 15:58",
+ "updated": "2026-11-11 16:03",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -27,7 +27,9 @@
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": []
+      "pd": [
+       "bien"
+      ]
      },
      "br": "1102"
     }
@@ -40,7 +42,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "bien"
+    ]
    },
    "title": "ANGULAR_REPLACE-2196 W3アップデート取り込み_出荷状況照会_明細 (screen_id=86)_実装&単体テスト"
   },
