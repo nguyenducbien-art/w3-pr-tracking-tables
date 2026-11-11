@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11 08:47",
+ "updated": "2026-11-11 10:24",
  "impl": {
   "2314": {
    "pic": null,
@@ -122,16 +122,16 @@
    "st": "wip"
   },
   "2205": {
-   "pic": null,
-   "st": "todo"
+   "pic": "Biên",
+   "st": "wip"
   },
   "2202": {
    "pic": null,
    "st": "done"
   },
   "2199": {
-   "pic": null,
-   "st": "todo"
+   "pic": "Biên",
+   "st": "wip"
   },
   "2196": {
    "pic": "Khoa",
