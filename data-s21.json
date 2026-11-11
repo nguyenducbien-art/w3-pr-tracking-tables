@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11 13:50",
+ "updated": "2026-11-11 14:03",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -8,6 +8,42 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1102 + r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2250",
+   "dev": "vophucson-2605",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 13988,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 1193,
+     "del": 167,
+     "fc": 16,
+     "cr": "11-11 14:00",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1102"
+    }
+   ],
+   "created": "11-11 14:00",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ANGULAR_REPLACE-2250 W3アップデート取り込み_直接入庫_明細 (screen_id=389)_実装&単体テスト"
+  },
   {
    "ticket": "2262",
    "dev": "khoa",
@@ -59,10 +95,10 @@
      "num": 13983,
      "cf": "ok",
      "st": "open",
-     "nc": 5,
-     "add": 1488,
-     "del": 446,
-     "fc": 28,
+     "nc": 6,
+     "add": 1520,
+     "del": 401,
+     "fc": 29,
      "cr": "11-11 12:58",
      "rv": {
       "ap": [],
@@ -76,7 +112,7 @@
    "drive": false,
    "drvurl": "",
    "cop": 1,
-   "unres": 1,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -95,10 +131,10 @@
      "num": 13982,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 3145,
-     "del": 911,
-     "fc": 48,
+     "nc": 4,
+     "add": 3343,
+     "del": 913,
+     "fc": 51,
      "cr": "11-11 12:57",
      "rv": {
       "ap": [],
