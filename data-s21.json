@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12 15:10",
+ "updated": "2026-11-12 15:20",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -21,8 +21,8 @@
      "num": 14029,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 1603,
+     "nc": 2,
+     "add": 1644,
      "del": 244,
      "fc": 29,
      "cr": "11-12 15:02",
@@ -37,8 +37,8 @@
    "created": "11-12 15:02",
    "drive": false,
    "drvurl": "",
-   "cop": 0,
-   "unres": 0,
+   "cop": 2,
+   "unres": 1,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -74,7 +74,7 @@
    "drive": false,
    "drvurl": "",
    "cop": 2,
-   "unres": 2,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -310,9 +310,9 @@
      "num": 13999,
      "cf": "ok",
      "st": "open",
-     "nc": 5,
-     "add": 7077,
-     "del": 1788,
+     "nc": 6,
+     "add": 7098,
+     "del": 1789,
      "fc": 35,
      "cr": "11-11 17:51",
      "rv": {
@@ -436,11 +436,11 @@
      "fc": 20,
      "cr": "11-11 13:16",
      "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": [
+      "ap": [
        "bien"
-      ]
+      ],
+      "ch": [],
+      "pd": []
      },
      "br": "1102"
     }
@@ -451,11 +451,11 @@
    "cop": 2,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
+    "ap": [
      "bien"
-    ]
+    ],
+    "ch": [],
+    "pd": []
    },
    "title": "ANGULAR_REPLACE-2262 W3アップデート取り込み_直接出庫_履歴明細 (screen_id=414)_実装&単体テスト"
   },
