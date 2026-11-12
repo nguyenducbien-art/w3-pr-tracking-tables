@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12 12:13",
+ "updated": "2026-11-12 13:30",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,6 +10,46 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1102 + r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2268",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 14018,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 3525,
+     "del": 1354,
+     "fc": 33,
+     "cr": "11-12 13:24",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": [
+       "bien"
+      ]
+     },
+     "br": "1102"
+    }
+   ],
+   "created": "11-12 13:24",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": [
+     "bien"
+    ]
+   },
+   "title": "ANGULAR_REPLACE-2268 W3アップデート取り込み_取引関連_依頼主追加・編集 (screen_id=426)_実装&単体テスト"
+  },
   {
    "ticket": "2328",
    "dev": "khoa",
