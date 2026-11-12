@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12 13:52",
+ "updated": "2026-11-12 14:09",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -99,7 +99,7 @@
     {
      "num": 14011,
      "cf": "ok",
-     "st": "open",
+     "st": "changes",
      "nc": 2,
      "add": 342,
      "del": 11,
@@ -107,10 +107,10 @@
      "cr": "11-12 10:37",
      "rv": {
       "ap": [],
-      "ch": [],
-      "pd": [
+      "ch": [
        "kanayam"
-      ]
+      ],
+      "pd": []
      },
      "br": null
     }
@@ -140,10 +140,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
-    "pd": [
+    "ch": [
      "kanayam"
-    ]
+    ],
+    "pd": []
    },
    "title": "カバレッジ計測で修正画面の子コンポーネントのボタンをボタン網羅に数える"
   },
@@ -318,8 +318,8 @@
      "num": 13985,
      "cf": "ok",
      "st": "open",
-     "nc": 4,
-     "add": 3161,
+     "nc": 5,
+     "add": 3162,
      "del": 530,
      "fc": 20,
      "cr": "11-11 13:16",
