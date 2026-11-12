@@ -1,14 +1,51 @@
 {
- "updated": "2026-11-12 11:02",
+ "updated": "2026-11-12 11:07",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2328",
   "2327",
   "2324"
  ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1102 + r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2328",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [
+    {
+     "num": 14013,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 145,
+     "del": 0,
+     "fc": 2,
+     "cr": "11-12 11:03",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": null
+    }
+   ],
+   "r810": [],
+   "created": "11-12 11:03",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/1HT-Pqf54swhA5x3SwuOGar4PrPw1f-2O/view?usp=sharing",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "在庫変更明細の一覧の並べ替えの最後に主キーを加える"
+  },
   {
    "ticket": "2327",
    "dev": "bien",
@@ -117,7 +154,7 @@
      "num": 13999,
      "cf": "ok",
      "st": "open",
-     "nc": 4,
+     "nc": 5,
      "add": 7077,
      "del": 1788,
      "fc": 35,
@@ -475,11 +512,11 @@
      "fc": 14,
      "cr": "11-11 08:40",
      "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": [
+      "ap": [
        "bien"
-      ]
+      ],
+      "ch": [],
+      "pd": []
      },
      "br": "1102"
     }
@@ -490,11 +527,11 @@
    "cop": 0,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
+    "ap": [
      "bien"
-    ]
+    ],
+    "ch": [],
+    "pd": []
    },
    "title": "ANGULAR_REPLACE-2223 W3アップデート取り込み_入荷検品・格納_明細 (screen_id=17)_実装&単体テスト"
   },
@@ -568,11 +605,11 @@
      "fc": 15,
      "cr": "11-10 16:09",
      "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": [
+      "ap": [
        "bien"
-      ]
+      ],
+      "ch": [],
+      "pd": []
      },
      "br": "1102"
     }
@@ -583,11 +620,11 @@
    "cop": 3,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
+    "ap": [
      "bien"
-    ]
+    ],
+    "ch": [],
+    "pd": []
    },
    "title": "ANGULAR_REPLACE-2193 W3アップデート取り込み_出荷状況照会_一覧 (screen_id=73)_実装&単体テスト"
   },
