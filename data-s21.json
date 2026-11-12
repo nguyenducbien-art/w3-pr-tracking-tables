@@ -1,13 +1,54 @@
 {
- "updated": "2026-11-12 09:54",
+ "updated": "2026-11-12 10:46",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2327",
   "2324"
  ],
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1102 + r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2327",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [
+    {
+     "num": 14011,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 322,
+     "del": 5,
+     "fc": 2,
+     "cr": "11-12 10:37",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": [
+       "kanayam"
+      ]
+     },
+     "br": null
+    }
+   ],
+   "r810": [],
+   "created": "11-12 10:37",
+   "drive": false,
+   "drvurl": "",
+   "cop": 3,
+   "unres": 3,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": [
+     "kanayam"
+    ]
+   },
+   "title": "カバレッジ計測で修正画面の子コンポーネントのボタンをボタン網羅に数える"
+  },
   {
    "ticket": "2256",
    "dev": "khoa",
@@ -19,10 +60,10 @@
      "num": 14007,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 1951,
-     "del": 1033,
-     "fc": 19,
+     "nc": 2,
+     "add": 2109,
+     "del": 1027,
+     "fc": 20,
      "cr": "11-12 09:47",
      "rv": {
       "ap": [],
@@ -38,7 +79,7 @@
    "drive": false,
    "drvurl": "",
    "cop": 4,
-   "unres": 4,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
