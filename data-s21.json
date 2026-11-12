@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12 15:33",
+ "updated": "2026-11-12 15:49",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,6 +10,46 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1102 + r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2208",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 14032,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 15113,
+     "del": 4723,
+     "fc": 60,
+     "cr": "11-12 15:40",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": [
+       "bien"
+      ]
+     },
+     "br": "1102"
+    }
+   ],
+   "created": "11-12 15:40",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": [
+     "bien"
+    ]
+   },
+   "title": "ANGULAR_REPLACE-2208 W3アップデート取り込み_出荷検品_一覧 (screen_id=134)_実装&単体テスト"
+  },
   {
    "ticket": "2271",
    "dev": "vophucson-2605",
