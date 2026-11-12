@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12 11:35",
+ "updated": "2026-11-12 12:13",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -68,7 +68,9 @@
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      },
      "br": null
     }
@@ -99,7 +101,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "カバレッジ計測で修正画面の子コンポーネントのボタンをボタン網羅に数える"
   },
