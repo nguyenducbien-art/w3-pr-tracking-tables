@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12 09:40",
+ "updated": "2026-11-12 09:54",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -8,6 +8,46 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1102 + r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2256",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 14007,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 1951,
+     "del": 1033,
+     "fc": 19,
+     "cr": "11-12 09:47",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": [
+       "bien"
+      ]
+     },
+     "br": "1102"
+    }
+   ],
+   "created": "11-12 09:47",
+   "drive": false,
+   "drvurl": "",
+   "cop": 4,
+   "unres": 4,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": [
+     "bien"
+    ]
+   },
+   "title": "ANGULAR_REPLACE-2256 W3アップデート取り込み_直接出庫_一覧 (screen_id=405)_実装&単体テスト"
+  },
   {
    "ticket": "2238",
    "dev": "khoa",
