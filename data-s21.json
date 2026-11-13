@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13 16:35",
+ "updated": "2026-11-13 16:42",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -223,11 +223,11 @@
      "fc": 18,
      "cr": "11-13 09:17",
      "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": [
+      "ap": [
        "bien"
-      ]
+      ],
+      "ch": [],
+      "pd": []
      },
      "br": "1102"
     }
@@ -238,11 +238,11 @@
    "cop": 0,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
+    "ap": [
      "bien"
-    ]
+    ],
+    "ch": [],
+    "pd": []
    },
    "title": "ANGULAR_REPLACE-2277 W3アップデート取り込み_商品関連_セット品ルールマスタ (screen_id=431)_実装&単体テスト"
   },
