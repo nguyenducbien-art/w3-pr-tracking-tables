@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12 17:20",
+ "updated": "2026-11-13 09:34",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,6 +10,42 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1102 + r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2277",
+   "dev": "vophucson-2605",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 14043,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 214,
+     "del": 51,
+     "fc": 12,
+     "cr": "11-13 09:17",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1102"
+    }
+   ],
+   "created": "11-13 09:17",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ANGULAR_REPLACE-2277 W3アップデート取り込み_商品関連_セット品ルールマスタ (screen_id=431)_実装&単体テスト"
+  },
   {
    "ticket": "2208",
    "dev": "khoa",
