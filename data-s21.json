@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13 17:06",
+ "updated": "2026-11-13 17:17",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -423,11 +423,11 @@
      "fc": 35,
      "cr": "11-12 13:24",
      "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": [
+      "ap": [
        "bien"
-      ]
+      ],
+      "ch": [],
+      "pd": []
      },
      "br": "1102"
     }
@@ -438,11 +438,11 @@
    "cop": 2,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
+    "ap": [
      "bien"
-    ]
+    ],
+    "ch": [],
+    "pd": []
    },
    "title": "ANGULAR_REPLACE-2268 W3アップデート取り込み_取引関連_依頼主追加・編集 (screen_id=426)_実装&単体テスト"
   },
