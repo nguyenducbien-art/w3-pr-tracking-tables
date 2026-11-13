@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13 16:24",
+ "updated": "2026-11-13 16:35",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,6 +10,42 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1102 + r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2220",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 14057,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 8174,
+     "del": 3207,
+     "fc": 44,
+     "cr": "11-13 16:30",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1102"
+    }
+   ],
+   "created": "11-13 16:30",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ANGULAR_REPLACE-2220 W3アップデート取り込み_ジョブ管理_一覧 (screen_id=112)_実装&単体テスト"
+  },
   {
    "ticket": "2214",
    "dev": "khoa",
@@ -181,10 +217,10 @@
      "num": 14043,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 214,
-     "del": 51,
-     "fc": 12,
+     "nc": 2,
+     "add": 477,
+     "del": 109,
+     "fc": 18,
      "cr": "11-13 09:17",
      "rv": {
       "ap": [],
