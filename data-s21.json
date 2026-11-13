@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13 15:24",
+ "updated": "2026-11-13 15:58",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,6 +10,46 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1102 + r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2214",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 14054,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 3511,
+     "del": 847,
+     "fc": 20,
+     "cr": "11-13 15:49",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": [
+       "bien"
+      ]
+     },
+     "br": "1102"
+    }
+   ],
+   "created": "11-13 15:49",
+   "drive": false,
+   "drvurl": "",
+   "cop": 2,
+   "unres": 2,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": [
+     "bien"
+    ]
+   },
+   "title": "ANGULAR_REPLACE-2214 W3アップデート取り込み_ピッキング_一覧 (screen_id=661)_実装&単体テスト"
+  },
   {
    "ticket": "2235",
    "dev": "vophucson-2605",
@@ -219,11 +259,11 @@
      "fc": 32,
      "cr": "11-12 15:02",
      "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": [
+      "ap": [
        "bien"
-      ]
+      ],
+      "ch": [],
+      "pd": []
      },
      "br": "1102"
     }
@@ -234,11 +274,11 @@
    "cop": 2,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
+    "ap": [
      "bien"
-    ]
+    ],
+    "ch": [],
+    "pd": []
    },
    "title": "ANGULAR_REPLACE-2271 W3アップデート取り込み_取引関連_届け先追加・編集 (screen_id=489)_実装&単体テスト"
   },
