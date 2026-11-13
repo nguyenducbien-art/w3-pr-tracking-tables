@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13 18:19",
+ "updated": "2026-11-13 18:28",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -177,17 +177,17 @@
      "num": 14048,
      "cf": "ok",
      "st": "open",
-     "nc": 3,
-     "add": 4808,
-     "del": 1411,
+     "nc": 4,
+     "add": 4838,
+     "del": 1407,
      "fc": 21,
      "cr": "11-13 12:58",
      "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": [
+      "ap": [
        "bien"
-      ]
+      ],
+      "ch": [],
+      "pd": []
      },
      "br": "1102"
     }
@@ -198,11 +198,11 @@
    "cop": 2,
    "unres": 0,
    "rvw": {
-    "ap": [],
-    "ch": [],
-    "pd": [
+    "ap": [
      "bien"
-    ]
+    ],
+    "ch": [],
+    "pd": []
    },
    "title": "ANGULAR_REPLACE-2217 W3アップデート取り込み_引当管理_明細 (screen_id=104)_実装&単体テスト"
   },
