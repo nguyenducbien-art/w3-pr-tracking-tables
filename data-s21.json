@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13 15:58",
+ "updated": "2026-11-13 16:05",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -21,8 +21,8 @@
      "num": 14054,
      "cf": "ok",
      "st": "open",
-     "nc": 1,
-     "add": 3511,
+     "nc": 2,
+     "add": 3534,
      "del": 847,
      "fc": 20,
      "cr": "11-13 15:49",
@@ -40,7 +40,7 @@
    "drive": false,
    "drvurl": "",
    "cop": 2,
-   "unres": 2,
+   "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
@@ -105,7 +105,9 @@
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": []
+      "pd": [
+       "bien"
+      ]
      },
      "br": "1102"
     }
@@ -118,7 +120,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "bien"
+    ]
    },
    "title": "ANGULAR_REPLACE-2226 W3アップデート取り込み_入荷_検品登録・修正 (screen_id=61)_実装&単体テスト"
   },
@@ -133,8 +137,8 @@
      "num": 14048,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 4687,
+     "nc": 3,
+     "add": 4808,
      "del": 1411,
      "fc": 21,
      "cr": "11-13 12:58",
@@ -213,9 +217,9 @@
      "num": 14032,
      "cf": "ok",
      "st": "open",
-     "nc": 2,
-     "add": 15701,
-     "del": 4717,
+     "nc": 3,
+     "add": 15849,
+     "del": 4710,
      "fc": 60,
      "cr": "11-12 15:40",
      "rv": {
