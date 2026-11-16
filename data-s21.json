@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 11:24",
+ "updated": "2026-11-16 11:41",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,6 +10,42 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1102 + r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2247",
+   "dev": "vophucson-2605",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 14076,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 615,
+     "del": 149,
+     "fc": 9,
+     "cr": "11-16 11:26",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1102"
+    }
+   ],
+   "created": "11-16 11:26",
+   "drive": false,
+   "drvurl": "",
+   "cop": 4,
+   "unres": 4,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ANGULAR_REPLACE-2247 W3アップデート取り込み_在庫変遷_商品別 (screen_id=303)_実装&単体テスト"
+  },
   {
    "ticket": "2220",
    "dev": "khoa",
@@ -519,7 +555,7 @@
     {
      "num": 14073,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 2,
      "add": 16,
      "del": 0,
