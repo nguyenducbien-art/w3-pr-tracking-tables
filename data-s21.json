@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 13:53",
+ "updated": "2026-11-16 13:59",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -10,6 +10,42 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1102 + r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2314",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 14080,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 4010,
+     "del": 0,
+     "fc": 33,
+     "cr": "11-16 13:54",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1102"
+    }
+   ],
+   "created": "11-16 13:54",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "HT設定_項目表示設定（Android/iOS）画面を追加"
+  },
   {
    "ticket": "2247",
    "dev": "vophucson-2605",
@@ -135,9 +171,9 @@
    "r810": [
     {
      "num": 14053,
-     "cf": "bad",
+     "cf": "ok",
      "st": "open",
-     "nc": 4,
+     "nc": 5,
      "add": 1985,
      "del": 260,
      "fc": 19,
