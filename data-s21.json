@@ -1,8 +1,9 @@
 {
- "updated": "2026-11-16 14:27",
+ "updated": "2026-11-16 14:44",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
+  "2244",
   "2328",
   "2327",
   "2324"
@@ -10,6 +11,58 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1102 + r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2244",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 14085,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 8005,
+     "del": 2544,
+     "fc": 56,
+     "cr": "11-16 14:44",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1102"
+    },
+    {
+     "num": 14084,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 366,
+     "del": 12,
+     "fc": 7,
+     "cr": "11-16 14:43",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1102"
+    }
+   ],
+   "created": "11-16 14:43",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/14Hyzht-eUmqlRIhYTQNfMifQcTJ2Ah5z/view",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "一覧のセルを行ごとの条件で色付けできる cellStyleResolver を追加"
+  },
   {
    "ticket": "2259",
    "dev": "vophucson-2605",
