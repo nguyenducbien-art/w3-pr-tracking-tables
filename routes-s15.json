@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-26 16:36",
- "tip": "3bbf8f36d6",
+ "updated": "2026-11-16 10:52",
+ "tip": "37e952913b",
  "branch": "mimosa/frontend/develop/per-sprint",
  "base": "https://mimosa-stg-react-per-sprint.dialog-wms.com",
  "routes": {
@@ -17,6 +17,8 @@
   "61": "/arrivals/inspection-edits",
   "73": "/shipments/status",
   "86": "/shipments/details",
+  "104": "/shipments/allocations/details",
+  "134": "/shipments/inspections",
   "148": "/shipments/inspections/details",
   "172": "/shipments/results/details",
   "182": "/shipments/history",
@@ -132,6 +134,7 @@
   "653": "/billing/details",
   "654": "/billing/inv-charge-edits",
   "657": "/unit/grid-column-display-common-edits",
+  "661": "/shipments/picking-headers",
   "685": "/stocks/serial-headers",
   "690": "/serial-edits",
   "702": "/stocks/change-users",
