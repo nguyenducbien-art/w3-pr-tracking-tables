@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 15:08",
+ "updated": "2026-11-16 15:19",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -86,7 +86,9 @@
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": []
+      "pd": [
+       "bien"
+      ]
      },
      "br": "1102"
     }
@@ -99,7 +101,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "bien"
+    ]
    },
    "title": "ANGULAR_REPLACE-2259 W3アップデート取り込み_直接出庫_明細 (screen_id=407)_実装&単体テスト"
   },
