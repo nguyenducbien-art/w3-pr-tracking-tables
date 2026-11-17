@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 15:05",
+ "updated": "2026-11-17 15:17",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -38,14 +38,15 @@
    "created": "11-17 15:03",
    "drive": false,
    "drvurl": "",
-   "cop": 0,
-   "unres": 0,
+   "cop": 1,
+   "unres": 1,
    "rvw": {
     "ap": [],
     "ch": [],
     "pd": []
    },
-   "title": "ダッシュボードに IF状況（IF の取込・出力の最新 10 件）を表示する"
+   "title": "ダッシュボードに IF状況（IF の取込・出力の最新 10 件）を表示する",
+   "cm": false
   },
   {
    "ticket": "2307",
@@ -66,7 +67,9 @@
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": []
+      "pd": [
+       "bien"
+      ]
      },
      "br": "1102"
     }
@@ -79,9 +82,53 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "bien"
+    ]
    },
-   "title": "ANGULAR_REPLACE-2307 ダッシュボード機能_在庫状況 (機能)_実装＆単体テスト"
+   "title": "ANGULAR_REPLACE-2307 ダッシュボード機能_在庫状況 (機能)_実装＆単体テスト",
+   "cm": false
+  },
+  {
+   "ticket": "2244",
+   "dev": "khoa",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 14085,
+     "cf": "ok",
+     "st": "open",
+     "nc": 4,
+     "add": 8074,
+     "del": 2548,
+     "fc": 56,
+     "cr": "11-16 14:44",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": [
+       "bien"
+      ]
+     },
+     "br": "1102"
+    }
+   ],
+   "created": "11-16 14:44",
+   "drive": true,
+   "drvurl": "https://drive.google.com/file/d/14Hyzht-eUmqlRIhYTQNfMifQcTJ2Ah5z/view",
+   "cop": 1,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": [
+     "bien"
+    ]
+   },
+   "title": "ANGULAR_REPLACE-2244 W3アップデート取り込み_在庫_明細 (screen_id=247)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2244",
@@ -108,24 +155,6 @@
    ],
    "r810": [
     {
-     "num": 14085,
-     "cf": "ok",
-     "st": "open",
-     "nc": 4,
-     "add": 8074,
-     "del": 2548,
-     "fc": 56,
-     "cr": "11-16 14:44",
-     "rv": {
-      "ap": [],
-      "ch": [],
-      "pd": [
-       "bien"
-      ]
-     },
-     "br": "1102"
-    },
-    {
      "num": 14084,
      "cf": "ok",
      "st": "open",
@@ -137,7 +166,9 @@
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": []
+      "pd": [
+       "bien"
+      ]
      },
      "br": "1102"
     }
@@ -152,7 +183,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "一覧のセルを行ごとの条件で色付けできる cellStyleResolver を追加"
+   "title": "一覧のセルを行ごとの条件で色付けできる cellStyleResolver を追加",
+   "cm": true
   },
   {
    "ticket": "2259",
@@ -192,7 +224,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2259 W3アップデート取り込み_直接出庫_明細 (screen_id=407)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2259 W3アップデート取り込み_直接出庫_明細 (screen_id=407)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2314",
@@ -232,7 +265,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "HT設定_項目表示設定（Android/iOS）画面を追加"
+   "title": "HT設定_項目表示設定（Android/iOS）画面を追加",
+   "cm": false
   },
   {
    "ticket": "2247",
@@ -272,7 +306,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2247 W3アップデート取り込み_在庫変遷_商品別 (screen_id=303)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2247 W3アップデート取り込み_在庫変遷_商品別 (screen_id=303)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2220",
@@ -312,7 +347,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2220 W3アップデート取り込み_ジョブ管理_一覧 (screen_id=112)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2220 W3アップデート取り込み_ジョブ管理_一覧 (screen_id=112)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2214",
@@ -352,7 +388,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2214 W3アップデート取り込み_ピッキング_一覧 (screen_id=661)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2214 W3アップデート取り込み_ピッキング_一覧 (screen_id=661)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2235",
@@ -392,7 +429,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2235 W3アップデート取り込み_手動引当 (screen_id=219)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2235 W3アップデート取り込み_手動引当 (screen_id=219)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2226",
@@ -432,7 +470,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2226 W3アップデート取り込み_入荷_検品登録・修正 (screen_id=61)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2226 W3アップデート取り込み_入荷_検品登録・修正 (screen_id=61)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2217",
@@ -472,7 +511,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2217 W3アップデート取り込み_引当管理_明細 (screen_id=104)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2217 W3アップデート取り込み_引当管理_明細 (screen_id=104)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2277",
@@ -512,7 +552,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2277 W3アップデート取り込み_商品関連_セット品ルールマスタ (screen_id=431)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2277 W3アップデート取り込み_商品関連_セット品ルールマスタ (screen_id=431)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2208",
@@ -552,7 +593,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2208 W3アップデート取り込み_出荷検品_一覧 (screen_id=134)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2208 W3アップデート取り込み_出荷検品_一覧 (screen_id=134)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2271",
@@ -592,7 +634,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2271 W3アップデート取り込み_取引関連_届け先追加・編集 (screen_id=489)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2271 W3アップデート取り込み_取引関連_届け先追加・編集 (screen_id=489)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2274",
@@ -632,7 +675,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2274 W3アップデート取り込み_取引関連_仕入先追加・編集 (screen_id=428)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2274 W3アップデート取り込み_取引関連_仕入先追加・編集 (screen_id=428)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2265",
@@ -672,7 +716,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2265 W3アップデート取り込み_作業履歴_作業者別 (screen_id=702)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2265 W3アップデート取り込み_作業履歴_作業者別 (screen_id=702)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2268",
@@ -712,7 +757,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2268 W3アップデート取り込み_取引関連_依頼主追加・編集 (screen_id=426)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2268 W3アップデート取り込み_取引関連_依頼主追加・編集 (screen_id=426)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2328",
@@ -752,7 +798,8 @@
      "bien"
     ]
    },
-   "title": "在庫変更明細の一覧の並べ替えの最後に主キーを加える"
+   "title": "在庫変更明細の一覧の並べ替えの最後に主キーを加える",
+   "cm": true
   },
   {
    "ticket": "2327",
@@ -825,7 +872,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "カバレッジ計測で修正画面の子コンポーネントのボタンをボタン網羅に数える"
+   "title": "カバレッジ計測で修正画面の子コンポーネントのボタンをボタン網羅に数える",
+   "cm": true
   },
   {
    "ticket": "2256",
@@ -865,7 +913,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2256 W3アップデート取り込み_直接出庫_一覧 (screen_id=405)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2256 W3アップデート取り込み_直接出庫_一覧 (screen_id=405)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2238",
@@ -905,7 +954,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2238 W3アップデート取り込み_入荷状況照会_明細 (screen_id=7)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2238 W3アップデート取り込み_入荷状況照会_明細 (screen_id=7)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2196",
@@ -945,7 +995,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2196 W3アップデート取り込み_出荷状況照会_明細 (screen_id=86)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2196 W3アップデート取り込み_出荷状況照会_明細 (screen_id=86)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2250",
@@ -985,7 +1036,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2250 W3アップデート取り込み_直接入庫_明細 (screen_id=389)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2250 W3アップデート取り込み_直接入庫_明細 (screen_id=389)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2262",
@@ -1025,7 +1077,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2262 W3アップデート取り込み_直接出庫_履歴明細 (screen_id=414)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2262 W3アップデート取り込み_直接出庫_履歴明細 (screen_id=414)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2205",
@@ -1065,7 +1118,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "出荷履歴_明細に W3 本体の請求可否一括変更 (W3_DEV-1401) を取り込む"
+   "title": "出荷履歴_明細に W3 本体の請求可否一括変更 (W3_DEV-1401) を取り込む",
+   "cm": false
   },
   {
    "ticket": "2199",
@@ -1105,7 +1159,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "出荷指示登録(230) に W3 本体の保存済み明細の削除と明細見出しの変更を取り込む"
+   "title": "出荷指示登録(230) に W3 本体の保存済み明細の削除と明細見出しの変更を取り込む",
+   "cm": false
   },
   {
    "ticket": "2253",
@@ -1145,7 +1200,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2253 W3アップデート取り込み_直接入庫_履歴明細 (screen_id=396)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2253 W3アップデート取り込み_直接入庫_履歴明細 (screen_id=396)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2241",
@@ -1185,7 +1241,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2241 W3アップデート取り込み_在庫_商品別一覧 (screen_id=244)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2241 W3アップデート取り込み_在庫_商品別一覧 (screen_id=244)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2229",
@@ -1225,7 +1282,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2229 W3アップデート取り込み_入荷履歴_明細 (screen_id=47)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2229 W3アップデート取り込み_入荷履歴_明細 (screen_id=47)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2223",
@@ -1265,7 +1323,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2223 W3アップデート取り込み_入荷検品・格納_明細 (screen_id=17)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2223 W3アップデート取り込み_入荷検品・格納_明細 (screen_id=17)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2324",
@@ -1334,7 +1393,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "スプリントブランチにだけある共通部品の小さな差分を develop/base へ反映する"
+   "title": "スプリントブランチにだけある共通部品の小さな差分を develop/base へ反映する",
+   "cm": true
   },
   {
    "ticket": "2193",
@@ -1374,7 +1434,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "ANGULAR_REPLACE-2193 W3アップデート取り込み_出荷状況照会_一覧 (screen_id=73)_実装&単体テスト"
+   "title": "ANGULAR_REPLACE-2193 W3アップデート取り込み_出荷状況照会_一覧 (screen_id=73)_実装&単体テスト",
+   "cm": false
   },
   {
    "ticket": "2192",
@@ -1410,7 +1471,8 @@
     "ch": [],
     "pd": []
    },
-   "title": "W3 本体のアップデート（mimosa/master e9983dd74a1）を develop/base に取り込む"
+   "title": "W3 本体のアップデート（mimosa/master e9983dd74a1）を develop/base に取り込む",
+   "cm": false
   }
  ],
  "scaffold": [
