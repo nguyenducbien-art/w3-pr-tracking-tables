@@ -41,7 +41,7 @@ function collect(S,D){
       drvurl:r.drvurl,drive:r.drive,unres:r.unres||0,title:r.title||'',url:D.prUrlBase});
   }
   (D.main||[]).forEach(function(r){
-    var kind=common[r.ticket]?'common':'màn/fix';
+    var kind=(r.cm!=null?r.cm:common[r.ticket])?'common':'màn/fix';   // row flag cm (s21+) beats ticket list
     (r.base||[]).forEach(function(p){take(r,p,'base',kind);});
     ['r629','r713','r727','r810'].forEach(function(k){(r[k]||[]).forEach(function(p){take(r,p,'r',kind,k);});});
   });

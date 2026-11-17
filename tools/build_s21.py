@@ -41,6 +41,11 @@ for _a, _b in [
     ("Copilot chỉ đếm PR→base.')", "Copilot chỉ đếm PR→base.',false)"),
     # cột "→r" gộp r20260810 + r20260921 (nhánh sau chưa tồn tại) → không ghi cứng 1 tên nhánh
     ("<th>→r20260810</th>", "<th>→r 0810/1019/1102</th>"),
+    # 1 ticket may have 2 rows (common-… branch → Bảng 1, screen branch → Bảng 2) → split by row flag `cm`
+    ("var commonRows=D.main.filter(function(r){return COMMON.has(r.ticket);});",
+     "function isCm(r){return r.cm!=null?r.cm:COMMON.has(r.ticket);}\n  var commonRows=D.main.filter(isCm);"),
+    ("var normalRows=D.main.filter(function(r){return !COMMON.has(r.ticket);});",
+     "var normalRows=D.main.filter(function(r){return !isCm(r);});"),
     ("(màn migration + fix lẻ).')", "(màn migration + fix lẻ).',true)"),
     # subtitle: nói rõ luật chia theo ngày + trỏ ngược về page Sprint 15+16
     ("tạo từ <b>2026-11-02</b> vào <b>develop/base</b> / <b>r20260810</b> — chia 2 bảng",

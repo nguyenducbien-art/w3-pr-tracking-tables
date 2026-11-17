@@ -117,7 +117,7 @@
           var prs = prLists(r);
           var tk = String(r.ticket) === n;
           var pr = prs.some(function (l) { return l.list.some(function (p) { return String(p.num) === n; }); });
-          if (tk || pr) hits.push({ s: s, D: D, r: r, prs: prs, table: com.has(r.ticket) ? 'Bảng 1 — Common component' : 'Bảng 2 — Màn / Fix thường' });
+          if (tk || pr) hits.push({ s: s, D: D, r: r, prs: prs, table: (r.cm != null ? r.cm : com.has(r.ticket)) ? 'Bảng 1 — Common component' : 'Bảng 2 — Màn / Fix thường' });
         });
         (D.scaffold || []).forEach(function (r) {
           var p = r.pr || {};

@@ -242,13 +242,13 @@ def build():
         if is_sync(seg): continue
         tk = ticket_from_branch(seg)
         if not tk or tk in EXCLUDE: continue
-        t = tickets.setdefault(tk, {"base":[], "r810":[], "meta":[], "common":False})
+        cm = seg.startswith("common-")   # split per branch kind: common-… → Bảng 1, others (screen PR) → Bảng 2
+        t = tickets.setdefault((tk, cm), {"base":[], "r810":[], "meta":[], "common":cm})
         det = pr_detail(p["number"])
         t["r810"].append({"num": p["number"], "cf": det["cf"], "st": det["st"],
                           "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"]), "rv": det["rvw"], "br": p.get("_br")})
         t["meta"].append({"num":p["number"],"key":"r810","author":p["author"]["login"],
                           "created":p["createdAt"],"title":p["title"],"det":det})
-        if seg.startswith("common-"): t["common"] = True
 
     # ---- PR → base created >= SINCE: KHÔNG cần ticket đã có PR r810 (khác s15) ----
     # Giữ nguyên nguyên tắc "1 PR chỉ ở 1 page": base PR của Sprint 17 hiện ở đây, không ở s15.
@@ -257,17 +257,17 @@ def build():
         if is_sync(seg): continue
         tk = ticket_from_branch(seg)
         if not tk or tk in EXCLUDE: continue
-        t = tickets.setdefault(tk, {"base":[], "r810":[], "meta":[], "common":False})
+        cm = seg.startswith("common-")   # split per branch kind: common-… → Bảng 1, others (screen PR) → Bảng 2
+        t = tickets.setdefault((tk, cm), {"base":[], "r810":[], "meta":[], "common":cm})
         det = pr_detail(p["number"])
         t["base"].append({"num": p["number"], "cf": det["cf"], "st": det["st"],
                           "nc": det["nc"], "add": det["add"], "del": det["del"], "fc": det["fc"], "cr": fmt_dt(p["createdAt"]), "rv": det["rvw"], "br": p.get("_br")})
         t["meta"].append({"num":p["number"],"key":"base","author":p["author"]["login"],
                           "created":p["createdAt"],"title":p["title"],"det":det})
-        if seg.startswith("common-"): t["common"] = True
 
     t2s = load_ticket_sid()   # ticket -> screen_id (từ s15-plan.json)
     main = []
-    for tk, t in tickets.items():
+    for (tk, _cm), t in tickets.items():
         metas = t["meta"]; common = t["common"]
         base_m = [m for m in metas if m["key"] == "base"]
         # PR đại diện (dev/title) = PR SỚM NHẤT = tác giả GỐC của ticket.
@@ -285,9 +285,9 @@ def build():
                      "base":t["base"],"r810":t["r810"],
                      "created":created,"drive":drive,"drvurl":drvurl,"cop":cop,"unres":unres,
                      "rvw":merge_rvw(src),   # reviewers from src PRs (common → base PRs), not from rep
-                     "title":clean_title(rep["title"]),"_common":common})
+                     "title":clean_title(rep["title"]),"cm":common,"_common":common})
     main.sort(key=lambda m:(m["created"], 1 if m["base"] else 0), reverse=True)
-    common_list = [m["ticket"] for m in main if m["_common"]]
+    common_list = list(dict.fromkeys(m["ticket"] for m in main if m["_common"]))   # a ticket may have 2 rows (common + screen)
     for m in main: m.pop("_common", None)
 
     # ---- bảng phụ scaffold ----
