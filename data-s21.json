@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 14:18",
+ "updated": "2026-11-17 15:05",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -11,6 +11,42 @@
  "invalidBase": [],
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1102 + r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
+  {
+   "ticket": "2310",
+   "dev": "bien",
+   "bien": true,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 14111,
+     "cf": "ok",
+     "st": "open",
+     "nc": 1,
+     "add": 1367,
+     "del": 15,
+     "fc": 21,
+     "cr": "11-17 15:03",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1102"
+    }
+   ],
+   "created": "11-17 15:03",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ダッシュボードに IF状況（IF の取込・出力の最新 10 件）を表示する"
+  },
   {
    "ticket": "2307",
    "dev": "vophucson-2605",
