@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 20:17",
+ "updated": "2026-11-17 11:09",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -12,11 +12,64 @@
  "scaffoldBranch": "mimosa/frontend/develop/scaffold (r1102 + r1019 + r1005 + r0921 + r0907 + r0824 + r0810)",
  "main": [
   {
+   "ticket": "2307",
+   "dev": "vophucson-2605",
+   "bien": false,
+   "sid": "",
+   "base": [],
+   "r810": [
+    {
+     "num": 14106,
+     "cf": "ok",
+     "st": "open",
+     "nc": 3,
+     "add": 1634,
+     "del": 72,
+     "fc": 20,
+     "cr": "11-17 11:06",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": "1102"
+    }
+   ],
+   "created": "11-17 11:06",
+   "drive": false,
+   "drvurl": "",
+   "cop": 0,
+   "unres": 0,
+   "rvw": {
+    "ap": [],
+    "ch": [],
+    "pd": []
+   },
+   "title": "ANGULAR_REPLACE-2307 ダッシュボード機能_在庫状況 (機能)_実装＆単体テスト"
+  },
+  {
    "ticket": "2244",
    "dev": "khoa",
    "bien": false,
    "sid": "",
-   "base": [],
+   "base": [
+    {
+     "num": 14107,
+     "cf": "ok",
+     "st": "open",
+     "nc": 2,
+     "add": 366,
+     "del": 12,
+     "fc": 7,
+     "cr": "11-17 11:08",
+     "rv": {
+      "ap": [],
+      "ch": [],
+      "pd": []
+     },
+     "br": null
+    }
+   ],
    "r810": [
     {
      "num": 14085,
@@ -56,14 +109,12 @@
    "created": "11-16 14:43",
    "drive": true,
    "drvurl": "https://drive.google.com/file/d/14Hyzht-eUmqlRIhYTQNfMifQcTJ2Ah5z/view",
-   "cop": 1,
+   "cop": 0,
    "unres": 0,
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": [
-     "bien"
-    ]
+    "pd": []
    },
    "title": "一覧のセルを行ごとの条件で色付けできる cellStyleResolver を追加"
   },
