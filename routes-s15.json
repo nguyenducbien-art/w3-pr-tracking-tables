@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16 10:52",
- "tip": "37e952913b",
+ "updated": "2026-11-18 12:50",
+ "tip": "5d5fbe1343",
  "branch": "mimosa/frontend/develop/per-sprint",
  "base": "https://mimosa-stg-react-per-sprint.dialog-wms.com",
  "routes": {
@@ -18,6 +18,7 @@
   "73": "/shipments/status",
   "86": "/shipments/details",
   "104": "/shipments/allocations/details",
+  "112": "/shipments/jobs",
   "134": "/shipments/inspections",
   "148": "/shipments/inspections/details",
   "172": "/shipments/results/details",
@@ -148,6 +149,7 @@
   "765": "/owner/unit-tariffs",
   "766": "/owner/unit-tariff-edits",
   "767": "/owner/unit-box-sizes",
-  "768": "/owner/unit-box-size-edits"
+  "768": "/owner/unit-box-size-edits",
+  "773": "/unit/mobile-view-attribute-display"
  }
 }
