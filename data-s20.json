@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09 12:54",
+ "updated": "2026-11-18 10:35",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -202,7 +202,9 @@
      "rv": {
       "ap": [],
       "ch": [],
-      "pd": []
+      "pd": [
+       "kanayam"
+      ]
      },
      "br": null
     }
@@ -265,7 +267,9 @@
    "rvw": {
     "ap": [],
     "ch": [],
-    "pd": []
+    "pd": [
+     "kanayam"
+    ]
    },
    "title": "画面初期表示で units/available?is_integrated=true が中断されないよう、ユニット一覧の取得は unitIds の中身が変わったときだけやり直す"
   },
