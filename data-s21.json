@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18 10:29",
+ "updated": "2026-11-18 11:03",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -20,7 +20,7 @@
    "r810": [
     {
      "num": 14112,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 4,
      "add": 6331,
@@ -61,7 +61,7 @@
    "r810": [
     {
      "num": 14111,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 2,
      "add": 1433,
@@ -102,7 +102,7 @@
    "r810": [
     {
      "num": 14106,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 5,
      "add": 1701,
@@ -143,7 +143,7 @@
    "r810": [
     {
      "num": 14085,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 7,
      "add": 8076,
@@ -240,7 +240,7 @@
    "r810": [
     {
      "num": 14082,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 1,
      "add": 1207,
@@ -281,7 +281,7 @@
    "r810": [
     {
      "num": 14080,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 4,
      "add": 4087,
@@ -322,7 +322,7 @@
    "r810": [
     {
      "num": 14076,
-     "cf": "ok",
+     "cf": "bad",
      "st": "open",
      "nc": 6,
      "add": 1919,
@@ -364,7 +364,7 @@
     {
      "num": 14057,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 5,
      "add": 8638,
      "del": 3250,
@@ -446,7 +446,7 @@
     {
      "num": 14053,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 6,
      "add": 1985,
      "del": 260,
@@ -487,7 +487,7 @@
     {
      "num": 14049,
      "cf": "ok",
-     "st": "open",
+     "st": "merged",
      "nc": 6,
      "add": 3368,
      "del": 708,
