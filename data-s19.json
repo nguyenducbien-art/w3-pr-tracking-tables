@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19 13:04",
+ "updated": "2026-11-25 14:30",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -116,7 +116,7 @@
     {
      "num": 13915,
      "cf": "ok",
-     "st": "open",
+     "st": "changes",
      "nc": 43,
      "add": 6944,
      "del": 2336,
@@ -124,10 +124,10 @@
      "cr": "11-09 13:41",
      "rv": {
       "ap": [],
-      "ch": [],
-      "pd": [
+      "ch": [
        "kanayam"
-      ]
+      ],
+      "pd": []
      },
      "br": null
     }
@@ -205,10 +205,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
-    "pd": [
+    "ch": [
      "kanayam"
-    ]
+    ],
+    "pd": []
    },
    "title": "一覧・明細画面の取得方式を都度取得へ統一する（BE 都度取得 API 追加 + React 共通基盤 + E029 撤去・一覧表示件数を CSV 出力件数上限として表示。AngularJS は対象外）"
   },
