@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19 10:53",
+ "updated": "2026-11-25 14:23",
  "repo": "dialog-inc/w3package_v2",
  "prUrlBase": "https://github.com/dialog-inc/w3package_v2/pull/",
  "common": [
@@ -1380,7 +1380,7 @@
     {
      "num": 13962,
      "cf": "ok",
-     "st": "open",
+     "st": "changes",
      "nc": 4,
      "add": 871,
      "del": 149,
@@ -1388,10 +1388,10 @@
      "cr": "11-11 00:01",
      "rv": {
       "ap": [],
-      "ch": [],
-      "pd": [
+      "ch": [
        "kanayam"
-      ]
+      ],
+      "pd": []
      },
      "br": null
     }
@@ -1437,10 +1437,10 @@
    "unres": 0,
    "rvw": {
     "ap": [],
-    "ch": [],
-    "pd": [
+    "ch": [
      "kanayam"
-    ]
+    ],
+    "pd": []
    },
    "title": "スプリントブランチにだけある共通部品の小さな差分を develop/base へ反映する",
    "cm": true
